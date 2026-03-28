@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeCity Global — 全球城市安全旅行指南</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ─────────── CSS 变量 & 重置 ─────────── */
+    :root {
+      --bg: #0a0e1a;
+      --bg2: #0f1623;
+      --bg3: #141c2e;
+      --card: #1a2236;
+      --card2: #1f293d;
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.12);
+      --text: #e8edf5;
+      --text2: #8892a0;
+      --text3: #5a6475;
+      --accent: #3b82f6;
+      --accent2: #6366f1;
+      --green: #10b981;
+      --yellow: #f59e0b;
+      --orange: #f97316;
+      --red: #ef4444;
+      --red2: #dc2626;
+      --glow: rgba(59,130,246,0.15);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 8px 32px rgba(0,0,0,0.4);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.6);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans SC', 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { border: none; cursor: pointer; font-family: inherit; }
+    input { font-family: inherit; }
+    img { max-width: 100%; }
+
+    /* ─────────── 滚动条 ─────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+    /* ─────────── 动画 ─────────── */
+    @keyframes fadeIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:none; } }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.5;} }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    @keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
+    @keyframes slideDown { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:none} }
+    @keyframes countUp { from{opacity:0;transform:scale(0.8)} to{opacity:1;transform:scale(1)} }
+    @keyframes glow { 0%,100%{box-shadow:0 0 20px rgba(59,130,246,0.3)} 50%{box-shadow:0 0 40px rgba(59,130,246,0.6)} }
+
+    .fade-in { animation: fadeIn 0.5s ease forwards; }
+    .slide-down { animation: slideDown 0.3s ease forwards; }
+
+    /* ─────────── 顶部导航 ─────────── */
+    #navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: 64px;
+      background: rgba(10,14,26,0.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; padding: 0 24px;
+      gap: 16px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 800; font-size: 18px; color: var(--text);
+      white-space: nowrap;
+    }
+    .nav-logo-icon {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
+    .nav-search-wrap {
+      flex: 1; max-width: 480px;
+      position: relative;
+    }
+    #nav-search {
+      width: 100%; height: 40px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 20px; padding: 0 16px 0 42px;
+      color: var(--text); font-size: 14px;
+      outline: none; transition: all 0.2s;
+    }
+    #nav-search:focus { border-color: var(--accent); background: var(--card2); }
+    #nav-search::placeholder { color: var(--text3); }
+    .nav-search-icon {
+      position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+      color: var(--text3); pointer-events: none; font-size: 15px;
+    }
+    #search-dropdown {
+      display: none;
+      position: absolute; top: calc(100% + 8px); left: 0; right: 0;
+      background: var(--card2); border: 1px solid var(--border2);
+      border-radius: var(--radius-sm); overflow: hidden;
+      box-shadow: var(--shadow-lg); z-index: 2000;
+    }
+    #search-dropdown.open { display: block; }
+    .search-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 10px 16px; cursor: pointer;
+      transition: background 0.15s;
+    }
+    .search-item:hover { background: var(--bg3); }
+    .search-item-flag { font-size: 20px; }
+    .search-item-info { flex: 1; min-width: 0; }
+    .search-item-name { font-size: 14px; font-weight: 600; }
+    .search-item-country { font-size: 12px; color: var(--text2); }
+    .search-item-grade {
+      font-size: 12px; font-weight: 700; padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .nav-right { margin-left: auto; display: flex; gap: 8px; }
+    .nav-btn {
+      height: 36px; padding: 0 16px; border-radius: 8px;
+      font-size: 13px; font-weight: 600;
+      background: var(--card); border: 1px solid var(--border);
+      color: var(--text2); transition: all 0.2s;
+    }
+    .nav-btn:hover, .nav-btn.active {
+      background: var(--accent); border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ─────────── 页面容器 ─────────── */
+    .page { display: none; padding-top: 64px; }
+    .page.active { display: block; }
+
+    /* ─────────── 首页 Hero ─────────── */
+    #hero {
+      position: relative; overflow: hidden;
+      padding: 80px 24px 60px;
+      background: linear-gradient(135deg, #0a0e1a 0%, #0f1f40 50%, #0a0e1a 100%);
+      text-align: center;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%);
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.3);
+      border-radius: 20px; padding: 6px 16px; font-size: 12px;
+      color: var(--accent); font-weight: 600; margin-bottom: 24px;
+      animation: glow 3s ease-in-out infinite;
+    }
+    .hero-title {
+      font-size: clamp(36px, 6vw, 72px); font-weight: 900; line-height: 1.1;
+      margin-bottom: 20px; position: relative;
+      background: linear-gradient(135deg, #fff 0%, #93c5fd 50%, #818cf8 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-subtitle {
+      font-size: clamp(14px, 2vw, 18px); color: var(--text2);
+      max-width: 600px; margin: 0 auto 40px; line-height: 1.7;
+    }
+    .hero-stats {
+      display: flex; justify-content: center; gap: 40px;
+      flex-wrap: wrap; margin-top: 40px; position: relative;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat-num {
+      font-size: 36px; font-weight: 900;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-stat-label { font-size: 12px; color: var(--text3); margin-top: 4px; }
+    .hero-search-big {
+      max-width: 600px; margin: 0 auto 0;
+      position: relative;
+    }
+    #hero-search {
+      width: 100%; height: 56px; border-radius: 28px;
+      background: var(--card2); border: 1px solid var(--border2);
+      padding: 0 60px 0 56px; font-size: 16px; color: var(--text);
+      outline: none; transition: all 0.3s;
+    }
+    #hero-search:focus { border-color: var(--accent); box-shadow: 0 0 0 4px var(--glow); }
+    #hero-search::placeholder { color: var(--text3); }
+    .hero-search-icon {
+      position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+      color: var(--text3); font-size: 20px; pointer-events: none;
+    }
+    .hero-search-btn {
+      position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--accent); color: #fff; font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s;
+    }
+    .hero-search-btn:hover { background: var(--accent2); transform: translateY(-50%) scale(1.05); }
+
+    /* ─────────── 安全等级图例 ─────────── */
+    .legend {
+      display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+      padding: 16px 24px; margin-bottom: 8px;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; color: var(--text2);
+    }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+    /* ─────────── 城市卡片网格 ─────────── */
+    #continent-tabs {
+      display: flex; gap: 8px; padding: 0 24px 16px;
+      overflow-x: auto; scrollbar-width: none;
+    }
+    #continent-tabs::-webkit-scrollbar { display: none; }
+    .continent-tab {
+      height: 36px; padding: 0 16px; border-radius: 18px;
+      font-size: 13px; font-weight: 600; white-space: nowrap;
+      background: var(--card); border: 1px solid var(--border);
+      color: var(--text2); transition: all 0.2s;
+    }
+    .continent-tab:hover, .continent-tab.active {
+      background: var(--accent); border-color: var(--accent);
+      color: #fff;
+    }
+    .section-title {
+      font-size: 18px; font-weight: 700; padding: 0 24px 16px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .section-title::before {
+      content: ''; width: 3px; height: 18px; border-radius: 2px;
+      background: linear-gradient(to bottom, var(--accent), var(--accent2));
+    }
+    #city-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px; padding: 0 24px 40px;
+    }
+    .city-card {
+      border-radius: var(--radius); overflow: hidden;
+      background: var(--card); border: 1px solid var(--border);
+      cursor: pointer; transition: all 0.3s;
+      animation: fadeIn 0.4s ease forwards;
+    }
+    .city-card:hover {
+      transform: translateY(-4px); border-color: var(--accent);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px var(--accent);
+    }
+    .city-card-img {
+      height: 180px; position: relative; overflow: hidden;
+    }
+    .city-card-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .city-card:hover .city-card-img img { transform: scale(1.05); }
+    .city-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,14,26,0.9) 0%, transparent 60%);
+    }
+    .city-card-flag {
+      position: absolute; top: 12px; left: 12px;
+      font-size: 24px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    }
+    .city-card-grade {
+      position: absolute; top: 12px; right: 12px;
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 800;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .city-card-body { padding: 16px; }
+    .city-card-name {
+      font-size: 20px; font-weight: 800; line-height: 1.2; margin-bottom: 4px;
+    }
+    .city-card-country {
+      font-size: 13px; color: var(--text2); margin-bottom: 12px;
+    }
+    .city-card-scores {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;
+    }
+    .city-score-item {
+      display: flex; align-items: center; gap: 6px;
+    }
+    .city-score-label { font-size: 11px; color: var(--text3); flex: 1; }
+    .city-score-bar-wrap { flex: 2; height: 4px; background: var(--bg3); border-radius: 2px; }
+    .city-score-bar { height: 100%; border-radius: 2px; transition: width 1s ease; }
+    .city-card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 12px; border-top: 1px solid var(--border);
+    }
+    .city-overall {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .city-overall-label { font-size: 12px; color: var(--text3); }
+    .city-overall-num { font-size: 24px; font-weight: 900; }
+    .city-overall-max { font-size: 13px; color: var(--text3); align-self: flex-end; margin-bottom: 2px; }
+    .view-detail-btn {
+      height: 34px; padding: 0 16px; border-radius: 8px;
+      font-size: 13px; font-weight: 600;
+      background: rgba(59,130,246,0.12); color: var(--accent);
+      border: 1px solid rgba(59,130,246,0.25); transition: all 0.2s;
+    }
+    .view-detail-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* ─────────── 城市详情页 ─────────── */
+    #city-detail-page { display: none; padding-top: 64px; }
+    #city-detail-page.active { display: block; }
+
+    .detail-hero {
+      height: 340px; position: relative; overflow: hidden;
+    }
+    .detail-hero-img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: brightness(0.6);
+    }
+    .detail-hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, var(--bg) 0%, transparent 60%);
+    }
+    .detail-hero-content {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 32px 32px 24px;
+    }
+    .detail-breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: var(--text2); margin-bottom: 12px;
+    }
+    .detail-breadcrumb button {
+      background: none; color: var(--accent); font-size: 13px;
+      padding: 0; display: flex; align-items: center; gap: 4px;
+    }
+    .detail-breadcrumb button:hover { text-decoration: underline; }
+    .detail-city-name {
+      font-size: clamp(32px, 5vw, 56px); font-weight: 900; line-height: 1;
+      margin-bottom: 8px;
+    }
+    .detail-city-meta {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    }
+    .detail-flag { font-size: 28px; }
+    .detail-country { font-size: 18px; color: var(--text2); }
+    .detail-grade-badge {
+      padding: 6px 16px; border-radius: 10px;
+      font-size: 16px; font-weight: 800;
+    }
+    .detail-overview {
+      font-size: 15px; color: var(--text2); line-height: 1.7;
+      max-width: 700px; margin: 16px 32px 0;
+      padding: 16px; background: rgba(255,255,255,0.05);
+      border-radius: var(--radius-sm); border-left: 3px solid var(--accent);
+    }
+
+    /* ─────────── 详情页标签 ─────────── */
+    .detail-tabs {
+      display: flex; gap: 0; padding: 0 24px;
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto; scrollbar-width: none; margin-top: 24px;
+    }
+    .detail-tabs::-webkit-scrollbar { display: none; }
+    .detail-tab {
+      height: 48px; padding: 0 20px;
+      font-size: 14px; font-weight: 600; color: var(--text2);
+      background: none; border-bottom: 2px solid transparent;
+      white-space: nowrap; transition: all 0.2s;
+    }
+    .detail-tab:hover { color: var(--text); }
+    .detail-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .detail-panel { display: none; padding: 28px 24px 60px; animation: fadeIn 0.3s ease; }
+    .detail-panel.active { display: block; }
+
+    /* ─────────── 安全评估面板 ─────────── */
+    .safety-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;
+      margin-bottom: 28px;
+    }
+    .safety-metric {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px; position: relative; overflow: hidden;
+      transition: all 0.2s;
+    }
+    .safety-metric:hover { border-color: var(--border2); }
+    .safety-metric-header {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;
+    }
+    .safety-metric-label {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 14px; font-weight: 600;
+    }
+    .safety-metric-icon { font-size: 18px; }
+    .safety-metric-score {
+      font-size: 28px; font-weight: 900;
+      font-variant-numeric: tabular-nums;
+    }
+    .safety-metric-bar {
+      height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .safety-metric-bar-fill {
+      height: 100%; border-radius: 3px;
+      transition: width 1s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .safety-metric-desc { font-size: 12px; color: var(--text2); line-height: 1.5; }
+    .safety-metric-warning {
+      position: absolute; top: 0; right: 0;
+      width: 0; height: 0;
+      border-top: 28px solid transparent;
+      border-right: 28px solid transparent;
+    }
+    .safety-metric-warning.show { border-right-color: var(--orange); }
+
+    /* 综合评分环 */
+    .overall-score-ring {
+      display: flex; align-items: center; gap: 32px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px 32px; margin-bottom: 24px;
+    }
+    .ring-svg-wrap { position: relative; width: 120px; height: 120px; flex-shrink: 0; }
+    .ring-svg { transform: rotate(-90deg); }
+    .ring-bg { fill: none; stroke: var(--bg3); stroke-width: 10; }
+    .ring-fill {
+      fill: none; stroke-width: 10; stroke-linecap: round;
+      stroke-dasharray: 283; stroke-dashoffset: 283;
+      transition: stroke-dashoffset 1.5s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .ring-center {
+      position: absolute; inset: 0; display: flex;
+      flex-direction: column; align-items: center; justify-content: center;
+    }
+    .ring-num { font-size: 30px; font-weight: 900; }
+    .ring-max { font-size: 13px; color: var(--text3); }
+    .ring-info h3 { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+    .ring-info p { font-size: 14px; color: var(--text2); line-height: 1.6; max-width: 400px; }
+    .ring-grade-big {
+      margin-left: auto; text-align: center;
+    }
+    .ring-grade-letter {
+      font-size: 64px; font-weight: 900; line-height: 1;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .ring-grade-label { font-size: 12px; color: var(--text3); }
+
+    /* 热点警告 */
+    .hotspot-card {
+      display: flex; gap: 12px; padding: 14px 16px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); margin-bottom: 10px;
+      border-left: 3px solid transparent;
+    }
+    .hotspot-card.risk-极高 { border-left-color: var(--red2); }
+    .hotspot-card.risk-高 { border-left-color: var(--red); }
+    .hotspot-card.risk-中高 { border-left-color: var(--orange); }
+    .hotspot-card.risk-中 { border-left-color: var(--yellow); }
+    .hotspot-card.risk-低中 { border-left-color: #22c55e; }
+    .hotspot-card.risk-法律风险 { border-left-color: var(--accent2); }
+    .hotspot-risk-badge {
+      white-space: nowrap; font-size: 11px; font-weight: 700;
+      padding: 3px 8px; border-radius: 6px; align-self: flex-start;
+    }
+    .hotspot-area { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .hotspot-desc { font-size: 13px; color: var(--text2); line-height: 1.5; }
+
+    /* 安全提示 */
+    .tips-list { list-style: none; }
+    .tips-list li {
+      display: flex; gap: 12px; padding: 12px 0;
+      border-bottom: 1px solid var(--border); font-size: 14px;
+      line-height: 1.6; color: var(--text2);
+    }
+    .tips-list li:last-child { border-bottom: none; }
+    .tip-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+    /* 历史背景 */
+    .history-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 20px;
+      font-size: 14px; color: var(--text2); line-height: 1.8;
+    }
+    .history-card::before {
+      content: '📜 历史与地缘背景';
+      display: block; font-size: 14px; font-weight: 700;
+      color: var(--text); margin-bottom: 12px;
+    }
+
+    /* ─────────── 紧急联系面板 ─────────── */
+    .emergency-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px;
+      margin-bottom: 24px;
+    }
+    .emergency-number-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px; text-align: center;
+      transition: all 0.2s;
+    }
+    .emergency-number-card:hover { border-color: var(--accent); }
+    .emergency-icon { font-size: 28px; margin-bottom: 8px; }
+    .emergency-label { font-size: 12px; color: var(--text3); margin-bottom: 4px; }
+    .emergency-number {
+      font-size: 28px; font-weight: 900; color: var(--accent);
+      font-variant-numeric: tabular-nums;
+    }
+    .emergency-sublabel { font-size: 11px; color: var(--text3); margin-top: 4px; }
+    .emergency-copy-btn {
+      margin-top: 8px; font-size: 11px; color: var(--text3);
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 4px; padding: 3px 8px;
+    }
+    .embassy-list { }
+    .embassy-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 0; border-bottom: 1px solid var(--border);
+      gap: 12px;
+    }
+    .embassy-item:last-child { border-bottom: none; }
+    .embassy-name { font-size: 14px; font-weight: 600; }
+    .embassy-phone {
+      font-size: 14px; color: var(--accent); font-weight: 700;
+      white-space: nowrap;
+    }
+    .call-btn {
+      height: 32px; padding: 0 12px; border-radius: 6px;
+      background: rgba(16,185,129,0.1); color: var(--green);
+      border: 1px solid rgba(16,185,129,0.25); font-size: 12px; font-weight: 600;
+      transition: all 0.2s; white-space: nowrap;
+    }
+    .call-btn:hover { background: var(--green); color: #fff; border-color: var(--green); }
+    .hospital-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px; margin-bottom: 10px;
+    }
+    .hospital-name { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .hospital-meta { font-size: 13px; color: var(--text2); }
+    .hospital-meta span { display: inline-flex; align-items: center; gap: 4px; margin-right: 16px; }
+    .self-defense-list { list-style: none; }
+    .self-defense-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 12px; margin-bottom: 8px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); font-size: 13px; line-height: 1.6;
+    }
+    .apps-grid {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;
+    }
+    .app-tag {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 8px 12px; font-size: 13px;
+    }
+    .app-tag-icon { font-size: 16px; }
+
+    /* ─────────── 吃喝玩乐面板 ─────────── */
+    .food-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px; margin-bottom: 12px;
+      display: flex; gap: 14px; align-items: flex-start;
+      transition: all 0.2s;
+    }
+    .food-card:hover { border-color: var(--border2); }
+    .food-icon { font-size: 28px; flex-shrink: 0; }
+    .food-info { flex: 1; }
+    .food-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .food-meta {
+      display: flex; gap: 8px; align-items: center; margin-bottom: 8px;
+    }
+    .food-type {
+      font-size: 11px; background: var(--bg3); color: var(--text2);
+      border-radius: 4px; padding: 2px 8px;
+    }
+    .food-price { font-size: 13px; color: var(--yellow); }
+    .food-desc { font-size: 13px; color: var(--text2); line-height: 1.5; }
+    .food-tip { font-size: 12px; color: var(--green); margin-top: 6px; }
+    .attraction-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px; margin-bottom: 12px;
+      transition: all 0.2s; position: relative; overflow: hidden;
+    }
+    .attraction-card:hover { border-color: var(--border2); }
+    .hidden-gem-badge {
+      position: absolute; top: 12px; right: 12px;
+      background: linear-gradient(135deg, #f59e0b, #f97316);
+      color: #fff; font-size: 10px; font-weight: 700;
+      padding: 3px 8px; border-radius: 10px;
+    }
+    .attraction-name { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .attraction-type {
+      font-size: 11px; color: var(--accent);
+      background: rgba(59,130,246,0.1); border-radius: 4px;
+      padding: 2px 8px; display: inline-block; margin-bottom: 8px;
+    }
+    .attraction-desc { font-size: 13px; color: var(--text2); line-height: 1.5; }
+    .festival-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px; margin-bottom: 12px;
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .festival-date-box {
+      background: var(--accent); color: #fff;
+      border-radius: 10px; padding: 8px 12px; text-align: center;
+      font-size: 11px; font-weight: 700; white-space: nowrap;
+      flex-shrink: 0; min-width: 80px;
+    }
+    .festival-name { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .festival-desc { font-size: 13px; color: var(--text2); line-height: 1.5; }
+    .customs-list { list-style: none; }
+    .customs-list li {
+      display: flex; gap: 10px; padding: 12px 0;
+      border-bottom: 1px solid var(--border); font-size: 14px;
+      line-height: 1.6; color: var(--text2);
+    }
+    .customs-list li:last-child { border-bottom: none; }
+    .transport-info {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 16px;
+      font-size: 14px; color: var(--text2); line-height: 1.7;
+    }
+    .transport-info::before {
+      content: '🚇 交通指南'; display: block;
+      font-size: 14px; font-weight: 700; color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    /* ─────────── 地图页面 ─────────── */
+    #map-page { padding-top: 64px; height: 100vh; display: none; flex-direction: column; }
+    #map-page.active { display: flex; }
+    #map-container {
+      flex: 1; background: var(--bg2); position: relative;
+      display: flex; align-items: stretch;
+    }
+    .map-placeholder {
+      text-align: center; color: var(--text3);
+    }
+    .map-placeholder h3 { font-size: 20px; margin-bottom: 8px; }
+    .map-cities-list {
+      position: absolute; left: 16px; top: 16px; bottom: 16px; width: 280px;
+      background: rgba(10,14,26,0.9); backdrop-filter: blur(20px);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      overflow-y: auto; padding: 16px;
+    }
+    .map-city-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border-radius: 8px; cursor: pointer;
+      transition: background 0.15s;
+    }
+    .map-city-item:hover { background: var(--card); }
+    .map-city-flag { font-size: 20px; }
+    .map-city-info { flex: 1; }
+    .map-city-name { font-size: 14px; font-weight: 600; }
+    .map-city-country { font-size: 11px; color: var(--text3); }
+    .map-city-grade {
+      font-size: 13px; font-weight: 800; padding: 2px 8px; border-radius: 6px;
+    }
+
+    /* ─────────── 全球预警页面 ─────────── */
+    #alerts-page { padding: 84px 24px 40px; display: none; }
+    #alerts-page.active { display: block; }
+    .alert-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; margin-bottom: 16px;
+      display: flex; gap: 16px; align-items: flex-start;
+      animation: fadeIn 0.4s ease forwards;
+      border-left: 4px solid transparent;
+    }
+    .alert-card.level-critical { border-left-color: var(--red2); }
+    .alert-card.level-high { border-left-color: var(--red); }
+    .alert-card.level-medium { border-left-color: var(--orange); }
+    .alert-card.level-low { border-left-color: var(--yellow); }
+    .alert-level-icon { font-size: 28px; flex-shrink: 0; }
+    .alert-content { flex: 1; }
+    .alert-header {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap;
+    }
+    .alert-title { font-size: 16px; font-weight: 700; }
+    .alert-level-badge {
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px;
+    }
+    .alert-date { font-size: 12px; color: var(--text3); margin-left: auto; }
+    .alert-desc { font-size: 14px; color: var(--text2); line-height: 1.6; }
+
+    /* ─────────── 关于/说明模块 ─────────── */
+    .section-header {
+      margin-bottom: 20px;
+    }
+    .section-header h2 { font-size: 18px; font-weight: 700; }
+    .section-header p { font-size: 13px; color: var(--text2); margin-top: 4px; }
+    .sub-section-title {
+      font-size: 15px; font-weight: 700; margin: 24px 0 12px;
+      padding-left: 12px;
+      border-left: 3px solid var(--accent);
+    }
+
+    /* ─────────── 响应式 ─────────── */
+    @media (max-width: 768px) {
+      #navbar { padding: 0 12px; }
+      .nav-logo-text { display: none; }
+      #hero { padding: 60px 16px 40px; }
+      #city-grid { grid-template-columns: 1fr; padding: 0 12px 24px; }
+      .overall-score-ring { flex-direction: column; padding: 20px 16px; }
+      .ring-grade-big { margin-left: 0; }
+      .detail-hero-content { padding: 16px; }
+      .detail-tabs { padding: 0 12px; }
+      .detail-panel { padding: 16px 12px 48px; }
+      #continent-tabs { padding: 0 12px 12px; }
+    }
+    @media (max-width: 480px) {
+      .hero-stats { gap: 24px; }
+      .emergency-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ─────────── 加载提示 ─────────── */
+    .loading-overlay {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(10,14,26,0.8); backdrop-filter: blur(10px);
+      align-items: center; justify-content: center; flex-direction: column; gap: 16px;
+    }
+    .loading-overlay.show { display: flex; }
+    .loading-spinner {
+      width: 40px; height: 40px; border: 3px solid var(--border2);
+      border-top-color: var(--accent); border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    .loading-text { font-size: 14px; color: var(--text2); }
+
+    /* ─────────── Toast ─────────── */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+      background: var(--card2); border: 1px solid var(--border2);
+      border-radius: var(--radius-sm); padding: 12px 20px;
+      font-size: 14px; font-weight: 500;
+      box-shadow: var(--shadow-lg); opacity: 0;
+      transform: translateY(10px); transition: all 0.3s;
+    }
+    .toast.show { opacity: 1; transform: none; }
+
+    /* 无结果 */
+    .no-results {
+      text-align: center; padding: 60px 24px;
+      color: var(--text3); font-size: 15px;
+    }
+    .no-results-icon { font-size: 48px; margin-bottom: 12px; }
+
+    /* 安全颜色辅助 */
+    .score-critical { color: var(--red2); }
+    .score-high { color: var(--red); }
+    .score-medium-high { color: var(--orange); }
+    .score-medium { color: var(--yellow); }
+    .score-low { color: var(--green); }
+    .score-very-low { color: #34d399; }
+
+    /* ─────────── 实时数据面板 ─────────── */
+    .live-panel {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; margin-bottom: 20px;
+    }
+    .live-panel-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 16px; flex-wrap: wrap; gap: 8px;
+    }
+    .live-panel-title {
+      font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 8px;
+    }
+    .live-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: rgba(16,185,129,0.15); color: #10b981;
+      border: 1px solid rgba(16,185,129,0.3); border-radius: 20px;
+      font-size: 11px; font-weight: 700; padding: 2px 10px;
+    }
+    .live-badge::before { content: '●'; animation: pulse 2s infinite; }
+    .live-source {
+      font-size: 11px; color: var(--text3);
+    }
+    .live-error {
+      font-size: 13px; color: var(--text3); padding: 12px 0; text-align: center;
+    }
+    .live-loading {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: var(--text3); padding: 12px 0;
+    }
+    .live-loading-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+      animation: pulse 1s infinite;
+    }
+
+    /* 天气卡片 */
+    .weather-current {
+      display: flex; align-items: center; gap: 20px; margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .weather-icon-big { font-size: 48px; line-height: 1; }
+    .weather-temp-big {
+      font-size: 36px; font-weight: 800; line-height: 1;
+      color: var(--text);
+    }
+    .weather-desc-big { font-size: 14px; color: var(--text2); margin-top: 4px; }
+    .weather-meta {
+      display: flex; gap: 16px; font-size: 13px; color: var(--text2);
+      flex-wrap: wrap;
+    }
+    .weather-meta-item { display: flex; align-items: center; gap: 4px; }
+    .weather-alert-banner {
+      background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.3);
+      border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #fca5a5;
+      margin-top: 12px; display: flex; align-items: center; gap: 8px;
+    }
+    .weather-forecast {
+      display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;
+      margin-top: 12px;
+    }
+    .weather-forecast::-webkit-scrollbar { height: 4px; }
+    .forecast-day {
+      background: var(--card2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 10px 12px; text-align: center;
+      min-width: 64px; flex-shrink: 0;
+    }
+    .forecast-day-label { font-size: 11px; color: var(--text3); margin-bottom: 4px; }
+    .forecast-icon { font-size: 20px; margin: 4px 0; }
+    .forecast-temps { font-size: 12px; }
+    .forecast-max { font-weight: 700; color: var(--text); }
+    .forecast-min { color: var(--text3); }
+
+    /* 地震数据 */
+    .quake-list { display: flex; flex-direction: column; gap: 8px; }
+    .quake-item {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--card2); border-radius: 10px; padding: 10px 14px;
+      border-left: 3px solid var(--orange);
+    }
+    .quake-mag {
+      font-size: 20px; font-weight: 900; min-width: 44px; text-align: center;
+      color: var(--orange);
+    }
+    .quake-mag.large { color: var(--red); }
+    .quake-info { flex: 1; }
+    .quake-place { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+    .quake-meta { font-size: 11px; color: var(--text3); }
+    .quake-none { font-size: 13px; color: var(--text3); padding: 8px 0; }
+
+    /* 全球灾害预警卡片（预警页） */
+    .realtime-alerts-header {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      padding: 0 0 16px; margin-bottom: 4px;
+    }
+    .alert-stats-bar {
+      display: flex; gap: 12px; flex-wrap: wrap;
+    }
+    .alert-stat-chip {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 700;
+    }
+    .alert-stat-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .disaster-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 18px 20px; margin-bottom: 12px;
+      border-left: 4px solid transparent;
+      animation: fadeIn 0.4s ease forwards;
+      position: relative;
+    }
+    .disaster-card.level-red { border-left-color: #dc2626; }
+    .disaster-card.level-orange { border-left-color: #f97316; }
+    .disaster-card.level-green { border-left-color: #f59e0b; }
+    .disaster-header {
+      display: flex; align-items: flex-start; gap: 14px; margin-bottom: 10px;
+    }
+    .disaster-type-icon { font-size: 32px; flex-shrink: 0; line-height: 1; }
+    .disaster-body { flex: 1; }
+    .disaster-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; line-height: 1.4; }
+    .disaster-meta {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;
+    }
+    .disaster-level-badge {
+      font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 20px;
+      background: rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .disaster-country { font-size: 12px; color: var(--text3); }
+    .disaster-date { font-size: 12px; color: var(--text3); margin-left: auto; }
+    .disaster-desc { font-size: 13px; color: var(--text2); line-height: 1.6; }
+    .disaster-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 11px; color: var(--accent); margin-top: 8px;
+      text-decoration: none;
+    }
+    .disaster-link:hover { text-decoration: underline; }
+    .source-tag {
+      position: absolute; top: 14px; right: 16px;
+      font-size: 10px; color: var(--text3);
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 2px 6px;
+    }
+    .alerts-refresh-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(59,130,246,0.15); color: var(--accent);
+      border: 1px solid rgba(59,130,246,0.3); border-radius: 8px;
+      padding: 6px 14px; font-size: 13px; font-weight: 600; cursor: pointer;
+      transition: background 0.2s;
+    }
+    .alerts-refresh-btn:hover { background: rgba(59,130,246,0.25); }
+    .alerts-last-update { font-size: 11px; color: var(--text3); }
+    .alerts-empty {
+      text-align: center; padding: 60px 24px;
+      color: var(--text3);
+    }
+    .alerts-empty-icon { font-size: 48px; margin-bottom: 12px; }
+
+    /* 实时面板标签页 */
+    .detail-tab-live {
+      background: rgba(16,185,129,0.15); color: #10b981;
+      border-color: rgba(16,185,129,0.3);
+    }
+    .detail-tab-live.active {
+      background: rgba(16,185,129,0.25); color: #10b981;
+    }
+
+    /* ─────────── 骨架屏 ─────────── */
+    @keyframes shimmer {
+      0%   { background-position: -400px 0; }
+      100% { background-position:  400px 0; }
+    }
+    .skel-wrap { padding: 4px 0; display: flex; flex-direction: column; gap: 10px; }
+    .skel-row {
+      height: 14px; border-radius: 8px;
+      background: linear-gradient(90deg, var(--card2) 25%, var(--card) 50%, var(--card2) 75%);
+      background-size: 800px 100%;
+      animation: shimmer 1.4s ease infinite;
+    }
+    .skel-card {
+      height: 90px; border-radius: var(--radius-sm);
+      background: linear-gradient(90deg, var(--card2) 25%, var(--card) 50%, var(--card2) 75%);
+      background-size: 800px 100%;
+      animation: shimmer 1.4s ease infinite;
+      margin-bottom: 10px;
+    }
+
+    /* ─────────── 缓存状态徽章 ─────────── */
+    .cache-badge {
+      display: inline-flex; align-items: center; gap: 3px;
+      font-size: 10px; font-weight: 800; padding: 1px 7px; border-radius: 20px;
+      letter-spacing: 0.4px; vertical-align: middle;
+    }
+    .cache-badge.live    { background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid rgba(16,185,129,0.3); }
+    .cache-badge.cached  { background: rgba(245,158,11,0.15);  color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+    .cache-badge.offline { background: rgba(239,68,68,0.15);   color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+    .cache-ts { font-size: 10px; color: var(--text3); vertical-align: middle; }
+
+    /* ─────────── 数据来源行 ─────────── */
+    .live-src-row {
+      display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+      font-size: 11px; color: var(--text3); margin-top: 10px; padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ─────────── 降级/OK 横幅 ─────────── */
+    .live-offline {
+      display: flex; align-items: flex-start; gap: 12px; padding: 14px;
+      background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.2);
+      border-radius: 10px; font-size: 13px; color: var(--text2);
+    }
+    .live-offline span { font-size: 22px; flex-shrink: 0; }
+    .live-ok-banner {
+      padding: 12px 16px;
+      background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.25);
+      border-radius: 10px; font-size: 13px; color: #6ee7b7;
+    }
+
+    /* ─────────── 地震相关补充 ─────────── */
+    .quake-mag.medium { color: #f59e0b; }
+    .quake-link {
+      font-size: 11px; color: var(--accent); white-space: nowrap;
+      text-decoration: none; flex-shrink: 0;
+    }
+    .quake-link:hover { text-decoration: underline; }
+    .pager-alert {
+      padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: 700;
+    }
+    .pager-alert.red    { background: rgba(220,38,38,0.2); color: #ef4444; }
+    .pager-alert.orange { background: rgba(249,115,22,0.2); color: #f97316; }
+
+    /* ─────────── 预报卡片补充 ─────────── */
+    .forecast-rain { font-size: 10px; color: #60a5fa; margin-top: 2px; }
+
+    /* ─────────── 首页城市卡片：天气徽章 ─────────── */
+    .city-weather-badge {
+      position: absolute; bottom: 10px; left: 10px;
+      background: rgba(0,0,0,0.6); backdrop-filter: blur(8px);
+      color: #e8edf5; font-size: 12px; font-weight: 700;
+      padding: 3px 8px; border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.15);
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .city-weather-badge.alert {
+      background: rgba(239,68,68,0.75); border-color: rgba(239,68,68,0.5);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ████ 导航栏 ████ -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <div class="nav-logo-icon">🌐</div>
+    <span class="nav-logo-text">SafeCity Global</span>
+  </div>
+  <div class="nav-search-wrap">
+    <span class="nav-search-icon">🔍</span>
+    <input type="text" id="nav-search" placeholder="搜索城市、国家..." autocomplete="off">
+    <div id="search-dropdown"></div>
+  </div>
+  <div class="nav-right">
+    <button class="nav-btn active" onclick="showPage('home')">首页</button>
+    <button class="nav-btn" onclick="showPage('alerts')">⚠️ 预警</button>
+    <button class="nav-btn" onclick="showPage('map')">🗺️ 地图</button>
+  </div>
+</nav>
+
+<!-- ████ 加载层 ████ -->
+<div class="loading-overlay" id="loading">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">加载城市数据...</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<!-- ████ 首页 ████ -->
+<div id="home-page" class="page active">
+  <div id="hero">
+    <div class="hero-badge">🌍 精选全球 9 大城市 · 持续扩充中</div>
+    <h1 class="hero-title">全球城市安全<br>旅行指南</h1>
+    <p class="hero-subtitle">
+      出行前，先了解目的地的真实安全状况。<br>
+      覆盖犯罪风险、自然灾害、地缘冲突、紧急联系，以及本地最棒的吃喝玩乐。
+    </p>
+    <div class="hero-search-big">
+      <span class="hero-search-icon">🔍</span>
+      <input type="text" id="hero-search" placeholder="输入城市名称，例如：东京、巴黎、纽约..." autocomplete="off">
+      <button class="hero-search-btn" onclick="triggerSearch()">→</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num" id="stat-cities">9</div>
+        <div class="hero-stat-label">收录城市</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-label">洲际覆盖</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">50+</div>
+        <div class="hero-stat-label">安全维度</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">免费</div>
+        <div class="hero-stat-label">永久开放</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 安全等级图例 -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#00b894"></div>A 非常安全</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#0984e3"></div>B+ 较安全</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#6c5ce7"></div>B 一般</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#fdcb6e"></div>B- 需谨慎</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#e17055"></div>C+ 风险较高</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#b2bec3"></div>D+ 高度危险</div>
+  </div>
+
+  <!-- 洲际筛选 -->
+  <div id="continent-tabs">
+    <button class="continent-tab active" onclick="filterContinent('全部', this)">全部城市</button>
+    <button class="continent-tab" onclick="filterContinent('亚洲', this)">🌏 亚洲</button>
+    <button class="continent-tab" onclick="filterContinent('欧洲', this)">🏰 欧洲</button>
+    <button class="continent-tab" onclick="filterContinent('北美洲', this)">🗽 北美洲</button>
+    <button class="continent-tab" onclick="filterContinent('拉丁美洲', this)">🌮 拉丁美洲</button>
+    <button class="continent-tab" onclick="filterContinent('非洲', this)">🦁 非洲</button>
+    <button class="continent-tab" onclick="filterContinent('大洋洲', this)">🦘 大洋洲</button>
+    <button class="continent-tab" onclick="filterContinent('中东', this)">🕌 中东</button>
+  </div>
+
+  <div class="section-title">城市安全评分榜</div>
+  <div id="city-grid"></div>
+</div>
+
+<!-- ████ 城市详情页 ████ -->
+<div id="city-detail-page">
+  <div class="detail-hero">
+    <img id="detail-hero-img" src="" alt="" class="detail-hero-img">
+    <div class="detail-hero-overlay"></div>
+    <div class="detail-hero-content">
+      <div class="detail-breadcrumb">
+        <button onclick="backToHome()">← 返回首页</button>
+        <span>›</span>
+        <span id="detail-continent"></span>
+        <span>›</span>
+        <span id="detail-country-breadcrumb"></span>
+      </div>
+      <h1 class="detail-city-name">
+        <span id="detail-flag"></span>&nbsp;<span id="detail-name"></span>
+      </h1>
+      <div class="detail-city-meta">
+        <span class="detail-country" id="detail-country"></span>
+        <span class="detail-grade-badge" id="detail-grade-badge"></span>
+      </div>
+    </div>
+  </div>
+  <div class="detail-overview" id="detail-overview"></div>
+
+  <div class="detail-tabs">
+    <button class="detail-tab active" onclick="switchDetailTab('safety', this)">🛡️ 安全评估</button>
+    <button class="detail-tab" onclick="switchDetailTab('emergency', this)">📞 紧急联系</button>
+    <button class="detail-tab detail-tab-live" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
+    <button class="detail-tab" onclick="switchDetailTab('lifestyle', this)">🍜 吃喝玩乐</button>
+    <button class="detail-tab" onclick="switchDetailTab('hotspots', this)">⚠️ 危险区域</button>
+    <button class="detail-tab" onclick="switchDetailTab('history', this)">📜 历史背景</button>
+  </div>
+
+  <!-- 安全评估面板 -->
+  <div id="panel-safety" class="detail-panel active">
+    <div class="overall-score-ring" id="overall-ring"></div>
+    <div class="section-header">
+      <h2>各维度安全评分</h2>
+      <p>满分100分，分数越高代表该维度风险越低</p>
+    </div>
+    <div class="safety-grid" id="safety-metrics-grid"></div>
+    <div class="sub-section-title">🛡️ 出行安全建议</div>
+    <ul class="tips-list" id="safety-tips-list"></ul>
+  </div>
+
+  <!-- 紧急联系面板 -->
+  <div id="panel-emergency" class="detail-panel">
+    <div class="section-header">
+      <h2>紧急求助电话</h2>
+      <p>以下号码均为当地真实有效号码，遇到紧急情况请立即拨打</p>
+    </div>
+    <div class="emergency-grid" id="emergency-numbers-grid"></div>
+    <div class="sub-section-title">🏥 推荐医院（含外语服务）</div>
+    <div id="hospitals-list"></div>
+    <div class="sub-section-title">🏛️ 大使馆 / 领事馆</div>
+    <div class="embassy-list" id="embassy-list"></div>
+    <div class="sub-section-title">📱 推荐安全应用</div>
+    <div class="apps-grid" id="apps-grid"></div>
+    <div class="sub-section-title">🥋 自保策略</div>
+    <ul class="self-defense-list" id="self-defense-list"></ul>
+  </div>
+
+  <!-- 吃喝玩乐面板 -->
+  <div id="panel-lifestyle" class="detail-panel">
+    <div class="sub-section-title">🍽️ 美食推荐</div>
+    <div id="food-list"></div>
+    <div class="sub-section-title">🎡 景点推荐（含小众隐藏地）</div>
+    <div id="attractions-list"></div>
+    <div class="sub-section-title">🎉 节庆活动</div>
+    <div id="festivals-list"></div>
+    <div class="sub-section-title">🎎 文化习俗</div>
+    <ul class="customs-list" id="customs-list"></ul>
+    <div class="sub-section-title">🚇 交通指南</div>
+    <div class="transport-info" id="transport-info"></div>
+  </div>
+
+  <!-- 危险区域面板 -->
+  <div id="panel-hotspots" class="detail-panel">
+    <div class="section-header">
+      <h2>⚠️ 高风险区域警告</h2>
+      <p>以下区域为经过综合评估的高风险地点，建议游客尽量避免前往</p>
+    </div>
+    <div id="hotspots-list"></div>
+    <div class="sub-section-title">✅ 相对安全区域</div>
+    <div id="safe-areas-list"></div>
+  </div>
+
+  <!-- 历史背景面板 -->
+  <div id="panel-history" class="detail-panel">
+    <div class="history-card" id="history-content"></div>
+    <div class="sub-section-title">🌡️ 综合风险评分雷达</div>
+    <div id="risk-radar" style="padding:20px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);">
+      <canvas id="radar-canvas" width="400" height="300" style="max-width:100%;margin:0 auto;display:block;"></canvas>
+    </div>
+  </div>
+
+  <!-- 实时数据面板 -->
+  <div id="panel-live" class="detail-panel">
+    <div class="section-header">
+      <h2>🌐 实时数据</h2>
+      <p>自动拉取最新天气、地震活动及附近灾害预警</p>
+    </div>
+
+    <!-- 实时天气 -->
+    <div class="live-panel" id="live-weather-panel">
+      <div class="live-panel-header">
+        <div class="live-panel-title">☁️ 当前天气 <span class="live-badge">LIVE</span></div>
+        <div class="live-source" id="live-weather-source">Open-Meteo</div>
+      </div>
+      <div id="live-weather-content">
+        <div class="live-loading"><div class="live-loading-dot"></div>正在获取实时天气数据...</div>
+      </div>
+    </div>
+
+    <!-- 近期地震 -->
+    <div class="live-panel" id="live-quake-panel">
+      <div class="live-panel-header">
+        <div class="live-panel-title">🌍 近期地震活动 <span class="live-badge">LIVE</span></div>
+        <div class="live-source">USGS（美国地质调查局）</div>
+      </div>
+      <div id="live-quake-content">
+        <div class="live-loading"><div class="live-loading-dot"></div>正在查询周边地震记录...</div>
+      </div>
+    </div>
+
+    <!-- 附近灾害预警 -->
+    <div class="live-panel" id="live-disaster-panel">
+      <div class="live-panel-header">
+        <div class="live-panel-title">⚠️ 附近灾害预警 <span class="live-badge">LIVE</span></div>
+        <div class="live-source">GDACS（联合国）</div>
+      </div>
+      <div id="live-disaster-content">
+        <div class="live-loading"><div class="live-loading-dot"></div>正在获取联合国灾害预警...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ████ 全球预警页 ████ -->
+<div id="alerts-page">
+  <div class="section-title">🚨 全球实时灾害预警</div>
+  <div class="realtime-alerts-header">
+    <div class="live-badge">LIVE</div>
+    <span class="alerts-last-update" id="alerts-last-update">正在加载...</span>
+    <button class="alerts-refresh-btn" onclick="refreshAlertsPage()">🔄 刷新</button>
+  </div>
+  <div class="alert-stats-bar" id="alert-stats-bar">
+    <div class="alert-stat-chip"><div class="alert-stat-dot" style="background:#dc2626"></div><span id="stat-red">-</span> 极端危险</div>
+    <div class="alert-stat-chip"><div class="alert-stat-dot" style="background:#f97316"></div><span id="stat-orange">-</span> 危险</div>
+    <div class="alert-stat-chip"><div class="alert-stat-dot" style="background:#6b7280"></div>来源：GDACS + USGS</div>
+  </div>
+  <div id="alerts-container" style="margin-top:16px;"></div>
+</div>
+
+<!-- ████ 地图页 ████ -->
+<div id="map-page">
+  <div id="map-container">
+    <div class="map-cities-list" id="map-cities-list"></div>
+    <!-- 嵌入 Leaflet 地图 -->
+    <div id="leaflet-map" style="flex:1;height:100%;"></div>
+  </div>
+</div>
+
+<!-- ████ JS 主逻辑 ████ -->
+<script src="data.js"></script>
+<script src="realtime-api.js"></script>
+<script>
+// ─────────────────────────────────────────────────────
+// 全局状态
+// ─────────────────────────────────────────────────────
+let currentCity = null;
+let currentFilter = '全部';
+
+// ─────────────────────────────────────────────────────
+// 页面导航
+// ─────────────────────────────────────────────────────
+function showPage(name) {
+  // 隐藏所有页面（包含独立定义的页面）
+  ['home-page', 'city-detail-page', 'alerts-page', 'map-page'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+  
+  const pages = {
+    'home': 'home-page',
+    'alerts': 'alerts-page',
+    'map': 'map-page',
+    'detail': 'city-detail-page'
+  };
+  const el = document.getElementById(pages[name]);
+  if (el) el.classList.add('active');
+
+  // 同步导航按钮状态
+  document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+  const btnMap = { home: 0, alerts: 1, map: 2 };
+  const navBtns = document.querySelectorAll('.nav-btn');
+  if (btnMap[name] !== undefined) navBtns[btnMap[name]]?.classList.add('active');
+
+  // 初始化特定页面
+  if (name === 'alerts') initAlertsPage();
+  if (name === 'map') initMapPage();
+  if (name === 'home') window.scrollTo(0, 0);
+}
+
+function backToHome() {
+  document.getElementById('city-detail-page').classList.remove('active');
+  document.getElementById('home-page').classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+  window.scrollTo(0, 0);
+}
+
+// ─────────────────────────────────────────────────────
+// 安全颜色计算
+// ─────────────────────────────────────────────────────
+function scoreColor(score) {
+  if (score >= 90) return '#10b981';
+  if (score >= 75) return '#22c55e';
+  if (score >= 60) return '#f59e0b';
+  if (score >= 45) return '#f97316';
+  if (score >= 30) return '#ef4444';
+  return '#dc2626';
+}
+
+function gradeStyle(grade) {
+  return SAFETY_COLORS[grade] || SAFETY_COLORS['B'];
+}
+
+function getScoreClass(score) {
+  if (score >= 85) return 'score-very-low';
+  if (score >= 70) return 'score-low';
+  if (score >= 55) return 'score-medium';
+  if (score >= 40) return 'score-medium-high';
+  if (score >= 25) return 'score-high';
+  return 'score-critical';
+}
+
+// ─────────────────────────────────────────────────────
+// 首页城市卡片渲染
+// ─────────────────────────────────────────────────────
+function renderCityGrid(filterContinent = '全部') {
+  const grid = document.getElementById('city-grid');
+  let cities = CITY_INDEX;
+  if (filterContinent !== '全部') {
+    cities = cities.filter(c => {
+      const cityData = CITY_DATABASE[c.id];
+      return cityData && (cityData.continent === filterContinent || 
+        (filterContinent === '中东' && c.id === 'dubai'));
+    });
+  }
+
+  if (!cities.length) {
+    grid.innerHTML = `
+      <div class="no-results" style="grid-column:1/-1">
+        <div class="no-results-icon">🗺️</div>
+        <div>该区域暂无城市数据，持续收录中...</div>
+      </div>`;
+    return;
+  }
+
+  // 按安全分从高到低排序
+  cities = [...cities].sort((a, b) => b.safetyScore - a.safetyScore);
+  
+  grid.innerHTML = cities.map((city, idx) => {
+    const gs = gradeStyle(city.safetyGrade);
+    const data = CITY_DATABASE[city.id];
+    const grades = Object.values(data.safety.grades).slice(0, 4);
+    return `
+    <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
+         onclick="openCity('${city.id}')"
+         data-city-id="${city.id}"
+         data-lat="${data.lat || ''}"
+         data-lng="${data.lng || ''}">
+      <div class="city-card-img">
+        <img src="${city.image}" alt="${city.name}" loading="lazy" onerror="this.src='https://picsum.photos/seed/${city.id}/400/180'">
+        <div class="city-card-overlay"></div>
+        <div class="city-card-flag">${city.flag}</div>
+        <div class="city-card-grade" style="background:${gs.bg};color:${gs.text}">${city.safetyGrade}</div>
+      </div>
+      <div class="city-card-body">
+        <div class="city-card-name">${city.name}</div>
+        <div class="city-card-country">${city.country} · ${data.continent}</div>
+        <div class="city-card-scores">
+          ${grades.map(g => `
+          <div class="city-score-item">
+            <span class="city-score-label">${g.label}</span>
+            <div class="city-score-bar-wrap">
+              <div class="city-score-bar" style="width:${g.score}%;background:${scoreColor(g.score)}"></div>
+            </div>
+          </div>`).join('')}
+        </div>
+        <div class="city-card-footer">
+          <div class="city-overall">
+            <span class="city-overall-label">综合安全分</span>
+            <span class="city-overall-num ${getScoreClass(city.safetyScore)}">${city.safetyScore}</span>
+            <span class="city-overall-max">/100</span>
+          </div>
+          <button class="view-detail-btn">查看详情 →</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('stat-cities').textContent = Object.keys(CITY_DATABASE).length + '+';
+  // 渲染完成后异步注入实时天气徽章
+  if (typeof RT_UI !== 'undefined') RT_UI.injectCityWeatherBadges();
+}
+
+function filterContinent(name, btn) {
+  currentFilter = name;
+  document.querySelectorAll('.continent-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderCityGrid(name);
+}
+
+// ─────────────────────────────────────────────────────
+// 城市详情页
+// ─────────────────────────────────────────────────────
+function openCity(cityId) {
+  const data = CITY_DATABASE[cityId];
+  if (!data) { showToast('城市数据加载中，敬请期待...'); return; }
+  currentCity = data;
+
+  showLoadingBriefly(() => {
+    populateCityDetail(data);
+    showPage('detail');
+    window.scrollTo(0, 0);
+    // 默认激活安全面板
+    switchDetailTab('safety', document.querySelector('.detail-tab'));
+  });
+}
+
+function populateCityDetail(data) {
+  // 英雄区域
+  document.getElementById('detail-hero-img').src = data.image;
+  document.getElementById('detail-hero-img').onerror = function() {
+    this.src = `https://picsum.photos/seed/${data.id}/1200/400`;
+  };
+  document.getElementById('detail-flag').textContent = data.flag;
+  document.getElementById('detail-name').textContent = data.name;
+  document.getElementById('detail-continent').textContent = data.continent;
+  document.getElementById('detail-country-breadcrumb').textContent = data.country;
+  document.getElementById('detail-country').textContent = data.country;
+  document.getElementById('detail-overview').textContent = data.overview;
+
+  const gs = gradeStyle(data.safety.grade);
+  const gradeBadge = document.getElementById('detail-grade-badge');
+  gradeBadge.textContent = `${data.safety.grade} · ${gs.label}`;
+  gradeBadge.style.cssText = `background:${gs.bg};color:${gs.text};`;
+
+  // 渲染各面板
+  renderSafetyPanel(data);
+  renderEmergencyPanel(data);
+  renderLifestylePanel(data);
+  renderHotspotsPanel(data);
+  renderHistoryPanel(data);
+}
+
+function switchDetailTab(tabName, btn) {
+  // 如果btn来自事件但不是实际按钮，找第一个tab按钮
+  const allTabs = document.querySelectorAll('.detail-tab');
+  const allPanels = document.querySelectorAll('.detail-panel');
+  allTabs.forEach(t => t.classList.remove('active'));
+  allPanels.forEach(p => p.classList.remove('active'));
+  
+  const targetPanel = document.getElementById(`panel-${tabName}`);
+  if (targetPanel) targetPanel.classList.add('active');
+  
+  // 找对应tab按钮激活
+  allTabs.forEach(t => {
+    if (t.getAttribute('onclick') && t.getAttribute('onclick').includes(`'${tabName}'`)) {
+      t.classList.add('active');
+    }
+  });
+
+  // 特殊初始化
+  if (tabName === 'history') setTimeout(drawRadarChart, 100);
+  if (tabName === 'live' && currentCity) loadCityLiveData(currentCity);
+}
+
+// ─────────────────────────────────────────────────────
+// 安全评估面板
+// ─────────────────────────────────────────────────────
+function renderSafetyPanel(data) {
+  const s = data.safety;
+  const gs = gradeStyle(s.grade);
+  
+  // 评分环
+  const ringEl = document.getElementById('overall-ring');
+  const circumference = 2 * Math.PI * 45; // r=45
+  const offset = circumference * (1 - s.overall / 100);
+  ringEl.innerHTML = `
+    <div class="ring-svg-wrap">
+      <svg class="ring-svg" viewBox="0 0 100 100" width="120" height="120">
+        <circle class="ring-bg" cx="50" cy="50" r="45"/>
+        <circle class="ring-fill" id="ring-fill" cx="50" cy="50" r="45"
+          stroke="${scoreColor(s.overall)}"
+          stroke-dasharray="${circumference}"
+          stroke-dashoffset="${circumference}"/>
+      </svg>
+      <div class="ring-center">
+        <span class="ring-num" style="color:${scoreColor(s.overall)}">${s.overall}</span>
+        <span class="ring-max">/100</span>
+      </div>
+    </div>
+    <div class="ring-info">
+      <h3>${data.name} · ${data.country}</h3>
+      <p>综合安全指数 <strong style="color:${scoreColor(s.overall)}">${s.overall}/100</strong>，包含犯罪、交通、自然灾害、政治稳定等多维度评分。</p>
+    </div>
+    <div class="ring-grade-big">
+      <div class="ring-grade-letter" style="background:linear-gradient(135deg,${gs.bg},${gs.bg}80);-webkit-background-clip:text">${s.grade}</div>
+      <div class="ring-grade-label">${gs.label}</div>
+    </div>`;
+  
+  // 动画
+  setTimeout(() => {
+    const fill = document.getElementById('ring-fill');
+    if (fill) fill.style.strokeDashoffset = offset;
+  }, 200);
+
+  // 各维度
+  const icons = {
+    robbery: '🔫', homicide: '⚠️', traffic: '🚗', theft: '👜',
+    scam: '🎭', drugs: '💊', natural: '🌪️', political: '🏛️'
+  };
+  const grid = document.getElementById('safety-metrics-grid');
+  grid.innerHTML = Object.entries(s.grades).map(([key, g]) => {
+    const hasWarning = g.desc.includes('⚠️') || g.score < 50;
+    return `
+    <div class="safety-metric">
+      <div class="safety-metric-warning ${hasWarning ? 'show' : ''}"></div>
+      <div class="safety-metric-header">
+        <div class="safety-metric-label">
+          <span class="safety-metric-icon">${icons[key] || '📊'}</span>
+          <span>${g.label}</span>
+        </div>
+        <span class="safety-metric-score ${getScoreClass(g.score)}">${g.score}</span>
+      </div>
+      <div class="safety-metric-bar">
+        <div class="safety-metric-bar-fill" style="width:0%;background:${scoreColor(g.score)}" 
+             data-width="${g.score}%"></div>
+      </div>
+      <div class="safety-metric-desc">${g.desc}</div>
+    </div>`;
+  }).join('');
+
+  // 进度条动画
+  setTimeout(() => {
+    grid.querySelectorAll('.safety-metric-bar-fill').forEach(el => {
+      el.style.width = el.dataset.width;
+    });
+  }, 300);
+
+  // 安全提示
+  const tipsList = document.getElementById('safety-tips-list');
+  const tipIcons = ['💡','⚡','🔒','📍','👁️','🧭','📱','🌂'];
+  tipsList.innerHTML = s.tips.map((tip, i) => `
+    <li><span class="tip-icon">${tipIcons[i % tipIcons.length]}</span><span>${tip}</span></li>
+  `).join('');
+}
+
+// ─────────────────────────────────────────────────────
+// 紧急联系面板
+// ─────────────────────────────────────────────────────
+function renderEmergencyPanel(data) {
+  const e = data.emergency;
+  
+  // 紧急号码卡片
+  const numGrid = document.getElementById('emergency-numbers-grid');
+  const numbers = [
+    { icon: '👮', label: '警察', number: e.police, sub: 'Police' },
+    { icon: '🚑', label: '救护车', number: e.ambulance, sub: 'Ambulance' },
+    { icon: '🚒', label: '消防', number: e.fire, sub: 'Fire' },
+  ];
+  if (e.coastguard) numbers.push({ icon: '⚓', label: '海岸警卫', number: e.coastguard, sub: 'Coast Guard' });
+  if (e.touristPolice) numbers.push({ icon: '🎒', label: '旅游警察', number: e.touristPolice, sub: 'Tourist Police' });
+  if (e.touristHotline) numbers.push({ icon: '📞', label: '旅游热线', number: e.touristHotline, sub: 'Tourist Hotline' });
+  if (e.european) numbers.push({ icon: '🇪🇺', label: '欧盟急救', number: e.european, sub: 'EU Emergency' });
+
+  numGrid.innerHTML = numbers.map(n => `
+    <div class="emergency-number-card">
+      <div class="emergency-icon">${n.icon}</div>
+      <div class="emergency-label">${n.label}</div>
+      <div class="emergency-number">${n.number}</div>
+      <div class="emergency-sublabel">${n.sub}</div>
+      <button class="emergency-copy-btn" onclick="copyText('${n.number}','${n.label}号码')">📋 复制</button>
+    </div>`).join('');
+
+  // 医院
+  const hList = document.getElementById('hospitals-list');
+  hList.innerHTML = e.hospitals.map(h => `
+    <div class="hospital-card">
+      <div class="hospital-name">🏥 ${h.name}</div>
+      <div class="hospital-meta">
+        <span>📞 <a href="tel:${h.phone}" style="color:var(--accent)">${h.phone}</a></span>
+        <span>📍 ${h.address}</span>
+      </div>
+    </div>`).join('');
+
+  // 大使馆
+  const emList = document.getElementById('embassy-list');
+  emList.innerHTML = Object.entries(e.embassies).map(([name, phone]) => `
+    <div class="embassy-item">
+      <span class="embassy-name">🏛️ ${name}</span>
+      <span class="embassy-phone">${phone}</span>
+      <button class="call-btn" onclick="copyText('${phone}','大使馆电话')">📋 复制</button>
+    </div>`).join('');
+
+  // 推荐APP
+  const appsEl = document.getElementById('apps-grid');
+  appsEl.innerHTML = (e.apps || []).map(app => `
+    <div class="app-tag"><span class="app-tag-icon">📱</span>${app}</div>`).join('');
+
+  // 自保策略
+  const sdList = document.getElementById('self-defense-list');
+  sdList.innerHTML = (e.selfDefense || []).map(s => `
+    <li><span>🛡️</span><span>${s}</span></li>`).join('');
+}
+
+// ─────────────────────────────────────────────────────
+// 吃喝玩乐面板
+// ─────────────────────────────────────────────────────
+function renderLifestylePanel(data) {
+  const l = data.lifestyle;
+
+  // 美食
+  const foodEmojis = ['🍜','🍣','🌮','🍕','🥩','🦞','🍝','🥗','🍱','🍛'];
+  document.getElementById('food-list').innerHTML = (l.food || []).map((f, i) => `
+    <div class="food-card">
+      <span class="food-icon">${foodEmojis[i % foodEmojis.length]}</span>
+      <div class="food-info">
+        <div class="food-name">${f.name}</div>
+        <div class="food-meta">
+          <span class="food-type">${f.type}</span>
+          <span class="food-price">${f.price}</span>
+        </div>
+        <div class="food-desc">${f.desc}</div>
+        ${f.tip ? `<div class="food-tip">💡 ${f.tip}</div>` : ''}
+      </div>
+    </div>`).join('');
+
+  // 景点
+  document.getElementById('attractions-list').innerHTML = (l.attractions || []).map(a => `
+    <div class="attraction-card">
+      ${a.hidden ? '<span class="hidden-gem-badge">💎 隐藏宝藏</span>' : ''}
+      <div class="attraction-name">${a.name}</div>
+      <span class="attraction-type">${a.type}</span>
+      <div class="attraction-desc">${a.desc}</div>
+    </div>`).join('');
+
+  // 节庆
+  document.getElementById('festivals-list').innerHTML = (l.festivals || []).map(f => `
+    <div class="festival-card">
+      <div class="festival-date-box">📅 ${f.date.length > 12 ? f.date.substring(0,12)+'…' : f.date}</div>
+      <div>
+        <div class="festival-name">${f.name}</div>
+        <div class="festival-desc">${f.desc}</div>
+      </div>
+    </div>`).join('');
+
+  // 风俗
+  const customIcons = ['🙏','🤝','🍽️','👗','🚪','💰','📸','🎎'];
+  document.getElementById('customs-list').innerHTML = (l.customs || []).map((c, i) => `
+    <li><span>${customIcons[i % customIcons.length]}</span><span>${c}</span></li>`).join('');
+
+  // 交通
+  document.getElementById('transport-info').textContent = l.transport || '';
+}
+
+// ─────────────────────────────────────────────────────
+// 危险区域面板
+// ─────────────────────────────────────────────────────
+function renderHotspotsPanel(data) {
+  const s = data.safety;
+  const riskColors = {
+    '极高': '#dc2626', '高': '#ef4444', '中高': '#f97316',
+    '中': '#f59e0b', '低中': '#22c55e', '法律风险': '#6366f1'
+  };
+
+  document.getElementById('hotspots-list').innerHTML = (s.hotspots || []).map(h => `
+    <div class="hotspot-card risk-${h.risk}">
+      <div>
+        <div class="hotspot-area">⚠️ ${h.area}</div>
+        <div class="hotspot-desc">${h.desc}</div>
+      </div>
+      <div class="hotspot-risk-badge" style="background:${riskColors[h.risk] || '#6b7280'}22;color:${riskColors[h.risk] || '#6b7280'}">
+        风险：${h.risk}
+      </div>
+    </div>`).join('');
+
+  const safeEl = document.getElementById('safe-areas-list');
+  safeEl.innerHTML = `
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
+      ${(s.safeAreas || []).map(a => `
+        <span style="background:rgba(16,185,129,0.1);color:#10b981;border:1px solid rgba(16,185,129,0.25);
+              border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;">
+          ✓ ${a}
+        </span>`).join('')}
+    </div>`;
+}
+
+// ─────────────────────────────────────────────────────
+// 历史背景面板 + 雷达图
+// ─────────────────────────────────────────────────────
+function renderHistoryPanel(data) {
+  document.getElementById('history-content').textContent = data.safety.history || '';
+}
+
+function drawRadarChart() {
+  if (!currentCity) return;
+  const canvas = document.getElementById('radar-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const grades = Object.values(currentCity.safety.grades);
+  const labels = grades.map(g => g.label);
+  const scores = grades.map(g => g.score);
+
+  const cx = canvas.width / 2, cy = canvas.height / 2;
+  const r = Math.min(cx, cy) - 50;
+  const n = labels.length;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // 绘制背景网格
+  for (let level = 1; level <= 5; level++) {
+    const lr = (r * level) / 5;
+    ctx.beginPath();
+    for (let i = 0; i <= n; i++) {
+      const angle = (i * 2 * Math.PI) / n - Math.PI / 2;
+      const x = cx + lr * Math.cos(angle);
+      const y = cy + lr * Math.sin(angle);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // 绘制轴线
+  for (let i = 0; i < n; i++) {
+    const angle = (i * 2 * Math.PI) / n - Math.PI / 2;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + r * Math.cos(angle), cy + r * Math.sin(angle));
+    ctx.strokeStyle = 'rgba(255,255,255,0.1)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // 绘制数据多边形
+  ctx.beginPath();
+  scores.forEach((score, i) => {
+    const angle = (i * 2 * Math.PI) / n - Math.PI / 2;
+    const sr = (score / 100) * r;
+    const x = cx + sr * Math.cos(angle);
+    const y = cy + sr * Math.sin(angle);
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.closePath();
+  const gradient = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+  gradient.addColorStop(0, 'rgba(59,130,246,0.5)');
+  gradient.addColorStop(1, 'rgba(99,102,241,0.1)');
+  ctx.fillStyle = gradient;
+  ctx.fill();
+  ctx.strokeStyle = '#3b82f6';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // 绘制数据点
+  scores.forEach((score, i) => {
+    const angle = (i * 2 * Math.PI) / n - Math.PI / 2;
+    const sr = (score / 100) * r;
+    ctx.beginPath();
+    ctx.arc(cx + sr * Math.cos(angle), cy + sr * Math.sin(angle), 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#3b82f6';
+    ctx.fill();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  });
+
+  // 绘制标签
+  ctx.fillStyle = '#8892a0';
+  ctx.font = '12px Noto Sans SC, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  labels.forEach((label, i) => {
+    const angle = (i * 2 * Math.PI) / n - Math.PI / 2;
+    const lr = r + 28;
+    ctx.fillText(label, cx + lr * Math.cos(angle), cy + lr * Math.sin(angle));
+  });
+}
+
+// ─────────────────────────────────────────────────────
+// 搜索功能
+// ─────────────────────────────────────────────────────
+function triggerSearch() {
+  const q = document.getElementById('hero-search').value.trim();
+  if (!q) return;
+  performSearch(q);
+}
+
+function performSearch(q) {
+  const lq = q.toLowerCase();
+  const results = CITY_INDEX.filter(c =>
+    c.name.includes(q) ||
+    c.nameEn.toLowerCase().includes(lq) ||
+    c.country.includes(q) ||
+    c.continent.includes(q)
+  );
+  if (results.length === 1) {
+    openCity(results[0].id);
+  } else if (results.length > 1) {
+    renderSearchResults(results);
+  } else {
+    showToast('暂无该城市数据，更多城市持续收录中 🌍');
+  }
+}
+
+function renderSearchResults(results) {
+  showPage('home');
+  const grid = document.getElementById('city-grid');
+  const gs_label = results.length + ' 个搜索结果';
+  
+  // 直接用过滤后的城市ID渲染
+  const filteredIndex = results;
+  const tempGrid = filteredIndex.map((city, idx) => {
+    const gs = gradeStyle(city.safetyGrade);
+    const data = CITY_DATABASE[city.id];
+    const grades = Object.values(data.safety.grades).slice(0, 4);
+    return `
+    <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
+         onclick="openCity('${city.id}')"
+         data-city-id="${city.id}"
+         data-lat="${data.lat || ''}"
+         data-lng="${data.lng || ''}">
+      <div class="city-card-img">
+        <img src="${city.image}" alt="${city.name}" loading="lazy">
+        <div class="city-card-overlay"></div>
+        <div class="city-card-flag">${city.flag}</div>
+        <div class="city-card-grade" style="background:${gs.bg};color:${gs.text}">${city.safetyGrade}</div>
+      </div>
+      <div class="city-card-body">
+        <div class="city-card-name">${city.name}</div>
+        <div class="city-card-country">${city.country} · ${data.continent}</div>
+        <div class="city-card-scores">
+          ${grades.map(g => `
+          <div class="city-score-item">
+            <span class="city-score-label">${g.label}</span>
+            <div class="city-score-bar-wrap">
+              <div class="city-score-bar" style="width:${g.score}%;background:${scoreColor(g.score)}"></div>
+            </div>
+          </div>`).join('')}
+        </div>
+        <div class="city-card-footer">
+          <div class="city-overall">
+            <span class="city-overall-label">综合安全分</span>
+            <span class="city-overall-num ${getScoreClass(city.safetyScore)}">${city.safetyScore}</span>
+            <span class="city-overall-max">/100</span>
+          </div>
+          <button class="view-detail-btn">查看详情 →</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  grid.innerHTML = `<div style="grid-column:1/-1;padding:4px 0 12px;color:var(--text2);font-size:14px">找到 ${results.length} 个相关城市</div>` + tempGrid;
+  if (typeof RT_UI !== 'undefined') RT_UI.injectCityWeatherBadges();
+}
+
+// 导航搜索框联动
+let searchTimer;
+document.getElementById('nav-search').addEventListener('input', function() {
+  clearTimeout(searchTimer);
+  const q = this.value.trim();
+  const dropdown = document.getElementById('search-dropdown');
+  if (!q) { dropdown.classList.remove('open'); return; }
+  
+  searchTimer = setTimeout(() => {
+    const lq = q.toLowerCase();
+    const results = CITY_INDEX.filter(c =>
+      c.name.includes(q) || c.nameEn.toLowerCase().includes(lq) || c.country.includes(q)
+    ).slice(0, 6);
+    
+    if (!results.length) { dropdown.classList.remove('open'); return; }
+    
+    const gs_map = {};
+    results.forEach(c => gs_map[c.id] = gradeStyle(c.safetyGrade));
+    
+    dropdown.innerHTML = results.map(c => `
+      <div class="search-item" onclick="openCity('${c.id}');document.getElementById('nav-search').value='';document.getElementById('search-dropdown').classList.remove('open')">
+        <span class="search-item-flag">${c.flag}</span>
+        <div class="search-item-info">
+          <div class="search-item-name">${c.name} (${c.nameEn})</div>
+          <div class="search-item-country">${c.country} · ${c.continent}</div>
+        </div>
+        <span class="search-item-grade" style="background:${gs_map[c.id].bg};color:${gs_map[c.id].text}">${c.safetyGrade}</span>
+      </div>`).join('');
+    dropdown.classList.add('open');
+  }, 200);
+});
+
+document.getElementById('hero-search').addEventListener('keydown', e => {
+  if (e.key === 'Enter') triggerSearch();
+});
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.nav-search-wrap')) {
+    document.getElementById('search-dropdown').classList.remove('open');
+  }
+});
+
+// ─────────────────────────────────────────────────────
+// 全球预警页
+// ─────────────────────────────────────────────────────
+const GLOBAL_ALERTS = [
+  {
+    level: 'critical',
+    icon: '🔴',
+    title: '以色列-巴勒斯坦武装冲突',
+    desc: '加沙地带及周边区域持续武装冲突，以色列北部（黎以边境）存在火箭弹风险。建议暂缓前往以色列、黎巴嫩南部、加沙周边区域。',
+    date: '2025年持续更新'
+  },
+  {
+    level: 'critical',
+    icon: '🔴',
+    title: '俄乌战争区域',
+    desc: '乌克兰东部、南部及克里米亚持续军事冲突，无人机和导弹袭击已波及基辅、哈尔科夫等主要城市。建议取消所有对乌克兰的旅行计划。',
+    date: '2022年至今'
+  },
+  {
+    level: 'high',
+    icon: '🟠',
+    title: '缅甸全国军事动乱',
+    desc: '2021年军事政变后，缅甸多地爆发武装冲突，部分区域战况激烈。仰光相对平静，但前往边境地区和农村存在极高风险。',
+    date: '2021年至今'
+  },
+  {
+    level: 'high',
+    icon: '🟠',
+    title: '海地帮派控制区扩大',
+    desc: '太子港及周边地区帮派控制区域已超过全国60%，各国驻海地大使馆相继撤离部分人员。建议非必要不前往海地。',
+    date: '2024-2025年'
+  },
+  {
+    level: 'medium',
+    icon: '🟡',
+    title: '台海局势紧张',
+    desc: '台湾海峡军事演习频率上升，周边海域和空域存在不确定性。建议密切关注台湾外交部及各国旅游安全预警，避免不必要的海峡及周边水域活动。',
+    date: '持续关注'
+  },
+  {
+    level: 'medium',
+    icon: '🟡',
+    title: '索马里及周边反恐形势',
+    desc: '索马里Al-Shabaab武装持续在东非制造恐袭威胁，肯尼亚、埃塞俄比亚等周边国家均有恐袭记录。',
+    date: '长期预警'
+  },
+  {
+    level: 'medium',
+    icon: '🟡',
+    title: '巴基斯坦西北部/俾路支省不稳定',
+    desc: '巴基斯坦与阿富汗边境地区（开伯尔·普赫图赫瓦省）及俾路支省恐袭和武装冲突风险持续，建议避免前往。卡拉奇、拉合尔等主要城市总体可前往但需保持警惕。',
+    date: '长期预警'
+  },
+  {
+    level: 'low',
+    icon: '🟢',
+    title: '全球大城市恐袭防范意识提升',
+    desc: '孤狼式恐袭在欧洲、北美、澳大利亚主要城市的风险仍然存在，建议在人群密集场所（音乐会、体育场馆等）保持基本安全意识，了解最近紧急出口位置。',
+    date: '持续背景预警'
+  }
+];
+
+// ─────────────────────────────────────────────────────
+// 预警页 & 城市实时面板 — 委托给 RT_UI
+// ─────────────────────────────────────────────────────
+function getLevelStyle(level) {
+  const styles = {
+    critical: 'background:rgba(220,38,38,0.2);color:#ef4444',
+    high:     'background:rgba(249,115,22,0.2);color:#f97316',
+    medium:   'background:rgba(245,158,11,0.2);color:#f59e0b',
+    low:      'background:rgba(16,185,129,0.2);color:#10b981',
+  };
+  return styles[level] || styles.medium;
+}
+function getLevelLabel(level) {
+  return ({ critical:'极高危', high:'高危', medium:'中危', low:'留意' })[level] || '关注';
+}
+
+async function initAlertsPage()    { await RT_UI.renderAlertsPage(false); }
+async function refreshAlertsPage() { await RT_UI.renderAlertsPage(true);  }
+async function loadCityLiveData(cityData) { await RT_UI.renderCityLive(cityData); }
+
+// ─────────────────────────────────────────────────────
+// 地图页
+// ─────────────────────────────────────────────────────
+function initMapPage() {
+  const list = document.getElementById('map-cities-list');
+  list.innerHTML = `<div style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text2)">📍 已收录城市 (${CITY_INDEX.length})</div>` +
+    CITY_INDEX.sort((a,b) => b.safetyScore - a.safetyScore).map(c => {
+      const gs = gradeStyle(c.safetyGrade);
+      return `
+      <div class="map-city-item" onclick="openCity('${c.id}')">
+        <span class="map-city-flag">${c.flag}</span>
+        <div class="map-city-info">
+          <div class="map-city-name">${c.name}</div>
+          <div class="map-city-country">${c.country}</div>
+        </div>
+        <span class="map-city-grade" style="background:${gs.bg};color:${gs.text}">${c.safetyGrade}</span>
+      </div>`;
+    }).join('');
+
+  // 地图占位（若加载Leaflet失败）
+  const mapEl = document.getElementById('leaflet-map');
+  mapEl.innerHTML = `
+    <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;color:var(--text3)">
+      <div style="font-size:64px">🗺️</div>
+      <div style="font-size:18px;font-weight:700">交互式全球地图</div>
+      <div style="font-size:14px;text-align:center;max-width:400px;line-height:1.7">
+        完整版地图功能包含：各城市安全热力图、实时事件标注、路线安全评估<br>
+        请从左侧列表选择城市查看详情
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
+        ${CITY_INDEX.map(c => `
+          <button onclick="openCity('${c.id}')" style="background:var(--card);border:1px solid var(--border);
+            border-radius:20px;padding:6px 14px;font-size:13px;color:var(--text);cursor:pointer;
+            display:flex;align-items:center;gap:6px">
+            ${c.flag} ${c.name}
+          </button>`).join('')}
+      </div>
+    </div>`;
+  mapEl.style.flex = '1';
+}
+
+// ─────────────────────────────────────────────────────
+// 工具函数
+// ─────────────────────────────────────────────────────
+function copyText(text, label) {
+  navigator.clipboard.writeText(text).then(() => {
+    showToast(`✅ ${label}已复制：${text}`);
+  }).catch(() => {
+    showToast(`📋 ${label}：${text}`);
+  });
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+function showLoadingBriefly(cb) {
+  const l = document.getElementById('loading');
+  l.classList.add('show');
+  setTimeout(() => {
+    l.classList.remove('show');
+    cb();
+  }, 400);
+}
+
+// ─────────────────────────────────────────────────────
+// 初始化
+// ─────────────────────────────────────────────────────
+(function init() {
+  renderCityGrid('全部');
+})();
+</script>
+</body>
+</html>
