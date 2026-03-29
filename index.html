@@ -1259,31 +1259,36 @@
 <script>
 // ─── 合并所有扩展城市数据 ───
 (function() {
-  const extras = [
+  var extras = [
     typeof CITY_DATABASE_EXTRA_ASIA !== 'undefined' ? CITY_DATABASE_EXTRA_ASIA : {},
     typeof CITY_DATABASE_EXTRA_EUROPE !== 'undefined' ? CITY_DATABASE_EXTRA_EUROPE : {},
     typeof CITY_DATABASE_EXTRA_WORLD !== 'undefined' ? CITY_DATABASE_EXTRA_WORLD : {}
   ];
-  extras.forEach(db => Object.assign(CITY_DATABASE, db));
+  extras.forEach(function(db) { Object.assign(CITY_DATABASE, db); });
 
-  // 重新生成 CITY_INDEX
-  window.CITY_INDEX = Object.values(CITY_DATABASE).map(city => ({
-    id: city.id,
-    name: city.name,
-    nameEn: city.nameEn,
-    country: city.country,
-    continent: city.continent,
-    flag: city.flag,
-    safetyScore: city.safety ? city.safety.overall : 0,
-    safetyGrade: city.safety ? city.safety.grade : 'N/A'
-  }));
+  // 重新生成 CITY_INDEX（覆盖 data.js 里的 var 变量）
+  CITY_INDEX = Object.values(CITY_DATABASE).map(function(city) {
+    return {
+      id: city.id,
+      name: city.name,
+      nameEn: city.nameEn,
+      country: city.country,
+      continent: city.continent,
+      flag: city.flag,
+      safetyScore: city.safety ? city.safety.overall : 0,
+      safetyGrade: city.safety ? city.safety.grade : 'N/A',
+      image: city.image || ''
+    };
+  });
 
   // 重新生成 CITY_REGIONS
-  window.CITY_REGIONS = {};
-  CITY_INDEX.forEach(c => {
+  CITY_REGIONS = {};
+  CITY_INDEX.forEach(function(c) {
     if (!CITY_REGIONS[c.continent]) CITY_REGIONS[c.continent] = [];
     CITY_REGIONS[c.continent].push(c.id);
   });
+
+  console.log('[SafeCity] 城市数据合并完成，共', CITY_INDEX.length, '个城市');
 })();
 </script>
 <script src="realtime-api.js"></script>

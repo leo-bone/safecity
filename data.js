@@ -861,7 +861,8 @@ const CITY_DATABASE = {
 };
 
 // 城市列表索引（用于搜索和展示）
-const CITY_INDEX = Object.values(CITY_DATABASE).map(city => ({
+// 注意：使用 var 而非 const，允许后续扩展脚本覆盖此变量
+var CITY_INDEX = Object.values(CITY_DATABASE).map(city => ({
   id: city.id,
   name: city.name,
   nameEn: city.nameEn,
@@ -872,6 +873,9 @@ const CITY_INDEX = Object.values(CITY_DATABASE).map(city => ({
   safetyGrade: city.safety.grade,
   image: city.image
 }));
+
+// CITY_REGIONS 由扩展脚本动态生成
+var CITY_REGIONS = {};
 
 // 洲际分类
 const CONTINENTS = {
