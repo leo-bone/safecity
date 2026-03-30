@@ -4,6 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SafeCity Global — 全球城市安全旅行指南</title>
+  <meta name="description" content="SafeCity Global 收录全球100座城市的安全评分，涵盖犯罪风险、自然灾害、医疗水平、交通安全，为您的国际旅行提供真实可靠的安全参考。">
+  <meta name="keywords" content="城市安全,旅行安全,全球安全指南,SafeCity,安全评分,出行攻略,旅游安全,犯罪风险">
+  <meta name="author" content="SafeCity Global">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://safecity.uichain.org/">
+  <meta property="og:title" content="SafeCity Global — 全球城市安全旅行指南">
+  <meta property="og:description" content="收录全球100座城市安全数据，7大洲全覆盖。出行前了解目的地真实安全状况。">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SafeCity Global — 全球城市安全旅行指南">
+  <meta name="twitter:description" content="收录全球100座城市安全数据，7大洲全覆盖。">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://safecity.uichain.org/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <style>
@@ -1031,7 +1047,7 @@
 <!-- ████ 首页 ████ -->
 <div id="home-page" class="page active">
   <div id="hero">
-    <div class="hero-badge">🌍 精选全球 9 大城市 · 持续扩充中</div>
+    <div class="hero-badge">🌍 全球 100 座城市安全数据 · 7大洲全覆盖</div>
     <h1 class="hero-title">全球城市安全<br>旅行指南</h1>
     <p class="hero-subtitle">
       出行前，先了解目的地的真实安全状况。<br>
@@ -1044,7 +1060,7 @@
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num" id="stat-cities">9</div>
+        <div class="hero-stat-num" id="stat-cities">100</div>
         <div class="hero-stat-label">收录城市</div>
       </div>
       <div class="hero-stat">
@@ -1252,45 +1268,8 @@
 </div>
 
 <!-- ████ JS 主逻辑 ████ -->
+<!-- data.js 已包含全部100个城市，无需额外扩展文件 -->
 <script src="data.js"></script>
-<script src="data_extra_asia.js"></script>
-<script src="data_extra_europe.js"></script>
-<script src="data_extra_world.js"></script>
-<script>
-// ─── 合并所有扩展城市数据 ───
-(function() {
-  var extras = [
-    typeof CITY_DATABASE_EXTRA_ASIA !== 'undefined' ? CITY_DATABASE_EXTRA_ASIA : {},
-    typeof CITY_DATABASE_EXTRA_EUROPE !== 'undefined' ? CITY_DATABASE_EXTRA_EUROPE : {},
-    typeof CITY_DATABASE_EXTRA_WORLD !== 'undefined' ? CITY_DATABASE_EXTRA_WORLD : {}
-  ];
-  extras.forEach(function(db) { Object.assign(CITY_DATABASE, db); });
-
-  // 重新生成 CITY_INDEX（覆盖 data.js 里的 var 变量）
-  CITY_INDEX = Object.values(CITY_DATABASE).map(function(city) {
-    return {
-      id: city.id,
-      name: city.name,
-      nameEn: city.nameEn,
-      country: city.country,
-      continent: city.continent,
-      flag: city.flag,
-      safetyScore: city.safety ? city.safety.overall : 0,
-      safetyGrade: city.safety ? city.safety.grade : 'N/A',
-      image: city.image || ''
-    };
-  });
-
-  // 重新生成 CITY_REGIONS
-  CITY_REGIONS = {};
-  CITY_INDEX.forEach(function(c) {
-    if (!CITY_REGIONS[c.continent]) CITY_REGIONS[c.continent] = [];
-    CITY_REGIONS[c.continent].push(c.id);
-  });
-
-  console.log('[SafeCity] 城市数据合并完成，共', CITY_INDEX.length, '个城市');
-})();
-</script>
 <script src="realtime-api.js"></script>
 <script>
 // ─────────────────────────────────────────────────────
@@ -1369,11 +1348,7 @@ function renderCityGrid(filterContinent = '全部') {
   const grid = document.getElementById('city-grid');
   let cities = CITY_INDEX;
   if (filterContinent !== '全部') {
-    cities = cities.filter(c => {
-      const cityData = CITY_DATABASE[c.id];
-      return cityData && (cityData.continent === filterContinent || 
-        (filterContinent === '中东' && c.id === 'dubai'));
-    });
+    cities = cities.filter(c => c.continent === filterContinent);
   }
 
   if (!cities.length) {
@@ -2094,5 +2069,29 @@ function showLoadingBriefly(cb) {
   renderCityGrid('全部');
 })();
 </script>
+
+<!-- ████ 页脚 ████ -->
+<footer style="background:#080c18;border-top:1px solid rgba(255,255,255,0.06);padding:48px 24px 32px;margin-top:0;text-align:center;color:rgba(255,255,255,0.4);font-size:13px;line-height:1.8;">
+  <div style="max-width:900px;margin:0 auto;">
+    <div style="display:flex;justify-content:center;align-items:center;gap:8px;margin-bottom:16px;">
+      <span style="font-size:22px;">🌍</span>
+      <span style="font-size:18px;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:1px;">SafeCity Global</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px 32px;margin-bottom:20px;color:rgba(255,255,255,0.55);font-size:13px;">
+      <span>🏙️ 收录100座全球城市</span>
+      <span>🌐 7大洲全覆盖</span>
+      <span>📊 50+安全维度评估</span>
+      <span>🔄 持续更新数据</span>
+    </div>
+    <div style="margin-bottom:16px;color:rgba(255,255,255,0.3);font-size:12px;line-height:1.7;">
+      ⚠️ <strong style="color:rgba(255,255,255,0.5);">免责声明：</strong>本站安全评分仅供参考，基于公开数据和综合评估，不构成专业安全建议。<br>
+      出行前请参考<a href="https://travel.state.gov" target="_blank" style="color:#4fa3e3;text-decoration:none;">美国国务院旅行建议</a>、<a href="https://www.gov.cn/zhuanti/2022-07/28/content_5703136.htm" target="_blank" style="color:#4fa3e3;text-decoration:none;">中国外交部领事服务</a>等官方安全提示。
+    </div>
+    <div style="color:rgba(255,255,255,0.25);font-size:12px;">
+      © 2026 SafeCity Global · 数据仅供参考 · <a href="https://safecity.uichain.org" style="color:rgba(255,255,255,0.35);text-decoration:none;">safecity.uichain.org</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
