@@ -1268,7 +1268,7 @@
 </div>
 
 <!-- ████ JS 主逻辑 ████ -->
-<!-- data.js 已包含全部100个城市，无需额外扩展文件 -->
+<!-- 全球100城市安全数据库 -->
 <script src="data.js"></script>
 <script src="realtime-api.js"></script>
 <script>
@@ -1332,6 +1332,18 @@ function gradeStyle(grade) {
   return SAFETY_COLORS[grade] || SAFETY_COLORS['B'];
 }
 
+// 字母等级转数字分数（用于进度条显示）
+function gradeToScore(grade) {
+  const map = {
+    'A+': 97, 'A': 93, 'A-': 88,
+    'B+': 83, 'B': 78, 'B-': 73,
+    'C+': 68, 'C': 63, 'C-': 58,
+    'D+': 53, 'D': 48, 'D-': 43,
+    'F': 30
+  };
+  return map[grade] || 70;
+}
+
 function getScoreClass(score) {
   if (score >= 85) return 'score-very-low';
   if (score >= 70) return 'score-low';
@@ -1346,7 +1358,22 @@ function getScoreClass(score) {
 // ─────────────────────────────────────────────────────
 function renderCityGrid(filterContinent = '全部') {
   const grid = document.getElementById('city-grid');
-  let cities = CITY_INDEX;
+  
+  // 从CITY_DATABASE创建城市列表
+  let cities = Object.keys(CITY_DATABASE).map(cityId => {
+    const data = CITY_DATABASE[cityId];
+    return {
+      id: cityId,
+      name: data.name,
+      country: data.country,
+      continent: data.continent,
+      flag: data.flag,
+      image: data.image,
+      safetyScore: data.safety.overall,
+      safetyGrade: data.safety.grade
+    };
+  });
+  
   if (filterContinent !== '全部') {
     cities = cities.filter(c => c.continent === filterContinent);
   }
@@ -1363,10 +1390,14 @@ function renderCityGrid(filterContinent = '全部') {
   // 按安全分从高到低排序
   cities = [...cities].sort((a, b) => b.safetyScore - a.safetyScore);
   
+  // 维度名称中文映射
+  const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
+
   grid.innerHTML = cities.map((city, idx) => {
     const gs = gradeStyle(city.safetyGrade);
     const data = CITY_DATABASE[city.id];
-    const grades = Object.values(data.safety.grades).slice(0, 4);
+    const grades = data.safety.grades;
+    
     return `
     <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
          onclick="openCity('${city.id}')"
@@ -1381,15 +1412,18 @@ function renderCityGrid(filterContinent = '全部') {
       </div>
       <div class="city-card-body">
         <div class="city-card-name">${city.name}</div>
-        <div class="city-card-country">${city.country} · ${data.continent}</div>
+        <div class="city-card-country">${city.country} · ${city.continent}</div>
         <div class="city-card-scores">
-          ${grades.map(g => `
-          <div class="city-score-item">
-            <span class="city-score-label">${g.label}</span>
-            <div class="city-score-bar-wrap">
-              <div class="city-score-bar" style="width:${g.score}%;background:${scoreColor(g.score)}"></div>
-            </div>
-          </div>`).join('')}
+          ${Object.entries(grades).slice(0, 4).map(([key, grade]) => {
+            const score = gradeToScore(grade);
+            return `
+            <div class="city-score-item">
+              <span class="city-score-label">${dimLabels[key] || key}</span>
+              <div class="city-score-bar-wrap">
+                <div class="city-score-bar" style="width:${score}%;background:${scoreColor(score)}"></div>
+              </div>
+            </div>`;
+          }).join('')}
         </div>
         <div class="city-card-footer">
           <div class="city-overall">
@@ -1443,7 +1477,7 @@ function populateCityDetail(data) {
   document.getElementById('detail-continent').textContent = data.continent;
   document.getElementById('detail-country-breadcrumb').textContent = data.country;
   document.getElementById('detail-country').textContent = data.country;
-  document.getElementById('detail-overview').textContent = data.overview;
+  document.getElementById('detail-overview').textContent = data.overview || data.highlights?.join('，') || '暂无概述';
 
   const gs = gradeStyle(data.safety.grade);
   const gradeBadge = document.getElementById('detail-grade-badge');
@@ -1507,10 +1541,10 @@ function renderSafetyPanel(data) {
     </div>
     <div class="ring-info">
       <h3>${data.name} · ${data.country}</h3>
-      <p>综合安全指数 <strong style="color:${scoreColor(s.overall)}">${s.overall}/100</strong>，包含犯罪、交通、自然灾害、政治稳定等多维度评分。</p>
+      <p>综合安全指数 <strong style="color:${scoreColor(s.overall)}">${s.overall}/100</strong>，包含犯罪、交通、医疗、自然灾害等多维度评分。</p>
     </div>
     <div class="ring-grade-big">
-      <div class="ring-grade-letter" style="background:linear-gradient(135deg,${gs.bg},${gs.bg}80);-webkit-background-clip:text">${s.grade}</div>
+      <div class="ring-grade-letter" style="color:${gs.text}">${s.grade}</div>
       <div class="ring-grade-label">${gs.label}</div>
     </div>`;
   
@@ -1521,28 +1555,32 @@ function renderSafetyPanel(data) {
   }, 200);
 
   // 各维度
-  const icons = {
-    robbery: '🔫', homicide: '⚠️', traffic: '🚗', theft: '👜',
-    scam: '🎭', drugs: '💊', natural: '🌪️', political: '🏛️'
+  const dimLabels = {
+    crime: '犯罪安全', transport: '交通安全',
+    health: '医疗健康', natural: '自然灾害'
+  };
+  const dimIcons = {
+    crime: '🔫', transport: '🚗',
+    health: '🏥', natural: '🌪️'
   };
   const grid = document.getElementById('safety-metrics-grid');
-  grid.innerHTML = Object.entries(s.grades).map(([key, g]) => {
-    const hasWarning = g.desc.includes('⚠️') || g.score < 50;
+  grid.innerHTML = Object.entries(s.grades).map(([key, grade]) => {
+    const score = gradeToScore(grade);
+    const hasWarning = score < 70;
     return `
     <div class="safety-metric">
       <div class="safety-metric-warning ${hasWarning ? 'show' : ''}"></div>
       <div class="safety-metric-header">
         <div class="safety-metric-label">
-          <span class="safety-metric-icon">${icons[key] || '📊'}</span>
-          <span>${g.label}</span>
+          <span class="safety-metric-icon">${dimIcons[key] || '📊'}</span>
+          <span>${dimLabels[key] || key}</span>
         </div>
-        <span class="safety-metric-score ${getScoreClass(g.score)}">${g.score}</span>
+        <span class="safety-metric-score ${getScoreClass(score)}">${grade}</span>
       </div>
       <div class="safety-metric-bar">
-        <div class="safety-metric-bar-fill" style="width:0%;background:${scoreColor(g.score)}" 
-             data-width="${g.score}%"></div>
+        <div class="safety-metric-bar-fill" style="width:0%;background:${scoreColor(score)}" 
+             data-width="${score}%"></div>
       </div>
-      <div class="safety-metric-desc">${g.desc}</div>
     </div>`;
   }).join('');
 
@@ -1553,10 +1591,38 @@ function renderSafetyPanel(data) {
     });
   }, 300);
 
-  // 安全提示
+  // 安全提示 - 从数据中获取或根据评分自动生成
   const tipsList = document.getElementById('safety-tips-list');
   const tipIcons = ['💡','⚡','🔒','📍','👁️','🧭','📱','🌂'];
-  tipsList.innerHTML = s.tips.map((tip, i) => `
+  
+  let tips = data.tips || [];
+  if (!tips.length) {
+    if (s.overall >= 90) {
+      tips = [
+        '这座城市非常安全，保持基本安全意识即可',
+        '贵重物品建议锁在酒店保险柜中',
+        '夜间出行安全，但建议在人多的区域',
+        '提前保存当地紧急联系号码'
+      ];
+    } else if (s.overall >= 70) {
+      tips = [
+        '保管好个人财物，避免在公共场合展示贵重物品',
+        '建议避免深夜独自前往僻静区域',
+        '记住当地警察和急救电话',
+        '选择正规交通工具出行'
+      ];
+    } else {
+      tips = [
+        '避免前往偏僻地区，尤其是夜间',
+        '随身只携带必要现金，大额现金存入酒店保险柜',
+        '提前了解当地大使馆/领事馆位置',
+        '购买全面的旅行保险',
+        '与酒店前台了解当前安全注意事项'
+      ];
+    }
+  }
+  
+  tipsList.innerHTML = tips.map((tip, i) => `
     <li><span class="tip-icon">${tipIcons[i % tipIcons.length]}</span><span>${tip}</span></li>
   `).join('');
 }
@@ -1565,15 +1631,14 @@ function renderSafetyPanel(data) {
 // 紧急联系面板
 // ─────────────────────────────────────────────────────
 function renderEmergencyPanel(data) {
-  const e = data.emergency;
+  const e = data.emergency || {};
   
   // 紧急号码卡片
   const numGrid = document.getElementById('emergency-numbers-grid');
-  const numbers = [
-    { icon: '👮', label: '警察', number: e.police, sub: 'Police' },
-    { icon: '🚑', label: '救护车', number: e.ambulance, sub: 'Ambulance' },
-    { icon: '🚒', label: '消防', number: e.fire, sub: 'Fire' },
-  ];
+  const numbers = [];
+  if (e.police) numbers.push({ icon: '👮', label: '警察', number: e.police, sub: 'Police' });
+  if (e.ambulance) numbers.push({ icon: '🚑', label: '救护车', number: e.ambulance, sub: 'Ambulance' });
+  if (e.fire) numbers.push({ icon: '🚒', label: '消防', number: e.fire, sub: 'Fire' });
   if (e.coastguard) numbers.push({ icon: '⚓', label: '海岸警卫', number: e.coastguard, sub: 'Coast Guard' });
   if (e.touristPolice) numbers.push({ icon: '🎒', label: '旅游警察', number: e.touristPolice, sub: 'Tourist Police' });
   if (e.touristHotline) numbers.push({ icon: '📞', label: '旅游热线', number: e.touristHotline, sub: 'Tourist Hotline' });
@@ -1586,27 +1651,27 @@ function renderEmergencyPanel(data) {
       <div class="emergency-number">${n.number}</div>
       <div class="emergency-sublabel">${n.sub}</div>
       <button class="emergency-copy-btn" onclick="copyText('${n.number}','${n.label}号码')">📋 复制</button>
-    </div>`).join('');
+    </div>`).join('') || '<div style="color:var(--text-muted);padding:16px">暂无紧急联系信息</div>';
 
   // 医院
   const hList = document.getElementById('hospitals-list');
-  hList.innerHTML = e.hospitals.map(h => `
+  hList.innerHTML = (e.hospitals || []).map(h => `
     <div class="hospital-card">
       <div class="hospital-name">🏥 ${h.name}</div>
       <div class="hospital-meta">
         <span>📞 <a href="tel:${h.phone}" style="color:var(--accent)">${h.phone}</a></span>
         <span>📍 ${h.address}</span>
       </div>
-    </div>`).join('');
+    </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">如遇紧急医疗状况，请拨打救护车电话</div>';
 
   // 大使馆
   const emList = document.getElementById('embassy-list');
-  emList.innerHTML = Object.entries(e.embassies).map(([name, phone]) => `
+  emList.innerHTML = Object.entries(e.embassies || {}).map(([name, phone]) => `
     <div class="embassy-item">
       <span class="embassy-name">🏛️ ${name}</span>
       <span class="embassy-phone">${phone}</span>
       <button class="call-btn" onclick="copyText('${phone}','大使馆电话')">📋 复制</button>
-    </div>`).join('');
+    </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">建议出发前查询所在国在该城市的领事馆电话</div>';
 
   // 推荐APP
   const appsEl = document.getElementById('apps-grid');
@@ -1623,7 +1688,7 @@ function renderEmergencyPanel(data) {
 // 吃喝玩乐面板
 // ─────────────────────────────────────────────────────
 function renderLifestylePanel(data) {
-  const l = data.lifestyle;
+  const l = data.lifestyle || {};
 
   // 美食
   const foodEmojis = ['🍜','🍣','🌮','🍕','🥩','🦞','🍝','🥗','🍱','🍛'];
@@ -1633,22 +1698,22 @@ function renderLifestylePanel(data) {
       <div class="food-info">
         <div class="food-name">${f.name}</div>
         <div class="food-meta">
-          <span class="food-type">${f.type}</span>
-          <span class="food-price">${f.price}</span>
+          <span class="food-type">${f.type || ''}</span>
+          <span class="food-price">${f.price || ''}</span>
         </div>
-        <div class="food-desc">${f.desc}</div>
+        <div class="food-desc">${f.desc || ''}</div>
         ${f.tip ? `<div class="food-tip">💡 ${f.tip}</div>` : ''}
       </div>
-    </div>`).join('');
+    </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">当地特色美食信息持续完善中 🍽️</div>`;
 
   // 景点
   document.getElementById('attractions-list').innerHTML = (l.attractions || []).map(a => `
     <div class="attraction-card">
       ${a.hidden ? '<span class="hidden-gem-badge">💎 隐藏宝藏</span>' : ''}
       <div class="attraction-name">${a.name}</div>
-      <span class="attraction-type">${a.type}</span>
-      <div class="attraction-desc">${a.desc}</div>
-    </div>`).join('');
+      <span class="attraction-type">${a.type || ''}</span>
+      <div class="attraction-desc">${a.desc || ''}</div>
+    </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">景点推荐持续完善中 🗺️</div>`;
 
   // 节庆
   document.getElementById('festivals-list').innerHTML = (l.festivals || []).map(f => `
@@ -1658,28 +1723,29 @@ function renderLifestylePanel(data) {
         <div class="festival-name">${f.name}</div>
         <div class="festival-desc">${f.desc}</div>
       </div>
-    </div>`).join('');
+    </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">节庆活动信息持续完善中 🎉</div>`;
 
   // 风俗
   const customIcons = ['🙏','🤝','🍽️','👗','🚪','💰','📸','🎎'];
   document.getElementById('customs-list').innerHTML = (l.customs || []).map((c, i) => `
-    <li><span>${customIcons[i % customIcons.length]}</span><span>${c}</span></li>`).join('');
+    <li><span>${customIcons[i % customIcons.length]}</span><span>${c}</span></li>`).join('') || `<li><span>🌍</span><span>文化习俗信息持续完善中</span></li>`;
 
   // 交通
-  document.getElementById('transport-info').textContent = l.transport || '';
+  document.getElementById('transport-info').textContent = l.transport || '当地交通指南持续完善中';
 }
 
 // ─────────────────────────────────────────────────────
 // 危险区域面板
 // ─────────────────────────────────────────────────────
 function renderHotspotsPanel(data) {
-  const s = data.safety;
+  const s = data.safety || {};
   const riskColors = {
     '极高': '#dc2626', '高': '#ef4444', '中高': '#f97316',
     '中': '#f59e0b', '低中': '#22c55e', '法律风险': '#6366f1'
   };
 
-  document.getElementById('hotspots-list').innerHTML = (s.hotspots || []).map(h => `
+  const hotspotsList = document.getElementById('hotspots-list');
+  hotspotsList.innerHTML = (s.hotspots || []).map(h => `
     <div class="hotspot-card risk-${h.risk}">
       <div>
         <div class="hotspot-area">⚠️ ${h.area}</div>
@@ -1688,12 +1754,12 @@ function renderHotspotsPanel(data) {
       <div class="hotspot-risk-badge" style="background:${riskColors[h.risk] || '#6b7280'}22;color:${riskColors[h.risk] || '#6b7280'}">
         风险：${h.risk}
       </div>
-    </div>`).join('');
+    </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">区域安全信息基于综合安全分 ${s.overall}/100</div>`;
 
   const safeEl = document.getElementById('safe-areas-list');
   safeEl.innerHTML = `
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
-      ${(s.safeAreas || []).map(a => `
+      ${(s.safeAreas || data.highlights || []).map(a => `
         <span style="background:rgba(16,185,129,0.1);color:#10b981;border:1px solid rgba(16,185,129,0.25);
               border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;">
           ✓ ${a}
@@ -1705,7 +1771,11 @@ function renderHotspotsPanel(data) {
 // 历史背景面板 + 雷达图
 // ─────────────────────────────────────────────────────
 function renderHistoryPanel(data) {
-  document.getElementById('history-content').textContent = data.safety.history || '';
+  const historyEl = document.getElementById('history-content');
+  historyEl.textContent = (data.safety && data.safety.history) || 
+    `${data.name}是${data.country}${data.continent}地区的重要城市，综合安全指数 ${data.safety.overall}/100（${data.safety.grade}级）。` +
+    (data.highlights ? `\n\n城市亮点：${data.highlights.join('、')}。` : '') +
+    (data.risks ? `\n\n注意事项：${data.risks.join('、')}。` : '');
 }
 
 function drawRadarChart() {
@@ -1713,9 +1783,10 @@ function drawRadarChart() {
   const canvas = document.getElementById('radar-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  const grades = Object.values(currentCity.safety.grades);
-  const labels = grades.map(g => g.label);
-  const scores = grades.map(g => g.score);
+  const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
+  const gradesObj = currentCity.safety.grades || {};
+  const labels = Object.keys(gradesObj).map(k => dimLabels[k] || k);
+  const scores = Object.values(gradesObj).map(g => gradeToScore(g));
 
   const cx = canvas.width / 2, cy = canvas.height / 2;
   const r = Math.min(cx, cy) - 50;
@@ -1805,12 +1876,13 @@ function triggerSearch() {
 
 function performSearch(q) {
   const lq = q.toLowerCase();
-  const results = CITY_INDEX.filter(c =>
-    c.name.includes(q) ||
-    c.nameEn.toLowerCase().includes(lq) ||
-    c.country.includes(q) ||
-    c.continent.includes(q)
-  );
+  const results = CITY_INDEX.filter(c => {
+    const data = CITY_DATABASE[c.id];
+    return c.name.includes(q) ||
+      (data.nameEn && data.nameEn.toLowerCase().includes(lq)) ||
+      c.country.includes(q) ||
+      c.continent.includes(q);
+  });
   if (results.length === 1) {
     openCity(results[0].id);
   } else if (results.length > 1) {
@@ -1830,7 +1902,8 @@ function renderSearchResults(results) {
   const tempGrid = filteredIndex.map((city, idx) => {
     const gs = gradeStyle(city.safetyGrade);
     const data = CITY_DATABASE[city.id];
-    const grades = Object.values(data.safety.grades).slice(0, 4);
+    const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
+    const grades = data.safety.grades;
     return `
     <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
          onclick="openCity('${city.id}')"
@@ -1847,13 +1920,16 @@ function renderSearchResults(results) {
         <div class="city-card-name">${city.name}</div>
         <div class="city-card-country">${city.country} · ${data.continent}</div>
         <div class="city-card-scores">
-          ${grades.map(g => `
-          <div class="city-score-item">
-            <span class="city-score-label">${g.label}</span>
-            <div class="city-score-bar-wrap">
-              <div class="city-score-bar" style="width:${g.score}%;background:${scoreColor(g.score)}"></div>
-            </div>
-          </div>`).join('')}
+          ${Object.entries(grades).slice(0, 4).map(([key, grade]) => {
+            const score = gradeToScore(grade);
+            return `
+            <div class="city-score-item">
+              <span class="city-score-label">${dimLabels[key] || key}</span>
+              <div class="city-score-bar-wrap">
+                <div class="city-score-bar" style="width:${score}%;background:${scoreColor(score)}"></div>
+              </div>
+            </div>`;
+          }).join('')}
         </div>
         <div class="city-card-footer">
           <div class="city-overall">
@@ -2051,6 +2127,46 @@ function showToast(msg) {
   t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ─────────────────────────────────────────────────────
+// 新功能：主页面按钮功能
+// ─────────────────────────────────────────────────────
+
+// 1. 打开搜索功能
+function openSearch() {
+  const heroSearch = document.getElementById('hero-search');
+  heroSearch.focus();
+  showToast('🔍 请输入城市名称进行搜索');
+}
+
+// 2. 查看东京示例
+function openTokyoDetail() {
+  window.open('city_detail.html?city=tokyo', '_blank');
+}
+
+// 3. 显示紧急联系信息
+function showEmergencyContacts() {
+  // 模拟打开东京详情页的紧急联系部分
+  window.open('city_detail.html?city=tokyo#emergency-panel', '_blank');
+}
+
+// 4. 显示安全区域地图
+function showSafetyZones() {
+  // 模拟打开东京详情页的安全地图部分
+  window.open('city_detail.html?city=tokyo#safety-map', '_blank');
+}
+
+// 5. 显示本地推荐
+function showLocalRecommendations() {
+  // 模拟打开东京详情页的吃喝玩乐部分
+  window.open('city_detail.html?city=tokyo#lifestyle-panel', '_blank');
+}
+
+// 6. 显示商业模式
+function showBusinessModel() {
+  // 打开新窗口显示商业模式文档
+  window.open('BUSINESS_MODEL.md', '_blank');
 }
 
 function showLoadingBriefly(cb) {
