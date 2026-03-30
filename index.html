@@ -1270,6 +1270,7 @@
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
 <script src="data.js"></script>
+<script src="data_new.js"></script>
 <script src="realtime-api.js"></script>
 <script>
 // ─────────────────────────────────────────────────────
@@ -1453,7 +1454,15 @@ function filterContinent(name, btn) {
 // 城市详情页
 // ─────────────────────────────────────────────────────
 function openCity(cityId) {
-  const data = CITY_DATABASE[cityId];
+  // 优先使用 data_new.js 中的详细数据
+  let data = null;
+  if (typeof CITY_DATABASE_DETAIL !== 'undefined' && CITY_DATABASE_DETAIL[cityId]) {
+    data = CITY_DATABASE_DETAIL[cityId];
+  }
+  // 如果没有详细数据，回退到基础数据
+  if (!data && CITY_DATABASE[cityId]) {
+    data = CITY_DATABASE[cityId];
+  }
   if (!data) { showToast('城市数据加载中，敬请期待...'); return; }
   currentCity = data;
 
@@ -1467,29 +1476,167 @@ function openCity(cityId) {
 }
 
 function populateCityDetail(data) {
+  // 数据适配层：支持 data.js(旧) 和 data_new.js(新) 两种结构
+  const adaptedData = normalizeCityData(data);
+  
   // 英雄区域
-  document.getElementById('detail-hero-img').src = data.image;
+  document.getElementById('detail-hero-img').src = adaptedData.image;
   document.getElementById('detail-hero-img').onerror = function() {
-    this.src = `https://picsum.photos/seed/${data.id}/1200/400`;
+    this.src = `https://picsum.photos/seed/${adaptedData.id}/1200/400`;
   };
-  document.getElementById('detail-flag').textContent = data.flag;
-  document.getElementById('detail-name').textContent = data.name;
-  document.getElementById('detail-continent').textContent = data.continent;
-  document.getElementById('detail-country-breadcrumb').textContent = data.country;
-  document.getElementById('detail-country').textContent = data.country;
-  document.getElementById('detail-overview').textContent = data.overview || data.highlights?.join('，') || '暂无概述';
+  document.getElementById('detail-flag').textContent = adaptedData.flag;
+  document.getElementById('detail-name').textContent = adaptedData.name;
+  document.getElementById('detail-continent').textContent = adaptedData.continent;
+  document.getElementById('detail-country-breadcrumb').textContent = adaptedData.country;
+  document.getElementById('detail-country').textContent = adaptedData.country;
+  document.getElementById('detail-overview').textContent = adaptedData.overview || adaptedData.highlights?.join('，') || '暂无概述';
 
-  const gs = gradeStyle(data.safety.grade);
+  const gs = gradeStyle(adaptedData.safety.grade);
   const gradeBadge = document.getElementById('detail-grade-badge');
-  gradeBadge.textContent = `${data.safety.grade} · ${gs.label}`;
+  gradeBadge.textContent = `${adaptedData.safety.grade} · ${gs.label}`;
   gradeBadge.style.cssText = `background:${gs.bg};color:${gs.text};`;
 
   // 渲染各面板
-  renderSafetyPanel(data);
-  renderEmergencyPanel(data);
-  renderLifestylePanel(data);
-  renderHotspotsPanel(data);
-  renderHistoryPanel(data);
+  renderSafetyPanel(adaptedData);
+  renderEmergencyPanel(adaptedData);
+  renderLifestylePanel(adaptedData);
+  renderHotspotsPanel(adaptedData);
+  renderHistoryPanel(adaptedData);
+}
+
+// 数据格式适配器：将 data_new.js 的新格式转换为旧格式兼容
+function normalizeCityData(data) {
+  // 如果已经有 safety 字段（旧格式），直接返回
+  if (data.safety && data.safety.overall) {
+    return data;
+  }
+  
+  // 如果是 data_new.js 的新格式 (safetyIndex)
+  if (data.safetyIndex) {
+    // 转换紧急联系
+    const emergency = data.emergencyContacts ? {
+      police: data.emergencyContacts.phoneNumbers?.police || '',
+      ambulance: data.emergencyContacts.phoneNumbers?.ambulance || '',
+      fire: data.emergencyContacts.phoneNumbers?.fire || '',
+      nonEmergency: data.emergencyContacts.phoneNumbers?.nonEmergency || '',
+      touristPolice: data.emergencyContacts.phoneNumbers?.touristPolice || '',
+      touristHotline: data.emergencyContacts.phoneNumbers?.touristHotline || '',
+      embassies: {},
+      hospitals: data.emergencyContacts.importantOrganizations?.filter(o => 
+        o.description?.includes('医院') || o.description?.includes('医疗')
+      ).map(h => ({ name: h.name, phone: h.phone, address: h.address || '' })) || [],
+      apps: data.safetyTips?.general?.slice(0, 5) || [],
+      selfDefense: data.safetyTips?.forWomen || []
+    } : data.emergency;
+    
+    // 转换领事馆
+    if (data.emergencyContacts?.consulates) {
+      data.emergencyContacts.consulates.forEach(c => {
+        emergency.embassies[c.name] = c.phone;
+      });
+    }
+    
+    // 转换生活方式推荐 - 完整版（匹配渲染函数字段）
+    const lifestyle = {
+      food: (data.localRecommendations?.foodDrink || []).map(f => ({ 
+        name: f.name, 
+        type: f.type, 
+        desc: f.description, 
+        price: f.priceRange,
+        tip: f.safetyTips 
+      })),
+      attractions: (data.localRecommendations?.attractions || []).map(a => ({ 
+        name: a.name, 
+        type: a.type, 
+        desc: a.description,
+        bestTime: a.bestTime
+      })),
+      nightlife: (data.localRecommendations?.nightlife || []).map(n => ({ 
+        name: n.name, 
+        type: n.type, 
+        desc: n.description, 
+        warning: n.warning 
+      })),
+      hiddenGems: (data.localRecommendations?.hiddenGems || []).map(h => ({ 
+        name: h.name, 
+        type: h.type, 
+        desc: h.description, 
+        insiderTip: h.insiderTip 
+      }))
+    };
+    
+    // 转换危险区域和安全区域 - 关键修复
+    const hotspots = [];
+    if (data.areaSafety?.cautionAreas) {
+      data.areaSafety.cautionAreas.forEach(area => {
+        hotspots.push({
+          area: area.name,
+          desc: area.description,
+          risk: area.safetyLevel?.replace('-', '') || '中'
+        });
+      });
+    }
+    if (data.areaSafety?.dangerousAreas) {
+      data.areaSafety.dangerousAreas.forEach(area => {
+        if (area.name !== '无特别危险区域') {
+          hotspots.push({
+            area: area.name,
+            desc: area.description,
+            risk: '高'
+          });
+        }
+      });
+    }
+    
+    const safeAreas = [];
+    // 兼容 safestAreas 和 safeAreas 两种字段名
+    const areasList = data.areaSafety?.safestAreas || data.areaSafety?.safeAreas || [];
+    if (areasList.length) {
+      areasList.forEach(area => {
+        safeAreas.push(area.name);
+      });
+    }
+    // 如果没有安全区域数据，用当地推荐景点代替
+    if (!safeAreas.length && data.localRecommendations?.attractions) {
+      data.localRecommendations.attractions.forEach(a => {
+        safeAreas.push(a.name);
+      });
+    }
+    
+    // 构建完整的 safety 对象
+    const safety = {
+      overall: data.safetyIndex.overall || 70,
+      grade: data.safetyIndex.grade || 'B',
+      grades: {
+        crime: data.safetyIndex.dimensions?.crimeSafety?.grade || 'B',
+        transport: data.safetyIndex.dimensions?.transportSafety?.grade || 'B',
+        health: data.safetyIndex.dimensions?.healthMedical?.grade || 'B',
+        natural: data.safetyIndex.dimensions?.naturalDisaster?.grade || 'B',
+        environment: data.safetyIndex.dimensions?.environmental?.grade || 'B',
+        social: data.safetyIndex.dimensions?.socialStability?.grade || 'B'
+      },
+      history: `${data.name}是${data.country}的重要城市，综合安全指数 ${data.safetyIndex.overall}/100（${data.safetyIndex.grade}级）。${data.safetyIndex.dimensions?.crimeSafety?.description || ''}`,
+      hotspots: hotspots,
+      safeAreas: safeAreas,
+      tips: data.safetyTips?.general || []
+    };
+    
+    return {
+      ...data,
+      safety: safety,
+      emergency: emergency,
+      lifestyle: lifestyle,
+      highlights: data.localRecommendations?.attractions?.map(a => a.name) || [],
+      risks: hotspots.map(h => h.area),
+      // 新增详细数据
+      safetyIndex: data.safetyIndex,
+      areaSafety: data.areaSafety,
+      localRecommendations: data.localRecommendations,
+      safetyTips: data.safetyTips
+    };
+  }
+  
+  return data;
 }
 
 function switchDetailTab(tabName, btn) {
@@ -1554,14 +1701,16 @@ function renderSafetyPanel(data) {
     if (fill) fill.style.strokeDashoffset = offset;
   }, 200);
 
-  // 各维度
+  // 各维度 - 支持6个以上维度
   const dimLabels = {
     crime: '犯罪安全', transport: '交通安全',
-    health: '医疗健康', natural: '自然灾害'
+    health: '医疗健康', natural: '自然灾害',
+    environment: '环境安全', social: '社会稳定'
   };
   const dimIcons = {
     crime: '🔫', transport: '🚗',
-    health: '🏥', natural: '🌪️'
+    health: '🏥', natural: '🌪️',
+    environment: '🌿', social: '🏛️'
   };
   const grid = document.getElementById('safety-metrics-grid');
   grid.innerHTML = Object.entries(s.grades).map(([key, grade]) => {
@@ -1783,8 +1932,12 @@ function drawRadarChart() {
   const canvas = document.getElementById('radar-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
-  const gradesObj = currentCity.safety.grades || {};
+  const dimLabels = { 
+    crime: '犯罪安全', transport: '交通安全', 
+    health: '医疗健康', natural: '自然灾害',
+    environment: '环境安全', social: '社会稳定'
+  };
+  const gradesObj = currentCity.safety?.grades || {};
   const labels = Object.keys(gradesObj).map(k => dimLabels[k] || k);
   const scores = Object.values(gradesObj).map(g => gradeToScore(g));
 
