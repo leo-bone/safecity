@@ -3,6 +3,19 @@
 // 包含125个全球主要城市，安全评分数据
 // ============================================================
 
+var SAFETY_COLORS = {
+  "A":  { bg: "#00b894", text: "#fff", label: "非常安全" },
+  "A-": { bg: "#00cec9", text: "#fff", label: "安全" },
+  "B+": { bg: "#0984e3", text: "#fff", label: "较安全" },
+  "B":  { bg: "#6c5ce7", text: "#fff", label: "一般" },
+  "B-": { bg: "#fdcb6e", text: "#2d3436", label: "需谨慎" },
+  "C+": { bg: "#e17055", text: "#fff", label: "风险较高" },
+  "C":  { bg: "#d63031", text: "#fff", label: "高风险" },
+  "C-": { bg: "#c0392b", text: "#fff", label: "高度危险" },
+  "D+": { bg: "#b2bec3", text: "#2d3436", label: "高度危险" },
+  "D":  { bg: "#636e72", text: "#fff", label: "极度危险" }
+};
+
 var CITY_DATABASE = {
   "tokyo": {
     "id": "tokyo",
