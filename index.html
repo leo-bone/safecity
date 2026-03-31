@@ -1269,9 +1269,9 @@
 
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
-<script src="data.js"></script>
-<script src="data_new.js"></script>
-<script src="realtime-api.js"></script>
+<script src="data.js?v=20260331"></script>
+<script src="data_new.js?v=20260331"></script>
+<script src="realtime-api.js?v=20260331"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
@@ -1363,6 +1363,9 @@ function renderCityGrid(filterContinent = '全部') {
   // 从CITY_DATABASE创建城市列表
   let cities = Object.keys(CITY_DATABASE).map(cityId => {
     const data = CITY_DATABASE[cityId];
+    // 兼容两种数据格式：data.js(safety) 和 data_new.js(safetyIndex)
+    const safetyObj = data.safety || {};
+    const safetyIndexObj = data.safetyIndex || {};
     return {
       id: cityId,
       name: data.name,
@@ -1370,8 +1373,8 @@ function renderCityGrid(filterContinent = '全部') {
       continent: data.continent,
       flag: data.flag,
       image: data.image,
-      safetyScore: data.safety.overall,
-      safetyGrade: data.safety.grade
+      safetyScore: safetyObj.overall || safetyIndexObj.overall || 50,
+      safetyGrade: safetyObj.grade || safetyIndexObj.grade || 'B'
     };
   });
   
@@ -1397,7 +1400,7 @@ function renderCityGrid(filterContinent = '全部') {
   grid.innerHTML = cities.map((city, idx) => {
     const gs = gradeStyle(city.safetyGrade);
     const data = CITY_DATABASE[city.id];
-    const grades = data.safety.grades;
+    const grades = (data.safety && data.safety.grades) || {};
     
     return `
     <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
@@ -2056,7 +2059,7 @@ function renderSearchResults(results) {
     const gs = gradeStyle(city.safetyGrade);
     const data = CITY_DATABASE[city.id];
     const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
-    const grades = data.safety.grades;
+    const grades = (data.safety && data.safety.grades) || {};
     return `
     <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
          onclick="openCity('${city.id}')"
