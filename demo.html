@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeCity 增强版演示</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0a0e1a 0%, #0f1623 100%);
+      color: #e8edf5;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 32px;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      text-align: center;
+      color: #8892a0;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #1a2236;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .flag {
+      font-size: 48px;
+    }
+    .city-info h2 {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+    .city-info p {
+      color: #8892a0;
+      font-size: 14px;
+    }
+    .score {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .score-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .grade-A, .grade-A- { background: #10b981; }
+    .score-label {
+      color: #8892a0;
+      font-size: 14px;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .metric {
+      background: #1f293d;
+      padding: 12px;
+      border-radius: 8px;
+    }
+    .metric-label {
+      font-size: 12px;
+      color: #8892a0;
+      margin-bottom: 4px;
+    }
+    .metric-bar {
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .metric-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 1s ease;
+    }
+    .tips {
+      background: #0f1623;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .tips-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tips-list {
+      list-style: none;
+    }
+    .tips-item {
+      font-size: 13px;
+      color: #8892a0;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.6;
+    }
+    .tips-item::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .link {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 8px 20px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .link:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 SafeCity Global 增强版演示</h1>
+    <p class="subtitle">50+ 安全指标 · 详细实用指南 · 125 个全球城市</p>
+    
+    <div class="grid">
+      <!-- 东京卡片 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="flag">🇯🇵</div>
+          <div class="city-info">
+            <h2>东京</h2>
+            <p>Tokyo, Japan · 亚洲</p>
+          </div>
+        </div>
+        
+        <div class="score">
+          <div class="score-circle grade-A-">81</div>
+          <div>
+            <div style="font-weight: 700; font-size: 20px;">安全评分 A-</div>
+            <div class="score-label">非常安全,适合家庭旅行</div>
+          </div>
+        </div>
+        
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-label">暴力犯罪 85</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 85%; background: #10b981;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">夜间安全 75</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 75%; background: #f59e0b;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">公共交通 88</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 88%; background: #10b981;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">医疗质量 88</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 88%; background: #10b981;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tips">
+          <div class="tips-title">🛡️ 安全建议</div>
+          <ul class="tips-list">
+            <li class="tips-item">避免深夜独自行走</li>
+            <li class="tips-item">使用官方出租车</li>
+            <li class="tips-item">购买旅游保险</li>
+            <li class="tips-item">了解地震应急措施</li>
+          </ul>
+        </div>
+        
+        <a href="detail_enhanced.html" class="link">查看详情 →</a>
+      </div>
+      
+      <!-- 新加坡卡片 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="flag">🇸🇬</div>
+          <div class="city-info">
+            <h2>新加坡</h2>
+            <p>Singapore, Singapore · 亚洲</p>
+          </div>
+        </div>
+        
+        <div class="score">
+          <div class="score-circle grade-A">95</div>
+          <div>
+            <div style="font-weight: 700; font-size: 20px;">安全评分 A</div>
+            <div class="score-label">世界最安全城市之一</div>
+          </div>
+        </div>
+        
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-label">暴力犯罪 95</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 95%; background: #10b981;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">夜间安全 93</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 93%; background: #10b981;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">公共交通 95</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 95%; background: #10b981;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">医疗质量 92</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 92%; background: #10b981;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tips">
+          <div class="tips-title">🛡️ 安全建议</div>
+          <ul class="tips-list">
+            <li class="tips-item">遵守严格法律法规</li>
+            <li class="tips-item">公共场所禁止吸烟</li>
+            <li class="tips-item">购买旅游保险</li>
+            <li class="tips-item">注意烟雾季节</li>
+          </ul>
+        </div>
+        
+        <a href="#" class="link">查看详情 →</a>
+      </div>
+      
+      <!-- 伦敦卡片 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="flag">🇬🇧</div>
+          <div class="city-info">
+            <h2>伦敦</h2>
+            <p>London, United Kingdom · 欧洲</p>
+          </div>
+        </div>
+        
+        <div class="score">
+          <div class="score-circle grade-A">95</div>
+          <div>
+            <div style="font-weight: 700; font-size: 20px;">安全评分 A</div>
+            <div class="score-label">历史文化名城,治安良好</div>
+          </div>
+        </div>
+        
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-label">暴力犯罪 90</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 90%; background: #10b981;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">夜间安全 80</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 80%; background: #3b82f6;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">公共交通 95</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 95%; background: #10b981;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">医疗质量 92</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 92%; background: #10b981;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tips">
+          <div class="tips-title">🛡️ 安全建议</div>
+          <ul class="tips-list">
+            <li class="tips-item">警惕扒手和诈骗</li>
+            <li class="tips-item">使用官方出租车</li>
+            <li class="tips-item">购买旅游保险</li>
+            <li class="tips-item">避免夜间偏僻地区</li>
+          </ul>
+        </div>
+        
+        <a href="#" class="link">查看详情 →</a>
+      </div>
+      
+      <!-- 纽约卡片 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="flag">🇺🇸</div>
+          <div class="city-info">
+            <h2>纽约</h2>
+            <p>New York, United States · 美洲</p>
+          </div>
+        </div>
+        
+        <div class="score">
+          <div class="score-circle" style="background: #f59e0b;">67</div>
+          <div>
+            <div style="font-weight: 700; font-size: 20px;">安全评分 B-</div>
+            <div class="score-label">需谨慎,注意安全</div>
+          </div>
+        </div>
+        
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-label">暴力犯罪 55</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 55%; background: #ef4444;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">夜间安全 45</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 45%; background: #ef4444;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">公共交通 65</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 65%; background: #f59e0b;"></div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">医疗质量 70</div>
+            <div class="metric-bar">
+              <div class="metric-fill" style="width: 70%; background: #f59e0b;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tips">
+          <div class="tips-title">🛡️ 安全建议</div>
+          <ul class="tips-list">
+            <li class="tips-item">避免危险区域</li>
+            <li class="tips-item">不要展示贵重物品</li>
+            <li class="tips-item">必须购买旅游保险</li>
+            <li class="tips-item">了解安全区域分布</li>
+          </ul>
+        </div>
+        
+        <a href="#" class="link">查看详情 →</a>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #1a2236; border-radius: 12px;">
+      <h3 style="margin-bottom: 16px;">📊 数据改进统计</h3>
+      <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <div style="font-size: 32px; font-weight: 800; color: #10b981;">50+</div>
+          <div style="color: #8892a0; font-size: 14px; margin-top: 4px;">安全指标</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 32px; font-weight: 800; color: #3b82f6;">20+</div>
+          <div style="color: #8892a0; font-size: 14px; margin-top: 4px;">安全建议</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 32px; font-weight: 800; color: #6366f1;">15+</div>
+          <div style="color: #8892a0; font-size: 14px; margin-top: 4px;">旅行贴士</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 32px; font-weight: 800; color: #f59e0b;">125</div>
+          <div style="color: #8892a0; font-size: 14px; margin-top: 4px;">全球城市</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
