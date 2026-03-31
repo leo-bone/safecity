@@ -1843,8 +1843,8 @@ function renderEmergencyPanel(data) {
 function renderLifestylePanel(data) {
   const l = data.lifestyle || {};
 
-  // 如果没有 lifestyle 数据，生成默认数据
-  const lifestyle = generateDefaultLifestyle(data);
+  // 只有在没有 lifestyle 数据或 lifestyle 数据不完整时才生成默认数据
+  const lifestyle = (!l.food || l.food.length === 0) ? generateDefaultLifestyle(data) : l;
 
   // 美食
   const foodEmojis = ['🍜','🍣','🌮','🍕','🥩','🦞','🍝','🥗','🍱','🍛'];

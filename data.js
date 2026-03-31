@@ -36,7 +36,42 @@ var CITY_DATABASE = {
         "transport": "B",
         "health": "B+",
         "natural": "B"
-      }
+      },
+      "hotspots": [
+        {
+          "area": "新宿歌舞伎町",
+          "desc": "夜间娱乐区，人员复杂，有醉酒者和可疑商家",
+          "risk": "高"
+        },
+        {
+          "area": "池袋西口",
+          "desc": "治安稍差，有流浪人员和醉汉聚集",
+          "risk": "中高"
+        },
+        {
+          "area": "上野公园周边",
+          "desc": "夜间有流浪人员聚集，光线较暗",
+          "risk": "中"
+        },
+        {
+          "area": "浅草仲见世通",
+          "desc": "游客密集，扒窃风险较高",
+          "risk": "低中"
+        },
+        {
+          "area": "涩谷站周边",
+          "desc": "人流量大，拥挤时易被扒窃",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "港区（六本木、麻布）- 高档住宅和使馆区，24小时监控",
+        "千代田区（丸之内、大手町）- CBD核心区，商务中心",
+        "涩谷区（代官山、惠比寿）- 时尚购物区，环境优雅",
+        "新宿区（新宿御苑周边）- 绿化公园区域",
+        "文京区 - 教育区域，大学众多，安静安全",
+        "世田谷区 - 高档住宅区，生活便利"
+      ]
     },
     "highlights": [
       "文化景点多",
@@ -221,7 +256,31 @@ var CITY_DATABASE = {
         "transport": "A",
         "health": "A",
         "natural": "A"
-      }
+      },
+      "hotspots": [
+        {
+          "area": "小印度",
+          "desc": "夜间偶有纠纷，人员复杂",
+          "risk": "低"
+        },
+        {
+          "area": "芽笼",
+          "desc": "红灯区，人员复杂，游客应避免",
+          "risk": "中"
+        },
+        {
+          "area": "巴刹夜市",
+          "desc": "人流密集，易丢财物",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "乌节路商圈 - 主要商业街，监控全覆盖",
+        "滨海湾区域 - CBD核心区，24小时安保",
+        "东海岸公园 - 海滨公园，家庭友好",
+        "武吉知马区 - 高档住宅区，环境优美",
+        "荷兰村 - 外籍人士聚集区，国际化氛围"
+      ]
     },
     "highlights": [
       "美食丰富",
@@ -407,23 +466,30 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
       "hotspots": [
         {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
+          "area": "车站后巷",
+          "desc": "人流量小，光线暗",
+          "risk": "低中"
         },
         {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
+          "area": "娱乐场所周边",
+          "desc": "夜生活区域，醉酒人员",
+          "risk": "低"
+        },
+        {
+          "area": "观光景点",
+          "desc": "游客密集，扒窃风险",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+      "市中心车站周边 - 主要交通枢纽，监控完善",
+      "商业街 - 主要购物区",
+      "政府机关周边 - 治安管理严格"
+      ]
+    }
+      ],
       ]
     },
     "highlights": [
@@ -669,23 +735,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -903,23 +953,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -1137,23 +1171,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -1371,23 +1389,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -1605,23 +1607,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -1839,23 +1825,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -2073,28 +2043,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "新宿区（繁华区域）",
-        "涩谷区（中央车站附近）",
-        "港区（高档住宅区）",
-        "千代田区（政府机关区域）"
       ],
-      "hotspots": [
-        {
-          "area": "歌舞伎町",
-          "desc": "夜生活区，注意拉客和诈骗",
-          "risk": "中"
-        },
-        {
-          "area": "六本木",
-          "desc": "夜间娱乐区，注意酒后闹事",
-          "risk": "中"
-        },
-        {
-          "area": "新宿站周围",
-          "desc": "人流密集，注意财物",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -2345,23 +2294,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -2579,23 +2512,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -2813,23 +2730,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -3047,23 +2948,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -3281,23 +3166,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -3515,23 +3384,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -3749,23 +3602,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -3983,23 +3820,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -4217,23 +4038,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -4451,23 +4256,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -4685,23 +4474,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -4919,23 +4692,7 @@ var CITY_DATABASE = {
         "health": "B-",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -5153,23 +4910,7 @@ var CITY_DATABASE = {
         "health": "B-",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -5387,23 +5128,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -5621,23 +5346,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -5855,23 +5564,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -6089,23 +5782,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -6323,23 +6000,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -6557,23 +6218,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -6791,23 +6436,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -7025,23 +6654,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -7259,23 +6872,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -7493,23 +7090,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -7727,23 +7308,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -7961,23 +7526,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -8195,23 +7744,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -8429,23 +7962,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -8663,23 +8180,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -8897,23 +8398,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -9131,23 +8616,7 @@ var CITY_DATABASE = {
         "health": "B-",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -9365,23 +8834,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -9599,23 +9052,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -9833,23 +9270,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -10067,23 +9488,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -10301,23 +9706,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -10535,23 +9924,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -10769,23 +10142,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -11003,23 +10360,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -11237,23 +10578,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -11471,23 +10796,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -11705,23 +11014,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -11939,23 +11232,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -12173,23 +11450,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -12407,23 +11668,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -12641,23 +11886,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -12875,23 +12104,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -13109,23 +12322,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -13343,23 +12540,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -13577,23 +12758,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -13811,23 +12976,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -14045,23 +13194,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -14279,23 +13412,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -14513,23 +13630,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -14747,23 +13848,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -14981,23 +14066,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -15215,23 +14284,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -15449,23 +14502,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -15683,23 +14720,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -15917,23 +14938,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -16151,23 +15156,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -16385,23 +15374,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -16619,23 +15592,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -16853,23 +15810,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -17087,23 +16028,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -17321,23 +16246,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -17555,23 +16464,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -17789,23 +16682,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -18023,23 +16900,7 @@ var CITY_DATABASE = {
         "health": "B-",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -18257,23 +17118,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -18491,23 +17336,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -18725,23 +17554,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -18959,23 +17772,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -19193,23 +17990,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -19427,23 +18208,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -19661,23 +18426,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -19895,23 +18644,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -20129,23 +18862,7 @@ var CITY_DATABASE = {
         "health": "B-",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -20363,23 +19080,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -20597,23 +19298,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -20831,23 +19516,7 @@ var CITY_DATABASE = {
         "health": "B-",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -21065,23 +19734,7 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -21299,23 +19952,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "B+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -21533,23 +20170,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -21767,23 +20388,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -22001,23 +20606,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -22235,23 +20824,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -22469,23 +21042,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -22703,23 +21260,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -22937,23 +21478,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -23171,23 +21696,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -23405,23 +21914,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -23639,23 +22132,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -23873,23 +22350,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -24107,23 +22568,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C+"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -24341,23 +22786,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -24575,23 +23004,7 @@ var CITY_DATABASE = {
         "health": "B",
         "natural": "B"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -24809,23 +23222,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -25043,23 +23440,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -25277,23 +23658,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -25511,23 +23876,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -25745,23 +24094,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -25979,23 +24312,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -26213,23 +24530,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -26447,23 +24748,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -26681,23 +24966,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -26915,23 +25184,7 @@ var CITY_DATABASE = {
         "health": "C",
         "natural": "C"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -27149,23 +25402,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -27383,23 +25620,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -27617,23 +25838,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -27851,23 +26056,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -28085,23 +26274,7 @@ var CITY_DATABASE = {
         "health": "B+",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -28319,23 +26492,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -28553,23 +26710,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -28787,23 +26928,7 @@ var CITY_DATABASE = {
         "health": "A",
         "natural": "A"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
@@ -29021,23 +27146,7 @@ var CITY_DATABASE = {
         "health": "C+",
         "natural": "B-"
       },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
       ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
       ]
     },
     "highlights": [
