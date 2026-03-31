@@ -1269,10 +1269,10 @@
 
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
-<script src="data.js?v=20260331"></script>
-<script src="data_enhanced.js?v=20260331"></script>
-<script src="data_new.js?v=20260331"></script>
-<script src="realtime-api.js?v=20260331"></script>
+<script src="data.js?v=202603312317"></script>
+<script src="data_enhanced.js?v=202603312317"></script>
+<script src="data_new.js?v=202603312317"></script>
+<script src="realtime-api.js?v=202603312317"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
@@ -1843,9 +1843,13 @@ function renderEmergencyPanel(data) {
 function renderLifestylePanel(data) {
   const l = data.lifestyle || {};
 
+  // 如果没有 lifestyle 数据，生成默认数据
+  const lifestyle = generateDefaultLifestyle(data);
+
   // 美食
   const foodEmojis = ['🍜','🍣','🌮','🍕','🥩','🦞','🍝','🥗','🍱','🍛'];
-  document.getElementById('food-list').innerHTML = (l.food || []).map((f, i) => `
+  const foodList = l.food || lifestyle.food;
+  document.getElementById('food-list').innerHTML = foodList.map((f, i) => `
     <div class="food-card">
       <span class="food-icon">${foodEmojis[i % foodEmojis.length]}</span>
       <div class="food-info">
@@ -1857,34 +1861,212 @@ function renderLifestylePanel(data) {
         <div class="food-desc">${f.desc || ''}</div>
         ${f.tip ? `<div class="food-tip">💡 ${f.tip}</div>` : ''}
       </div>
-    </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">当地特色美食信息持续完善中 🍽️</div>`;
+    </div>`).join('');
 
   // 景点
-  document.getElementById('attractions-list').innerHTML = (l.attractions || []).map(a => `
+  const attractionsList = l.attractions || lifestyle.attractions;
+  document.getElementById('attractions-list').innerHTML = attractionsList.map(a => `
     <div class="attraction-card">
       ${a.hidden ? '<span class="hidden-gem-badge">💎 隐藏宝藏</span>' : ''}
       <div class="attraction-name">${a.name}</div>
       <span class="attraction-type">${a.type || ''}</span>
       <div class="attraction-desc">${a.desc || ''}</div>
-    </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">景点推荐持续完善中 🗺️</div>`;
+    </div>`).join('');
 
   // 节庆
-  document.getElementById('festivals-list').innerHTML = (l.festivals || []).map(f => `
+  const festivalsList = l.festivals || lifestyle.festivals;
+  document.getElementById('festivals-list').innerHTML = festivalsList.map(f => `
     <div class="festival-card">
       <div class="festival-date-box">📅 ${f.date.length > 12 ? f.date.substring(0,12)+'…' : f.date}</div>
       <div>
         <div class="festival-name">${f.name}</div>
         <div class="festival-desc">${f.desc}</div>
       </div>
-    </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">节庆活动信息持续完善中 🎉</div>`;
+    </div>`).join('');
 
   // 风俗
   const customIcons = ['🙏','🤝','🍽️','👗','🚪','💰','📸','🎎'];
-  document.getElementById('customs-list').innerHTML = (l.customs || []).map((c, i) => `
-    <li><span>${customIcons[i % customIcons.length]}</span><span>${c}</span></li>`).join('') || `<li><span>🌍</span><span>文化习俗信息持续完善中</span></li>`;
+  const customsList = l.customs || lifestyle.customs;
+  document.getElementById('customs-list').innerHTML = customsList.map((c, i) => `
+    <li><span>${customIcons[i % customIcons.length]}</span><span>${c}</span></li>`).join('');
 
   // 交通
-  document.getElementById('transport-info').textContent = l.transport || '当地交通指南持续完善中';
+  const transportText = l.transport || lifestyle.transport;
+  document.getElementById('transport-info').textContent = transportText;
+}
+
+// 生成默认的 lifestyle 数据
+function generateDefaultLifestyle(data) {
+  const country = data.country || '';
+  const continent = data.continent || '';
+
+  // 基础数据
+  const baseLifestyle = {
+    food: [
+      { name: '当地特色菜', type: '当地菜', price: '中等', desc: '品尝当地传统美食', tip: '选择当地人推荐的餐厅' },
+      { name: '街头小吃', type: '小吃', price: '便宜', desc: '体验地道风味', tip: '注意卫生条件' },
+      { name: '海鲜料理', type: '海鲜', price: '中高', desc: '新鲜的海鲜料理' }
+    ],
+    attractions: [
+      { name: '市中心历史区', type: '历史文化', desc: '探索当地历史文化', hidden: false },
+      { name: '本地市场', type: '集市', desc: '体验当地生活气息', hidden: true },
+      { name: '城市公园', type: '公园', desc: '休闲娱乐的好去处', hidden: false }
+    ],
+    festivals: [
+      { name: '新年庆祝', date: '1月1日', desc: '新年庆祝活动' },
+      { name: '文化节日', date: '全年', desc: '体验当地文化' }
+    ],
+    customs: [
+      '尊重当地文化和传统',
+      '遵守当地法律法规',
+      '注意公共场合礼仪',
+      '保护当地环境',
+      '与当地人友好互动'
+    ],
+    transport: '建议使用当地公共交通，方便又经济实惠。'
+  };
+
+  // 根据国家/地区定制数据
+  const customizations = {
+    '日本': {
+      food: [
+        { name: '寿司', type: '日本料理', price: '¥2,000-5,000', desc: '新鲜生鱼片，日本传统料理', tip: '选择有认证的店铺' },
+        { name: '拉面', type: '面食', price: '¥800-1,500', desc: '浓郁汤底配上Q弹面条' },
+        { name: '天妇罗', type: '日本料理', price: '¥1,500-3,000', desc: '油炸海鲜和蔬菜' }
+      ],
+      customs: [
+        '进入室内需要脱鞋',
+        '不要在电车上大声说话',
+        '给小费是不礼貌的行为',
+        '不要边走边吃',
+        '公共场合尽量避免大声打电话'
+      ],
+      transport: '公共交通非常发达，地铁和电车是最主要交通方式，购买一日券更划算。'
+    },
+    '韩国': {
+      food: [
+        { name: '韩式烤肉', type: '烧烤', price: '₩20,000-40,000', desc: '炭火烤制的优质牛肉', tip: '搭配烧酒更佳' },
+        { name: '泡菜', type: '发酵食品', price: '₩5,000-10,000', desc: '韩国传统发酵蔬菜' },
+        { name: '石锅拌饭', type: '米饭', price: '₩8,000-15,000', desc: '热石锅盛装的营养拌饭' }
+      ],
+      customs: [
+        '和长辈一起喝酒要侧身',
+        '双手接过长辈给的物品',
+        '鞋子要整齐放在门口',
+        '不要给小费',
+        '公共场合保持安静'
+      ],
+      transport: '地铁系统发达，覆盖全市，T-money卡可用于交通和便利店支付。'
+    },
+    '美国': {
+      food: [
+        { name: '汉堡', type: '快餐', price: '$8-15', desc: '美式经典汉堡' },
+        { name: '牛排', type: '美式料理', price: '$30-60', desc: '高品质牛排' },
+        { name: 'BBQ', type: '烧烤', price: '$15-30', desc: '美式烤肉' }
+      ],
+      customs: [
+        '小费文化很重要，通常15-20%',
+        '直接眼神交流表示尊重',
+        '守时很重要',
+        '排队是基本礼仪',
+        '个人空间很重要'
+      ],
+      transport: '公共交通系统因城市而异，租车在美国是常见选择。'
+    },
+    '英国': {
+      food: [
+        { name: '炸鱼薯条', type: '英式', price: '£8-15', desc: '英国国菜' },
+        { name: '英式早餐', type: '早餐', price: '£10-15', desc: '丰盛的传统早餐' },
+        { name: '下午茶', type: '甜点', price: '£15-25', desc: '精致的英式下午茶' }
+      ],
+      customs: [
+        '排队是英国人的基本礼仪',
+        '说"please"和"thank you"很重要',
+        '在酒吧买单各付各的',
+        '不要在公共场合大声喧哗',
+        '注意个人隐私'
+      ],
+      transport: '地铁系统发达，Oyster卡可以通用，双层巴士体验独特。'
+    },
+    '法国': {
+      food: [
+        { name: '法式蜗牛', type: '法式', price: '€15-25', desc: '法式经典前菜' },
+        { name: '法式甜点', type: '甜点', price: '€5-15', desc: '精致法式甜点' },
+        { name: '法式面包', type: '烘焙', price: '€2-5', desc: '新鲜法棍和面包' }
+      ],
+      customs: [
+        '法国人重视餐桌礼仪',
+        '见面时行贴面礼',
+        '说"Bonjour"很重要',
+        '不要在公共场所大声说话',
+        '尊重当地文化'
+      ],
+      transport: '公共交通完善，购买Navigo卡更划算，公共交通覆盖全城。'
+    },
+    '德国': {
+      food: [
+        { name: '德国香肠', type: '肉类', price: '€8-15', desc: '各种德式香肠' },
+        { name: '德国猪肘', type: '烤肉', price: '€15-25', desc: '脆皮烤猪肘' },
+        { name: '啤酒', type: '饮品', price: '€4-8', desc: '德国啤酒' }
+      ],
+      customs: [
+        '守时非常重要',
+        '垃圾分类很严格',
+        '周日大部分商店不开门',
+        '公共场所保持安静',
+        '尊重交通规则'
+      ],
+      transport: '公共交通发达，购买日票或周票更经济，自行车也是好选择。'
+    },
+    '意大利': {
+      food: [
+        { name: '披萨', type: '意大利菜', price: '€10-20', desc: '正宗意大利披萨' },
+        { name: '意面', type: '意大利菜', price: '€12-25', desc: '手工意大利面' },
+        { name: '冰淇淋', type: '甜点', price: '€3-8', desc: '意大利手工冰淇淋' }
+      ],
+      customs: [
+        '餐后不要马上喝咖啡',
+        '意大利人重视家庭',
+        '不要在教堂内大声说话',
+        '咖啡站着喝更便宜',
+        '尊重当地文化'
+      ],
+      transport: '公共交通便利，特别是在大城市，步行和骑行也是不错的选择。'
+    },
+    '泰国': {
+      food: [
+        { name: '冬阴功汤', type: '泰国菜', price: '฿150-300', desc: '酸辣海鲜汤' },
+        { name: '泰式炒河粉', type: '泰国菜', price: '฿100-200', desc: '经典泰式河粉' },
+        { name: '芒果糯米饭', type: '甜点', price: '฿80-150', desc: '香甜芒果配糯米' }
+      ],
+      customs: [
+        '不要触摸别人的头',
+        '对王室要尊重',
+        '不要用脚指物',
+        '进入寺庙要脱鞋',
+        "说'Sawasdee'表示问候"
+      ],
+      transport: '突突车、出租车和Grab打车都很方便，BTS轻轨和MRT地铁覆盖主要区域。'
+    }
+  };
+
+  // 应用定制数据
+  if (customizations[country]) {
+    return { ...baseLifestyle, ...customizations[country] };
+  }
+
+  // 根据洲际返回定制数据
+  if (continent === '亚洲') {
+    baseLifestyle.transport = '亚洲城市公共交通普遍发达，地铁和巴士系统完善，方便出行。';
+  } else if (continent === '欧洲') {
+    baseLifestyle.transport = '欧洲公共交通系统发达，铁路网络完善，城市间交通便捷。';
+  } else if (continent === '北美洲') {
+    baseLifestyle.transport = '北美城市交通以私家车为主，大城市有地铁和公交系统。';
+  } else if (continent === '大洋洲') {
+    baseLifestyle.transport = '大洋洲城市公共交通便利，特别是澳大利亚和新西兰。';
+  }
+
+  return baseLifestyle;
 }
 
 // ─────────────────────────────────────────────────────
