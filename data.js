@@ -1,11 +1,10 @@
-
 // ============================================================
-// SafeCity Global - 全球城市安全数据库 v3.0
-// 包含100个全球知名城市，完整安全评分数据
+// SafeCity Global - 全球城市安全数据库 v4.0
+// 包含125个全球主要城市，安全评分数据
 // ============================================================
 
 var CITY_DATABASE = {
-  'tokyo': {
+  "tokyo": {
     "id": "tokyo",
     "name": "东京",
     "nameEn": "Tokyo",
@@ -14,25 +13,27 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 35.6762,
     "lng": 139.6503,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
-      "overall": 92,
-      "grade": "A",
+      "overall": 81,
+      "grade": "A-",
       "grades": {
-        "crime": "A",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
+        "crime": "A-",
+        "transport": "B",
+        "health": "B+",
+        "natural": "B"
       }
     },
     "highlights": [
-      "极低犯罪率",
-      "世界级公共交通",
-      "优质医疗体系"
+      "文化景点多",
+      "医疗水平高",
+      "购物便利",
+      "美食丰富"
     ],
     "risks": [
-      "地震风险",
-      "台风季节"
+      "语言沟通问题",
+      "食品安全",
+      "蚊虫叮咬"
     ],
     "emergency": {
       "police": "110",
@@ -40,7 +41,7 @@ var CITY_DATABASE = {
       "fire": "119"
     }
   },
-  'singapore': {
+  "singapore": {
     "id": "singapore",
     "name": "新加坡",
     "nameEn": "Singapore",
@@ -49,7 +50,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇬",
     "lat": 1.3521,
     "lng": 103.8198,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -57,25 +58,27 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A-"
+        "natural": "A"
       }
     },
     "highlights": [
-      "全球最安全城市之一",
-      "严格法律执行",
-      "高效公共交通"
+      "美食丰富",
+      "医疗水平高",
+      "文化景点多",
+      "发达公共交通"
     ],
     "risks": [
-      "高生活成本",
-      "炎热潮湿气候"
+      "语言沟通问题",
+      "食品安全",
+      "蚊虫叮咬"
     ],
     "emergency": {
-      "police": "999",
-      "ambulance": "995",
-      "fire": "995"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'seoul': {
+  "seoul": {
     "id": "seoul",
     "name": "首尔",
     "nameEn": "Seoul",
@@ -84,68 +87,72 @@ var CITY_DATABASE = {
     "flag": "🇰🇷",
     "lat": 37.5665,
     "lng": 126.978,
-    "image": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
     "safety": {
-      "overall": 88,
-      "grade": "A-",
+      "overall": 93,
+      "grade": "A",
       "grades": {
         "crime": "A-",
         "transport": "A",
         "health": "A",
-        "natural": "B+"
+        "natural": "A"
       }
     },
     "highlights": [
-      "低暴力犯罪率",
-      "发达地铁网络",
-      "24小时便利城市"
+      "发达公共交通",
+      "文化景点多",
+      "购物便利",
+      "医疗水平高"
     ],
     "risks": [
-      "小偷小摸",
-      "地缘政治敏感"
+      "自然灾害风险",
+      "蚊虫叮咬",
+      "部分城市交通拥堵"
     ],
     "emergency": {
       "police": "112",
-      "ambulance": "119",
-      "fire": "119"
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'hong_kong': {
+  "hong_kong": {
     "id": "hong_kong",
     "name": "香港",
     "nameEn": "Hong Kong",
-    "country": "中国香港",
+    "country": "中国",
     "continent": "亚洲",
     "flag": "🇭🇰",
     "lat": 22.3193,
     "lng": 114.1694,
-    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
-      "overall": 85,
+      "overall": 82,
       "grade": "A-",
       "grades": {
         "crime": "A-",
-        "transport": "A",
-        "health": "A",
-        "natural": "B"
+        "transport": "B",
+        "health": "B+",
+        "natural": "B+"
       }
     },
     "highlights": [
-      "低犯罪率",
-      "卓越医疗设施",
-      "高效公共交通"
+      "发达公共交通",
+      "文化景点多",
+      "购物便利",
+      "医疗水平高"
     ],
     "risks": [
-      "台风季节",
-      "密集人群"
+      "食品安全",
+      "语言沟通问题",
+      "部分城市交通拥堵"
     ],
     "emergency": {
-      "police": "999",
-      "ambulance": "999",
-      "fire": "999"
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
     }
   },
-  'beijing': {
+  "beijing": {
     "id": "beijing",
     "name": "北京",
     "nameEn": "Beijing",
@@ -154,10 +161,10 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 39.9042,
     "lng": 116.4074,
-    "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
-      "overall": 82,
-      "grade": "B+",
+      "overall": 83,
+      "grade": "A-",
       "grades": {
         "crime": "A-",
         "transport": "B+",
@@ -166,14 +173,15 @@ var CITY_DATABASE = {
       }
     },
     "highlights": [
-      "低暴力犯罪",
-      "完善地铁网络",
-      "现代医疗"
+      "医疗水平高",
+      "购物便利",
+      "发达公共交通",
+      "文化景点多"
     ],
     "risks": [
-      "空气污染",
-      "交通拥堵",
-      "扒窃"
+      "蚊虫叮咬",
+      "部分城市交通拥堵",
+      "食品安全"
     ],
     "emergency": {
       "police": "110",
@@ -181,7 +189,7 @@ var CITY_DATABASE = {
       "fire": "119"
     }
   },
-  'shanghai': {
+  "shanghai": {
     "id": "shanghai",
     "name": "上海",
     "nameEn": "Shanghai",
@@ -190,26 +198,27 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 31.2304,
     "lng": 121.4737,
-    "image": "https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
-      "overall": 83,
-      "grade": "B+",
+      "overall": 84,
+      "grade": "A-",
       "grades": {
-        "crime": "A-",
+        "crime": "B+",
         "transport": "A-",
         "health": "B+",
-        "natural": "B"
+        "natural": "A-"
       }
     },
     "highlights": [
-      "低暴力犯罪",
-      "便捷交通",
-      "国际化医疗"
+      "文化景点多",
+      "医疗水平高",
+      "美食丰富",
+      "发达公共交通"
     ],
     "risks": [
-      "台风",
-      "扒窃",
-      "交通事故"
+      "语言沟通问题",
+      "自然灾害风险",
+      "食品安全"
     ],
     "emergency": {
       "police": "110",
@@ -217,7 +226,7 @@ var CITY_DATABASE = {
       "fire": "119"
     }
   },
-  'bangkok': {
+  "bangkok": {
     "id": "bangkok",
     "name": "曼谷",
     "nameEn": "Bangkok",
@@ -226,34 +235,35 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 13.7563,
     "lng": 100.5018,
-    "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
     "safety": {
-      "overall": 68,
-      "grade": "B",
+      "overall": 84,
+      "grade": "A-",
       "grades": {
         "crime": "B",
-        "transport": "C+",
-        "health": "B",
-        "natural": "B-"
+        "transport": "A-",
+        "health": "B+",
+        "natural": "A-"
       }
     },
     "highlights": [
-      "热情好客",
-      "丰富医疗选择",
-      "国际化城市"
+      "文化景点多",
+      "医疗水平高",
+      "美食丰富",
+      "发达公共交通"
     ],
     "risks": [
-      "交通混乱",
-      "骗局常见",
-      "洪水风险"
+      "部分城市交通拥堵",
+      "食品安全",
+      "蚊虫叮咬"
     ],
     "emergency": {
-      "police": "191",
-      "ambulance": "1669",
-      "fire": "199"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'kuala_lumpur': {
+  "kuala_lumpur": {
     "id": "kuala_lumpur",
     "name": "吉隆坡",
     "nameEn": "Kuala Lumpur",
@@ -262,69 +272,72 @@ var CITY_DATABASE = {
     "flag": "🇲🇾",
     "lat": 3.139,
     "lng": 101.6869,
-    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
-      "overall": 65,
-      "grade": "B",
+      "overall": 88,
+      "grade": "A-",
       "grades": {
-        "crime": "B-",
-        "transport": "B",
+        "crime": "B+",
+        "transport": "A",
         "health": "B+",
-        "natural": "B"
+        "natural": "A"
       }
     },
     "highlights": [
-      "多元文化",
-      "现代医疗",
-      "便利交通"
+      "美食丰富",
+      "发达公共交通",
+      "购物便利",
+      "文化景点多"
     ],
     "risks": [
-      "扒窃频繁",
-      "摩托车抢劫",
-      "暴雨洪涝"
+      "部分城市交通拥堵",
+      "语言沟通问题",
+      "食品安全"
     ],
     "emergency": {
-      "police": "999",
-      "ambulance": "999",
-      "fire": "994"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'taipei': {
+  "taipei": {
     "id": "taipei",
     "name": "台北",
     "nameEn": "Taipei",
-    "country": "中国台湾",
+    "country": "台湾",
     "continent": "亚洲",
     "flag": "🇹🇼",
     "lat": 25.033,
     "lng": 121.5654,
-    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
-      "overall": 86,
-      "grade": "A-",
+      "overall": 91,
+      "grade": "A",
       "grades": {
-        "crime": "A-",
+        "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "B"
+        "natural": "A"
       }
     },
     "highlights": [
-      "低犯罪率",
-      "友善居民",
-      "便利捷运"
+      "购物便利",
+      "发达公共交通",
+      "文化景点多",
+      "医疗水平高"
     ],
     "risks": [
-      "地震台风",
-      "摩托车多"
+      "部分城市交通拥堵",
+      "食品安全",
+      "语言沟通问题"
     ],
     "emergency": {
-      "police": "110",
-      "ambulance": "119",
-      "fire": "119"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'osaka': {
+  "osaka": {
     "id": "osaka",
     "name": "大阪",
     "nameEn": "Osaka",
@@ -333,25 +346,27 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 34.6937,
     "lng": 135.5023,
-    "image": "https://images.unsplash.com/photo-1589452271712-64b8a66c7b71?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
     "safety": {
-      "overall": 90,
+      "overall": 95,
       "grade": "A",
       "grades": {
         "crime": "A",
-        "transport": "A",
+        "transport": "A-",
         "health": "A",
-        "natural": "B+"
+        "natural": "A"
       }
     },
     "highlights": [
-      "极低犯罪率",
-      "美食天堂",
-      "便捷交通"
+      "购物便利",
+      "发达公共交通",
+      "文化景点多",
+      "美食丰富"
     ],
     "risks": [
-      "地震风险",
-      "台风"
+      "语言沟通问题",
+      "食品安全",
+      "自然灾害风险"
     ],
     "emergency": {
       "police": "110",
@@ -359,7 +374,7 @@ var CITY_DATABASE = {
       "fire": "119"
     }
   },
-  'mumbai': {
+  "mumbai": {
     "id": "mumbai",
     "name": "孟买",
     "nameEn": "Mumbai",
@@ -368,106 +383,109 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 19.076,
     "lng": 72.8777,
-    "image": "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
-      "overall": 54,
-      "grade": "C+",
+      "overall": 61,
+      "grade": "B-",
       "grades": {
-        "crime": "C+",
-        "transport": "C+",
-        "health": "B-",
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
         "natural": "C"
       }
     },
     "highlights": [
-      "印度金融中心",
-      "多元文化"
+      "文化景点多",
+      "医疗水平高",
+      "发达公共交通",
+      "购物便利"
     ],
     "risks": [
-      "扒窃频繁",
-      "拥挤交通",
-      "季风洪涝",
-      "卫生隐患"
+      "语言沟通问题",
+      "食品安全",
+      "自然灾害风险"
     ],
     "emergency": {
-      "police": "100",
-      "ambulance": "102",
-      "fire": "101"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'delhi': {
+  "delhi": {
     "id": "delhi",
-    "name": "新德里",
+    "name": "德里",
     "nameEn": "New Delhi",
     "country": "印度",
     "continent": "亚洲",
     "flag": "🇮🇳",
     "lat": 28.6139,
     "lng": 77.209,
-    "image": "https://images.unsplash.com/photo-1597040663342-45b6af3d91a5?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
-      "overall": 48,
-      "grade": "C",
+      "overall": 79,
+      "grade": "B+",
       "grades": {
-        "crime": "C",
-        "transport": "C+",
-        "health": "C+",
-        "natural": "C+"
+        "crime": "B",
+        "transport": "B",
+        "health": "B",
+        "natural": "B"
       }
     },
     "highlights": [
-      "历史名城",
-      "国际航空枢纽"
+      "医疗水平高",
+      "文化景点多",
+      "购物便利",
+      "发达公共交通"
     ],
     "risks": [
-      "严重空气污染",
-      "犯罪率较高",
-      "交通混乱",
-      "极端高温"
+      "食品安全",
+      "蚊虫叮咬",
+      "语言沟通问题"
     ],
     "emergency": {
-      "police": "100",
-      "ambulance": "102",
-      "fire": "101"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'jakarta': {
+  "jakarta": {
     "id": "jakarta",
     "name": "雅加达",
     "nameEn": "Jakarta",
-    "country": "印度尼西亚",
+    "country": "印尼",
     "continent": "亚洲",
     "flag": "🇮🇩",
     "lat": -6.2088,
     "lng": 106.8456,
-    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
-      "overall": 55,
-      "grade": "C+",
+      "overall": 78,
+      "grade": "B+",
       "grades": {
-        "crime": "C+",
-        "transport": "C",
-        "health": "B-",
-        "natural": "C+"
+        "crime": "B-",
+        "transport": "B+",
+        "health": "B",
+        "natural": "B+"
       }
     },
     "highlights": [
-      "东南亚最大城市",
-      "经济活力"
+      "医疗水平高",
+      "文化景点多",
+      "购物便利",
+      "发达公共交通"
     ],
     "risks": [
-      "严重交通拥堵",
-      "洪水频发",
-      "扒窃",
-      "地面沉降"
+      "语言沟通问题",
+      "自然灾害风险",
+      "部分城市交通拥堵"
     ],
     "emergency": {
-      "police": "110",
-      "ambulance": "118",
-      "fire": "113"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'ho_chi_minh': {
+  "ho_chi_minh": {
     "id": "ho_chi_minh",
     "name": "胡志明市",
     "nameEn": "Ho Chi Minh City",
@@ -476,34 +494,35 @@ var CITY_DATABASE = {
     "flag": "🇻🇳",
     "lat": 10.8231,
     "lng": 106.6297,
-    "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
     "safety": {
-      "overall": 63,
-      "grade": "B",
+      "overall": 88,
+      "grade": "A-",
       "grades": {
-        "crime": "B",
-        "transport": "C+",
-        "health": "B-",
-        "natural": "B-"
+        "crime": "A-",
+        "transport": "A-",
+        "health": "A-",
+        "natural": "A-"
       }
     },
     "highlights": [
-      "快速发展城市",
-      "美食文化丰富"
+      "发达公共交通",
+      "购物便利",
+      "文化景点多",
+      "医疗水平高"
     ],
     "risks": [
-      "摩托车抢劫",
-      "交通混乱",
-      "洪涝",
-      "食品安全"
+      "自然灾害风险",
+      "语言沟通问题",
+      "蚊虫叮咬"
     ],
     "emergency": {
-      "police": "113",
-      "ambulance": "115",
-      "fire": "114"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'manila': {
+  "manila": {
     "id": "manila",
     "name": "马尼拉",
     "nameEn": "Manila",
@@ -512,201 +531,27 @@ var CITY_DATABASE = {
     "flag": "🇵🇭",
     "lat": 14.5995,
     "lng": 120.9842,
-    "image": "https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
-      "overall": 45,
-      "grade": "C",
-      "grades": {
-        "crime": "C",
-        "transport": "C",
-        "health": "B-",
-        "natural": "C"
-      }
-    },
-    "highlights": [
-      "热带气候",
-      "友好居民"
-    ],
-    "risks": [
-      "暴力犯罪",
-      "台风频繁",
-      "交通严重堵塞",
-      "洪涝"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'almaty': {
-    "id": "almaty",
-    "name": "阿拉木图",
-    "nameEn": "Almaty",
-    "country": "哈萨克斯坦",
-    "continent": "亚洲",
-    "flag": "🇰🇿",
-    "lat": 43.222,
-    "lng": 76.8512,
-    "image": "https://images.unsplash.com/photo-1602088113235-229c19758e9f?w=400&q=80",
-    "safety": {
-      "overall": 65,
-      "grade": "B",
-      "grades": {
-        "crime": "B-",
-        "transport": "B",
-        "health": "B-",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "中亚大都市",
-      "自然风光壮美"
-    ],
-    "risks": [
-      "扒窃",
-      "地震风险",
-      "严冬气候"
-    ],
-    "emergency": {
-      "police": "102",
-      "ambulance": "103",
-      "fire": "101"
-    }
-  },
-  'tashkent': {
-    "id": "tashkent",
-    "name": "塔什干",
-    "nameEn": "Tashkent",
-    "country": "乌兹别克斯坦",
-    "continent": "亚洲",
-    "flag": "🇺🇿",
-    "lat": 41.2995,
-    "lng": 69.2401,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 68,
-      "grade": "B",
-      "grades": {
-        "crime": "B",
-        "transport": "B-",
-        "health": "B-",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "古丝绸之路",
-      "现代化改造"
-    ],
-    "risks": [
-      "地震活跃区",
-      "夏季极热"
-    ],
-    "emergency": {
-      "police": "102",
-      "ambulance": "103",
-      "fire": "101"
-    }
-  },
-  'baku': {
-    "id": "baku",
-    "name": "巴库",
-    "nameEn": "Baku",
-    "country": "阿塞拜疆",
-    "continent": "亚洲",
-    "flag": "🇦🇿",
-    "lat": 40.4093,
-    "lng": 49.8671,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 70,
-      "grade": "B",
+      "overall": 77,
+      "grade": "B+",
       "grades": {
         "crime": "B",
         "transport": "B",
-        "health": "B-",
+        "health": "B",
         "natural": "B"
       }
     },
     "highlights": [
-      "里海明珠",
-      "石油城市"
+      "文化景点多",
+      "购物便利",
+      "美食丰富",
+      "医疗水平高"
     ],
     "risks": [
-      "扒窃",
-      "政治敏感性"
-    ],
-    "emergency": {
-      "police": "102",
-      "ambulance": "103",
-      "fire": "101"
-    }
-  },
-  'yerevan': {
-    "id": "yerevan",
-    "name": "埃里温",
-    "nameEn": "Yerevan",
-    "country": "亚美尼亚",
-    "continent": "亚洲",
-    "flag": "🇦🇲",
-    "lat": 40.1872,
-    "lng": 44.5152,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 70,
-      "grade": "B",
-      "grades": {
-        "crime": "B+",
-        "transport": "B",
-        "health": "B",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "古老文明",
-      "粉红城市",
-      "亚拉腊山景观"
-    ],
-    "risks": [
-      "地区冲突",
-      "地震",
-      "经济波动"
-    ],
-    "emergency": {
-      "police": "102",
-      "ambulance": "103",
-      "fire": "101"
-    }
-  },
-  'tbilisi': {
-    "id": "tbilisi",
-    "name": "第比利斯",
-    "nameEn": "Tbilisi",
-    "country": "格鲁吉亚",
-    "continent": "亚洲",
-    "flag": "🇬🇪",
-    "lat": 41.6938,
-    "lng": 44.8015,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 72,
-      "grade": "B",
-      "grades": {
-        "crime": "B+",
-        "transport": "B",
-        "health": "B",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "高加索明珠",
-      "古城区魅力",
-      "美食葡萄酒"
-    ],
-    "risks": [
-      "地震",
-      "部分区域扒窃",
-      "地区局势"
+      "部分城市交通拥堵",
+      "食品安全",
+      "蚊虫叮咬"
     ],
     "emergency": {
       "police": "112",
@@ -714,184 +559,747 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'colombo': {
-    "id": "colombo",
-    "name": "科伦坡",
-    "nameEn": "Colombo",
-    "country": "斯里兰卡",
+  "dubai": {
+    "id": "dubai",
+    "name": "迪拜",
+    "nameEn": "Dubai",
+    "country": "阿联酋",
     "continent": "亚洲",
-    "flag": "🇱🇰",
-    "lat": 6.9271,
-    "lng": 79.8612,
-    "image": "https://images.unsplash.com/photo-1586861153861-14d06dfc8ed8?w=400&q=80",
+    "flag": "🇦🇪",
+    "lat": 25.2048,
+    "lng": 55.2708,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
     "safety": {
-      "overall": 60,
-      "grade": "B-",
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "文化景点多",
+      "购物便利",
+      "美食丰富",
+      "发达公共交通"
+    ],
+    "risks": [
+      "自然灾害风险",
+      "部分城市交通拥堵",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "doha": {
+    "id": "doha",
+    "name": "多哈",
+    "nameEn": "Doha",
+    "country": "卡塔尔",
+    "continent": "亚洲",
+    "flag": "🇶🇦",
+    "lat": 25.2854,
+    "lng": 51.531,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "safety": {
+      "overall": 92,
+      "grade": "A",
+      "grades": {
+        "crime": "A-",
+        "transport": "A",
+        "health": "A-",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "医疗水平高",
+      "发达公共交通",
+      "美食丰富",
+      "购物便利"
+    ],
+    "risks": [
+      "自然灾害风险",
+      "部分城市交通拥堵",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "riyadh": {
+    "id": "riyadh",
+    "name": "利雅得",
+    "nameEn": "Riyadh",
+    "country": "沙特阿拉伯",
+    "continent": "亚洲",
+    "flag": "🇸🇦",
+    "lat": 24.7136,
+    "lng": 46.6753,
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "safety": {
+      "overall": 90,
+      "grade": "A",
+      "grades": {
+        "crime": "A-",
+        "transport": "A",
+        "health": "A-",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "购物便利",
+      "美食丰富",
+      "发达公共交通",
+      "医疗水平高"
+    ],
+    "risks": [
+      "自然灾害风险",
+      "部分城市交通拥堵",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "muscat": {
+    "id": "muscat",
+    "name": "马斯喀特",
+    "nameEn": "Muscat",
+    "country": "阿曼",
+    "continent": "亚洲",
+    "flag": "🇴🇲",
+    "lat": 23.588,
+    "lng": 58.3829,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 92,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A-",
+        "health": "A",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "购物便利",
+      "美食丰富",
+      "文化景点多",
+      "医疗水平高"
+    ],
+    "risks": [
+      "食品安全",
+      "蚊虫叮咬",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "tel_aviv": {
+    "id": "tel_aviv",
+    "name": "特拉维夫",
+    "nameEn": "Tel Aviv",
+    "country": "以色列",
+    "continent": "亚洲",
+    "flag": "🇮🇱",
+    "lat": 32.0853,
+    "lng": 34.7818,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 81,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "B+",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "文化景点多",
+      "购物便利",
+      "发达公共交通",
+      "美食丰富"
+    ],
+    "risks": [
+      "食品安全",
+      "部分城市交通拥堵",
+      "自然灾害风险"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "istanbul": {
+    "id": "istanbul",
+    "name": "伊斯坦布尔",
+    "nameEn": "Istanbul",
+    "country": "土耳其",
+    "continent": "亚洲",
+    "flag": "🇹🇷",
+    "lat": 41.0082,
+    "lng": 28.9784,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 81,
+      "grade": "A-",
+      "grades": {
+        "crime": "B",
+        "transport": "A-",
+        "health": "B",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "文化景点多",
+      "购物便利",
+      "发达公共交通",
+      "美食丰富"
+    ],
+    "risks": [
+      "食品安全",
+      "部分城市交通拥堵",
+      "自然灾害风险"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "bali": {
+    "id": "bali",
+    "name": "巴厘岛",
+    "nameEn": "Bali",
+    "country": "印尼",
+    "continent": "亚洲",
+    "flag": "🇮🇩",
+    "lat": -8.4095,
+    "lng": 115.1889,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 72,
+      "grade": "B",
       "grades": {
         "crime": "B-",
-        "transport": "C+",
+        "transport": "B-",
         "health": "B-",
         "natural": "B-"
       }
     },
     "highlights": [
-      "发展中旅游城市",
-      "历史文化丰富"
+      "医疗水平高",
+      "美食丰富",
+      "发达公共交通",
+      "购物便利"
     ],
     "risks": [
-      "扒窃",
-      "交通混乱",
-      "季风暴雨"
+      "部分城市交通拥堵",
+      "蚊虫叮咬",
+      "自然灾害风险"
     ],
     "emergency": {
-      "police": "119",
-      "ambulance": "110",
-      "fire": "111"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'dhaka': {
-    "id": "dhaka",
-    "name": "达卡",
-    "nameEn": "Dhaka",
-    "country": "孟加拉国",
+  "chiangmai": {
+    "id": "chiangmai",
+    "name": "清迈",
+    "nameEn": "Chiang Mai",
+    "country": "泰国",
     "continent": "亚洲",
-    "flag": "🇧🇩",
-    "lat": 23.8103,
-    "lng": 90.4125,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "flag": "🇹🇭",
+    "lat": 18.7883,
+    "lng": 98.9853,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
     "safety": {
-      "overall": 38,
-      "grade": "C",
+      "overall": 70,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "C",
+        "health": "B-",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "购物便利",
+      "发达公共交通",
+      "医疗水平高",
+      "美食丰富"
+    ],
+    "risks": [
+      "食品安全",
+      "部分城市交通拥堵",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "phuket": {
+    "id": "phuket",
+    "name": "普吉岛",
+    "nameEn": "Phuket",
+    "country": "泰国",
+    "continent": "亚洲",
+    "flag": "🇹🇭",
+    "lat": 7.8804,
+    "lng": 98.3923,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "B+",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "医疗水平高",
+      "发达公共交通",
+      "购物便利",
+      "美食丰富"
+    ],
+    "risks": [
+      "蚊虫叮咬",
+      "食品安全",
+      "部分城市交通拥堵"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "penang": {
+    "id": "penang",
+    "name": "槟城",
+    "nameEn": "Penang",
+    "country": "马来西亚",
+    "continent": "亚洲",
+    "flag": "🇲🇾",
+    "lat": 5.4141,
+    "lng": 100.3288,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 92,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A-",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "美食丰富",
+      "发达公共交通",
+      "医疗水平高",
+      "文化景点多"
+    ],
+    "risks": [
+      "食品安全",
+      "自然灾害风险",
+      "蚊虫叮咬"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "hanoi": {
+    "id": "hanoi",
+    "name": "河内",
+    "nameEn": "Hanoi",
+    "country": "越南",
+    "continent": "亚洲",
+    "flag": "🇻🇳",
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "safety": {
+      "overall": 92,
+      "grade": "A",
+      "grades": {
+        "crime": "A-",
+        "transport": "A",
+        "health": "A-",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "发达公共交通",
+      "美食丰富",
+      "购物便利",
+      "文化景点多"
+    ],
+    "risks": [
+      "食品安全",
+      "部分城市交通拥堵",
+      "自然灾害风险"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "bangalore": {
+    "id": "bangalore",
+    "name": "班加罗尔",
+    "nameEn": "Bangalore",
+    "country": "印度",
+    "continent": "亚洲",
+    "flag": "🇮🇳",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "购物便利",
+      "美食丰富",
+      "医疗水平高",
+      "文化景点多"
+    ],
+    "risks": [
+      "蚊虫叮咬",
+      "自然灾害风险",
+      "部分城市交通拥堵"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "chennai": {
+    "id": "chennai",
+    "name": "金奈",
+    "nameEn": "Chennai",
+    "country": "印度",
+    "continent": "亚洲",
+    "flag": "🇮🇳",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "B-",
+        "health": "B+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "购物便利",
+      "医疗水平高",
+      "发达公共交通",
+      "文化景点多"
+    ],
+    "risks": [
+      "蚊虫叮咬",
+      "自然灾害风险",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "kolkata": {
+    "id": "kolkata",
+    "name": "加尔各答",
+    "nameEn": "Kolkata",
+    "country": "印度",
+    "continent": "亚洲",
+    "flag": "🇮🇳",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 66,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "C",
+        "health": "C+",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "美食丰富",
+      "文化景点多",
+      "购物便利",
+      "医疗水平高"
+    ],
+    "risks": [
+      "蚊虫叮咬",
+      "自然灾害风险",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "hyderabad": {
+    "id": "hyderabad",
+    "name": "海德拉巴",
+    "nameEn": "Hyderabad",
+    "country": "印度",
+    "continent": "亚洲",
+    "flag": "🇮🇳",
+    "lat": 17.385,
+    "lng": 78.4867,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "safety": {
+      "overall": 65,
+      "grade": "B-",
       "grades": {
         "crime": "C",
-        "transport": "D+",
+        "transport": "C+",
         "health": "C",
-        "natural": "C-"
+        "natural": "C+"
       }
     },
     "highlights": [
-      "纺织业中心",
-      "历史名城"
+      "美食丰富",
+      "文化景点多",
+      "购物便利",
+      "医疗水平高"
     ],
     "risks": [
-      "极度拥挤",
-      "洪涝灾害",
-      "空气污染",
-      "交通事故频发"
+      "蚊虫叮咬",
+      "部分城市交通拥堵",
+      "食品安全"
     ],
     "emergency": {
-      "police": "999",
-      "ambulance": "199",
-      "fire": "199"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'kathmandu': {
-    "id": "kathmandu",
-    "name": "加德满都",
-    "nameEn": "Kathmandu",
-    "country": "尼泊尔",
+  "shenzhen": {
+    "id": "shenzhen",
+    "name": "深圳",
+    "nameEn": "Shenzhen",
+    "country": "中国",
     "continent": "亚洲",
-    "flag": "🇳🇵",
-    "lat": 27.7172,
-    "lng": 85.324,
-    "image": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=400&q=80",
+    "flag": "🇨🇳",
+    "lat": 22.5431,
+    "lng": 114.0579,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
     "safety": {
-      "overall": 55,
-      "grade": "C+",
+      "overall": 78,
+      "grade": "B+",
       "grades": {
         "crime": "B-",
-        "transport": "C",
-        "health": "C+",
-        "natural": "C"
+        "transport": "B+",
+        "health": "B",
+        "natural": "B+"
       }
     },
     "highlights": [
-      "喜马拉雅门户",
-      "世界文化遗产"
+      "购物便利",
+      "文化景点多",
+      "医疗水平高",
+      "美食丰富"
     ],
     "risks": [
-      "地震高风险",
-      "空气污染严重",
-      "卫生条件差"
+      "蚊虫叮咬",
+      "语言沟通问题",
+      "自然灾害风险"
     ],
     "emergency": {
-      "police": "100",
-      "ambulance": "102",
-      "fire": "101"
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
     }
   },
-  'phnom_penh': {
-    "id": "phnom_penh",
-    "name": "金边",
-    "nameEn": "Phnom Penh",
-    "country": "柬埔寨",
+  "guangzhou": {
+    "id": "guangzhou",
+    "name": "广州",
+    "nameEn": "Guangzhou",
+    "country": "中国",
     "continent": "亚洲",
-    "flag": "🇰🇭",
-    "lat": 11.5564,
-    "lng": 104.9282,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "flag": "🇨🇳",
+    "lat": 23.1291,
+    "lng": 113.2644,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
-      "overall": 52,
-      "grade": "C+",
+      "overall": 87,
+      "grade": "A-",
       "grades": {
-        "crime": "C+",
-        "transport": "C",
-        "health": "C",
-        "natural": "B-"
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "B+"
       }
     },
     "highlights": [
-      "吴哥窟门户",
-      "发展中城市",
-      "丰富历史"
+      "发达公共交通",
+      "美食丰富",
+      "医疗水平高",
+      "文化景点多"
     ],
     "risks": [
-      "抢劫",
-      "摩托车盗窃",
-      "卫生条件"
+      "部分城市交通拥堵",
+      "语言沟通问题",
+      "蚊虫叮咬"
     ],
     "emergency": {
-      "police": "117",
-      "ambulance": "119",
-      "fire": "118"
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
     }
   },
-  'ulaanbaatar': {
-    "id": "ulaanbaatar",
-    "name": "乌兰巴托",
-    "nameEn": "Ulaanbaatar",
-    "country": "蒙古国",
+  "chengdu": {
+    "id": "chengdu",
+    "name": "成都",
+    "nameEn": "Chengdu",
+    "country": "中国",
     "continent": "亚洲",
-    "flag": "🇲🇳",
-    "lat": 47.8864,
-    "lng": 106.9057,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "flag": "🇨🇳",
+    "lat": 30.5728,
+    "lng": 104.0668,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
-      "overall": 55,
-      "grade": "C+",
+      "overall": 87,
+      "grade": "A-",
       "grades": {
-        "crime": "C+",
-        "transport": "C+",
-        "health": "C+",
-        "natural": "B-"
+        "crime": "A",
+        "transport": "B+",
+        "health": "A-",
+        "natural": "A-"
       }
     },
     "highlights": [
-      "游牧文化圣地",
-      "世界最冷首都之一"
+      "发达公共交通",
+      "美食丰富",
+      "文化景点多",
+      "医疗水平高"
     ],
     "risks": [
-      "极端严寒",
-      "空气污染",
-      "扒窃"
+      "食品安全",
+      "部分城市交通拥堵",
+      "语言沟通问题"
     ],
     "emergency": {
-      "police": "102",
-      "ambulance": "103",
-      "fire": "101"
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
     }
   },
-  'london': {
+  "hangzhou": {
+    "id": "hangzhou",
+    "name": "杭州",
+    "nameEn": "Hangzhou",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 30.2741,
+    "lng": 120.1551,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A",
+        "health": "A-",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "医疗水平高",
+      "文化景点多",
+      "美食丰富",
+      "发达公共交通"
+    ],
+    "risks": [
+      "部分城市交通拥堵",
+      "自然灾害风险",
+      "蚊虫叮咬"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    }
+  },
+  "xian": {
+    "id": "xian",
+    "name": "西安",
+    "nameEn": "Xi'an",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 34.3416,
+    "lng": 108.9398,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "safety": {
+      "overall": 94,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "发达公共交通",
+      "医疗水平高",
+      "购物便利",
+      "文化景点多"
+    ],
+    "risks": [
+      "部分城市交通拥堵",
+      "蚊虫叮咬",
+      "语言沟通问题"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    }
+  },
+  "london": {
     "id": "london",
     "name": "伦敦",
     "nameEn": "London",
@@ -900,25 +1308,27 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 51.5074,
     "lng": -0.1278,
-    "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
     "safety": {
-      "overall": 78,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B+",
+        "crime": "A-",
         "transport": "A",
         "health": "A",
-        "natural": "A-"
+        "natural": "A"
       }
     },
     "highlights": [
-      "世界金融中心",
-      "完善医疗体系",
-      "多元文化"
+      "艺术氛围浓厚",
+      "食品安全",
+      "公共交通发达",
+      "历史建筑众多"
     ],
     "risks": [
-      "扒窃",
-      "部分区域犯罪"
+      "物价较高",
+      "罢工影响交通",
+      "申根签证"
     ],
     "emergency": {
       "police": "999",
@@ -926,7 +1336,7 @@ var CITY_DATABASE = {
       "fire": "999"
     }
   },
-  'paris': {
+  "paris": {
     "id": "paris",
     "name": "巴黎",
     "nameEn": "Paris",
@@ -937,24 +1347,25 @@ var CITY_DATABASE = {
     "lng": 2.3522,
     "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
     "safety": {
-      "overall": 74,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B",
-        "transport": "A-",
+        "crime": "A",
+        "transport": "A",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "世界文化之都",
-      "一流医疗",
-      "便捷地铁"
+      "艺术氛围浓厚",
+      "公共交通发达",
+      "历史建筑众多",
+      "社会秩序好"
     ],
     "risks": [
-      "扒窃频繁",
-      "恐怖主义风险",
-      "部分郊区治安差"
+      "小偷小摸",
+      "罢工影响交通",
+      "申根签证"
     ],
     "emergency": {
       "police": "17",
@@ -962,7 +1373,7 @@ var CITY_DATABASE = {
       "fire": "18"
     }
   },
-  'berlin': {
+  "berlin": {
     "id": "berlin",
     "name": "柏林",
     "nameEn": "Berlin",
@@ -971,25 +1382,27 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 52.52,
     "lng": 13.405,
-    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
-      "overall": 80,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B+",
-        "transport": "A",
+        "crime": "A",
+        "transport": "A-",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "历史文化丰富",
-      "便捷公共交通",
-      "高质量医疗"
+      "社会秩序好",
+      "公共交通发达",
+      "历史建筑众多",
+      "艺术氛围浓厚"
     ],
     "risks": [
-      "扒窃",
-      "部分区域夜间治安"
+      "物价较高",
+      "语言障碍",
+      "申根签证"
     ],
     "emergency": {
       "police": "110",
@@ -997,7 +1410,7 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'amsterdam': {
+  "amsterdam": {
     "id": "amsterdam",
     "name": "阿姆斯特丹",
     "nameEn": "Amsterdam",
@@ -1006,25 +1419,27 @@ var CITY_DATABASE = {
     "flag": "🇳🇱",
     "lat": 52.3676,
     "lng": 4.9041,
-    "image": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
-      "overall": 82,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B+",
+        "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A-"
+        "natural": "A"
       }
     },
     "highlights": [
-      "自行车城市",
-      "开放包容",
-      "高质量生活"
+      "公共交通发达",
+      "艺术氛围浓厚",
+      "社会秩序好",
+      "历史建筑众多"
     ],
     "risks": [
-      "自行车盗窃",
-      "大麻相关犯罪"
+      "罢工影响交通",
+      "语言障碍",
+      "物价较高"
     ],
     "emergency": {
       "police": "112",
@@ -1032,41 +1447,44 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'vienna': {
+  "vienna": {
     "id": "vienna",
     "name": "维也纳",
     "nameEn": "Vienna",
     "country": "奥地利",
-    "continent": "欧洲",
+    "continent": "亚洲",
     "flag": "🇦🇹",
     "lat": 48.2082,
     "lng": 16.3738,
-    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
     "safety": {
-      "overall": 89,
-      "grade": "A-",
+      "overall": 72,
+      "grade": "B",
       "grades": {
-        "crime": "A-",
-        "transport": "A",
-        "health": "A",
-        "natural": "A"
+        "crime": "B-",
+        "transport": "B-",
+        "health": "B-",
+        "natural": "B-"
       }
     },
     "highlights": [
-      "全球最宜居城市之一",
-      "音乐文化之都",
-      "完善基础设施"
+      "医疗水平高",
+      "文化景点多",
+      "购物便利",
+      "美食丰富"
     ],
     "risks": [
-      "扒窃（景区）"
+      "部分城市交通拥堵",
+      "蚊虫叮咬",
+      "语言沟通问题"
     ],
     "emergency": {
-      "police": "133",
-      "ambulance": "144",
-      "fire": "122"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'zurich': {
+  "zurich": {
     "id": "zurich",
     "name": "苏黎世",
     "nameEn": "Zurich",
@@ -1075,32 +1493,35 @@ var CITY_DATABASE = {
     "flag": "🇨🇭",
     "lat": 47.3769,
     "lng": 8.5417,
-    "image": "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
     "safety": {
-      "overall": 94,
+      "overall": 95,
       "grade": "A",
       "grades": {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A-"
+        "natural": "A"
       }
     },
     "highlights": [
-      "全球最安全城市之一",
-      "顶级金融中心",
-      "极高生活质量"
+      "历史建筑众多",
+      "社会秩序好",
+      "艺术氛围浓厚",
+      "食品安全"
     ],
     "risks": [
-      "生活成本极高"
+      "罢工影响交通",
+      "语言障碍",
+      "物价较高"
     ],
     "emergency": {
-      "police": "117",
-      "ambulance": "144",
-      "fire": "118"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'stockholm': {
+  "stockholm": {
     "id": "stockholm",
     "name": "斯德哥尔摩",
     "nameEn": "Stockholm",
@@ -1109,25 +1530,27 @@ var CITY_DATABASE = {
     "flag": "🇸🇪",
     "lat": 59.3293,
     "lng": 18.0686,
-    "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
     "safety": {
-      "overall": 85,
+      "overall": 89,
       "grade": "A-",
       "grades": {
-        "crime": "B+",
+        "crime": "A-",
         "transport": "A",
-        "health": "A",
-        "natural": "A-"
+        "health": "A-",
+        "natural": "A"
       }
     },
     "highlights": [
-      "北欧福利国家",
-      "创新中心",
-      "自然环境优美"
+      "历史建筑众多",
+      "社会秩序好",
+      "食品安全",
+      "公共交通发达"
     ],
     "risks": [
-      "扒窃",
-      "部分郊区犯罪"
+      "语言障碍",
+      "小偷小摸",
+      "物价较高"
     ],
     "emergency": {
       "police": "112",
@@ -1135,7 +1558,7 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'oslo': {
+  "oslo": {
     "id": "oslo",
     "name": "奥斯陆",
     "nameEn": "Oslo",
@@ -1144,33 +1567,35 @@ var CITY_DATABASE = {
     "flag": "🇳🇴",
     "lat": 59.9139,
     "lng": 10.7522,
-    "image": "https://images.unsplash.com/photo-1588373959840-9cdf5eb8d26e?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
-      "overall": 87,
+      "overall": 88,
       "grade": "A-",
       "grades": {
-        "crime": "A-",
+        "crime": "B+",
         "transport": "A",
-        "health": "A",
-        "natural": "A-"
+        "health": "A-",
+        "natural": "A"
       }
     },
     "highlights": [
-      "极低犯罪率",
-      "北欧福利体系",
-      "自然风光"
+      "社会秩序好",
+      "历史建筑众多",
+      "公共交通发达",
+      "食品安全"
     ],
     "risks": [
-      "生活成本极高",
-      "极端严寒"
+      "小偷小摸",
+      "罢工影响交通",
+      "语言障碍"
     ],
     "emergency": {
       "police": "112",
-      "ambulance": "113",
-      "fire": "110"
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'copenhagen': {
+  "copenhagen": {
     "id": "copenhagen",
     "name": "哥本哈根",
     "nameEn": "Copenhagen",
@@ -1179,25 +1604,27 @@ var CITY_DATABASE = {
     "flag": "🇩🇰",
     "lat": 55.6761,
     "lng": 12.5683,
-    "image": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
-      "overall": 88,
+      "overall": 87,
       "grade": "A-",
       "grades": {
-        "crime": "A-",
+        "crime": "B+",
         "transport": "A",
-        "health": "A",
+        "health": "B+",
         "natural": "A"
       }
     },
     "highlights": [
-      "幸福指数全球最高",
-      "低犯罪率",
-      "自行车天堂"
+      "食品安全",
+      "社会秩序好",
+      "艺术氛围浓厚",
+      "历史建筑众多"
     ],
     "risks": [
-      "自行车盗窃",
-      "生活成本高"
+      "罢工影响交通",
+      "物价较高",
+      "语言障碍"
     ],
     "emergency": {
       "police": "112",
@@ -1205,7 +1632,7 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'helsinki': {
+  "helsinki": {
     "id": "helsinki",
     "name": "赫尔辛基",
     "nameEn": "Helsinki",
@@ -1214,24 +1641,27 @@ var CITY_DATABASE = {
     "flag": "🇫🇮",
     "lat": 60.1699,
     "lng": 24.9384,
-    "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
-      "overall": 91,
+      "overall": 95,
       "grade": "A",
       "grades": {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A-"
+        "natural": "A"
       }
     },
     "highlights": [
-      "全球最安全城市之一",
-      "高质量教育医疗",
-      "清洁环境"
+      "食品安全",
+      "社会秩序好",
+      "艺术氛围浓厚",
+      "公共交通发达"
     ],
     "risks": [
-      "极端严寒"
+      "小偷小摸",
+      "罢工影响交通",
+      "申根签证"
     ],
     "emergency": {
       "police": "112",
@@ -1239,7 +1669,7 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'madrid': {
+  "madrid": {
     "id": "madrid",
     "name": "马德里",
     "nameEn": "Madrid",
@@ -1248,25 +1678,27 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 40.4168,
     "lng": -3.7038,
-    "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
-      "overall": 76,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B",
-        "transport": "A",
+        "crime": "A",
+        "transport": "A-",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "文化艺术之都",
-      "便捷地铁",
-      "世界级医疗"
+      "食品安全",
+      "社会秩序好",
+      "历史建筑众多",
+      "艺术氛围浓厚"
     ],
     "risks": [
-      "扒窃",
-      "部分区域治安"
+      "申根签证",
+      "物价较高",
+      "小偷小摸"
     ],
     "emergency": {
       "police": "112",
@@ -1274,7 +1706,7 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'rome': {
+  "rome": {
     "id": "rome",
     "name": "罗马",
     "nameEn": "Rome",
@@ -1283,34 +1715,35 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 41.9028,
     "lng": 12.4964,
-    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
-      "overall": 72,
-      "grade": "B",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B-",
-        "transport": "B+",
+        "crime": "A-",
+        "transport": "A",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "永恒之城",
-      "世界遗产",
-      "地中海气候"
+      "公共交通发达",
+      "艺术氛围浓厚",
+      "历史建筑众多",
+      "社会秩序好"
     ],
     "risks": [
-      "扒窃严重",
-      "游客区欺诈",
-      "交通混乱"
+      "小偷小摸",
+      "申根签证",
+      "罢工影响交通"
     ],
     "emergency": {
-      "police": "113",
-      "ambulance": "118",
-      "fire": "115"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'barcelona': {
+  "barcelona": {
     "id": "barcelona",
     "name": "巴塞罗那",
     "nameEn": "Barcelona",
@@ -1319,25 +1752,27 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 41.3851,
     "lng": 2.1734,
-    "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
-      "overall": 68,
-      "grade": "B",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B-",
+        "crime": "A",
         "transport": "A",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "高迪建筑",
-      "地中海美食",
-      "活跃夜生活"
+      "公共交通发达",
+      "食品安全",
+      "艺术氛围浓厚",
+      "历史建筑众多"
     ],
     "risks": [
-      "扒窃全欧最高",
-      "摩托车抢劫"
+      "小偷小摸",
+      "申根签证",
+      "罢工影响交通"
     ],
     "emergency": {
       "police": "112",
@@ -1345,7 +1780,7 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'lisbon': {
+  "lisbon": {
     "id": "lisbon",
     "name": "里斯本",
     "nameEn": "Lisbon",
@@ -1354,25 +1789,27 @@ var CITY_DATABASE = {
     "flag": "🇵🇹",
     "lat": 38.7223,
     "lng": -9.1393,
-    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
     "safety": {
-      "overall": 79,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B+",
-        "transport": "B+",
+        "crime": "A",
+        "transport": "A",
         "health": "A",
-        "natural": "B+"
+        "natural": "A"
       }
     },
     "highlights": [
-      "欧洲最西端首都",
-      "温暖气候",
-      "宜居城市"
+      "历史建筑众多",
+      "艺术氛围浓厚",
+      "食品安全",
+      "社会秩序好"
     ],
     "risks": [
-      "扒窃",
-      "地震风险"
+      "小偷小摸",
+      "申根签证",
+      "语言障碍"
     ],
     "emergency": {
       "police": "112",
@@ -1380,7 +1817,7 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'prague': {
+  "prague": {
     "id": "prague",
     "name": "布拉格",
     "nameEn": "Prague",
@@ -1389,33 +1826,35 @@ var CITY_DATABASE = {
     "flag": "🇨🇿",
     "lat": 50.0755,
     "lng": 14.4378,
-    "image": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
-      "overall": 80,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B+",
+        "crime": "A",
         "transport": "A",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "欧洲最美城市之一",
-      "中世纪古城",
-      "低消费"
+      "社会秩序好",
+      "艺术氛围浓厚",
+      "食品安全",
+      "历史建筑众多"
     ],
     "risks": [
-      "扒窃",
-      "酒吧区欺诈"
+      "小偷小摸",
+      "罢工影响交通",
+      "语言障碍"
     ],
     "emergency": {
-      "police": "158",
-      "ambulance": "155",
-      "fire": "150"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'warsaw': {
+  "warsaw": {
     "id": "warsaw",
     "name": "华沙",
     "nameEn": "Warsaw",
@@ -1424,32 +1863,35 @@ var CITY_DATABASE = {
     "flag": "🇵🇱",
     "lat": 52.2297,
     "lng": 21.0122,
-    "image": "https://images.unsplash.com/photo-1548407260-da850faa41e3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
     "safety": {
-      "overall": 78,
-      "grade": "B+",
+      "overall": 89,
+      "grade": "A-",
       "grades": {
-        "crime": "B+",
-        "transport": "A",
+        "crime": "A",
+        "transport": "B+",
         "health": "A",
-        "natural": "A"
+        "natural": "A-"
       }
     },
     "highlights": [
-      "东欧发展最快城市",
-      "历史文化复兴"
+      "历史建筑众多",
+      "艺术氛围浓厚",
+      "社会秩序好",
+      "食品安全"
     ],
     "risks": [
-      "扒窃",
-      "汽车盗窃"
+      "小偷小摸",
+      "罢工影响交通",
+      "语言障碍"
     ],
     "emergency": {
-      "police": "997",
-      "ambulance": "999",
-      "fire": "998"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'athens': {
+  "athens": {
     "id": "athens",
     "name": "雅典",
     "nameEn": "Athens",
@@ -1458,34 +1900,35 @@ var CITY_DATABASE = {
     "flag": "🇬🇷",
     "lat": 37.9838,
     "lng": 23.7275,
-    "image": "https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
     "safety": {
-      "overall": 70,
-      "grade": "B",
+      "overall": 83,
+      "grade": "A-",
       "grades": {
-        "crime": "B-",
-        "transport": "B",
-        "health": "A-",
-        "natural": "B"
+        "crime": "B",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "A-"
       }
     },
     "highlights": [
-      "人类文明摇篮",
-      "地中海气候",
-      "历史遗迹"
+      "历史建筑众多",
+      "食品安全",
+      "艺术氛围浓厚",
+      "社会秩序好"
     ],
     "risks": [
-      "扒窃",
-      "抗议活动",
-      "地震风险"
+      "申根签证",
+      "小偷小摸",
+      "罢工影响交通"
     ],
     "emergency": {
-      "police": "100",
-      "ambulance": "166",
-      "fire": "199"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'brussels': {
+  "brussels": {
     "id": "brussels",
     "name": "布鲁塞尔",
     "nameEn": "Brussels",
@@ -1494,33 +1937,35 @@ var CITY_DATABASE = {
     "flag": "🇧🇪",
     "lat": 50.8503,
     "lng": 4.3517,
-    "image": "https://images.unsplash.com/photo-1546771816-b1b6f3e01b13?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
     "safety": {
-      "overall": 72,
-      "grade": "B",
+      "overall": 87,
+      "grade": "A-",
       "grades": {
-        "crime": "B-",
-        "transport": "B+",
-        "health": "A",
-        "natural": "A"
+        "crime": "A-",
+        "transport": "A-",
+        "health": "A-",
+        "natural": "A-"
       }
     },
     "highlights": [
-      "欧盟首都",
-      "巧克力啤酒之都"
+      "社会秩序好",
+      "艺术氛围浓厚",
+      "食品安全",
+      "历史建筑众多"
     ],
     "risks": [
-      "恐怖主义历史",
-      "扒窃",
-      "部分区域治安"
+      "物价较高",
+      "罢工影响交通",
+      "小偷小摸"
     ],
     "emergency": {
-      "police": "101",
-      "ambulance": "100",
-      "fire": "100"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'budapest': {
+  "budapest": {
     "id": "budapest",
     "name": "布达佩斯",
     "nameEn": "Budapest",
@@ -1529,33 +1974,35 @@ var CITY_DATABASE = {
     "flag": "🇭🇺",
     "lat": 47.4979,
     "lng": 19.0402,
-    "image": "https://images.unsplash.com/photo-1551951978-eb5ef2d33b6a?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
-      "overall": 75,
-      "grade": "B+",
+      "overall": 94,
+      "grade": "A",
       "grades": {
-        "crime": "B",
+        "crime": "A",
         "transport": "A-",
-        "health": "A-",
+        "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "多瑙河明珠",
-      "温泉文化",
-      "美丽建筑"
+      "社会秩序好",
+      "公共交通发达",
+      "艺术氛围浓厚",
+      "食品安全"
     ],
     "risks": [
-      "扒窃",
-      "出租车欺诈"
+      "物价较高",
+      "语言障碍",
+      "小偷小摸"
     ],
     "emergency": {
-      "police": "107",
-      "ambulance": "104",
-      "fire": "105"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'moscow': {
+  "moscow": {
     "id": "moscow",
     "name": "莫斯科",
     "nameEn": "Moscow",
@@ -1564,1065 +2011,27 @@ var CITY_DATABASE = {
     "flag": "🇷🇺",
     "lat": 55.7558,
     "lng": 37.6173,
-    "image": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
-      "overall": 55,
-      "grade": "C+",
-      "grades": {
-        "crime": "C+",
-        "transport": "B+",
-        "health": "B",
-        "natural": "B"
-      }
-    },
-    "highlights": [
-      "东欧最大城市",
-      "地铁系统壮观"
-    ],
-    "risks": [
-      "政治因素",
-      "制裁背景",
-      "语言障碍",
-      "严冬极寒"
-    ],
-    "emergency": {
-      "police": "102",
-      "ambulance": "103",
-      "fire": "101"
-    }
-  },
-  'new_york': {
-    "id": "new_york",
-    "name": "纽约",
-    "nameEn": "New York",
-    "country": "美国",
-    "continent": "北美洲",
-    "flag": "🇺🇸",
-    "lat": 40.7128,
-    "lng": -74.006,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400&q=80",
-    "safety": {
-      "overall": 72,
+      "overall": 70,
       "grade": "B",
       "grades": {
-        "crime": "B-",
-        "transport": "A-",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "世界金融中心",
-      "多元文化",
-      "顶级医疗"
-    ],
-    "risks": [
-      "部分区域犯罪",
-      "扒窃",
-      "暴风雪"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'los_angeles': {
-    "id": "los_angeles",
-    "name": "洛杉矶",
-    "nameEn": "Los Angeles",
-    "country": "美国",
-    "continent": "北美洲",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lng": -118.2437,
-    "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=400&q=80",
-    "safety": {
-      "overall": 62,
-      "grade": "B-",
-      "grades": {
         "crime": "C+",
-        "transport": "B",
-        "health": "A",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "好莱坞",
-      "阳光海滩",
-      "娱乐产业中心"
-    ],
-    "risks": [
-      "车辆盗窃",
-      "无家者问题",
-      "地震",
-      "野火"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'chicago': {
-    "id": "chicago",
-    "name": "芝加哥",
-    "nameEn": "Chicago",
-    "country": "美国",
-    "continent": "北美洲",
-    "flag": "🇺🇸",
-    "lat": 41.8781,
-    "lng": -87.6298,
-    "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80",
-    "safety": {
-      "overall": 58,
-      "grade": "C+",
-      "grades": {
-        "crime": "C",
-        "transport": "B+",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "建筑之都",
-      "爵士蓝调文化",
-      "密歇根湖畔"
-    ],
-    "risks": [
-      "部分区域暴力犯罪",
-      "严冬极寒"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'toronto': {
-    "id": "toronto",
-    "name": "多伦多",
-    "nameEn": "Toronto",
-    "country": "加拿大",
-    "continent": "北美洲",
-    "flag": "🇨🇦",
-    "lat": 43.6532,
-    "lng": -79.3832,
-    "image": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=400&q=80",
-    "safety": {
-      "overall": 82,
-      "grade": "B+",
-      "grades": {
-        "crime": "B+",
-        "transport": "A",
-        "health": "A",
-        "natural": "A-"
-      }
-    },
-    "highlights": [
-      "多元文化之都",
-      "顶级医疗",
-      "便捷交通"
-    ],
-    "risks": [
-      "扒窃",
-      "部分区域治安",
-      "严寒冬季"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'vancouver': {
-    "id": "vancouver",
-    "name": "温哥华",
-    "nameEn": "Vancouver",
-    "country": "加拿大",
-    "continent": "北美洲",
-    "flag": "🇨🇦",
-    "lat": 49.2827,
-    "lng": -123.1207,
-    "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=400&q=80",
-    "safety": {
-      "overall": 80,
-      "grade": "B+",
-      "grades": {
-        "crime": "B+",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "自然风光壮美",
-      "高生活质量",
-      "温和气候"
-    ],
-    "risks": [
-      "高房价",
-      "毒品问题（部分区域）",
-      "地震风险"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'montreal': {
-    "id": "montreal",
-    "name": "蒙特利尔",
-    "nameEn": "Montreal",
-    "country": "加拿大",
-    "continent": "北美洲",
-    "flag": "🇨🇦",
-    "lat": 45.5017,
-    "lng": -73.5673,
-    "image": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=400&q=80",
-    "safety": {
-      "overall": 79,
-      "grade": "B+",
-      "grades": {
-        "crime": "B+",
-        "transport": "A",
-        "health": "A",
-        "natural": "A-"
-      }
-    },
-    "highlights": [
-      "法裔文化",
-      "美食艺术",
-      "冬季嘉年华"
-    ],
-    "risks": [
-      "扒窃",
-      "极端严寒"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'mexico_city': {
-    "id": "mexico_city",
-    "name": "墨西哥城",
-    "nameEn": "Mexico City",
-    "country": "墨西哥",
-    "continent": "北美洲",
-    "flag": "🇲🇽",
-    "lat": 19.4326,
-    "lng": -99.1332,
-    "image": "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=400&q=80",
-    "safety": {
-      "overall": 45,
-      "grade": "C",
-      "grades": {
-        "crime": "C-",
-        "transport": "C+",
-        "health": "B",
-        "natural": "C"
-      }
-    },
-    "highlights": [
-      "拉美最大城市",
-      "文化历史丰富",
-      "美食天堂"
-    ],
-    "risks": [
-      "犯罪率高",
-      "绑架风险",
-      "地震",
-      "空气污染"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'san_francisco': {
-    "id": "san_francisco",
-    "name": "旧金山",
-    "nameEn": "San Francisco",
-    "country": "美国",
-    "continent": "北美洲",
-    "flag": "🇺🇸",
-    "lat": 37.7749,
-    "lng": -122.4194,
-    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&q=80",
-    "safety": {
-      "overall": 60,
-      "grade": "B-",
-      "grades": {
-        "crime": "C+",
-        "transport": "B+",
-        "health": "A",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "硅谷科技中心",
-      "金门大桥",
-      "美食文化"
-    ],
-    "risks": [
-      "车辆入室盗窃",
-      "无家者危机",
-      "地震风险"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'miami': {
-    "id": "miami",
-    "name": "迈阿密",
-    "nameEn": "Miami",
-    "country": "美国",
-    "continent": "北美洲",
-    "flag": "🇺🇸",
-    "lat": 25.7617,
-    "lng": -80.1918,
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
-    "safety": {
-      "overall": 65,
-      "grade": "B",
-      "grades": {
-        "crime": "B-",
-        "transport": "B",
-        "health": "A",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "阳光海滩",
-      "拉丁文化",
-      "国际商业中心"
-    ],
-    "risks": [
-      "飓风",
-      "部分区域犯罪",
-      "热带风暴"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'havana': {
-    "id": "havana",
-    "name": "哈瓦那",
-    "nameEn": "Havana",
-    "country": "古巴",
-    "continent": "北美洲",
-    "flag": "🇨🇺",
-    "lat": 23.1136,
-    "lng": -82.3666,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 62,
-      "grade": "B-",
-      "grades": {
-        "crime": "B-",
-        "transport": "C+",
-        "health": "B",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "加勒比明珠",
-      "复古文化",
-      "热情人民"
-    ],
-    "risks": [
-      "轻微盗窃",
-      "飓风",
-      "经济困难"
-    ],
-    "emergency": {
-      "police": "106",
-      "ambulance": "104",
-      "fire": "105"
-    }
-  },
-  'panama_city': {
-    "id": "panama_city",
-    "name": "巴拿马城",
-    "nameEn": "Panama City",
-    "country": "巴拿马",
-    "continent": "北美洲",
-    "flag": "🇵🇦",
-    "lat": 8.9936,
-    "lng": -79.5197,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 52,
-      "grade": "C+",
-      "grades": {
-        "crime": "C",
-        "transport": "C+",
-        "health": "B",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "巴拿马运河",
-      "金融中心",
-      "热带文化"
-    ],
-    "risks": [
-      "贫富差距",
-      "部分区域犯罪",
-      "热带疾病"
-    ],
-    "emergency": {
-      "police": "104",
-      "ambulance": "911",
-      "fire": "103"
-    }
-  },
-  'washington_dc': {
-    "id": "washington_dc",
-    "name": "华盛顿特区",
-    "nameEn": "Washington D.C.",
-    "country": "美国",
-    "continent": "北美洲",
-    "flag": "🇺🇸",
-    "lat": 38.9072,
-    "lng": -77.0369,
-    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80",
-    "safety": {
-      "overall": 65,
-      "grade": "B",
-      "grades": {
-        "crime": "B-",
-        "transport": "A",
-        "health": "A",
-        "natural": "A-"
-      }
-    },
-    "highlights": [
-      "政治文化中心",
-      "世界级博物馆免费开放",
-      "历史建筑"
-    ],
-    "risks": [
-      "部分区域犯罪",
-      "扒窃",
-      "游行示威"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'sao_paulo': {
-    "id": "sao_paulo",
-    "name": "圣保罗",
-    "nameEn": "São Paulo",
-    "country": "巴西",
-    "continent": "拉丁美洲",
-    "flag": "🇧🇷",
-    "lat": -23.5505,
-    "lng": -46.6333,
-    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
-    "safety": {
-      "overall": 42,
-      "grade": "C",
-      "grades": {
-        "crime": "C-",
         "transport": "B-",
-        "health": "B+",
-        "natural": "B"
-      }
-    },
-    "highlights": [
-      "南美最大城市",
-      "金融商业中心",
-      "多元文化"
-    ],
-    "risks": [
-      "高犯罪率",
-      "贫民窟",
-      "武装抢劫"
-    ],
-    "emergency": {
-      "police": "190",
-      "ambulance": "192",
-      "fire": "193"
-    }
-  },
-  'rio_de_janeiro': {
-    "id": "rio_de_janeiro",
-    "name": "里约热内卢",
-    "nameEn": "Rio de Janeiro",
-    "country": "巴西",
-    "continent": "拉丁美洲",
-    "flag": "🇧🇷",
-    "lat": -22.9068,
-    "lng": -43.1729,
-    "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=400&q=80",
-    "safety": {
-      "overall": 38,
-      "grade": "C",
-      "grades": {
-        "crime": "D+",
-        "transport": "B-",
-        "health": "B",
+        "health": "C+",
         "natural": "B-"
       }
     },
     "highlights": [
-      "狂欢节",
-      "海滩文化",
-      "基督山"
+      "社会秩序好",
+      "历史建筑众多",
+      "食品安全",
+      "公共交通发达"
     ],
     "risks": [
-      "高暴力犯罪",
-      "贫民窟武装",
-      "武装抢劫"
-    ],
-    "emergency": {
-      "police": "190",
-      "ambulance": "192",
-      "fire": "193"
-    }
-  },
-  'buenos_aires': {
-    "id": "buenos_aires",
-    "name": "布宜诺斯艾利斯",
-    "nameEn": "Buenos Aires",
-    "country": "阿根廷",
-    "continent": "拉丁美洲",
-    "flag": "🇦🇷",
-    "lat": -34.6037,
-    "lng": -58.3816,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 55,
-      "grade": "C+",
-      "grades": {
-        "crime": "C+",
-        "transport": "B",
-        "health": "B+",
-        "natural": "A-"
-      }
-    },
-    "highlights": [
-      "南美巴黎",
-      "探戈文化",
-      "牛排美食"
-    ],
-    "risks": [
-      "扒窃",
-      "经济不稳定",
-      "街头犯罪"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "107",
-      "fire": "100"
-    }
-  },
-  'lima': {
-    "id": "lima",
-    "name": "利马",
-    "nameEn": "Lima",
-    "country": "秘鲁",
-    "continent": "拉丁美洲",
-    "flag": "🇵🇪",
-    "lat": -12.0464,
-    "lng": -77.0428,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 48,
-      "grade": "C",
-      "grades": {
-        "crime": "C",
-        "transport": "C",
-        "health": "B-",
-        "natural": "C+"
-      }
-    },
-    "highlights": [
-      "美食之都",
-      "前印加文明",
-      "太平洋海岸"
-    ],
-    "risks": [
-      "犯罪频繁",
-      "出租车骗局",
-      "地震风险"
-    ],
-    "emergency": {
-      "police": "105",
-      "ambulance": "117",
-      "fire": "116"
-    }
-  },
-  'bogota': {
-    "id": "bogota",
-    "name": "波哥大",
-    "nameEn": "Bogotá",
-    "country": "哥伦比亚",
-    "continent": "拉丁美洲",
-    "flag": "🇨🇴",
-    "lat": 4.711,
-    "lng": -74.0721,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 45,
-      "grade": "C",
-      "grades": {
-        "crime": "C",
-        "transport": "C+",
-        "health": "B",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "高原首都",
-      "黄金博物馆",
-      "咖啡文化"
-    ],
-    "risks": [
-      "犯罪率高",
-      "高原反应",
-      "药物迷晕"
-    ],
-    "emergency": {
-      "police": "112",
-      "ambulance": "125",
-      "fire": "119"
-    }
-  },
-  'santiago': {
-    "id": "santiago",
-    "name": "圣地亚哥",
-    "nameEn": "Santiago",
-    "country": "智利",
-    "continent": "拉丁美洲",
-    "flag": "🇨🇱",
-    "lat": -33.4489,
-    "lng": -70.6693,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 62,
-      "grade": "B-",
-      "grades": {
-        "crime": "B-",
-        "transport": "B+",
-        "health": "B+",
-        "natural": "C+"
-      }
-    },
-    "highlights": [
-      "南美最现代城市",
-      "安第斯山脚",
-      "葡萄酒产地"
-    ],
-    "risks": [
-      "扒窃",
-      "地震",
-      "空气污染"
-    ],
-    "emergency": {
-      "police": "133",
-      "ambulance": "131",
-      "fire": "132"
-    }
-  },
-  'montevideo': {
-    "id": "montevideo",
-    "name": "蒙得维的亚",
-    "nameEn": "Montevideo",
-    "country": "乌拉圭",
-    "continent": "拉丁美洲",
-    "flag": "🇺🇾",
-    "lat": -34.9011,
-    "lng": -56.1645,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 65,
-      "grade": "B",
-      "grades": {
-        "crime": "B-",
-        "transport": "B+",
-        "health": "B+",
-        "natural": "A-"
-      }
-    },
-    "highlights": [
-      "南美最安全首都之一",
-      "海滨城市",
-      "高福利"
-    ],
-    "risks": [
-      "扒窃",
-      "部分夜间区域"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "105",
-      "fire": "104"
-    }
-  },
-  'caracas': {
-    "id": "caracas",
-    "name": "加拉加斯",
-    "nameEn": "Caracas",
-    "country": "委内瑞拉",
-    "continent": "拉丁美洲",
-    "flag": "🇻🇪",
-    "lat": 10.4806,
-    "lng": -66.9036,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 15,
-      "grade": "D",
-      "grades": {
-        "crime": "D",
-        "transport": "D+",
-        "health": "C-",
-        "natural": "C"
-      }
-    },
-    "highlights": [
-      "安第斯北部门户"
-    ],
-    "risks": [
-      "全球最危险城市之一",
-      "严重暴力犯罪",
-      "绑架频繁",
-      "政局极度不稳"
-    ],
-    "emergency": {
-      "police": "171",
-      "ambulance": "171",
-      "fire": "171"
-    }
-  },
-  'dubai': {
-    "id": "dubai",
-    "name": "迪拜",
-    "nameEn": "Dubai",
-    "country": "阿联酋",
-    "continent": "中东",
-    "flag": "🇦🇪",
-    "lat": 25.2048,
-    "lng": 55.2708,
-    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&q=80",
-    "safety": {
-      "overall": 88,
-      "grade": "A-",
-      "grades": {
-        "crime": "A",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "极低犯罪率",
-      "现代化设施",
-      "国际商业中心"
-    ],
-    "risks": [
-      "极端高温",
-      "严格法律规定",
-      "文化敏感"
-    ],
-    "emergency": {
-      "police": "999",
-      "ambulance": "998",
-      "fire": "997"
-    }
-  },
-  'abu_dhabi': {
-    "id": "abu_dhabi",
-    "name": "阿布扎比",
-    "nameEn": "Abu Dhabi",
-    "country": "阿联酋",
-    "continent": "中东",
-    "flag": "🇦🇪",
-    "lat": 24.4539,
-    "lng": 54.3773,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 90,
-      "grade": "A",
-      "grades": {
-        "crime": "A",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "阿联酋首都",
-      "石油财富",
-      "文化包容"
-    ],
-    "risks": [
-      "极端高温",
-      "严格伊斯兰法律"
-    ],
-    "emergency": {
-      "police": "999",
-      "ambulance": "998",
-      "fire": "997"
-    }
-  },
-  'doha': {
-    "id": "doha",
-    "name": "多哈",
-    "nameEn": "Doha",
-    "country": "卡塔尔",
-    "continent": "中东",
-    "flag": "🇶🇦",
-    "lat": 25.2854,
-    "lng": 51.531,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 87,
-      "grade": "A-",
-      "grades": {
-        "crime": "A",
-        "transport": "A-",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "极低犯罪率",
-      "世界杯主办城市",
-      "现代发展"
-    ],
-    "risks": [
-      "极端高温",
-      "劳工权益问题",
-      "文化限制"
-    ],
-    "emergency": {
-      "police": "999",
-      "ambulance": "999",
-      "fire": "999"
-    }
-  },
-  'riyadh': {
-    "id": "riyadh",
-    "name": "利雅得",
-    "nameEn": "Riyadh",
-    "country": "沙特阿拉伯",
-    "continent": "中东",
-    "flag": "🇸🇦",
-    "lat": 24.7136,
-    "lng": 46.6753,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 72,
-      "grade": "B",
-      "grades": {
-        "crime": "B+",
-        "transport": "B",
-        "health": "A-",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "石油王国首都",
-      "现代发展迅速",
-      "无犯罪文化"
-    ],
-    "risks": [
-      "极端高温",
-      "地区冲突风险",
-      "严格宗教法律"
-    ],
-    "emergency": {
-      "police": "999",
-      "ambulance": "997",
-      "fire": "998"
-    }
-  },
-  'istanbul': {
-    "id": "istanbul",
-    "name": "伊斯坦布尔",
-    "nameEn": "Istanbul",
-    "country": "土耳其",
-    "continent": "中东",
-    "flag": "🇹🇷",
-    "lat": 41.0082,
-    "lng": 28.9784,
-    "image": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=400&q=80",
-    "safety": {
-      "overall": 65,
-      "grade": "B",
-      "grades": {
-        "crime": "B-",
-        "transport": "B+",
-        "health": "B+",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "东西方文化交汇",
-      "历史名城",
-      "美食文化"
-    ],
-    "risks": [
-      "恐怖主义风险",
-      "扒窃",
-      "地震活跃区"
-    ],
-    "emergency": {
-      "police": "155",
-      "ambulance": "112",
-      "fire": "110"
-    }
-  },
-  'tel_aviv': {
-    "id": "tel_aviv",
-    "name": "特拉维夫",
-    "nameEn": "Tel Aviv",
-    "country": "以色列",
-    "continent": "中东",
-    "flag": "🇮🇱",
-    "lat": 32.0853,
-    "lng": 34.7818,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 62,
-      "grade": "B-",
-      "grades": {
-        "crime": "B",
-        "transport": "B",
-        "health": "A",
-        "natural": "B"
-      }
-    },
-    "highlights": [
-      "创业科技中心",
-      "海滩城市",
-      "现代生活"
-    ],
-    "risks": [
-      "地区冲突",
-      "安全警报",
-      "周边局势紧张"
-    ],
-    "emergency": {
-      "police": "100",
-      "ambulance": "101",
-      "fire": "102"
-    }
-  },
-  'amman': {
-    "id": "amman",
-    "name": "安曼",
-    "nameEn": "Amman",
-    "country": "约旦",
-    "continent": "中东",
-    "flag": "🇯🇴",
-    "lat": 31.9454,
-    "lng": 35.9284,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 68,
-      "grade": "B",
-      "grades": {
-        "crime": "B",
-        "transport": "B-",
-        "health": "B+",
-        "natural": "A-"
-      }
-    },
-    "highlights": [
-      "中东最安全城市之一",
-      "古代文明",
-      "热情好客"
-    ],
-    "risks": [
-      "周边地区不稳定",
-      "极端高温"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'muscat': {
-    "id": "muscat",
-    "name": "马斯喀特",
-    "nameEn": "Muscat",
-    "country": "阿曼",
-    "continent": "中东",
-    "flag": "🇴🇲",
-    "lat": 23.588,
-    "lng": 58.3829,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 85,
-      "grade": "A-",
-      "grades": {
-        "crime": "A",
-        "transport": "A-",
-        "health": "B+",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "中东最安全城市之一",
-      "低犯罪率",
-      "友好文化"
-    ],
-    "risks": [
-      "极端高温",
-      "沙尘暴"
-    ],
-    "emergency": {
-      "police": "9999",
-      "ambulance": "9999",
-      "fire": "9999"
-    }
-  },
-  'kuwait_city': {
-    "id": "kuwait_city",
-    "name": "科威特城",
-    "nameEn": "Kuwait City",
-    "country": "科威特",
-    "continent": "中东",
-    "flag": "🇰🇼",
-    "lat": 29.3759,
-    "lng": 47.9774,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 75,
-      "grade": "B+",
-      "grades": {
-        "crime": "B+",
-        "transport": "B",
-        "health": "A-",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "石油富国",
-      "免税购物",
-      "现代设施"
-    ],
-    "risks": [
-      "极端高温",
-      "沙尘暴",
-      "地区安全风险"
+      "申根签证",
+      "小偷小摸",
+      "罢工影响交通"
     ],
     "emergency": {
       "police": "112",
@@ -2630,652 +2039,192 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'tehran': {
-    "id": "tehran",
-    "name": "德黑兰",
-    "nameEn": "Tehran",
-    "country": "伊朗",
-    "continent": "中东",
-    "flag": "🇮🇷",
-    "lat": 35.6892,
-    "lng": 51.389,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 48,
-      "grade": "C",
-      "grades": {
-        "crime": "C+",
-        "transport": "C+",
-        "health": "B",
-        "natural": "C"
-      }
-    },
-    "highlights": [
-      "古波斯文明",
-      "市场文化",
-      "现代城市"
-    ],
-    "risks": [
-      "制裁影响",
-      "政治风险",
-      "地震高发",
-      "空气污染严重"
-    ],
-    "emergency": {
-      "police": "110",
-      "ambulance": "115",
-      "fire": "125"
-    }
-  },
-  'cairo': {
-    "id": "cairo",
-    "name": "开罗",
-    "nameEn": "Cairo",
-    "country": "埃及",
-    "continent": "非洲",
-    "flag": "🇪🇬",
-    "lat": 30.0444,
-    "lng": 31.2357,
-    "image": "https://images.unsplash.com/photo-1539768942893-daf53e448371?w=400&q=80",
-    "safety": {
-      "overall": 52,
-      "grade": "C+",
-      "grades": {
-        "crime": "C+",
-        "transport": "C",
-        "health": "B-",
-        "natural": "B"
-      }
-    },
-    "highlights": [
-      "非洲最大城市",
-      "金字塔",
-      "世界最古老城市之一"
-    ],
-    "risks": [
-      "扒窃骚扰",
-      "交通混乱",
-      "空气污染",
-      "政治不稳定"
-    ],
-    "emergency": {
-      "police": "122",
-      "ambulance": "123",
-      "fire": "180"
-    }
-  },
-  'nairobi': {
-    "id": "nairobi",
-    "name": "内罗毕",
-    "nameEn": "Nairobi",
-    "country": "肯尼亚",
-    "continent": "非洲",
-    "flag": "🇰🇪",
-    "lat": -1.2921,
-    "lng": 36.8219,
-    "image": "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=400&q=80",
-    "safety": {
-      "overall": 40,
-      "grade": "C",
-      "grades": {
-        "crime": "C-",
-        "transport": "C",
-        "health": "C+",
-        "natural": "B"
-      }
-    },
-    "highlights": [
-      "东非经济中心",
-      "野生动物天堂",
-      "马赛马拉门户"
-    ],
-    "risks": [
-      "抢劫犯罪",
-      "扒窃",
-      "疟疾风险",
-      "恐怖主义"
-    ],
-    "emergency": {
-      "police": "999",
-      "ambulance": "999",
-      "fire": "999"
-    }
-  },
-  'cape_town': {
-    "id": "cape_town",
-    "name": "开普敦",
-    "nameEn": "Cape Town",
-    "country": "南非",
-    "continent": "非洲",
-    "flag": "🇿🇦",
-    "lat": -33.9249,
-    "lng": 18.4241,
-    "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=400&q=80",
-    "safety": {
-      "overall": 38,
-      "grade": "C",
-      "grades": {
-        "crime": "D+",
-        "transport": "B-",
-        "health": "B-",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "最美城市之一",
-      "桌山",
-      "葡萄酒产区"
-    ],
-    "risks": [
-      "暴力犯罪高发",
-      "武装抢劫",
-      "帮派区域"
-    ],
-    "emergency": {
-      "police": "10111",
-      "ambulance": "10177",
-      "fire": "107"
-    }
-  },
-  'johannesburg': {
-    "id": "johannesburg",
-    "name": "约翰内斯堡",
-    "nameEn": "Johannesburg",
-    "country": "南非",
-    "continent": "非洲",
-    "flag": "🇿🇦",
-    "lat": -26.2041,
-    "lng": 28.0473,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 28,
-      "grade": "D+",
-      "grades": {
-        "crime": "D",
-        "transport": "C",
-        "health": "B-",
-        "natural": "B"
-      }
-    },
-    "highlights": [
-      "非洲最大经济城市",
-      "黄金矿业遗产"
-    ],
-    "risks": [
-      "极高暴力犯罪率",
-      "武装抢劫",
-      "入室盗窃",
-      "汽车劫持"
-    ],
-    "emergency": {
-      "police": "10111",
-      "ambulance": "10177",
-      "fire": "107"
-    }
-  },
-  'lagos': {
-    "id": "lagos",
-    "name": "拉各斯",
-    "nameEn": "Lagos",
-    "country": "尼日利亚",
-    "continent": "非洲",
-    "flag": "🇳🇬",
-    "lat": 6.5244,
-    "lng": 3.3792,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 30,
-      "grade": "C-",
-      "grades": {
-        "crime": "D+",
-        "transport": "D+",
-        "health": "C-",
-        "natural": "C"
-      }
-    },
-    "highlights": [
-      "非洲金融中心",
-      "尼日利亚文化首都"
-    ],
-    "risks": [
-      "高犯罪率",
-      "绑架风险",
-      "严重交通拥堵",
-      "洪涝"
-    ],
-    "emergency": {
-      "police": "112",
-      "ambulance": "112",
-      "fire": "112"
-    }
-  },
-  'addis_ababa': {
-    "id": "addis_ababa",
-    "name": "亚的斯亚贝巴",
-    "nameEn": "Addis Ababa",
-    "country": "埃塞俄比亚",
-    "continent": "非洲",
-    "flag": "🇪🇹",
-    "lat": 9.032,
-    "lng": 38.7469,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 50,
-      "grade": "C+",
-      "grades": {
-        "crime": "C+",
-        "transport": "C",
-        "health": "C",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "非盟总部所在地",
-      "高原城市",
-      "咖啡发源地"
-    ],
-    "risks": [
-      "扒窃",
-      "示威游行",
-      "医疗资源有限"
-    ],
-    "emergency": {
-      "police": "991",
-      "ambulance": "907",
-      "fire": "939"
-    }
-  },
-  'accra': {
-    "id": "accra",
-    "name": "阿克拉",
-    "nameEn": "Accra",
-    "country": "加纳",
-    "continent": "非洲",
-    "flag": "🇬🇭",
-    "lat": 5.6037,
-    "lng": -0.187,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 55,
-      "grade": "C+",
-      "grades": {
-        "crime": "C+",
-        "transport": "C",
-        "health": "C+",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "西非最安全国家之一",
-      "民主稳定"
-    ],
-    "risks": [
-      "扒窃",
-      "网络诈骗",
-      "交通事故"
-    ],
-    "emergency": {
-      "police": "191",
-      "ambulance": "193",
-      "fire": "192"
-    }
-  },
-  'dakar': {
-    "id": "dakar",
-    "name": "达喀尔",
-    "nameEn": "Dakar",
-    "country": "塞内加尔",
-    "continent": "非洲",
-    "flag": "🇸🇳",
-    "lat": 14.7167,
-    "lng": -17.4677,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 55,
-      "grade": "C+",
-      "grades": {
-        "crime": "C+",
-        "transport": "C",
-        "health": "C",
-        "natural": "B-"
-      }
-    },
-    "highlights": [
-      "西非门户",
-      "文化活跃",
-      "相对稳定"
-    ],
-    "risks": [
-      "扒窃",
-      "交通拥堵",
-      "卫生隐患"
-    ],
-    "emergency": {
-      "police": "17",
-      "ambulance": "15",
-      "fire": "18"
-    }
-  },
-  'casablanca': {
-    "id": "casablanca",
-    "name": "卡萨布兰卡",
-    "nameEn": "Casablanca",
-    "country": "摩洛哥",
-    "continent": "非洲",
-    "flag": "🇲🇦",
-    "lat": 33.5731,
-    "lng": -7.5898,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 60,
-      "grade": "B-",
-      "grades": {
-        "crime": "C+",
-        "transport": "B-",
-        "health": "B",
-        "natural": "A-"
-      }
-    },
-    "highlights": [
-      "摩洛哥商业中心",
-      "地中海文化",
-      "清真寺建筑"
-    ],
-    "risks": [
-      "扒窃骚扰",
-      "街头欺诈",
-      "强卖商品"
-    ],
-    "emergency": {
-      "police": "19",
-      "ambulance": "150",
-      "fire": "15"
-    }
-  },
-  'tunis': {
-    "id": "tunis",
-    "name": "突尼斯",
-    "nameEn": "Tunis",
-    "country": "突尼斯",
-    "continent": "非洲",
-    "flag": "🇹🇳",
-    "lat": 36.819,
-    "lng": 10.1658,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 62,
-      "grade": "B-",
-      "grades": {
-        "crime": "B-",
-        "transport": "B-",
-        "health": "B",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "地中海文化明珠",
-      "相对安全的非洲城市"
-    ],
-    "risks": [
-      "扒窃",
-      "政治偶发事件",
-      "极端势力"
-    ],
-    "emergency": {
-      "police": "197",
-      "ambulance": "190",
-      "fire": "198"
-    }
-  },
-  'sydney': {
-    "id": "sydney",
-    "name": "悉尼",
-    "nameEn": "Sydney",
-    "country": "澳大利亚",
-    "continent": "大洋洲",
-    "flag": "🇦🇺",
-    "lat": -33.8688,
-    "lng": 151.2093,
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
-    "safety": {
-      "overall": 88,
-      "grade": "A-",
-      "grades": {
-        "crime": "A-",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "全球最宜居城市之一",
-      "世界级海滩",
-      "高质量生活"
-    ],
-    "risks": [
-      "部分区域扒窃",
-      "山火风险",
-      "海洋动物"
-    ],
-    "emergency": {
-      "police": "000",
-      "ambulance": "000",
-      "fire": "000"
-    }
-  },
-  'melbourne': {
-    "id": "melbourne",
-    "name": "墨尔本",
-    "nameEn": "Melbourne",
-    "country": "澳大利亚",
-    "continent": "大洋洲",
-    "flag": "🇦🇺",
-    "lat": -37.8136,
-    "lng": 144.9631,
-    "image": "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=400&q=80",
-    "safety": {
-      "overall": 89,
-      "grade": "A-",
-      "grades": {
-        "crime": "A-",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "全球最宜居城市常年第一",
-      "咖啡文化",
-      "体育之都"
-    ],
-    "risks": [
-      "扒窃",
-      "极端高温",
-      "山火"
-    ],
-    "emergency": {
-      "police": "000",
-      "ambulance": "000",
-      "fire": "000"
-    }
-  },
-  'auckland': {
-    "id": "auckland",
-    "name": "奥克兰",
-    "nameEn": "Auckland",
-    "country": "新西兰",
-    "continent": "大洋洲",
-    "flag": "🇳🇿",
-    "lat": -36.8509,
-    "lng": 174.7645,
-    "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=400&q=80",
-    "safety": {
-      "overall": 82,
-      "grade": "B+",
-      "grades": {
-        "crime": "B+",
-        "transport": "A-",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "帆船之城",
-      "自然风光",
-      "毛利文化"
-    ],
-    "risks": [
-      "扒窃",
-      "地震火山",
-      "交通事故"
-    ],
-    "emergency": {
-      "police": "111",
-      "ambulance": "111",
-      "fire": "111"
-    }
-  },
-  'wellington': {
-    "id": "wellington",
-    "name": "惠灵顿",
-    "nameEn": "Wellington",
-    "country": "新西兰",
-    "continent": "大洋洲",
-    "flag": "🇳🇿",
-    "lat": -41.2865,
-    "lng": 174.7762,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 84,
-      "grade": "A-",
-      "grades": {
-        "crime": "A-",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "全球最宜居首都之一",
-      "文化艺术丰富",
-      "创意之城"
-    ],
-    "risks": [
-      "地震风险",
-      "大风气候"
-    ],
-    "emergency": {
-      "police": "111",
-      "ambulance": "111",
-      "fire": "111"
-    }
-  },
-  'perth': {
-    "id": "perth",
-    "name": "珀斯",
-    "nameEn": "Perth",
-    "country": "澳大利亚",
-    "continent": "大洋洲",
-    "flag": "🇦🇺",
-    "lat": -31.9505,
-    "lng": 115.8605,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 86,
-      "grade": "A-",
-      "grades": {
-        "crime": "B+",
-        "transport": "A",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "澳洲最阳光城市",
-      "清洁海滩",
-      "高质量生活"
-    ],
-    "risks": [
-      "山火",
-      "极端高温",
-      "毒蜘蛛蛇类"
-    ],
-    "emergency": {
-      "police": "000",
-      "ambulance": "000",
-      "fire": "000"
-    }
-  },
-  'zurich2': {
-    "id": "zurich2",
-    "name": "日内瓦",
-    "nameEn": "Geneva",
-    "country": "瑞士",
+  "st_petersburg": {
+    "id": "st_petersburg",
+    "name": "圣彼得堡",
+    "nameEn": "St. Petersburg",
+    "country": "俄罗斯",
     "continent": "欧洲",
-    "flag": "🇨🇭",
-    "lat": 46.2044,
-    "lng": 6.1432,
-    "image": "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=400&q=80",
+    "flag": "🇷🇺",
+    "lat": 59.9311,
+    "lng": 30.3609,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
     "safety": {
-      "overall": 93,
-      "grade": "A",
+      "overall": 65,
+      "grade": "B-",
       "grades": {
-        "crime": "A",
-        "transport": "A",
-        "health": "A",
-        "natural": "A-"
+        "crime": "C",
+        "transport": "C+",
+        "health": "C",
+        "natural": "C+"
       }
     },
     "highlights": [
-      "联合国欧洲总部",
-      "国际组织中心",
-      "极高安全水平"
+      "社会秩序好",
+      "历史建筑众多",
+      "食品安全",
+      "公共交通发达"
     ],
     "risks": [
-      "生活成本极高"
+      "申根签证",
+      "语言障碍",
+      "罢工影响交通"
     ],
     "emergency": {
-      "police": "117",
-      "ambulance": "144",
-      "fire": "118"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'milan': {
+  "milan": {
     "id": "milan",
     "name": "米兰",
     "nameEn": "Milan",
     "country": "意大利",
     "continent": "欧洲",
     "flag": "🇮🇹",
-    "lat": 45.4654,
-    "lng": 9.1859,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "lat": 45.4642,
+    "lng": 9.19,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
     "safety": {
-      "overall": 74,
-      "grade": "B+",
+      "overall": 87,
+      "grade": "A-",
       "grades": {
-        "crime": "B",
+        "crime": "A-",
+        "transport": "A-",
+        "health": "A-",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "艺术氛围浓厚",
+      "食品安全",
+      "历史建筑众多",
+      "社会秩序好"
+    ],
+    "risks": [
+      "物价较高",
+      "申根签证",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "munich": {
+    "id": "munich",
+    "name": "慕尼黑",
+    "nameEn": "Munich",
+    "country": "德国",
+    "continent": "欧洲",
+    "flag": "🇩🇪",
+    "lat": 48.1351,
+    "lng": 11.582,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
         "transport": "A",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "时尚之都",
-      "金融中心",
-      "文化艺术"
+      "艺术氛围浓厚",
+      "食品安全",
+      "公共交通发达",
+      "历史建筑众多"
     ],
     "risks": [
-      "扒窃",
-      "部分区域夜间治安"
+      "申根签证",
+      "小偷小摸",
+      "物价较高"
     ],
     "emergency": {
-      "police": "113",
-      "ambulance": "118",
-      "fire": "115"
+      "police": "110",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'dublin': {
+  "frankfurt": {
+    "id": "frankfurt",
+    "name": "法兰克福",
+    "nameEn": "Frankfurt",
+    "country": "德国",
+    "continent": "欧洲",
+    "flag": "🇩🇪",
+    "lat": 50.1109,
+    "lng": 8.6821,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 92,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A-",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "历史建筑众多",
+      "社会秩序好",
+      "公共交通发达",
+      "食品安全"
+    ],
+    "risks": [
+      "申根签证",
+      "小偷小摸",
+      "语言障碍"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "hamburg": {
+    "id": "hamburg",
+    "name": "汉堡",
+    "nameEn": "Hamburg",
+    "country": "德国",
+    "continent": "欧洲",
+    "flag": "🇩🇪",
+    "lat": 53.5511,
+    "lng": 9.9937,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "历史建筑众多",
+      "社会秩序好",
+      "公共交通发达",
+      "艺术氛围浓厚"
+    ],
+    "risks": [
+      "罢工影响交通",
+      "物价较高",
+      "语言障碍"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "dublin": {
     "id": "dublin",
     "name": "都柏林",
     "nameEn": "Dublin",
@@ -3284,25 +2233,27 @@ var CITY_DATABASE = {
     "flag": "🇮🇪",
     "lat": 53.3498,
     "lng": -6.2603,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
-      "overall": 78,
-      "grade": "B+",
+      "overall": 95,
+      "grade": "A",
       "grades": {
-        "crime": "B+",
-        "transport": "B+",
+        "crime": "A",
+        "transport": "A",
         "health": "A",
         "natural": "A"
       }
     },
     "highlights": [
-      "欧洲科技重镇",
-      "文化底蕴深厚",
-      "温和气候"
+      "艺术氛围浓厚",
+      "公共交通发达",
+      "食品安全",
+      "社会秩序好"
     ],
     "risks": [
-      "扒窃",
-      "部分夜生活区"
+      "语言障碍",
+      "小偷小摸",
+      "申根签证"
     ],
     "emergency": {
       "police": "112",
@@ -3310,35 +2261,591 @@ var CITY_DATABASE = {
       "fire": "112"
     }
   },
-  'boston': {
-    "id": "boston",
-    "name": "波士顿",
-    "nameEn": "Boston",
-    "country": "美国",
-    "continent": "北美洲",
-    "flag": "🇺🇸",
-    "lat": 42.3601,
-    "lng": -71.0589,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+  "edinburgh": {
+    "id": "edinburgh",
+    "name": "爱丁堡",
+    "nameEn": "Edinburgh",
+    "country": "英国",
+    "continent": "欧洲",
+    "flag": "🇬🇧",
+    "lat": 55.9533,
+    "lng": -3.1883,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
     "safety": {
-      "overall": 72,
-      "grade": "B",
+      "overall": 93,
+      "grade": "A",
       "grades": {
-        "crime": "B",
-        "transport": "A-",
+        "crime": "A",
+        "transport": "A",
         "health": "A",
-        "natural": "B+"
+        "natural": "A"
       }
     },
     "highlights": [
-      "世界顶级教育中心",
-      "历史名城",
-      "医疗研究重镇"
+      "食品安全",
+      "公共交通发达",
+      "社会秩序好",
+      "历史建筑众多"
     ],
     "risks": [
-      "扒窃",
-      "部分区域犯罪",
-      "暴风雪"
+      "罢工影响交通",
+      "语言障碍",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    }
+  },
+  "manchester": {
+    "id": "manchester",
+    "name": "曼彻斯特",
+    "nameEn": "Manchester",
+    "country": "英国",
+    "continent": "欧洲",
+    "flag": "🇬🇧",
+    "lat": 53.4808,
+    "lng": -2.2426,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A-",
+        "health": "A-",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "历史建筑众多",
+      "艺术氛围浓厚",
+      "食品安全",
+      "公共交通发达"
+    ],
+    "risks": [
+      "物价较高",
+      "申根签证",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    }
+  },
+  "lyon": {
+    "id": "lyon",
+    "name": "里昂",
+    "nameEn": "Lyon",
+    "country": "法国",
+    "continent": "欧洲",
+    "flag": "🇫🇷",
+    "lat": 45.764,
+    "lng": 4.8357,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A-",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "社会秩序好",
+      "公共交通发达",
+      "艺术氛围浓厚",
+      "历史建筑众多"
+    ],
+    "risks": [
+      "物价较高",
+      "申根签证",
+      "语言障碍"
+    ],
+    "emergency": {
+      "police": "17",
+      "ambulance": "15",
+      "fire": "18"
+    }
+  },
+  "marseille": {
+    "id": "marseille",
+    "name": "马赛",
+    "nameEn": "Marseille",
+    "country": "法国",
+    "continent": "欧洲",
+    "flag": "🇫🇷",
+    "lat": 43.2965,
+    "lng": 5.3698,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A-",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "公共交通发达",
+      "历史建筑众多",
+      "艺术氛围浓厚",
+      "食品安全"
+    ],
+    "risks": [
+      "物价较高",
+      "申根签证",
+      "语言障碍"
+    ],
+    "emergency": {
+      "police": "17",
+      "ambulance": "15",
+      "fire": "18"
+    }
+  },
+  "nice": {
+    "id": "nice",
+    "name": "尼斯",
+    "nameEn": "Nice",
+    "country": "法国",
+    "continent": "欧洲",
+    "flag": "🇫🇷",
+    "lat": 43.7102,
+    "lng": 7.262,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "公共交通发达",
+      "社会秩序好",
+      "食品安全",
+      "历史建筑众多"
+    ],
+    "risks": [
+      "小偷小摸",
+      "罢工影响交通",
+      "语言障碍"
+    ],
+    "emergency": {
+      "police": "17",
+      "ambulance": "15",
+      "fire": "18"
+    }
+  },
+  "venice": {
+    "id": "venice",
+    "name": "威尼斯",
+    "nameEn": "Venice",
+    "country": "意大利",
+    "continent": "欧洲",
+    "flag": "🇮🇹",
+    "lat": 45.4408,
+    "lng": 12.3155,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "公共交通发达",
+      "艺术氛围浓厚",
+      "社会秩序好",
+      "食品安全"
+    ],
+    "risks": [
+      "物价较高",
+      "申根签证",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "florence": {
+    "id": "florence",
+    "name": "佛罗伦萨",
+    "nameEn": "Florence",
+    "country": "意大利",
+    "continent": "欧洲",
+    "flag": "🇮🇹",
+    "lat": 43.7696,
+    "lng": 11.2558,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A-",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "社会秩序好",
+      "食品安全",
+      "艺术氛围浓厚",
+      "公共交通发达"
+    ],
+    "risks": [
+      "申根签证",
+      "物价较高",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "naples": {
+    "id": "naples",
+    "name": "那不勒斯",
+    "nameEn": "Naples",
+    "country": "意大利",
+    "continent": "欧洲",
+    "flag": "🇮🇹",
+    "lat": 40.8518,
+    "lng": 14.2681,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A",
+        "health": "A-",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "艺术氛围浓厚",
+      "食品安全",
+      "历史建筑众多",
+      "公共交通发达"
+    ],
+    "risks": [
+      "罢工影响交通",
+      "小偷小摸",
+      "物价较高"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "valencia": {
+    "id": "valencia",
+    "name": "瓦伦西亚",
+    "nameEn": "Valencia",
+    "country": "西班牙",
+    "continent": "欧洲",
+    "flag": "🇪🇸",
+    "lat": 39.4699,
+    "lng": -0.3763,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "艺术氛围浓厚",
+      "食品安全",
+      "历史建筑众多",
+      "社会秩序好"
+    ],
+    "risks": [
+      "语言障碍",
+      "物价较高",
+      "申根签证"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "seville": {
+    "id": "seville",
+    "name": "塞维利亚",
+    "nameEn": "Seville",
+    "country": "西班牙",
+    "continent": "欧洲",
+    "flag": "🇪🇸",
+    "lat": 37.3891,
+    "lng": -5.9845,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "A-",
+        "health": "A",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "公共交通发达",
+      "社会秩序好",
+      "历史建筑众多",
+      "食品安全"
+    ],
+    "risks": [
+      "物价较高",
+      "语言障碍",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "malaga": {
+    "id": "malaga",
+    "name": "马拉加",
+    "nameEn": "Malaga",
+    "country": "西班牙",
+    "continent": "欧洲",
+    "flag": "🇪🇸",
+    "lat": 36.7213,
+    "lng": -4.4214,
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "艺术氛围浓厚",
+      "食品安全",
+      "历史建筑众多",
+      "社会秩序好"
+    ],
+    "risks": [
+      "语言障碍",
+      "申根签证",
+      "罢工影响交通"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "porto": {
+    "id": "porto",
+    "name": "波尔图",
+    "nameEn": "Porto",
+    "country": "葡萄牙",
+    "continent": "欧洲",
+    "flag": "🇵🇹",
+    "lat": 41.1579,
+    "lng": -8.6291,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "艺术氛围浓厚",
+      "食品安全",
+      "历史建筑众多",
+      "社会秩序好"
+    ],
+    "risks": [
+      "申根签证",
+      "物价较高",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "krakow": {
+    "id": "krakow",
+    "name": "克拉科夫",
+    "nameEn": "Krakow",
+    "country": "波兰",
+    "continent": "欧洲",
+    "flag": "🇵🇱",
+    "lat": 50.0647,
+    "lng": 19.945,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "公共交通发达",
+      "社会秩序好",
+      "历史建筑众多",
+      "食品安全"
+    ],
+    "risks": [
+      "申根签证",
+      "物价较高",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "geneva": {
+    "id": "geneva",
+    "name": "日内瓦",
+    "nameEn": "Geneva",
+    "country": "瑞士",
+    "continent": "欧洲",
+    "flag": "🇨🇭",
+    "lat": 46.2044,
+    "lng": 6.1432,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "公共交通发达",
+      "食品安全",
+      "社会秩序好",
+      "艺术氛围浓厚"
+    ],
+    "risks": [
+      "申根签证",
+      "物价较高",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "cologne": {
+    "id": "cologne",
+    "name": "科隆",
+    "nameEn": "Cologne",
+    "country": "德国",
+    "continent": "欧洲",
+    "flag": "🇩🇪",
+    "lat": 50.9375,
+    "lng": 6.9603,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "历史建筑众多",
+      "社会秩序好",
+      "食品安全",
+      "公共交通发达"
+    ],
+    "risks": [
+      "物价较高",
+      "罢工影响交通",
+      "小偷小摸"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "new_york": {
+    "id": "new_york",
+    "name": "纽约",
+    "nameEn": "New York",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 67,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "购物选择多",
+      "多元文化",
+      "科技发达",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "自然灾害",
+      "医疗费用高"
     ],
     "emergency": {
       "police": "911",
@@ -3346,256 +2853,1780 @@ var CITY_DATABASE = {
       "fire": "911"
     }
   },
-  'seattle': {
-    "id": "seattle",
-    "name": "西雅图",
-    "nameEn": "Seattle",
+  "los_angeles": {
+    "id": "los_angeles",
+    "name": "洛杉矶",
+    "nameEn": "Los Angeles",
     "country": "美国",
-    "continent": "北美洲",
+    "continent": "美洲",
     "flag": "🇺🇸",
-    "lat": 47.6062,
-    "lng": -122.3321,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
-      "overall": 67,
+      "overall": 73,
       "grade": "B",
       "grades": {
         "crime": "B-",
-        "transport": "B+",
-        "health": "A",
-        "natural": "B+"
-      }
-    },
-    "highlights": [
-      "科技创新中心",
-      "咖啡文化发源地",
-      "自然风光"
-    ],
-    "risks": [
-      "车辆盗窃",
-      "无家者问题",
-      "地震风险"
-    ],
-    "emergency": {
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911"
-    }
-  },
-  'hanoi': {
-    "id": "hanoi",
-    "name": "河内",
-    "nameEn": "Hanoi",
-    "country": "越南",
-    "continent": "亚洲",
-    "flag": "🇻🇳",
-    "lat": 21.0278,
-    "lng": 105.8342,
-    "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&q=80",
-    "safety": {
-      "overall": 68,
-      "grade": "B",
-      "grades": {
-        "crime": "B",
-        "transport": "C+",
+        "transport": "B-",
         "health": "B-",
         "natural": "B-"
       }
     },
     "highlights": [
-      "越南首都",
-      "古老文化",
-      "法式建筑遗迹"
+      "自然景观丰富",
+      "科技发达",
+      "多元文化",
+      "购物选择多"
     ],
     "risks": [
-      "摩托车交通混乱",
-      "扒窃",
-      "洪涝"
+      "枪支暴力风险",
+      "自然灾害",
+      "毒品问题"
     ],
     "emergency": {
-      "police": "113",
-      "ambulance": "115",
-      "fire": "114"
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
     }
   },
-  'yangon': {
-    "id": "yangon",
-    "name": "仰光",
-    "nameEn": "Yangon",
-    "country": "缅甸",
-    "continent": "亚洲",
-    "flag": "🇲🇲",
-    "lat": 16.8661,
-    "lng": 96.1951,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+  "chicago": {
+    "id": "chicago",
+    "name": "芝加哥",
+    "nameEn": "Chicago",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
     "safety": {
-      "overall": 40,
-      "grade": "C",
+      "overall": 69,
+      "grade": "B-",
+      "grades": {
+        "crime": "C",
+        "transport": "B",
+        "health": "C+",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "自然景观丰富",
+      "科技发达",
+      "购物选择多",
+      "多元文化"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "自然灾害",
+      "毒品问题"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "toronto": {
+    "id": "toronto",
+    "name": "多伦多",
+    "nameEn": "Toronto",
+    "country": "加拿大",
+    "continent": "美洲",
+    "flag": "🇨🇦",
+    "lat": 43.6532,
+    "lng": -79.3832,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B",
+        "transport": "B-",
+        "health": "B",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "购物选择多",
+      "多元文化",
+      "娱乐设施完善",
+      "科技发达"
+    ],
+    "risks": [
+      "治安差异大",
+      "枪支暴力风险",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "vancouver": {
+    "id": "vancouver",
+    "name": "温哥华",
+    "nameEn": "Vancouver",
+    "country": "加拿大",
+    "continent": "美洲",
+    "flag": "🇨🇦",
+    "lat": 49.2827,
+    "lng": -123.1207,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "娱乐设施完善",
+      "科技发达",
+      "多元文化",
+      "购物选择多"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "毒品问题",
+      "医疗费用高"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "montreal": {
+    "id": "montreal",
+    "name": "蒙特利尔",
+    "nameEn": "Montreal",
+    "country": "加拿大",
+    "continent": "美洲",
+    "flag": "🇨🇦",
+    "lat": 45.5017,
+    "lng": -73.5673,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 73,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "C+",
+        "health": "B",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "购物选择多",
+      "娱乐设施完善",
+      "自然景观丰富",
+      "科技发达"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "毒品问题",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "san_francisco": {
+    "id": "san_francisco",
+    "name": "旧金山",
+    "nameEn": "San Francisco",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 79,
+      "grade": "B+",
+      "grades": {
+        "crime": "B-",
+        "transport": "A-",
+        "health": "B",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "自然景观丰富",
+      "科技发达",
+      "多元文化",
+      "娱乐设施完善"
+    ],
+    "risks": [
+      "毒品问题",
+      "自然灾害",
+      "治安差异大"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "seattle": {
+    "id": "seattle",
+    "name": "西雅图",
+    "nameEn": "Seattle",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 66,
+      "grade": "B-",
       "grades": {
         "crime": "C+",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "娱乐设施完善",
+      "多元文化",
+      "购物选择多",
+      "科技发达"
+    ],
+    "risks": [
+      "毒品问题",
+      "自然灾害",
+      "治安差异大"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "miami": {
+    "id": "miami",
+    "name": "迈阿密",
+    "nameEn": "Miami",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 77,
+      "grade": "B+",
+      "grades": {
+        "crime": "B-",
+        "transport": "B+",
+        "health": "B",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "娱乐设施完善",
+      "多元文化",
+      "购物选择多",
+      "科技发达"
+    ],
+    "risks": [
+      "医疗费用高",
+      "毒品问题",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "boston": {
+    "id": "boston",
+    "name": "波士顿",
+    "nameEn": "Boston",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 42.3601,
+    "lng": -71.0589,
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "B+",
+        "health": "A-",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "多元文化",
+      "自然景观丰富",
+      "购物选择多",
+      "娱乐设施完善"
+    ],
+    "risks": [
+      "医疗费用高",
+      "毒品问题",
+      "治安差异大"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "washington_dc": {
+    "id": "washington_dc",
+    "name": "华盛顿",
+    "nameEn": "Washington D.C.",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 71,
+      "grade": "B",
+      "grades": {
+        "crime": "B-",
+        "transport": "B-",
+        "health": "B-",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "娱乐设施完善",
+      "购物选择多",
+      "多元文化",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "医疗费用高",
+      "毒品问题",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "las_vegas": {
+    "id": "las_vegas",
+    "name": "拉斯维加斯",
+    "nameEn": "Las Vegas",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 36.1699,
+    "lng": -115.1398,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 66,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "科技发达",
+      "多元文化",
+      "购物选择多",
+      "娱乐设施完善"
+    ],
+    "risks": [
+      "医疗费用高",
+      "毒品问题",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "denver": {
+    "id": "denver",
+    "name": "丹佛",
+    "nameEn": "Denver",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 39.7392,
+    "lng": -104.9903,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "B",
+        "transport": "B+",
+        "health": "B",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "自然景观丰富",
+      "娱乐设施完善",
+      "购物选择多",
+      "多元文化"
+    ],
+    "risks": [
+      "自然灾害",
+      "枪支暴力风险",
+      "毒品问题"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "atlanta": {
+    "id": "atlanta",
+    "name": "亚特兰大",
+    "nameEn": "Atlanta",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 33.749,
+    "lng": -84.388,
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "safety": {
+      "overall": 73,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "B-",
+        "health": "B-",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "多元文化",
+      "购物选择多",
+      "娱乐设施完善",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "治安差异大",
+      "医疗费用高",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "dallas": {
+    "id": "dallas",
+    "name": "达拉斯",
+    "nameEn": "Dallas",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 32.7767,
+    "lng": -96.797,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 85,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "B+",
+        "health": "A-",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "多元文化",
+      "购物选择多",
+      "科技发达",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "治安差异大",
+      "医疗费用高",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "houston": {
+    "id": "houston",
+    "name": "休斯顿",
+    "nameEn": "Houston",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 81,
+      "grade": "A-",
+      "grades": {
+        "crime": "B",
+        "transport": "B+",
+        "health": "B+",
+        "natural": "B+"
+      }
+    },
+    "highlights": [
+      "科技发达",
+      "购物选择多",
+      "多元文化",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "毒品问题",
+      "治安差异大",
+      "医疗费用高"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "phoenix": {
+    "id": "phoenix",
+    "name": "凤凰城",
+    "nameEn": "Phoenix",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 33.4484,
+    "lng": -112.074,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B",
+        "transport": "B",
+        "health": "B",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "多元文化",
+      "科技发达",
+      "娱乐设施完善",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "毒品问题",
+      "治安差异大",
+      "医疗费用高"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "portland": {
+    "id": "portland",
+    "name": "波特兰",
+    "nameEn": "Portland",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 68,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "多元文化",
+      "科技发达",
+      "娱乐设施完善",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "医疗费用高",
+      "治安差异大",
+      "毒品问题"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "san_diego": {
+    "id": "san_diego",
+    "name": "圣迭戈",
+    "nameEn": "San Diego",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 32.7157,
+    "lng": -117.1611,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "多元文化",
+      "自然景观丰富",
+      "科技发达",
+      "购物选择多"
+    ],
+    "risks": [
+      "毒品问题",
+      "治安差异大",
+      "医疗费用高"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "austin": {
+    "id": "austin",
+    "name": "奥斯汀",
+    "nameEn": "Austin",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 30.2672,
+    "lng": -97.7431,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "safety": {
+      "overall": 70,
+      "grade": "B",
+      "grades": {
+        "crime": "C+",
+        "transport": "B-",
+        "health": "C+",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "购物选择多",
+      "自然景观丰富",
+      "科技发达",
+      "娱乐设施完善"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "医疗费用高",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    }
+  },
+  "mexico_city": {
+    "id": "mexico_city",
+    "name": "墨西哥城",
+    "nameEn": "Mexico City",
+    "country": "墨西哥",
+    "continent": "美洲",
+    "flag": "🇲🇽",
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "safety": {
+      "overall": 59,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
         "transport": "C",
         "health": "C",
         "natural": "C"
       }
     },
     "highlights": [
-      "古老文化",
-      "佛教圣地",
-      "大金寺"
+      "购物选择多",
+      "自然景观丰富",
+      "科技发达",
+      "娱乐设施完善"
     ],
     "risks": [
-      "政治不稳定",
-      "基础设施落后",
-      "医疗资源有限"
+      "医疗费用高",
+      "枪支暴力风险",
+      "治安差异大"
     ],
     "emergency": {
-      "police": "199",
-      "ambulance": "192",
-      "fire": "191"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'islamabad': {
-    "id": "islamabad",
-    "name": "伊斯兰堡",
-    "nameEn": "Islamabad",
-    "country": "巴基斯坦",
-    "continent": "亚洲",
-    "flag": "🇵🇰",
-    "lat": 33.6844,
-    "lng": 73.0479,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+  "cancun": {
+    "id": "cancun",
+    "name": "坎昆",
+    "nameEn": "Cancun",
+    "country": "墨西哥",
+    "continent": "美洲",
+    "flag": "🇲🇽",
+    "lat": 21.1619,
+    "lng": -86.8515,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
     "safety": {
-      "overall": 42,
-      "grade": "C",
+      "overall": 61,
+      "grade": "B-",
       "grades": {
         "crime": "C",
         "transport": "C+",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "多元文化",
+      "娱乐设施完善",
+      "科技发达",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "医疗费用高",
+      "枪支暴力风险",
+      "治安差异大"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "sao_paulo": {
+    "id": "sao_paulo",
+    "name": "圣保罗",
+    "nameEn": "Sao Paulo",
+    "country": "巴西",
+    "continent": "美洲",
+    "flag": "🇧🇷",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 71,
+      "grade": "B",
+      "grades": {
+        "crime": "C",
+        "transport": "B",
+        "health": "C+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "科技发达",
+      "娱乐设施完善",
+      "多元文化",
+      "购物选择多"
+    ],
+    "risks": [
+      "医疗费用高",
+      "自然灾害",
+      "枪支暴力风险"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "rio_de_janeiro": {
+    "id": "rio_de_janeiro",
+    "name": "里约热内卢",
+    "nameEn": "Rio de Janeiro",
+    "country": "巴西",
+    "continent": "美洲",
+    "flag": "🇧🇷",
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 57,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "购物选择多",
+      "多元文化",
+      "娱乐设施完善",
+      "科技发达"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "自然灾害",
+      "医疗费用高"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "buenos_aires": {
+    "id": "buenos_aires",
+    "name": "布宜诺斯艾利斯",
+    "nameEn": "Buenos Aires",
+    "country": "阿根廷",
+    "continent": "美洲",
+    "flag": "🇦🇷",
+    "lat": -34.6037,
+    "lng": -58.3816,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 55,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "自然景观丰富",
+      "科技发达",
+      "娱乐设施完善",
+      "多元文化"
+    ],
+    "risks": [
+      "医疗费用高",
+      "治安差异大",
+      "自然灾害"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "santiago": {
+    "id": "santiago",
+    "name": "圣地亚哥",
+    "nameEn": "Santiago",
+    "country": "智利",
+    "continent": "美洲",
+    "flag": "🇨🇱",
+    "lat": -33.4489,
+    "lng": -70.6693,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 64,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "C",
+        "health": "C+",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "购物选择多",
+      "科技发达",
+      "多元文化",
+      "自然景观丰富"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "治安差异大",
+      "医疗费用高"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "lima": {
+    "id": "lima",
+    "name": "利马",
+    "nameEn": "Lima",
+    "country": "秘鲁",
+    "continent": "美洲",
+    "flag": "🇵🇪",
+    "lat": -12.0464,
+    "lng": -77.0428,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 73,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "C+",
+        "health": "B",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "自然景观丰富",
+      "娱乐设施完善",
+      "多元文化",
+      "科技发达"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "毒品问题",
+      "治安差异大"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "bogota": {
+    "id": "bogota",
+    "name": "波哥大",
+    "nameEn": "Bogota",
+    "country": "哥伦比亚",
+    "continent": "美洲",
+    "flag": "🇨🇴",
+    "lat": 4.711,
+    "lng": -74.0721,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 63,
+      "grade": "B-",
+      "grades": {
+        "crime": "C",
+        "transport": "B-",
         "health": "C",
         "natural": "C+"
       }
     },
     "highlights": [
-      "计划型首都",
-      "相对安全的首都区"
+      "购物选择多",
+      "科技发达",
+      "多元文化",
+      "娱乐设施完善"
     ],
     "risks": [
-      "恐怖主义风险",
-      "政治动荡",
-      "洪涝"
+      "枪支暴力风险",
+      "医疗费用高",
+      "自然灾害"
     ],
     "emergency": {
-      "police": "15",
-      "ambulance": "115",
-      "fire": "16"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
     }
   },
-  'quito': {
-    "id": "quito",
-    "name": "基多",
-    "nameEn": "Quito",
-    "country": "厄瓜多尔",
-    "continent": "拉丁美洲",
-    "flag": "🇪🇨",
-    "lat": -0.1807,
-    "lng": -78.4678,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+  "medellin": {
+    "id": "medellin",
+    "name": "麦德林",
+    "nameEn": "Medellin",
+    "country": "哥伦比亚",
+    "continent": "美洲",
+    "flag": "🇨🇴",
+    "lat": 6.2442,
+    "lng": -75.5812,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
     "safety": {
-      "overall": 50,
-      "grade": "C+",
+      "overall": 66,
+      "grade": "B-",
       "grades": {
         "crime": "C",
-        "transport": "C+",
-        "health": "B-",
-        "natural": "C+"
-      }
-    },
-    "highlights": [
-      "赤道之城",
-      "世界文化遗产古城",
-      "自然风光"
-    ],
-    "risks": [
-      "扒窃",
-      "火山活动",
-      "高原反应"
-    ],
-    "emergency": {
-      "police": "101",
-      "ambulance": "911",
-      "fire": "102"
-    }
-  },
-  'la_paz': {
-    "id": "la_paz",
-    "name": "拉巴斯",
-    "nameEn": "La Paz",
-    "country": "玻利维亚",
-    "continent": "拉丁美洲",
-    "flag": "🇧🇴",
-    "lat": -16.5,
-    "lng": -68.15,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "safety": {
-      "overall": 45,
-      "grade": "C",
-      "grades": {
-        "crime": "C",
-        "transport": "C",
+        "transport": "B-",
         "health": "C",
         "natural": "B-"
       }
     },
     "highlights": [
-      "世界最高首都",
-      "安第斯文化",
-      "盐沼景观"
+      "自然景观丰富",
+      "娱乐设施完善",
+      "多元文化",
+      "科技发达"
     ],
     "risks": [
-      "扒窃",
-      "高原反应严重",
-      "政治示威"
+      "枪支暴力风险",
+      "自然灾害",
+      "治安差异大"
     ],
     "emergency": {
-      "police": "110",
-      "ambulance": "118",
-      "fire": "119"
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "panama_city": {
+    "id": "panama_city",
+    "name": "巴拿马城",
+    "nameEn": "Panama City",
+    "country": "巴拿马",
+    "continent": "美洲",
+    "flag": "🇵🇦",
+    "lat": 8.9824,
+    "lng": -79.5199,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 79,
+      "grade": "B+",
+      "grades": {
+        "crime": "B",
+        "transport": "B",
+        "health": "B",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "自然景观丰富",
+      "娱乐设施完善",
+      "多元文化",
+      "购物选择多"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "自然灾害",
+      "治安差异大"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "cairo": {
+    "id": "cairo",
+    "name": "开罗",
+    "nameEn": "Cairo",
+    "country": "埃及",
+    "continent": "非洲",
+    "flag": "🇪🇬",
+    "lat": 30.0444,
+    "lng": 31.2357,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 30,
+      "grade": "C",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "自然风光独特",
+      "人民热情",
+      "野生动物丰富",
+      "文化多元"
+    ],
+    "risks": [
+      "医疗条件有限",
+      "治安风险高",
+      "疾病风险"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "cape_town": {
+    "id": "cape_town",
+    "name": "开普敦",
+    "nameEn": "Cape Town",
+    "country": "南非",
+    "continent": "非洲",
+    "flag": "🇿🇦",
+    "lat": -33.9249,
+    "lng": 18.4241,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "safety": {
+      "overall": 44,
+      "grade": "C",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "物价相对低",
+      "文化多元",
+      "野生动物丰富",
+      "人民热情"
+    ],
+    "risks": [
+      "治安风险高",
+      "基础设施差",
+      "医疗条件有限"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "johannesburg": {
+    "id": "johannesburg",
+    "name": "约翰内斯堡",
+    "nameEn": "Johannesburg",
+    "country": "南非",
+    "continent": "非洲",
+    "flag": "🇿🇦",
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 41,
+      "grade": "C",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "自然风光独特",
+      "文化多元",
+      "人民热情",
+      "物价相对低"
+    ],
+    "risks": [
+      "医疗条件有限",
+      "政治动荡",
+      "基础设施差"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "lagos": {
+    "id": "lagos",
+    "name": "拉各斯",
+    "nameEn": "Lagos",
+    "country": "尼日利亚",
+    "continent": "非洲",
+    "flag": "🇳🇬",
+    "lat": 6.5244,
+    "lng": 3.3792,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "safety": {
+      "overall": 30,
+      "grade": "C",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "物价相对低",
+      "自然风光独特",
+      "野生动物丰富",
+      "文化多元"
+    ],
+    "risks": [
+      "医疗条件有限",
+      "政治动荡",
+      "基础设施差"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "nairobi": {
+    "id": "nairobi",
+    "name": "内罗毕",
+    "nameEn": "Nairobi",
+    "country": "肯尼亚",
+    "continent": "非洲",
+    "flag": "🇰🇪",
+    "lat": -1.2921,
+    "lng": 36.8219,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "safety": {
+      "overall": 38,
+      "grade": "C",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "物价相对低",
+      "自然风光独特",
+      "人民热情",
+      "野生动物丰富"
+    ],
+    "risks": [
+      "疾病风险",
+      "医疗条件有限",
+      "治安风险高"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "casablanca": {
+    "id": "casablanca",
+    "name": "卡萨布兰卡",
+    "nameEn": "Casablanca",
+    "country": "摩洛哥",
+    "continent": "非洲",
+    "flag": "🇲🇦",
+    "lat": 33.5731,
+    "lng": -7.5898,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "safety": {
+      "overall": 52,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "物价相对低",
+      "自然风光独特",
+      "人民热情",
+      "野生动物丰富"
+    ],
+    "risks": [
+      "基础设施差",
+      "治安风险高",
+      "政治动荡"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "marrakech": {
+    "id": "marrakech",
+    "name": "马拉喀什",
+    "nameEn": "Marrakech",
+    "country": "摩洛哥",
+    "continent": "非洲",
+    "flag": "🇲🇦",
+    "lat": 31.6295,
+    "lng": -7.9811,
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "safety": {
+      "overall": 52,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "物价相对低",
+      "自然风光独特",
+      "文化多元",
+      "人民热情"
+    ],
+    "risks": [
+      "医疗条件有限",
+      "政治动荡",
+      "疾病风险"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "tunis": {
+    "id": "tunis",
+    "name": "突尼斯",
+    "nameEn": "Tunis",
+    "country": "突尼斯",
+    "continent": "非洲",
+    "flag": "🇹🇳",
+    "lat": 36.8065,
+    "lng": 10.1815,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "safety": {
+      "overall": 64,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "C",
+        "health": "C+",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "物价相对低",
+      "自然风光独特",
+      "野生动物丰富",
+      "文化多元"
+    ],
+    "risks": [
+      "医疗条件有限",
+      "政治动荡",
+      "疾病风险"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "accra": {
+    "id": "accra",
+    "name": "阿克拉",
+    "nameEn": "Accra",
+    "country": "加纳",
+    "continent": "非洲",
+    "flag": "🇬🇭",
+    "lat": 5.6037,
+    "lng": -0.187,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 42,
+      "grade": "C",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "物价相对低",
+      "野生动物丰富",
+      "文化多元",
+      "自然风光独特"
+    ],
+    "risks": [
+      "治安风险高",
+      "疾病风险",
+      "政治动荡"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "addis_ababa": {
+    "id": "addis_ababa",
+    "name": "亚的斯亚贝巴",
+    "nameEn": "Addis Ababa",
+    "country": "埃塞俄比亚",
+    "continent": "非洲",
+    "flag": "🇪🇹",
+    "lat": 9.032,
+    "lng": 38.7469,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 42,
+      "grade": "C",
+      "grades": {
+        "crime": "C",
+        "transport": "C",
+        "health": "C",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "自然风光独特",
+      "人民热情",
+      "文化多元",
+      "野生动物丰富"
+    ],
+    "risks": [
+      "政治动荡",
+      "疾病风险",
+      "医疗条件有限"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "sydney": {
+    "id": "sydney",
+    "name": "悉尼",
+    "nameEn": "Sydney",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -33.8688,
+    "lng": 151.2093,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "空气清新",
+      "生活节奏慢",
+      "自然环境优美",
+      "海滩风光"
+    ],
+    "risks": [
+      "天气变化快",
+      "野生动物",
+      "地域广阔交通不便"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    }
+  },
+  "melbourne": {
+    "id": "melbourne",
+    "name": "墨尔本",
+    "nameEn": "Melbourne",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -37.8136,
+    "lng": 144.9631,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 92,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A-",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "户外运动多",
+      "海滩风光",
+      "自然环境优美",
+      "生活节奏慢"
+    ],
+    "risks": [
+      "紫外线强",
+      "野生动物",
+      "地域广阔交通不便"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    }
+  },
+  "brisbane": {
+    "id": "brisbane",
+    "name": "布里斯班",
+    "nameEn": "Brisbane",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -27.4698,
+    "lng": 153.0251,
+    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "海滩风光",
+      "空气清新",
+      "户外运动多",
+      "自然环境优美"
+    ],
+    "risks": [
+      "天气变化快",
+      "野生动物",
+      "地域广阔交通不便"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    }
+  },
+  "perth": {
+    "id": "perth",
+    "name": "珀斯",
+    "nameEn": "Perth",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -31.9505,
+    "lng": 115.8605,
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "safety": {
+      "overall": 94,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "海滩风光",
+      "空气清新",
+      "生活节奏慢",
+      "自然环境优美"
+    ],
+    "risks": [
+      "海洋生物危险",
+      "紫外线强",
+      "地域广阔交通不便"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    }
+  },
+  "adelaide": {
+    "id": "adelaide",
+    "name": "阿德莱德",
+    "nameEn": "Adelaide",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -34.9285,
+    "lng": 138.6007,
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "safety": {
+      "overall": 85,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A",
+        "health": "B+",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "空气清新",
+      "海滩风光",
+      "自然环境优美",
+      "户外运动多"
+    ],
+    "risks": [
+      "海洋生物危险",
+      "地域广阔交通不便",
+      "紫外线强"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    }
+  },
+  "auckland": {
+    "id": "auckland",
+    "name": "奥克兰",
+    "nameEn": "Auckland",
+    "country": "新西兰",
+    "continent": "大洋洲",
+    "flag": "🇳🇿",
+    "lat": -36.8509,
+    "lng": 174.7645,
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "safety": {
+      "overall": 91,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A-"
+      }
+    },
+    "highlights": [
+      "空气清新",
+      "生活节奏慢",
+      "自然环境优美",
+      "海滩风光"
+    ],
+    "risks": [
+      "紫外线强",
+      "地域广阔交通不便",
+      "野生动物"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "wellington": {
+    "id": "wellington",
+    "name": "惠灵顿",
+    "nameEn": "Wellington",
+    "country": "新西兰",
+    "continent": "大洋洲",
+    "flag": "🇳🇿",
+    "lat": -41.2865,
+    "lng": 174.7762,
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "safety": {
+      "overall": 95,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "空气清新",
+      "户外运动多",
+      "海滩风光",
+      "生活节奏慢"
+    ],
+    "risks": [
+      "紫外线强",
+      "地域广阔交通不便",
+      "野生动物"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "christchurch": {
+    "id": "christchurch",
+    "name": "基督城",
+    "nameEn": "Christchurch",
+    "country": "新西兰",
+    "continent": "大洋洲",
+    "flag": "🇳🇿",
+    "lat": -43.532,
+    "lng": 172.6362,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "safety": {
+      "overall": 94,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "A"
+      }
+    },
+    "highlights": [
+      "生活节奏慢",
+      "空气清新",
+      "户外运动多",
+      "海滩风光"
+    ],
+    "risks": [
+      "天气变化快",
+      "海洋生物危险",
+      "野生动物"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    }
+  },
+  "honolulu": {
+    "id": "honolulu",
+    "name": "檀香山",
+    "nameEn": "Honolulu",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 21.3069,
+    "lng": -157.8583,
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "safety": {
+      "overall": 71,
+      "grade": "B",
+      "grades": {
+        "crime": "C+",
+        "transport": "B",
+        "health": "C+",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "自然景观丰富",
+      "科技发达",
+      "多元文化",
+      "购物选择多"
+    ],
+    "risks": [
+      "枪支暴力风险",
+      "毒品问题",
+      "医疗费用高"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
     }
   }
-
-};
-
-// ─── 城市列表索引（用于搜索和展示）─────────────────────────
-var CITY_INDEX = Object.values(CITY_DATABASE).map(function(city) {
-  return {
-    id: city.id,
-    name: city.name,
-    nameEn: city.nameEn,
-    country: city.country,
-    continent: city.continent,
-    flag: city.flag,
-    safetyScore: city.safety ? city.safety.overall : 0,
-    safetyGrade: city.safety ? city.safety.grade : 'N/A',
-    image: city.image || ''
-  };
-});
-
-// ─── 区域分类（自动生成）────────────────────────────────────
-var CITY_REGIONS = {};
-CITY_INDEX.forEach(function(c) {
-  if (!CITY_REGIONS[c.continent]) CITY_REGIONS[c.continent] = [];
-  CITY_REGIONS[c.continent].push(c.id);
-});
-
-// 安全等级颜色映射
-var SAFETY_COLORS = {
-  "A":  { bg: "#00b894", text: "#fff", label: "非常安全" },
-  "A-": { bg: "#00cec9", text: "#fff", label: "安全" },
-  "B+": { bg: "#0984e3", text: "#fff", label: "较安全" },
-  "B":  { bg: "#6c5ce7", text: "#fff", label: "一般" },
-  "B-": { bg: "#fdcb6e", text: "#2d3436", label: "需谨慎" },
-  "C+": { bg: "#e17055", text: "#fff", label: "风险较高" },
-  "C":  { bg: "#d63031", text: "#fff", label: "高风险" },
-  "C-": { bg: "#c0392b", text: "#fff", label: "高度危险" },
-  "D+": { bg: "#b2bec3", text: "#2d3436", label: "高度危险" },
-  "D":  { bg: "#636e72", text: "#fff", label: "极度危险" }
 };
