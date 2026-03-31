@@ -52,6 +52,88 @@ var CITY_DATABASE = {
       "police": "110",
       "ambulance": "119",
       "fire": "119"
+    },
+    "lifestyle": {
+      "food": [
+        {"name": "寿司", "type": "日本料理", "price": "¥2,000-5,000", "desc": "新鲜生鱼片，日本传统料理的代表", "tip": "建议选择有「刺身通」认证的店铺"},
+        {"name": "拉面", "type": "面食", "price": "¥800-1,500", "desc": "浓郁汤底配上Q弹面条", "tip": "拉面店通常营业时间较短"},
+        {"name": "天妇罗", "type": "日本料理", "price": "¥1,500-3,000", "desc": "油炸海鲜和蔬菜"},
+        {"name": "烤肉", "type": "烧烤", "price": "¥3,000-6,000", "desc": "高品质和牛烤肉"}
+      ],
+      "attractions": [
+        {"name": "浅草寺", "type": "寺庙", "desc": "东京最古老的佛教寺庙", "hidden": false},
+        {"name": "涩谷十字路口", "type": "地标", "desc": "世界最繁忙的十字路口", "hidden": false},
+        {"name": "明治神宫", "type": "神社", "desc": "供奉明治天皇和昭宪皇太后的神社", "hidden": false},
+        {"name": "代官山茑屋书店", "type": "书店", "desc": "全球最美书店之一", "hidden": true}
+      ],
+      "festivals": [
+        {"name": "樱花节", "date": "3月下旬-4月上旬", "desc": "全国赏樱热潮"},
+        {"name": "神田祭", "date": "5月中旬", "desc": "日本三大祭之一"},
+        {"name": "花火大会", "date": "7-8月", "desc": "夏日烟花盛宴"}
+      ],
+      "customs": [
+        "进入室内需要脱鞋",
+        "不要在电车上大声说话",
+        "给小费是不礼貌的行为",
+        "不要边走边吃",
+        "公共场合尽量避免大声打电话"
+      ],
+      "transport": "公共交通非常发达，地铁和电车是最主要交通方式，购买一日券更划算。"
+    },
+    "safety_tips": {
+      "crime": [
+        "在东京旅行时，保持警惕，注意财物安全",
+        "避免深夜独自前往偏僻区域",
+        "重要证件和现金分开存放"
+      ],
+      "transport": [
+        "选择正规交通工具",
+        "保留交通票据",
+        "使用打车软件记录行程"
+      ],
+      "health": [
+        "购买旅行保险",
+        "随身携带常用药品",
+        "注意饮食卫生"
+      ],
+      "natural": [
+        "关注当地天气预警",
+        "了解紧急避难场所位置",
+        "保持手机电量充足"
+      ],
+      "cultural": [
+        "尊重日本的文化习俗",
+        "了解当地紧急联系方式",
+        "保存当地大使馆信息"
+      ]
+    },
+    "travel_tips": {
+      "best_season": "3-5月春季,10-11月秋季",
+      "weather": {
+        "spring": {"temp": "10-20°C", "tips": "赏樱花,准备轻薄外套"},
+        "summer": {"temp": "25-35°C", "tips": "炎热潮湿,注意防暑防晒"},
+        "autumn": {"temp": "10-20°C", "tips": "赏红叶,天气宜人"},
+        "winter": {"temp": "0-10°C", "tips": "寒冷干燥,注意保暖"}
+      },
+      "budget": {
+        "daily_budget": "¥8,000-15,000/天",
+        "accommodation": "¥5,000-12,000/晚",
+        "food": "¥2,000-5,000/天",
+        "transport": "¥1,000-2,000/天"
+      },
+      "visas": {
+        "chinese_citizens": "需要签证,建议提前1-2个月申请",
+        "visa_free_countries": "68个国家免签"
+      },
+      "language": {
+        "primary": "日语",
+        "english_spoken": "普遍水平有限,旅游区较好",
+        "essential_phrases": {
+          "谢谢": "ありがとう (Arigatou)",
+          "对不起": "すみません (Sumimasen)",
+          "警察在哪里": "警察はどこですか (Keisatsu wa doko desu ka)"
+        }
+      }
     }
   },
   "singapore": {
@@ -89,6 +171,88 @@ var CITY_DATABASE = {
       "police": "112",
       "ambulance": "112",
       "fire": "112"
+    },
+    "lifestyle": {
+      "food": [
+        {"name": "海南鸡饭", "type": "新加坡菜", "price": "SGD4-6", "desc": "香滑鸡肉配上特制米饭", "tip": "小贩中心更有地道风味"},
+        {"name": "辣椒蟹", "type": "海鲜", "price": "SGD30-50", "desc": "甜辣酱汁配新鲜螃蟹"},
+        {"name": "肉骨茶", "type": "汤品", "price": "SGD8-12", "desc": "排骨汤配药材", "tip": "胡椒味和药材味两种选择"},
+        {"name": "叻沙", "type": "面食", "price": "SGD5-8", "desc": "椰浆咖喱汤面"}
+      ],
+      "attractions": [
+        {"name": "滨海湾花园", "type": "公园", "desc": "未来感十足的超级花园", "hidden": false},
+        {"name": "鱼尾狮公园", "type": "地标", "desc": "新加坡标志性景点", "hidden": false},
+        {"name": "圣淘沙岛", "type": "度假村", "desc": "综合度假胜地", "hidden": false},
+        {"name": "武吉士街市", "type": "集市", "desc": "本地人常逛的街头市场", "hidden": true}
+      ],
+      "festivals": [
+        {"name": "春节", "date": "1-2月", "desc": "华人传统新年"},
+        {"name": "开斋节", "date": "4-5月", "desc": "马来族重要节日"},
+        {"name": "屠妖节", "date": "10-11月", "desc": "印度族光明节"}
+      ],
+      "customs": [
+        "公共场合禁止吃口香糖",
+        "不要随地乱扔垃圾",
+        "地铁上禁止饮食",
+        "过马路必须等绿灯",
+        "尊重多元文化习俗"
+      ],
+      "transport": "地铁和巴士网络完善，易通卡可通用所有公共交通，出租车安全可靠。"
+    },
+    "safety_tips": {
+      "crime": [
+        "在新加坡旅行时，保持警惕，注意财物安全",
+        "避免深夜独自前往偏僻区域",
+        "重要证件和现金分开存放"
+      ],
+      "transport": [
+        "选择正规交通工具",
+        "保留交通票据",
+        "使用打车软件记录行程"
+      ],
+      "health": [
+        "购买旅行保险",
+        "随身携带常用药品",
+        "注意饮食卫生"
+      ],
+      "natural": [
+        "关注当地天气预警",
+        "了解紧急避难场所位置",
+        "保持手机电量充足"
+      ],
+      "cultural": [
+        "尊重新加坡的文化习俗",
+        "了解当地紧急联系方式",
+        "保存当地大使馆信息"
+      ]
+    },
+    "travel_tips": {
+      "best_season": "2-4月,11-1月",
+      "weather": {
+        "spring": {"temp": "24-32°C", "tips": "炎热,注意防晒"},
+        "summer": {"temp": "26-34°C", "tips": "高温高湿,多喝水"},
+        "autumn": {"temp": "25-33°C", "tips": "烟雾季节,佩戴口罩"},
+        "winter": {"temp": "23-31°C", "tips": "最佳旅游季节"}
+      },
+      "budget": {
+        "daily_budget": "SGD100-200/天",
+        "accommodation": "SGD80-250/晚",
+        "food": "SGD20-60/天",
+        "transport": "SGD10-20/天"
+      },
+      "visas": {
+        "chinese_citizens": "可免签停留30天",
+        "visa_free_countries": "164个国家免签"
+      },
+      "language": {
+        "primary": "英语、马来语、汉语、泰米尔语",
+        "english_spoken": "普遍,官方语言之一",
+        "essential_phrases": {
+          "谢谢": "Thank you / Terima Kasih",
+          "对不起": "Sorry / Maaf",
+          "警察在哪里": "Where is the police?"
+        }
+      }
     }
   },
   "seoul": {
