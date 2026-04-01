@@ -1269,10 +1269,10 @@
 
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
-<script src="data.js?v=202604011800"></script>
-<script src="data_enhanced.js?v=202604011800"></script>
-<script src="data_new.js?v=202604011800"></script>
-<script src="realtime-api.js?v=202604011800"></script>
+<script src="data.js?v=202604012200"></script>
+<script src="data_enhanced.js?v=202604012200"></script>
+<script src="data_new.js?v=202604012200"></script>
+<script src="realtime-api.js?v=202604012200"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
@@ -1458,14 +1458,14 @@ function filterContinent(name, btn) {
 // 城市详情页
 // ─────────────────────────────────────────────────────
 function openCity(cityId) {
-  // 优先使用 data_new.js 中的详细数据
+  // 优先使用 data.js 中的完整数据（包含 emergency, lifestyle, safety.hotspots 等）
   let data = null;
-  if (typeof CITY_DATABASE_DETAIL !== 'undefined' && CITY_DATABASE_DETAIL[cityId]) {
-    data = CITY_DATABASE_DETAIL[cityId];
-  }
-  // 如果没有详细数据，回退到基础数据
-  if (!data && CITY_DATABASE[cityId]) {
+  if (CITY_DATABASE[cityId]) {
     data = CITY_DATABASE[cityId];
+  }
+  // 备用：使用 data_new.js 中的详细数据
+  if (!data && typeof CITY_DATABASE_DETAIL !== 'undefined' && CITY_DATABASE_DETAIL[cityId]) {
+    data = CITY_DATABASE_DETAIL[cityId];
   }
   if (!data) { showToast('城市数据加载中，敬请期待...'); return; }
   currentCity = data;
