@@ -85,8 +85,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "03-5321-7837",
+      "touristHotline": "050-3816-1857",
       "police": "110",
       "ambulance": "119",
       "fire": "119"
@@ -298,8 +298,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "1800-736-2000",
+      "touristHotline": "1800-736-2000",
       "police": "112",
       "ambulance": "112",
       "fire": "112"
@@ -505,8 +505,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "1330",
+      "touristHotline": "1330",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -771,8 +771,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -1009,8 +1009,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -1247,8 +1247,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -1485,8 +1485,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "1155",
+      "touristHotline": "1678",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -1723,8 +1723,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "999",
+      "touristHotline": "1300-88-5050",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -1961,8 +1961,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -2204,8 +2204,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "03-5321-7837",
+      "touristHotline": "050-3816-1857",
       "police": "110",
       "ambulance": "119",
       "fire": "119",
@@ -2475,8 +2475,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "100",
+      "touristHotline": "91-11-2338-1234",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -2713,8 +2713,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "100",
+      "touristHotline": "91-11-2338-1234",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -2951,8 +2951,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3189,8 +3189,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "113",
+      "touristHotline": "84-24-3933-1111",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3427,8 +3427,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "166",
+      "touristHotline": "63-2-524-1728",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3665,8 +3665,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "999",
+      "touristHotline": "971-4-708-1111",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3903,8 +3903,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4141,8 +4141,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4379,8 +4379,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4617,8 +4617,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4855,8 +4855,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "155",
+      "touristHotline": "90-212-463-3000",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5093,8 +5093,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5331,8 +5331,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "1155",
+      "touristHotline": "1678",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5569,8 +5569,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "1155",
+      "touristHotline": "1678",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5807,8 +5807,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "999",
+      "touristHotline": "1300-88-5050",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6045,8 +6045,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "113",
+      "touristHotline": "84-24-3933-1111",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6283,8 +6283,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "100",
+      "touristHotline": "91-11-2338-1234",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6521,8 +6521,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "100",
+      "touristHotline": "91-11-2338-1234",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6759,8 +6759,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "100",
+      "touristHotline": "91-11-2338-1234",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6997,8 +6997,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "100",
+      "touristHotline": "91-11-2338-1234",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -7235,8 +7235,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -7473,8 +7473,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -7711,8 +7711,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -7949,8 +7949,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -8187,8 +8187,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -8425,8 +8425,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "999",
+      "touristHotline": "44-20-7946-0958",
       "police": "999",
       "ambulance": "999",
       "fire": "999",
@@ -8663,8 +8663,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "17",
+      "touristHotline": "33-1-42-96-02-47",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -8902,7 +8902,7 @@ var CITY_DATABASE = {
     ],
     "emergency": {
       "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristHotline": "49-30-187-1174",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -9139,8 +9139,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "31-20-752-7888",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -9377,8 +9377,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -9615,8 +9615,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "117",
+      "touristHotline": "41-44-113-100",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -9853,8 +9853,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "46-8-783-4900",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10091,8 +10091,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "47-23-10-66-00",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10329,8 +10329,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "45-33-14-88-70",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10567,8 +10567,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10805,8 +10805,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "091",
+      "touristHotline": "902-102-112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11043,8 +11043,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "113",
+      "touristHotline": "39-06-4676-91",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11281,8 +11281,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "091",
+      "touristHotline": "902-102-112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11519,8 +11519,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11757,8 +11757,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11995,8 +11995,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12233,8 +12233,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12471,8 +12471,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12709,8 +12709,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12947,8 +12947,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "102",
+      "touristHotline": "7-495-938-2141",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13185,8 +13185,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "102",
+      "touristHotline": "7-495-938-2141",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13423,8 +13423,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "113",
+      "touristHotline": "39-06-4676-91",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13662,7 +13662,7 @@ var CITY_DATABASE = {
     ],
     "emergency": {
       "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristHotline": "49-30-187-1174",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -13900,7 +13900,7 @@ var CITY_DATABASE = {
     ],
     "emergency": {
       "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristHotline": "49-30-187-1174",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -14138,7 +14138,7 @@ var CITY_DATABASE = {
     ],
     "emergency": {
       "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristHotline": "49-30-187-1174",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -14375,8 +14375,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -14613,8 +14613,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "999",
+      "touristHotline": "44-20-7946-0958",
       "police": "999",
       "ambulance": "999",
       "fire": "999",
@@ -14851,8 +14851,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "999",
+      "touristHotline": "44-20-7946-0958",
       "police": "999",
       "ambulance": "999",
       "fire": "999",
@@ -15089,8 +15089,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "17",
+      "touristHotline": "33-1-42-96-02-47",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -15327,8 +15327,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "17",
+      "touristHotline": "33-1-42-96-02-47",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -15565,8 +15565,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "17",
+      "touristHotline": "33-1-42-96-02-47",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -15803,8 +15803,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "113",
+      "touristHotline": "39-06-4676-91",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16041,8 +16041,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "113",
+      "touristHotline": "39-06-4676-91",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16279,8 +16279,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "113",
+      "touristHotline": "39-06-4676-91",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16517,8 +16517,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "091",
+      "touristHotline": "902-102-112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16755,8 +16755,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "091",
+      "touristHotline": "902-102-112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16993,8 +16993,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "091",
+      "touristHotline": "902-102-112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17231,8 +17231,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17469,8 +17469,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17707,8 +17707,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "117",
+      "touristHotline": "41-44-113-100",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17946,7 +17946,7 @@ var CITY_DATABASE = {
     ],
     "emergency": {
       "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristHotline": "49-30-187-1174",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -18183,8 +18183,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -18421,8 +18421,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -18659,8 +18659,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -18897,8 +18897,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-613-944-4440",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19135,8 +19135,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-613-944-4440",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19373,8 +19373,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-613-944-4440",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19611,8 +19611,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19849,8 +19849,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20087,8 +20087,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20325,8 +20325,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20563,8 +20563,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20801,8 +20801,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21039,8 +21039,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21277,8 +21277,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21515,8 +21515,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21753,8 +21753,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21991,8 +21991,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22229,8 +22229,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22467,8 +22467,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22705,8 +22705,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22943,8 +22943,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "55-8854-0080",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -23181,8 +23181,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "55-8854-0080",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -23419,8 +23419,8 @@ var CITY_DATABASE = {
       "枪支暴力风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "190",
+      "touristHotline": "55-61-3823-8484",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -23657,8 +23657,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "190",
+      "touristHotline": "55-61-3823-8484",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -23895,8 +23895,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24133,8 +24133,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24371,8 +24371,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24609,8 +24609,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24847,8 +24847,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25085,8 +25085,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25323,8 +25323,8 @@ var CITY_DATABASE = {
       "疾病风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "122",
+      "touristHotline": "20-2-2348-7099",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25561,8 +25561,8 @@ var CITY_DATABASE = {
       "医疗条件有限"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "10111",
+      "touristHotline": "27-12-431-4000",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25799,8 +25799,8 @@ var CITY_DATABASE = {
       "基础设施差"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "10111",
+      "touristHotline": "27-12-431-4000",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26037,8 +26037,8 @@ var CITY_DATABASE = {
       "基础设施差"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26275,8 +26275,8 @@ var CITY_DATABASE = {
       "治安风险高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26513,8 +26513,8 @@ var CITY_DATABASE = {
       "政治动荡"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26751,8 +26751,8 @@ var CITY_DATABASE = {
       "疾病风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26989,8 +26989,8 @@ var CITY_DATABASE = {
       "疾病风险"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -27227,8 +27227,8 @@ var CITY_DATABASE = {
       "政治动荡"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -27465,8 +27465,8 @@ var CITY_DATABASE = {
       "医疗条件有限"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "112",
+      "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -27703,8 +27703,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "000",
+      "touristHotline": "1300-135-391",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -27941,8 +27941,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "000",
+      "touristHotline": "1300-135-391",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -28179,8 +28179,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "000",
+      "touristHotline": "1300-135-391",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -28417,8 +28417,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "000",
+      "touristHotline": "1300-135-391",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -28655,8 +28655,8 @@ var CITY_DATABASE = {
       "紫外线强"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "000",
+      "touristHotline": "1300-135-391",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -28893,8 +28893,8 @@ var CITY_DATABASE = {
       "野生动物"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "111",
+      "touristHotline": "0800-556-556",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -29131,8 +29131,8 @@ var CITY_DATABASE = {
       "野生动物"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "111",
+      "touristHotline": "0800-556-556",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -29369,8 +29369,8 @@ var CITY_DATABASE = {
       "野生动物"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "111",
+      "touristHotline": "0800-556-556",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -29607,8 +29607,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
-      "touristPolice": "110",
-      "touristHotline": "12345",
+      "touristPolice": "911",
+      "touristHotline": "1-888-407-4747",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
