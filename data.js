@@ -155,8 +155,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "新宿",
-          "desc": "复杂",
-          "risk": "高"
+          "desc": "夜店区，复杂",
+          "risk": "中"
+        },
+        {
+          "area": "涩谷",
+          "desc": "混乱但安全",
+          "risk": "低"
+        },
+        {
+          "area": "秋叶原",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -371,8 +381,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "芽笼",
-          "desc": "红灯",
+          "desc": "红灯区",
           "risk": "中"
+        },
+        {
+          "area": "小印度",
+          "desc": "混乱",
+          "risk": "低"
+        },
+        {
+          "area": "牛车水",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -599,9 +619,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "东大门",
-          "desc": "批发",
+          "area": "弘大",
+          "desc": "夜生活",
           "risk": "中"
+        },
+        {
+          "area": "江南",
+          "desc": "安全",
+          "risk": "低"
+        },
+        {
+          "area": "明洞",
+          "desc": "小偷",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -840,8 +870,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "旺角",
-          "desc": "复杂",
+          "desc": "小偷多",
           "risk": "中"
+        },
+        {
+          "area": "深水埗",
+          "desc": "老区复杂",
+          "risk": "中"
+        },
+        {
+          "area": "中环",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -1079,8 +1119,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "三里屯",
-          "desc": "酒吧",
+          "desc": "酒吧区",
           "risk": "低"
+        },
+        {
+          "area": "秀水街",
+          "desc": "骗子",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -1318,8 +1363,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "城隍庙",
-          "desc": "游客",
+          "desc": "游客，骗子",
           "risk": "中"
+        },
+        {
+          "area": "陆家嘴",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -1558,8 +1608,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "考山路",
-          "desc": "背包客",
+          "desc": "背包客，复杂",
           "risk": "中"
+        },
+        {
+          "area": "是隆",
+          "desc": "商业区",
+          "risk": "低"
+        },
+        {
+          "area": "暹罗",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -1798,8 +1858,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "武吉免登",
-          "desc": "商业",
+          "desc": "商业中心",
           "risk": "低"
+        },
+        {
+          "area": "嘉美清真寺",
+          "desc": "复杂",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -2037,8 +2102,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "西门町",
-          "desc": "青少年",
-          "risk": "低"
+          "desc": "青少年区",
+          "risk": "low"
+        },
+        {
+          "area": "万华",
+          "desc": "老区",
+          "risk": "low"
+        },
+        {
+          "area": "大安",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -2282,9 +2357,19 @@ var CITY_DATABASE = {
       "transport": "JR环状",
       "hotspots": [
         {
-          "area": "飞田",
-          "desc": "红灯",
+          "area": "飞田新地",
+          "desc": "红灯区",
           "risk": "中"
+        },
+        {
+          "area": "新世界",
+          "desc": "混乱",
+          "risk": "中"
+        },
+        {
+          "area": "道顿堀",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -2522,9 +2607,19 @@ var CITY_DATABASE = {
       "transport": "火车",
       "hotspots": [
         {
-          "area": "Crawford",
-          "desc": "市场",
+          "area": "Crawford市场",
+          "desc": "混乱",
           "risk": "中"
+        },
+        {
+          "area": "Dharavi",
+          "desc": "贫民窟",
+          "risk": "中"
+        },
+        {
+          "area": "南孟买",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -2761,9 +2856,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "车站",
-          "desc": "小偷",
+          "area": "康诺特广场",
+          "desc": "商业区",
+          "risk": "中"
+        },
+        {
+          "area": "月光集市",
+          "desc": "混乱",
           "risk": "高"
+        },
+        {
+          "area": "新德里",
+          "desc": "相对安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -3001,8 +3106,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "老城",
-          "desc": "复杂",
+          "desc": "混乱",
           "risk": "中"
+        },
+        {
+          "area": "中雅加达",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -3239,9 +3349,14 @@ var CITY_DATABASE = {
       "transport": "Grab",
       "hotspots": [
         {
-          "area": "范老五",
-          "desc": "游客",
+          "area": "范老五街",
+          "desc": "背包客",
           "risk": "中"
+        },
+        {
+          "area": "第七郡",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -3479,9 +3594,14 @@ var CITY_DATABASE = {
       "transport": "吉普尼",
       "hotspots": [
         {
-          "area": "湾区",
-          "desc": "安全",
+          "area": "马尼拉湾",
+          "desc": "游客",
           "risk": "低"
+        },
+        {
+          "area": "Ermita",
+          "desc": "红灯区",
+          "risk": "高"
         }
       ],
       "safeAreas": [
@@ -3718,9 +3838,14 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "德拉",
-          "desc": "老城",
+          "area": "德拉老城",
+          "desc": "复杂",
           "risk": "中"
+        },
+        {
+          "area": "马尔萨阿拉伯",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -3961,6 +4086,11 @@ var CITY_DATABASE = {
           "area": "老城",
           "desc": "传统",
           "risk": "低"
+        },
+        {
+          "area": "滨海路",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -4194,7 +4324,7 @@ var CITY_DATABASE = {
       "transport": "Uber",
       "hotspots": [
         {
-          "area": "市中心",
+          "area": "市区",
           "desc": "安全",
           "risk": "低"
         }
@@ -4430,7 +4560,7 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "老城",
-          "desc": "传统",
+          "desc": "安全",
           "risk": "低"
         }
       ],
@@ -4664,7 +4794,12 @@ var CITY_DATABASE = {
       "transport": "公交",
       "hotspots": [
         {
-          "area": "市中心",
+          "area": "南特拉维夫",
+          "desc": "移民",
+          "risk": "中"
+        },
+        {
+          "area": "雅法",
           "desc": "安全",
           "risk": "低"
         }
@@ -4902,6 +5037,16 @@ var CITY_DATABASE = {
         {
           "area": "大巴扎",
           "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Sultanahmet",
+          "desc": "游客",
+          "risk": "低"
+        },
+        {
+          "area": "Taksim",
+          "desc": "夜生活",
           "risk": "中"
         }
       ],
@@ -5143,6 +5288,11 @@ var CITY_DATABASE = {
           "area": "库塔",
           "desc": "夜生活",
           "risk": "中"
+        },
+        {
+          "area": "乌布",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -5380,9 +5530,14 @@ var CITY_DATABASE = {
       "transport": "双条车",
       "hotspots": [
         {
-          "area": "火车站",
-          "desc": "复杂",
-          "risk": "中"
+          "area": "老城",
+          "desc": "安全",
+          "risk": "低"
+        },
+        {
+          "area": "尼曼路",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -5620,9 +5775,14 @@ var CITY_DATABASE = {
       "transport": "突突车",
       "hotspots": [
         {
-          "area": "芭东",
-          "desc": "游客",
+          "area": "芭东海滩",
+          "desc": "游客区",
           "risk": "中"
+        },
+        {
+          "area": "普吉镇",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -5863,6 +6023,11 @@ var CITY_DATABASE = {
           "area": "汕头街",
           "desc": "夜市",
           "risk": "低"
+        },
+        {
+          "area": "乔治城",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -6100,8 +6265,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "老城",
-          "desc": "复杂",
+          "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "还剑湖",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -6334,9 +6504,14 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "火车站",
-          "desc": "小偷",
-          "risk": "中"
+          "area": "MG路",
+          "desc": "商业区",
+          "risk": "低"
+        },
+        {
+          "area": "Whitefield",
+          "desc": "IT区",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -6569,7 +6744,12 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "海滩",
+          "area": "T Nagar",
+          "desc": "购物区",
+          "risk": "低"
+        },
+        {
+          "area": " beaches",
           "desc": "安全",
           "risk": "低"
         }
@@ -6803,6 +6983,11 @@ var CITY_DATABASE = {
       ],
       "transport": "地铁",
       "hotspots": [
+        {
+          "area": "Park Street",
+          "desc": "商业",
+          "risk": "低"
+        },
         {
           "area": "Bhowanipore",
           "desc": "复杂",
@@ -7040,8 +7225,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "老城",
-          "desc": "复杂",
+          "desc": "混乱",
           "risk": "中"
+        },
+        {
+          "area": "Banjara Hills",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -7277,6 +7467,16 @@ var CITY_DATABASE = {
           "area": "华强北",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "东门",
+          "desc": "混乱",
+          "risk": "中"
+        },
+        {
+          "area": "福田",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -7513,6 +7713,11 @@ var CITY_DATABASE = {
           "area": "火车站",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "上下九",
+          "desc": "商业",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -7747,7 +7952,12 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "春熙路",
-          "desc": "购物",
+          "desc": "商业",
+          "risk": "低"
+        },
+        {
+          "area": "宽窄巷子",
+          "desc": "安全",
           "risk": "低"
         }
       ],
@@ -7983,6 +8193,11 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "西湖",
+          "desc": "安全",
+          "risk": "低"
+        },
+        {
+          "area": "河坊街",
           "desc": "游客",
           "risk": "低"
         }
@@ -8217,9 +8432,14 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "火车站",
+          "area": "回民街",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "兵马俑",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -8457,9 +8677,19 @@ var CITY_DATABASE = {
       "transport": "Oyster",
       "hotspots": [
         {
-          "area": "苏活",
-          "desc": "复杂",
+          "area": "苏活区Soho",
+          "desc": "小偷多，夜店纠纷",
           "risk": "中"
+        },
+        {
+          "area": "卡姆登镇",
+          "desc": "抢劫频发",
+          "risk": "中"
+        },
+        {
+          "area": "布里克斯顿",
+          "desc": "帮派活动区域",
+          "risk": "高"
         }
       ],
       "safeAreas": [
@@ -8697,9 +8927,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "北站",
-          "desc": "乱",
-          "risk": "中高"
+          "area": "Barbès-Rochechouart",
+          "desc": "扒窃多发，移民聚集区",
+          "risk": "高"
+        },
+        {
+          "area": "Gare du Nord北站",
+          "desc": "小偷聚集，夜间抢劫",
+          "risk": "高"
+        },
+        {
+          "area": "塞纳河畔",
+          "desc": "游客诈骗多发",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -8931,8 +9171,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "Kreuzberg",
-          "desc": "夜生活",
+          "desc": "夜店纠纷，帮派",
           "risk": "中"
+        },
+        {
+          "area": "Friedrichshain",
+          "desc": "盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "Mitte",
+          "desc": "游客骗局",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -9170,7 +9420,17 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "红灯区",
-          "desc": "游客",
+          "desc": "盗窃，骗子",
+          "risk": "中"
+        },
+        {
+          "area": "中央车站",
+          "desc": "扒手多",
+          "risk": "中"
+        },
+        {
+          "area": "Vondelpark",
+          "desc": "夜间抢劫",
           "risk": "中"
         }
       ],
@@ -9408,8 +9668,13 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "地铁",
-          "desc": "低",
+          "area": "地铁站",
+          "desc": "夜间盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "卡尔广场",
+          "desc": "骗子",
           "risk": "低"
         }
       ],
@@ -9647,9 +9912,14 @@ var CITY_DATABASE = {
       "transport": "Tram",
       "hotspots": [
         {
-          "area": "车站",
-          "desc": "安全",
+          "area": "火车总站",
+          "desc": "小偷",
           "risk": "低"
+        },
+        {
+          "area": "Langstrasse",
+          "desc": "红灯区",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -9903,7 +10173,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "塞尔加斯",
+          "desc": "移民区冲突",
+          "risk": "中"
+        },
+        {
+          "area": "中央车站",
+          "desc": "盗窃",
+          "risk": "低"
+        },
+        {
+          "area": "南岛",
+          "desc": "夜店",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -10152,7 +10439,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Grønland",
+          "desc": "移民区",
+          "risk": "中"
+        },
+        {
+          "area": "中央车站",
+          "desc": "小偷",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -10401,7 +10700,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Nørrebro",
+          "desc": "帮派",
+          "risk": "中"
+        },
+        {
+          "area": "Vesterbro",
+          "desc": "夜店区",
+          "risk": "中"
+        },
+        {
+          "area": "中央车站",
+          "desc": "盗窃",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -10650,7 +10966,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "中央车站",
+          "desc": "小偷",
+          "risk": "低"
+        },
+        {
+          "area": "卡利奥区",
+          "desc": "移民区",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -10882,8 +11210,18 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "Sol",
-          "desc": "小偷",
+          "area": "Sol广场",
+          "desc": "小偷多",
+          "risk": "中"
+        },
+        {
+          "area": "Lavapiés",
+          "desc": "移民区，复杂",
+          "risk": "中"
+        },
+        {
+          "area": "Gran Via",
+          "desc": "扒窃",
           "risk": "中"
         }
       ],
@@ -11117,9 +11455,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "车站",
-          "desc": "小偷",
+          "area": "Termini中央车站",
+          "desc": "小偷最多，抢劫",
           "risk": "高"
+        },
+        {
+          "area": "特拉斯提弗列",
+          "desc": "夜间抢劫",
+          "risk": "中"
+        },
+        {
+          "area": "西班牙广场",
+          "desc": "吉普赛人偷窃",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -11355,8 +11703,18 @@ var CITY_DATABASE = {
       "transport": "L1L4",
       "hotspots": [
         {
-          "area": "Rambla",
-          "desc": "小偷",
+          "area": "兰布拉大道",
+          "desc": "小偷最多，抢劫",
+          "risk": "高"
+        },
+        {
+          "area": "Raval区",
+          "desc": "非法活动，夜间危险",
+          "risk": "高"
+        },
+        {
+          "area": " Barceloneta海滩",
+          "desc": "夜间盗窃",
           "risk": "中"
         }
       ],
@@ -11611,7 +11969,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Alfama区",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Baixa",
+          "desc": "抢劫",
+          "risk": "中"
+        },
+        {
+          "area": "Cais do Sodré",
+          "desc": "夜店区纠纷",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -11860,7 +12235,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "老城广场",
+          "desc": "小偷，餐厅诈骗",
+          "risk": "中"
+        },
+        {
+          "area": "地铁站",
+          "desc": "盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "查理大桥",
+          "desc": "抢劫",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -12109,7 +12501,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "中心站",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Praga区",
+          "desc": "较乱",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -12358,7 +12762,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Exarchia",
+          "desc": "无政府主义区域，冲突",
+          "risk": "高"
+        },
+        {
+          "area": "宪法广场",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "卫城",
+          "desc": "骗子",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -12607,7 +13028,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "北站",
+          "desc": "犯罪高发",
+          "risk": "高"
+        },
+        {
+          "area": "地铁站",
+          "desc": "盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "欧盟区",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -12856,7 +13294,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "八区",
+          "desc": "吉普赛人骗术",
+          "risk": "高"
+        },
+        {
+          "area": "地铁站",
+          "desc": "扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "恐怖屋附近",
+          "desc": "夜间危险",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -13801,9 +14256,14 @@ var CITY_DATABASE = {
       "transport": "U-Bahn",
       "hotspots": [
         {
-          "area": "中央站",
+          "area": "中央车站",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "玛利亚广场",
+          "desc": "扒窃",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -14519,7 +14979,17 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "Temple Bar",
-          "desc": "旅游",
+          "desc": "盗窃，醉酒闹事",
+          "risk": "中"
+        },
+        {
+          "area": "北城区",
+          "desc": "帮派",
+          "risk": "高"
+        },
+        {
+          "area": "OConnell St",
+          "desc": "小偷",
           "risk": "中"
         }
       ],
@@ -14757,8 +15227,18 @@ var CITY_DATABASE = {
       "transport": "Bus",
       "hotspots": [
         {
-          "area": "皇家大道",
+          "area": "皇家一英里",
           "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "利斯",
+          "desc": "犯罪率高",
+          "risk": "高"
+        },
+        {
+          "area": "斯托克布里奇",
+          "desc": "夜间危险",
           "risk": "中"
         }
       ],
@@ -15013,7 +15493,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "牛津路",
+          "desc": "抢劫",
+          "risk": "中"
+        },
+        {
+          "area": "Longsight",
+          "desc": "帮派活动",
+          "risk": "高"
+        },
+        {
+          "area": "市中心",
+          "desc": "扒窃",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -15262,7 +15759,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Part-Dieu",
+          "desc": "车站犯罪",
+          "risk": "中"
+        },
+        {
+          "area": " Guillotière",
+          "desc": "移民区",
+          "risk": "中"
+        },
+        {
+          "area": "老城",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -15511,7 +16025,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "旧港",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "北站",
+          "desc": "帮派",
+          "risk": "高"
+        },
+        {
+          "area": "卡斯特拉内",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -15760,7 +16291,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "老城",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "天使湾",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -16009,7 +16552,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "圣马可广场",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "火车站",
+          "desc": "盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "里亚托桥",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -16258,7 +16818,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "中央市场",
+          "desc": "小偷",
+          "risk": "高"
+        },
+        {
+          "area": "圣十字广场",
+          "desc": "骗子",
+          "risk": "中"
+        },
+        {
+          "area": "火车站",
+          "desc": "盗窃",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -16507,7 +17084,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Garibaldi站",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Scampia",
+          "desc": "帮派区域",
+          "risk": "高"
+        },
+        {
+          "area": "市中心",
+          "desc": "扒窃",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -16756,7 +17350,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "中央市场",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Carmen区",
+          "desc": "夜生活",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -17005,7 +17611,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Triana",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Alameda",
+          "desc": "夜店",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -17254,7 +17872,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Teatinos",
+          "desc": "学生区",
+          "risk": "低"
+        },
+        {
+          "area": "市中心",
+          "desc": "扒窃",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -17503,7 +18133,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Baixa",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Ribeira",
+          "desc": "游客",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -17752,7 +18394,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "老城",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Kazimierz",
+          "desc": "犹太区",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -18001,7 +18655,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "火车站",
+          "desc": "小偷",
+          "risk": "低"
+        },
+        {
+          "area": "Paquis",
+          "desc": "夜生活",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -18250,7 +18916,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "中央车站",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "Ehrenfeld",
+          "desc": "移民区",
+          "risk": "中"
+        },
+        {
+          "area": "大教堂",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -18482,8 +19165,23 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "哈莱姆",
-          "desc": "风险",
+          "desc": "犯罪率高",
           "risk": "高"
+        },
+        {
+          "area": "布朗克斯",
+          "desc": "帮派",
+          "risk": "高"
+        },
+        {
+          "area": "时代广场",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "中央公园",
+          "desc": "夜间危险",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -18722,8 +19420,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "南中央",
-          "desc": "贫困",
+          "desc": "贫困区，犯罪",
           "risk": "高"
+        },
+        {
+          "area": "Skid Row",
+          "desc": "流浪汉",
+          "risk": "高"
+        },
+        {
+          "area": "好莱坞",
+          "desc": "小偷",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -18958,8 +19666,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "南城",
-          "desc": "犯罪",
+          "desc": "枪击案多",
           "risk": "高"
+        },
+        {
+          "area": "West Side",
+          "desc": "帮派",
+          "risk": "高"
+        },
+        {
+          "area": "市中心",
+          "desc": "相对安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -19191,6 +19909,16 @@ var CITY_DATABASE = {
       ],
       "transport": "TTC",
       "hotspots": [
+        {
+          "area": "Jane/Finch",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Regent Park",
+          "desc": "犯罪",
+          "risk": "中"
+        },
         {
           "area": "市中心",
           "desc": "安全",
@@ -19427,7 +20155,17 @@ var CITY_DATABASE = {
       "transport": "SkyTrain",
       "hotspots": [
         {
-          "area": "Downtown",
+          "area": "East Vancouver",
+          "desc": "犯罪",
+          "risk": "中"
+        },
+        {
+          "area": "Downtown Eastside",
+          "desc": "毒品",
+          "risk": "高"
+        },
+        {
+          "area": "温哥华市中心",
           "desc": "安全",
           "risk": "低"
         }
@@ -19666,9 +20404,19 @@ var CITY_DATABASE = {
       "transport": "STM",
       "hotspots": [
         {
-          "area": "老城",
+          "area": "Plateau",
+          "desc": "学生区",
+          "risk": "低"
+        },
+        {
+          "area": "市中心",
           "desc": "安全",
-          "risk": "low"
+          "risk": "低"
+        },
+        {
+          "area": "Berri-UQAM",
+          "desc": "混乱",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -19906,8 +20654,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "Tenderloin",
-          "desc": "差",
+          "desc": "治安最差",
           "risk": "高"
+        },
+        {
+          "area": "Mission",
+          "desc": "盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "金门公园",
+          "desc": "夜间危险",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -20145,9 +20903,14 @@ var CITY_DATABASE = {
       "transport": "Link",
       "hotspots": [
         {
-          "area": "Downtown",
+          "area": "Capitol Hill",
           "desc": "安全",
-          "risk": "low"
+          "risk": "低"
+        },
+        {
+          "area": "Pioneer Square",
+          "desc": "游民",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -20385,9 +21148,19 @@ var CITY_DATABASE = {
       "transport": "公交",
       "hotspots": [
         {
+          "area": "Overtown",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Liberty City",
+          "desc": "犯罪率高",
+          "risk": "高"
+        },
+        {
           "area": "南海滩",
-          "desc": "游客",
-          "risk": "中"
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -20624,6 +21397,16 @@ var CITY_DATABASE = {
       ],
       "transport": "地铁",
       "hotspots": [
+        {
+          "area": "Roxbury",
+          "desc": "犯罪",
+          "risk": "中"
+        },
+        {
+          "area": "Dorchester",
+          "desc": "危险",
+          "risk": "中"
+        },
         {
           "area": "市中心",
           "desc": "安全",
@@ -20865,7 +21648,17 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "市中心",
+          "area": "Anacostia",
+          "desc": "犯罪率高",
+          "risk": "高"
+        },
+        {
+          "area": "SE华盛顿",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "白宫区域",
           "desc": "安全",
           "risk": "低"
         }
@@ -21105,9 +21898,14 @@ var CITY_DATABASE = {
       "transport": "公交",
       "hotspots": [
         {
-          "area": "Strip",
-          "desc": "游客",
+          "area": "Fremont Street",
+          "desc": "醉汉",
           "risk": "中"
+        },
+        {
+          "area": "Strip北段",
+          "desc": "较安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -21585,7 +22383,17 @@ var CITY_DATABASE = {
       "transport": "MARTA",
       "hotspots": [
         {
-          "area": "市中心",
+          "area": "Beltline",
+          "desc": "盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "SW亚特兰大",
+          "desc": "犯罪",
+          "risk": "高"
+        },
+        {
+          "area": "中城",
           "desc": "安全",
           "risk": "低"
         }
@@ -22545,9 +23353,14 @@ var CITY_DATABASE = {
       "transport": "TriMet",
       "hotspots": [
         {
-          "area": "NE Alberta",
-          "desc": "艺术",
-          "risk": "low"
+          "area": "Downtown",
+          "desc": "游民",
+          "risk": "中"
+        },
+        {
+          "area": "Old Town",
+          "desc": "犯罪",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -23265,9 +24078,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "历史中心",
+          "area": "Iztapalapa",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Centro Historico",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "Polanco",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -23506,8 +24329,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "Hotel Zone",
-          "desc": "旅游",
+          "desc": "游客区安全",
           "risk": "low"
+        },
+        {
+          "area": "市中心",
+          "desc": "较乱",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -23745,9 +24573,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "中心",
-          "desc": "复杂",
+          "area": "Cracolandia",
+          "desc": "毒品区",
+          "risk": "高"
+        },
+        {
+          "area": "Centro",
+          "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "Jardins",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -23985,9 +24823,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "Copacabana",
+          "area": "Rocinha",
+          "desc": "贫民窟，帮派",
+          "risk": "高"
+        },
+        {
+          "area": "Centro",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "Copacabana",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -24225,9 +25073,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "Microcentro",
-          "desc": "小偷",
+          "area": "Once区",
+          "desc": "混乱",
           "risk": "中"
+        },
+        {
+          "area": "La Boca",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Palermo",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -24465,7 +25323,17 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "中心",
+          "area": "Estación Central",
+          "desc": "混乱",
+          "risk": "中"
+        },
+        {
+          "area": "La Pintana",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Providencia",
           "desc": "安全",
           "risk": "low"
         }
@@ -24705,9 +25573,19 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "中心",
-          "desc": "复杂",
+          "area": "Centro",
+          "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "Callao",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Miraflores",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -24945,9 +25823,19 @@ var CITY_DATABASE = {
       "transport": "TransMilenio",
       "hotspots": [
         {
-          "area": "中心",
+          "area": "Ciudad Bolívar",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Centro",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "Zona Rosa",
+          "desc": "安全",
+          "risk": "low"
         }
       ],
       "safeAreas": [
@@ -25202,7 +26090,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Comuna 13",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Centro",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "El Poblado",
+          "desc": "安全",
+          "risk": "low"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -25451,7 +26356,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Casco Viejo",
+          "desc": "旅游但小心",
+          "risk": "中"
+        },
+        {
+          "area": "El Chorillo",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Costa del Este",
+          "desc": "安全",
+          "risk": "low"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -25683,8 +26605,18 @@ var CITY_DATABASE = {
       "transport": "地铁",
       "hotspots": [
         {
-          "area": "哈利利",
+          "area": "老城",
           "desc": "小偷",
+          "risk": "高"
+        },
+        {
+          "area": "吉萨",
+          "desc": "骗子",
+          "risk": "中"
+        },
+        {
+          "area": "金字塔景区",
+          "desc": "小心骗子",
           "risk": "中"
         }
       ],
@@ -25923,9 +26855,19 @@ var CITY_DATABASE = {
       "transport": "MyCiTi",
       "hotspots": [
         {
-          "area": "市中心",
-          "desc": "小偷",
-          "risk": "中"
+          "area": "Khayelitsha",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "Gugulethu",
+          "desc": "帮派",
+          "risk": "高"
+        },
+        {
+          "area": "V&A waterfront",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -26163,9 +27105,19 @@ var CITY_DATABASE = {
       "transport": "Gautrain",
       "hotspots": [
         {
-          "area": "CBD",
-          "desc": "复杂",
-          "risk": "high"
+          "area": "约翰内斯堡CBD",
+          "desc": "犯罪",
+          "risk": "高"
+        },
+        {
+          "area": "Hillbrow",
+          "desc": "危险",
+          "risk": "高"
+        },
+        {
+          "area": "桑顿",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -26420,7 +27372,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Lagos Island",
+          "desc": "混乱",
+          "risk": "高"
+        },
+        {
+          "area": "Ikoyi",
+          "desc": "安全",
+          "risk": "低"
+        },
+        {
+          "area": "Victoria Island",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -26655,6 +27624,16 @@ var CITY_DATABASE = {
           "area": "市中心",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "Kibera",
+          "desc": "贫民窟",
+          "risk": "高"
+        },
+        {
+          "area": "Westlands",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -26895,6 +27874,16 @@ var CITY_DATABASE = {
           "area": "老城",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "中心市场",
+          "desc": "复杂",
+          "risk": "中"
+        },
+        {
+          "area": "海滨",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -27149,7 +28138,24 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "麦地那",
+          "desc": "小偷，骗子",
+          "risk": "高"
+        },
+        {
+          "area": "Jemaa el-Fnaa",
+          "desc": "骗子多",
+          "risk": "中"
+        },
+        {
+          "area": "Gueliz",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -27398,7 +28404,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "老城",
+          "desc": "小偷",
+          "risk": "中"
+        },
+        {
+          "area": "布尔吉巴",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -27647,7 +28665,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Osu",
+          "desc": "夜生活",
+          "risk": "中"
+        },
+        {
+          "area": "Central",
+          "desc": "混乱",
+          "risk": "中"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -27896,7 +28926,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Piazza",
+          "desc": "混乱",
+          "risk": "中"
+        },
+        {
+          "area": "Bole",
+          "desc": "安全",
+          "risk": "低"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -28128,8 +29170,18 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "Kings Cross",
-          "desc": "夜生活",
+          "desc": "红灯区",
           "risk": "中"
+        },
+        {
+          "area": "CBD",
+          "desc": "安全",
+          "risk": "低"
+        },
+        {
+          "area": "Bondi",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -28366,9 +29418,19 @@ var CITY_DATABASE = {
       "transport": "Tram",
       "hotspots": [
         {
-          "area": "Flinders",
+          "area": "Flinders St站",
           "desc": "小偷",
           "risk": "中"
+        },
+        {
+          "area": "Fitzroy",
+          "desc": "多元",
+          "risk": "低"
+        },
+        {
+          "area": "CBD",
+          "desc": "安全",
+          "risk": "低"
         }
       ],
       "safeAreas": [
@@ -28605,7 +29667,12 @@ var CITY_DATABASE = {
       "transport": "CityCat",
       "hotspots": [
         {
-          "area": "South Bank",
+          "area": "Fortitude Valley",
+          "desc": "夜店",
+          "risk": "中"
+        },
+        {
+          "area": "CBD",
           "desc": "安全",
           "risk": "low"
         }
@@ -28844,6 +29911,11 @@ var CITY_DATABASE = {
       ],
       "transport": "Transperth",
       "hotspots": [
+        {
+          "area": "East Perth",
+          "desc": "较乱",
+          "risk": "中"
+        },
         {
           "area": "CBD",
           "desc": "安全",
@@ -29102,7 +30174,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Hindley St",
+          "desc": "夜店",
+          "risk": "low"
+        },
+        {
+          "area": "CBD",
+          "desc": "安全",
+          "risk": "low"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -29334,9 +30418,14 @@ var CITY_DATABASE = {
       "transport": "AT",
       "hotspots": [
         {
-          "area": "CBD",
+          "area": "City Centre",
           "desc": "安全",
           "risk": "low"
+        },
+        {
+          "area": "K Road",
+          "desc": "红灯区",
+          "risk": "中"
         }
       ],
       "safeAreas": [
@@ -29591,7 +30680,19 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "Cuba Mall",
+          "desc": "学生区",
+          "risk": "low"
+        },
+        {
+          "area": " Courtney Place",
+          "desc": "夜生活",
+          "risk": "low"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -29840,7 +30941,14 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "hotspots": [
+        {
+          "area": "市中心",
+          "desc": "重建中",
+          "risk": "low"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -30073,8 +31181,13 @@ var CITY_DATABASE = {
       "hotspots": [
         {
           "area": "Waikiki",
-          "desc": "游客",
-          "risk": "low"
+          "desc": "游客区安全",
+          "risk": "低"
+        },
+        {
+          "area": "Kalihi",
+          "desc": "较乱",
+          "risk": "中"
         }
       ],
       "safeAreas": [
