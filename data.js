@@ -2032,15 +2032,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"肉骨茶","type":"马来","price":"RM15-30","desc":"胡椒猪骨汤","tip":"新峰肉骨茶"},{"name":"椰浆饭","type":"马来","price":"RM8-15","desc":"Nasi Lemak","tip":"嘛嘛档"},{"name":"沙爹","type":"小吃","price":"RM5-12","desc":"烤肉串","tip":"阿罗街"},{"name":"榴莲","type":"水果","price":"RM20-50","desc":"猫山王","tip":"榴莲档"}],"attractions":[{"name":"双子塔","type":"地标","desc":"世界最高双塔","hidden":false},{"name":"独立广场","type":"地标","desc":"马来西亚标志","hidden":false},{"name":"茨厂街","type":"唐人街","desc":"华人美食","hidden":false},{"name":"阿罗街","type":"夜市","desc":"美食夜市","hidden":true}],"festivals":[{"name":"开斋节","date":"4月","desc":"马来新年"},{"name":"国庆日","date":"8月31日","desc":"独立日"},{"name":"大宝节","date":"1月","desc":"印度节日"}],"customs":["不清真食物注意","周五祈祷","右手进食","参观清真寺脱鞋"],"transport":"地铁LRT，Grab叫车","hotspots":[{"area":"武吉免登","desc":"商业区","risk":"低"},{"area":"嘉美清真寺","desc":"宗教区","risk":"低"}],"safeAreas":["KLCC","武吉免登","安邦","白沙罗"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -2920,15 +2912,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"孟买特色菜","type":"印度","price":"₹150-400","desc":"Pav Bhaji","tip":"街头"},{"name":"孟买三角饼","type":"小吃","price":"₹30-80","desc":"Vada Pav","tip":"火车站"},{"name":"印度甜点","type":"甜点","price":"₹50-150","desc":"Ladoo","tip":"甜品店"},{"name":"椰子水","type":"饮品","price":"₹30-60","desc":" tender Coconut","tip":"海滩"}],"attractions":[{"name":"印度门","type":"地标","desc":"地标建筑","hidden":false},{"name":"宝莱坞","type":"电影","desc":"电影工厂","hidden":false},{"name":"滨海大道","type":"海滩","desc":"海边步道","hidden":false},{"name":"千人洗衣场","type":"奇观","desc":"百年洗衣","hidden":true}],"festivals":[{"name":"孟买电影节","date":"10月","desc":"宝莱坞"},{"name":"象神节","date":"8-9月","desc":" Ganesh Chaturthi"},{"name":"独立日","date":"8月15日","desc":"国庆"}],"customs":["给小费","注意财物","女性注意","防骗"],"transport":"本地火车、的士","hotspots":[{"area":" Crawford","desc":"市场","risk":"中"},{"area":"Colaba","desc":"旅游区","risk":"低"}],"safeAreas":["南孟买","班德拉","安德瑞","浦那"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3158,15 +3142,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"印度香饭","type":"印度","price":"₹200-500","desc":"Biryani","tip":"Karim's"},{"name":"印度烤鸡","type":"印度","price":"₹250-600","desc":"Butter Chicken","tip":"老城"},{"name":"印度煎饼","type":"小吃","price":"₹30-80","desc":"Paratha","tip":"街头"},{"name":"拉茶","type":"饮品","price":"₹20-50","desc":"Chai","tip":"茶摊"}],"attractions":[{"name":"泰姬陵","type":"古迹","desc":"世界新七大奇迹","hidden":false},{"name":"红堡","type":"历史","desc":"莫卧儿帝国","hidden":false},{"name":"贾玛清真寺","type":"寺庙","desc":"印度最大","hidden":false},{"name":"月光集市","type":"老城","desc":"传统市场","hidden":true}],"festivals":[{"name":"排灯节","date":"10-11月","desc":"印度新年"},{"name":"洒红节","date":"3月","desc":"色彩节"},{"name":"独立日","date":"8月15日","desc":"国庆"}],"customs":["左手不递物","不摸小孩头","寺庙脱鞋","砍价"],"transport":"地铁、Auto","hotspots":[{"area":"火车站","desc":"小偷多","risk":"高"},{"area":"康诺特广场","desc":"商业","risk":"低"}],"safeAreas":["新德里","萨罗基尼","维杰瓦纳","古尔冈"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3396,15 +3372,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"印尼炒饭","type":"印尼","price":"Rp25000-60000","desc":"Nasi Goreng","tip":"街头"},{"name":"沙嗲","type":"小吃","price":"Rp15000-35000","desc":"Sate","tip":"夜市"},{"name":"印尼春卷","type":"小吃","price":"Rp5000-15000","desc":"Lumpia","tip":"唐人街"},{"name":"椰子糕","type":"甜点","price":"Rp5000-12000","desc":"Kue Putu","tip":"街头"}],"attractions":[{"name":"独立广场","type":"地标","desc":"印尼标志","hidden":false},{"name":"民族纪念塔","type":"地标","desc":" Monument","hidden":false},{"name":"老城区","type":"老城","desc":"荷式建筑","hidden":false},{"name":"安佐尔梦幻公园","type":"乐园","desc":"主题公园","hidden":true}],"festivals":[{"name":"独立日","date":"8月17日","desc":"国庆"},{"name":"开斋节","date":"4月","desc":" Eid"},{"name":"雅加达节","date":"8月","desc":"文化节"}],"customs":["左手不递物","进入脱鞋","宗教场所着装","交通拥堵"],"transport":"地铁、Grab","hotspots":[{"area":"老城区","desc":"复杂","risk":"中"},{"area":"库塔","desc":"商业","risk":"低"}],"safeAreas":["中雅加达","南雅加达","西雅加达","丹拿阿邦"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3634,15 +3602,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"越南河粉","type":"越南","price":"₫50000-120000","desc":"Pho牛肉粉","tip":"锦灿"},{"name":"越南法棍","type":"小吃","price":"₫20000-40000","desc":"Bánh mì","tip":"范老五街"},{"name":"越南春卷","type":"越南","price":"₫30000-60000","desc":"Gỏi cuốn","tip":"街头"},{"name":"滴漏咖啡","type":"饮品","price":"₫25000-50000","desc":"Cà phê sữa đá","tip":"咖啡公寓"}],"attractions":[{"name":"统一宫","type":"历史","desc":"战争遗迹","hidden":false},{"name":"范老五街","type":"街区","desc":"背包客区","hidden":false},{"name":"滨城市场","type":"市场","desc":"百年市场","hidden":false},{"name":"咖啡公寓","type":"咖啡","desc":"INS打卡","hidden":true}],"festivals":[{"name":"越南新年","date":"1-2月","desc":"Tết"},{"name":"解放日","date":"4月30日","desc":"统一纪念"},{"name":"中秋节","date":"9月","desc":"儿童节"}],"customs":["不踩门槛","不触摸头部","接受物品用双手","砍价正常"],"transport":"摩托出租，Grab","hotspots":[{"area":"范老五街","desc":"游客区","risk":"中"},{"area":"第五郡","desc":"唐人街","risk":"中"}],"safeAreas":["第一郡","第七郡","第三郡","守德"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3872,15 +3832,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"烤鸡","type":"菲律宾","price":"₱150-300","desc":"Lechon","tip":"著名连锁"},{"name":"Halo-halo","type":"甜点","price":"₱50-100","desc":"刨冰甜品","tip":"街头摊"},{"name":"Adobo","type":"菲律宾","price":"₱100-200","desc":"醋炖肉","tip":"家常菜"},{"name":"炸香蕉","type":"小吃","price":"₱20-50","desc":"Plant Chips","tip":"街边"}],"attractions":[{"name":"马尼拉湾","type":"海湾","desc":"日落美景","hidden":false},{"name":"圣地亚哥堡","type":"历史","desc":"西班牙古堡","hidden":false},{"name":"黎刹公园","type":"公园","desc":"国父纪念","hidden":false},{"name":"SM商场","type":"购物","desc":"最大商场","hidden":true}],"festivals":[{"name":"独立日","date":"6月12日","desc":"国庆"},{"name":"黑耶稣节","date":"1月9日","desc":"盛大游行"},{"name":"圣诞节","date":"12月","desc":"最长圣诞"}],"customs":["给小费","尊重长辈","避开午休","注意安全"],"transport":"吉普尼、Grab","hotspots":[{"area":"马尼拉湾区","desc":"较安全","risk":"低"},{"area":"码头区","desc":"复杂","risk":"中"}],"safeAreas":["马卡蒂","阿拉邦","文尼法寿","马尼拉湾区"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -5760,15 +5712,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"泰北咖喱面","type":"泰式","price":"฿60-120","desc":"Khao Soi","tip":"老城"},{"name":"泰式炒面","type":"泰式","price":"฿40-80","desc":"Pad Thai","tip":"夜市"},{"name":"自助烤肉","type":"泰式","price":"฿80-200","desc":"Moo Yang","tip":"河边"},{"name":"泰式甜品","type":"甜点","price":"฿20-50","desc":"Khao Tom","tip":"老城"}],"attractions":[{"name":"古城墙","type":"历史","desc":"兰纳王朝","hidden":false},{"name":"素帖寺","type":"寺庙","desc":"双龙寺","hidden":false},{"name":"清迈夜市","type":"夜市","desc":"最大夜市","hidden":false},{"name":"宁曼路","type":"街区","desc":"文艺小清新","hidden":true}],"festivals":[{"name":"水灯节","date":"11月","desc":"天灯节"},{"name":"泼水节","date":"4月13日","desc":"宋干节"},{"name":"花节","date":"2月","desc":"鲜花节"}],"customs":["寺庙脱鞋","不指指点点","尊重僧侣","不摸头"],"transport":"双条车、摩托","hotspots":[{"area":"火车站区","desc":"复杂","risk":"中"},{"area":"老城区","desc":"旅游区","risk":"低"}],"safeAreas":["古城","宁曼","杭东","湄林"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -5998,15 +5942,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"海鲜","type":"海鲜","price":"฿200-800","desc":"龙虾螃蟹","tip":"芭东海滩"},{"name":"泰式炒饭","type":"泰式","price":"฿60-150","desc":"Khao Pad","tip":"夜市"},{"name":"水果","type":"水果","price":"฿30-100","desc":"榴莲山竹","tip":"市场"},{"name":"泰式甜点","type":"甜点","price":"฿20-50","desc":"椰子糕","tip":"街边"}],"attractions":[{"name":"芭东海滩","type":"海滩","desc":"最热闹","hidden":false},{"name":"皮皮岛","type":"离岛","desc":"浮潜天堂","hidden":false},{"name":"普吉大佛","type":"地标","desc":"山顶佛像","hidden":false},{"name":"普吉镇","type":"老城","desc":"葡式建筑","hidden":true}],"festivals":[{"name":"海鲜节","date":"11月","desc":"海鲜美食"},{"name":"狂欢节","date":"11月","desc":"街头派对"},{"name":"素食节","date":"9-10月","desc":"九皇斋节"}],"customs":["海滩注意财物","浮潜注意安全","尊重佛教","不摸僧侣"],"transport":"突突车、摩托","hotspots":[{"area":"芭东海滩","desc":"游客多","risk":"中"},{"area":"江西冷","desc":"商业区","risk":"低"}],"safeAreas":["芭东海滩","卡塔海滩","卡伦海滩","普吉镇"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -6236,15 +6172,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"叻沙","type":"马来","price":"RM8-18","desc":"Asam Laksa","tip":"汕头街"},{"name":"炒粿条","type":"马来","price":"RM6-15","desc":"Char Kway Teow","tip":"关仔角"},{"name":"椰子布丁","type":"甜点","price":"RM4-8","desc":"Coconut Pudding","tip":"街头"},{"name":"福建面","type":"马来","price":"RM8-16","desc":"Hokkien Mee","tip":"小贩中心"}],"attractions":[{"name":"乔治城","type":"老城","desc":"世界遗产","hidden":false},{"name":"升旗山","type":"景点","desc":"俯瞰全城","hidden":false},{"name":"壁画街","type":"艺术","desc":"街头涂鸦","hidden":false},{"name":"姓氏桥","type":"历史","desc":"华人村落","hidden":true}],"festivals":[{"name":"大宝森节","date":"1-2月","desc":"印度节日"},{"name":"中秋节","date":"9月","desc":"灯笼节"},{"name":"圣乔治节","date":"4月","desc":"槟城纪念"}],"customs":["遗产区慢行","左行","给小费","清真食品注意"],"transport":"公交、Grab","hotspots":[{"area":"汕头街","desc":"夜市","risk":"低"},{"area":"牛干冬","desc":"酒吧街","risk":"中"}],"safeAreas":["乔治城","丹绒道光","丹绒林","峇都丁宜"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -6474,15 +6402,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
-      "food": [
-        {
-          "name": "当地特色菜",
-          "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
-        },
+    "lifestyle": {{"food":[{"name":"河粉","type":"越南","price":"₫40000-100000","desc":"Pho牛肉粉","tip":"Bun Cha"},{"name":"烤肉米线","type":"越南","price":"₫35000-80000","desc":"Bún chả","tip":"还剑湖旁"},{"name":"鸡蛋咖啡","type":"饮品","price":"₫20000-40000","desc":"Cà phê trứng","tip":"老城区"},{"name":"炸春卷","type":"小吃","price":"₫20000-45000","desc":"Nem rán","tip":"街头"}],"attractions":[{"name":"还剑湖","type":"湖泊","desc":"市中心","hidden":false},{"name":"三十六行街","type":"街区","desc":"老城区","hidden":false},{"name":"巴亭广场","type":"地标","desc":"胡志明陵","hidden":false},{"name":"西湖","type":"湖泊","desc":"最大湖","hidden":true}],"festivals":[{"name":"河内建城","date":"10月10日","desc":"千年历史"},{"name":"春节","date":"1-2月","desc":"传统新年"},{"name":"端午节","date":"5月","desc":"驱邪祈福"}],"customs":["不踩门槛","女士优先","不要随意拍照","砍价"],"transport":"摩托、 taxi","hotspots":[{"area":"老城区","desc":"复杂","risk":"中"},{"area":"还剑湖","desc":"旅游区","risk":"低"}],"safeAreas":["巴亭郡","还剑郡","二征夫人郡","龙边郡"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
