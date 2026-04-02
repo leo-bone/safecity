@@ -91,7 +91,15 @@ var CITY_DATABASE = {
       "ambulance": "119",
       "fire": "119"
     },
-    "lifestyle": {{"food":[{"name":"寿司","type":"日本料理","price":"¥2000-30000","desc":"筑地市场新鲜","tip":"早起去筑地"},{"name":"拉面","type":"面食","price":"¥800-1500","desc":"豚骨、酱油","tip":"一兰拉面"},{"name":"烧肉","type":"烧烤","price":"¥3000-8000","desc":"A5级和牛","tip":"提前预约"},{"name":"人形烧","type":"甜点","price":"¥500-1000","desc":"雷门限定","tip":"仲见世通"}],"attractions":[{"name":"浅草寺","type":"寺庙","desc":"东京最古老寺庙","hidden":false},{"name":"涩谷十字路口","type":"地标","desc":"世界最繁忙","hidden":false},{"name":"秋叶原","type":"动漫街","desc":"电器动漫","hidden":false},{"name":"神乐坂","type":"街区","desc":"日式风情","hidden":true}],"festivals":[{"name":"樱花季","date":"3-4月","desc":"上野公园赏樱"},{"name":"夏日祭","date":"7-8月","desc":"花火大会"},{"name":"红叶季","date":"11月","desc":"明治神宫"}],"customs":["进入餐厅脱鞋","电车安静","不边走边吃","不给小费"],"transport":"地铁JR全覆盖，西瓜卡通用","hotspots":[{"area":"新宿歌舞","desc":"夜间复杂","risk":"高"},{"area":"池袋西口","desc":"流浪汉","risk":"中高"}],"safeAreas":["港区","千代田区","涩谷区","文京区别"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "寿司",
+          "type": "日本料理",
+          "price": "¥2,000-5,000",
+          "desc": "新鲜生鱼片，日本传统料理的代表",
+          "tip": "建议选择有「刺身通」认证的店铺"
+        },
         {
           "name": "拉面",
           "type": "面食",
@@ -296,194 +304,15 @@ var CITY_DATABASE = {
       "ambulance": "112",
       "fire": "112"
     },
-    "lifestyle": {{"food":[{"name":"肉骨茶","type":"新加坡","price":"S$8-20","desc":"胡椒猪骨汤","tip":"松发肉骨茶"},{"name":"辣椒蟹","type":"新加坡","price":"S},
+    "lifestyle": {
+      "food": [
         {
-          "name": "辣椒蟹",
-          "type": "海鲜",
-          "price": "SGD30-50",
-          "desc": "甜辣酱汁配新鲜螃蟹"
+          "name": "海南鸡饭",
+          "type": "新加坡菜",
+          "price": "SGD4-6",
+          "desc": "香滑鸡肉配上特制米饭",
+          "tip": "小贩中心更有地道风味"
         },
-        {
-          "name": "肉骨茶",
-          "type": "汤品",
-          "price": "SGD8-12",
-          "desc": "排骨汤配药材",
-          "tip": "胡椒味和药材味两种选择"
-        },
-        {
-          "name": "叻沙",
-          "type": "面食",
-          "price": "SGD5-8",
-          "desc": "椰浆咖喱汤面"
-        }
-      ],
-      "attractions": [
-        {
-          "name": "滨海湾花园",
-          "type": "公园",
-          "desc": "未来感十足的超级花园",
-          "hidden": false
-        },
-        {
-          "name": "鱼尾狮公园",
-          "type": "地标",
-          "desc": "新加坡标志性景点",
-          "hidden": false
-        },
-        {
-          "name": "圣淘沙岛",
-          "type": "度假村",
-          "desc": "综合度假胜地",
-          "hidden": false
-        },
-        {
-          "name": "武吉士街市",
-          "type": "集市",
-          "desc": "本地人常逛的街头市场",
-          "hidden": true
-        }
-      ],
-      "festivals": [
-        {
-          "name": "春节",
-          "date": "1-2月",
-          "desc": "华人传统新年"
-        },
-        {
-          "name": "开斋节",
-          "date": "4-5月",
-          "desc": "马来族重要节日"
-        },
-        {
-          "name": "屠妖节",
-          "date": "10-11月",
-          "desc": "印度族光明节"
-        }
-      ],
-      "customs": [
-        "公共场合禁止吃口香糖",
-        "不要随地乱扔垃圾",
-        "地铁上禁止饮食",
-        "过马路必须等绿灯",
-        "尊重多元文化习俗"
-      ],
-      "transport": "地铁和巴士网络完善，易通卡可通用所有公共交通，出租车安全可靠。"
-    },
-    "safety_tips": {
-      "crime": [
-        "在新加坡旅行时，保持警惕，注意财物安全",
-        "避免深夜独自前往偏僻区域",
-        "重要证件和现金分开存放"
-      ],
-      "transport": [
-        "选择正规交通工具",
-        "保留交通票据",
-        "使用打车软件记录行程"
-      ],
-      "health": [
-        "购买旅行保险",
-        "随身携带常用药品",
-        "注意饮食卫生"
-      ],
-      "natural": [
-        "关注当地天气预警",
-        "了解紧急避难场所位置",
-        "保持手机电量充足"
-      ],
-      "cultural": [
-        "尊重新加坡的文化习俗",
-        "了解当地紧急联系方式",
-        "保存当地大使馆信息"
-      ]
-    },
-    "travel_tips": {
-      "best_season": "2-4月,11-1月",
-      "weather": {
-        "spring": {
-          "temp": "24-32°C",
-          "tips": "炎热,注意防晒"
-        },
-        "summer": {
-          "temp": "26-34°C",
-          "tips": "高温高湿,多喝水"
-        },
-        "autumn": {
-          "temp": "25-33°C",
-          "tips": "烟雾季节,佩戴口罩"
-        },
-        "winter": {
-          "temp": "23-31°C",
-          "tips": "最佳旅游季节"
-        }
-      },
-      "budget": {
-        "daily_budget": "SGD100-200/天",
-        "accommodation": "SGD80-250/晚",
-        "food": "SGD20-60/天",
-        "transport": "SGD10-20/天"
-      },
-      "visas": {
-        "chinese_citizens": "可免签停留30天",
-        "visa_free_countries": "164个国家免签"
-      },
-      "language": {
-        "primary": "英语、马来语、汉语、泰米尔语",
-        "english_spoken": "普遍,官方语言之一",
-        "essential_phrases": {
-          "谢谢": "Thank you / Terima Kasih",
-          "对不起": "Sorry / Maaf",
-          "警察在哪里": "Where is the police?"
-        }
-      }
-    },
-    "overview": "新加坡是东南亚的城邦国家，被誉为'花园城市'。这座多元文化融合的现代化都市，以高效的政府、清洁的环境和严格的法制著称。作为亚洲重要的金融、贸易和航运中心，新加坡连接着东西方文化，为游客提供独特的多元体验。",
-    "safety_history": "新加坡建立了全球领先的城市安全体系。通过全覆盖的监控系统、严格的法律制度、高效的应急响应机制和全民安全教育，新加坡成为世界上最安全的城市之一。2020年全球安全指数排名中，新加坡位居前列。"
-  },
-  "seoul": {
-    "id": "seoul",
-    "name": "首尔",
-    "nameEn": "Seoul",
-    "country": "韩国",
-    "continent": "亚洲",
-    "flag": "🇰🇷",
-    "lat": 37.5665,
-    "lng": 126.978,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
-    "safety": {
-      "overall": 93,
-      "grade": "A",
-      "grades": {
-        "crime": "A-",
-        "transport": "A",
-        "health": "A",
-        "natural": "A"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "发达公共交通",
-      "文化景点多",
-      "购物便利",
-      "医疗水平高"
-    ],
-    "risks"5-60","desc":"斯里兰卡蟹","tip":"无招牌海鲜"},{"name":"海南鸡饭","type":"新加坡","price":"S$5-12","desc":"白切鸡","tip":"天天海南鸡饭"},{"name":"叻沙","type":"马来","price":"S$6-12","desc":"椰奶咖喱面","tip":"328叻沙"}],"attractions":[{"name":"滨海湾金沙","type":"地标","desc":"空中花园","hidden":false},{"name":"鱼尾狮","type":"地标","desc":"新加坡标志","hidden":false},{"name":"牛车水","type":"唐人街","desc":"百年老店","hidden":false},{"name":"哈芝巷","type":"街区","desc":"涂鸦墙","hidden":true}],"festivals":[{"name":"新加坡日","date":"8月9日","desc":"国庆阅兵"},{"name":"美食节","date":"7月","desc":"小贩美食"},{"name":"中秋灯会","date":"9月","desc":"牛车水"}],"customs":["保持卫生","地铁禁食","对长辈用您","先找座位"],"transport":"MRT覆盖全岛，Grab叫车","hotspots":[{"area":"芽笼","desc":"红灯区","risk":"中"},{"area":"小印度","desc":"周末拥挤","risk":"低"}],"safeAreas":["滨海湾","乌节路","圣淘沙","荷兰村"]}},
         {
           "name": "辣椒蟹",
           "type": "海鲜",
@@ -702,7 +531,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"韩式烤肉","type":"韩式","price":"₩15000-40000","desc":"烤肉配生菜","tip":"弘大"},{"name":"炸鸡啤酒","type":"韩式","price":"₩12000-25000","desc":"韩式炸鸡","tip":"BHC"},{"name":"参鸡汤","type":"韩式","price":"₩15000-25000","desc":"人参鸡汤","tip":"土俗村"},{"name":"辣炒年糕","type":"小吃","price":"₩3000-8000","desc":"辣酱年糕","tip":"明洞"}],"attractions":[{"name":"景福宫","type":"宫殿","desc":"朝鲜王朝","hidden":false},{"name":"明洞","type":"购物","desc":"购物天堂","hidden":false},{"name":"弘大","type":"艺术区","desc":"潮流","hidden":false},{"name":"北村韩屋","type":"街区","desc":"传统韩屋","hidden":true}],"festivals":[{"name":"首尔灯节","date":"11月","desc":"清溪川"},{"name":"韩服节","date":"10月","desc":"穿韩服"},{"name":"樱花季","date":"4月","desc":"汝矣岛"}],"customs":["长辈优先","不倒满酒","双手递接","室内禁烟"],"transport":"地铁四通八达，T-money卡","hotspots":[{"area":"东大门","desc":"批发区","risk":"中"},{"area":"江南","desc":"时尚","risk":"低"}],"safeAreas":["江南","狎鸥亭","益善洞","仁寺洞"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "韩式烤肉",
+          "type": "烧烤",
+          "price": "₩20,000-40,000",
+          "desc": "炭火烤制的优质牛肉，配泡菜、生菜、大蒜",
+          "tip": "搭配烧酒更佳，不同部位价格差异很大"
+        },
         {
           "name": "泡菜",
           "type": "发酵食品",
@@ -960,159 +797,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"港式奶茶","type":"茶餐厅","price":"HK"hong_kong": {
-    "id": "hong_kong",
-    "name": "香港",
-    "nameEn": "Hong Kong",
-    "country": "中国",
-    "continent": "亚洲",
-    "flag": "🇭🇰",
-    "lat": 22.3193,
-    "lng": 114.1694,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
-    "safety": {
-      "overall": 82,
-      "grade": "A-",
-      "grades": {
-        "crime": "A-",
-        "transport": "B",
-        "health": "B+",
-        "natural": "B+"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
+    "lifestyle": {
+      "food": [
         {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
         },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "发达公共交通",
-      "文化景点多",
-      "购物便利",
-      "医疗水平高"
-    ],
-    "risks": [
-      "食品安全",
-      "语言沟通问题",
-      "部分城市交通拥堵"
-    ],
-    "emergency": {
-      "touristPolice": "112",
-      "touristHotline": "112",
-      "police": "110",
-      "ambulance": "120",
-      "fire": "119",
-      "hospitals": [
-        {
-          "name": "主要公立医院",
-          "phone": "当地急救电话",
-          "address": "市中心区域"
-        }
-      ],
-      "embassies": {
-        "中国大使馆": "请查询当地使馆信息",
-        "紧急领事保护": "+86-10-12308"
-      },
-      "apps": [
-        "Google Translate",
-        "当地打车APP"
-      ],
-      "selfDefense": [
-        "保持警愓，注意周围环境",
-        "携带护照复印件",
-        "保存当地紧急联系方式"
-      ]
-    },
-    "lifestyle": {5-30","desc":"丝滑奶茶","tip":"兰芳园"},{"name":"云吞面","type":"粤菜","price":"HK$35-60","desc":"鲜虾云吞","tip":"麦焕池记"},{"name":"烧腊","type":"粤菜","price":"HK$40-80","desc":"叉烧烧鹅","tip":"深井"},{"name":"鸡蛋仔","type":"小吃","price":"HK"hong_kong": {
-    "id": "hong_kong",
-    "name": "香港",
-    "nameEn": "Hong Kong",
-    "country": "中国",
-    "continent": "亚洲",
-    "flag": "🇭🇰",
-    "lat": 22.3193,
-    "lng": 114.1694,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
-    "safety": {
-      "overall": 82,
-      "grade": "A-",
-      "grades": {
-        "crime": "A-",
-        "transport": "B",
-        "health": "B+",
-        "natural": "B+"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "发达公共交通",
-      "文化景点多",
-      "购物便利",
-      "医疗水平高"
-    ],
-    "risks": [
-      "食品安全",
-      "语言沟通问题",
-      "部分城市交通拥堵"
-    ],
-    "emergency": {
-      "touristPolice": "112",
-      "touristHotline": "112",
-      "police": "110",
-      "ambulance": "120",
-      "fire": "119",
-      "hospitals": [
-        {
-          "name": "主要公立医院",
-          "phone": "当地急救电话",
-          "address": "市中心区域"
-        }
-      ],
-      "embassies": {
-        "中国大使馆": "请查询当地使馆信息",
-        "紧急领事保护": "+86-10-12308"
-      },
-      "apps": [
-        "Google Translate",
-        "当地打车APP"
-      ],
-      "selfDefense": [
-        "保持警愓，注意周围环境",
-        "携带护照复印件",
-        "保存当地紧急联系方式"
-      ]
-    },
-    "lifestyle": {5-25","desc":"脆皮蛋糕","tip":"街边"}],"attractions":[{"name":"维多利亚港","type":"地标","desc":"世界三大夜景","hidden":false},{"name":"太平山顶","type":"景点","desc":"俯瞰全港","hidden":false},{"name":"迪士尼","type":"乐园","desc":"童话王国","hidden":false},{"name":"南丫岛","type":"离岛","desc":"渔村","hidden":true}],"festivals":[{"name":"农历新年","date":"1-2月","desc":"烟花"},{"name":"中秋节","date":"9月","desc":"舞火龙"},{"name":"赛马季","date":"9月-7月","desc":"跑马地"}],"customs":["排队秩序","不乱扔垃圾","地铁禁食","给导游小费"],"transport":"MTR地铁发达，天星小轮","hotspots":[{"area":"旺角","desc":"复杂","risk":"中"},{"area":"油麻地","desc":"夜市","risk":"低"}],"safeAreas":["中环","铜锣湾","山顶","浅水湾"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -1342,7 +1035,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"北京烤鸭","type":"京菜","price":"¥80-200","desc":"挂炉烤鸭","tip":"全聚德"},{"name":"涮羊肉","type":"京菜","price":"¥50-150","desc":"铜锅","tip":"东来顺"},{"name":"炸酱面","type":"面食","price":"¥15-40","desc":"手擀面","tip":"海碗居"},{"name":"豆汁","type":"小吃","price":"¥5-15","desc":"老传统","tip":"锦芳"}],"attractions":[{"name":"故宫","type":"宫殿","desc":"明清皇宫","hidden":false},{"name":"长城","type":"古迹","desc":"八达岭","hidden":false},{"name":"天坛","type":"古迹","desc":"祈年殿","hidden":false},{"name":"什刹海","type":"街区","desc":"胡同","hidden":true}],"festivals":[{"name":"春节","date":"1-2月","desc":"庙会"},{"name":"国庆","date":"10月1日","desc":"广场"},{"name":"两会","date":"3月","desc":"人大"}],"customs":["故宫预约","长城穿鞋","正规游","谨慎购物"],"transport":"地铁发达","hotspots":[{"area":"三里屯","desc":"酒吧","risk":"低"},{"area":"前门","desc":"游客","risk":"低"}],"safeAreas":["东城","西城","朝阳","海淀"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -1572,7 +1273,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"生煎包","type":"小吃","price":"¥10-25","desc":"底脆汤多","tip":"佳佳"},{"name":"红烧肉","type":"本帮","price":"¥30-80","desc":"浓油赤酱","tip":"老吉士"},{"name":"小笼包","type":"点心","price":"¥15-40","desc":"皮薄汤鲜","tip":"南翔"},{"name":"排骨年糕","type":"小吃","price":"¥15-35","desc":"炸排骨","tip":"鲜得来"}],"attractions":[{"name":"外滩","type":"地标","desc":"万国建筑","hidden":false},{"name":"陆家嘴","type":"金融","desc":"摩天楼","hidden":false},{"name":"田子坊","type":"创意","desc":"石库门","hidden":false},{"name":"武康路","type":"街区","desc":"梧桐树","hidden":true}],"festivals":[{"name":"时装周","date":"3月、10月","desc":"时尚"},{"name":"进博会","date":"11月","desc":"进口"},{"name":"灯光秀","date":"每晚","desc":"浦江"}],"customs":["排队秩序","地铁禁食","不乱扔","小费非必须"],"transport":"地铁发达，共享单车","hotspots":[{"area":"城隍庙","desc":"游客多","risk":"中"},{"area":"七宝","desc":"古镇","risk":"低"}],"safeAreas":["静安","黄浦","长宁","徐汇"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -1802,7 +1511,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"冬阴功","type":"泰式","price":"฿150-400","desc":"酸辣虾汤","tip":"Poom Mai"},{"name":"泰式炒河粉","type":"泰式","price":"฿60-150","desc":"Pad Thai","tip":"唐人街"},{"name":"芒果糯米饭","type":"甜点","price":"฿50-120","desc":"椰浆糯米饭","tip":"水上市集"},{"name":"烤肉串","type":"小吃","price":"฿20-50","desc":"沙爹","tip":"恰图恰"}],"attractions":[{"name":"大皇宫","type":"宫殿","desc":"皇室官邸","hidden":false},{"name":"卧佛寺","type":"寺庙","desc":"46米卧佛","hidden":false},{"name":"郑王庙","type":"寺庙","desc":"黎明寺","hidden":false},{"name":"考山路","type":"街区","desc":"背包客","hidden":true}],"festivals":[{"name":"泼水节","date":"4月13-15日","desc":"宋干节"},{"name":"水灯节","date":"11月","desc":"湄南河"},{"name":"国王生日","date":"12月5日","desc":"圣体节"}],"customs":["寺庙脱鞋","不可指点点","尊重皇室","不摸头"],"transport":"BTS空铁，MRT地铁","hotspots":[{"area":"考山路","desc":"背包客区","risk":"中"},{"area":"是隆区","desc":"商业","risk":"低"}],"safeAreas":["素坤逸","暹罗广场","湄南河畔","无线路"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -2032,7 +1749,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"肉骨茶","type":"马来","price":"RM15-30","desc":"胡椒猪骨汤","tip":"新峰肉骨茶"},{"name":"椰浆饭","type":"马来","price":"RM8-15","desc":"Nasi Lemak","tip":"嘛嘛档"},{"name":"沙爹","type":"小吃","price":"RM5-12","desc":"烤肉串","tip":"阿罗街"},{"name":"榴莲","type":"水果","price":"RM20-50","desc":"猫山王","tip":"榴莲档"}],"attractions":[{"name":"双子塔","type":"地标","desc":"世界最高双塔","hidden":false},{"name":"独立广场","type":"地标","desc":"马来西亚标志","hidden":false},{"name":"茨厂街","type":"唐人街","desc":"华人美食","hidden":false},{"name":"阿罗街","type":"夜市","desc":"美食夜市","hidden":true}],"festivals":[{"name":"开斋节","date":"4月","desc":"马来新年"},{"name":"国庆日","date":"8月31日","desc":"独立日"},{"name":"大宝节","date":"1月","desc":"印度节日"}],"customs":["不清真食物注意","周五祈祷","右手进食","参观清真寺脱鞋"],"transport":"地铁LRT，Grab叫车","hotspots":[{"area":"武吉免登","desc":"商业区","risk":"低"},{"area":"嘉美清真寺","desc":"宗教区","risk":"低"}],"safeAreas":["KLCC","武吉免登","安邦","白沙罗"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -2262,159 +1987,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"牛肉面","type":"台菜","price":"NT"taipei": {
-    "id": "taipei",
-    "name": "台北",
-    "nameEn": "Taipei",
-    "country": "台湾",
-    "continent": "亚洲",
-    "flag": "🇹🇼",
-    "lat": 25.033,
-    "lng": 121.5654,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
-    "safety": {
-      "overall": 91,
-      "grade": "A",
-      "grades": {
-        "crime": "A",
-        "transport": "A",
-        "health": "A",
-        "natural": "A"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
+    "lifestyle": {
+      "food": [
         {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
         },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "购物便利",
-      "发达公共交通",
-      "文化景点多",
-      "医疗水平高"
-    ],
-    "risks": [
-      "部分城市交通拥堵",
-      "食品安全",
-      "语言沟通问题"
-    ],
-    "emergency": {
-      "touristPolice": "112",
-      "touristHotline": "112",
-      "police": "112",
-      "ambulance": "112",
-      "fire": "112",
-      "hospitals": [
-        {
-          "name": "主要公立医院",
-          "phone": "当地急救电话",
-          "address": "市中心区域"
-        }
-      ],
-      "embassies": {
-        "中国大使馆": "请查询当地使馆信息",
-        "紧急领事保护": "+86-10-12308"
-      },
-      "apps": [
-        "Google Translate",
-        "当地打车APP"
-      ],
-      "selfDefense": [
-        "保持警愓，注意周围环境",
-        "携带护照复印件",
-        "保存当地紧急联系方式"
-      ]
-    },
-    "lifestyle": {50-350","desc":"红烧或清炖","tip":"林东芳"},{"name":"小笼包","type":"点心","price":"NT"taipei": {
-    "id": "taipei",
-    "name": "台北",
-    "nameEn": "Taipei",
-    "country": "台湾",
-    "continent": "亚洲",
-    "flag": "🇹🇼",
-    "lat": 25.033,
-    "lng": 121.5654,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
-    "safety": {
-      "overall": 91,
-      "grade": "A",
-      "grades": {
-        "crime": "A",
-        "transport": "A",
-        "health": "A",
-        "natural": "A"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
-        {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
-        },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "购物便利",
-      "发达公共交通",
-      "文化景点多",
-      "医疗水平高"
-    ],
-    "risks": [
-      "部分城市交通拥堵",
-      "食品安全",
-      "语言沟通问题"
-    ],
-    "emergency": {
-      "touristPolice": "112",
-      "touristHotline": "112",
-      "police": "112",
-      "ambulance": "112",
-      "fire": "112",
-      "hospitals": [
-        {
-          "name": "主要公立医院",
-          "phone": "当地急救电话",
-          "address": "市中心区域"
-        }
-      ],
-      "embassies": {
-        "中国大使馆": "请查询当地使馆信息",
-        "紧急领事保护": "+86-10-12308"
-      },
-      "apps": [
-        "Google Translate",
-        "当地打车APP"
-      ],
-      "selfDefense": [
-        "保持警愓，注意周围环境",
-        "携带护照复印件",
-        "保存当地紧急联系方式"
-      ]
-    },
-    "lifestyle": {00-250","desc":"鼎泰丰","tip":"信义店"},{"name":"珍珠奶茶","type":"饮品","price":"NT$50-100","desc":"发源地","tip":"春水堂"},{"name":"蚵仔煎","type":"小吃","price":"NT$50-120","desc":"牡蛎蛋","tip":"宁夏夜市"}],"attractions":[{"name":"101大楼","type":"地标","desc":"最高绿建筑","hidden":false},{"name":"士林夜市","type":"夜市","desc":"最大夜市","hidden":false},{"name":"故宫","type":"博物馆","desc":"中华瑰宝","hidden":false},{"name":"阳明山","type":"自然","desc":"火山温泉","hidden":true}],"festivals":[{"name":"灯节","date":"2月","desc":"元宵"},{"name":"端午","date":"5月","desc":"龙舟"},{"name":"中秋","date":"9月","desc":"烤肉"}],"customs":["不乱扔垃圾","捷运禁食","排队","小费非必须"],"transport":"捷运便利，悠游卡","hotspots":[{"area":"万华","desc":"老城","risk":"中"},{"area":"东区","desc":"商业","risk":"低"}],"safeAreas":["大安","信义","中山","内湖"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -2655,7 +2236,15 @@ var CITY_DATABASE = {
         "下载\"Safety tips\"APP获取紧急信息"
       ]
     },
-    "lifestyle": {{"food":[{"name":"章鱼烧","type":"小吃","price":"¥500-1000","desc":"章鱼丸","tip":"道顿堀"},{"name":"大阪烧","type":"日本","price":"¥800-2000","desc":"文字烧","tip":"鹤桥风月"},{"name":"串炸","type":"小吃","price":"¥300-800","desc":"油炸肉串","tip":"新世界"},{"name":"拉面","type":"面食","price":"¥700-1500","desc":"豚骨","tip":"金龙"}],"attractions":[{"name":"道顿堀","type":"街区","desc":"美食天堂","hidden":false},{"name":"大阪城","type":"城堡","desc":"丰臣秀吉","hidden":false},{"name":"环球影城","type":"乐园","desc":"哈利波特","hidden":false},{"name":"新世界","type":"街区","desc":"复古游戏","hidden":true}],"festivals":[{"name":"樱花季","date":"3-4月","desc":"城公园"},{"name":"通天阁","date":"全年","desc":"灯光秀"},{"name":"天神祭","date":"7月","desc":"三大祭"}],"customs":["电车禁食","不边走吃","垃圾分类","不乱扔"],"transport":"JR环状线，ICOCA","hotspots":[{"area":"飞田新地","desc":"红灯区","risk":"中"},{"area":"天王寺","desc":"热闹","risk":"低"}],"safeAreas":["梅田","心斋桥","天王寺","港岛"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "寿司",
+          "type": "日本料理",
+          "price": "¥2,000-5,000",
+          "desc": "新鲜生鱼片配醋饭，日本料理的代表",
+          "tip": "建议选择有「刺身通」认证的店铺，每日更新鱼获信息"
+        },
         {
           "name": "拉面",
           "type": "面食",
@@ -2912,7 +2501,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"孟买特色菜","type":"印度","price":"₹150-400","desc":"Pav Bhaji","tip":"街头"},{"name":"孟买三角饼","type":"小吃","price":"₹30-80","desc":"Vada Pav","tip":"火车站"},{"name":"印度甜点","type":"甜点","price":"₹50-150","desc":"Ladoo","tip":"甜品店"},{"name":"椰子水","type":"饮品","price":"₹30-60","desc":" tender Coconut","tip":"海滩"}],"attractions":[{"name":"印度门","type":"地标","desc":"地标建筑","hidden":false},{"name":"宝莱坞","type":"电影","desc":"电影工厂","hidden":false},{"name":"滨海大道","type":"海滩","desc":"海边步道","hidden":false},{"name":"千人洗衣场","type":"奇观","desc":"百年洗衣","hidden":true}],"festivals":[{"name":"孟买电影节","date":"10月","desc":"宝莱坞"},{"name":"象神节","date":"8-9月","desc":" Ganesh Chaturthi"},{"name":"独立日","date":"8月15日","desc":"国庆"}],"customs":["给小费","注意财物","女性注意","防骗"],"transport":"本地火车、的士","hotspots":[{"area":" Crawford","desc":"市场","risk":"中"},{"area":"Colaba","desc":"旅游区","risk":"低"}],"safeAreas":["南孟买","班德拉","安德瑞","浦那"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3142,7 +2739,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"印度香饭","type":"印度","price":"₹200-500","desc":"Biryani","tip":"Karim's"},{"name":"印度烤鸡","type":"印度","price":"₹250-600","desc":"Butter Chicken","tip":"老城"},{"name":"印度煎饼","type":"小吃","price":"₹30-80","desc":"Paratha","tip":"街头"},{"name":"拉茶","type":"饮品","price":"₹20-50","desc":"Chai","tip":"茶摊"}],"attractions":[{"name":"泰姬陵","type":"古迹","desc":"世界新七大奇迹","hidden":false},{"name":"红堡","type":"历史","desc":"莫卧儿帝国","hidden":false},{"name":"贾玛清真寺","type":"寺庙","desc":"印度最大","hidden":false},{"name":"月光集市","type":"老城","desc":"传统市场","hidden":true}],"festivals":[{"name":"排灯节","date":"10-11月","desc":"印度新年"},{"name":"洒红节","date":"3月","desc":"色彩节"},{"name":"独立日","date":"8月15日","desc":"国庆"}],"customs":["左手不递物","不摸小孩头","寺庙脱鞋","砍价"],"transport":"地铁、Auto","hotspots":[{"area":"火车站","desc":"小偷多","risk":"高"},{"area":"康诺特广场","desc":"商业","risk":"低"}],"safeAreas":["新德里","萨罗基尼","维杰瓦纳","古尔冈"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3372,7 +2977,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"印尼炒饭","type":"印尼","price":"Rp25000-60000","desc":"Nasi Goreng","tip":"街头"},{"name":"沙嗲","type":"小吃","price":"Rp15000-35000","desc":"Sate","tip":"夜市"},{"name":"印尼春卷","type":"小吃","price":"Rp5000-15000","desc":"Lumpia","tip":"唐人街"},{"name":"椰子糕","type":"甜点","price":"Rp5000-12000","desc":"Kue Putu","tip":"街头"}],"attractions":[{"name":"独立广场","type":"地标","desc":"印尼标志","hidden":false},{"name":"民族纪念塔","type":"地标","desc":" Monument","hidden":false},{"name":"老城区","type":"老城","desc":"荷式建筑","hidden":false},{"name":"安佐尔梦幻公园","type":"乐园","desc":"主题公园","hidden":true}],"festivals":[{"name":"独立日","date":"8月17日","desc":"国庆"},{"name":"开斋节","date":"4月","desc":" Eid"},{"name":"雅加达节","date":"8月","desc":"文化节"}],"customs":["左手不递物","进入脱鞋","宗教场所着装","交通拥堵"],"transport":"地铁、Grab","hotspots":[{"area":"老城区","desc":"复杂","risk":"中"},{"area":"库塔","desc":"商业","risk":"低"}],"safeAreas":["中雅加达","南雅加达","西雅加达","丹拿阿邦"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3602,7 +3215,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"越南河粉","type":"越南","price":"₫50000-120000","desc":"Pho牛肉粉","tip":"锦灿"},{"name":"越南法棍","type":"小吃","price":"₫20000-40000","desc":"Bánh mì","tip":"范老五街"},{"name":"越南春卷","type":"越南","price":"₫30000-60000","desc":"Gỏi cuốn","tip":"街头"},{"name":"滴漏咖啡","type":"饮品","price":"₫25000-50000","desc":"Cà phê sữa đá","tip":"咖啡公寓"}],"attractions":[{"name":"统一宫","type":"历史","desc":"战争遗迹","hidden":false},{"name":"范老五街","type":"街区","desc":"背包客区","hidden":false},{"name":"滨城市场","type":"市场","desc":"百年市场","hidden":false},{"name":"咖啡公寓","type":"咖啡","desc":"INS打卡","hidden":true}],"festivals":[{"name":"越南新年","date":"1-2月","desc":"Tết"},{"name":"解放日","date":"4月30日","desc":"统一纪念"},{"name":"中秋节","date":"9月","desc":"儿童节"}],"customs":["不踩门槛","不触摸头部","接受物品用双手","砍价正常"],"transport":"摩托出租，Grab","hotspots":[{"area":"范老五街","desc":"游客区","risk":"中"},{"area":"第五郡","desc":"唐人街","risk":"中"}],"safeAreas":["第一郡","第七郡","第三郡","守德"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -3832,7 +3453,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"烤鸡","type":"菲律宾","price":"₱150-300","desc":"Lechon","tip":"著名连锁"},{"name":"Halo-halo","type":"甜点","price":"₱50-100","desc":"刨冰甜品","tip":"街头摊"},{"name":"Adobo","type":"菲律宾","price":"₱100-200","desc":"醋炖肉","tip":"家常菜"},{"name":"炸香蕉","type":"小吃","price":"₱20-50","desc":"Plant Chips","tip":"街边"}],"attractions":[{"name":"马尼拉湾","type":"海湾","desc":"日落美景","hidden":false},{"name":"圣地亚哥堡","type":"历史","desc":"西班牙古堡","hidden":false},{"name":"黎刹公园","type":"公园","desc":"国父纪念","hidden":false},{"name":"SM商场","type":"购物","desc":"最大商场","hidden":true}],"festivals":[{"name":"独立日","date":"6月12日","desc":"国庆"},{"name":"黑耶稣节","date":"1月9日","desc":"盛大游行"},{"name":"圣诞节","date":"12月","desc":"最长圣诞"}],"customs":["给小费","尊重长辈","避开午休","注意安全"],"transport":"吉普尼、Grab","hotspots":[{"area":"马尼拉湾区","desc":"较安全","risk":"低"},{"area":"码头区","desc":"复杂","risk":"中"}],"safeAreas":["马卡蒂","阿拉邦","文尼法寿","马尼拉湾区"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -4062,7 +3691,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"沙瓦尔玛","type":"中东","price":"AED15-40","desc":"烤肉卷","tip":"老城区"},{"name":"骆驼奶","type":"饮品","price":"AED10-25","desc":"营养丰富","tip":"沙漠"},{"name":"海鲜","type":"海鲜","price":"AED80-200","desc":"波斯湾海鲜","tip":"Fish Market"},{"name":"阿拉伯甜点","type":"甜点","price":"AED10-30","desc":"椰枣","tip":"香料市集"}],"attractions":[{"name":"哈利法塔","type":"地标","desc":"世界最高","hidden":false},{"name":"棕榈岛","type":"人造岛","desc":"亚特兰蒂斯","hidden":false},{"name":"黄金市集","type":"市场","desc":"最大金市","hidden":false},{"name":"沙漠冲沙","type":"活动","desc":"日落Safari","hidden":true}],"festivals":[{"name":"购物节","date":"1月","desc":"全球最大"},{"name":"开斋节","date":"4月","desc":"宰牲节"},{"name":"美食节","date":"2月","desc":"国际美食"}],"customs":["斋月注意","着装得体","禁酒猪","周五休息"],"transport":"地铁无人驾驶，Taxi","hotspots":[{"area":"德拉","desc":"老城","risk":"中"},{"area":"Marina","desc":"高档","risk":"低"}],"safeAreas":["棕榈岛","市中心","Business Bay","海滩"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -5482,7 +5119,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"印尼炒饭","type":"印尼","price":"Rp30000-80000","desc":"Nasi Goreng","tip":"脏鸭"},{"name":"沙嗲","type":"小吃","price":"Rp20000-50000","desc":"烤肉串","tip":"街边"},{"name":"烤猪饭","type":"印尼","price":"Rp25000-60000","desc":"Babi Guling","tip":"Ibu Oka"},{"name":"椰子水","type":"饮品","price":"Rp10000-30000","desc":"新鲜","tip":"海边"}],"attractions":[{"name":"乌布皇宫","type":"宫殿","desc":"艺术中心","hidden":false},{"name":"海神庙","type":"寺庙","desc":"岩礁上","hidden":false},{"name":"圣泉寺","type":"寺庙","desc":"千佛泉","hidden":false},{"name":"梯田","type":"自然","desc":"火山梯田","hidden":true}],"festivals":[{"name":"安宁日","date":"3月","desc":"全岛静默"},{"name":"风筝节","date":"7-8月","desc":"比赛"},{"name":"狂欢节","date":"10月","desc":"沙滩"}],"customs":["寺庙纱笼","不摸头","左侧行","尊重祭"],"transport":"租摩托，Grab","hotspots":[{"area":"库塔","desc":"游客区","risk":"中"},{"area":"Seminyak","desc":"夜店","risk":"低"}],"safeAreas":["乌布","努沙杜瓦","金巴兰","沙努尔"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -5712,7 +5357,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"泰北咖喱面","type":"泰式","price":"฿60-120","desc":"Khao Soi","tip":"老城"},{"name":"泰式炒面","type":"泰式","price":"฿40-80","desc":"Pad Thai","tip":"夜市"},{"name":"自助烤肉","type":"泰式","price":"฿80-200","desc":"Moo Yang","tip":"河边"},{"name":"泰式甜品","type":"甜点","price":"฿20-50","desc":"Khao Tom","tip":"老城"}],"attractions":[{"name":"古城墙","type":"历史","desc":"兰纳王朝","hidden":false},{"name":"素帖寺","type":"寺庙","desc":"双龙寺","hidden":false},{"name":"清迈夜市","type":"夜市","desc":"最大夜市","hidden":false},{"name":"宁曼路","type":"街区","desc":"文艺小清新","hidden":true}],"festivals":[{"name":"水灯节","date":"11月","desc":"天灯节"},{"name":"泼水节","date":"4月13日","desc":"宋干节"},{"name":"花节","date":"2月","desc":"鲜花节"}],"customs":["寺庙脱鞋","不指指点点","尊重僧侣","不摸头"],"transport":"双条车、摩托","hotspots":[{"area":"火车站区","desc":"复杂","risk":"中"},{"area":"老城区","desc":"旅游区","risk":"低"}],"safeAreas":["古城","宁曼","杭东","湄林"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -5942,7 +5595,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"海鲜","type":"海鲜","price":"฿200-800","desc":"龙虾螃蟹","tip":"芭东海滩"},{"name":"泰式炒饭","type":"泰式","price":"฿60-150","desc":"Khao Pad","tip":"夜市"},{"name":"水果","type":"水果","price":"฿30-100","desc":"榴莲山竹","tip":"市场"},{"name":"泰式甜点","type":"甜点","price":"฿20-50","desc":"椰子糕","tip":"街边"}],"attractions":[{"name":"芭东海滩","type":"海滩","desc":"最热闹","hidden":false},{"name":"皮皮岛","type":"离岛","desc":"浮潜天堂","hidden":false},{"name":"普吉大佛","type":"地标","desc":"山顶佛像","hidden":false},{"name":"普吉镇","type":"老城","desc":"葡式建筑","hidden":true}],"festivals":[{"name":"海鲜节","date":"11月","desc":"海鲜美食"},{"name":"狂欢节","date":"11月","desc":"街头派对"},{"name":"素食节","date":"9-10月","desc":"九皇斋节"}],"customs":["海滩注意财物","浮潜注意安全","尊重佛教","不摸僧侣"],"transport":"突突车、摩托","hotspots":[{"area":"芭东海滩","desc":"游客多","risk":"中"},{"area":"江西冷","desc":"商业区","risk":"低"}],"safeAreas":["芭东海滩","卡塔海滩","卡伦海滩","普吉镇"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -6172,7 +5833,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"叻沙","type":"马来","price":"RM8-18","desc":"Asam Laksa","tip":"汕头街"},{"name":"炒粿条","type":"马来","price":"RM6-15","desc":"Char Kway Teow","tip":"关仔角"},{"name":"椰子布丁","type":"甜点","price":"RM4-8","desc":"Coconut Pudding","tip":"街头"},{"name":"福建面","type":"马来","price":"RM8-16","desc":"Hokkien Mee","tip":"小贩中心"}],"attractions":[{"name":"乔治城","type":"老城","desc":"世界遗产","hidden":false},{"name":"升旗山","type":"景点","desc":"俯瞰全城","hidden":false},{"name":"壁画街","type":"艺术","desc":"街头涂鸦","hidden":false},{"name":"姓氏桥","type":"历史","desc":"华人村落","hidden":true}],"festivals":[{"name":"大宝森节","date":"1-2月","desc":"印度节日"},{"name":"中秋节","date":"9月","desc":"灯笼节"},{"name":"圣乔治节","date":"4月","desc":"槟城纪念"}],"customs":["遗产区慢行","左行","给小费","清真食品注意"],"transport":"公交、Grab","hotspots":[{"area":"汕头街","desc":"夜市","risk":"低"},{"area":"牛干冬","desc":"酒吧街","risk":"中"}],"safeAreas":["乔治城","丹绒道光","丹绒林","峇都丁宜"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -6402,7 +6071,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"河粉","type":"越南","price":"₫40000-100000","desc":"Pho牛肉粉","tip":"Bun Cha"},{"name":"烤肉米线","type":"越南","price":"₫35000-80000","desc":"Bún chả","tip":"还剑湖旁"},{"name":"鸡蛋咖啡","type":"饮品","price":"₫20000-40000","desc":"Cà phê trứng","tip":"老城区"},{"name":"炸春卷","type":"小吃","price":"₫20000-45000","desc":"Nem rán","tip":"街头"}],"attractions":[{"name":"还剑湖","type":"湖泊","desc":"市中心","hidden":false},{"name":"三十六行街","type":"街区","desc":"老城区","hidden":false},{"name":"巴亭广场","type":"地标","desc":"胡志明陵","hidden":false},{"name":"西湖","type":"湖泊","desc":"最大湖","hidden":true}],"festivals":[{"name":"河内建城","date":"10月10日","desc":"千年历史"},{"name":"春节","date":"1-2月","desc":"传统新年"},{"name":"端午节","date":"5月","desc":"驱邪祈福"}],"customs":["不踩门槛","女士优先","不要随意拍照","砍价"],"transport":"摩托、 taxi","hotspots":[{"area":"老城区","desc":"复杂","risk":"中"},{"area":"还剑湖","desc":"旅游区","risk":"低"}],"safeAreas":["巴亭郡","还剑郡","二征夫人郡","龙边郡"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -8774,7 +8451,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"炸鱼薯条","type":"英式料理","price":"£12-25","desc":"英国国菜，香脆鳕鱼配薯条","tip":"推荐Poppies Fish & Chips"},{"name":"英式早餐","type":"早餐","price":"£8-18","desc":"培根、煎蛋、烤番茄、蘑菇、豆子","tip":"Full English Breakfast"},{"name":"英式下午茶","type":"茶点","price":"£25-50","desc":"司康配伯爵茶","tip":"提前预约Ritz"},{"name":"印度咖喱","type":"印度菜","price":"£10-20","desc":"咖喱羊肉","tip":"Brick Lane curry街"}],"attractions":[{"name":"大英博物馆","type":"博物馆","desc":"世界最大博物馆之一","hidden":false},{"name":"白金汉宫","type":"宫殿","desc":"英国皇室官邸","hidden":false},{"name":"伦敦塔桥","type":"地标","desc":"泰晤士河上标志","hidden":false},{"name":"诺丁山","type":"街区","desc":"彩色房屋、复古市集","hidden":true}],"festivals":[{"name":"伦敦跨年烟花","date":"12月31日","desc":"泰晤士河畔烟花"},{"name":"诺丁山狂欢节","date":"8月底","desc":"欧洲最大街头狂欢"},{"name":"切尔西花展","date":"5月","desc":"皇家花卉盛事"}],"customs":["排队保持秩序","乘电梯靠右站","酒吧吧台点单","给小费10-15%"],"transport":"地铁四通八达，建议办Oyster卡","hotspots":[{"area":"苏活区夜间","desc":"人员复杂","risk":"中"},{"area":"贝克卢区域","desc":"游客众多","risk":"低"}],"safeAreas":["梅费尔区","肯辛顿","圣詹姆斯公园","里士满区"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -9004,7 +8689,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"法棍面包","type":"面包","price":"€1-3","desc":"外脆内软","tip":"最好上午购买"},{"name":"可丽饼","type":"甜点","price":"€3-8","desc":"薄饼配Nutella","tip":"蒙马特路边摊"},{"name":"马卡龙","type":"甜点","price":"€2-5/个","desc":"LADUREE招牌","tip":"送礼首选"},{"name":"法式蜗牛","type":"前菜","price":"€8-15","desc":"蒜香黄油焗蜗牛","tip":"传统法餐必点"}],"attractions":[{"name":"埃菲尔铁塔","type":"地标","desc":"巴黎标志性建筑","hidden":false},{"name":"卢浮宫","type":"博物馆","desc":"世界最大美术馆","hidden":false},{"name":"蒙马特高地","type":"街区","desc":"圣心大教堂","hidden":false},{"name":"玛黑区","type":"街区","desc":"设计师店铺","hidden":true}],"festivals":[{"name":"国庆日阅兵","date":"7月14日","desc":"香榭丽舍大道"},{"name":"巴黎时装周","date":"9月底","desc":"全球时尚盛事"},{"name":"白夜艺术节","date":"10月初","desc":"整夜开放博物馆"}],"customs":["见面亲吻面颊礼","餐厅点单举手","不催促进餐","公共场所安静"],"transport":"地铁便捷，Vélib自行车","hotspots":[{"area":"北站周边","desc":"移民区","risk":"中高"},{"area":"塞纳河畔","desc":"游客密集","risk":"低"}],"safeAreas":["香榭丽舍","玛黑区","拉丁区","16区"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -9234,7 +8927,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"咖喱香肠","type":"小吃","price":"€3-8","desc":"咖喱番茄酱","tip":"Babel"},{"name":"德国猪脚","type":"德式","price":"€12-25","desc":"烤猪脚","tip":"Hofbräu"},{"name":"柏林咖喱","type":"德式","price":"€5-12","desc":"咖喱饭","tip":"Curry 36"},{"name":"黑森林","type":"甜点","price":"€4-10","desc":"樱桃蛋糕","tip":"咖啡馆"}],"attractions":[{"name":"勃兰登堡门","type":"地标","desc":"柏林象征","hidden":false},{"name":"柏林墙","type":"历史","desc":"东画廊","hidden":false},{"name":"博物馆岛","type":"博物馆","desc":"佩加蒙","hidden":false},{"name":"克罗伊茨","type":"街区","desc":"嬉皮士","hidden":true}],"festivals":[{"name":"电影节","date":"2月","desc":"金熊奖"},{"name":"啤酒节","date":"9月","desc":"慕尼黑"},{"name":"圣诞市场","date":"12月","desc":"灯火"}],"customs":["红灯区合法","先下后上","周日关门","小费10%"],"transport":"地铁公交，S-Bahn","hotspots":[{"area":"夜店区","desc":"纪念馆旁","risk":"低"},{"area":"Friedrich","desc":"年轻","risk":"低"}],"safeAreas":["米特区","夏洛滕堡","广场","Kreuzberg"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -11368,7 +11069,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"意大利披萨","type":"意式","price":"€5-15","desc":"薄底","tip":"Roscioli"},{"name":"罗马意面","type":"意式","price":"€8-18","desc":"Carbonara","tip":"Da Enzo"},{"name":"提拉米苏","type":"甜点","price":"€4-10","desc":"经典甜点","tip":"Pompi"},{"name":"冰淇淋","type":"甜点","price":"€2-6","desc":"GELATO","tip":"老字号"}],"attractions":[{"name":"罗马斗兽场","type":"古罗马","desc":"新七大奇迹","hidden":false},{"name":"梵蒂冈","type":"博物馆","desc":"西斯廷堂","hidden":false},{"name":"许愿池","type":"地标","desc":"特莱维","hidden":false},{"name":"波格赛","type":"博物馆","desc":"贝尼尼","hidden":true}],"festivals":[{"name":"复活节","date":"4月","desc":"圣彼得"},{"name":"八月节","date":"8月15日","desc":"全城狂欢"},{"name":"圣诞节","date":"12月","desc":"灯展"}],"customs":["进教堂着装","不坐台阶","站喝Espresso","给小费10%"],"transport":"地铁A、B线","hotspots":[{"area":"Termini","desc":"小偷多","risk":"中高"},{"area":"特拉斯提","desc":"酒吧","risk":"低"}],"safeAreas":["西班牙广场","万神殿","波各赛","梵蒂冈"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -11598,7 +11307,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"海鲜饭","type":"西班牙","price":"€12-25","desc":"藏红花","tip":"La Boqueria"},{"name":"油条","type":"小吃","price":"€2-6","desc":"Churros","tip":"Granja Viader"},{"name":"烤番茄","type":"前菜","price":"€4-10","desc":"Pan amb tomàquet","tip":"家常"},{"name":"桑格利亚","type":"饮品","price":"€3-8","desc":"红酒水果","tip":"La Pepita"}],"attractions":[{"name":"圣家堂","type":"教堂","desc":"高迪杰作","hidden":false},{"name":"桂尔公园","type":"公园","desc":"马赛克","hidden":false},{"name":"兰布拉","type":"大道","desc":"流浪歌手","hidden":false},{"name":"哥特区","type":"街区","desc":"中世纪","hidden":true}],"festivals":[{"name":"圣乔治节","date":"4月23日","desc":"玫瑰书"},{"name":"格拉西亚节","date":"8月","desc":"装饰比赛"},{"name":"梅尔赛节","date":"9月","desc":"叠人塔"}],"customs":["午休2-5点","晚餐9点后","不催促","小费10%"],"transport":"地铁L1-L5，T10卡","hotspots":[{"area":"La Rambla","desc":"小偷","risk":"中高"},{"area":"Raval","desc":"多元","risk":"中"}],"safeAreas":["扩展区","sarrià","Gràcia","海滨"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -18492,83 +18209,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"热狗","type":"快餐","price":"$3-8","desc":"街头热狗车","tip":"中央公园南"},{"name":"贝果","type":"面包","price":"$3-10","desc":"熏三文鱼","tip":"Zuckers Bagel"},{"name":"汉堡","type":"美式","price":""new_york": {
-    "id": "new_york",
-    "name": "纽约",
-    "nameEn": "New York",
-    "country": "美国",
-    "continent": "美洲",
-    "flag": "🇺🇸",
-    "lat": 40.7128,
-    "lng": -74.006,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
-    "safety": {
-      "overall": 67,
-      "grade": "B-",
-      "grades": {
-        "crime": "C+",
-        "transport": "C+",
-        "health": "C+",
-        "natural": "C+"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
+    "lifestyle": {
+      "food": [
         {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
         },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "购物选择多",
-      "多元文化",
-      "科技发达",
-      "自然景观丰富"
-    ],
-    "risks": [
-      "枪支暴力风险",
-      "自然灾害",
-      "医疗费用高"
-    ],
-    "emergency": {
-      "touristPolice": "911",
-      "touristHotline": "1-888-407-4747",
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911",
-      "hospitals": [
-        {
-          "name": "主要公立医院",
-          "phone": "当地急救电话",
-          "address": "市中心区域"
-        }
-      ],
-      "embassies": {
-        "中国大使馆": "请查询当地使馆信息",
-        "紧急领事保护": "+86-10-12308"
-      },
-      "apps": [
-        "Google Translate",
-        "当地打车APP"
-      ],
-      "selfDefense": [
-        "保持警愓，注意周围环境",
-        "携带护照复印件",
-        "保存当地紧急联系方式"
-      ]
-    },
-    "lifestyle": {0-30","desc":"Shake Shack","tip":"错峰排队"},{"name":"披萨","type":"意式","price":"$3-15","desc":"纽约派","tip":"Joe Pizza"}],"attractions":[{"name":"自由女神像","type":"地标","desc":"渡轮登岛","hidden":false},{"name":"中央公园","type":"公园","desc":"曼哈顿绿洲","hidden":false},{"name":"时代广场","type":"地标","desc":"霓虹灯海","hidden":false},{"name":"高线公园","type":"公园","desc":"空中花园","hidden":true}],"festivals":[{"name":"跨年","date":"12月31日","desc":"水晶球"},{"name":"骄傲月","date":"6月","desc":"LGBTQ+"},{"name":"梅西游行","date":"11月","desc":"感恩节"}],"customs":["点头表示","给小费15-20%","排队距离","不打断"],"transport":"地铁24小时，黄色出租","hotspots":[{"area":"哈莱姆区","desc":"犯罪率高","risk":"高"},{"area":"时报广场","desc":"扒窃","risk":"中"}],"safeAreas":["上东区","切尔西","布鲁克林","长岛市"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -18798,83 +18447,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"In-N-Out","type":"美式","price":"$5-12","desc":"传奇汉堡","tip":"秘密菜单"},{"name":"墨西哥卷","type":"墨西哥","price":"$5-15","desc":"Taco","tip":"Laemmle"},{"name":"韩国烤肉","type":"韩式","price":""los_angeles": {
-    "id": "los_angeles",
-    "name": "洛杉矶",
-    "nameEn": "Los Angeles",
-    "country": "美国",
-    "continent": "美洲",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lng": -118.2437,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
-    "safety": {
-      "overall": 73,
-      "grade": "B",
-      "grades": {
-        "crime": "B-",
-        "transport": "B-",
-        "health": "B-",
-        "natural": "B-"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
+    "lifestyle": {
+      "food": [
         {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
         },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "自然景观丰富",
-      "科技发达",
-      "多元文化",
-      "购物选择多"
-    ],
-    "risks": [
-      "枪支暴力风险",
-      "自然灾害",
-      "毒品问题"
-    ],
-    "emergency": {
-      "touristPolice": "911",
-      "touristHotline": "1-888-407-4747",
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911",
-      "hospitals": [
-        {
-          "name": "主要公立医院",
-          "phone": "当地急救电话",
-          "address": "市中心区域"
-        }
-      ],
-      "embassies": {
-        "中国大使馆": "请查询当地使馆信息",
-        "紧急领事保护": "+86-10-12308"
-      },
-      "apps": [
-        "Google Translate",
-        "当地打车APP"
-      ],
-      "selfDefense": [
-        "保持警愓，注意周围环境",
-        "携带护照复印件",
-        "保存当地紧急联系方式"
-      ]
-    },
-    "lifestyle": {5-40","desc":"烤牛排","tip":"Koreatown"},{"name":"明星甜点","type":"甜点","price":"$8-25","desc":"Lady M","tip":"网红"}],"attractions":[{"name":"好莱坞","type":"地标","desc":"星光大道","hidden":false},{"name":"迪士尼","type":"乐园","desc":"第一座","hidden":false},{"name":"圣莫尼卡","type":"海滩","desc":"栈道","hidden":false},{"name":"Getty","type":"博物馆","desc":"艺术","hidden":true}],"festivals":[{"name":"奥斯卡","date":"2月","desc":"颁奖"},{"name":"格莱美","date":"2月","desc":"音乐"},{"name":"动漫展","date":"7月","desc":"Comic-Con"}],"customs":["小费15-20%","文化","注意限速","防晒"],"transport":"需开车，Uber","hotspots":[{"area":"南中央","desc":"犯罪","risk":"高"},{"area":"好莱坞","desc":"游客","risk":"中"}],"safeAreas":["比佛利山","Santa Monica","马里布","尔湾"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -20056,83 +19637,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"蛤蜊浓汤","type":"美式","price":"$8-15","desc":"酸面包","tip":"渔人码头"},{"name":"越南河粉","type":"越南","price":""san_francisco": {
-    "id": "san_francisco",
-    "name": "旧金山",
-    "nameEn": "San Francisco",
-    "country": "美国",
-    "continent": "美洲",
-    "flag": "🇺🇸",
-    "lat": 37.7749,
-    "lng": -122.4194,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
-    "safety": {
-      "overall": 79,
-      "grade": "B+",
-      "grades": {
-        "crime": "B-",
-        "transport": "A-",
-        "health": "B",
-        "natural": "B+"
-      },
-      "safeAreas": [
-        "市中心商业区",
-        "主要旅游区",
-        "高档住宅区",
-        "大学校园周边"
-      ],
-      "hotspots": [
+    "lifestyle": {
+      "food": [
         {
-          "area": "偏僻街道",
-          "desc": "夜间避免单独前往",
-          "risk": "中"
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
         },
-        {
-          "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
-          "risk": "低"
-        }
-      ]
-    },
-    "highlights": [
-      "自然景观丰富",
-      "科技发达",
-      "多元文化",
-      "娱乐设施完善"
-    ],
-    "risks": [
-      "毒品问题",
-      "自然灾害",
-      "治安差异大"
-    ],
-    "emergency": {
-      "touristPolice": "911",
-      "touristHotline": "1-888-407-4747",
-      "police": "911",
-      "ambulance": "911",
-      "fire": "911",
-      "hospitals": [
-        {
-          "name": "主要公立医院",
-          "phone": "当地急救电话",
-          "address": "市中心区域"
-        }
-      ],
-      "embassies": {
-        "中国大使馆": "请查询当地使馆信息",
-        "紧急领事保护": "+86-10-12308"
-      },
-      "apps": [
-        "Google Translate",
-        "当地打车APP"
-      ],
-      "selfDefense": [
-        "保持警愓，注意周围环境",
-        "携带护照复印件",
-        "保存当地紧急联系方式"
-      ]
-    },
-    "lifestyle": {0-20","desc":"Pho","tip":"Turtle Tower"},{"name":"墨西哥卷","type":"墨西哥","price":"$8-16","desc":"Mission","tip":"La Taqueria"},{"name":"酸面包","type":"面包","price":"$3-8","desc":"Sourdough","tip":"Boudin"}],"attractions":[{"name":"金门大桥","type":"地标","desc":"标志","hidden":false},{"name":"恶魔岛","type":"景点","desc":"监狱","hidden":false},{"name":"渔人码头","type":"景点","desc":"海滨","hidden":false},{"name":"彩绘女士","type":"景点","desc":"维多利亚","hidden":true}],"festivals":[{"name":"骄傲游行","date":"6月","desc":"LGBTQ"},{"name":"电影节","date":"10月","desc":"国际"},{"name":"中国新年","date":"1-2月","desc":"华埠"}],"customs":["小费15-20%","注意财物","停车难","早晚冷"],"transport":"地铁Bart，Uber","hotspots":[{"area":"Tenderloin","desc":"差","risk":"高"},{"area":"Mission","desc":"复杂","risk":"中"}],"safeAreas":["Marina","Pacific Heights","Noe Valley","SOMA"]}},
         {
           "name": "街头小吃",
           "type": "小吃",
@@ -28216,7 +27729,15 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {{"food":[{"name":"海鲜拼盘","type":"海鲜","price":"AUD40-100","desc":"龙虾生蚝","tip":"Fish Market"},{"name":"澳式汉堡","type":"美式","price":"AUD12-25","desc":"牛肉芝士","tip":"Merrylands"},{"name":"Flat White","type":"咖啡","price":"AUD4-6","desc":"澳式白咖啡","tip":"网红店"},{"name":"肉派","type":"小吃","price":"AUD5-10","desc":"经典咸派","tip":"港口"}],"attractions":[{"name":"歌剧院","type":"地标","desc":"贝壳造型","hidden":false},{"name":"海港大桥","type":"地标","desc":"可攀登","hidden":false},{"name":"邦迪海滩","type":"海滩","desc":"冲浪圣地","hidden":false},{"name":"蓝山","type":"自然","desc":"桉树森林","hidden":true}],"festivals":[{"name":"跨年烟花","date":"12月31日","desc":"全球最壮观"},{"name":"Vivid","date":"5-6月","desc":"灯光艺术"},{"name":"澳洲日","date":"1月26日","desc":"国庆"}],"customs":["小费非必须","排队距离","公园禁酒","防晒"],"transport":"地铁渡轮，Opal卡","hotspots":[{"area":"红坊","desc":"酒吧区","risk":"中"},{"area":"Kings Cross","desc":"夜生活","risk":"中"}],"safeAreas":["CBD","北悉尼","Mosman","东区"]}},
+    "lifestyle": {
+      "food": [
+        {
+          "name": "当地特色菜",
+          "type": "当地菜",
+          "price": "中等",
+          "desc": "品尝当地传统美食",
+          "tip": "选择当地人推荐的餐厅"
+        },
         {
           "name": "街头小吃",
           "type": "小吃",
