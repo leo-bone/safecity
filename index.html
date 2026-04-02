@@ -2074,13 +2074,15 @@ function generateDefaultLifestyle(data) {
 // ─────────────────────────────────────────────────────
 function renderHotspotsPanel(data) {
   const s = data.safety || {};
+  // 优先使用 lifestyle.hotspots（更详细的真实数据），备用 safety.hotspots
+  const hotspots = data.lifestyle?.hotspots || s.hotspots || [];
   const riskColors = {
     '极高': '#dc2626', '高': '#ef4444', '中高': '#f97316',
     '中': '#f59e0b', '低中': '#22c55e', '法律风险': '#6366f1'
   };
 
   const hotspotsList = document.getElementById('hotspots-list');
-  hotspotsList.innerHTML = (s.hotspots || []).map(h => `
+  hotspotsList.innerHTML = (hotspots || []).map(h => `
     <div class="hotspot-card risk-${h.risk}">
       <div>
         <div class="hotspot-area">⚠️ ${h.area}</div>
