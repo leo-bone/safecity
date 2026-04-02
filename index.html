@@ -1131,9 +1131,11 @@
   <div class="detail-tabs">
     <button class="detail-tab active" onclick="switchDetailTab('safety', this)">🛡️ 安全评估</button>
     <button class="detail-tab" onclick="switchDetailTab('emergency', this)">📞 紧急联系</button>
-    <button class="detail-tab detail-tab-live" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
+    <button class="detail-tab" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
     <button class="detail-tab" onclick="switchDetailTab('lifestyle', this)">🍜 吃喝玩乐</button>
     <button class="detail-tab" onclick="switchDetailTab('hotspots', this)">⚠️ 危险区域</button>
+    <button class="detail-tab" onclick="switchDetailTab('food-safety', this)">🍱 食品安全</button>
+    <button class="detail-tab" onclick="switchDetailTab('disease-prevention', this)">🏥 疾病预防</button>
     <button class="detail-tab" onclick="switchDetailTab('history', this)">📜 历史背景</button>
   </div>
 
@@ -1189,6 +1191,24 @@
     <div id="hotspots-list"></div>
     <div class="sub-section-title">✅ 相对安全区域</div>
     <div id="safe-areas-list"></div>
+  </div>
+
+  <!-- 食品安全面板 -->
+  <div id="panel-food-safety" class="detail-panel">
+    <div class="section-header">
+      <h2>🍱 食品安全指南</h2>
+      <p>当地饮用水、街头美食、餐厅卫生等详细情况</p>
+    </div>
+    <div id="food-safety-content"></div>
+  </div>
+
+  <!-- 疾病预防面板 -->
+  <div id="panel-disease-prevention" class="detail-panel">
+    <div class="section-header">
+      <h2>🏥 疾病预防与健康建议</h2>
+      <p>疫苗接种、传染病风险、季节性疾病预防</p>
+    </div>
+    <div id="disease-prevention-content"></div>
   </div>
 
   <!-- 历史背景面板 -->
@@ -1269,7 +1289,7 @@
 
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
-<script src="data.js?v=202604050000"></script>
+<script src="data.js?v=202604060000"></script>
 <script src="data_enhanced.js?v=202604012200"></script>
 <script src="data_new.js?v=202604012200"></script>
 <script src="realtime-api.js?v=202604012200"></script>
@@ -1396,7 +1416,7 @@ function renderCityGrid(filterContinent = '全部') {
   cities = [...cities].sort((a, b) => b.safetyScore - a.safetyScore);
   
   // 维度名称中文映射
-  const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
+  const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害', food: '食品安全', disease: '疾病预防' };
 
   grid.innerHTML = cities.map((city, idx) => {
     const gs = gradeStyle(city.safetyGrade);
@@ -1419,7 +1439,7 @@ function renderCityGrid(filterContinent = '全部') {
         <div class="city-card-name">${city.name}</div>
         <div class="city-card-country">${city.country} · ${city.continent}</div>
         <div class="city-card-scores">
-          ${Object.entries(grades).slice(0, 4).map(([key, grade]) => {
+          ${Object.entries(grades).slice(0, 6).map(([key, grade]) => {
             const score = gradeToScore(grade);
             return `
             <div class="city-score-item">
@@ -1505,6 +1525,8 @@ function populateCityDetail(data) {
   renderEmergencyPanel(adaptedData);
   renderLifestylePanel(adaptedData);
   renderHotspotsPanel(adaptedData);
+  renderFoodSafetyPanel(adaptedData);
+  renderDiseasePreventionPanel(adaptedData);
   renderHistoryPanel(adaptedData);
 }
 
@@ -2139,6 +2161,95 @@ function renderHotspotsPanel(data) {
 }
 
 // ─────────────────────────────────────────────────────
+// 食品安全面板
+// ─────────────────────────────────────────────────────
+function renderFoodSafetyPanel(data) {
+  const fs = data.foodSafety || {};
+  const contentEl = document.getElementById('food-safety-content');
+  
+  if (!fs.summary) {
+    contentEl.innerHTML = '<div style="color:var(--text-muted);padding:20px;">暂无该城市食品安全数据</div>';
+    return;
+  }
+  
+  contentEl.innerHTML = `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h3 style="margin:0 0 12px;font-size:16px;">📋 总体情况</h3>
+      <p style="color:var(--text);margin:0;line-height:1.7;">${fs.summary}</p>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🚰 自来水</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.tapWater || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🦐 海鲜</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.seafood || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🍢 街头美食</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.streetFood || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:#ef4444;">⚠️ 避免食用</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.avoid || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;grid-column:1/-1;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🍽️ 餐厅建议</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.restaurants || '无数据'}</p>
+      </div>
+    </div>
+  `;
+}
+
+// ─────────────────────────────────────────────────────
+// 疾病预防面板
+// ─────────────────────────────────────────────────────
+function renderDiseasePreventionPanel(data) {
+  const dp = data.diseasePrevention || {};
+  const contentEl = document.getElementById('disease-prevention-content');
+  
+  if (!dp.summary) {
+    contentEl.innerHTML = '<div style="color:var(--text-muted);padding:20px;">暂无该城市疾病预防数据</div>';
+    return;
+  }
+  
+  contentEl.innerHTML = `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h3 style="margin:0 0 12px;font-size:16px;">📋 总体情况</h3>
+      <p style="color:var(--text);margin:0;line-height:1.7;">${dp.summary}</p>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">💉 疫苗建议</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${dp.vaccines || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:#ef4444;">🦠 传染病风险</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${dp.diseases || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🌡️ 气候与健康</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${dp.weather || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">💡 健康建议</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${dp.tips || '无数据'}</p>
+      </div>
+    </div>
+  `;
+}
+
+// ─────────────────────────────────────────────────────
 // 历史背景面板 + 雷达图
 // ─────────────────────────────────────────────────────
 function renderHistoryPanel(data) {
@@ -2277,7 +2388,7 @@ function renderSearchResults(results) {
   const tempGrid = filteredIndex.map((city, idx) => {
     const gs = gradeStyle(city.safetyGrade);
     const data = CITY_DATABASE[city.id];
-    const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
+    const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害', food: '食品安全', disease: '疾病预防' };
     const grades = (data.safety && data.safety.grades) || {};
     return `
     <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
@@ -2295,7 +2406,7 @@ function renderSearchResults(results) {
         <div class="city-card-name">${city.name}</div>
         <div class="city-card-country">${city.country} · ${data.continent}</div>
         <div class="city-card-scores">
-          ${Object.entries(grades).slice(0, 4).map(([key, grade]) => {
+          ${Object.entries(grades).slice(0, 6).map(([key, grade]) => {
             const score = gradeToScore(grade);
             return `
             <div class="city-score-item">

@@ -35,7 +35,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "B",
         "health": "B+",
-        "natural": "B"
+        "natural": "B",
+        "food": "A",
+        "disease": "A"
       },
       "hotspots": [
         {
@@ -258,6 +260,21 @@ var CITY_DATABASE = {
       "name": "东京大学医学部附属医院",
       "phone": "+81-3-5800-8630",
       "address": "东京都文京本乡7-3-1"
+    },
+    "foodSafety": {
+      "summary": "东京食品安全标准严格，自来水可直饮，海鲜新鲜度有保障。",
+      "tapWater": "可直饮，日本自来水达到饮用标准",
+      "seafood": "筑地市场海鲜新鲜，寿司生食安全，建议选择人流量大的餐厅",
+      "streetFood": "拉面、便利店食品（如7-11、全家）安全性高",
+      "avoid": "避免食用来源不明的生蚝和生拌牛肉",
+      "restaurants": "米其林餐厅食品安全有保障，路边小店需注意卫生"
+    },
+    "diseasePrevention": {
+      "summary": "东京医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意预防",
+      "weather": "梅雨季节（6-7月）注意防潮防霉，台风季（8-9月）减少外出",
+      "tips": "春季花粉过敏严重，需备抗过敏药"
     }
   },
   "singapore": {
@@ -277,7 +294,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "hotspots": [
         {
@@ -489,6 +508,21 @@ var CITY_DATABASE = {
       "name": "Singapore General Hospital",
       "phone": "+65-6222-3322",
       "address": "Outram Rd, Singapore 169608"
+    },
+    "foodSafety": {
+      "summary": "新加坡食品安全世界领先，小贩中心卫生可靠。",
+      "tapWater": "可直饮",
+      "seafood": "辣椒蟹等海鲜安全新鲜",
+      "streetFood": "小贩中心（巴刹）食品安全有政府监管",
+      "avoid": "避免食用未煮熟的海鲜",
+      "restaurants": "米其林餐厅和小贩中心都安全"
+    },
+    "diseasePrevention": {
+      "summary": "新加坡医疗发达，但登革热需注意。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "登革热高发期（5-10月）注意防蚊",
+      "weather": "全年高温多雨",
+      "tips": "雨季注意蚊虫，使用驱蚊剂"
     }
   },
   "seoul": {
@@ -508,7 +542,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -741,6 +777,20 @@ var CITY_DATABASE = {
       "name": "Seoul National University Hospital",
       "phone": "+82-2-760-2114",
       "address": "首尔市龙山区梨泰院1洞"
+    },
+    "foodSafety": {
+      "summary": "首尔食品安全监管严格，餐厅卫生好。",
+      "tapWater": "可直饮",
+      "streetFood": "韩式烤肉、炸鸡、辣炒年糕安全性高",
+      "avoid": "避免食用生拌牛肉和活章鱼",
+      "restaurants": "明洞、弘大餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "韩国医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "温带气候，冬季寒冷",
+      "tips": "冬季注意保暖，防止流感"
     }
   },
   "hong_kong": {
@@ -760,7 +810,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "B",
         "health": "B+",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -994,6 +1046,20 @@ var CITY_DATABASE = {
       "name": "玛丽医院",
       "phone": "+852-2255-3838",
       "address": "香港薄扶林道102号"
+    },
+    "foodSafety": {
+      "summary": "香港食品安全监管严格，餐厅卫生好。",
+      "tapWater": "可直饮",
+      "streetFood": "云吞面、奶茶、鸡蛋仔安全性高",
+      "avoid": "避免食用未煮熟的海鲜",
+      "restaurants": "米其林餐厅和街边小店都需查看卫生评级"
+    },
+    "diseasePrevention": {
+      "summary": "香港医疗先进，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "流感季节注意",
+      "weather": "春季潮湿，夏季闷热",
+      "tips": "回南天注意防潮"
     }
   },
   "beijing": {
@@ -1013,7 +1079,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "B+",
         "health": "B+",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -1241,6 +1309,20 @@ var CITY_DATABASE = {
       "name": "协和医院",
       "phone": "+86-10-6915-6114",
       "address": "北京市东城区帅府园1号"
+    },
+    "foodSafety": {
+      "summary": "北京食品安全监管越来越严格。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "烤鸭、炸酱面安全性高",
+      "avoid": "避免食用不明来源的街头食品",
+      "restaurants": "商场卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "中国医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带季风气候",
+      "tips": "冬季注意防霾"
     }
   },
   "shanghai": {
@@ -1260,7 +1342,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A-",
         "health": "B+",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -1488,6 +1572,20 @@ var CITY_DATABASE = {
       "name": "华山医院",
       "phone": "+86-21-5288-9999",
       "address": "上海静安区乌鲁木齐中路12号"
+    },
+    "foodSafety": {
+      "summary": "上海食品安全监管严格，大城市卫生较好。",
+      "tapWater": "建议饮用瓶装水或烧开",
+      "streetFood": "生煎、小笼包等传统美食安全性高",
+      "avoid": "避免食用来源不明的街头切水果",
+      "restaurants": "商场餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "上海医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "流感季节注意",
+      "weather": "冬季寒冷，夏季闷热",
+      "tips": "雾霾季节戴口罩"
     }
   },
   "bangkok": {
@@ -1507,7 +1605,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "A-",
         "health": "B+",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -1741,6 +1841,20 @@ var CITY_DATABASE = {
       "name": "Bumrungrad Hospital",
       "phone": "+66-2-066-8888",
       "address": "33 Sukhumvit Soi 3, Bangkok"
+    },
+    "foodSafety": {
+      "summary": "曼谷街头美食丰富，但卫生状况参差不齐。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "炒饭、炒面、泰式烧烤普遍安全，柠檬茶卫生",
+      "avoid": "避免食用未煮熟的海鲜和生菜沙拉",
+      "restaurants": "商场内餐厅卫生好，街边摊需选择人流多的"
+    },
+    "diseasePrevention": {
+      "summary": "曼谷需注意登革热和食物中毒。",
+      "vaccines": "建议接种甲肝、伤寒疫苗",
+      "diseases": "登革热、疟疾低风险",
+      "weather": "热带气候，3-5月最热",
+      "tips": "使用驱蚊水，避免蚊虫叮咬"
     }
   },
   "kuala_lumpur": {
@@ -1760,7 +1874,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A",
         "health": "B+",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -1988,6 +2104,20 @@ var CITY_DATABASE = {
       "name": "Prince Court Medical Centre",
       "phone": "+60-3-2160-0000",
       "address": "39 Jalan Kia Peng, Kuala Lumpur"
+    },
+    "foodSafety": {
+      "summary": "吉隆坡街头美食多，卫生状况一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "椰浆饭、沙爹、肉骨茶安全性一般",
+      "avoid": "避免食用街头冰品和生食",
+      "restaurants": "商场内餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "马来西亚需注意登革热。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "登革热、疟疾低风险",
+      "weather": "热带雨林气候，全年高温",
+      "tips": "使用驱蚊水，只喝瓶装水"
     }
   },
   "taipei": {
@@ -2007,7 +2137,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -2241,6 +2373,20 @@ var CITY_DATABASE = {
       "name": "台大医院",
       "phone": "+886-2-2312-3456",
       "address": "台北市中正区常德街1号"
+    },
+    "foodSafety": {
+      "summary": "台北食品安全监管严格，夜市丰富。",
+      "tapWater": "可直饮",
+      "streetFood": "珍珠奶茶、卤肉饭安全性高",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "米其林餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "台湾医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "亚热带气候",
+      "tips": "注意防晒"
     }
   },
   "osaka": {
@@ -2260,7 +2406,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "新宿区（繁华区域）",
@@ -2500,6 +2648,20 @@ var CITY_DATABASE = {
       "name": "大阪大学医学部附属医院",
       "phone": "+81-6-6879-5111",
       "address": "大阪府吹田市山田丘2-15"
+    },
+    "foodSafety": {
+      "summary": "大阪食品安全好，美食天堂。",
+      "tapWater": "可直饮",
+      "streetFood": "章鱼烧、大阪烧安全性高",
+      "avoid": "道顿堀部分价格偏高",
+      "restaurants": "心斋桥餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "日本医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候",
+      "tips": "注意防晒"
     }
   },
   "mumbai": {
@@ -2519,7 +2681,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -2752,6 +2916,20 @@ var CITY_DATABASE = {
       "name": "Kokilaben Dhirubhai Ambani Hospital",
       "phone": "+91-22-3099-9999",
       "address": "Andheri West, Mumbai"
+    },
+    "foodSafety": {
+      "summary": "孟买街头美食多但卫生挑战大。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "咖喱饺、帕卡布拉安全性一般",
+      "avoid": "避免食用街头冰品和生水",
+      "restaurants": "高档酒店餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "印度需注意多种传染病。",
+      "vaccines": "建议接种甲肝、伤寒、霍乱",
+      "diseases": "疟疾、登革热、霍乱风险",
+      "weather": "季风气候，6-9月多雨",
+      "tips": "只喝瓶装水，避免生食，使用驱蚊水"
     }
   },
   "delhi": {
@@ -2771,7 +2949,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B",
         "health": "B",
-        "natural": "B"
+        "natural": "B",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -3004,6 +3184,20 @@ var CITY_DATABASE = {
       "name": "All India Institute of Medical Sciences",
       "phone": "+91-11-2658-8500",
       "address": "Ansari Nagar, New Delhi"
+    },
+    "foodSafety": {
+      "summary": "德里街头美食丰富但卫生挑战大。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "咖喱、奶茶安全性一般",
+      "avoid": "避免食用街头冰品和未煮熟的食物",
+      "restaurants": "高档酒店餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "印度需注意多种传染病。",
+      "vaccines": "建议接种甲肝、伤寒、霍乱",
+      "diseases": "疟疾、登革热、霍乱风险",
+      "weather": "季风气候",
+      "tips": "只喝瓶装水，使用驱蚊水"
     }
   },
   "jakarta": {
@@ -3023,7 +3217,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "B+",
         "health": "B",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -3251,6 +3447,20 @@ var CITY_DATABASE = {
       "name": "RS Pondok Indah",
       "phone": "+62-21-765-7521",
       "address": "Jl. Metro Duta Kav.21, Jakarta"
+    },
+    "foodSafety": {
+      "summary": "雅加达食品安全一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "炒饭、炒面安全性一般",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "商场内餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "印尼需注意登革热。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "登革热、疟疾风险",
+      "weather": "热带雨林气候",
+      "tips": "使用驱蚊水"
     }
   },
   "ho_chi_minh": {
@@ -3270,7 +3480,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A-",
         "health": "A-",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -3499,6 +3711,20 @@ var CITY_DATABASE = {
       "name": "Cho Ray Hospital",
       "phone": "+84-28-3855-4137",
       "address": "201B Nguyen Chi Thanh St, HCMC"
+    },
+    "foodSafety": {
+      "summary": "胡志明市街头美食多但卫生需注意。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "越南河粉、法棍安全性一般",
+      "avoid": "避免食用生菜沙拉",
+      "restaurants": "高端餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "越南需注意登革热。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "登革热、疟疾低风险",
+      "weather": "热带季风气候",
+      "tips": "使用驱蚊水，只喝瓶装水"
     }
   },
   "manila": {
@@ -3518,7 +3744,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B",
         "health": "B",
-        "natural": "B"
+        "natural": "B",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -3746,6 +3974,20 @@ var CITY_DATABASE = {
       "name": "Makati Medical Center",
       "phone": "+63-2-888-8999",
       "address": "2 Amorsolo St, Makati"
+    },
+    "foodSafety": {
+      "summary": "马尼拉食品安全一般，街头美食多。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "菲律宾烤鸡、阿多博安全性一般",
+      "avoid": "避免食用街头冰品和生食",
+      "restaurants": "马卡蒂区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "菲律宾需注意登革热。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "登革热、疟疾风险",
+      "weather": "热带气候",
+      "tips": "使用驱蚊水，只喝瓶装水"
     }
   },
   "dubai": {
@@ -3765,7 +4007,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -3994,6 +4238,21 @@ var CITY_DATABASE = {
       "name": "Dubai Hospital",
       "phone": "+971-4-222-1211",
       "address": "Al Khaleej Road, Dubai"
+    },
+    "foodSafety": {
+      "summary": "迪拜食品安全标准高，餐厅多为高端酒店。",
+      "tapWater": "建议购买瓶装水，自来水含盐量高",
+      "seafood": "海鲜新鲜，但部分进口食品需注意",
+      "streetFood": "沙瓦尔玛等中东美食安全性高",
+      "avoid": "路边摊可能不新鲜",
+      "restaurants": "酒店内餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "迪拜气候极端，注意防暑和中东呼吸综合征。",
+      "vaccines": "建议接种流感疫苗",
+      "diseases": "无疟疾，夏季注意热射病",
+      "weather": "夏季温度可达45°C以上，冬季温暖",
+      "tips": "夏季大量补充水分，避免中午外出"
     }
   },
   "doha": {
@@ -4013,7 +4272,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A-",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -4260,7 +4521,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A-",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -4497,7 +4760,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -4734,7 +4999,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "B+",
         "health": "B+",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -4958,6 +5225,20 @@ var CITY_DATABASE = {
       "name": "Tel Aviv Sourasky Medical Center",
       "phone": "+972-3-697-4444",
       "address": "Weizman St 14, Tel Aviv"
+    },
+    "foodSafety": {
+      "summary": "特拉维夫食品安全好，地中海美食丰富。",
+      "tapWater": "可直饮",
+      "streetFood": "沙瓦尔玛、鹰嘴豆泥安全性高",
+      "avoid": "老城部分餐厅卫生一般",
+      "restaurants": "雅法区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "以色列医疗发达，但需注意中东呼吸综合征。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "地中海气候，夏季高温",
+      "tips": "夏季注意防暑"
     }
   },
   "istanbul": {
@@ -4977,7 +5258,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "A-",
         "health": "B",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -5206,6 +5489,20 @@ var CITY_DATABASE = {
       "name": "Acıbadem Hospital",
       "phone": "+90-444-5544",
       "address": "Cad. No: 22, Istanbul"
+    },
+    "foodSafety": {
+      "summary": "伊斯坦布尔食品安全一般，街头美食多。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "烤肉、土耳其披萨安全性一般",
+      "avoid": "避免食用未煮熟的肉类",
+      "restaurants": "贝尤卢区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "土耳其需注意食物中毒。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "无疟疾",
+      "weather": "温带气候，冬季温和",
+      "tips": "只喝瓶装水"
     }
   },
   "bali": {
@@ -5225,7 +5522,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "B-",
         "health": "B-",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -5454,6 +5753,20 @@ var CITY_DATABASE = {
       "name": "Sanglah Hospital",
       "phone": "+62-361-227911",
       "address": "Jl. Pulau Bali No.2, Denpasar"
+    },
+    "foodSafety": {
+      "summary": "巴厘岛食品安全不错，游客区卫生好。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "印尼炒饭、烤串安全性一般",
+      "avoid": "避免食用街头生食和冰品",
+      "restaurants": "游客区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "巴厘岛需注意登革热。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "登革热、疟疾低风险",
+      "weather": "热带气候，干季（4-10月）适合旅游",
+      "tips": "使用驱蚊水，只喝瓶装水"
     }
   },
   "chiangmai": {
@@ -5473,7 +5786,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "C",
         "health": "B-",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -5701,6 +6016,20 @@ var CITY_DATABASE = {
       "name": "Chiang Mai Ram Hospital",
       "phone": "+66-53-920-300",
       "address": "8 Siriporn Rd, Chiang Mai"
+    },
+    "foodSafety": {
+      "summary": "清迈食品安全不错。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "泰北美食安全性高",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "老城餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "泰国需注意登革热。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "登革热风险",
+      "weather": "热带季风气候",
+      "tips": "使用驱蚊水"
     }
   },
   "phuket": {
@@ -5720,7 +6049,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "B+",
         "health": "B+",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -5948,6 +6279,20 @@ var CITY_DATABASE = {
       "name": "Phuket Hospital",
       "phone": "+66-76-361-234",
       "address": "353 Yaowarat Rd, Phuket"
+    },
+    "foodSafety": {
+      "summary": "普吉岛食品安全不错，游客区卫生好。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "泰式海鲜安全性高",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "海滩餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "泰国需注意登革热。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "登革热、疟疾低风险",
+      "weather": "热带气候",
+      "tips": "使用驱蚊水"
     }
   },
   "penang": {
@@ -5967,7 +6312,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -6194,6 +6541,20 @@ var CITY_DATABASE = {
       "name": "Penang Hospital",
       "phone": "+60-4-229-3333",
       "address": "Jalan Perak, Georgetown, Penang"
+    },
+    "foodSafety": {
+      "summary": "槟城食品安全世界知名，街头美食丰富。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "叻沙、炒粿条安全性高",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "小贩中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "马来西亚需注意登革热。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "登革热风险",
+      "weather": "热带气候",
+      "tips": "使用驱蚊水"
     }
   },
   "hanoi": {
@@ -6213,7 +6574,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A-",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -6441,6 +6804,20 @@ var CITY_DATABASE = {
       "name": "Vietnam Military Hospital 108",
       "phone": "+84-24-6686-0000",
       "address": "1 Tran Hung Dao Str, Hanoi"
+    },
+    "foodSafety": {
+      "summary": "河内街头美食丰富但卫生需注意。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "越南河粉、烤肉米粉安全性一般",
+      "avoid": "避免食用生菜沙拉和未煮熟的食物",
+      "restaurants": "高端餐厅和连锁店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "越南需注意登革热和食物中毒。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "登革热、疟疾低风险",
+      "weather": "热带季风气候，5-9月多雨",
+      "tips": "使用驱蚊水，只喝瓶装水"
     }
   },
   "bangalore": {
@@ -6460,7 +6837,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A-",
         "health": "B+",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -6683,6 +7062,20 @@ var CITY_DATABASE = {
       "name": "Manipal Hospital",
       "phone": "+91-80-4000-2100",
       "address": "98, HAL Road, Bangalore"
+    },
+    "foodSafety": {
+      "summary": "班加罗尔食品安全一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "南印度美食安全性一般",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "高端酒店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "印度需注意登革热。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "登革热、疟疾风险",
+      "weather": "热带季风气候",
+      "tips": "使用驱蚊水"
     }
   },
   "chennai": {
@@ -6702,7 +7095,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "B-",
         "health": "B+",
-        "natural": "B"
+        "natural": "B",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -6925,6 +7320,20 @@ var CITY_DATABASE = {
       "name": "Apollo Hospital",
       "phone": "+91-44-2829-0202",
       "address": "21/2 Old #14, Chennai"
+    },
+    "foodSafety": {
+      "summary": "金奈食品安全一般，南印度美食丰富。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "南印度素食安全性一般",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "高端酒店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "印度需注意登革热。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "登革热风险",
+      "weather": "热带气候",
+      "tips": "使用驱蚊水"
     }
   },
   "kolkata": {
@@ -6944,7 +7353,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "C",
         "health": "C+",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -7167,6 +7578,20 @@ var CITY_DATABASE = {
       "name": "CMRI Hospital",
       "phone": "+91-33-3090-3000",
       "address": "7/2 Diamond Harbour Rd, Kolkata"
+    },
+    "foodSafety": {
+      "summary": "加尔各答食品安全一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "孟加拉美食、奶茶安全性一般",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "高端酒店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "印度需注意霍乱和登革热。",
+      "vaccines": "建议接种甲肝、伤寒",
+      "diseases": "霍乱、登革热风险",
+      "weather": "季风气候",
+      "tips": "只喝瓶装水"
     }
   },
   "hyderabad": {
@@ -7186,7 +7611,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C+",
         "health": "C",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -7428,7 +7855,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "B+",
         "health": "B",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -7657,6 +8086,20 @@ var CITY_DATABASE = {
       "name": "北大深圳医院",
       "phone": "+86-755-8392-3333",
       "address": "深圳市福田区莲花路1120号"
+    },
+    "foodSafety": {
+      "summary": "深圳食品安全监管严格。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "粤菜、茶点安全性高",
+      "avoid": "城中村部分卫生一般",
+      "restaurants": "高端商场卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "中国医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "亚热带季风气候",
+      "tips": "夏季注意防台风"
     }
   },
   "guangzhou": {
@@ -7676,7 +8119,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "B+",
         "health": "A",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -7900,6 +8345,20 @@ var CITY_DATABASE = {
       "name": "中山大学附属第一医院",
       "phone": "+86-20-8775-5766",
       "address": "广州市越秀区中山二路58号"
+    },
+    "foodSafety": {
+      "summary": "广州食品安全监管严格，粤菜发源地。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "早茶、点心安全性高",
+      "avoid": "避免食用生食",
+      "restaurants": "早茶店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "中国医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "亚热带季风气候",
+      "tips": "回南天注意防潮"
     }
   },
   "chengdu": {
@@ -7919,7 +8378,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "B+",
         "health": "A-",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -8143,6 +8604,20 @@ var CITY_DATABASE = {
       "name": "四川大学华西医院",
       "phone": "+86-28-8542-2114",
       "address": "成都市武侯区国学巷37号"
+    },
+    "foodSafety": {
+      "summary": "成都食品安全不错，川菜丰富。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "火锅、串串安全性一般",
+      "avoid": "避免食用未煮熟的食物",
+      "restaurants": "正规火锅店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "中国医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "亚热带季风气候",
+      "tips": "夏季注意防辣刺激"
     }
   },
   "hangzhou": {
@@ -8162,7 +8637,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A",
         "health": "A-",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -8385,6 +8862,20 @@ var CITY_DATABASE = {
       "name": "浙大一院",
       "phone": "+86-571-8723-6666",
       "address": "杭州市上城区庆春路79号"
+    },
+    "foodSafety": {
+      "summary": "杭州食品安全监管严格。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "西湖醋鱼、东坡肉安全性高",
+      "avoid": "避免食用不明来源的食品",
+      "restaurants": "景区周边卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "中国医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "亚热带季风气候",
+      "tips": "梅雨季节注意防潮"
     }
   },
   "xian": {
@@ -8404,7 +8895,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -8628,6 +9121,20 @@ var CITY_DATABASE = {
       "name": "西京医院",
       "phone": "+86-29-8477-5346",
       "address": "西安市新城区长乐西路169号"
+    },
+    "foodSafety": {
+      "summary": "西安食品安全不错，面食丰富。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "肉夹馍、凉皮安全性高",
+      "avoid": "避免食用不明来源的街头食品",
+      "restaurants": "回民街部分需注意"
+    },
+    "diseasePrevention": {
+      "summary": "中国医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带季风气候",
+      "tips": "注意饮食卫生"
     }
   },
   "london": {
@@ -8647,7 +9154,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -8881,6 +9390,21 @@ var CITY_DATABASE = {
       "name": "St Thomas Hospital",
       "phone": "+44-20-7188-7188",
       "address": "Westminster Bridge Road"
+    },
+    "foodSafety": {
+      "summary": "伦敦食品安全监管严格，餐厅卫生状况良好。",
+      "tapWater": "可直饮",
+      "seafood": "炸鱼薯条传统美食，食材新鲜",
+      "streetFood": " Borough Market 市集食品安全有保障",
+      "avoid": "唐人街部分小餐厅卫生一般",
+      "restaurants": "高端餐厅卫生好，中低端需查看评分"
+    },
+    "diseasePrevention": {
+      "summary": "英国医疗系统完善，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "常年多雨，带好雨伞",
+      "tips": "冬季注意保暖，防止流感"
     }
   },
   "paris": {
@@ -8900,7 +9424,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -9135,6 +9661,21 @@ var CITY_DATABASE = {
       "name": "Hôpital Pitié-Salpêtrière",
       "phone": "+33-1-84-56-10-10",
       "address": "47-83 Boulevard de l'Hôpital"
+    },
+    "foodSafety": {
+      "summary": "巴黎食品安全总体良好，但需注意部分区域卫生。",
+      "tapWater": "可直饮，自来水质量符合欧盟标准",
+      "seafood": "新鲜但价格较高，建议在正规市场购买",
+      "streetFood": "可丽饼、烘焙食品较安全，街头烤肉注意观察",
+      "avoid": "避免地铁站附近的流动食品摊",
+      "restaurants": "左岸餐厅卫生较好，香榭丽舍大街价格偏高"
+    },
+    "diseasePrevention": {
+      "summary": "法国医疗水平高，但需注意季节性传染病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "冬季阴雨多，夏季偶尔高温",
+      "tips": "夏季注意防晒，冬季带好雨具"
     }
   },
   "berlin": {
@@ -9154,7 +9695,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -9379,6 +9922,20 @@ var CITY_DATABASE = {
       "name": "Charité - Universitätsmedizin Berlin",
       "phone": "+49-30-450-50",
       "address": "Charitéplatz 1, Berlin"
+    },
+    "foodSafety": {
+      "summary": "柏林食品安全标准高，超市和餐厅卫生好。",
+      "tapWater": "可直饮",
+      "streetFood": "咖喱香肠、柏林贝果安全性高",
+      "avoid": "部分土耳其餐厅卫生一般",
+      "restaurants": "高端餐厅和连锁店卫生有保障"
+    },
+    "diseasePrevention": {
+      "summary": "德国医疗发达，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感注意",
+      "weather": "冬季寒冷，夏季温和",
+      "tips": "冬季注意保暖"
     }
   },
   "amsterdam": {
@@ -9398,7 +9955,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -9631,6 +10190,20 @@ var CITY_DATABASE = {
       "name": "AMC Amsterdam",
       "phone": "+31-20-566-9111",
       "address": "Meibergdreef 9, Amsterdam"
+    },
+    "foodSafety": {
+      "summary": "阿姆斯特丹食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "荷兰煎饼、薯条安全性高",
+      "avoid": "大麻咖啡店食品不推荐",
+      "restaurants": "中心区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "荷兰医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "海洋性气候，阴雨天多",
+      "tips": "全年带雨伞"
     }
   },
   "vienna": {
@@ -9650,7 +10223,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "B-",
         "health": "B-",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -9877,6 +10452,20 @@ var CITY_DATABASE = {
       "name": "AKH Wien",
       "phone": "+43-1-40400-0",
       "address": "Währinger Gürtel 18-20, Vienna"
+    },
+    "foodSafety": {
+      "summary": "维也纳食品安全标准高。",
+      "tapWater": "可直饮",
+      "streetFood": "维也纳炸牛排、萨赫蛋糕安全性高",
+      "avoid": "游客区价格偏高",
+      "restaurants": "市中心餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "奥地利医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候，冬季寒冷",
+      "tips": "冬季注意保暖"
     }
   },
   "zurich": {
@@ -9896,7 +10485,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -10123,6 +10714,20 @@ var CITY_DATABASE = {
       "name": "Universitätsspital Zürich",
       "phone": "+41-44-255-1111",
       "address": "Rämistrasse 100, Zürich"
+    },
+    "foodSafety": {
+      "summary": "苏黎世食品安全世界领先。",
+      "tapWater": "可直饮",
+      "streetFood": "瑞士奶酪火锅、巧克力安全性高",
+      "avoid": "普通餐厅价格极高",
+      "restaurants": "米其林餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "瑞士医疗世界领先，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候，四季分明",
+      "tips": "冬季滑雪注意安全"
     }
   },
   "stockholm": {
@@ -10142,7 +10747,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A-",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -10397,6 +11004,20 @@ var CITY_DATABASE = {
       "name": "Karolinska Sjukhuset",
       "phone": "+46-8-517-70000",
       "address": "Solna, Stockholm"
+    },
+    "foodSafety": {
+      "summary": "斯德哥尔摩食品安全标准高。",
+      "tapWater": "可直饮",
+      "streetFood": "瑞典肉丸、三明治安全性高",
+      "avoid": "中央车站附近价格偏高",
+      "restaurants": "老城餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "瑞典医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "北欧气候，冬季寒冷多雪",
+      "tips": "冬季注意保暖防滑"
     }
   },
   "oslo": {
@@ -10416,7 +11037,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A",
         "health": "A-",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -10666,6 +11289,20 @@ var CITY_DATABASE = {
       "name": "Oslo University Hospital",
       "phone": "+47-22-93-40-40",
       "address": "Kirkeveien 166, Oslo"
+    },
+    "foodSafety": {
+      "summary": "奥斯陆食品安全标准高。",
+      "tapWater": "可直饮",
+      "streetFood": "三文鱼、驯鹿肉安全性高",
+      "avoid": "价格普遍较高",
+      "restaurants": "市中心餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "挪威医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "北欧气候，冬季寒冷",
+      "tips": "冬季注意保暖"
     }
   },
   "copenhagen": {
@@ -10685,7 +11322,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A",
         "health": "B+",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -10940,6 +11579,20 @@ var CITY_DATABASE = {
       "name": "Rigshospitalet",
       "phone": "+45-35-45-35-45",
       "address": "Blegdamsvej 9, Copenhagen"
+    },
+    "foodSafety": {
+      "summary": "哥本哈根食品安全世界领先。",
+      "tapWater": "可直饮",
+      "streetFood": "丹麦开放式三明治安全性高",
+      "avoid": "新港附近价格偏高",
+      "restaurants": "高端餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "丹麦医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "海洋性气候，多风多雨",
+      "tips": "全年带雨伞"
     }
   },
   "helsinki": {
@@ -10959,7 +11612,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -11209,6 +11864,20 @@ var CITY_DATABASE = {
       "name": "Helsinki University Hospital",
       "phone": "+358-9-4711",
       "address": "Topeliuksenkatu 5, Helsinki"
+    },
+    "foodSafety": {
+      "summary": "赫尔辛基食品安全标准高。",
+      "tapWater": "可直饮",
+      "streetFood": "三文鱼汤、肉桂卷安全性高",
+      "avoid": "价格普遍较高",
+      "restaurants": "市中心餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "芬兰医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "北欧气候，冬季寒冷",
+      "tips": "冬季注意保暖"
     }
   },
   "madrid": {
@@ -11228,7 +11897,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -11461,6 +12132,20 @@ var CITY_DATABASE = {
       "name": "Hospital Clínico San Carlos",
       "phone": "+34-91-330-3000",
       "address": "Calle del Prof Martín Lagos, Madrid"
+    },
+    "foodSafety": {
+      "summary": "马德里食品安全好，西班牙餐饮卫生。",
+      "tapWater": "可直饮",
+      "streetFood": "西班牙油条、吉事果安全性高",
+      "avoid": "太阳门广场周边价格偏高",
+      "restaurants": "马约尔广场周边传统餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "西班牙医疗好，夏季注意肠道疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，夏季注意食物中毒",
+      "weather": "地中海气候，夏季高温",
+      "tips": "夏季注意防晒防中暑"
     }
   },
   "rome": {
@@ -11480,7 +12165,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -11709,6 +12396,20 @@ var CITY_DATABASE = {
       "name": "Policlinico Gemelli",
       "phone": "+39-06-30151",
       "address": "Largo Agostino Gemelli 8, Roma"
+    },
+    "foodSafety": {
+      "summary": "罗马食品安全总体良好，传统意餐安全可靠。",
+      "tapWater": "可直饮，喷泉饮用水安全",
+      "streetFood": "披萨、意面安全性高，冰激凌店卫生",
+      "avoid": "景区周边餐厅价格偏高但卫生一般",
+      "restaurants": "Trastevere 区餐厅地道且卫生"
+    },
+    "diseasePrevention": {
+      "summary": "意大利医疗好，夏季注意肠道疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，夏季注意食物中毒",
+      "weather": "夏季高温干旱，冬季温和",
+      "tips": "夏季多喝水，注意防晒"
     }
   },
   "barcelona": {
@@ -11728,7 +12429,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -11959,6 +12662,21 @@ var CITY_DATABASE = {
       "name": "Hospital Clínic de Barcelona",
       "phone": "+34-93-227-5400",
       "address": "Villarroel 170, Barcelona"
+    },
+    "foodSafety": {
+      "summary": "巴塞罗那食品安全好，海鲜新鲜。",
+      "tapWater": "可直饮",
+      "seafood": "海鲜安全新鲜",
+      "streetFood": "西班牙油条、炸鱿鱼安全性高",
+      "avoid": "兰布拉大道价格偏高",
+      "restaurants": "哥特区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "西班牙医疗好，夏季注意肠道疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候，夏季高温",
+      "tips": "夏季注意防晒"
     }
   },
   "lisbon": {
@@ -11978,7 +12696,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -12233,6 +12953,20 @@ var CITY_DATABASE = {
       "name": "Hospital de Santa Maria",
       "phone": "+351-21-780-2000",
       "address": "Av. Professor Egas Moniz, Lisbon"
+    },
+    "foodSafety": {
+      "summary": "里斯本食品安全好，葡式美食丰富。",
+      "tapWater": "可直饮",
+      "streetFood": "葡式蛋挞、鳕鱼安全性高",
+      "avoid": "阿尔法玛老城部分餐厅卫生一般",
+      "restaurants": "贝伦区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "葡萄牙医疗好，夏季注意肠道疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候，夏季高温",
+      "tips": "夏季注意防晒"
     }
   },
   "prague": {
@@ -12252,7 +12986,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -12507,6 +13243,20 @@ var CITY_DATABASE = {
       "name": "University Hospital Motol",
       "phone": "+420-224-433-000",
       "address": "V Úvalu 84, Prague 5"
+    },
+    "foodSafety": {
+      "summary": "布拉格食品安全不错，传统餐厅卫生好。",
+      "tapWater": "可直饮",
+      "streetFood": "捷克炖肉、啤酒安全性高",
+      "avoid": "老城广场周边价格偏高",
+      "restaurants": "卡洛维发利区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "捷克医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候，冬季寒冷",
+      "tips": "冬季注意保暖"
     }
   },
   "warsaw": {
@@ -12526,7 +13276,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "B+",
         "health": "A",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -12776,6 +13528,20 @@ var CITY_DATABASE = {
       "name": "Warsaw Medical University Hospital",
       "phone": "+48-22-599-2200",
       "address": "ul. Banacha 1a, Warsaw"
+    },
+    "foodSafety": {
+      "summary": "华沙食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "波兰炖菜安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "波兰医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候",
+      "tips": "冬季注意保暖"
     }
   },
   "athens": {
@@ -12795,7 +13561,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "A-",
         "health": "B+",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -13050,6 +13818,20 @@ var CITY_DATABASE = {
       "name": "General Hospital of Athens",
       "phone": "+30-213-203-4000",
       "address": "Vasilissis Sofias Ave, Athens"
+    },
+    "foodSafety": {
+      "summary": "雅典食品安全好。",
+      "tapWater": "可直饮",
+      "streetFood": "希腊沙拉、烤肉安全性高",
+      "avoid": "卫城周边价格偏高",
+      "restaurants": "普拉卡区卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "希腊医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "夏季防晒"
     }
   },
   "brussels": {
@@ -13069,7 +13851,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A-",
         "health": "A-",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -13324,6 +14108,20 @@ var CITY_DATABASE = {
       "name": "Cliniques Universitaires St-Luc",
       "phone": "+32-2-764-1111",
       "address": "Avenue Hippocrate 10, Brussels"
+    },
+    "foodSafety": {
+      "summary": "布鲁塞尔食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "华夫饼、薯条安全性高",
+      "avoid": "大广场附近价格偏高",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "比利时医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "海洋性气候",
+      "tips": "带雨伞"
     }
   },
   "budapest": {
@@ -13343,7 +14141,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -13598,6 +14398,20 @@ var CITY_DATABASE = {
       "name": "Semmelweis University Hospital",
       "phone": "+36-1-266-0455",
       "address": "Üllői út 78, Budapest"
+    },
+    "foodSafety": {
+      "summary": "布达佩斯食品安全不错。",
+      "tapWater": "可直饮",
+      "streetFood": "匈牙利炖肉、兰戈斯安全性高",
+      "avoid": "国会大厦周边价格偏高",
+      "restaurants": "城堡山餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "匈牙利医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候，冬季寒冷",
+      "tips": "冬季泡温泉注意防滑"
     }
   },
   "moscow": {
@@ -13617,7 +14431,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "B-",
         "health": "C+",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -13840,6 +14656,20 @@ var CITY_DATABASE = {
       "name": "Botkin Hospital",
       "phone": "+7-495-945-0085",
       "address": "2nd Botkinskiy proezd 5, Moscow"
+    },
+    "foodSafety": {
+      "summary": "莫斯科食品安全监管严格。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "俄式煎饼、俄式饺子安全性一般",
+      "avoid": "地铁站附近食品车卫生一般",
+      "restaurants": "市中心高端餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "俄罗斯医疗较好，注意冬季疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "大陆性气候，冬季极寒",
+      "tips": "冬季注意保暖防冻伤"
     }
   },
   "st_petersburg": {
@@ -13859,7 +14689,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C+",
         "health": "C",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -14096,7 +14928,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A-",
         "health": "A-",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -14319,6 +15153,20 @@ var CITY_DATABASE = {
       "name": "Ospedale Maggiore",
       "phone": "+39-02-317-01",
       "address": "Via Francesco Sforza 35, Milano"
+    },
+    "foodSafety": {
+      "summary": "米兰食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "烩饭、意面安全性高",
+      "avoid": "Duomo附近价格偏高",
+      "restaurants": "Naviglio区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "意大利医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候",
+      "tips": "注意防晒"
     }
   },
   "munich": {
@@ -14338,7 +15186,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -14566,6 +15416,20 @@ var CITY_DATABASE = {
       "name": "Klinikum Großhaderner",
       "phone": "+49-89-7095-0",
       "address": "Marchioninistrasse 15, München"
+    },
+    "foodSafety": {
+      "summary": "慕尼黑食品安全标准高。",
+      "tapWater": "可直饮",
+      "streetFood": "德国猪肘、啤酒安全性高",
+      "avoid": "啤酒节期间价格偏高",
+      "restaurants": "老城餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "德国医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候",
+      "tips": "冬季注意保暖"
     }
   },
   "frankfurt": {
@@ -14585,7 +15449,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -14808,6 +15674,20 @@ var CITY_DATABASE = {
       "name": "Universitätsklinikum Frankfurt",
       "phone": "+49-6301-0",
       "address": "Theodor-Stern-Kai 7"
+    },
+    "foodSafety": {
+      "summary": "法兰克福食品安全标准高。",
+      "tapWater": "可直饮",
+      "streetFood": "香肠、咖喱餐安全性高",
+      "avoid": "中央车站附近食品车卫生一般",
+      "restaurants": "高端餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "德国医疗发达，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候，冬季寒冷",
+      "tips": "冬季注意保暖"
     }
   },
   "hamburg": {
@@ -14827,7 +15707,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -15068,7 +15950,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -15300,6 +16184,20 @@ var CITY_DATABASE = {
       "name": "St James's Hospital",
       "phone": "+353-1-410-3000",
       "address": "James St, Dublin 8"
+    },
+    "foodSafety": {
+      "summary": "都柏林食品安全不错。",
+      "tapWater": "可直饮",
+      "streetFood": "爱尔兰炖菜安全性高",
+      "avoid": "Temple Bar区价格偏高",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "爱尔兰医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "海洋性气候，多雨",
+      "tips": "全年带雨伞"
     }
   },
   "edinburgh": {
@@ -15319,7 +16217,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -15551,6 +16451,20 @@ var CITY_DATABASE = {
       "name": "Royal Infirmary of Edinburgh",
       "phone": "+44-131-536-1000",
       "address": "51 Little France Drive, Edinburgh"
+    },
+    "foodSafety": {
+      "summary": "爱丁堡食品安全不错。",
+      "tapWater": "可直饮",
+      "streetFood": "哈吉斯安全性高",
+      "avoid": "皇家大道价格偏高",
+      "restaurants": "老城卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "英国医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "海洋性气候，多风",
+      "tips": "带好防风装备"
     }
   },
   "manchester": {
@@ -15570,7 +16484,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A-",
         "health": "A-",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -15825,6 +16741,20 @@ var CITY_DATABASE = {
       "name": "Manchester Royal Infirmary",
       "phone": "+44-161-276-1234",
       "address": "Oxford Rd, Manchester"
+    },
+    "foodSafety": {
+      "summary": "曼彻斯特食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "炸鱼薯条安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "英国医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "海洋性气候，多雨",
+      "tips": "全年带雨伞"
     }
   },
   "lyon": {
@@ -15844,7 +16774,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -16099,6 +17031,20 @@ var CITY_DATABASE = {
       "name": "Hospices Civils de Lyon",
       "phone": "+33-4-7210-1111",
       "address": "Pl. de l'Hôpital, Lyon"
+    },
+    "foodSafety": {
+      "summary": "里昂食品安全世界知名，法餐之都。",
+      "tapWater": "可直饮",
+      "streetFood": "法式料理安全性高",
+      "avoid": "部分老餐厅卫生一般",
+      "restaurants": "米其林餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "法国医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候",
+      "tips": "注意防晒"
     }
   },
   "marseille": {
@@ -16118,7 +17064,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -16373,6 +17321,21 @@ var CITY_DATABASE = {
       "name": "APHM Marseille",
       "phone": "+33-4-9138-3000",
       "address": "80 Rue Augustin Fliche, Marseille"
+    },
+    "foodSafety": {
+      "summary": "马赛食品安全不错，地中海海鲜新鲜。",
+      "tapWater": "可直饮",
+      "seafood": "海鲜安全性高",
+      "streetFood": "马赛鱼汤安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "老港餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "法国医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "注意防晒"
     }
   },
   "nice": {
@@ -16392,7 +17355,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "B+",
         "health": "A",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -16642,6 +17607,20 @@ var CITY_DATABASE = {
       "name": "Nice CHU",
       "phone": "+33-4-9203-0000",
       "address": "30 Voie Romaine, Nice"
+    },
+    "foodSafety": {
+      "summary": "尼斯食品安全好，地中海美食丰富。",
+      "tapWater": "可直饮",
+      "streetFood": "沙拉、橄榄油安全性高",
+      "avoid": "老城部分餐厅卫生一般",
+      "restaurants": "海滨餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "法国医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "注意防晒"
     }
   },
   "venice": {
@@ -16661,7 +17640,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "B+",
         "health": "A",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -16916,6 +17897,20 @@ var CITY_DATABASE = {
       "name": "Ospedale SS Giovanni e Paolo",
       "phone": "+39-041-529-4111",
       "address": "Castello 6777, Venice"
+    },
+    "foodSafety": {
+      "summary": "威尼斯食品安全不错，但价格偏高。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "墨鱼面、意面安全性高",
+      "avoid": "圣马可广场价格极高",
+      "restaurants": "学院桥周边卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "意大利医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "注意潮汐"
     }
   },
   "florence": {
@@ -16935,7 +17930,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -17190,6 +18187,20 @@ var CITY_DATABASE = {
       "name": "Careggi Hospital",
       "phone": "+39-055-794-1111",
       "address": "Largo Brambilla 3, Florence"
+    },
+    "foodSafety": {
+      "summary": "佛罗伦萨食品安全好，托斯卡纳美食丰富。",
+      "tapWater": "可直饮",
+      "streetFood": "牛肚包、佛罗伦萨牛排安全性高",
+      "avoid": "景区附近价格偏高",
+      "restaurants": "老城餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "意大利医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "注意防晒"
     }
   },
   "naples": {
@@ -17209,7 +18220,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A",
         "health": "A-",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -17464,6 +18477,20 @@ var CITY_DATABASE = {
       "name": "Ospedale Cardarelli",
       "phone": "+39-081-747-2111",
       "address": "Via A. Cardarelli 9, Napoli"
+    },
+    "foodSafety": {
+      "summary": "那不勒斯食品安全好，披萨发源地。",
+      "tapWater": "可直饮",
+      "streetFood": "那不勒斯披萨安全性高",
+      "avoid": "火车站附近卫生一般",
+      "restaurants": "市中心披萨店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "意大利医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "注意防晒"
     }
   },
   "valencia": {
@@ -17483,7 +18510,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -17752,7 +18781,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -18021,7 +19052,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -18290,7 +19323,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -18559,7 +19594,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -18809,6 +19846,20 @@ var CITY_DATABASE = {
       "name": "University Hospital Krakow",
       "phone": "+48-12-424-7000",
       "address": "ul. Kopernika 17, Krakow"
+    },
+    "foodSafety": {
+      "summary": "克拉科夫食品安全不错。",
+      "tapWater": "可直饮",
+      "streetFood": "波兰饺子安全性高",
+      "avoid": "老城部分餐厅卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "波兰医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候",
+      "tips": "冬季注意保暖"
     }
   },
   "geneva": {
@@ -18828,7 +19879,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -19078,6 +20131,20 @@ var CITY_DATABASE = {
       "name": "HUG Geneva",
       "phone": "+41-22-372-3311",
       "address": "Rue Gabrielle-Perret-Gentil 4, Geneva"
+    },
+    "foodSafety": {
+      "summary": "日内瓦食品安全世界领先。",
+      "tapWater": "可直饮",
+      "streetFood": "奶酪火锅安全性高",
+      "avoid": "价格普遍极高",
+      "restaurants": "湖畔餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "瑞士医疗世界领先。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候",
+      "tips": "注意防晒"
     }
   },
   "cologne": {
@@ -19097,7 +20164,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -19352,6 +20421,20 @@ var CITY_DATABASE = {
       "name": "Universitätsklinikum Köln",
       "phone": "+49-221-478-0",
       "address": "Kerpener Str. 62, Köln"
+    },
+    "foodSafety": {
+      "summary": "科隆食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "德国香肠安全性高",
+      "avoid": "中央车站附近卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "德国医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候",
+      "tips": "带雨伞"
     }
   },
   "new_york": {
@@ -19371,7 +20454,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "C+",
         "health": "C+",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -19609,6 +20694,20 @@ var CITY_DATABASE = {
       "name": "Bellevue Hospital",
       "phone": "+1-212-562-4141",
       "address": "462 1st Ave, New York"
+    },
+    "foodSafety": {
+      "summary": "纽约餐饮多样，卫生监管严格，但部分区域需注意。",
+      "tapWater": "可直饮",
+      "streetFood": "热狗、披萨车普遍安全，犹太人区食品较可靠",
+      "avoid": "地铁附近食品车卫生较差",
+      "restaurants": "曼哈顿餐厅卫生检查严格，外区稍差"
+    },
+    "diseasePrevention": {
+      "summary": "纽约医疗资源丰富，注意季节性疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节严重",
+      "weather": "冬季寒冷，夏季闷热",
+      "tips": "流感季节（10-3月）建议接种疫苗"
     }
   },
   "los_angeles": {
@@ -19628,7 +20727,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "B-",
         "health": "B-",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -19862,6 +20963,20 @@ var CITY_DATABASE = {
       "name": "UCLA Medical Center",
       "phone": "+1-310-825-9111",
       "address": "757 Westwood Plaza, LA"
+    },
+    "foodSafety": {
+      "summary": "洛杉矶餐饮多样，卫生监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": " taco、快餐车安全性一般",
+      "avoid": "市中心部分区域卫生较差",
+      "restaurants": "海滩区域和高端社区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "地中海气候，地震多发",
+      "tips": "注意地震安全，了解应急出口"
     }
   },
   "chicago": {
@@ -19881,7 +20996,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "B",
         "health": "C+",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -20110,6 +21227,20 @@ var CITY_DATABASE = {
       "name": "Northwestern Memorial Hospital",
       "phone": "+1-312-926-2000",
       "address": "251 E Huron St, Chicago"
+    },
+    "foodSafety": {
+      "summary": "芝加哥食品安全好。",
+      "tapWater": "可直饮",
+      "streetFood": "深盘披萨、热狗安全性高",
+      "avoid": "南部部分区域卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候",
+      "tips": "冬季注意保暖"
     }
   },
   "toronto": {
@@ -20129,7 +21260,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B-",
         "health": "B",
-        "natural": "B"
+        "natural": "B",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -20358,6 +21491,20 @@ var CITY_DATABASE = {
       "name": "Toronto General Hospital",
       "phone": "+1-416-340-3111",
       "address": "200 Elizabeth St, Toronto"
+    },
+    "foodSafety": {
+      "summary": "多伦多食品安全监管严格，多元化美食安全。",
+      "tapWater": "可直饮",
+      "streetFood": "热狗、poutine安全性高",
+      "avoid": "部分唐人街餐厅卫生一般",
+      "restaurants": "高端餐厅卫生好，Tim Hortons连锁安全"
+    },
+    "diseasePrevention": {
+      "summary": "加拿大医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，流感季节注意",
+      "weather": "冬季寒冷多雪，夏季温暖",
+      "tips": "冬季注意防寒防滑"
     }
   },
   "vancouver": {
@@ -20377,7 +21524,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -20606,6 +21755,21 @@ var CITY_DATABASE = {
       "name": "Vancouver General Hospital",
       "phone": "+1-604-875-4111",
       "address": "899 W 12th Ave, Vancouver"
+    },
+    "foodSafety": {
+      "summary": "温哥华食品安全世界领先。",
+      "tapWater": "可直饮",
+      "seafood": "太平洋海鲜安全新鲜",
+      "streetFood": "poutine、Tim Hortons安全性高",
+      "avoid": "市中心部分区域卫生一般",
+      "restaurants": "港口周边卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "加拿大医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "海洋性气候，多雨",
+      "tips": "全年带雨伞"
     }
   },
   "montreal": {
@@ -20625,7 +21789,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "C+",
         "health": "B",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -20858,6 +22024,20 @@ var CITY_DATABASE = {
       "name": "McGill University Health Centre",
       "phone": "+1-514-934-1934",
       "address": "1650 Cedar Ave, Montreal"
+    },
+    "foodSafety": {
+      "summary": "蒙特利尔食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "poutine、熏肉安全性高",
+      "avoid": "老城部分餐厅卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "加拿大医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候",
+      "tips": "冬季注意保暖"
     }
   },
   "san_francisco": {
@@ -20877,7 +22057,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "A-",
         "health": "B",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -21110,6 +22292,20 @@ var CITY_DATABASE = {
       "name": "UCSF Medical Center",
       "phone": "+1-415-476-1000",
       "address": "505 Parnassus Ave, San Francisco"
+    },
+    "foodSafety": {
+      "summary": "旧金山食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "酸面包、墨西哥卷安全性高",
+      "avoid": "Tenderloin 区卫生一般",
+      "restaurants": "渔人码头卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "注意防晒"
     }
   },
   "seattle": {
@@ -21129,7 +22325,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "C+",
         "health": "C+",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -21357,6 +22555,20 @@ var CITY_DATABASE = {
       "name": "Harborview Medical Center",
       "phone": "+1-206-744-3000",
       "address": "325 9th Ave, Seattle"
+    },
+    "foodSafety": {
+      "summary": "西雅图食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "海鲜、咖啡安全性高",
+      "avoid": "市中心部分区域卫生一般",
+      "restaurants": "海滨餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "海洋性气候，多雨",
+      "tips": "全年带雨伞"
     }
   },
   "miami": {
@@ -21376,7 +22588,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "B+",
         "health": "B",
-        "natural": "B"
+        "natural": "B",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -21609,6 +22823,20 @@ var CITY_DATABASE = {
       "name": "Jackson Memorial Hospital",
       "phone": "+1-305-585-1000",
       "address": "1611 NW 12th Ave, Miami"
+    },
+    "foodSafety": {
+      "summary": "迈阿密食品安全好，古巴美食丰富。",
+      "tapWater": "可直饮",
+      "streetFood": "古巴三明治安全性高",
+      "avoid": "南海滩部分价格虚高",
+      "restaurants": "Wynwood 区卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "热带气候",
+      "tips": "注意防蚊"
     }
   },
   "boston": {
@@ -21628,7 +22856,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "B+",
         "health": "A-",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -21861,6 +23091,20 @@ var CITY_DATABASE = {
       "name": "Massachusetts General Hospital",
       "phone": "+1-617-726-2000",
       "address": "55 Fruit St, Boston"
+    },
+    "foodSafety": {
+      "summary": "波士顿食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "龙虾卷安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "大陆性气候",
+      "tips": "冬季注意保暖"
     }
   },
   "washington_dc": {
@@ -21880,7 +23124,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "B-",
         "health": "B-",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -22132,7 +23378,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "C+",
         "health": "C+",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -22360,6 +23608,20 @@ var CITY_DATABASE = {
       "name": "University Medical Center",
       "phone": "+1-702-822-2111",
       "address": "1800 W Charleston Blvd, Las Vegas"
+    },
+    "foodSafety": {
+      "summary": "拉斯维加斯食品安全不错，自助餐卫生好。",
+      "tapWater": "可直饮",
+      "streetFood": "快餐安全性高",
+      "avoid": "大道外价格便宜但卫生一般",
+      "restaurants": "赌场自助餐卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "沙漠气候，夏季极热",
+      "tips": "夏季注意防暑"
     }
   },
   "denver": {
@@ -22379,7 +23641,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B+",
         "health": "B",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -22602,6 +23866,20 @@ var CITY_DATABASE = {
       "name": "University of Colorado Hospital",
       "phone": "+1-720-848-0000",
       "address": "12605 E 16th Ave, Aurora, CO"
+    },
+    "foodSafety": {
+      "summary": "丹佛食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "汉堡、牛排安全性高",
+      "avoid": "市中心部分区域卫生一般",
+      "restaurants": "高端餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "高原气候，干燥",
+      "tips": "注意高海拔适应"
     }
   },
   "atlanta": {
@@ -22621,7 +23899,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B-",
         "health": "B-",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -22854,6 +24134,20 @@ var CITY_DATABASE = {
       "name": "Emory University Hospital",
       "phone": "+1-404-712-7000",
       "address": "1364 Clifton Rd, Atlanta"
+    },
+    "foodSafety": {
+      "summary": "亚特兰大食品安全监管严格。",
+      "tapWater": "可直饮",
+      "streetFood": "炸鸡、烧烤安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "市中心卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "亚热带气候",
+      "tips": "夏季注意防蚊"
     }
   },
   "dallas": {
@@ -22873,7 +24167,9 @@ var CITY_DATABASE = {
         "crime": "A-",
         "transport": "B+",
         "health": "A-",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -23115,7 +24411,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B+",
         "health": "B+",
-        "natural": "B+"
+        "natural": "B+",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -23357,7 +24655,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B",
         "health": "B",
-        "natural": "B"
+        "natural": "B",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -23580,6 +24880,20 @@ var CITY_DATABASE = {
       "name": "Mayo Clinic Phoenix",
       "phone": "+1-480-515-5700",
       "address": "5777 E Mayo Blvd, Phoenix"
+    },
+    "foodSafety": {
+      "summary": "凤凰城食品安全不错。",
+      "tapWater": "可直饮",
+      "streetFood": "墨西哥美食安全性高",
+      "avoid": "沙漠区域部分卫生一般",
+      "restaurants": "高端酒店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "美国医疗发达。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "沙漠气候，极热",
+      "tips": "夏季注意防暑"
     }
   },
   "portland": {
@@ -23599,7 +24913,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "C+",
         "health": "C+",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -23846,7 +25162,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A-",
         "health": "B+",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -24088,7 +25406,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "B-",
         "health": "C+",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -24330,7 +25650,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -24563,6 +25885,20 @@ var CITY_DATABASE = {
       "name": "Hospital Angeles",
       "phone": "+52-55-5278-0000",
       "address": "Av.弾利马斯 790, Mexico City"
+    },
+    "foodSafety": {
+      "summary": "墨西哥城街头美食丰富但卫生需注意。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "玉米饼、塔可安全性一般，果汁需确认是瓶装水制作",
+      "avoid": "避免食用生菜沙拉和冰块",
+      "restaurants": "Polanco 区高端餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "墨西哥城需注意食物中毒和 altitude sickness。",
+      "vaccines": "建议接种甲肝、伤寒疫苗",
+      "diseases": "无疟疾， altitude sickness 高海拔注意",
+      "weather": "高原气候，早晚温差大",
+      "tips": "适应高海拔，避免剧烈运动，饮用瓶装水"
     }
   },
   "cancun": {
@@ -24582,7 +25918,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C+",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -24829,7 +26167,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "B",
         "health": "C+",
-        "natural": "B"
+        "natural": "B",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -25081,7 +26421,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -25314,6 +26656,20 @@ var CITY_DATABASE = {
       "name": "Hospital Sírio-Libanês",
       "phone": "+55-11-3164-7000",
       "address": "Rua Adma Jafet 91, São Paulo"
+    },
+    "foodSafety": {
+      "summary": "里约街头美食多，卫生状况一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "巴西烤肉、 Açai 安全性一般",
+      "avoid": "避免食用街头切水果和冰品",
+      "restaurants": "Ipanema 区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "里约需注意登革热和寨卡病毒。",
+      "vaccines": "建议接种黄热病疫苗",
+      "diseases": "登革热、寨卡、疟疾低风险",
+      "weather": "热带气候，夏季（12-3月）高温多雨",
+      "tips": "使用驱蚊水，避免蚊虫叮咬"
     }
   },
   "buenos_aires": {
@@ -25333,7 +26689,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -25566,6 +26924,20 @@ var CITY_DATABASE = {
       "name": "Hospital Italiano",
       "phone": "+54-11-4959-9000",
       "address": "Gasón 1180, Buenos Aires"
+    },
+    "foodSafety": {
+      "summary": "布宜诺斯艾利斯食品安全不错，阿根廷烤肉安全。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "阿根廷烤肉、 mate 茶安全性高",
+      "avoid": "避免食用街头未煮熟的食物",
+      "restaurants": "雷科莱塔区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "阿根廷医疗好，注意蚊媒疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "疟疾低风险，寨卡历史风险",
+      "weather": "温带气候，冬季温和",
+      "tips": "夏季注意防蚊"
     }
   },
   "santiago": {
@@ -25585,7 +26957,9 @@ var CITY_DATABASE = {
         "crime": "B-",
         "transport": "C",
         "health": "C+",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -25818,6 +27192,20 @@ var CITY_DATABASE = {
       "name": "Clínica Las Condes",
       "phone": "+56-2-2210-4000",
       "address": "Lo Fontecilla 441, Santiago"
+    },
+    "foodSafety": {
+      "summary": "圣地亚哥食品安全好，智利美食安全。",
+      "tapWater": "可直饮",
+      "streetFood": "烤肉、海鲜安全性高",
+      "avoid": "避免食用未煮熟的食物",
+      "restaurants": "Providencia 区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "智利医疗好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候，冬季多雨",
+      "tips": "冬季注意保暖"
     }
   },
   "lima": {
@@ -25837,7 +27225,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "C+",
         "health": "B",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -26070,6 +27460,20 @@ var CITY_DATABASE = {
       "name": "Clinica Ricardo Palma",
       "phone": "+51-1-423-4420",
       "address": "Av. Javier Prado Este 1062, Lima"
+    },
+    "foodSafety": {
+      "summary": "利马食品安全不错，秘鲁美食世界知名。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "秘鲁烤串 ceviche 安全性一般",
+      "avoid": "避免食用生鱼片和未煮熟的海鲜",
+      "restaurants": "米其林餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "秘鲁需注意食物中毒和 altitude sickness。",
+      "vaccines": "建议接种黄热病、甲肝",
+      "diseases": "altitude sickness 高海拔注意",
+      "weather": "沙漠气候，温和",
+      "tips": "适应高海拔，只喝瓶装水"
     }
   },
   "bogota": {
@@ -26089,7 +27493,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "B-",
         "health": "C",
-        "natural": "C+"
+        "natural": "C+",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -26341,7 +27747,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "B-",
         "health": "C",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -26615,7 +28023,9 @@ var CITY_DATABASE = {
         "crime": "B",
         "transport": "B",
         "health": "B",
-        "natural": "B"
+        "natural": "B",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -26889,7 +28299,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -27123,6 +28535,20 @@ var CITY_DATABASE = {
       "name": "Cairo University Hospital",
       "phone": "+20-2-236-8280",
       "address": "El-Manial, Cairo"
+    },
+    "foodSafety": {
+      "summary": "开罗食品安全一般，需注意饮食卫生。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "沙瓦尔玛、库什里安全性一般",
+      "avoid": "避免食用未煮熟的肉类和生菜",
+      "restaurants": "酒店内餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "埃及需注意食物中毒和血吸虫病。",
+      "vaccines": "建议接种甲肝、伤寒、黄热病",
+      "diseases": "血吸虫病、疟疾低风险",
+      "weather": "沙漠气候，温差大",
+      "tips": "在尼罗河游泳需谨慎，只喝瓶装水"
     }
   },
   "cape_town": {
@@ -27142,7 +28568,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -27375,6 +28803,20 @@ var CITY_DATABASE = {
       "name": "Groote Schuur Hospital",
       "phone": "+27-21-404-9111",
       "address": "Main Rd, Observatory, Cape Town"
+    },
+    "foodSafety": {
+      "summary": "开普敦食品安全不错。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "烤肉、海鲜安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "V&A海滨卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "南非需注意疟疾。",
+      "vaccines": "建议接种黄热病",
+      "diseases": "疟疾低风险",
+      "weather": "地中海气候",
+      "tips": "使用驱蚊水"
     }
   },
   "johannesburg": {
@@ -27394,7 +28836,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -27628,6 +29072,20 @@ var CITY_DATABASE = {
       "name": "Charlotte Maxeke Hospital",
       "phone": "+27-11-488-3000",
       "address": "Parktown, Johannesburg"
+    },
+    "foodSafety": {
+      "summary": "约翰内斯堡食品安全一般。",
+      "tapWater": "建议饮用瓶装水",
+      "streetFood": "烤肉安全性一般",
+      "avoid": "避免食用街头食品",
+      "restaurants": "桑顿区餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "南非需注意疟疾和艾滋病。",
+      "vaccines": "建议接种甲肝、伤寒、黄热病",
+      "diseases": "疟疾、艾滋病风险",
+      "weather": "亚热带气候",
+      "tips": "使用驱蚊水，注意人身安全"
     }
   },
   "lagos": {
@@ -27647,7 +29105,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -27902,6 +29362,20 @@ var CITY_DATABASE = {
       "name": "Lagos University Teaching Hospital",
       "phone": "+234-1-585-2400",
       "address": "Idi-Araba, Lagos"
+    },
+    "foodSafety": {
+      "summary": "拉各斯食品安全挑战大。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "jollof rice 安全性一般",
+      "avoid": "避免食用街头食品",
+      "restaurants": "高端酒店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "尼日利亚需注意多种疾病。",
+      "vaccines": "建议接种黄热病、霍乱",
+      "diseases": "疟疾、霍乱、黄热病风险",
+      "weather": "热带气候",
+      "tips": "只喝瓶装水，使用驱蚊水"
     }
   },
   "nairobi": {
@@ -27921,7 +29395,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -28154,6 +29630,20 @@ var CITY_DATABASE = {
       "name": "Kenyatta National Hospital",
       "phone": "+254-20-272-6300",
       "address": "Hospital Rd, Nairobi"
+    },
+    "foodSafety": {
+      "summary": "内罗毕食品安全一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "烤肉、Ugali 安全性一般",
+      "avoid": "避免食用街头食品",
+      "restaurants": "高端酒店卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "肯尼亚需注意疟疾。",
+      "vaccines": "建议接种黄热病",
+      "diseases": "疟疾风险",
+      "weather": "高原气候",
+      "tips": "使用驱蚊水"
     }
   },
   "casablanca": {
@@ -28173,7 +29663,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -28406,6 +29898,20 @@ var CITY_DATABASE = {
       "name": "CHU Ibn Rochd",
       "phone": "+212-522-640-000",
       "address": "Rue des Hôpitaux, Casablanca"
+    },
+    "foodSafety": {
+      "summary": "卡萨布兰卡食品安全一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "塔吉锅安全性一般",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "海滨餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "摩洛哥医疗条件有限。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "只喝瓶装水"
     }
   },
   "marrakech": {
@@ -28425,7 +29931,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -28680,6 +30188,20 @@ var CITY_DATABASE = {
       "name": "CHU Mohammed VI",
       "phone": "+212-524-436-400",
       "address": "Avenue Ibn Rochd, Marrakech"
+    },
+    "foodSafety": {
+      "summary": "马拉喀什食品安全一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "塔吉锅安全性一般",
+      "avoid": "避免食用街头食品",
+      "restaurants": "麦地那部分卫生一般"
+    },
+    "diseasePrevention": {
+      "summary": "摩洛哥医疗条件有限。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "无疟疾",
+      "weather": "沙漠气候",
+      "tips": "只喝瓶装水"
     }
   },
   "tunis": {
@@ -28699,7 +30221,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "C",
         "health": "C+",
-        "natural": "C"
+        "natural": "C",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -28949,6 +30473,20 @@ var CITY_DATABASE = {
       "name": "CHU Charles Nicolle",
       "phone": "+216-71-560-100",
       "address": "Blvd du 9 Avril, Tunis"
+    },
+    "foodSafety": {
+      "summary": "突尼斯食品安全一般。",
+      "tapWater": "不可直饮，饮用瓶装水",
+      "streetFood": "突尼斯沙拉安全性一般",
+      "avoid": "避免食用街头冰品",
+      "restaurants": "海滨餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "突尼斯医疗条件有限。",
+      "vaccines": "建议接种甲肝",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "只喝瓶装水"
     }
   },
   "accra": {
@@ -28968,7 +30506,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -29237,7 +30777,9 @@ var CITY_DATABASE = {
         "crime": "C",
         "transport": "C",
         "health": "C",
-        "natural": "C"
+        "natural": "C",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -29506,7 +31048,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -29738,6 +31282,21 @@ var CITY_DATABASE = {
       "name": "Royal Prince Alfred Hospital",
       "phone": "+61-2-9515-6111",
       "address": "Missenden Rd, Camperdown, NSW"
+    },
+    "foodSafety": {
+      "summary": "悉尼食品安全监管严格，海鲜新鲜。",
+      "tapWater": "可直饮",
+      "seafood": "澳洲龙虾、生蚝新鲜安全",
+      "streetFood": " рыночный рынок 食品安全",
+      "avoid": "避免食用不明来源的野生蘑菇",
+      "restaurants": "港口周边餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "澳大利亚医疗好，注意蚊媒疾病。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "蚊媒脑炎低风险，注意防蚊",
+      "weather": "南半球季节相反，夏季（12-2月）注意防晒",
+      "tips": "夏季使用驱蚊水"
     }
   },
   "melbourne": {
@@ -29757,7 +31316,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A-",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -29989,6 +31550,20 @@ var CITY_DATABASE = {
       "name": "Royal Melbourne Hospital",
       "phone": "+61-3-9342-7000",
       "address": "300 Grattan St, Parkville, VIC"
+    },
+    "foodSafety": {
+      "summary": "墨尔本食品安全世界领先，咖啡文化著名。",
+      "tapWater": "可直饮",
+      "streetFood": "咖啡、brunch安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "CBD餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "澳大利亚医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带气候",
+      "tips": "注意防晒"
     }
   },
   "brisbane": {
@@ -30008,7 +31583,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "B+",
         "health": "A",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -30236,6 +31813,21 @@ var CITY_DATABASE = {
       "name": "Royal Brisbane Hospital",
       "phone": "+61-7-3646-8111",
       "address": "Butterfield St, Herston, QLD"
+    },
+    "foodSafety": {
+      "summary": "布里斯班食品安全监管严格。",
+      "tapWater": "可直饮",
+      "seafood": "海鲜安全性高",
+      "streetFood": "汉堡、牛排安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "南岸餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "澳大利亚医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "亚热带气候",
+      "tips": "注意防晒防蚊"
     }
   },
   "perth": {
@@ -30255,7 +31847,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -30483,6 +32077,21 @@ var CITY_DATABASE = {
       "name": "Royal Perth Hospital",
       "phone": "+61-8-9224-2222",
       "address": "Shenton Park, WA 6008"
+    },
+    "foodSafety": {
+      "summary": "珀斯食品安全监管严格。",
+      "tapWater": "可直饮",
+      "seafood": "西澳海鲜安全性高",
+      "streetFood": "汉堡、海鲜安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "海滨餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "澳大利亚医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "地中海气候",
+      "tips": "注意防晒"
     }
   },
   "adelaide": {
@@ -30502,7 +32111,9 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A",
         "health": "B+",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -30771,7 +32382,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "B+",
         "health": "A",
-        "natural": "A-"
+        "natural": "A-",
+        "food": "A",
+        "disease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -30999,6 +32612,21 @@ var CITY_DATABASE = {
       "name": "Auckland City Hospital",
       "phone": "+64-9-379-7440",
       "address": "2 Park Road, Auckland"
+    },
+    "foodSafety": {
+      "summary": "奥克兰食品安全监管严格。",
+      "tapWater": "可直饮",
+      "seafood": "新西兰海鲜安全性高",
+      "streetFood": "汉堡、海鲜安全性高",
+      "avoid": "部分区域卫生一般",
+      "restaurants": "港口餐厅卫生好"
+    },
+    "diseasePrevention": {
+      "summary": "新西兰医疗好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾",
+      "weather": "温带海洋气候",
+      "tips": "注意防晒"
     }
   },
   "wellington": {
@@ -31018,7 +32646,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -31287,7 +32917,9 @@ var CITY_DATABASE = {
         "crime": "A",
         "transport": "A",
         "health": "A",
-        "natural": "A"
+        "natural": "A",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
@@ -31551,7 +33183,9 @@ var CITY_DATABASE = {
         "crime": "C+",
         "transport": "B",
         "health": "C+",
-        "natural": "B-"
+        "natural": "B-",
+        "food": "B+",
+        "disease": "B+"
       },
       "safeAreas": [
         "市中心商业区",
