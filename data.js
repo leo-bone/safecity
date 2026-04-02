@@ -10190,6 +10190,12 @@ var CITY_DATABASE = {
           "desc": "夜店",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "老城Gamla Stan",
+        "国王岛Kungsholmen",
+        "瓦萨博物馆周边",
+        "塞尔格尔广场"
       ]
     },
     "safety_tips": {
@@ -10451,6 +10457,12 @@ var CITY_DATABASE = {
           "desc": "小偷",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "卡尔约翰大道",
+        "阿克什胡斯城堡区域",
+        "维格兰雕塑公园周边",
+        "卑尔根"
       ]
     },
     "safety_tips": {
@@ -10717,6 +10729,12 @@ var CITY_DATABASE = {
           "desc": "盗窃",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "新港Nyhavn",
+        "蒂沃利花园",
+        "国王新广场",
+        "阿玛林堡宫"
       ]
     },
     "safety_tips": {
@@ -10978,6 +10996,12 @@ var CITY_DATABASE = {
           "desc": "移民区",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "参议院广场",
+        "设计街区",
+        "埃斯普拉纳迪公园",
+        "伴侣岛"
       ]
     },
     "safety_tips": {
@@ -11986,6 +12010,12 @@ var CITY_DATABASE = {
           "desc": "夜店区纠纷",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "贝伦区",
+        "奇亚多区",
+        "阿尔法玛老城",
+        "罗西欧广场"
       ]
     },
     "safety_tips": {
@@ -12252,6 +12282,12 @@ var CITY_DATABASE = {
           "desc": "抢劫",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "查理大桥周边",
+        "老城广场",
+        "小城区",
+        "犹太区"
       ]
     },
     "safety_tips": {
@@ -12513,6 +12549,12 @@ var CITY_DATABASE = {
           "desc": "较乱",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "老城",
+        "克拉科夫郊区大街",
+        "莫扎特区",
+        "中央火车站周边"
       ]
     },
     "safety_tips": {
@@ -12779,6 +12821,12 @@ var CITY_DATABASE = {
           "desc": "骗子",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "普拉卡",
+        "宪法广场",
+        "蒙纳斯提拉奇广场",
+        "卫城周边"
       ]
     },
     "safety_tips": {
@@ -13045,6 +13093,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "大广场",
+        "欧盟总部区域",
+        "圣于贝尔长廊",
+        "原子球周边"
       ]
     },
     "safety_tips": {
@@ -13311,6 +13365,12 @@ var CITY_DATABASE = {
           "desc": "夜间危险",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "链子桥周边",
+        "国会大厦区域",
+        "城堡山",
+        "瓦茨街"
       ]
     },
     "safety_tips": {
@@ -15510,6 +15570,12 @@ var CITY_DATABASE = {
           "desc": "扒窃",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "市中心",
+        "皮卡迪利花园",
+        "阿尔伯特广场",
+        "媒体城"
       ]
     },
     "safety_tips": {
@@ -15776,6 +15842,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "白莱果广场",
+        "里昂老城",
+        "富维耶山",
+        "Presqu'ile区"
       ]
     },
     "safety_tips": {
@@ -16042,6 +16114,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "老港",
+        "圣维克多修道院",
+        "隆尚宫",
+        "卡朗格峡湾"
       ]
     },
     "safety_tips": {
@@ -16303,6 +16381,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "英国人大道",
+        "老城",
+        "天使湾",
+        "马蒂斯博物馆周边"
       ]
     },
     "safety_tips": {
@@ -16569,6 +16653,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "圣马可广场",
+        "大运河",
+        "玻璃岛",
+        "学院桥周边"
       ]
     },
     "safety_tips": {
@@ -16835,6 +16925,12 @@ var CITY_DATABASE = {
           "desc": "盗窃",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "圣母百花大教堂周边",
+        "领主广场",
+        "乌菲兹美术馆区域",
+        "米开朗基罗广场"
       ]
     },
     "safety_tips": {
@@ -17101,6 +17197,12 @@ var CITY_DATABASE = {
           "desc": "扒窃",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "普伦贝托区域",
+        "斯帕卡纳波利",
+        "托莱多街",
+        "蛋堡周边"
       ]
     },
     "safety_tips": {
@@ -17362,6 +17464,12 @@ var CITY_DATABASE = {
           "desc": "夜生活",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "艺术科学城",
+        "老城",
+        "中央市场",
+        "图里亚公园"
       ]
     },
     "safety_tips": {
@@ -17623,6 +17731,12 @@ var CITY_DATABASE = {
           "desc": "夜店",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "西班牙广场",
+        "塞维利亚大教堂周边",
+        "阿尔卡萨王宫",
+        "Triana区"
       ]
     },
     "safety_tips": {
@@ -17884,6 +17998,12 @@ var CITY_DATABASE = {
           "desc": "扒窃",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "马拉加港",
+        "毕加索博物馆周边",
+        "大教堂区域",
+        "拉马拉格萨海滩"
       ]
     },
     "safety_tips": {
@@ -18145,6 +18265,12 @@ var CITY_DATABASE = {
           "desc": "游客",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "里贝拉广场",
+        "杜罗河畔",
+        "自由广场",
+        "圣灵教堂"
       ]
     },
     "safety_tips": {
@@ -18406,6 +18532,12 @@ var CITY_DATABASE = {
           "desc": "犹太区",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "老城广场",
+        "瓦维尔城堡",
+        "卡齐米日区",
+        "纺织会馆"
       ]
     },
     "safety_tips": {
@@ -18667,6 +18799,12 @@ var CITY_DATABASE = {
           "desc": "夜生活",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "日内瓦湖畔",
+        "老城",
+        "万国宫区域",
+        "圣彼得大教堂"
       ]
     },
     "safety_tips": {
@@ -18933,6 +19071,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "大教堂周边",
+        "老城",
+        "莱茵河畔",
+        "路德维希博物馆"
       ]
     },
     "safety_tips": {
@@ -26107,6 +26251,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "low"
         }
+      ],
+      "safeAreas": [
+        "普罗维登西亚",
+        "拉努斯公园",
+        "布加斯",
+        "埃尔彭比托"
       ]
     },
     "safety_tips": {
@@ -26373,6 +26523,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "low"
         }
+      ],
+      "safeAreas": [
+        "老城Casco Viejo",
+        "金融区",
+        "巴拿马运河博物馆",
+        "阿马多尔堤道"
       ]
     },
     "safety_tips": {
@@ -27389,6 +27545,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "维多利亚岛",
+        "伊科伊",
+        "莱基",
+        "海角海滩"
       ]
     },
     "safety_tips": {
@@ -28155,6 +28317,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "麦地那老城",
+        "杰马夫纳广场",
+        "马若雷勒花园",
+        "萨阿迪墓"
       ]
     },
     "safety_tips": {
@@ -28416,6 +28584,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "老城麦地那",
+        "布尔吉巴大街",
+        "迦太基遗址",
+        "西迪布赛义德"
       ]
     },
     "safety_tips": {
@@ -28677,6 +28851,12 @@ var CITY_DATABASE = {
           "desc": "混乱",
           "risk": "中"
         }
+      ],
+      "safeAreas": [
+        "阿克拉海滩",
+        "独立广场",
+        "库西",
+        "拉各斯镇"
       ]
     },
     "safety_tips": {
@@ -28938,6 +29118,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "低"
         }
+      ],
+      "safeAreas": [
+        "亚的斯亚贝巴",
+        "狮子园",
+        "圣三一大教堂",
+        "梅斯克尔广场"
       ]
     },
     "safety_tips": {
@@ -30186,6 +30372,12 @@ var CITY_DATABASE = {
           "desc": "安全",
           "risk": "low"
         }
+      ],
+      "safeAreas": [
+        "北 terrace",
+        "蓝道街",
+        "阿德莱德植物园",
+        "格雷尔海滩"
       ]
     },
     "safety_tips": {
@@ -30692,6 +30884,12 @@ var CITY_DATABASE = {
           "desc": "夜生活",
           "risk": "low"
         }
+      ],
+      "safeAreas": [
+        "海滨步道",
+        "古巴街",
+        "植物园",
+        "东方湾"
       ]
     },
     "safety_tips": {
@@ -30948,6 +31146,12 @@ var CITY_DATABASE = {
           "desc": "重建中",
           "risk": "low"
         }
+      ],
+      "safeAreas": [
+        "大教堂广场",
+        "植物园",
+        "雅芳河畔",
+        "追忆桥"
       ]
     },
     "safety_tips": {

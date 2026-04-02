@@ -1269,7 +1269,7 @@
 
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
-<script src="data.js?v=202604040200"></script>
+<script src="data.js?v=202604040300"></script>
 <script src="data_enhanced.js?v=202604012200"></script>
 <script src="data_new.js?v=202604012200"></script>
 <script src="realtime-api.js?v=202604012200"></script>
@@ -2094,9 +2094,11 @@ function renderHotspotsPanel(data) {
     </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">区域安全信息基于综合安全分 ${s.overall}/100</div>`;
 
   const safeEl = document.getElementById('safe-areas-list');
+  // 优先使用 lifestyle.safeAreas（真实数据），备用 safety.safeAreas
+  const safeAreas = data.lifestyle?.safeAreas || s.safeAreas || data.highlights || [];
   safeEl.innerHTML = `
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
-      ${(s.safeAreas || data.highlights || []).map(a => `
+      ${(safeAreas).map(a => `
         <span style="background:rgba(16,185,129,0.1);color:#10b981;border:1px solid rgba(16,185,129,0.25);
               border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;">
           ✓ ${a}
