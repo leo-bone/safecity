@@ -1269,7 +1269,7 @@
 
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
-<script src="data.js?v=202604040300"></script>
+<script src="data.js?v=202604050000"></script>
 <script src="data_enhanced.js?v=202604012200"></script>
 <script src="data_new.js?v=202604012200"></script>
 <script src="realtime-api.js?v=202604012200"></script>
@@ -1817,14 +1817,46 @@ function renderEmergencyPanel(data) {
       </div>
     </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">如遇紧急医疗状况，请拨打救护车电话</div>';
 
-  // 大使馆
+  // 大使馆 - 优先使用顶层的中国大使馆数据，其次使用emergency.embassies
   const emList = document.getElementById('embassy-list');
-  emList.innerHTML = Object.entries(e.embassies || {}).map(([name, phone]) => `
-    <div class="embassy-item">
-      <span class="embassy-name">🏛️ ${name}</span>
-      <span class="embassy-phone">${phone}</span>
-      <button class="call-btn" onclick="copyText('${phone}','大使馆电话')">📋 复制</button>
-    </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">建议出发前查询所在国在该城市的领事馆电话</div>';
+  let embassyHtml = '';
+  
+  // 优先显示中国大使馆信息（顶层embassy字段）
+  if (data.embassy && data.embassy.name) {
+    embassyHtml = `
+      <div class="embassy-item" style="background:linear-gradient(135deg,rgba(220,53,69,0.1),rgba(220,53,69,0.05));border-color:rgba(220,53,69,0.3);">
+        <div style="flex:1;">
+          <span class="embassy-name">🏛️ ${data.embassy.name}</span>
+          <div style="margin-top:4px;">
+            <span style="color:var(--text-muted);font-size:12px;">📞</span> 
+            <a href="tel:${data.embassy.phone}" style="color:var(--accent);font-weight:600;">${data.embassy.phone}</a>
+            ${data.embassy.emergency ? `<span style="margin-left:8px;color:#ef4444;font-size:11px;">24小时领事保护: ${data.embassy.emergency}</span>` : ''}
+          </div>
+          <div style="margin-top:2px;">
+            <span style="color:var(--text-muted);font-size:12px;">📧</span> 
+            <a href="mailto:${data.embassy.email || ''}" style="font-size:12px;">${data.embassy.email || '无'}</a>
+          </div>
+          <div style="margin-top:2px;">
+            <span style="color:var(--text-muted);font-size:12px;">📍</span> 
+            <span style="font-size:12px;">${data.embassy.address}</span>
+          </div>
+        </div>
+        <button class="call-btn" onclick="copyText('${data.embassy.phone}','中国大使馆电话')">📋 复制</button>
+      </div>`;
+  }
+  
+  // 添加其他大使馆（从emergency.embassies）
+  const otherEmbassies = Object.entries(e.embassies || {}).filter(([name]) => !name.includes('中国'));
+  if (otherEmbassies.length > 0) {
+    embassyHtml += otherEmbassies.map(([name, phone]) => `
+      <div class="embassy-item">
+        <span class="embassy-name">🏛️ ${name}</span>
+        <span class="embassy-phone">${phone}</span>
+        <button class="call-btn" onclick="copyText('${phone}','大使馆电话')">📋 复制</button>
+      </div>`).join('');
+  }
+  
+  emList.innerHTML = embassyHtml || '<div style="color:var(--text-muted);padding:12px">建议出发前查询所在国在该城市的领事馆电话</div>';
 
   // 推荐APP
   const appsEl = document.getElementById('apps-grid');
