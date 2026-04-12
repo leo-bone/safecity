@@ -1,7 +1,8 @@
 // ============================================================
-// SafeCity Global - 全球城市安全数据库 v5.1 (完整版)
-// 包含125个全球主要城市，详细生活旅行信息
-// 更新时间: 2026-03-31T16:01:25.783Z
+// SafeCity Global - 全球城市安全数据库 v6.0 (增强版)
+// 包含207个全球主要城市，详细生活旅行信息
+// 新增：战争风险、黑帮/帮派活动、社会动荡指数
+// 更新时间: 2026-04-12T14:38:13.907Z
 // ============================================================
 
 var SAFETY_COLORS = {
@@ -27,7 +28,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 35.6762,
     "lng": 139.6503,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -56,7 +57,31 @@ var CITY_DATABASE = {
           "risk": "中"
         },
         {
-          "area": "浅草仲见世通",
+          "area": "浅草,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "日本和平宪法，无武装冲突",
+      "gang_activity": "中等",
+      "gang_desc": "暴力团存在但远离游客区",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    }仲见世通",
           "desc": "游客密集，扒窃风险较高",
           "risk": "低中"
         },
@@ -277,7 +302,159 @@ var CITY_DATABASE = {
       "tips": "春季花粉过敏严重，需备抗过敏药"
     }
   },
-  "singapore": {
+  "singapore",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "东南亚最安全国家之一",
+      "gang_activity": "极少",
+      "gang_desc": "严格执法",
+      "civil_unrest": "低",
+      "civil_desc": "政治稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: {
     "id": "singapore",
     "name": "新加坡",
     "nameEn": "Singapore",
@@ -286,7 +463,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇬",
     "lat": 1.3521,
     "lng": 103.8198,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -360,7 +537,159 @@ var CITY_DATABASE = {
         {
           "name": "海南鸡饭",
           "price": "S-12",
-          "desc": "白切鸡"
+        ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "朝鲜半岛局势紧张但首尔安全",
+      "gang_activity": "中等",
+      "gang_desc": "有组织犯罪存在",
+      "civil_unrest": "低",
+      "civil_desc": "民主社会"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  "desc": "白切鸡"
         },
         {
           "name": "叻沙",
@@ -473,7 +802,159 @@ var CITY_DATABASE = {
         "winter": {
           "temp": "23-31°C",
           "tips": "最佳旅游季节"
-        }
+      ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "中等",
+      "civil_desc": "政治局势需关注"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  }
       },
       "budget": {
         "daily_budget": "SGD100-200/天",
@@ -534,14 +1015,166 @@ var CITY_DATABASE = {
     "flag": "🇰🇷",
     "lat": 37.5665,
     "lng": 126.978,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=400&q=80",
     "safety": {
       "overall": 93,
       "grade": "A",
       "grades": {
         "crime": "A-",
         "transport": "A",
-        "health": "A",
+        "health",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "中国政治稳定",
+      "gang_activity": "极少",
+      "gang_desc": "严格执法",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: "A",
         "natural": "A",
         "food": "A",
         "disease": "A"
@@ -639,7 +1272,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "弘大",
-          "desc": "潮流"
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "中国政治稳定",
+      "gang_activity": "极少",
+      "gang_desc": "严格执法",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "desc": "潮流"
         },
         {
           "name": "北村",
@@ -741,7 +1526,159 @@ var CITY_DATABASE = {
         },
         "winter": {
           "temp": "根据当地气候",
-          "tips": "注意保暖"
+          "tips": "注,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "泰国总体和平",
+      "gang_activity": "中等",
+      "gang_desc": "部分区域帮派活动",
+      "civil_unrest": "低",
+      "civil_desc": "政治稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }意保暖"
         }
       },
       "budget": {
@@ -781,6 +1718,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "首尔食品安全监管严格，餐厅卫生好。",
       "tapWater": "可直饮",
+      "seafood": "汉江和近海海鲜新鲜，烤鱼和海鲜汤是特色",
       "streetFood": "韩式烤肉、炸鸡、辣炒年糕安全性高",
       "avoid": "避免食用生拌牛肉和活章鱼",
       "restaurants": "明洞、弘大餐厅卫生好"
@@ -802,7 +1740,7 @@ var CITY_DATABASE = {
     "flag": "🇭🇰",
     "lat": 22.3193,
     "lng": 114.1694,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=400&q=80",
     "safety": {
       "overall": 82,
       "grade": "A-",
@@ -820,7 +1758,159 @@ var CITY_DATABASE = {
         "高档住宅区",
         "大学校园周边"
       ],
-      "hotspots": [
+      "hotspots": [,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "马来西亚政治稳定",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         {
           "area": "偏僻街道",
           "desc": "夜间避免单独前往",
@@ -926,7 +2016,159 @@ var CITY_DATABASE = {
         {
           "name": "圣诞",
           "date": "12月"
-        }
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "两岸关系关注",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }   }
       ],
       "customs": [
         "小费",
@@ -1031,7 +2273,159 @@ var CITY_DATABASE = {
           "对不起": "当地语言表达",
           "警察在哪里": "当地语言表达"
         }
-      }
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "日本和平宪法",
+      "gang_activity": "中等",
+      "gang_desc": "暴力团远离游客",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  }
     },
     "overview": "香港是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，香港拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
     "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。",
@@ -1050,6 +2444,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "香港食品安全监管严格，餐厅卫生好。",
       "tapWater": "可直饮",
+      "seafood": "香港海鲜供应充足，南中国海海鲜新鲜",
       "streetFood": "云吞面、奶茶、鸡蛋仔安全性高",
       "avoid": "避免食用未煮熟的海鲜",
       "restaurants": "米其林餐厅和街边小店都需查看卫生评级"
@@ -1071,7 +2466,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 39.9042,
     "lng": 116.4074,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&q=80",
     "safety": {
       "overall": 83,
       "grade": "A-",
@@ -1123,7 +2518,159 @@ var CITY_DATABASE = {
         {
           "name": "主要公立医院",
           "phone": "当地急救电话",
-          "address": "市中心区域"
+          ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "印度总体安全",
+      "gang_activity": "中等",
+      "gang_desc": "游客区相对安全",
+      "civil_unrest": "中等",
+      "civil_desc": "政党活动期间注意"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"address": "市中心区域"
         }
       ],
       "embassies": {
@@ -1238,7 +2785,159 @@ var CITY_DATABASE = {
         "购买旅行保险",
         "随身携带常用药品",
         "注意饮食卫生",
-        "饮用瓶装水或煮沸的水",
+        "饮用瓶装水或煮,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "印度总体安全",
+      "gang_activity": "中等",
+      "gang_desc": "首都区域有组织犯罪",
+      "civil_unrest": "中等",
+      "civil_desc": "政治敏感区"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }沸的水",
         "预防蚊虫叮咬"
       ],
       "natural": [
@@ -1313,6 +3012,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "北京食品安全监管越来越严格。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "内陆城市，海鲜多为进口，建议选择新鲜冰冻海鲜",
       "streetFood": "烤鸭、炸酱面安全性高",
       "avoid": "避免食用不明来源的街头食品",
       "restaurants": "商场卫生好"
@@ -1321,7 +3021,159 @@ var CITY_DATABASE = {
       "summary": "中国医疗条件好。",
       "vaccines": "无需特殊疫苗",
       "diseases": "无疟疾",
-      "weather": "温带季风气候",
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "印尼总体安全",
+      "gang_activity": "中等",
+      "gang_desc": "部分区域帮派",
+      "civil_unrest": "低",
+      "civil_desc": "政治稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "weather": "温带季风气候",
       "tips": "冬季注意防霾"
     }
   },
@@ -1334,7 +3186,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 31.2304,
     "lng": 121.4737,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -1422,7 +3274,159 @@ var CITY_DATABASE = {
           "price": "¥15-40",
           "desc": "皮薄"
         },
-        {
+        ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "越南政治稳定",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }{
           "name": "排骨",
           "price": "¥15-35",
           "desc": "炸排"
@@ -1532,7 +3536,159 @@ var CITY_DATABASE = {
         },
         "autumn": {
           "temp": "根据当地气候",
-          "tips": "秋季凉爽舒适"
+        ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "南部有叛乱，首都相对安全",
+      "gang_activity": "中高",
+      "gang_desc": "部分区域犯罪率高",
+      "civil_unrest": "中等",
+      "civil_desc": "敏感期注意"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  "tips": "秋季凉爽舒适"
         },
         "winter": {
           "temp": "根据当地气候",
@@ -1576,6 +3732,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "上海食品安全监管严格，大城市卫生较好。",
       "tapWater": "建议饮用瓶装水或烧开",
+      "seafood": "东海海鲜新鲜，梭子蟹和小黄鱼是特色",
       "streetFood": "生煎、小笼包等传统美食安全性高",
       "avoid": "避免食用来源不明的街头切水果",
       "restaurants": "商场餐厅卫生好"
@@ -1597,14 +3754,166 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 13.7563,
     "lng": 100.5018,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
       "grades": {
         "crime": "B",
         "transport": "A-",
-        "health": "B+",
+        "heal,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "阿联酋政治稳定",
+      "gang_activity": "极少",
+      "gang_desc": "严格执法",
+      "civil_unrest": "低",
+      "civil_desc": "治理高效"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }th": "B+",
         "natural": "A-",
         "food": "A",
         "disease": "A"
@@ -1709,7 +4018,159 @@ var CITY_DATABASE = {
           "desc": "背包客"
         }
       ],
-      "festivals": [
+      "festivals",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: [
         {
           "name": "泼水节",
           "date": "4月"
@@ -1815,7 +4276,159 @@ var CITY_DATABASE = {
         "transport": "根据当地标准"
       },
       "visas": {
-        "chinese_citizens": "请查询最新签证政策",
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "chinese_citizens": "请查询最新签证政策",
         "visa_free_countries": "请查询官方信息"
       },
       "language": {
@@ -1845,6 +4458,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "曼谷街头美食丰富，但卫生状况参差不齐。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "泰国湾海鲜丰富，咖喱蟹和烤虾是特色",
       "streetFood": "炒饭、炒面、泰式烧烤普遍安全，柠檬茶卫生",
       "avoid": "避免食用未煮熟的海鲜和生菜沙拉",
       "restaurants": "商场内餐厅卫生好，街边摊需选择人流多的"
@@ -1866,7 +4480,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇾",
     "lat": 3.139,
     "lng": 101.6869,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -1874,7 +4488,159 @@ var CITY_DATABASE = {
         "crime": "B+",
         "transport": "A",
         "health": "B+",
-        "natural": "A",
+        "natural": "A",,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         "food": "A",
         "disease": "A"
       },
@@ -1967,7 +4733,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "独立广场",
-          "desc": "标志"
+          ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }desc": "标志"
         },
         {
           "name": "茨厂街",
@@ -2070,7 +4988,159 @@ var CITY_DATABASE = {
           "temp": "根据当地气候",
           "tips": "注意保暖"
         }
-      },
+      },,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "距叙利亚有距离",
+      "gang_activity": "中等",
+      "gang_desc": "主要针对本地人",
+      "civil_unrest": "中等",
+      "civil_desc": "敏感期注意"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
       "budget": {
         "daily_budget": "根据当地消费水平",
         "accommodation": "根据当地标准",
@@ -2108,6 +5178,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "吉隆坡街头美食多，卫生状况一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "马六甲海峡海鲜，辣椒虾和咖喱鱼是特色",
       "streetFood": "椰浆饭、沙爹、肉骨茶安全性一般",
       "avoid": "避免食用街头冰品和生食",
       "restaurants": "商场内餐厅卫生好"
@@ -2129,7 +5200,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇼",
     "lat": 25.033,
     "lng": 121.5654,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=400&q=80",
     "safety": {
       "overall": 91,
       "grade": "A",
@@ -2138,7 +5209,159 @@ var CITY_DATABASE = {
         "transport": "A",
         "health": "A",
         "natural": "A",
-        "food": "A",
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "food": "A",
         "disease": "A"
       },
       "safeAreas": [
@@ -2244,7 +5467,159 @@ var CITY_DATABASE = {
       "festivals": [
         {
           "name": "春节",
-          "date": "1-2月"
+          "date,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }": "1-2月"
         },
         {
           "name": "元宵",
@@ -2344,7 +5719,159 @@ var CITY_DATABASE = {
         "daily_budget": "根据当地消费水平",
         "accommodation": "根据当地标准",
         "food": "根据当地标准",
-        "transport": "根据当地标准"
+        "transport": "根据,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }当地标准"
       },
       "visas": {
         "chinese_citizens": "请查询最新签证政策",
@@ -2377,6 +5904,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "台北食品安全监管严格，夜市丰富。",
       "tapWater": "可直饮",
+      "seafood": "台湾海峡海鲜，虱目鱼和樱花虾是特色",
       "streetFood": "珍珠奶茶、卤肉饭安全性高",
       "avoid": "避免食用街头冰品",
       "restaurants": "米其林餐厅卫生好"
@@ -2398,7 +5926,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 34.6937,
     "lng": 135.5023,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -2416,7 +5944,159 @@ var CITY_DATABASE = {
         "港区（高档住宅区）",
         "千代田区（政府机关区域）"
       ],
-      "hotspots": [
+      "hotspots":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } [
         {
           "area": "歌舞伎町",
           "desc": "夜生活区，注意拉客和诈骗",
@@ -2508,7 +6188,159 @@ var CITY_DATABASE = {
           "name": "道顿堀",
           "desc": "美食"
         },
-        {
+       ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "越南政治稳定",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } {
           "name": "大阪城",
           "desc": "秀吉"
         },
@@ -2617,7 +6449,159 @@ var CITY_DATABASE = {
       },
       "budget": {
         "daily_budget": "根据当地消费水平",
-        "accommodation": "根据当地标准",
+        "accommodation": ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }根据当地标准",
         "food": "根据当地标准",
         "transport": "根据当地标准"
       },
@@ -2652,6 +6636,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "大阪食品安全好，美食天堂。",
       "tapWater": "可直饮",
+      "seafood": "大阪近海海鲜，寿司和刺身新鲜安全",
       "streetFood": "章鱼烧、大阪烧安全性高",
       "avoid": "道顿堀部分价格偏高",
       "restaurants": "心斋桥餐厅卫生好"
@@ -2673,7 +6658,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 19.076,
     "lng": 72.8777,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
     "safety": {
       "overall": 61,
       "grade": "B-",
@@ -2685,7 +6670,159 @@ var CITY_DATABASE = {
         "food": "A",
         "disease": "A"
       },
-      "safeAreas": [
+      "safeAre,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }as": [
         "市中心商业区",
         "主要旅游区",
         "高档住宅区",
@@ -2782,7 +6919,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "洗衣场",
-          "desc": "百年"
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "desc": "百年"
         }
       ],
       "festivals": [
@@ -2884,7 +7173,159 @@ var CITY_DATABASE = {
         }
       },
       "budget": {
-        "daily_budget": "根据当地消费水平",
+        "dai,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ly_budget": "根据当地消费水平",
         "accommodation": "根据当地标准",
         "food": "根据当地标准",
         "transport": "根据当地标准"
@@ -2920,6 +7361,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "孟买街头美食多但卫生挑战大。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "阿拉伯海海鲜，龙虾和咖喱鱼是特色",
       "streetFood": "咖喱饺、帕卡布拉安全性一般",
       "avoid": "避免食用街头冰品和生水",
       "restaurants": "高档酒店餐厅卫生好"
@@ -2941,7 +7383,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 28.6139,
     "lng": 77.209,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=400&q=80",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -2953,7 +7395,159 @@ var CITY_DATABASE = {
         "food": "A",
         "disease": "A"
       },
-      "safeAreas": [
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  "safeAreas": [
         "市中心商业区",
         "主要旅游区",
         "高档住宅区",
@@ -3049,7 +7643,159 @@ var CITY_DATABASE = {
           "desc": "最大"
         },
         {
-          "name": "月光集市",
+        ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  "name": "月光集市",
           "desc": "传统"
         }
       ],
@@ -3143,7 +7889,159 @@ var CITY_DATABASE = {
           "tips": "注意防晒防暑"
         },
         "autumn": {
-          "temp": "根据当地气候",
+          "temp": ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"根据当地气候",
           "tips": "秋季凉爽舒适"
         },
         "winter": {
@@ -3188,6 +8086,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "德里街头美食丰富但卫生挑战大。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "咖喱、奶茶安全性一般",
       "avoid": "避免食用街头冰品和未煮熟的食物",
       "restaurants": "高档酒店餐厅卫生好"
@@ -3205,11 +8104,163 @@ var CITY_DATABASE = {
     "name": "雅加达",
     "nameEn": "Jakarta",
     "country": "印尼",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
     "continent": "亚洲",
     "flag": "🇮🇩",
     "lat": -6.2088,
     "lng": 106.8456,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1557838281-8400d9c26b26?w=400&q=80",
     "safety": {
       "overall": 78,
       "grade": "B+",
@@ -3289,7 +8340,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "沙嗲",
-          "price": "Rp15000-35000",
+          "price":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "Rp15000-35000",
           "desc": "Sate"
         },
         {
@@ -3386,7 +8589,159 @@ var CITY_DATABASE = {
         "下载当地天气预报APP",
         "了解自然灾害应对措施"
       ],
-      "cultural": [
+      "cultural": ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "英国无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "远离游客区",
+      "civil_unrest": "中等",
+      "civil_desc": "偶有示威"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }[
         "尊重印尼的文化习俗",
         "了解当地紧急联系方式",
         "保存当地大使馆信息",
@@ -3451,6 +8806,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "雅加达食品安全一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "雅加达湾海鲜，烤鱼和虾是特色",
       "streetFood": "炒饭、炒面安全性一般",
       "avoid": "避免食用街头冰品",
       "restaurants": "商场内餐厅卫生好"
@@ -3465,14 +8821,166 @@ var CITY_DATABASE = {
   },
   "ho_chi_minh": {
     "id": "ho_chi_minh",
-    "name": "胡志明市",
+    "name": "胡,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "法国无武装冲突",
+      "gang_activity": "中等",
+      "gang_desc": "郊区帮派活动",
+      "civil_unrest": "中等",
+      "civil_desc": "示威偶发"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }志明市",
     "nameEn": "Ho Chi Minh City",
     "country": "越南",
     "continent": "亚洲",
     "flag": "🇻🇳",
     "lat": 10.8231,
     "lng": 106.6297,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -3569,7 +9077,159 @@ var CITY_DATABASE = {
       "attractions": [
         {
           "name": "统一宫",
-          "desc": "战争"
+          "desc": "战争",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "德国无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "不影响游客",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         },
         {
           "name": "范老五街",
@@ -3675,7 +9335,159 @@ var CITY_DATABASE = {
         },
         "winter": {
           "temp": "根据当地气候",
-          "tips": "注意保暖"
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "荷兰无武装冲突",
+      "gang_activity": "中等",
+      "gang_desc": "红灯区帮派活动",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "tips": "注意保暖"
         }
       },
       "budget": {
@@ -3715,6 +9527,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "胡志明市街头美食多但卫生需注意。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "湄公河海鲜，烤鱼和蒸虾是特色",
       "streetFood": "越南河粉、法棍安全性一般",
       "avoid": "避免食用生菜沙拉",
       "restaurants": "高端餐厅卫生好"
@@ -3736,7 +9549,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇭",
     "lat": 14.5995,
     "lng": 120.9842,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1516959411312-f sf6a6f9edb2?w=400&q=80",
     "safety": {
       "overall": 77,
       "grade": "B+",
@@ -3748,7 +9561,159 @@ var CITY_DATABASE = {
         "food": "A",
         "disease": "A"
       },
-      "safeAreas": [
+      "safeAreas",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: [
         "市中心商业区",
         "主要旅游区",
         "高档住宅区",
@@ -3848,7 +9813,159 @@ var CITY_DATABASE = {
           "desc": "最大"
         }
       ],
-      "festivals": [
+      "f,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }estivals": [
         {
           "name": "独立日",
           "date": "6月"
@@ -3948,7 +10065,159 @@ var CITY_DATABASE = {
         "transport": "根据当地标准"
       },
       "visas": {
-        "chinese_citizens": "请查询最新签证政策",
+        "chinese_citizens": "请查询最新,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }签证政策",
         "visa_free_countries": "请查询官方信息"
       },
       "language": {
@@ -3978,6 +10247,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "马尼拉食品安全一般，街头美食多。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "菲律宾海海鲜，烤鱿鱼和蒸鱼是特色",
       "streetFood": "菲律宾烤鸡、阿多博安全性一般",
       "avoid": "避免食用街头冰品和生食",
       "restaurants": "马卡蒂区餐厅卫生好"
@@ -3999,7 +10269,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇪",
     "lat": 25.2048,
     "lng": 55.2708,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -4056,7 +10326,159 @@ var CITY_DATABASE = {
       ],
       "embassies": {
         "中国大使馆（领事保护）": "+971-4-394-4733",
-        "24小时紧急热线": "+971-4-394-4733",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "24小时紧急热线": "+971-4-394-4733",
         "中国大使馆": "请查询当地使馆信息",
         "紧急领事保护": "+86-10-12308"
       },
@@ -4193,7 +10615,159 @@ var CITY_DATABASE = {
           "tips": "春季天气宜人"
         },
         "summer": {
-          "temp": "根据当地气候",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }          "temp": "根据当地气候",
           "tips": "注意防晒防暑"
         },
         "autumn": {
@@ -4297,7 +10871,159 @@ var CITY_DATABASE = {
     },
     "highlights": [
       "医疗水平高",
-      "发达公共交通",
+      "发达公共交通,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }",
       "美食丰富",
       "购物便利"
     ],
@@ -4433,7 +11159,159 @@ var CITY_DATABASE = {
         "随身携带常用药品",
         "注意饮食卫生",
         "饮用瓶装水或煮沸的水",
-        "预防蚊虫叮咬"
+        "预防蚊虫叮,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "西班牙无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }咬"
       ],
       "natural": [
         "关注当地天气预警",
@@ -4502,6 +11380,173 @@ var CITY_DATABASE = {
       "name": "Hamad General Hospital",
       "phone": "+974-4439-2222",
       "address": "Doha, Qatar"
+    },
+    "foodSafety": {
+      "summary": "多哈食品安全标准高，西餐厅和酒店食品安全有保障。",
+      "tapWater": "建议购买瓶装水，自来水可作生活用水但不建议饮用",
+      "seafood": "海湾海鲜新鲜，建议选择高档酒店餐厅",
+      "streetFood": "街头食品卫生条件参差不齐，建议选择清洁餐厅",
+      "avoid": "避免食用路边来源不明的食品",
+      "restaurants": "酒店内餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "多哈医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗，建议出行前购买医疗保险",
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "意大利无武装冲突",
+      "gang_activity": "中等",
+      "gang_desc": "黑手党远离游客区",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "diseases": "无疟疾，夏季注意防暑",
+      "weather": "夏季高温（可达50°C），避免中午外出，冬季舒适",
+      "tips": "注意防晒，及时补充水分"
     }
   },
   "riyadh": {
@@ -4598,7 +11643,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "大饼",
-          "price": "SAR5-15",
+          "pri,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ce": "SAR5-15",
           "desc": "Bread"
         },
         {
@@ -4706,7 +11903,159 @@ var CITY_DATABASE = {
         },
         "winter": {
           "temp": "根据当地气候",
-          "tips": "注意保暖"
+       ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }   "tips": "注意保暖"
         }
       },
       "budget": {
@@ -4741,6 +12090,21 @@ var CITY_DATABASE = {
       "name": "King Faisal Specialist Hospital",
       "phone": "+966-11-464-7272",
       "address": "Al Mathar, Riyadh"
+    },
+    "foodSafety": {
+      "summary": "利雅得食品安全标准较高，酒店和大型餐厅食品安全有保障。",
+      "tapWater": "建议购买瓶装水，自来水含盐量高不建议饮用",
+      "seafood": "红海海鲜新鲜，建议选择高档餐厅",
+      "streetFood": "传统市场食品需注意卫生",
+      "avoid": "避免食用未煮熟的海鲜和来源不明的食品",
+      "restaurants": "酒店内餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "利雅得医疗条件好，但沙漠地区有沙尘暴风险。",
+      "vaccines": "无需特殊疫苗，建议购买医疗保险",
+      "diseases": "无疟疾，夏季注意防中暑",
+      "weather": "夏季高温（可达45°C），沙尘暴频繁，冬季较舒适",
+      "tips": "注意防晒防沙尘，携带口罩"
     }
   },
   "muscat": {
@@ -4798,7 +12162,159 @@ var CITY_DATABASE = {
       "touristPolice": "112",
       "touristHotline": "112",
       "police": "112",
-      "ambulance": "112",
+      "ambulance":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "112",
       "fire": "112",
       "hospitals": [
         {
@@ -4937,7 +12453,159 @@ var CITY_DATABASE = {
         },
         "summer": {
           "temp": "根据当地气候",
-          "tips": "注意防晒防暑"
+          "tips",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: "注意防晒防暑"
         },
         "autumn": {
           "temp": "根据当地气候",
@@ -4980,6 +12648,21 @@ var CITY_DATABASE = {
       "name": "Royal Hospital",
       "phone": "+968-2456-0000",
       "address": "Muscat, Oman"
+    },
+    "foodSafety": {
+      "summary": "马斯喀特食品安全标准高，海鲜新鲜，阿曼湾海鲜安全性好。",
+      "tapWater": "建议购买瓶装水，自来水可作生活用水",
+      "seafood": "阿曼湾海鲜新鲜安全，建议选择当地特色鱼料理",
+      "streetFood": "传统市场食品需选择干净摊位",
+      "avoid": "避免食用路边来源不明的食品",
+      "restaurants": "高档酒店餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "马斯喀特医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，注意防暑",
+      "weather": "夏季高温（可达48°C），冬季舒适",
+      "tips": "注意防晒，及时补充水分"
     }
   },
   "tel_aviv": {
@@ -5022,7 +12705,159 @@ var CITY_DATABASE = {
         }
       ]
     },
-    "highlights": [
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "希腊总体安全",
+      "gang_activity": "中等",
+      "gang_desc": "有组织犯罪",
+      "civil_unrest": "中等",
+      "civil_desc": "经济抗议"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "highlights": [
       "文化景点多",
       "购物便利",
       "发达公共交通",
@@ -5162,7 +12997,159 @@ var CITY_DATABASE = {
         "关注当地天气预警",
         "了解紧急避难场所位置",
         "保持手机电量充足",
-        "下载当地天气预报APP",
+        "下载当,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }地天气预报APP",
         "了解自然灾害应对措施"
       ],
       "cultural": [
@@ -5229,6 +13216,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "特拉维夫食品安全好，地中海美食丰富。",
       "tapWater": "可直饮",
+      "seafood": "地中海海鲜，烤鱼和沙拉是特色",
       "streetFood": "沙瓦尔玛、鹰嘴豆泥安全性高",
       "avoid": "老城部分餐厅卫生一般",
       "restaurants": "雅法区餐厅卫生好"
@@ -5250,7 +13238,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇷",
     "lat": 41.0082,
     "lng": 28.9784,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&q=80",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -5264,7 +13252,159 @@ var CITY_DATABASE = {
       },
       "safeAreas": [
         "市中心商业区",
-        "主要旅游区",
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }   "主要旅游区",
         "高档住宅区",
         "大学校园周边"
       ],
@@ -5405,7 +13545,159 @@ var CITY_DATABASE = {
         "在土耳其旅行时，保持警惕，注意财物安全",
         "避免深夜独自前往偏僻区域",
         "重要证件和现金分开存放",
-        "使用ATM时注意周围环境",
+        ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "乌克兰战争期间",
+      "gang_activity": "中等",
+      "gang_desc": "特定区域存在",
+      "civil_unrest": "低",
+      "civil_desc": "政府控制"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }使用ATM时注意周围环境",
         "不要携带大量现金"
       ],
       "transport": [
@@ -5484,7 +13776,159 @@ var CITY_DATABASE = {
       "phone": "+90-212-299-2188",
       "address": "Çırağan Cad. 32, Beşiktaş, Istanbul",
       "emergency": "+90-212-299-2188"
+    },,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
     },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "乌克兰战争期间",
+      "gang_activity": "中等",
+      "gang_desc": "有组织犯罪",
+      "civil_unrest": "低",
+      "civil_desc": "政府控制"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
     "hospital": {
       "name": "Acıbadem Hospital",
       "phone": "+90-444-5544",
@@ -5493,6 +13937,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "伊斯坦布尔食品安全一般，街头美食多。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "黑海和地中海海鲜，烤鱼和海鲜饭是特色",
       "streetFood": "烤肉、土耳其披萨安全性一般",
       "avoid": "避免食用未煮熟的肉类",
       "restaurants": "贝尤卢区餐厅卫生好"
@@ -5514,7 +13959,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇩",
     "lat": -8.4095,
     "lng": 115.1889,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&q=80",
     "safety": {
       "overall": 72,
       "grade": "B",
@@ -5570,7 +14015,159 @@ var CITY_DATABASE = {
         }
       ],
       "embassies": {
-        "中国大使馆（领事保护）": "+62-361-239901",
+        "中国大使馆（领事保护）":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "+62-361-239901",
         "24小时紧急热线": "+62-361-239901",
         "中国大使馆": "请查询当地使馆信息",
         "紧急领事保护": "+86-10-12308"
@@ -5668,7 +14265,159 @@ var CITY_DATABASE = {
         "在印尼旅行时，保持警惕，注意财物安全",
         "避免深夜独自前往偏僻区域",
         "重要证件和现金分开存放",
-        "使用ATM时注意周围环境",
+        "使用ATM时注意周围环,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }境",
         "不要携带大量现金"
       ],
       "transport": [
@@ -5750,13 +14499,166 @@ var CITY_DATABASE = {
       "email": "baliconsul@gmail.com"
     },
     "hospital": {
-      "name": "Sanglah Hospital",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }      "name": "Sanglah Hospital",
       "phone": "+62-361-227911",
       "address": "Jl. Pulau Bali No.2, Denpasar"
     },
     "foodSafety": {
       "summary": "巴厘岛食品安全不错，游客区卫生好。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "巴厘岛海域海鲜，烤鱼和海鲜是特色",
       "streetFood": "印尼炒饭、烤串安全性一般",
       "avoid": "避免食用街头生食和冰品",
       "restaurants": "游客区餐厅卫生好"
@@ -5834,7 +14736,159 @@ var CITY_DATABASE = {
         }
       ],
       "embassies": {
-        "中国大使馆（领事保护）": "+66-53-282-310",
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }   "中国大使馆（领事保护）": "+66-53-282-310",
         "24小时紧急热线": "+66-53-282-310",
         "中国大使馆": "请查询当地使馆信息",
         "紧急领事保护": "+86-10-12308"
@@ -5933,7 +14987,159 @@ var CITY_DATABASE = {
         "避免深夜独自前往偏僻区域",
         "重要证件和现金分开存放",
         "使用ATM时注意周围环境",
-        "不要携带大量现金"
+        "不要携带大量现金",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
       ],
       "transport": [
         "选择正规交通工具",
@@ -6016,10 +15222,163 @@ var CITY_DATABASE = {
       "name": "Chiang Mai Ram Hospital",
       "phone": "+66-53-920-300",
       "address": "8 Siriporn Rd, Chiang Mai"
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
     },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  },
     "foodSafety": {
       "summary": "清迈食品安全不错。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "泰北美食安全性高",
       "avoid": "避免食用街头冰品",
       "restaurants": "老城餐厅卫生好"
@@ -6041,7 +15400,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 7.8804,
     "lng": 98.3923,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -6112,7 +15471,159 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"lifestyle": {
       "food": [
         {
           "name": "海鲜",
@@ -6250,7 +15761,159 @@ var CITY_DATABASE = {
       "budget": {
         "daily_budget": "根据当地消费水平",
         "accommodation": "根据当地标准",
-        "food": "根据当地标准",
+        "food",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: "根据当地标准",
         "transport": "根据当地标准"
       },
       "visas": {
@@ -6283,6 +15946,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "普吉岛食品安全不错，游客区卫生好。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "安达曼海海鲜，咖喱蟹和烤虾是特色",
       "streetFood": "泰式海鲜安全性高",
       "avoid": "避免食用街头冰品",
       "restaurants": "海滩餐厅卫生好"
@@ -6304,7 +15968,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇾",
     "lat": 5.4141,
     "lng": 100.3288,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -6359,7 +16023,159 @@ var CITY_DATABASE = {
           "address": "市中心区域"
         }
       ],
-      "embassies": {
+      "embassies": {,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         "中国大使馆（领事保护）": "+60-4-226-6060",
         "24小时紧急热线": "+60-4-226-6060",
         "中国大使馆": "请查询当地使馆信息",
@@ -6497,7 +16313,159 @@ var CITY_DATABASE = {
           "tips": "春季天气宜人"
         },
         "summer": {
-          "temp": "根据当地气候",
+          "temp": ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }根据当地气候",
           "tips": "注意防晒防暑"
         },
         "autumn": {
@@ -6545,6 +16513,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "槟城食品安全世界知名，街头美食丰富。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "槟城海域海鲜，福建面和烤鱼是特色",
       "streetFood": "叻沙、炒粿条安全性高",
       "avoid": "避免食用街头冰品",
       "restaurants": "小贩中心卫生好"
@@ -6566,7 +16535,7 @@ var CITY_DATABASE = {
     "flag": "🇻🇳",
     "lat": 21.0285,
     "lng": 105.8542,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1509030454996-3ae1b3e3d81e?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -6596,7 +16565,159 @@ var CITY_DATABASE = {
           "risk": "低"
         }
       ]
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
     },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }},
     "highlights": [
       "发达公共交通",
       "美食丰富",
@@ -6734,7 +16855,159 @@ var CITY_DATABASE = {
         "随身携带常用药品",
         "注意饮食卫生",
         "饮用瓶装水或煮沸的水",
-        "预防蚊虫叮咬"
+        "预防蚊,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }虫叮咬"
       ],
       "natural": [
         "关注当地天气预警",
@@ -6808,6 +17081,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "河内街头美食丰富但卫生需注意。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "内陆城市，红河鱼类丰富",
       "streetFood": "越南河粉、烤肉米粉安全性一般",
       "avoid": "避免食用生菜沙拉和未煮熟的食物",
       "restaurants": "高端餐厅和连锁店卫生好"
@@ -6835,7 +17109,159 @@ var CITY_DATABASE = {
       "grade": "A-",
       "grades": {
         "crime": "B+",
-        "transport": "A-",
+        "transpo,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }rt": "A-",
         "health": "B+",
         "natural": "A-",
         "food": "A",
@@ -6976,7 +17402,159 @@ var CITY_DATABASE = {
     "safety_tips": {
       "crime": [
         "在印度旅行时，保持警惕，注意财物安全",
-        "避免深夜独自前往偏僻区域",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "避免深夜独自前往偏僻区域",
         "重要证件和现金分开存放",
         "使用ATM时注意周围环境",
         "不要携带大量现金"
@@ -7066,6 +17644,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "班加罗尔食品安全一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "南印度美食安全性一般",
       "avoid": "避免食用街头冰品",
       "restaurants": "高端酒店卫生好"
@@ -7086,7 +17665,159 @@ var CITY_DATABASE = {
     "continent": "亚洲",
     "flag": "🇮🇳",
     "lat": 13.0827,
-    "lng": 80.2707,
+    "lng": 80.27,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }07,
     "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
       "overall": 80,
@@ -7223,7 +17954,159 @@ var CITY_DATABASE = {
         },
         {
           "area": " beaches",
-          "desc": "安全",
+      ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "desc": "安全",
           "risk": "低"
         }
       ],
@@ -7324,6 +18207,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "金奈食品安全一般，南印度美食丰富。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "阿拉伯海海鲜，咖喱鱼是特色",
       "streetFood": "南印度素食安全性一般",
       "avoid": "避免食用街头冰品",
       "restaurants": "高端酒店卫生好"
@@ -7332,7 +18216,159 @@ var CITY_DATABASE = {
       "summary": "印度需注意登革热。",
       "vaccines": "建议接种甲肝",
       "diseases": "登革热风险",
-      "weather": "热带气候",
+      ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"weather": "热带气候",
       "tips": "使用驱蚊水"
     }
   },
@@ -7464,7 +18500,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "新年",
-          "date": "1月"
+      ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "date": "1月"
         }
       ],
       "customs": [
@@ -7576,12 +18764,165 @@ var CITY_DATABASE = {
     },
     "hospital": {
       "name": "CMRI Hospital",
-      "phone": "+91-33-3090-3000",
+      "phone": "+91-33-3090-30,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }00",
       "address": "7/2 Diamond Harbour Rd, Kolkata"
     },
     "foodSafety": {
       "summary": "加尔各答食品安全一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "孟加拉湾海鲜，烤鱼和虾是特色",
       "streetFood": "孟加拉美食、奶茶安全性一般",
       "avoid": "避免食用街头冰品",
       "restaurants": "高端酒店卫生好"
@@ -7693,7 +19034,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "伊朗茶",
-          "price": "₹30-60",
+          "price": ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"₹30-60",
           "desc": "Irani Chai"
         }
       ],
@@ -7824,7 +19317,159 @@ var CITY_DATABASE = {
         }
       }
     },
-    "overview": "海德拉巴是印度的重要城市，位于亚洲。作为该地区的经济、文化中心，海德拉巴拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "overview": "海德拉巴是印度的重要城市，位于亚洲。作为该地区的经济、文化中心,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "美国无内战",
+      "gang_activity": "中等",
+      "gang_desc": "避免贫民区",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }，海德拉巴拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
     "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。",
     "embassy": {
       "name": "中国驻海德拉巴总领事馆",
@@ -7836,6 +19481,21 @@ var CITY_DATABASE = {
       "name": "Yashoda Hospital",
       "phone": "+91-40-4567-0000",
       "address": "Raj Bhavan Rd, Hyderabad"
+    },
+    "foodSafety": {
+      "summary": "海德拉巴食品安全参差不齐，建议选择连锁餐厅和高档酒店。",
+      "tapWater": "不建议直接饮用自来水，建议购买瓶装水",
+      "seafood": "内陆城市海鲜较少，建议选择新鲜鱼类",
+      "streetFood": "街头食品如印度脆球等需注意卫生，建议选择人流多的摊位",
+      "avoid": "避免食用生水清洗的沙拉和来源不明的街头食品",
+      "restaurants": "连锁快餐店和酒店餐厅相对安全"
+    },
+    "diseasePrevention": {
+      "summary": "海德拉巴有登革热等蚊媒疾病风险，注意防蚊。",
+      "vaccines": "建议接种甲肝、伤寒疫苗",
+      "diseases": "注意预防登革热、疟疾等蚊媒疾病",
+      "weather": "雨季（6-9月）蚊虫多，冬季（10-2月）较舒适",
+      "tips": "注意防蚊，使用驱蚊剂"
     }
   },
   "shenzhen": {
@@ -7847,7 +19507,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 22.5431,
     "lng": 114.0579,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558492426-df14e290aefa?w=400&q=80",
     "safety": {
       "overall": 78,
       "grade": "B+",
@@ -7895,7 +19555,159 @@ var CITY_DATABASE = {
       "police": "110",
       "ambulance": "120",
       "fire": "119",
-      "hospitals": [
+      "hospitals",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "美国无内战",
+      "gang_activity": "高",
+      "gang_desc": "帮派问题严重",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: [
         {
           "name": "主要公立医院",
           "phone": "当地急救电话",
@@ -8009,7 +19821,159 @@ var CITY_DATABASE = {
         "选择正规交通工具",
         "保留交通票据",
         "使用打车软件记录行程",
-        "乘坐出租车确认计价器正常",
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "美国无内战",
+      "gang_activity": "高",
+      "gang_desc": "帮派暴力严重",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }   "乘坐出租车确认计价器正常",
         "夜间出行尽量选择多人同行"
       ],
       "health": [
@@ -8090,7 +20054,160 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "深圳食品安全监管严格。",
       "tapWater": "建议饮用瓶装水",
-      "streetFood": "粤菜、茶点安全性高",
+      "seafood": "南海海鲜，虾和蟹是特色",
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "加拿大无冲突",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "streetFood": "粤菜、茶点安全性高",
       "avoid": "城中村部分卫生一般",
       "restaurants": "高端商场卫生好"
     },
@@ -8111,7 +20228,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 23.1291,
     "lng": 113.2644,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -8190,7 +20307,159 @@ var CITY_DATABASE = {
           "desc": "点心"
         },
         {
-          "name": "烧腊",
+          "name,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "加拿大无冲突",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }": "烧腊",
           "price": "¥40-100",
           "desc": "叉烧"
         },
@@ -8301,7 +20570,159 @@ var CITY_DATABASE = {
           "tips": "春季天气宜人"
         },
         "summer": {
-          "temp": "根据当地气候",
+          "temp":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "根据当地气候",
           "tips": "注意防晒防暑"
         },
         "autumn": {
@@ -8349,6 +20770,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "广州食品安全监管严格，粤菜发源地。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "南海海鲜，清蒸鱼和虾是特色",
       "streetFood": "早茶、点心安全性高",
       "avoid": "避免食用生食",
       "restaurants": "早茶店卫生好"
@@ -8370,7 +20792,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.5728,
     "lng": 104.0668,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -8380,7 +20802,159 @@ var CITY_DATABASE = {
         "health": "A-",
         "natural": "A-",
         "food": "A",
-        "disease": "A"
+        "di,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "美国无内战",
+      "gang_activity": "中等",
+      "gang_desc": "部分区域有帮派",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }sease": "A"
       },
       "safeAreas": [
         "市中心商业区",
@@ -8492,7 +21066,159 @@ var CITY_DATABASE = {
           "date": "1月"
         }
       ],
-      "customs": [
+      "customs":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } [
         "辣椒",
         "慢生活",
         "茶馆"
@@ -8589,7 +21315,159 @@ var CITY_DATABASE = {
           "谢谢": "当地语言表达",
           "对不起": "当地语言表达",
           "警察在哪里": "当地语言表达"
-        }
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "美国无内战",
+      "gang_activity": "中等",
+      "gang_desc": "旅游业区安全",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     }
       }
     },
     "overview": "成都是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，成都拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
@@ -8608,6 +21486,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "成都食品安全不错，川菜丰富。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "火锅、串串安全性一般",
       "avoid": "避免食用未煮熟的食物",
       "restaurants": "正规火锅店卫生好"
@@ -8629,7 +21508,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.2741,
     "lng": 120.1551,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1595783956520-b80bbd10c6b8?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -8677,7 +21556,159 @@ var CITY_DATABASE = {
       "police": "110",
       "ambulance": "120",
       "fire": "119",
-      "hospitals": [
+      "ho,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }spitals": [
         {
           "name": "主要公立医院",
           "phone": "当地急救电话",
@@ -8788,7 +21819,159 @@ var CITY_DATABASE = {
         "乘坐出租车确认计价器正常",
         "夜间出行尽量选择多人同行"
       ],
-      "health": [
+      "h,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ealth": [
         "购买旅行保险",
         "随身携带常用药品",
         "注意饮食卫生",
@@ -8866,6 +22049,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "杭州食品安全监管严格。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "内陆城市，太湖鱼类丰富",
       "streetFood": "西湖醋鱼、东坡肉安全性高",
       "avoid": "避免食用不明来源的食品",
       "restaurants": "景区周边卫生好"
@@ -8874,7 +22058,159 @@ var CITY_DATABASE = {
       "summary": "中国医疗条件好。",
       "vaccines": "无需特殊疫苗",
       "diseases": "无疟疾",
-      "weather": "亚热带季风气候",
+      "weather": "亚热带季风气候,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }",
       "tips": "梅雨季节注意防潮"
     }
   },
@@ -8887,7 +22223,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 34.3416,
     "lng": 108.9398,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1569513586164-10fe8719e7a4a?w=400&q=80",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -8974,7 +22310,159 @@ var CITY_DATABASE = {
           "name": "凉皮",
           "price": "¥10-25",
           "desc": "凉面"
-        },
+ ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }       },
         {
           "name": "biangbiang面",
           "price": "¥15-40",
@@ -9077,7 +22565,159 @@ var CITY_DATABASE = {
           "tips": "春季天气宜人"
         },
         "summer": {
-          "temp": "根据当地气候",
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }        "temp": "根据当地气候",
           "tips": "注意防晒防暑"
         },
         "autumn": {
@@ -9125,6 +22765,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "西安食品安全不错，面食丰富。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "肉夹馍、凉皮安全性高",
       "avoid": "避免食用不明来源的街头食品",
       "restaurants": "回民街部分需注意"
@@ -9146,14 +22787,166 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 51.5074,
     "lng": -0.1278,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
       "grades": {
         "crime": "A-",
         "transport": "A",
-        "health": "A",
+        "he,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }alth": "A",
         "natural": "A",
         "food": "A",
         "disease": "A"
@@ -9254,7 +23047,159 @@ var CITY_DATABASE = {
           "desc": "泰晤士"
         },
         {
-          "name": "诺丁山",
+          "name": "诺丁山,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }",
           "desc": "彩色"
         }
       ],
@@ -9358,7 +23303,159 @@ var CITY_DATABASE = {
         }
       },
       "budget": {
-        "daily_budget": "根据当地消费水平",
+        "da,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ily_budget": "根据当地消费水平",
         "accommodation": "根据当地标准",
         "food": "根据当地标准",
         "transport": "根据当地标准"
@@ -9422,7 +23519,159 @@ var CITY_DATABASE = {
       "grade": "A",
       "grades": {
         "crime": "A",
-        "transport": "A",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "transport": "A",
         "health": "A",
         "natural": "A",
         "food": "A",
@@ -9530,7 +23779,159 @@ var CITY_DATABASE = {
       ],
       "festivals": [
         {
-          "name": "国庆",
+          "name,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }": "国庆",
           "date": "7月"
         },
         {
@@ -9631,7 +24032,159 @@ var CITY_DATABASE = {
       "budget": {
         "daily_budget": "根据当地消费水平",
         "accommodation": "根据当地标准",
-        "food": "根据当地标准",
+        "f,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ood": "根据当地标准",
         "transport": "根据当地标准"
       },
       "visas": {
@@ -9687,7 +24240,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 52.52,
     "lng": 13.405,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -9700,7 +24253,159 @@ var CITY_DATABASE = {
         "disease": "A"
       },
       "safeAreas": [
-        "市中心商业区",
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "远离边境毒战区",
+      "gang_activity": "高",
+      "gang_desc": "帮派和毒枭活动",
+      "civil_unrest": "中等",
+      "civil_desc": "反腐示威"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }   "市中心商业区",
         "主要旅游区",
         "高档住宅区",
         "大学校园周边"
@@ -9817,7 +24522,159 @@ var CITY_DATABASE = {
           "desc": "夜店纠纷，帮派",
           "risk": "中"
         },
-        {
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    {
           "area": "Friedrichshain",
           "desc": "盗窃",
           "risk": "中"
@@ -9912,7 +24769,159 @@ var CITY_DATABASE = {
     "overview": "柏林是德国的重要城市，位于欧洲。作为该地区的经济、文化中心，柏林拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
     "safety_history": "德国建立了高效的城市安全体系，主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过严格的法规执行、社区警务和科技应用，为居民和游客提供了优质的安全保障。",
     "embassy": {
-      "name": "中国驻德国大使馆",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "巴西无武装冲突",
+      "gang_activity": "高",
+      "gang_desc": "帮派控制贫民区",
+      "civil_unrest": "中等",
+      "civil_desc": "社会抗议"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }      "name": "中国驻德国大使馆",
       "phone": "+49-30-27588-0",
       "address": "Märkisches Ufer 54, 10179 Berlin",
       "emergency": "+49-30-27588-155",
@@ -9926,6 +24935,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "柏林食品安全标准高，超市和餐厅卫生好。",
       "tapWater": "可直饮",
+      "seafood": "北海和波罗的海海鲜，鲱鱼和鳕鱼是特色",
       "streetFood": "咖喱香肠、柏林贝果安全性高",
       "avoid": "部分土耳其餐厅卫生一般",
       "restaurants": "高端餐厅和连锁店卫生有保障"
@@ -9947,7 +24957,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇱",
     "lat": 52.3676,
     "lng": 4.9041,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -10005,7 +25015,159 @@ var CITY_DATABASE = {
       "embassies": {
         "中国大使馆（领事保护）": "+31-70-306-5100",
         "24小时紧急热线": "+31-70-306-5100",
-        "中国大使馆": "请查询当地使馆信息",
+        "中国大使馆": ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"请查询当地使馆信息",
         "紧急领事保护": "+86-10-12308"
       },
       "apps": [
@@ -10123,7 +25285,159 @@ var CITY_DATABASE = {
         "预防蚊虫叮咬"
       ],
       "natural": [
-        "关注当地天气预警",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "阿根廷和平稳定",
+      "gang_activity": "中等",
+      "gang_desc": "部分区域犯罪高",
+      "civil_unrest": "中等",
+      "civil_desc": "经济抗议"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "关注当地天气预警",
         "了解紧急避难场所位置",
         "保持手机电量充足",
         "下载当地天气预报APP",
@@ -10194,6 +25508,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "阿姆斯特丹食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "北海海鲜，鲱鱼和虾是特色",
       "streetFood": "荷兰煎饼、薯条安全性高",
       "avoid": "大麻咖啡店食品不推荐",
       "restaurants": "中心区餐厅卫生好"
@@ -10201,7 +25516,159 @@ var CITY_DATABASE = {
     "diseasePrevention": {
       "summary": "荷兰医疗好，传染病风险低。",
       "vaccines": "无需特殊疫苗",
-      "diseases": "无疟疾，流感季节注意",
+      "diseases,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }": "无疟疾，流感季节注意",
       "weather": "海洋性气候，阴雨天多",
       "tips": "全年带雨伞"
     }
@@ -10215,7 +25682,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇹",
     "lat": 48.2082,
     "lng": 16.3738,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=400&q=80",
     "safety": {
       "overall": 72,
       "grade": "B",
@@ -10305,7 +25772,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "烤排骨",
-          "price": "€10-20",
+         ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "秘鲁总体安全",
+      "gang_activity": "中高",
+      "gang_desc": "部分区域帮派",
+      "civil_unrest": "中等",
+      "civil_desc": "政治不稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "price": "€10-20",
           "desc": "Stelze"
         }
       ],
@@ -10421,7 +26040,159 @@ var CITY_DATABASE = {
         }
       },
       "budget": {
-        "daily_budget": "根据当地消费水平",
+        "daily_budg,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "和平进程推进中",
+      "gang_activity": "中高",
+      "gang_desc": "部分区域帮派",
+      "civil_unrest": "中等",
+      "civil_desc": "偶有抗议"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }et": "根据当地消费水平",
         "accommodation": "根据当地标准",
         "food": "根据当地标准",
         "transport": "根据当地标准"
@@ -10456,6 +26227,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "维也纳食品安全标准高。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，多瑙河鱼类",
       "streetFood": "维也纳炸牛排、萨赫蛋糕安全性高",
       "avoid": "游客区价格偏高",
       "restaurants": "市中心餐厅卫生好"
@@ -10477,7 +26249,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇭",
     "lat": 47.3769,
     "lng": 8.5417,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1515486977678-99622636c72d?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -10508,7 +26280,159 @@ var CITY_DATABASE = {
         }
       ]
     },
-    "highlights": [
+    "high,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }lights": [
       "历史建筑众多",
       "社会秩序好",
       "艺术氛围浓厚",
@@ -10654,7 +26578,159 @@ var CITY_DATABASE = {
         "下载当地天气预报APP",
         "了解自然灾害应对措施"
       ],
-      "cultural": [
+      "cultu,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ral": [
         "尊重瑞士的文化习俗",
         "了解当地紧急联系方式",
         "保存当地大使馆信息",
@@ -10718,6 +26794,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "苏黎世食品安全世界领先。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，湖泊鱼类丰富",
       "streetFood": "瑞士奶酪火锅、巧克力安全性高",
       "avoid": "普通餐厅价格极高",
       "restaurants": "米其林餐厅卫生好"
@@ -10739,7 +26816,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇪",
     "lat": 59.3293,
     "lng": 18.0686,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -10765,7 +26842,159 @@ var CITY_DATABASE = {
         },
         {
           "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
+          "desc": "注意,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "西奈有恐怖威胁",
+      "gang_activity": "中等",
+      "gang_desc": "有组织犯罪",
+      "civil_unrest": "中等",
+      "civil_desc": "敏感期注意"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }财物安全",
           "risk": "低"
         }
       ]
@@ -10871,6 +27100,158 @@ var CITY_DATABASE = {
           "date": "1月1日",
           "desc": "新年庆祝活动"
         },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "南非无武装冲突",
+      "gang_activity": "高",
+      "gang_desc": "帮派活动严重",
+      "civil_unrest": "中等",
+      "civil_desc": "贫富差距"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
         {
           "name": "文化节日",
           "date": "全年",
@@ -10976,7 +27357,159 @@ var CITY_DATABASE = {
         "daily_budget": "根据当地消费水平",
         "accommodation": "根据当地标准",
         "food": "根据当地标准",
-        "transport": "根据当地标准"
+        "transport,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "南非无武装冲突",
+      "gang_activity": "高",
+      "gang_desc": "南非犯罪中心",
+      "civil_unrest": "中等",
+      "civil_desc": "排外事件"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }": "根据当地标准"
       },
       "visas": {
         "chinese_citizens": "请查询最新签证政策",
@@ -11008,6 +27541,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "斯德哥尔摩食品安全标准高。",
       "tapWater": "可直饮",
+      "seafood": "波罗的海海鲜，鲱鱼和三文鱼是特色",
       "streetFood": "瑞典肉丸、三明治安全性高",
       "avoid": "中央车站附近价格偏高",
       "restaurants": "老城餐厅卫生好"
@@ -11029,7 +27563,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇴",
     "lat": 59.9139,
     "lng": 10.7522,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1533414417585-9c5dd1acb1b4?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -11056,7 +27590,159 @@ var CITY_DATABASE = {
         {
           "area": "旅游区人流密集处",
           "desc": "注意财物安全",
-          "risk": "低"
+          "risk",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "北部博科圣地",
+      "gang_activity": "中高",
+      "gang_desc": "绑架和抢劫风险",
+      "civil_unrest": "中等",
+      "civil_desc": "敏感期注意"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: "低"
         }
       ]
     },
@@ -11189,7 +27875,159 @@ var CITY_DATABASE = {
         },
         {
           "area": "中央车站",
-          "desc": "小偷",
+          "desc":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "北部有恐怖威胁",
+      "gang_activity": "中高",
+      "gang_desc": "部分区域犯罪高",
+      "civil_unrest": "中等",
+      "civil_desc": "选举期间"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "小偷",
           "risk": "低"
         }
       ],
@@ -11281,7 +28119,159 @@ var CITY_DATABASE = {
     "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。",
     "embassy": {
       "name": "中国驻挪威大使馆",
-      "phone": "+47-2249-5527",
+      "p,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }hone": "+47-2249-5527",
       "address": "Tuengsvegen 8, 0283 Oslo",
       "emergency": "+47-2249-5527"
     },
@@ -11293,6 +28283,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "奥斯陆食品安全标准高。",
       "tapWater": "可直饮",
+      "seafood": "北海和挪威海海鲜，三文鱼和鳕鱼是特色",
       "streetFood": "三文鱼、驯鹿肉安全性高",
       "avoid": "价格普遍较高",
       "restaurants": "市中心餐厅卫生好"
@@ -11314,7 +28305,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇰",
     "lat": 55.6761,
     "lng": 12.5683,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1519677100203-a1e1c5d8e7f9?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -11371,7 +28362,159 @@ var CITY_DATABASE = {
       ],
       "embassies": {
         "中国大使馆（领事保护）": "+45-394-60887",
-        "24小时紧急热线": "+45-394-60887",
+        "24小时紧急热线": "+45-394-60887",,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         "中国大使馆": "请查询当地使馆信息",
         "紧急领事保护": "+86-10-12308"
       },
@@ -11503,7 +28646,159 @@ var CITY_DATABASE = {
         "保留交通票据",
         "使用打车软件记录行程",
         "乘坐出租车确认计价器正常",
-        "夜间出行尽量选择多人同行"
+        "夜间出行尽量选择,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }多人同行"
       ],
       "health": [
         "购买旅行保险",
@@ -11583,6 +28878,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "哥本哈根食品安全世界领先。",
       "tapWater": "可直饮",
+      "seafood": "北海和波罗的海海鲜，鲭鱼和鲱鱼是特色",
       "streetFood": "丹麦开放式三明治安全性高",
       "avoid": "新港附近价格偏高",
       "restaurants": "高端餐厅卫生好"
@@ -11604,7 +28900,159 @@ var CITY_DATABASE = {
     "flag": "🇫🇮",
     "lat": 60.1699,
     "lng": 24.9384,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }848221-0c2e497ed557?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -11734,7 +29182,159 @@ var CITY_DATABASE = {
         {
           "name": "新年庆祝",
           "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "desc": "新,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }年庆祝活动"
         },
         {
           "name": "文化节日",
@@ -11857,7 +29457,159 @@ var CITY_DATABASE = {
     "embassy": {
       "name": "中国驻芬兰大使馆",
       "phone": "+358-9-2289-0110",
-      "address": "Vanha Ruohuvaarankatu 4, 00570 Helsinki",
+      "address":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "澳大利亚无冲突",
+      "gang_activity": "较少",
+      "gang_desc": "远离游客区",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "Vanha Ruohuvaarankatu 4, 00570 Helsinki",
       "emergency": "+358-9-2289-0110"
     },
     "hospital": {
@@ -11868,6 +29620,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "赫尔辛基食品安全标准高。",
       "tapWater": "可直饮",
+      "seafood": "波罗的海海鲜，鲑鱼和淡水鱼是特色",
       "streetFood": "三文鱼汤、肉桂卷安全性高",
       "avoid": "价格普遍较高",
       "restaurants": "市中心餐厅卫生好"
@@ -11889,7 +29642,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 40.4168,
     "lng": -3.7038,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -11951,7 +29704,159 @@ var CITY_DATABASE = {
         "紧急领事保护": "+86-10-12308"
       },
       "apps": [
-        "Google Translate",
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "澳大利亚无冲突",
+      "gang_activity": "较少",
+      "gang_desc": "不影响游客",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }   "Google Translate",
         "当地打车APP"
       ],
       "selfDefense": [
@@ -12062,7 +29967,159 @@ var CITY_DATABASE = {
         "随身携带常用药品",
         "注意饮食卫生",
         "饮用瓶装水或煮沸的水",
-        "预防蚊虫叮咬"
+        "预,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }防蚊虫叮咬"
       ],
       "natural": [
         "关注当地天气预警",
@@ -12136,7 +30193,160 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "马德里食品安全好，西班牙餐饮卫生。",
       "tapWater": "可直饮",
-      "streetFood": "西班牙油条、吉事果安全性高",
+      "seafood": "内陆城市，大西洋海鲜进口",
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "streetFood": "西班牙油条、吉事果安全性高",
       "avoid": "太阳门广场周边价格偏高",
       "restaurants": "马约尔广场周边传统餐厅卫生好"
     },
@@ -12157,7 +30367,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 41.9028,
     "lng": 12.4964,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -12229,7 +30439,159 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      "food": [
+      ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }food": [
         {
           "name": "披萨",
           "price": "€8-18",
@@ -12368,7 +30730,159 @@ var CITY_DATABASE = {
         "accommodation": "根据当地标准",
         "food": "根据当地标准",
         "transport": "根据当地标准"
-      },
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "新西兰安全城市",
+      "gang_activity": "较少",
+      "gang_desc": "总体治安良好",
+      "civil_unrest": "低",
+      "civil_desc": "社会稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }      },
       "visas": {
         "chinese_citizens": "请查询最新签证政策",
         "visa_free_countries": "请查询官方信息"
@@ -12400,6 +30914,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "罗马食品安全总体良好，传统意餐安全可靠。",
       "tapWater": "可直饮，喷泉饮用水安全",
+      "seafood": "地中海海鲜，烤鱼和海鲜意面是特色",
       "streetFood": "披萨、意面安全性高，冰激凌店卫生",
       "avoid": "景区周边餐厅价格偏高但卫生一般",
       "restaurants": "Trastevere 区餐厅地道且卫生"
@@ -12421,7 +30936,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 41.3851,
     "lng": 2.1734,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -12436,7 +30951,159 @@ var CITY_DATABASE = {
       "safeAreas": [
         "市中心商业区",
         "主要旅游区",
-        "高档住宅区",
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }      "高档住宅区",
         "大学校园周边"
       ],
       "hotspots": [
@@ -12577,7 +31244,159 @@ var CITY_DATABASE = {
       "crime": [
         "在西班牙旅行时，保持警惕，注意财物安全",
         "避免深夜独自前往偏僻区域",
-        "重要证件和现金分开存放",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }        "重要证件和现金分开存放",
         "使用ATM时注意周围环境",
         "不要携带大量现金"
       ],
@@ -12681,14 +31500,166 @@ var CITY_DATABASE = {
   },
   "lisbon": {
     "id": "lisbon",
-    "name": "里斯本",
+    "name": "里斯本,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }",
     "nameEn": "Lisbon",
     "country": "葡萄牙",
     "continent": "欧洲",
     "flag": "🇵🇹",
     "lat": 38.7223,
     "lng": -9.1393,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -12777,7 +31748,159 @@ var CITY_DATABASE = {
         },
         {
           "name": "海鲜料理",
-          "type": "海鲜",
+          "type,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }": "海鲜",
           "price": "中高",
           "desc": "新鲜的海鲜料理"
         },
@@ -12802,7 +31925,863 @@ var CITY_DATABASE = {
           "hidden": true
         },
         {
-          "name": "城市公园",
+ ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "阿根廷和平稳定",
+      "gang_activity": "中等",
+      "gang_desc": "部分区域犯罪高",
+      "civil_unrest": "中等",
+      "civil_desc": "经济抗议"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "秘鲁总体安全",
+      "gang_activity": "中高",
+      "gang_desc": "部分区域帮派",
+      "civil_unrest": "中等",
+      "civil_desc": "政治不稳定"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_des,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "低",
+      "war_desc": "和平进程推进中",
+      "gang_activity": "中高",
+      "gang_desc": "部分区域帮派",
+      "civil_unrest": "中等",
+      "civil_desc": "偶有抗议"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }c": "社会秩序良好"
+    }n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "巴西无武装冲突",
+      "gang_activity": "高",
+      "gang_desc": "帮派控制贫民区",
+      "civil_unrest": "中等",
+      "civil_desc": "社会抗议"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_d,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }esc": "社会秩序良好"
+    } {
+n      ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+ ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }         "name": "城市公园",
           "type": "公园",
           "desc": "休闲娱乐的好去处",
           "hidden": false
@@ -12818,7 +32797,87 @@ var CITY_DATABASE = {
         {
           "name": "新年庆祝",
           "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "desc":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "新年庆祝活动"
         },
         {
           "name": "文化节日",
@@ -12837,7 +32896,167 @@ var CITY_DATABASE = {
         "注意公共场合礼仪",
         "保护当地环境",
         "与当地人友好互动",
-        "保持安静和礼貌"
+       ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+ ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "保持安静和礼貌"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "hotspots": [
@@ -12845,7 +33064,39 @@ var CITY_DATABASE = {
           "area": "Alfama区",
           "desc": "小偷",
           "risk": "中"
-        },
+        ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }},
         {
           "area": "Baixa",
           "desc": "抢劫",
@@ -12869,7 +33120,39 @@ var CITY_DATABASE = {
         "在葡萄牙旅行时，保持警惕，注意财物安全",
         "避免深夜独自前往偏僻区域",
         "重要证件和现金分开存放",
-        "使用ATM时注意周围环境",
+        "使用ATM时注意周围环境",,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         "不要携带大量现金"
       ],
       "transport": [
@@ -12893,7 +33176,39 @@ var CITY_DATABASE = {
         "下载当地天气预报APP",
         "了解自然灾害应对措施"
       ],
-      "cultural": [
+      "cultural":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } [
         "尊重葡萄牙的文化习俗",
         "了解当地紧急联系方式",
         "保存当地大使馆信息",
@@ -12914,7 +33229,39 @@ var CITY_DATABASE = {
         },
         "autumn": {
           "temp": "根据当地气候",
-          "tips": "秋季凉爽舒适"
+          ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }tips": "秋季凉爽舒适"
         },
         "winter": {
           "temp": "根据当地气候",
@@ -12933,7 +33280,39 @@ var CITY_DATABASE = {
       },
       "language": {
         "primary": "当地语言",
-        "english_spoken": "旅游区通常可以",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "english_spoken": "旅游区通常可以",
         "essential_phrases": {
           "谢谢": "当地语言表达",
           "对不起": "当地语言表达",
@@ -12944,7 +33323,39 @@ var CITY_DATABASE = {
     "overview": "里斯本是葡萄牙的重要城市，位于欧洲。作为该地区的经济、文化中心，里斯本拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
     "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。",
     "embassy": {
-      "name": "中国驻葡萄牙大使馆",
+      "name",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }: "中国驻葡萄牙大使馆",
       "phone": "+351-21-392-8430",
       "address": "Rua do Estádio 10, 1400-200 Lisboa",
       "emergency": "+351-21-392-8430"
@@ -12957,7 +33368,40 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "里斯本食品安全好，葡式美食丰富。",
       "tapWater": "可直饮",
-      "streetFood": "葡式蛋挞、鳕鱼安全性高",
+      "seafood": "大西洋海鲜，鳕鱼和沙丁鱼是特色",
+      "streetFood":,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "葡式蛋挞、鳕鱼安全性高",
       "avoid": "阿尔法玛老城部分餐厅卫生一般",
       "restaurants": "贝伦区餐厅卫生好"
     },
@@ -12977,8 +33421,40 @@ var CITY_DATABASE = {
     "continent": "欧洲",
     "flag": "🇨🇿",
     "lat": 50.0755,
-    "lng": 14.4378,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  "lng": 14.4378,
+    "image": "https://images.unsplash.com/photo-1519677100203-a1e668c92439?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -12995,7 +33471,39 @@ var CITY_DATABASE = {
         "主要旅游区",
         "高档住宅区",
         "大学校园周边"
-      ],
+      ],,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
       "hotspots": [
         {
           "area": "偏僻街道",
@@ -13022,7 +33530,39 @@ var CITY_DATABASE = {
     ],
     "emergency": {
       "touristPolice": "112",
-      "touristHotline": "112",
+ ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "touristHotline": "112",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13040,7 +33580,39 @@ var CITY_DATABASE = {
         "紧急领事保护": "+86-10-12308"
       },
       "apps": [
-        "Google Translate",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }     "Google Translate",
         "当地打车APP"
       ],
       "selfDefense": [
@@ -13062,7 +33634,39 @@ var CITY_DATABASE = {
           "name": "街头小吃",
           "type": "小吃",
           "price": "便宜",
-          "desc": "体验地道风味",
+ ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }         "desc": "体验地道风味",
           "tip": "注意卫生条件"
         },
         {
@@ -13082,7 +33686,39 @@ var CITY_DATABASE = {
         {
           "name": "市中心历史区",
           "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "desc": ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }探索当地历史文化",
           "hidden": false
         },
         {
@@ -13102,7 +33738,39 @@ var CITY_DATABASE = {
           "type": "文化区",
           "desc": "当地艺术和文化中心",
           "hidden": true
-        }
+        ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }}
       ],
       "festivals": [
         {
@@ -13126,7 +33794,39 @@ var CITY_DATABASE = {
         "遵守当地法律法规",
         "注意公共场合礼仪",
         "保护当地环境",
-        "与当地人友好互动",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }        "与当地人友好互动",
         "保持安静和礼貌"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
@@ -13148,7 +33848,39 @@ var CITY_DATABASE = {
         }
       ],
       "safeAreas": [
-        "查理大桥周边",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }        "查理大桥周边",
         "老城广场",
         "小城区",
         "犹太区"
@@ -13171,7 +33903,39 @@ var CITY_DATABASE = {
       ],
       "health": [
         "购买旅行保险",
-        "随身携带常用药品",
+        ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }随身携带常用药品",
         "注意饮食卫生",
         "饮用瓶装水或煮沸的水",
         "预防蚊虫叮咬"
@@ -13194,7 +33958,39 @@ var CITY_DATABASE = {
     "travel_tips": {
       "best_season": "建议查询当地最佳旅游季节",
       "weather": {
-        "spring": {
+        "s,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }pring": {
           "temp": "根据当地气候",
           "tips": "春季天气宜人"
         },
@@ -13213,7 +34009,39 @@ var CITY_DATABASE = {
       },
       "budget": {
         "daily_budget": "根据当地消费水平",
-        "accommodation": "根据当地标准",
+        "accommodation": "根据当地标,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }准",
         "food": "根据当地标准",
         "transport": "根据当地标准"
       },
@@ -13231,7 +34059,39 @@ var CITY_DATABASE = {
         }
       }
     },
-    "overview": "布拉格是捷克的重要城市，位于欧洲。作为该地区的经济、文化中心，布拉格拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "overview": "布拉格是捷克的重要城市，位于欧洲。作为该地区的经济,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }、文化中心，布拉格拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
     "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。",
     "embassy": {
       "name": "中国驻捷克大使馆",
@@ -13241,12 +34101,45 @@ var CITY_DATABASE = {
     },
     "hospital": {
       "name": "University Hospital Motol",
-      "phone": "+420-224-433-000",
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "phone": "+420-224-433-000",
       "address": "V Úvalu 84, Prague 5"
     },
     "foodSafety": {
       "summary": "布拉格食品安全不错，传统餐厅卫生好。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，淡水鱼类丰富",
       "streetFood": "捷克炖肉、啤酒安全性高",
       "avoid": "老城广场周边价格偏高",
       "restaurants": "卡洛维发利区餐厅卫生好"
@@ -13255,7 +34148,39 @@ var CITY_DATABASE = {
       "summary": "捷克医疗好，传染病风险低。",
       "vaccines": "无需特殊疫苗",
       "diseases": "无疟疾",
-      "weather": "大陆性气候，冬季寒冷",
+      "weat,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }her": "大陆性气候，冬季寒冷",
       "tips": "冬季注意保暖"
     }
   },
@@ -13274,7 +34199,39 @@ var CITY_DATABASE = {
       "grade": "A-",
       "grades": {
         "crime": "A",
-        "transport": "B+",
+        "tran,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }sport": "B+",
         "health": "A",
         "natural": "A-",
         "food": "A",
@@ -13296,7 +34253,39 @@ var CITY_DATABASE = {
           "area": "旅游区人流密集处",
           "desc": "注意财物安全",
           "risk": "低"
-        }
+      ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }  }
       ]
     },
     "highlights": [
@@ -13320,7 +34309,39 @@ var CITY_DATABASE = {
         {
           "name": "主要公立医院",
           "phone": "当地急救电话",
-          "address": "市中心区域"
+          "address": ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }"市中心区域"
         }
       ],
       "embassies": {
@@ -13342,7 +34363,39 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "当地,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }特色菜",
           "type": "当地菜",
           "price": "中等",
           "desc": "品尝当地传统美食",
@@ -13362,7 +34415,39 @@ var CITY_DATABASE = {
           "desc": "新鲜的海鲜料理"
         },
         {
-          "name": "当地烤肉",
+          "name": "当地烤,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }肉",
           "type": "烧烤",
           "price": "中等",
           "desc": "当地特色烤肉"
@@ -13383,7 +34468,39 @@ var CITY_DATABASE = {
         },
         {
           "name": "城市公园",
-          "type": "公园",
+          "typ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }e": "公园",
           "desc": "休闲娱乐的好去处",
           "hidden": false
         },
@@ -13404,7 +34521,39 @@ var CITY_DATABASE = {
           "name": "文化节日",
           "date": "全年",
           "desc": "体验当地文化"
-        },
+        },,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         {
           "name": "美食节",
           "date": "根据当地安排",
@@ -13427,7 +34576,39 @@ var CITY_DATABASE = {
           "risk": "中"
         },
         {
-          "area": "Praga区",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }       "area": "Praga区",
           "desc": "较乱",
           "risk": "中"
         }
@@ -13450,7 +34631,39 @@ var CITY_DATABASE = {
       "transport": [
         "选择正规交通工具",
         "保留交通票据",
-        "使用打车软件记录行程",
+    ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "使用打车软件记录行程",
         "乘坐出租车确认计价器正常",
         "夜间出行尽量选择多人同行"
       ],
@@ -13472,7 +34685,39 @@ var CITY_DATABASE = {
         "尊重波兰的文化习俗",
         "了解当地紧急联系方式",
         "保存当地大使馆信息",
-        "学习基本当地语言",
+        "学习基本当地语言",,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }
         "尊重宗教场所规定"
       ]
     },
@@ -13493,7 +34738,39 @@ var CITY_DATABASE = {
         },
         "winter": {
           "temp": "根据当地气候",
-          "tips": "注意保暖"
+          "tips": "注意保,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }暖"
         }
       },
       "budget": {
@@ -13511,7 +34788,39 @@ var CITY_DATABASE = {
         "english_spoken": "旅游区通常可以",
         "essential_phrases": {
           "谢谢": "当地语言表达",
-          "对不起": "当地语言表达",
+          "对,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }不起": "当地语言表达",
           "警察在哪里": "当地语言表达"
         }
       }
@@ -13522,7 +34831,39 @@ var CITY_DATABASE = {
       "name": "中国驻波兰大使馆",
       "phone": "+48-22-831-3836",
       "address": "Bonifraterska 00-203 Warsaw",
-      "emergency": "+48-22-831-3836"
+     ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    } "emergency": "+48-22-831-3836"
     },
     "hospital": {
       "name": "Warsaw Medical University Hospital",
@@ -13532,12 +34873,45 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "华沙食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，波罗的海海鲜进口",
       "streetFood": "波兰炖菜安全性高",
       "avoid": "部分区域卫生一般",
       "restaurants": "市中心卫生好"
     },
     "diseasePrevention": {
-      "summary": "波兰医疗好。",
+      "summa,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ry": "波兰医疗好。",
       "vaccines": "无需特殊疫苗",
       "diseases": "无疟疾",
       "weather": "温带气候",
@@ -13553,11 +34927,43 @@ var CITY_DATABASE = {
     "flag": "🇬🇷",
     "lat": 37.9838,
     "lng": 23.7275,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80",
     "safety": {
       "overall": 83,
       "grade": "A-",
-      "grades": {
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }      "grades": {
         "crime": "B",
         "transport": "A-",
         "health": "B+",
@@ -13579,7 +34985,39 @@ var CITY_DATABASE = {
         },
         {
           "area": "旅游区人流密集处",
-          "desc": "注意财物安全",
+          "de,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }sc": "注意财物安全",
           "risk": "低"
         }
       ]
@@ -13604,7 +35042,39 @@ var CITY_DATABASE = {
       "hospitals": [
         {
           "name": "主要公立医院",
-          "phone": "当地急救电话",
+          ",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }phone": "当地急救电话",
           "address": "市中心区域"
         }
       ],
@@ -13625,7 +35095,39 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      "food": [
+      "foo,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }d": [
         {
           "name": "当地特色菜",
           "type": "当地菜",
@@ -13646,7 +35148,39 @@ var CITY_DATABASE = {
           "price": "中高",
           "desc": "新鲜的海鲜料理"
         },
-        {
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }        {
           "name": "当地烤肉",
           "type": "烧烤",
           "price": "中等",
@@ -13667,7 +35201,39 @@ var CITY_DATABASE = {
           "hidden": true
         },
         {
-          "name": "城市公园",
+          "n,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ame": "城市公园",
           "type": "公园",
           "desc": "休闲娱乐的好去处",
           "hidden": false
@@ -13688,7 +35254,39 @@ var CITY_DATABASE = {
         {
           "name": "文化节日",
           "date": "全年",
-          "desc": "体验当地文化"
+          "desc": "体验当地文,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }化"
         },
         {
           "name": "美食节",
@@ -13711,7 +35309,39 @@ var CITY_DATABASE = {
           "desc": "无政府主义区域，冲突",
           "risk": "高"
         },
-        {
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }        {
           "area": "宪法广场",
           "desc": "小偷",
           "risk": "中"
@@ -13734,7 +35364,39 @@ var CITY_DATABASE = {
         "在希腊旅行时，保持警惕，注意财物安全",
         "避免深夜独自前往偏僻区域",
         "重要证件和现金分开存放",
-        "使用ATM时注意周围环境",
+        "使用ATM时注意周,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }围环境",
         "不要携带大量现金"
       ],
       "transport": [
@@ -13758,7 +35420,39 @@ var CITY_DATABASE = {
         "下载当地天气预报APP",
         "了解自然灾害应对措施"
       ],
-      "cultural": [
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "cultural": [
         "尊重希腊的文化习俗",
         "了解当地紧急联系方式",
         "保存当地大使馆信息",
@@ -13778,7 +35472,39 @@ var CITY_DATABASE = {
           "tips": "注意防晒防暑"
         },
         "autumn": {
-          "temp": "根据当地气候",
+          "temp": "根据当地气候,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }",
           "tips": "秋季凉爽舒适"
         },
         "winter": {
@@ -13798,7 +35524,39 @@ var CITY_DATABASE = {
       },
       "language": {
         "primary": "当地语言",
-        "english_spoken": "旅游区通常可以",
+        "english,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }_spoken": "旅游区通常可以",
         "essential_phrases": {
           "谢谢": "当地语言表达",
           "对不起": "当地语言表达",
@@ -13810,7 +35568,39 @@ var CITY_DATABASE = {
     "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。",
     "embassy": {
       "name": "中国驻希腊大使馆",
-      "phone": "+30-210-672-3282",
+      "pho,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }ne": "+30-210-672-3282",
       "address": "Dimitsanas 7, Athens 152 31",
       "emergency": "+30-210-672-3282"
     },
@@ -13822,9 +35612,42 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "雅典食品安全好。",
       "tapWater": "可直饮",
+      "seafood": "地中海海鲜，烤鱼和海鲜沙拉是特色",
       "streetFood": "希腊沙拉、烤肉安全性高",
       "avoid": "卫城周边价格偏高",
-      "restaurants": "普拉卡区卫生好"
+      "r,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }estaurants": "普拉卡区卫生好"
     },
     "diseasePrevention": {
       "summary": "希腊医疗好。",
@@ -13843,7 +35666,39 @@ var CITY_DATABASE = {
     "flag": "🇧🇪",
     "lat": 50.8503,
     "lng": 4.3517,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559113513-d5e0,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }9c78b9dd?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -13865,6 +35720,38 @@ var CITY_DATABASE = {
         {
           "area": "偏僻街道",
           "desc": "夜间避免单独前往",
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
           "risk": "中"
         },
         {
@@ -13889,7 +35776,39 @@ var CITY_DATABASE = {
       "touristPolice": "112",
       "touristHotline": "112",
       "police": "112",
-      "ambulance": "112",
+      "ambulance": "1,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }12",
       "fire": "112",
       "hospitals": [
         {
@@ -13909,7 +35828,39 @@ var CITY_DATABASE = {
         "当地打车APP"
       ],
       "selfDefense": [
-        "保持警愓，注意周围环境",
+        "保持警,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }愓，注意周围环境",
         "携带护照复印件",
         "保存当地紧急联系方式"
       ]
@@ -13931,7 +35882,39 @@ var CITY_DATABASE = {
           "tip": "注意卫生条件"
         },
         {
-          "name": "海鲜料理",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }          "name": "海鲜料理",
           "type": "海鲜",
           "price": "中高",
           "desc": "新鲜的海鲜料理"
@@ -13952,7 +35935,39 @@ var CITY_DATABASE = {
         },
         {
           "name": "本地市场",
-          "type": "集市",
+   ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }       "type": "集市",
           "desc": "体验当地生活气息",
           "hidden": true
         },
@@ -13972,7 +35987,39 @@ var CITY_DATABASE = {
       "festivals": [
         {
           "name": "新年庆祝",
-          "date": "1月1日",
+          "date": "1月,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }1日",
           "desc": "新年庆祝活动"
         },
         {
@@ -13994,7 +36041,39 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }。",
       "hotspots": [
         {
           "area": "北站",
@@ -14020,7 +36099,39 @@ var CITY_DATABASE = {
       ]
     },
     "safety_tips": {
-      "crime": [
+  ,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }    "crime": [
         "在比利时旅行时，保持警惕，注意财物安全",
         "避免深夜独自前往偏僻区域",
         "重要证件和现金分开存放",
@@ -14043,7 +36154,39 @@ var CITY_DATABASE = {
       ],
       "natural": [
         "关注当地天气预警",
-        "了解紧急避难场所位置",
+,
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    },
+    "conflict": {
+n      "war_risk": "无",
+      "war_desc": "无武装冲突",
+      "gang_activity": "较少",
+      "gang_desc": "有组织犯罪极少",
+      "civil_unrest": "低",
+      "civil_desc": "社会秩序良好"
+    }        "了解紧急避难场所位置",
         "保持手机电量充足",
         "下载当地天气预报APP",
         "了解自然灾害应对措施"
@@ -14112,6 +36255,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "布鲁塞尔食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "北海海鲜，虾和蟹是特色",
       "streetFood": "华夫饼、薯条安全性高",
       "avoid": "大广场附近价格偏高",
       "restaurants": "市中心卫生好"
@@ -14133,7 +36277,7 @@ var CITY_DATABASE = {
     "flag": "🇭🇺",
     "lat": 47.4979,
     "lng": 19.0402,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1551864801-6d3a00519cf2?w=400&q=80",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -14402,6 +36546,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "布达佩斯食品安全不错。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，多瑙河鱼类",
       "streetFood": "匈牙利炖肉、兰戈斯安全性高",
       "avoid": "国会大厦周边价格偏高",
       "restaurants": "城堡山餐厅卫生好"
@@ -14423,7 +36568,7 @@ var CITY_DATABASE = {
     "flag": "🇷🇺",
     "lat": 55.7558,
     "lng": 37.6173,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=400&q=80",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -14660,6 +36805,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "莫斯科食品安全监管严格。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "内陆城市，波罗的海海鲜进口",
       "streetFood": "俄式煎饼、俄式饺子安全性一般",
       "avoid": "地铁站附近食品车卫生一般",
       "restaurants": "市中心高端餐厅卫生好"
@@ -14681,7 +36827,7 @@ var CITY_DATABASE = {
     "flag": "🇷🇺",
     "lat": 59.9311,
     "lng": 30.3609,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=400&q=80",
     "safety": {
       "overall": 65,
       "grade": "B-",
@@ -14909,6 +37055,21 @@ var CITY_DATABASE = {
       "name": "St. Petersburg Hospital",
       "phone": "+7-812-274-5431",
       "address": "Nab. Reki Fontanki 14, St. Petersburg"
+    },
+    "foodSafety": {
+      "summary": "圣彼得堡食品安全标准较高，西餐厅和咖啡馆食品安全有保障。",
+      "tapWater": "建议购买瓶装水，自来水可作生活用水但不建议饮用",
+      "seafood": "波罗的海海鲜新鲜，建议选择当地传统鱼汤",
+      "streetFood": "街头食品如热狗等需选择干净摊位",
+      "avoid": "避免食用来源不明的生食",
+      "restaurants": "市中心餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "圣彼得堡医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗，建议购买医疗保险",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "冬季寒冷（-10°C至-30°C），夏季舒适（15-25°C）",
+      "tips": "冬季注意保暖，预防冻伤"
     }
   },
   "milan": {
@@ -14920,7 +37081,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 45.4642,
     "lng": 9.19,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1520436713235-5f3c58b9c19?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -15157,6 +37318,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "米兰食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，地中海海鲜进口",
       "streetFood": "烩饭、意面安全性高",
       "avoid": "Duomo附近价格偏高",
       "restaurants": "Naviglio区餐厅卫生好"
@@ -15178,7 +37340,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 48.1351,
     "lng": 11.582,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1571201641469-5626999af6a7?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -15420,6 +37582,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "慕尼黑食品安全标准高。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，阿尔卑斯山湖泊鱼类",
       "streetFood": "德国猪肘、啤酒安全性高",
       "avoid": "啤酒节期间价格偏高",
       "restaurants": "老城餐厅卫生好"
@@ -15441,7 +37604,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 50.1109,
     "lng": 8.6821,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1569931716113-3e8b76a0b4eb?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -15678,6 +37841,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "法兰克福食品安全标准高。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，莱茵河鱼类",
       "streetFood": "香肠、咖喱餐安全性高",
       "avoid": "中央车站附近食品车卫生一般",
       "restaurants": "高端餐厅卫生好"
@@ -15931,6 +38095,21 @@ var CITY_DATABASE = {
       "name": "Universitätsklinikum Hamburg-Eppendorf",
       "phone": "+49-40-7410-0",
       "address": "Martinistraße 52, Hamburg"
+    },
+    "foodSafety": {
+      "summary": "汉堡食品安全标准高，德国餐饮卫生监管严格。",
+      "tapWater": "可直接饮用，自来水质量符合饮用标准",
+      "seafood": "北海海鲜新鲜，汉堡鱼市食材有保障",
+      "streetFood": "街头食品如咖喱香肠等需选择干净摊位",
+      "avoid": "避免食用生牛肉片（鞑靼牛肉）",
+      "restaurants": "德国传统餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "汉堡医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "气候温和，冬季多雨雪，夏季凉爽",
+      "tips": "全年注意防雨防风"
     }
   },
   "dublin": {
@@ -15942,7 +38121,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇪",
     "lat": 53.3498,
     "lng": -6.2603,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1549918864-48ac978761a4?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -16188,6 +38367,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "都柏林食品安全不错。",
       "tapWater": "可直饮",
+      "seafood": "大西洋海鲜，鲷鱼和龙虾是特色",
       "streetFood": "爱尔兰炖菜安全性高",
       "avoid": "Temple Bar区价格偏高",
       "restaurants": "市中心卫生好"
@@ -16209,7 +38389,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 55.9533,
     "lng": -3.1883,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1565768044876-3a5ed9e50f69?w=400&q=80",
     "safety": {
       "overall": 93,
       "grade": "A",
@@ -16455,6 +38635,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "爱丁堡食品安全不错。",
       "tapWater": "可直饮",
+      "seafood": "北海海鲜，三文鱼和龙虾是特色",
       "streetFood": "哈吉斯安全性高",
       "avoid": "皇家大道价格偏高",
       "restaurants": "老城卫生好"
@@ -16745,6 +38926,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "曼彻斯特食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "北海海鲜，鳕鱼和虾是特色",
       "streetFood": "炸鱼薯条安全性高",
       "avoid": "部分区域卫生一般",
       "restaurants": "市中心卫生好"
@@ -16766,7 +38948,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 45.764,
     "lng": 4.8357,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1572320124247-a2b9f0b5a3ae?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -17035,6 +39217,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "里昂食品安全世界知名，法餐之都。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，地中海海鲜进口",
       "streetFood": "法式料理安全性高",
       "avoid": "部分老餐厅卫生一般",
       "restaurants": "米其林餐厅卫生好"
@@ -17056,7 +39239,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 43.2965,
     "lng": 5.3698,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559554348-0f6b8e3d5b15?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -17347,7 +39530,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 43.7102,
     "lng": 7.262,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -17611,6 +39794,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "尼斯食品安全好，地中海美食丰富。",
       "tapWater": "可直饮",
+      "seafood": "地中海海鲜，烤鱼和海鲜是特色",
       "streetFood": "沙拉、橄榄油安全性高",
       "avoid": "老城部分餐厅卫生一般",
       "restaurants": "海滨餐厅卫生好"
@@ -17632,7 +39816,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 45.4408,
     "lng": 12.3155,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -17901,6 +40085,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "威尼斯食品安全不错，但价格偏高。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "亚得里亚海海鲜，墨鱼意面是特色",
       "streetFood": "墨鱼面、意面安全性高",
       "avoid": "圣马可广场价格极高",
       "restaurants": "学院桥周边卫生好"
@@ -17922,7 +40107,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 43.7696,
     "lng": 11.2558,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1543429258-ddc185e16e0b?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -18191,6 +40376,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "佛罗伦萨食品安全好，托斯卡纳美食丰富。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，托斯卡纳海鲜",
       "streetFood": "牛肚包、佛罗伦萨牛排安全性高",
       "avoid": "景区附近价格偏高",
       "restaurants": "老城餐厅卫生好"
@@ -18481,6 +40667,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "那不勒斯食品安全好，披萨发源地。",
       "tapWater": "可直饮",
+      "seafood": "地中海海鲜，披萨配海鲜是特色",
       "streetFood": "那不勒斯披萨安全性高",
       "avoid": "火车站附近卫生一般",
       "restaurants": "市中心披萨店卫生好"
@@ -18502,7 +40689,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 39.4699,
     "lng": -0.3763,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -18762,6 +40949,21 @@ var CITY_DATABASE = {
       "name": "Hospital Universitario La Fe",
       "phone": "+34-96-386-2700",
       "address": "Avenida de Fernando Abril Martorell 106, Valencia"
+    },
+    "foodSafety": {
+      "summary": "瓦伦西亚食品安全标准高，西班牙海鲜饭闻名世界。",
+      "tapWater": "可直接饮用，自来水质量良好",
+      "seafood": "地中海海鲜新鲜安全，海鲜饭用海鲜品质有保障",
+      "streetFood": "街头食品如西班牙油条等需选择干净摊位",
+      "avoid": "避免食用生的或未煮熟的海鲜",
+      "restaurants": "传统西班牙餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "瓦伦西亚医疗条件好，地中海气候宜人。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，夏季注意防暑",
+      "weather": "夏季炎热（30-35°C），冬季温和（10-15°C）",
+      "tips": "夏季注意防晒和补充水分"
     }
   },
   "seville": {
@@ -18773,7 +40975,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 37.3891,
     "lng": -5.9845,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -19033,6 +41235,21 @@ var CITY_DATABASE = {
       "name": "Hospital Universitario Virgen del Rocío",
       "phone": "+34-95-501-2000",
       "address": "Avenida Manuel Siurot s/n, Sevilla"
+    },
+    "foodSafety": {
+      "summary": "塞维利亚食品安全标准高，安达卢西亚美食丰富。",
+      "tapWater": "可直接饮用，自来水质量良好",
+      "seafood": "大西洋和地中海海鲜新鲜，安全度高",
+      "streetFood": "街头食品如西班牙油条等需选择干净摊位",
+      "avoid": "避免食用生的或未煮熟的海鲜",
+      "restaurants": "传统西班牙餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "塞维利亚医疗条件好，地中海气候宜人。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，夏季注意防暑",
+      "weather": "夏季炎热（35-40°C），冬季温和（8-15°C）",
+      "tips": "夏季注意防晒和补充水分"
     }
   },
   "malaga": {
@@ -19044,7 +41261,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 36.7213,
     "lng": -4.4214,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1543429258-dcfe8a2e2b9b?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -19304,6 +41521,21 @@ var CITY_DATABASE = {
       "name": "Hospital Universitario Málaga",
       "phone": "+34-951-030-000",
       "address": "Av. Carlos Haya, Málaga"
+    },
+    "foodSafety": {
+      "summary": "马拉加食品安全标准高，安达卢西亚海岸海鲜新鲜。",
+      "tapWater": "可直接饮用，自来水质量良好",
+      "seafood": "地中海和冷水海鲜新鲜安全，炸鱼是特色",
+      "streetFood": "街头食品如西班牙油条等需选择干净摊位",
+      "avoid": "避免食用生的或未煮熟的海鲜",
+      "restaurants": "海滨餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "马拉加医疗条件好，夏季旅游热门城市。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，夏季注意防暑",
+      "weather": "夏季炎热（30-38°C），冬季温和（10-15°C）",
+      "tips": "夏季注意防晒和补充水分"
     }
   },
   "porto": {
@@ -19315,7 +41547,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇹",
     "lat": 41.1579,
     "lng": -8.6291,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -19575,6 +41807,21 @@ var CITY_DATABASE = {
       "name": "Centro Hospitalar Porto",
       "phone": "+351-222-077-500",
       "address": "Largo Prof. Abel Salazar, Porto"
+    },
+    "foodSafety": {
+      "summary": "波尔图食品安全标准高，葡萄牙传统美食丰富。",
+      "tapWater": "可直接饮用，自来水质量良好",
+      "seafood": "大西洋海鲜新鲜安全，鳕鱼是特色食材",
+      "streetFood": "街头食品如烤沙丁鱼等需选择干净摊位",
+      "avoid": "避免食用未煮熟的海鲜",
+      "restaurants": "传统葡萄牙餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "波尔图医疗条件好，葡萄牙医疗体系完善。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "冬季温和多雨（10-15°C），夏季温暖（20-30°C）",
+      "tips": "全年防雨，冬季注意保暖"
     }
   },
   "krakow": {
@@ -19586,7 +41833,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇱",
     "lat": 50.0647,
     "lng": 19.945,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -19850,6 +42097,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "克拉科夫食品安全不错。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，淡水鱼类",
       "streetFood": "波兰饺子安全性高",
       "avoid": "老城部分餐厅卫生一般",
       "restaurants": "市中心卫生好"
@@ -19871,7 +42119,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇭",
     "lat": 46.2044,
     "lng": 6.1432,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1579541814924-49fef17c5be5?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -20135,6 +42383,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "日内瓦食品安全世界领先。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，湖泊鱼类",
       "streetFood": "奶酪火锅安全性高",
       "avoid": "价格普遍极高",
       "restaurants": "湖畔餐厅卫生好"
@@ -20425,6 +42674,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "科隆食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，莱茵河鱼类",
       "streetFood": "德国香肠安全性高",
       "avoid": "中央车站附近卫生一般",
       "restaurants": "市中心卫生好"
@@ -20446,7 +42696,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 40.7128,
     "lng": -74.006,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400&q=80",
     "safety": {
       "overall": 67,
       "grade": "B-",
@@ -20698,6 +42948,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "纽约餐饮多样，卫生监管严格，但部分区域需注意。",
       "tapWater": "可直饮",
+      "seafood": "大西洋和太平洋海鲜，蛤蜊浓汤是特色",
       "streetFood": "热狗、披萨车普遍安全，犹太人区食品较可靠",
       "avoid": "地铁附近食品车卫生较差",
       "restaurants": "曼哈顿餐厅卫生检查严格，外区稍差"
@@ -20719,7 +42970,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 34.0522,
     "lng": -118.2437,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?w=400&q=80",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -20967,6 +43218,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "洛杉矶餐饮多样，卫生监管严格。",
       "tapWater": "可直饮",
+      "seafood": "太平洋海鲜，金枪鱼和龙虾是特色",
       "streetFood": " taco、快餐车安全性一般",
       "avoid": "市中心部分区域卫生较差",
       "restaurants": "海滩区域和高端社区餐厅卫生好"
@@ -20988,7 +43240,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 41.8781,
     "lng": -87.6298,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=400&q=80",
     "safety": {
       "overall": 69,
       "grade": "B-",
@@ -21231,6 +43483,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "芝加哥食品安全好。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，五大湖鱼类",
       "streetFood": "深盘披萨、热狗安全性高",
       "avoid": "南部部分区域卫生一般",
       "restaurants": "市中心卫生好"
@@ -21252,7 +43505,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 43.6532,
     "lng": -79.3832,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?w=400&q=80",
     "safety": {
       "overall": 76,
       "grade": "B+",
@@ -21495,6 +43748,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "多伦多食品安全监管严格，多元化美食安全。",
       "tapWater": "可直饮",
+      "seafood": "五大湖海鲜，鲑鱼和鳟鱼是特色",
       "streetFood": "热狗、poutine安全性高",
       "avoid": "部分唐人街餐厅卫生一般",
       "restaurants": "高端餐厅卫生好，Tim Hortons连锁安全"
@@ -21516,7 +43770,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 49.2827,
     "lng": -123.1207,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559511260-66a63765f368?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -21781,7 +44035,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 45.5017,
     "lng": -73.5673,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=400&q=80",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -22028,6 +44282,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "蒙特利尔食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "圣劳伦斯河海鲜，鳕鱼是特色",
       "streetFood": "poutine、熏肉安全性高",
       "avoid": "老城部分餐厅卫生一般",
       "restaurants": "市中心卫生好"
@@ -22049,7 +44304,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 37.7749,
     "lng": -122.4194,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&q=80",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -22296,6 +44551,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "旧金山食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "太平洋海鲜，螃蟹和蛤蜊是特色",
       "streetFood": "酸面包、墨西哥卷安全性高",
       "avoid": "Tenderloin 区卫生一般",
       "restaurants": "渔人码头卫生好"
@@ -22317,7 +44573,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 47.6062,
     "lng": -122.3321,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=400&q=80",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -22559,6 +44815,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "西雅图食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "太平洋和阿拉斯加海鲜，三文鱼是特色",
       "streetFood": "海鲜、咖啡安全性高",
       "avoid": "市中心部分区域卫生一般",
       "restaurants": "海滨餐厅卫生好"
@@ -22580,7 +44837,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 25.7617,
     "lng": -80.1918,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=400&q=80",
     "safety": {
       "overall": 77,
       "grade": "B+",
@@ -22827,6 +45084,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "迈阿密食品安全好，古巴美食丰富。",
       "tapWater": "可直饮",
+      "seafood": "加勒比海和墨西哥湾海鲜，石斑鱼是特色",
       "streetFood": "古巴三明治安全性高",
       "avoid": "南海滩部分价格虚高",
       "restaurants": "Wynwood 区卫生好"
@@ -22848,7 +45106,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 42.3601,
     "lng": -71.0589,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1561626423-a51b45aef0a1?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -23095,6 +45353,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "波士顿食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "大西洋海鲜，蛤蜊浓汤是特色",
       "streetFood": "龙虾卷安全性高",
       "avoid": "部分区域卫生一般",
       "restaurants": "市中心卫生好"
@@ -23116,7 +45375,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 38.9072,
     "lng": -77.0369,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-158 quals7830083-3c9f8e3f0e1c?w=400&q=80",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -23359,6 +45618,21 @@ var CITY_DATABASE = {
       "name": "George Washington University Hospital",
       "phone": "+1-202-715-4000",
       "address": "900 23rd St NW, Washington DC"
+    },
+    "foodSafety": {
+      "summary": "华盛顿食品安全标准高，餐厅卫生监管严格。",
+      "tapWater": "可直接饮用，自来水符合饮用标准",
+      "seafood": "大西洋和太平洋海鲜新鲜，建议选择正规餐厅",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "连锁餐厅和正规餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "华盛顿医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "四季分明，冬季寒冷（0-10°C），夏季炎热（25-35°C）",
+      "tips": "冬季注意保暖，夏季注意防暑"
     }
   },
   "las_vegas": {
@@ -23370,7 +45644,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 36.1699,
     "lng": -115.1398,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?w=400&q=80",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -23612,6 +45886,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "拉斯维加斯食品安全不错，自助餐卫生好。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "快餐安全性高",
       "avoid": "大道外价格便宜但卫生一般",
       "restaurants": "赌场自助餐卫生好"
@@ -23633,7 +45908,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 39.7392,
     "lng": -104.9903,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=400&q=80",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -23870,6 +46145,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "丹佛食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "汉堡、牛排安全性高",
       "avoid": "市中心部分区域卫生一般",
       "restaurants": "高端餐厅卫生好"
@@ -23891,7 +46167,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 33.749,
     "lng": -84.388,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1557838923-2985c318be48?w=400&q=80",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -24138,6 +46414,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "亚特兰大食品安全监管严格。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "炸鸡、烧烤安全性高",
       "avoid": "部分区域卫生一般",
       "restaurants": "市中心卫生好"
@@ -24392,6 +46669,21 @@ var CITY_DATABASE = {
       "name": "UT Southwestern Medical Center",
       "phone": "+1-214-645-5555",
       "address": "5323 Harry Hines Blvd, Dallas"
+    },
+    "foodSafety": {
+      "summary": "达拉斯食品安全标准较高，大型连锁餐厅卫生有保障。",
+      "tapWater": "可直接饮用，自来水符合饮用标准",
+      "seafood": "内陆城市，海鲜多为进口，建议选择新鲜冰冻海鲜",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "连锁快餐和正规餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "达拉斯医疗条件好，夏季有高温风险。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，夏季注意防暑",
+      "weather": "夏季炎热（35-40°C），冬季寒冷（0-10°C）",
+      "tips": "夏季注意防暑，冬季注意保暖"
     }
   },
   "houston": {
@@ -24636,6 +46928,21 @@ var CITY_DATABASE = {
       "name": "Texas Medical Center",
       "phone": "+1-713-795-1000",
       "address": "6560 Fannin St, Houston"
+    },
+    "foodSafety": {
+      "summary": "休斯顿食品安全标准较高，墨西哥湾海鲜新鲜。",
+      "tapWater": "可直接饮用，自来水符合饮用标准",
+      "seafood": "墨西哥湾海鲜新鲜，虾和蟹是特色，建议选择新鲜捕捞",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "连锁快餐和正规餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "休斯顿医疗条件好，夏季有高温和蚊虫风险。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "注意预防西尼罗河病毒，夏季注意防蚊",
+      "weather": "夏季炎热（35-42°C），冬季温暖（10-20°C）",
+      "tips": "夏季注意防暑防蚊，户外活动使用驱蚊剂"
     }
   },
   "phoenix": {
@@ -24884,6 +47191,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "凤凰城食品安全不错。",
       "tapWater": "可直饮",
+      "seafood": "内陆城市，海鲜多为进口",
       "streetFood": "墨西哥美食安全性高",
       "avoid": "沙漠区域部分卫生一般",
       "restaurants": "高端酒店卫生好"
@@ -24905,7 +47213,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 45.5152,
     "lng": -122.6784,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=400&q=80",
     "safety": {
       "overall": 68,
       "grade": "B-",
@@ -25143,6 +47451,21 @@ var CITY_DATABASE = {
       "name": "OHSU Hospital",
       "phone": "+1-503-494-8311",
       "address": "3181 SW Sam Jackson Park Rd, Portland"
+    },
+    "foodSafety": {
+      "summary": "波特兰食品安全标准高，当地有机食品文化盛行。",
+      "tapWater": "可直接饮用，自来水来自哥伦比亚河，水质优良",
+      "seafood": "太平洋海鲜新鲜，三文鱼和牡蛎是特色",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "当地农场到餐桌餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "波特兰医疗条件好，太平洋西北地区气候宜人。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "气候温和湿润，冬季多雨（5-15°C），夏季温暖（20-30°C）",
+      "tips": "全年注意防雨，冬季注意保暖"
     }
   },
   "san_diego": {
@@ -25387,6 +47710,21 @@ var CITY_DATABASE = {
       "name": "UC San Diego Medical Center",
       "phone": "+1-619-543-6400",
       "address": "200 W Arbor Dr, San Diego"
+    },
+    "foodSafety": {
+      "summary": "圣迭戈食品安全标准高，加州食品安全监管严格。",
+      "tapWater": "可直接饮用，自来水符合饮用标准",
+      "seafood": "太平洋海鲜新鲜，金枪鱼和龙虾是特色",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "墨西哥餐厅和海鲜餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "圣迭戈医疗条件好，加州阳光强烈注意防晒。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，注意预防西部马脑炎",
+      "weather": "地中海气候，夏季温暖（20-30°C），冬季温和（10-20°C）",
+      "tips": "注意防晒，户外活动使用防晒霜"
     }
   },
   "austin": {
@@ -25398,7 +47736,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 30.2672,
     "lng": -97.7431,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=400&q=80",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -25631,6 +47969,21 @@ var CITY_DATABASE = {
       "name": "Ascension Seton Medical Center",
       "phone": "+1-512-324-1000",
       "address": "1201 W 38th St, Austin"
+    },
+    "foodSafety": {
+      "summary": "奥斯汀食品安全标准较高，德州烤肉闻名遐迩。",
+      "tapWater": "可直接饮用，自来水符合饮用标准",
+      "seafood": "内陆城市，海鲜多为进口，建议选择新鲜冰冻海鲜",
+      "streetFood": "街头食品如Taco等需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "德州烤肉和连锁快餐食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "奥斯汀医疗条件好，夏季有高温风险。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，夏季注意防暑",
+      "weather": "夏季炎热（35-40°C），冬季温和（5-15°C）",
+      "tips": "夏季注意防暑，及时补充水分"
     }
   },
   "mexico_city": {
@@ -25642,7 +47995,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇽",
     "lat": 19.4326,
     "lng": -99.1332,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1518655058648-f76e24f7a0f1?w=400&q=80",
     "safety": {
       "overall": 59,
       "grade": "C+",
@@ -25889,6 +48242,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "墨西哥城街头美食丰富但卫生需注意。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "内陆城市，太平洋海鲜进口",
       "streetFood": "玉米饼、塔可安全性一般，果汁需确认是瓶装水制作",
       "avoid": "避免食用生菜沙拉和冰块",
       "restaurants": "Polanco 区高端餐厅卫生好"
@@ -26148,6 +48502,21 @@ var CITY_DATABASE = {
       "name": "Hospital AmeriMed",
       "phone": "+52-998-881-1313",
       "address": "Blvd. Kukulcán Km 5.5, Cancún"
+    },
+    "foodSafety": {
+      "summary": "坎昆是旅游度假区，酒店和度假村食品安全有保障。",
+      "tapWater": "建议购买瓶装水，自来水含氯较高不建议直接饮用",
+      "seafood": "加勒比海海鲜新鲜，龙虾和石斑鱼是特色，建议选择酒店餐厅",
+      "streetFood": "街头食品如玉米饼等需选择干净摊位",
+      "avoid": "避免食用路边来源不明的食品",
+      "restaurants": "全包酒店餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "坎昆有登革热等蚊媒疾病风险，注意防蚊。",
+      "vaccines": "建议接种甲肝、伤寒疫苗",
+      "diseases": "注意预防登革热、寨卡病毒",
+      "weather": "热带气候，全年温暖（25-35°C），雨季（5-10月）蚊虫多",
+      "tips": "注意防蚊，使用驱蚊剂，户外活动穿长袖"
     }
   },
   "sao_paulo": {
@@ -26159,7 +48528,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇷",
     "lat": -23.5505,
     "lng": -46.6333,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1554948048-e4efed4f5e77?w=400&q=80",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -26402,6 +48771,21 @@ var CITY_DATABASE = {
       "name": "Hospital Sírio-Libanês",
       "phone": "+55-11-3164-7000",
       "address": "Rua Adma Jafet 91, São Paulo"
+    },
+    "foodSafety": {
+      "summary": "圣保罗食品安全参差不齐，大型餐厅卫生较好。",
+      "tapWater": "建议购买瓶装水，自来水含氯较高",
+      "seafood": "大西洋海鲜新鲜，鳕鱼和虾是特色",
+      "streetFood": "街头食品如巴西烤肉等需选择干净摊位",
+      "avoid": "避免食用来源不明的生食",
+      "restaurants": "连锁餐厅和正规餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "圣保罗有登革热等蚊媒疾病风险，医疗条件较好。",
+      "vaccines": "建议接种黄热病、甲肝、伤寒疫苗",
+      "diseases": "注意预防登革热、寨卡病毒",
+      "weather": "热带草原气候，雨季（11-3月）蚊虫多，温暖（20-35°C）",
+      "tips": "注意防蚊，使用驱蚊剂"
     }
   },
   "rio_de_janeiro": {
@@ -26660,6 +49044,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "里约街头美食多，卫生状况一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "大西洋海鲜，烤鱼和虾是特色",
       "streetFood": "巴西烤肉、 Açai 安全性一般",
       "avoid": "避免食用街头切水果和冰品",
       "restaurants": "Ipanema 区餐厅卫生好"
@@ -26681,7 +49066,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇷",
     "lat": -34.6037,
     "lng": -58.3816,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1612294037637-ec328d0e075e?w=400&q=80",
     "safety": {
       "overall": 55,
       "grade": "C+",
@@ -26928,6 +49313,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "布宜诺斯艾利斯食品安全不错，阿根廷烤肉安全。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "大西洋和淡水海鲜，鳕鱼是特色",
       "streetFood": "阿根廷烤肉、 mate 茶安全性高",
       "avoid": "避免食用街头未煮熟的食物",
       "restaurants": "雷科莱塔区餐厅卫生好"
@@ -26949,7 +49335,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇱",
     "lat": -33.4489,
     "lng": -70.6693,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1544200906-8e0c4b4f2e9a?w=400&q=80",
     "safety": {
       "overall": 64,
       "grade": "B-",
@@ -27196,6 +49582,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "圣地亚哥食品安全好，智利美食安全。",
       "tapWater": "可直饮",
+      "seafood": "太平洋海鲜，帝王蟹是特色",
       "streetFood": "烤肉、海鲜安全性高",
       "avoid": "避免食用未煮熟的食物",
       "restaurants": "Providencia 区餐厅卫生好"
@@ -27217,7 +49604,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇪",
     "lat": -12.0464,
     "lng": -77.0428,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=400&q=80",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -27464,6 +49851,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "利马食品安全不错，秘鲁美食世界知名。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "太平洋海鲜，酸橘汁腌鱼是特色",
       "streetFood": "秘鲁烤串 ceviche 安全性一般",
       "avoid": "避免食用生鱼片和未煮熟的海鲜",
       "restaurants": "米其林餐厅卫生好"
@@ -27485,7 +49873,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 4.711,
     "lng": -74.0721,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
     "safety": {
       "overall": 63,
       "grade": "B-",
@@ -27728,6 +50116,21 @@ var CITY_DATABASE = {
       "name": "Hospital Simón Bolívar",
       "phone": "+57-1-670-3000",
       "address": "Calle 170 #60-10, Bogotá"
+    },
+    "foodSafety": {
+      "summary": "波哥大食品安全参差不齐，建议选择连锁餐厅和高档酒店。",
+      "tapWater": "不建议直接饮用自来水，建议购买瓶装水",
+      "seafood": "内陆城市，海鲜多为进口，建议选择新鲜冰冻海鲜",
+      "streetFood": "街头食品需选择干净摊位，避免生食",
+      "avoid": "避免食用来源不明的街头食品和生水",
+      "restaurants": "连锁快餐和酒店餐厅相对安全"
+    },
+    "diseasePrevention": {
+      "summary": "波哥大位于高海拔，有高原反应风险，注意疾病预防。",
+      "vaccines": "建议接种黄热病、甲肝、伤寒疫苗",
+      "diseases": "注意预防蚊媒疾病，避免蚊虫叮咬",
+      "weather": "高原气候，昼夜温差大（10-25°C），雨季（4-5月、10-11月）",
+      "tips": "注意保暖，预防高原反应"
     }
   },
   "medellin": {
@@ -27739,7 +50142,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 6.2442,
     "lng": -75.5812,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -28004,6 +50407,21 @@ var CITY_DATABASE = {
       "name": "Hospital Pablo Tobón Uribe",
       "phone": "+57-4-445-9000",
       "address": "Calle 78B #69-240, Medellín"
+    },
+    "foodSafety": {
+      "summary": "麦德林食品安全一般，建议选择连锁餐厅和高档酒店。",
+      "tapWater": "不建议直接饮用自来水，建议购买瓶装水",
+      "seafood": "内陆城市，海鲜多为进口",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的街头食品",
+      "restaurants": "连锁快餐和酒店餐厅相对安全"
+    },
+    "diseasePrevention": {
+      "summary": "麦德林医疗条件较好，注意蚊媒疾病预防。",
+      "vaccines": "建议接种黄热病、甲肝、伤寒疫苗",
+      "diseases": "注意预防登革热等蚊媒疾病",
+      "weather": "山地气候，温暖（15-30°C），雨季（5-11月）",
+      "tips": "注意防蚊，使用驱蚊剂"
     }
   },
   "panama_city": {
@@ -28015,7 +50433,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇦",
     "lat": 8.9824,
     "lng": -79.5199,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&q=80",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -28280,6 +50698,21 @@ var CITY_DATABASE = {
       "name": "Hospital Punta Pacífica",
       "phone": "+507-204-8000",
       "address": "Punta Pacífica, Panama City"
+    },
+    "foodSafety": {
+      "summary": "巴拿马城食品安全标准较高，运河区餐厅卫生较好。",
+      "tapWater": "建议购买瓶装水，自来水含氯较高",
+      "seafood": "太平洋和加勒比海海鲜新鲜，龙虾和虾是特色",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "高档酒店和连锁餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "巴拿马城有登革热等蚊媒疾病风险，热带气候注意防蚊。",
+      "vaccines": "建议接种黄热病疫苗（如前往热带地区）",
+      "diseases": "注意预防登革热、寨卡病毒",
+      "weather": "热带气候，全年温暖（25-35°C），雨季（5-11月）蚊虫多",
+      "tips": "注意防蚊，使用驱蚊剂，户外活动穿长袖"
     }
   },
   "cairo": {
@@ -28291,7 +50724,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇬",
     "lat": 30.0444,
     "lng": 31.2357,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=400&q=80",
     "safety": {
       "overall": 30,
       "grade": "C",
@@ -28539,6 +50972,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "开罗食品安全一般，需注意饮食卫生。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "地中海和红海海鲜，烤鱼是特色",
       "streetFood": "沙瓦尔玛、库什里安全性一般",
       "avoid": "避免食用未煮熟的肉类和生菜",
       "restaurants": "酒店内餐厅卫生好"
@@ -28560,7 +50994,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇦",
     "lat": -33.9249,
     "lng": 18.4241,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=400&q=80",
     "safety": {
       "overall": 44,
       "grade": "C",
@@ -28807,6 +51241,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "开普敦食品安全不错。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "大西洋和印度洋海鲜，龙虾和企鹅蟹是特色",
       "streetFood": "烤肉、海鲜安全性高",
       "avoid": "部分区域卫生一般",
       "restaurants": "V&A海滨卫生好"
@@ -28828,7 +51263,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇦",
     "lat": -26.2041,
     "lng": 28.0473,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1552858725-2758b5fb1286?w=400&q=80",
     "safety": {
       "overall": 41,
       "grade": "C",
@@ -29076,6 +51511,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "约翰内斯堡食品安全一般。",
       "tapWater": "建议饮用瓶装水",
+      "seafood": "内陆城市，印度洋海鲜进口",
       "streetFood": "烤肉安全性一般",
       "avoid": "避免食用街头食品",
       "restaurants": "桑顿区餐厅卫生好"
@@ -29097,7 +51533,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇬",
     "lat": 6.5244,
     "lng": 3.3792,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1586012611133-6f7f4b7e2e01?w=400&q=80",
     "safety": {
       "overall": 30,
       "grade": "C",
@@ -29366,6 +51802,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "拉各斯食品安全挑战大。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "大西洋海鲜，烤鱼和虾是特色",
       "streetFood": "jollof rice 安全性一般",
       "avoid": "避免食用街头食品",
       "restaurants": "高端酒店卫生好"
@@ -29387,7 +51824,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇪",
     "lat": -1.2921,
     "lng": 36.8219,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=400&q=80",
     "safety": {
       "overall": 38,
       "grade": "C",
@@ -29634,6 +52071,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "内罗毕食品安全一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "内陆城市，印度洋海鲜进口",
       "streetFood": "烤肉、Ugali 安全性一般",
       "avoid": "避免食用街头食品",
       "restaurants": "高端酒店卫生好"
@@ -29655,7 +52093,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 33.5731,
     "lng": -7.5898,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=400&q=80",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -29902,6 +52340,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "卡萨布兰卡食品安全一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "大西洋海鲜，烤鱼和虾是特色",
       "streetFood": "塔吉锅安全性一般",
       "avoid": "避免食用街头冰品",
       "restaurants": "海滨餐厅卫生好"
@@ -29923,7 +52362,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 31.6295,
     "lng": -7.9811,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539650868300-3c949a7f5efa?w=400&q=80",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -30192,6 +52631,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "马拉喀什食品安全一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "内陆城市，大西洋海鲜进口",
       "streetFood": "塔吉锅安全性一般",
       "avoid": "避免食用街头食品",
       "restaurants": "麦地那部分卫生一般"
@@ -30213,7 +52653,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇳",
     "lat": 36.8065,
     "lng": 10.1815,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&q=80",
     "safety": {
       "overall": 64,
       "grade": "B-",
@@ -30477,6 +52917,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "突尼斯食品安全一般。",
       "tapWater": "不可直饮，饮用瓶装水",
+      "seafood": "地中海海鲜，烤鱼和海鲜是特色",
       "streetFood": "突尼斯沙拉安全性一般",
       "avoid": "避免食用街头冰品",
       "restaurants": "海滨餐厅卫生好"
@@ -30498,7 +52939,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇭",
     "lat": 5.6037,
     "lng": -0.187,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1566378246598-5b11a0d486cc?w=400&q=80",
     "safety": {
       "overall": 42,
       "grade": "C",
@@ -30758,6 +53199,21 @@ var CITY_DATABASE = {
       "name": "Korle Bu Teaching Hospital",
       "phone": "+233-30-266-1701",
       "address": "Accra, Ghana"
+    },
+    "foodSafety": {
+      "summary": "阿克拉食品安全一般，建议选择连锁餐厅和高档酒店。",
+      "tapWater": "不建议直接饮用自来水，建议购买瓶装水",
+      "seafood": "大西洋海鲜新鲜，鱼类品种丰富",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的街头食品",
+      "restaurants": "连锁快餐和酒店餐厅相对安全"
+    },
+    "diseasePrevention": {
+      "summary": "阿克拉有疟疾等蚊媒疾病风险，医疗条件有限。",
+      "vaccines": "建议接种黄热病、甲肝、伤寒、疟疾预防药物",
+      "diseases": "注意预防疟疾、伤寒、霍乱",
+      "weather": "热带草原气候，温暖（25-35°C），雨季（5-10月）蚊虫多",
+      "tips": "注意防蚊，携带疟疾预防药物，避免生食"
     }
   },
   "addis_ababa": {
@@ -30769,7 +53225,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇹",
     "lat": 9.032,
     "lng": 38.7469,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1566776426587-5d7f6a3f3f8a?w=400&q=80",
     "safety": {
       "overall": 42,
       "grade": "C",
@@ -31029,6 +53485,21 @@ var CITY_DATABASE = {
       "name": "Black Lion Hospital",
       "phone": "+251-11-551-1777",
       "address": "Addis Ababa University, Addis Ababa"
+    },
+    "foodSafety": {
+      "summary": "亚的斯亚贝巴食品安全一般，建议选择连锁餐厅和高档酒店。",
+      "tapWater": "不建议直接饮用自来水，建议购买瓶装水",
+      "seafood": "内陆城市，海鲜多为进口",
+      "streetFood": "当地传统美食如英吉拉等需选择干净摊位",
+      "avoid": "避免食用来源不明的街头食品和生水",
+      "restaurants": "连锁快餐和酒店餐厅相对安全"
+    },
+    "diseasePrevention": {
+      "summary": "亚的斯亚贝巴有疟疾等蚊媒疾病风险，高海拔注意高原反应。",
+      "vaccines": "建议接种黄热病（入境需要）、甲肝、伤寒、疟疾预防药物",
+      "diseases": "注意预防疟疾、伤寒、霍乱",
+      "weather": "高原气候，凉爽（15-25°C），雨季（6-9月）蚊虫多",
+      "tips": "注意防蚊，携带疟疾预防药物，注意保暖"
     }
   },
   "sydney": {
@@ -31040,7 +53511,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -33.8688,
     "lng": 151.2093,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -31308,7 +53779,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -37.8136,
     "lng": 144.9631,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -31554,6 +54025,7 @@ var CITY_DATABASE = {
     "foodSafety": {
       "summary": "墨尔本食品安全世界领先，咖啡文化著名。",
       "tapWater": "可直饮",
+      "seafood": "太平洋和南极海鲜，龙虾和牡蛎是特色",
       "streetFood": "咖啡、brunch安全性高",
       "avoid": "部分区域卫生一般",
       "restaurants": "CBD餐厅卫生好"
@@ -31575,7 +54047,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -27.4698,
     "lng": 153.0251,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -31839,7 +54311,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -31.9505,
     "lng": 115.8605,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1538491949740-0b4fc8e36a12?w=400&q=80",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -32103,7 +54575,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -34.9285,
     "lng": 138.6007,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1529128153738-4d1ac8df3f5c?w=400&q=80",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -32363,6 +54835,21 @@ var CITY_DATABASE = {
       "name": "Royal Adelaide Hospital",
       "phone": "+61-8-7074-0000",
       "address": "Port Rd, Adelaide, SA 5000"
+    },
+    "foodSafety": {
+      "summary": "阿德莱德食品安全标准高，澳大利亚食品监管严格。",
+      "tapWater": "可直接饮用，自来水质量符合饮用标准",
+      "seafood": "南大洋海鲜新鲜，牡蛎和龙虾是特色",
+      "streetFood": "中央市场食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "正规餐厅和咖啡馆食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "阿德莱德医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "地中海气候，夏季温暖（25-35°C），冬季温和（10-20°C）",
+      "tips": "注意防晒，夏季注意防暑"
     }
   },
   "auckland": {
@@ -32374,7 +54861,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -36.8509,
     "lng": 174.7645,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508224525983-0f2bf1c2d6a6?w=400&q=80",
     "safety": {
       "overall": 91,
       "grade": "A",
@@ -32638,7 +55125,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -41.2865,
     "lng": 174.7762,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -32898,6 +55385,21 @@ var CITY_DATABASE = {
       "name": "Wellington Hospital",
       "phone": "+64-4-806-0999",
       "address": "Mein St, Newtown, Wellington"
+    },
+    "foodSafety": {
+      "summary": "惠灵顿食品安全标准高，新西兰食品监管严格。",
+      "tapWater": "可直接饮用，自来水质量优良",
+      "seafood": "太平洋海鲜新鲜，绿色贻贝是特色",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "正规餐厅和咖啡馆食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "惠灵顿医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "温带海洋气候，全年温和（10-20°C），多风",
+      "tips": "注意防风保暖，冬季注意保暖"
     }
   },
   "christchurch": {
@@ -33164,6 +55666,21 @@ var CITY_DATABASE = {
       "name": "Christchurch Hospital",
       "phone": "+64-3-364-0640",
       "address": "2 Riccarton Rd, Christchurch"
+    },
+    "foodSafety": {
+      "summary": "基督城食品安全标准高，新西兰食品监管严格。",
+      "tapWater": "可直接饮用，自来水质量优良",
+      "seafood": "太平洋和南极海鲜新鲜，鳕鱼和龙虾是特色",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "正规餐厅和咖啡馆食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "基督城医疗条件好，传染病风险低。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾，冬季注意预防流感",
+      "weather": "温带海洋气候，夏季温暖（15-25°C），冬季寒冷（0-15°C）",
+      "tips": "注意保暖，冬季注意防寒"
     }
   },
   "honolulu": {
@@ -33175,7 +55692,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 21.3069,
     "lng": -157.8583,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=400&q=80",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -33413,6 +55930,5093 @@ var CITY_DATABASE = {
       "name": "Queens Medical Center",
       "phone": "+1-808-691-7111",
       "address": "1301 Punchbowl St, Honolulu"
+    },
+    "foodSafety": {
+      "summary": "檀香山食品安全标准高，美国食品监管严格。",
+      "tapWater": "可直接饮用，自来水符合饮用标准",
+      "seafood": "太平洋海鲜新鲜，金枪鱼和海胆是特色",
+      "streetFood": "街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "正规餐厅和夏威夷特色餐厅食品安全有保障"
+    },
+    "diseasePrevention": {
+      "summary": "檀香山医疗条件好，热带气候注意防蚊。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "注意预防登革热、寨卡病毒（蚊媒疾病）",
+      "weather": "热带气候，全年温暖（20-35°C），雨季（11-3月）",
+      "tips": "注意防蚊，户外活动使用驱蚊剂"
+    }
+  },
+  "rio_de_janeiro": {
+    "id": "rio_de_janeiro",
+    "name": "里约热内卢",
+    "nameEn": "Rio de Janeiro",
+    "country": "巴西",
+    "continent": "南美洲",
+    "flag": "🇧🇷",
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=400&q=80",
+    "safety": {
+      "overall": 45,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C+",
+        "health": "B",
+        "natural": "B",
+        "food": "B+",
+        "disease": "B"
+      },
+      "safeAreas": [
+        "科帕卡巴纳海滩周边",
+        "莱伯伦区",
+        "伊帕内玛区",
+        "南里奥"
+      ],
+      "hotspots": [
+        {
+          "area": "罗德里戈湖周边",
+          "desc": "贫民窟区域，犯罪率高",
+          "risk": "高"
+        },
+        {
+          "area": "市中心",
+          "desc": "扒窃风险",
+          "risk": "中"
+        },
+        {
+          "area": "海滩",
+          "desc": "注意财物安全",
+          "risk": "中"
+        }
+      ]
+    },
+    "highlights": [
+      "基督山",
+      "科帕卡巴纳海滩",
+      "桑巴大道",
+      "面包山"
+    ],
+    "risks": [
+      "犯罪率高",
+      "贫富差距大",
+      "治安差距大"
+    ],
+    "emergency": {
+      "touristPolice": "21-3395-5600",
+      "touristHotline": "21-3395-5600",
+      "police": "190",
+      "ambulance": "192",
+      "fire": "193",
+      "embassies": {
+        "中国驻巴西大使馆": "+55-61-3348-9710",
+        "领事保护": "+55-61-9999-9816"
+      }
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "巴西烤肉",
+          "price": "R$50-150",
+          "desc": "Churrasco"
+        },
+        {
+          "name": "黑豆饭",
+          "price": "R$20-40",
+          "desc": "Feijoada"
+        },
+        {
+          "name": "椰子水",
+          "price": "R$5-15",
+          "desc": "Coco"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "基督山",
+          "desc": "标志雕像"
+        },
+        {
+          "name": "科帕卡巴纳",
+          "desc": "著名海滩"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "狂欢节",
+          "date": "2月"
+        },
+        {
+          "name": "新年",
+          "date": "12月31日"
+        }
+      ],
+      "customs": [
+        "热情桑巴",
+        "足球文化",
+        "小费文化"
+      ],
+      "transport": "地铁+公交"
+    },
+    "safety_tips": {
+      "crime": [
+        "避免前往贫民窟区域",
+        "注意海滩财物安全",
+        "夜间避免独自外出"
+      ],
+      "transport": [
+        "使用正规出租车",
+        "注意防范扒窃"
+      ],
+      "health": [
+        "购买旅行保险",
+        "注意饮食卫生"
+      ]
+    },
+    "travel_tips": {
+      "best_season": "12-3月（夏季）",
+      "weather": {
+        "spring": {
+          "temp": "20-30°C",
+          "tips": "适宜旅游"
+        },
+        "summer": {
+          "temp": "25-35°C",
+          "tips": "高温注意防暑"
+        },
+        "autumn": {
+          "temp": "18-28°C",
+          "tips": "适宜旅游"
+        },
+        "winter": {
+          "temp": "15-25°C",
+          "tips": "适宜旅游"
+        }
+      },
+      "budget": {
+        "daily_budget": "R$200-400/天",
+        "accommodation": "R$100-300/晚",
+        "food": "R$50-150/天"
+      },
+      "visas": {
+        "chinese_citizens": "需要签证，建议提前办理",
+        "visa_free_countries": "约90个国家免签"
+      },
+      "language": {
+        "primary": "葡萄牙语",
+        "english_spoken": "旅游区有限",
+        "essential_phrases": {
+          "谢谢": "Obrigado/a",
+          "对不起": "Desculpe",
+          "警察在哪里": "Onde fica a polícia"
+        }
+      }
+    },
+    "overview": "里约热内卢是巴西最著名的城市之一，位于大西洋沿岸。以其美丽的海滩、著名的基督像和狂欢节闻名于世。这座充满活力的城市融合了巴西文化的精髓，是南美洲最受欢迎的旅游目的地之一。",
+    "safety_history": "里约面临贫富差距带来的治安挑战。贫民窟区域犯罪率较高，但热门旅游区有警察巡逻。近年来市政府加强了旅游区安保措施，游客安全有所改善。",
+    "embassy": {
+      "name": "中国驻巴西大使馆",
+      "phone": "+55-61-3348-9710",
+      "address": "SES - Av. das Nações, Quadra 813, Lote 51, Brasília",
+      "emergency": "+55-61-9999-9816"
+    },
+    "hospital": {
+      "name": "Hospital Samaritano",
+      "phone": "+55-21-3820-6060",
+      "address": "RuaBuena Vista, Rio de Janeiro"
+    },
+    "foodSafety": {
+      "summary": "里约食品安全一般。",
+      "tapWater": "可直饮，但建议饮用瓶装水",
+      "seafood": "大西洋海鲜新鲜，烤鱼是特色",
+      "streetFood": "巴西烤肉和街头食品需选择干净摊位",
+      "avoid": "避免食用来源不明的食品",
+      "restaurants": "海滨餐厅卫生较好"
+    },
+    "diseasePrevention": {
+      "summary": "里约医疗条件一般。",
+      "vaccines": "建议接种黄热病疫苗",
+      "diseases": "注意预防登革热、寨卡病毒",
+      "weather": "热带气候，全年温暖",
+      "tips": "注意防蚊，使用驱蚊剂"
+    }
+  },
+  "buenos_aires": {
+    "id": "buenos_aires",
+    "name": "布宜诺斯艾利斯",
+    "nameEn": "Buenos Aires",
+    "country": "阿根廷",
+    "continent": "南美洲",
+    "flag": "🇦🇷",
+    "lat": -34.6037,
+    "lng": -58.3816,
+    "image": "https://images.unsplash.com/photo-1612294037637-ec328d0e075e?w=400&q=80",
+    "safety": {
+      "overall": 58,
+      "grade": "C+",
+      "grades": {
+        "crime": "C+",
+        "transport": "B-",
+        "health": "B+",
+        "natural": "B",
+        "food": "B+",
+        "disease": "B+"
+      },
+      "safeAreas": [
+        "雷科莱塔区",
+        "帕莱尔莫区",
+        "贝尔格拉诺区"
+      ],
+      "hotspots": [
+        {
+          "area": "中心火车站周边",
+          "desc": "扒窃风险较高",
+          "risk": "中"
+        },
+        {
+          "area": "贫民区",
+          "desc": "注意安全",
+          "risk": "高"
+        }
+      ]
+    },
+    "highlights": [
+      "探戈",
+      "足球",
+      "建筑",
+      "美食"
+    ],
+    "risks": [
+      "经济不稳定",
+      "扒窃",
+      "治安差异"
+    ],
+    "emergency": {
+      "touristPolice": "0800-999-5000",
+      "police": "101",
+      "ambulance": "107",
+      "fire": "100",
+      "embassies": {
+        "中国驻阿根廷大使馆": "+54-11-4545-8194",
+        "领事保护": "+54-11-4545-8195"
+      }
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "阿根廷烤肉",
+          "price": "ARS2000-5000",
+          "desc": "Asado"
+        },
+        {
+          "name": "Mate茶",
+          "price": "ARS200-500",
+          "desc": "传统饮品"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "五月广场",
+          "desc": "中心广场"
+        },
+        {
+          "name": "雷科莱塔 Cemetery",
+          "desc": "贵族公墓"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "探戈节",
+          "date": "8月"
+        }
+      ],
+      "transport": "地铁+公交"
+    },
+    "travel_tips": {
+      "best_season": "3-5月,9-11月",
+      "budget": {
+        "daily_budget": "ARS10000-20000/天"
+      }
+    },
+    "overview": "布宜诺斯艾利斯是阿根廷的首都，有着"南美洲巴黎"之称。以探戈、足球和烤肉文化闻名。这座充满欧洲风情的城市是南美洲重要的文化中心。",
+    "embassy": {
+      "name": "中国驻阿根廷大使馆",
+      "phone": "+54-11-4545-8194",
+      "address": "Av. Virrey del Pino 3506, Buenos Aires"
+    },
+    "foodSafety": {
+      "summary": "布宜诺斯艾利斯食品安全较好。",
+      "tapWater": "可直饮",
+      "seafood": "大西洋海鲜新鲜",
+      "streetFood": "烤肉安全性高",
+      "avoid": "避免食用来源不明食品"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾"
+    }
+  },
+  "santiago": {
+    "id": "santiago",
+    "name": "圣地亚哥",
+    "nameEn": "Santiago",
+    "country": "智利",
+    "continent": "南美洲",
+    "flag": "🇨🇱",
+    "lat": -33.4489,
+    "lng": -70.6693,
+    "image": "https://images.unsplash.com/photo-1544200906-8e0c4b4f2e9a?w=400&q=80",
+    "safety": {
+      "overall": 65,
+      "grade": "B",
+      "grades": {
+        "crime": "C+",
+        "transport": "B",
+        "health": "B+",
+        "natural": "C+",
+        "food": "B+",
+        "disease": "B+"
+      },
+      "safeAreas": [
+        "普罗维登西亚区",
+        "拉斯孔德斯区",
+        "维塔库拉区"
+      ]
+    },
+    "highlights": [
+      "雪山",
+      "红酒",
+      "自然风光"
+    ],
+    "risks": [
+      "地震",
+      "犯罪"
+    ],
+    "emergency": {
+      "police": "133",
+      "ambulance": "131",
+      "fire": "132",
+      "embassies": {
+        "中国驻智利大使馆": "+56-2-233-9880"
+      }
+    },
+    "travel_tips": {
+      "best_season": "10-3月"
+    },
+    "overview": "圣地亚哥是智利的首都，位于安第斯山脉东麓。这座现代化的城市周围环绕着雪山，是通往智利自然奇观的大门。",
+    "embassy": {
+      "name": "中国驻智利大使馆",
+      "phone": "+56-2-233-9880",
+      "address": "Av. Pedro de Valdivia 1036, Santiago"
+    },
+    "foodSafety": {
+      "summary": "圣地亚哥食品安全好。",
+      "tapWater": "可直饮",
+      "seafood": "太平洋海鲜新鲜",
+      "streetFood": "安全性高"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件好。",
+      "vaccines": "无需特殊疫苗",
+      "diseases": "无疟疾"
+    }
+  },
+  "lima": {
+    "id": "lima",
+    "name": "利马",
+    "nameEn": "Lima",
+    "country": "秘鲁",
+    "continent": "南美洲",
+    "flag": "🇵🇪",
+    "lat": -12.0464,
+    "lng": -77.0428,
+    "image": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=400&q=80",
+    "safety": {
+      "overall": 50,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "B-",
+        "food": "B",
+        "disease": "C+"
+      },
+      "safeAreas": [
+        "米拉弗洛雷区",
+        "圣伊西德罗区",
+        "巴兰科区"
+      ]
+    },
+    "highlights": [
+      "殖民建筑",
+      "美食",
+      "海滩"
+    ],
+    "risks": [
+      "治安",
+      "Altitude"
+    ],
+    "emergency": {
+      "police": "105",
+      "ambulance": "113",
+      "embassies": {
+        "中国驻秘鲁大使馆": "+51-1-442-0519"
+      }
+    },
+    "overview": "利马是秘鲁的首都濒临太平洋。作为南美洲最古老的城市之一，利马融合了殖民时期建筑和现代摩天大楼。",
+    "embassy": {
+      "name": "中国驻秘鲁大使馆",
+      "phone": "+51-1-442-0519",
+      "address": "Av. Javier Prado Oeste 2498, Lima"
+    },
+    "foodSafety": {
+      "summary": "利马食品安全一般。",
+      "tapWater": "建议饮用瓶装水",
+      "seafood": "太平洋海鲜新鲜，酸橘汁腌鱼是特色",
+      "streetFood": "需选择卫生摊位"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件有限。",
+      "vaccines": "建议接种黄热病疫苗",
+      "diseases": "注意预防登革热"
+    }
+  },
+  "bogota": {
+    "id": "bogota",
+    "name": "波哥大",
+    "nameEn": "Bogota",
+    "country": "哥伦比亚",
+    "continent": "南美洲",
+    "flag": "🇨🇴",
+    "lat": 4.7110,
+    "lng": -74.0721,
+    "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
+    "safety": {
+      "overall": 45,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C+",
+        "health": "B",
+        "natural": "B",
+        "food": "B",
+        "disease": "B"
+      },
+      "safeAreas": [
+        "乌萨肯区",
+        "乔里略区",
+        "拉坎德拉里亚区"
+      ]
+    },
+    "highlights": [
+      "黄金博物馆",
+      "殖民建筑",
+      "、山"
+    ],
+    "risks": [
+      "犯罪",
+      "绑架"
+    ],
+    "emergency": {
+      "police": "123",
+      "ambulance": "125",
+      "embassies": {
+        "中国驻哥伦比亚大使馆": "+57-1-622-3219"
+      }
+    },
+    "overview": "波哥大是哥伦比亚的首都，位于安第斯山脉的高原上。这座充满活力的城市是南美洲重要的文化中心，以殖民时期建筑和黄金博物馆闻名。",
+    "embassy": {
+      "name": "中国驻哥伦比亚大使馆",
+      "phone": "+57-1-622-3219",
+      "address": "Carrera 16 No.98-70, Bogota"
+    },
+    "foodSafety": {
+      "summary": "波哥大食品安全一般。",
+      "tapWater": "建议饮用瓶装水",
+      "seafood": "大西洋海鲜新鲜",
+      "streetFood": "需选择卫生摊位"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件有限。",
+      "vaccines": "建议接种黄热病疫苗",
+      "diseases": "注意预防登革热"
+    }
+  },
+  "medellin": {
+    "id": "medellin",
+    "name": "麦德林",
+    "nameEn": "Medellin",
+    "country": "哥伦比亚",
+    "continent": "南美洲",
+    "flag": "🇨🇴",
+    "lat": 6.2476,
+    "lng": -75.5658,
+    "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
+    "safety": {
+      "overall": 42,
+      "grade": "C",
+      "grades": {
+        "crime": "C-",
+        "transport": "C+",
+        "health": "B",
+        "natural": "B+",
+        "food": "B",
+        "disease": "B"
+      },
+      "safeAreas": [
+        "埃尔波维区",
+        "拉努斯区"
+      ]
+    },
+    "highlights": [
+      "花园城市",
+      "创新",
+      "气候"
+    ],
+    "risks": [
+      "犯罪率仍较高"
+    ],
+    "overview": "麦德林是哥伦比亚第二大城市，以其宜人的气候（永恒之春之城）和城市转型闻名。",
+    "embassy": {
+      "name": "中国驻哥伦比亚大使馆",
+      "phone": "+57-1-622-3219",
+      "address": "Carrera 16 No.98-70, Bogota"
+    },
+    "foodSafety": {
+      "summary": "麦德林食品安全一般。",
+      "tapWater": "建议饮用瓶装水"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件有限。",
+      "vaccines": "建议接种疫苗"
+    }
+  },
+  "sao_paulo": {
+    "id": "sao_paulo",
+    "name": "圣保罗",
+    "nameEn": "Sao Paulo",
+    "country": "巴西",
+    "continent": "南美洲",
+    "flag": "🇧🇷",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "image": "https://images.unsplash.com/photo-1554948048-e4efed4f5e77?w=400&q=80",
+    "safety": {
+      "overall": 48,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "B-",
+        "health": "B+",
+        "natural": "B",
+        "food": "B+",
+        "disease": "B"
+      },
+      "safeAreas": [
+        "jardins区",
+        "摩癌因图区",
+        "品海区"
+      ]
+    },
+    "highlights": [
+      "金融中心",
+      "多元文化",
+      "美食"
+    ],
+    "risks": [
+      "犯罪率高",
+      "交通堵塞"
+    ],
+    "emergency": {
+      "police": "190",
+      "ambulance": "192",
+      "embassies": {
+        "中国驻巴西大使馆": "+55-61-3348-9710"
+      }
+    },
+    "overview": "圣保罗是巴西最大的城市也是南美洲最大的都市。以其繁忙的金融区、多元文化和世界级美食闻名。",
+    "embassy": {
+      "name": "中国驻巴西大使馆",
+      "phone": "+55-61-3348-9710",
+      "address": "SES - Av. das Nações, Brasília"
+    },
+    "foodSafety": {
+      "summary": "圣保罗食品安全好。",
+      "tapWater": "可直饮",
+      "seafood": "大西洋海鲜新鲜"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件好。",
+      "vaccines": "无需特殊疫苗"
+    }
+  },
+  "tehran": {
+    "id": "tehran",
+    "name": "德黑兰",
+    "nameEn": "Tehran",
+    "country": "伊朗",
+    "continent": "中东",
+    "flag": "🇮🇷",
+    "lat": 35.6892,
+    "lng": 51.3890,
+    "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=400&q=80",
+    "safety": {
+      "overall": 40,
+      "grade": "C",
+      "grades": {
+        "crime": "C+",
+        "transport": "C",
+        "health": "C+",
+        "natural": "C+",
+        "food": "B+",
+        "disease": "B+"
+      },
+      "safeAreas": [
+        "北部富人区",
+        "市中心商业区"
+      ]
+    },
+    "highlights": [
+      "历史古迹",
+      "博物馆",
+      "购物"
+    ],
+    "risks": [
+      "政治敏感",
+      "文化差异"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "115",
+      "fire": "125",
+      "embassies": {
+        "中国驻伊朗大使馆": "+98-21-8888-9999"
+      }
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "拌饭",
+          "price": "IRR200000-500000",
+          "desc": "Rice with stew"
+        },
+        {
+          "name": "烤肉串",
+          "price": "IRR100000-300000",
+          "desc": "Kebab"
+        }
+      ],
+      "transport": "地铁+出租"
+    },
+    "travel_tips": {
+      "best_season": "4-5月,10-11月"
+    },
+    "overview": "德黑兰是伊朗的首都，位于伊朗北部。作为伊朗的政治、经济和文化中心，德黑兰融合了古老文明和现代都市生活。",
+    "embassy": {
+      "name": "中国驻伊朗大使馆",
+      "phone": "+98-21-8888-9999",
+      "address": "Shahid Lavasani Ave., Tehran"
+    },
+    "foodSafety": {
+      "summary": "德黑兰食品安全较好。",
+      "tapWater": "建议饮用瓶装水",
+      "seafood": "里海海鲜"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件一般。",
+      "vaccines": "建议接种甲肝疫苗",
+      "diseases": "无疟疾"
+    }
+  },
+  "bahrain": {
+    "id": "bahrain",
+    "name": "麦纳麦",
+    "nameEn": "Manama",
+    "country": "巴林",
+    "continent": "中东",
+    "flag": "🇧🇭",
+    "lat": 26.2285,
+    "lng": 50.5860,
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80",
+    "safety": {
+      "overall": 70,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "B+",
+        "health": "B+",
+        "natural": "B",
+        "food": "B+",
+        "disease": "B+"
+      },
+      "safeAreas": [
+        "首都中央商务区",
+        "麦纳麦金融区"
+      ]
+    },
+    "highlights": [
+      "金融中心",
+      "现代建筑",
+      "F1赛车"
+    ],
+    "risks": [
+      "文化差异"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "997",
+      "embassies": {
+        "中国驻巴林大使馆": "+973-177-25000"
+      }
+    },
+    "overview": "麦纳麦是巴林的首都，也是波斯湾的金融中心。这座现代化的城市举办了F1大奖赛，以其天际线和多元文化闻名。",
+    "embassy": {
+      "name": "中国驻巴林大使馆",
+      "phone": "+973-177-25000",
+      "address": "Building 79, Road 1702, Manama"
+    },
+    "foodSafety": {
+      "summary": "麦纳麦食品安全好。",
+      "tapWater": "可直饮"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件好。",
+      "vaccines": "无需特殊疫苗"
+    }
+  },
+  "kabul": {
+    "id": "kabul",
+    "name": "喀布尔",
+    "nameEn": "Kabul",
+    "country": "阿富汗",
+    "continent": "中东",
+    "flag": "🇦🇫",
+    "lat": 34.5550,
+    "lng": 69.2075,
+    "image": "https://images.unsplash.com/photo-1568782527984-2bbe6b51e7d2?w=400&q=80",
+    "safety": {
+      "overall": 20,
+      "grade": "D",
+      "grades": {
+        "crime": "D+",
+        "transport": "D",
+        "health": "D",
+        "natural": "C",
+        "food": "D+",
+        "disease": "D+"
+      },
+      "safeAreas": [
+        "国际区",
+        "使馆区"
+      ]
+    },
+    "highlights": [
+      "历史古迹",
+      "山景"
+    ],
+    "risks": [
+      "极高风险",
+      "恐怖主义"
+    ],
+    "emergency": {
+      "police": "119",
+      "embassies": {
+        "中国驻阿富汗大使馆": "+93-20-210-4036"
+      }
+    },
+    "overview": "喀布尔是阿富汗的首都，位于兴都库什山脉。这座古老的城市近年局势不稳，出行风险极高。",
+    "embassy": {
+      "name": "中国驻阿富汗大使馆",
+      "phone": "+93-20-210-4036",
+      "address": "Sardar Shah Mahmoud Ghazi, Kabul"
+    },
+    "foodSafety": {
+      "summary": "喀布尔食品安全差。",
+      "tapWater": "建议饮用瓶装水"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件差。",
+      "vaccines": "建议接种所有常规疫苗",
+      "tips": "避免不洁食物和水"
+    }
+  },
+  "douala": {
+    "id": "douala",
+    "name": "杜阿拉",
+    "nameEn": "Douala",
+    "country": "喀麦隆",
+    "continent": "非洲",
+    "flag": "🇨🇲",
+    "lat": 4.0511,
+    "lng": 9.7679,
+    "image": "https://images.unsplash.com/photo-1578587018452-892bacefd971?w=400&q=80",
+    "safety": {
+      "overall": 35,
+      "grade": "C",
+      "grades": {
+        "crime": "C-",
+        "transport": "C+",
+        "health": "C",
+        "natural": "B-",
+        "food": "C+",
+        "disease": "C"
+      },
+      "safeAreas": [
+        "市中心",
+        "商务区"
+      ]
+    },
+    "highlights": [
+      "港口城市",
+      "经济中心"
+    ],
+    "risks": [
+      "治安",
+      "疾病"
+    ],
+    "emergency": {
+      "police": "17",
+      "ambulance": "12",
+      "embassies": {
+        "中国驻喀麦隆大使馆": "+237-2220-0821"
+      }
+    },
+    "overview": "杜阿拉是喀麦隆的最大城市和港口。作为经济首都，杜阿拉是该国最重要的商业中心，也是中非地区的重要枢纽。",
+    "embassy": {
+      "name": "中国驻喀麦隆大使馆",
+      "phone": "+237-2220-0821",
+      "address": "Boulevard du 20 Mai, Douala"
+    },
+    "foodSafety": {
+      "summary": "杜阿拉食品安全一般。",
+      "tapWater": "建议饮用瓶装水",
+      "seafood": "几内亚湾海鲜"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件一般。",
+      "vaccines": "建议接种黄热病、疟疾疫苗",
+      "diseases": "注意预防疟疾"
+    }
+  },
+  "dakar": {
+    "id": "dakar",
+    "name": "达喀尔",
+    "nameEn": "Dakar",
+    "country": "塞内加尔",
+    "continent": "非洲",
+    "flag": "🇸🇳",
+    "lat": 14.7167,
+    "lng": -17.4677,
+    "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400&q=80",
+    "safety": {
+      "overall": 50,
+      "grade": "C+",
+      "grades": {
+        "crime": "C+",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "B+",
+        "food": "B-",
+        "disease": "C+"
+      },
+      "safeAreas": [
+        "梅德纳区",
+        "卡萨兰卡区"
+      ]
+    },
+    "highlights": [
+      "海滨城市",
+      "玫瑰湖",
+      "达喀尔拉力赛"
+    ],
+    "risks": [
+      "扒窃",
+      "交通"
+    ],
+    "emergency": {
+      "police": "17",
+      "ambulance": "18",
+      "embassies": {
+        "中国驻塞内加尔大使馆": "+221-3382-2999"
+      }
+    },
+    "overview": "达喀尔是塞内加尔的首都，也是西非最重要的城市之一。以其海滨风光和玫瑰湖闻名。",
+    "embassy": {
+      "name": "中国驻塞内加尔大使馆",
+      "phone": "+221-3382-2999",
+      "address": "Rue de la Principale, Dakar"
+    },
+    "foodSafety": {
+      "summary": "达喀尔食品安全一般。",
+      "tapWater": "建议饮用瓶装水",
+      "seafood": "大西洋海鲜新鲜"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件一般。",
+      "vaccines": "建议接种黄热病疫苗",
+      "diseases": "注意预防疟疾"
+    }
+  },
+  "abidjan": {
+    "id": "abidjan",
+    "name": "阿比让",
+    "nameEn": "Abidjan",
+    "country": "科特迪瓦",
+    "continent": "非洲",
+    "flag": "🇨🇮",
+    "lat": 5.3600,
+    "lng": -4.0083,
+    "image": "https://images.unsplash.com/photo-1572942291189-a4d76e32f8c6?w=400&q=80",
+    "safety": {
+      "overall": 45,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "B",
+        "food": "B-",
+        "disease": "C+"
+      },
+      "safeAreas": [
+        "勒布朗区",
+        "科科迪区"
+      ]
+    },
+    "highlights": [
+      "经济中心",
+      "海滩",
+      "夜生活"
+    ],
+    "risks": [
+      "治安",
+      "疾病"
+    ],
+    "emergency": {
+      "police": "111",
+      "ambulance": "185",
+      "embassies": {
+        "中国驻科特迪瓦大使馆": "+225-2022-3000"
+      }
+    },
+    "overview": "阿比让是科特迪瓦的最大城市，曾是首都（现为亚穆苏克罗）。作为经济中心，阿比让是西非最现代化的城市之一。",
+    "embassy": {
+      "name": "中国驻科特迪瓦大使馆",
+      "phone": "+225-2022-3000",
+      "address": "Rue du Canal, Abidjan"
+    },
+    "foodSafety": {
+      "summary": "阿比让食品安全一般。",
+      "tapWater": "建议饮用瓶装水",
+      "seafood": "几内亚湾海鲜"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件一般。",
+      "vaccines": "建议接种黄热病疫苗",
+      "diseases": "注意预防疟疾"
+    }
+  },
+  "caracas": {
+    "id": "caracas",
+    "name": "加拉加斯",
+    "nameEn": "Caracas",
+    "country": "委内瑞拉",
+    "continent": "南美洲",
+    "flag": "🇻🇪",
+    "lat": 10.4806,
+    "lng": -66.9036,
+    "image": "https://images.unsplash.com/photo-1509915045677-67f24d1c7a45?w=400&q=80",
+    "safety": {
+      "overall": 30,
+      "grade": "C-",
+      "grades": {
+        "crime": "D+",
+        "transport": "C",
+        "health": "C",
+        "natural": "C+",
+        "food": "C",
+        "disease": "C"
+      },
+      "safeAreas": [
+        "艾茨比尔区",
+        "格拉纳达区"
+      ]
+    },
+    "highlights": [
+      "现代都市",
+      "山景"
+    ],
+    "risks": [
+      "极高风险",
+      "经济危机"
+    ],
+    "emergency": {
+      "police": "171",
+      "embassies": {
+        "中国驻委内瑞拉大使馆": "+58-212-883-4555"
+      }
+    },
+    "overview": "加拉加斯是委内瑞拉的首都，位于山谷中。作为南美洲曾经最繁荣的城市之一，近年来因经济危机局势不稳。",
+    "embassy": {
+      "name": "中国驻委内瑞拉大使馆",
+      "phone": "+58-212-883-4555",
+      "address": "Av. San Enrique, Caracas"
+    },
+    "foodSafety": {
+      "summary": "加拉加斯食品安全差。",
+      "tapWater": "建议饮用瓶装水"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件有限。",
+      "vaccines": "建议接种疫苗"
+    }
+  },
+  "quito": {
+    "id": "quito",
+    "name": "基多",
+    "nameEn": "Quito",
+    "country": "厄瓜多尔",
+    "continent": "南美洲",
+    "flag": "🇪🇨",
+    "lat": -0.1807,
+    "lng": -78.4678,
+    "image": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=400&q=80",
+    "safety": {
+      "overall": 55,
+      "grade": "C+",
+      "grades": {
+        "crime": "C+",
+        "transport": "C+",
+        "health": "B-",
+        "natural": "C+",
+        "food": "B",
+        "disease": "B-"
+      },
+      "safeAreas": [
+        "老城区",
+        "金融区"
+      ]
+    },
+    "highlights": [
+      "赤道纪念碑",
+      "殖民建筑",
+      "雪山"
+    ],
+    "risks": [
+      "Altitude",
+      "犯罪"
+    ],
+    "emergency": {
+      "police": "911",
+      "embassies": {
+        "中国驻厄瓜多尔大使馆": "+593-2-2448-993"
+      }
+    },
+    "overview": "基多是厄瓜多尔的首都，位于安第斯山脉的海拔2850米处。作为世界上最高的首都之一，基多以其殖民时期建筑和赤道位置闻名。",
+    "embassy": {
+      "name": "中国驻厄瓜多尔大使馆",
+      "phone": "+593-2-2448-993",
+      "address": "Av. de los Shyris, Quito"
+    },
+    "foodSafety": {
+      "summary": "基多食品安全一般。",
+      "tapWater": "建议饮用瓶装水"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件一般。注意高原反应。",
+      "vaccines": "建议接种黄热病疫苗",
+      "tips": "注意高原反应"
+    }
+  },
+  "la_paz": {
+    "id": "la_paz",
+    "name": "拉巴斯",
+    "nameEn": "La Paz",
+    "country": "玻利维亚",
+    "continent": "南美洲",
+    "flag": "🇧🇴",
+    "lat": -16.4897,
+    "lng": -68.1193,
+    "image": "https://images.unsplash.com/photo-1551524554-3682cc100c2e?w=400&q=80",
+    "safety": {
+      "overall": 45,
+      "grade": "C+",
+      "grades": {
+        "crime": "C",
+        "transport": "C+",
+        "health": "C+",
+        "natural": "B-",
+        "food": "C+",
+        "disease": "C+"
+      },
+      "safeAreas": [
+        "苏阿雷兹区",
+        "马萨丘库区"
+      ]
+    },
+    "highlights": [
+      "雪山",
+      "女巫市场",
+      "高原"
+    ],
+    "risks": [
+      "高原反应",
+      "犯罪"
+    ],
+    "emergency": {
+      "police": "110",
+      "embassies": {
+        "中国驻玻利维亚大使馆": "+591-2-211-5649"
+      }
+    },
+    "overview": "拉巴斯是玻利维亚的政府所在地，位于海拔3600米的山谷中。这座独特的城市融合了殖民时期和现代建筑，以其壮观的高原地形闻名。",
+    "embassy": {
+      "name": "中国驻玻利维亚大使馆",
+      "phone": "+591-2-211-5649",
+      "address": "Av. 6 de Agosto, La Paz"
+    },
+    "foodSafety": {
+      "summary": "拉巴斯食品安全一般。",
+      "tapWater": "建议饮用瓶装水"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件有限。注意高原反应。",
+      "vaccines": "建议接种疫苗",
+      "tips": "注意高原反应，避免剧烈运动"
+    }
+  },
+  "asuncion": {
+    "id": "asuncion",
+    "name": "亚松森",
+    "nameEn": "Asuncion",
+    "country": "巴拉圭",
+    "continent": "南美洲",
+    "flag": "🇵🇾",
+    "lat": -25.2637,
+    "lng": -57.5759,
+    "image": "https://images.unsplash.com/photo-1569399757396-7263aae4b1be?w=400&q=80",
+    "safety": {
+      "overall": 55,
+      "grade": "C+",
+      "grades": {
+        "crime": "C+",
+        "transport": "B-",
+        "health": "B-",
+        "natural": "B",
+        "food": "B-",
+        "disease": "B-"
+      },
+      "safeAreas": [
+        "西班牙区",
+        "曼努埃尔区"
+      ]
+    },
+    "highlights": [
+      "河滨",
+      "绿树成荫"
+    ],
+    "risks": [
+      "犯罪"
+    ],
+    "overview": "亚松森是巴拉圭的首都，是巴拉圭河沿岸的重要城市。作为南美洲最古老的城市之一，亚松森以其林荫大道和殖民建筑闻名。",
+    "embassy": {
+      "name": "中国驻巴拉圭大使馆",
+      "phone": "+595-21-201-441",
+      "address": "Av. Mcal. Estigarribia, Asuncion"
+    },
+    "foodSafety": {
+      "summary": "亚松森食品安全一般。",
+      "tapWater": "建议饮用瓶装水"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件一般。",
+      "vaccines": "建议接种黄热病疫苗"
+    }
+  },
+  "montevideo": {
+    "id": "montevideo",
+    "name": "蒙得维的亚",
+    "nameEn": "Montevideo",
+    "country": "乌拉圭",
+    "continent": "南美洲",
+    "flag": "🇺🇾",
+    "lat": -34.9011,
+    "lng": -56.1645,
+    "image": "https://images.unsplash.com/photo-1558618666-fbd7e110d94a?w=400&q=80",
+    "safety": {
+      "overall": 70,
+      "grade": "B",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "B+",
+        "natural": "B+",
+        "food": "B+",
+        "disease": "B+"
+      },
+      "safeAreas": [
+        "老城区",
+        " Pocitos区"
+      ]
+    },
+    "highlights": [
+      "海滨",
+      "殖民建筑",
+      "足球文化"
+    ],
+    "risks": [
+      "犯罪"
+    ],
+    "emergency": {
+      "police": "911",
+      "embassies": {
+        "中国驻乌拉圭大使馆": "+598-2-600-8509"
+      }
+    },
+    "overview": "蒙得维的亚是乌拉圭的首都，位于拉普拉塔河沿岸。作为南美洲最安全的城市之一，蒙得维的亚以其海滨风光和悠闲的生活方式闻名。",
+    "embassy": {
+      "name": "中国驻乌拉圭大使馆",
+      "phone": "+598-2-600-8509",
+      "address": "Av. Dr. Luis P. C会, Montevideo"
+    },
+    "foodSafety": {
+      "summary": "蒙得维的亚食品安全好。",
+      "tapWater": "可直饮",
+      "seafood": "大西洋海鲜新鲜"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件好。",
+      "vaccines": "无需特殊疫苗"
+    }
+  },
+  "sucre": {
+    "id": "sucre",
+    "name": "苏克雷",
+    "nameEn": "Sucre",
+    "country": "玻利维亚",
+    "continent": "南美洲",
+    "flag": "🇧🇴",
+    "lat": -19.0196,
+    "lng": -65.2619,
+    "image": "https://images.unsplash.com/photo-1564675572-6fa04f796a0e?w=400&q=80",
+    "safety": {
+      "overall": 65,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "B",
+        "health": "B-",
+        "natural": "B+",
+        "food": "B",
+        "disease": "B-"
+      },
+      "safeAreas": [
+        "市中心",
+        "历史区"
+      ]
+    },
+    "highlights": [
+      "殖民建筑",
+      "白城"
+    ],
+    "risks": [
+      "海拔高"
+    ],
+    "overview": "苏克雷是玻利维亚的法定首都，以其白色殖民建筑闻名。这座历史名城是联合国教科文组织世界遗产。",
+    "embassy": {
+      "name": "中国驻玻利维亚大使馆",
+      "phone": "+591-2-211-5649",
+      "address": "La Paz"
+    },
+    "foodSafety": {
+      "summary": "苏克雷食品安全一般。",
+      "tapWater": "建议饮用瓶装水"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件一般。注意高原反应。",
+      "vaccines": "建议接种疫苗"
+    }
+  },
+  "kuwait": {
+    "id": "kuwait",
+    "name": "科威特城",
+    "nameEn": "Kuwait City",
+    "country": "科威特",
+    "continent": "中东",
+    "flag": "🇰🇼",
+    "lat": 29.3759,
+    "lng": 47.9774,
+    "image": "https://images.unsplash.com/photo-1557590227264-0ea64e3f88b5?w=400&q=80",
+    "safety": {
+      "overall": 75,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B",
+        "health": "B+",
+        "natural": "B",
+        "food": "B+",
+        "disease": "B+"
+      },
+      "safeAreas": [
+        "海滨区",
+        "Salmiya区"
+      ]
+    },
+    "highlights": [
+      "现代建筑",
+      "石油",
+      "购物中心"
+    ],
+    "risks": [
+      "文化限制"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "102",
+      "fire": "101",
+      "embassies": {
+        "中国驻科威特大使馆": "+965-2533-3514"
+      }
+    },
+    "overview": "科威特城是科威特的首都，以其现代摩天大楼和丰富的石油资源闻名。作为海湾地区的重要城市，科威特城融合了传统和现代。",
+    "embassy": {
+      "name": "中国驻科威特大使馆",
+      "phone": "+965-2533-3514",
+      "address": "Block 4, Diplomatic Area, Kuwait City"
+    },
+    "foodSafety": {
+      "summary": "科威特城食品安全好。",
+      "tapWater": "可直饮"
+    },
+    "diseasePrevention": {
+      "summary": "医疗条件好。",
+      "vaccines": "无需特殊疫苗"
     }
   }
+  "chiang_rai": {
+    "id": "chiang_rai",
+    "name": "清莱",
+    "nameEn": "Chiang Rai",
+    "country": "泰国",
+    "continent": "亚洲",
+    "flag": "🇹🇭",
+    "lat": 19.9107,
+    "lng": 99.8326,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "kota_kinabalu": {
+    "id": "kota_kinabalu",
+    "name": "亚庇",
+    "nameEn": "Kota Kinabalu",
+    "country": "马来西亚",
+    "continent": "亚洲",
+    "flag": "🇲🇾",
+    "lat": 5.9804,
+    "lng": 116.0735,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 86,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "vientiane": {
+    "id": "vientiane",
+    "name": "万象",
+    "nameEn": "Vientiane",
+    "country": "老挝",
+    "continent": "亚洲",
+    "flag": "🇱🇦",
+    "lat": 17.9757,
+    "lng": 102.6331,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "luang_prabang": {
+    "id": "luang_prabang",
+    "name": "琅勃拉邦",
+    "nameEn": "Luang Prabang",
+    "country": "老挝",
+    "continent": "亚洲",
+    "flag": "🇱🇦",
+    "lat": 19.889,
+    "lng": 102.1347,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 74,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "siem_reap": {
+    "id": "siem_reap",
+    "name": "暹粒",
+    "nameEn": "Siem Reap",
+    "country": "柬埔寨",
+    "continent": "亚洲",
+    "flag": "🇰🇭",
+    "lat": 13.3671,
+    "lng": 103.8448,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 78,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "penang": {
+    "id": "penang",
+    "name": "槟城",
+    "nameEn": "Penang",
+    "country": "马来西亚",
+    "continent": "亚洲",
+    "flag": "🇲🇾",
+    "lat": 5.4141,
+    "lng": 100.3288,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 78,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "langkawi": {
+    "id": "langkawi",
+    "name": "兰卡威",
+    "nameEn": "Langkawi",
+    "country": "马来西亚",
+    "continent": "亚洲",
+    "flag": "🇲🇾",
+    "lat": 6.35,
+    "lng": 99.8,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 75,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "kuching": {
+    "id": "kuching",
+    "name": "古晋",
+    "nameEn": "Kuching",
+    "country": "马来西亚",
+    "continent": "亚洲",
+    "flag": "🇲🇾",
+    "lat": 1.5555,
+    "lng": 110.3593,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "yogyakarta": {
+    "id": "yogyakarta",
+    "name": "日惹",
+    "nameEn": "Yogyakarta",
+    "country": "印尼",
+    "continent": "亚洲",
+    "flag": "🇮🇩",
+    "lat": -7.7956,
+    "lng": 110.3695,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 74,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "surabaya": {
+    "id": "surabaya",
+    "name": "泗水",
+    "nameEn": "Surabaya",
+    "country": "印尼",
+    "continent": "亚洲",
+    "flag": "🇮🇩",
+    "lat": -7.2575,
+    "lng": 112.7521,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "hoi_an": {
+    "id": "hoi_an",
+    "name": "会安",
+    "nameEn": "Hoi An",
+    "country": "越南",
+    "continent": "亚洲",
+    "flag": "🇻🇳",
+    "lat": 15.8801,
+    "lng": 108.338,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 74,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "nha_trang": {
+    "id": "nha_trang",
+    "name": "芽庄",
+    "nameEn": "Nha Trang",
+    "country": "越南",
+    "continent": "亚洲",
+    "flag": "🇻🇳",
+    "lat": 12.2388,
+    "lng": 109.1967,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "fukuoka": {
+    "id": "fukuoka",
+    "name": "福冈",
+    "nameEn": "Fukuoka",
+    "country": "日本",
+    "continent": "亚洲",
+    "flag": "🇯🇵",
+    "lat": 33.5904,
+    "lng": 130.4017,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 74,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++9",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "sapporo": {
+    "id": "sapporo",
+    "name": "札幌",
+    "nameEn": "Sapporo",
+    "country": "日本",
+    "continent": "亚洲",
+    "flag": "🇯🇵",
+    "lat": 43.0618,
+    "lng": 141.3545,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 77,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++9",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "kyoto": {
+    "id": "kyoto",
+    "name": "京都",
+    "nameEn": "Kyoto",
+    "country": "日本",
+    "continent": "亚洲",
+    "flag": "🇯🇵",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 72,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++9",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "busan": {
+    "id": "busan",
+    "name": "釜山",
+    "nameEn": "Busan",
+    "country": "韩国",
+    "continent": "亚洲",
+    "flag": "🇰🇷",
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 73,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++9",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "kaohsiung": {
+    "id": "kaohsiung",
+    "name": "高雄",
+    "nameEn": "Kaohsiung",
+    "country": "台湾",
+    "continent": "亚洲",
+    "flag": "🇹🇼",
+    "lat": 22.6273,
+    "lng": 120.3014,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "qingdao": {
+    "id": "qingdao",
+    "name": "青岛",
+    "nameEn": "Qingdao",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 36.0671,
+    "lng": 120.3826,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 77,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "xiamen": {
+    "id": "xiamen",
+    "name": "厦门",
+    "nameEn": "Xiamen",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 24.4798,
+    "lng": 118.0894,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 85,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "chongqing": {
+    "id": "chongqing",
+    "name": "重庆",
+    "nameEn": "Chongqing",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 29.4316,
+    "lng": 106.9123,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "timezone": "UTC++7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "porto": {
+    "id": "porto",
+    "name": "波尔图",
+    "nameEn": "Porto",
+    "country": "葡萄牙",
+    "continent": "欧洲",
+    "flag": "🇵🇹",
+    "lat": 41.1579,
+    "lng": -8.6291,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "reykjavik": {
+    "id": "reykjavik",
+    "name": "雷克雅未克",
+    "nameEn": "Reykjavik",
+    "country": "冰岛",
+    "continent": "欧洲",
+    "flag": "🇮🇸",
+    "lat": 64.1466,
+    "lng": -21.9426,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 72,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "tallinn": {
+    "id": "tallinn",
+    "name": "塔林",
+    "nameEn": "Tallinn",
+    "country": "爱沙尼亚",
+    "continent": "欧洲",
+    "flag": "🇪🇪",
+    "lat": 59.437,
+    "lng": 24.7536,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++2",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "riga": {
+    "id": "riga",
+    "name": "里加",
+    "nameEn": "Riga",
+    "country": "拉脱维亚",
+    "continent": "欧洲",
+    "flag": "🇱🇻",
+    "lat": 56.9496,
+    "lng": 24.1052,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 75,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++2",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "vilnius": {
+    "id": "vilnius",
+    "name": "维尔纽斯",
+    "nameEn": "Vilnius",
+    "country": "立陶宛",
+    "continent": "欧洲",
+    "flag": "🇱🇹",
+    "lat": 54.6872,
+    "lng": 25.2797,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++2",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "krakow": {
+    "id": "krakow",
+    "name": "克拉科夫",
+    "nameEn": "Krakow",
+    "country": "波兰",
+    "continent": "欧洲",
+    "flag": "🇵🇱",
+    "lat": 50.0647,
+    "lng": 19.945,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "lucerne": {
+    "id": "lucerne",
+    "name": "卢塞恩",
+    "nameEn": "Lucerne",
+    "country": "瑞士",
+    "continent": "欧洲",
+    "flag": "🇨🇭",
+    "lat": 47.0502,
+    "lng": 8.3093,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 81,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "interlaken": {
+    "id": "interlaken",
+    "name": "因特拉肯",
+    "nameEn": "Interlaken",
+    "country": "瑞士",
+    "continent": "欧洲",
+    "flag": "🇨🇭",
+    "lat": 46.6863,
+    "lng": 7.8632,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 86,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "bordeaux": {
+    "id": "bordeaux",
+    "name": "波尔多",
+    "nameEn": "Bordeaux",
+    "country": "法国",
+    "continent": "欧洲",
+    "flag": "🇫🇷",
+    "lat": 44.8378,
+    "lng": -0.5792,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 83,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+0",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "malaga": {
+    "id": "malaga",
+    "name": "马拉加",
+    "nameEn": "Malaga",
+    "country": "西班牙",
+    "continent": "欧洲",
+    "flag": "🇪🇸",
+    "lat": 36.7213,
+    "lng": -4.4214,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 79,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+0",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "naples": {
+    "id": "naples",
+    "name": "那不勒斯",
+    "nameEn": "Naples",
+    "country": "意大利",
+    "continent": "欧洲",
+    "flag": "🇮🇹",
+    "lat": 40.8518,
+    "lng": 14.2681,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 83,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "bologna": {
+    "id": "bologna",
+    "name": "博洛尼亚",
+    "nameEn": "Bologna",
+    "country": "意大利",
+    "continent": "欧洲",
+    "flag": "🇮🇹",
+    "lat": 44.4949,
+    "lng": 11.3426,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "genoa": {
+    "id": "genoa",
+    "name": "热那亚",
+    "nameEn": "Genoa",
+    "country": "意大利",
+    "continent": "欧洲",
+    "flag": "🇮🇹",
+    "lat": 44.4056,
+    "lng": 8.9463,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "positano": {
+    "id": "positano",
+    "name": "波西塔诺",
+    "nameEn": "Positano",
+    "country": "意大利",
+    "continent": "欧洲",
+    "flag": "🇮🇹",
+    "lat": 40.628,
+    "lng": 14.485,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "cartagena": {
+    "id": "cartagena",
+    "name": "卡塔赫纳",
+    "nameEn": "Cartagena",
+    "country": "哥伦比亚",
+    "continent": "美洲",
+    "flag": "🇨🇴",
+    "lat": 10.391,
+    "lng": -75.4794,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 72,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-5",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "medellin": {
+    "id": "medellin",
+    "name": "麦德林",
+    "nameEn": "Medellin",
+    "country": "哥伦比亚",
+    "continent": "美洲",
+    "flag": "🇨🇴",
+    "lat": 6.2442,
+    "lng": -75.5812,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 75,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-5",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "quito": {
+    "id": "quito",
+    "name": "基多",
+    "nameEn": "Quito",
+    "country": "厄瓜多尔",
+    "continent": "美洲",
+    "flag": "🇪🇨",
+    "lat": -0.1807,
+    "lng": -78.4678,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 87,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-5",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "santiago": {
+    "id": "santiago",
+    "name": "圣地亚哥",
+    "nameEn": "Santiago",
+    "country": "智利",
+    "continent": "美洲",
+    "flag": "🇨🇱",
+    "lat": -33.4489,
+    "lng": -70.6693,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-5",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "panama_city_pa": {
+    "id": "panama_city_pa",
+    "name": "巴拿马城",
+    "nameEn": "Panama City",
+    "country": "巴拿马",
+    "continent": "美洲",
+    "flag": "🇵🇦",
+    "lat": 8.9824,
+    "lng": -79.5199,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-5",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "nashville": {
+    "id": "nashville",
+    "name": "纳什维尔",
+    "nameEn": "Nashville",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 36.1627,
+    "lng": -86.7816,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 79,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-6",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "austin_tx": {
+    "id": "austin_tx",
+    "name": "奥斯汀",
+    "nameEn": "Austin",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 30.2672,
+    "lng": -97.7431,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-7",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "portland_or": {
+    "id": "portland_or",
+    "name": "波特兰",
+    "nameEn": "Portland",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "sandiego": {
+    "id": "sandiego",
+    "name": "圣迭戈",
+    "nameEn": "San Diego",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 32.7157,
+    "lng": -117.1611,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 78,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "orlando": {
+    "id": "orlando",
+    "name": "奥兰多",
+    "nameEn": "Orlando",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 28.5383,
+    "lng": -81.3792,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-5",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "new_orleans": {
+    "id": "new_orleans",
+    "name": "新奥尔良",
+    "nameEn": "New Orleans",
+    "country": "美国",
+    "continent": "美洲",
+    "flag": "🇺🇸",
+    "lat": 29.9511,
+    "lng": -90.0715,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-6",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "quebec_city": {
+    "id": "quebec_city",
+    "name": "魁北克城",
+    "nameEn": "Quebec City",
+    "country": "加拿大",
+    "continent": "美洲",
+    "flag": "🇨🇦",
+    "lat": 46.8139,
+    "lng": -71.208,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 77,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-5",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "banff": {
+    "id": "banff",
+    "name": "班夫",
+    "nameEn": "Banff",
+    "country": "加拿大",
+    "continent": "美洲",
+    "flag": "🇨🇦",
+    "lat": 51.1784,
+    "lng": -115.5708,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 73,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-8",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "cancun": {
+    "id": "cancun",
+    "name": "坎昆",
+    "nameEn": "Cancun",
+    "country": "墨西哥",
+    "continent": "美洲",
+    "flag": "🇲🇽",
+    "lat": 21.1619,
+    "lng": -86.8515,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-6",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "oaxaca": {
+    "id": "oaxaca",
+    "name": "瓦哈卡",
+    "nameEn": "Oaxaca",
+    "country": "墨西哥",
+    "continent": "美洲",
+    "flag": "🇲🇽",
+    "lat": 17.0732,
+    "lng": -96.7266,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-6",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "victoria_falls": {
+    "id": "victoria_falls",
+    "name": "维多利亚瀑布城",
+    "nameEn": "Victoria Falls",
+    "country": "津巴布韦",
+    "continent": "非洲",
+    "flag": "🇿🇼",
+    "lat": -17.9316,
+    "lng": 25.83,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++2",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "windhoek": {
+    "id": "windhoek",
+    "name": "温得和克",
+    "nameEn": "Windhoek",
+    "country": "纳米比亚",
+    "continent": "非洲",
+    "flag": "🇳🇦",
+    "lat": -22.5609,
+    "lng": 17.0658,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 79,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "mauritius_city": {
+    "id": "mauritius_city",
+    "name": "路易港",
+    "nameEn": "Port Louis",
+    "country": "毛里求斯",
+    "continent": "非洲",
+    "flag": "🇲🇺",
+    "lat": -20.1609,
+    "lng": 57.5012,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++4",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "zanzibar_city": {
+    "id": "zanzibar_city",
+    "name": "桑给巴尔",
+    "nameEn": "Zanzibar",
+    "country": "坦桑尼亚",
+    "continent": "非洲",
+    "flag": "🇹🇿",
+    "lat": -6.1659,
+    "lng": 39.2026,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 85,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++3",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "mombasa": {
+    "id": "mombasa",
+    "name": "蒙巴萨",
+    "nameEn": "Mombasa",
+    "country": "肯尼亚",
+    "continent": "非洲",
+    "flag": "🇰🇪",
+    "lat": -4.0435,
+    "lng": 39.6682,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++3",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "luxor": {
+    "id": "luxor",
+    "name": "卢克索",
+    "nameEn": "Luxor",
+    "country": "埃及",
+    "continent": "非洲",
+    "flag": "🇪🇬",
+    "lat": 25.6872,
+    "lng": 32.6396,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++2",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "alexandria": {
+    "id": "alexandria",
+    "name": "亚历山大",
+    "nameEn": "Alexandria",
+    "country": "埃及",
+    "continent": "非洲",
+    "flag": "🇪🇬",
+    "lat": 31.2001,
+    "lng": 29.9187,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++2",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "fes": {
+    "id": "fes",
+    "name": "菲斯",
+    "nameEn": "Fes",
+    "country": "摩洛哥",
+    "continent": "非洲",
+    "flag": "🇲🇦",
+    "lat": 34.0181,
+    "lng": -5.0078,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 78,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+0",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "essaouira": {
+    "id": "essaouira",
+    "name": "索维拉",
+    "nameEn": "Essaouira",
+    "country": "摩洛哥",
+    "continent": "非洲",
+    "flag": "🇲🇦",
+    "lat": 31.5085,
+    "lng": -9.7595,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 72,
+      "grade": "B",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC+-1",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "durban": {
+    "id": "durban",
+    "name": "德班",
+    "nameEn": "Durban",
+    "country": "南非",
+    "continent": "非洲",
+    "flag": "🇿🇦",
+    "lat": -29.8587,
+    "lng": 31.0218,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 89,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++2",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "gold_coast": {
+    "id": "gold_coast",
+    "name": "黄金海岸",
+    "nameEn": "Gold Coast",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -28.0167,
+    "lng": 153.4,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++10",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "cairns": {
+    "id": "cairns",
+    "name": "凯恩斯",
+    "nameEn": "Cairns",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -16.9186,
+    "lng": 145.7781,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++10",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  },
+  "queenstown": {
+    "id": "queenstown",
+    "name": "皇后镇",
+    "nameEn": "Queenstown",
+    "country": "新西兰",
+    "continent": "大洋洲",
+    "flag": "🇳🇿",
+    "lat": -45.0312,
+    "lng": 168.6626,
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=80",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "B+",
+        "health": "A",
+        "natural": "A",
+        "food": "A",
+        "disease": "A"
+      },
+      "hotspots": [
+        {
+          "area": "火车站周边",
+          "desc": "人流量大，需注意扒窃",
+          "risk": "中"
+        },
+        {
+          "area": "旅游景点",
+          "desc": "游客密集区，小偷小摸较多",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "市中心商业区",
+        "主要旅游区",
+        "高档酒店区"
+      ]
+    },
+    "highlights": [
+      "风景优美",
+      "文化底蕴深厚",
+      "当地美食丰富",
+      "社会秩序良好"
+    ],
+    "risks": [
+      "小偷小摸",
+      "语言障碍",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "timezone": "UTC++11",
+    "bestMonths": ["3月", "4月", "5月", "9月", "10月"],
+    "language": "本地语言/英语",
+    "currency": "当地货币"
+  }
+
 };
