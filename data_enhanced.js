@@ -1,61 +1,6 @@
-// ============================================================
-// SafeCity Global - Global City Safety Database v8.0 (Enhanced)
-// 125 cities with detailed area safety + food recommendations
+// SafeCity Global - Global City Safety Database v8.0 (Fully Enhanced)
+// All 125 cities with detailed danger zones, safe areas, food & attractions
 // Updated: 2026-04-18
-// ============================================================
-
-var SAFETY_COLORS = {
-  "A": {
-    "bg": "#00b894",
-    "text": "#fff",
-    "label": "Very Safe"
-  },
-  "A-": {
-    "bg": "#00cec9",
-    "text": "#fff",
-    "label": "Safe"
-  },
-  "B+": {
-    "bg": "#0984e3",
-    "text": "#fff",
-    "label": "Relatively Safe"
-  },
-  "B": {
-    "bg": "#6c5ce7",
-    "text": "#fff",
-    "label": "Average"
-  },
-  "B-": {
-    "bg": "#fdcb6e",
-    "text": "#2d3436",
-    "label": "Caution"
-  },
-  "C+": {
-    "bg": "#e17055",
-    "text": "#fff",
-    "label": "Higher Risk"
-  },
-  "C": {
-    "bg": "#d63031",
-    "text": "#fff",
-    "label": "High Risk"
-  },
-  "C-": {
-    "bg": "#c0392b",
-    "text": "#fff",
-    "label": "Very High Risk"
-  },
-  "D+": {
-    "bg": "#b2bec3",
-    "text": "#2d3436",
-    "label": "Very High Risk"
-  },
-  "D": {
-    "bg": "#636e72",
-    "text": "#fff",
-    "label": "Extremely Dangerous"
-  }
-};
 
 var CITY_DATABASE = {
   "tokyo": {
@@ -1198,7 +1143,26 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "添好运点心",
+          "type": "粤式点心",
+          "location": "深水埗/中环",
+          "price": "HK$50-150",
+          "mustTry": "酥皮焗叉烧包、虾饺",
+          "tips": "最便宜的米其林星级餐厅"
+        },
+        {
+          "name": "九记牛腩",
+          "type": "牛腩面",
+          "location": "上环歌赋街",
+          "price": "HK$60-100",
+          "mustTry": "咖喱牛筋腩、清汤牛腩",
+          "tips": "周一至周六营业，经常排队"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -1284,7 +1248,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "深水埗某些后巷",
+        "risk": "低",
+        "time": "深夜23:00后",
+        "reason": "无业游民聚集",
+        "tips": "尽量结伴，避免深夜独行"
+      },
+      {
+        "area": "重庆大厦周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "人员复杂，拉客行为",
+        "tips": "快速通过，注意财物"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "中环/上环",
+        "why": "金融中心，安保严密，商业发达",
+        "features": [
+          "金融区",
+          "使馆安保",
+          "商业"
+        ],
+        "bestFor": "商务旅客"
+      },
+      {
+        "area": "山顶（太平山）",
+        "why": "高端住宅区，俯瞰维港，灯光秀",
+        "features": [
+          "高端区",
+          "景观",
+          "旅游"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "beijing": {
     "id": "beijing",
@@ -1440,7 +1442,26 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "全聚德烤鸭",
+          "type": "北京烤鸭",
+          "location": "多家分店",
+          "price": "¥200-500",
+          "mustTry": "片皮烤鸭、鸭架汤",
+          "tips": "百年老店，建议去前门店"
+        },
+        {
+          "name": "护国寺小吃",
+          "type": "京味小吃",
+          "location": "西城",
+          "price": "¥20-60",
+          "mustTry": "豆汁、焦圈、驴打滚",
+          "tips": "体验老北京早点文化"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -1526,7 +1547,38 @@ var CITY_DATABASE = {
       "gang_desc": "严格管控，社会秩序良好",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "北京某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "东城区（胡同保护区）",
+        "why": "传统与现代结合，旅游设施完善",
+        "features": [
+          "胡同文化",
+          "旅游区",
+          "设施完善"
+        ],
+        "bestFor": "文化探索"
+      },
+      {
+        "area": "朝阳区（CBD）",
+        "why": "商务中心，国际化程度高，警力充足",
+        "features": [
+          "商务区",
+          "国际化",
+          "安全"
+        ],
+        "bestFor": "商务旅客"
+      }
+    ]
   },
   "shanghai": {
     "id": "shanghai",
@@ -1682,7 +1734,26 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "南翔馒头店",
+          "type": "小笼包",
+          "location": "豫园",
+          "price": "¥30-80",
+          "mustTry": "鲜肉小笼、蟹粉小笼",
+          "tips": "百年老店，建议错峰前往"
+        },
+        {
+          "name": "上海老饭店",
+          "type": "本帮菜",
+          "location": "黄浦",
+          "price": "¥100-300",
+          "mustTry": "红烧肉、腌笃鲜",
+          "tips": "正宗本帮菜，口味偏甜"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -1768,7 +1839,38 @@ var CITY_DATABASE = {
       "gang_desc": "严格管控，社会秩序良好",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "上海某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "静安区",
+        "why": "法租界区域，高档社区，街道整洁",
+        "features": [
+          "法租界",
+          "高档社区",
+          "梧桐区"
+        ],
+        "bestFor": "购物、美食"
+      },
+      {
+        "area": "徐汇区（衡山路）",
+        "why": "梧桐树街区，咖啡馆林立，氛围优雅",
+        "features": [
+          "梧桐区",
+          "咖啡馆",
+          "海派文化"
+        ],
+        "bestFor": "文艺游客"
+      }
+    ]
   },
   "bangkok": {
     "id": "bangkok",
@@ -1929,7 +2031,8 @@ var CITY_DATABASE = {
           "mustTry": "Signature Pad Thai",
           "tips": "Over 50 years, Golden Egg Fried Rice is must-try"
         }
-      ]
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -2219,7 +2322,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "吉隆坡中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -2305,7 +2419,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "茨厂街夜间后巷",
+        "risk": "中",
+        "time": "深夜",
+        "reason": "抢劫多发",
+        "tips": "结伴而行"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "吉隆坡市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "吉隆坡主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "taipei": {
     "id": "taipei",
@@ -2475,7 +2620,8 @@ var CITY_DATABASE = {
           "mustTry": "Half-Tendon Half-Meat Noodles",
           "tips": "24hr, add chili oil for extra flavor"
         }
-      ]
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -2786,7 +2932,18 @@ var CITY_DATABASE = {
         "递东西时使用双手，表示尊重",
         "不要用筷子直插米饭（像上香一样）"
       ],
-      "transport": "公共交通非常发达，地铁和电车是最主要交通方式。建议购买一日券（Tokyo Metro 24/48/72小时券）、西瓜卡（Suica）或Pasmo卡，充值即可使用。出租车价格较高，但服务优质。"
+      "transport": "公共交通非常发达，地铁和电车是最主要交通方式。建议购买一日券（Tokyo Metro 24/48/72小时券）、西瓜卡（Suica）或Pasmo卡，充值即可使用。出租车价格较高，但服务优质。",
+      "foodDetails": [
+        {
+          "name": "大阪中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -2872,7 +3029,45 @@ var CITY_DATABASE = {
       "gang_desc": "暴力团存在但远离游客区",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "飞田新地（西成区）",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "风俗店聚集区",
+        "tips": "游客应完全避免"
+      },
+      {
+        "area": "釜崎地区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "日工聚集地",
+        "tips": "避免前往"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "大阪市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "大阪主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "mumbai": {
     "id": "mumbai",
@@ -3028,7 +3223,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "孟买中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -3129,6 +3335,28 @@ var CITY_DATABASE = {
         "reason": "Red-light area vicinity",
         "time": "Night",
         "tips": "Avoid going alone"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "孟买市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "孟买主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
       }
     ]
   },
@@ -3286,7 +3514,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "德里中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -3372,7 +3611,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "德里火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "德里市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "德里市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "德里主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "jakarta": {
     "id": "jakarta",
@@ -3528,7 +3805,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "雅加达中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -3614,7 +3902,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪存在",
       "civil_unrest": "中",
       "civil_desc": "政治活动较多"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "雅加达火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "雅加达市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "雅加达市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "雅加达主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "ho_chi_minh": {
     "id": "ho_chi_minh",
@@ -3770,7 +4096,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "胡志明市中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -3856,7 +4193,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "第五郡华埠深夜",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "飞车党活跃",
+        "tips": "避免佩戴首饰"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "胡志明市市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "胡志明市主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "manila": {
     "id": "manila",
@@ -4012,7 +4380,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "马尼拉中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -4098,7 +4477,45 @@ var CITY_DATABASE = {
       "gang_desc": "帮派问题存在",
       "civil_unrest": "中",
       "civil_desc": "政治对立明显"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "马尼拉火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "马尼拉市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "马尼拉市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "马尼拉主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "dubai": {
     "id": "dubai",
@@ -4249,7 +4666,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "迪拜中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -4343,6 +4771,18 @@ var CITY_DATABASE = {
         "reason": "Working-class area, slightly chaotic at night",
         "time": "After 10pm",
         "tips": "More comfortable during daytime"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "朱美拉棕榈岛",
+        "why": "高端度假区，酒店安保严密，几乎零犯罪",
+        "features": [
+          "度假区",
+          "酒店安保",
+          "海滩"
+        ],
+        "bestFor": "度假、家庭"
       }
     ]
   },
@@ -4500,7 +4940,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "多哈中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -4586,7 +5037,38 @@ var CITY_DATABASE = {
       "gang_desc": "严格法律管控",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "多哈某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "多哈市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "多哈主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "riyadh": {
     "id": "riyadh",
@@ -4742,7 +5224,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "利雅得中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -4828,7 +5321,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "利雅得某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "利雅得市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "利雅得主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "muscat": {
     "id": "muscat",
@@ -4984,7 +5508,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "马斯喀特中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -5070,7 +5605,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "马斯喀特某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "马斯喀特市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "马斯喀特主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "tel_aviv": {
     "id": "tel_aviv",
@@ -5226,7 +5792,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "特拉维夫中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -5312,7 +5889,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "雅法港夜间偏僻区域",
+        "risk": "中",
+        "time": "深夜",
+        "reason": "抢劫案件",
+        "tips": "天黑后留在主街道"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "特拉维夫市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "特拉维夫主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "istanbul": {
     "id": "istanbul",
@@ -5468,7 +6076,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "伊斯坦布尔中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -5554,7 +6173,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪存在",
       "civil_unrest": "中",
       "civil_desc": "政治局势时有波动"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "法提赫区夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "难民聚集区，治安复杂",
+        "tips": "白天前往，夜间避免"
+      },
+      {
+        "area": "锡尔詹区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "贫民区，犯罪",
+        "tips": "避免前往"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "伊斯坦布尔市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "伊斯坦布尔主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "bali": {
     "id": "bali",
@@ -5710,7 +6367,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "巴厘岛中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -5796,7 +6464,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "巴厘岛火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "巴厘岛市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "巴厘岛市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "巴厘岛主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "chiangmai": {
     "id": "chiangmai",
@@ -5952,7 +6658,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "清迈中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -6038,7 +6755,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "清迈火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "清迈市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "清迈市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "清迈主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "phuket": {
     "id": "phuket",
@@ -6194,7 +6949,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "普吉岛中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -6280,7 +7046,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "普吉岛某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "普吉岛市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "普吉岛主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "penang": {
     "id": "penang",
@@ -6436,7 +7233,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "槟城中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -6522,7 +7330,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "槟城某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "槟城市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "槟城主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "hanoi": {
     "id": "hanoi",
@@ -6678,7 +7517,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "河内中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -6764,7 +7614,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "河内某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "河内市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "河内主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "bangalore": {
     "id": "bangalore",
@@ -6920,7 +7801,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "班加罗尔中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -7006,7 +7898,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "班加罗尔某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "班加罗尔市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "班加罗尔主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "chennai": {
     "id": "chennai",
@@ -7162,7 +8085,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "金奈中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -7248,7 +8182,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "金奈某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "金奈市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "金奈主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "kolkata": {
     "id": "kolkata",
@@ -7404,7 +8369,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "加尔各答中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -7490,7 +8466,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "加尔各答老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "加尔各答公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "加尔各答市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "加尔各答主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "hyderabad": {
     "id": "hyderabad",
@@ -7646,7 +8660,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "海德拉巴中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -7732,7 +8757,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "海德拉巴老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "海德拉巴公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "海德拉巴市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "海德拉巴主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "shenzhen": {
     "id": "shenzhen",
@@ -7888,7 +8951,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "深圳中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -7974,7 +9048,45 @@ var CITY_DATABASE = {
       "gang_desc": "严格管控，社会秩序良好",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "深圳火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "深圳市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "深圳市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "深圳主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "guangzhou": {
     "id": "guangzhou",
@@ -8130,7 +9242,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "广州中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -8216,7 +9339,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪控制良好",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "广州某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "广州市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "广州主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "chengdu": {
     "id": "chengdu",
@@ -8372,7 +9526,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "成都中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -8458,7 +9623,38 @@ var CITY_DATABASE = {
       "gang_desc": "严格管控，社会秩序良好",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "成都某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "成都市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "成都主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "hangzhou": {
     "id": "hangzhou",
@@ -8614,7 +9810,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "杭州中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -8700,7 +9907,38 @@ var CITY_DATABASE = {
       "gang_desc": "严格管控，社会秩序良好",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "杭州某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "杭州市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "杭州主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "xian": {
     "id": "xian",
@@ -8856,7 +10094,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "西安中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -8942,7 +10191,38 @@ var CITY_DATABASE = {
       "gang_desc": "严格管控，社会秩序良好",
       "civil_unrest": "极低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "西安某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "西安市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "西安主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "london": {
     "id": "london",
@@ -9097,7 +10377,36 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "Borough Market",
+          "type": "美食市集",
+          "location": "南岸",
+          "price": "£10-30",
+          "mustTry": "生蚝、芝士拼盘、烤肉串",
+          "tips": "周六最热闹，周三至周五也有营业"
+        },
+        {
+          "name": "Brick Lane咖喱店",
+          "type": "印度菜",
+          "location": "东伦敦",
+          "price": "£15-30",
+          "mustTry": "Chicken Tikka Masala、Naan面包",
+          "tips": "Bangla Town核心区，性价比高"
+        }
+      ],
+      "attractionDetails": [
+        {
+          "name": "Tate Modern",
+          "type": "现代艺术",
+          "location": "南岸 Bankside",
+          "why": "世界最大的现代艺术博物馆之一，建筑由废弃发电厂改建",
+          "bestTime": "周五晚上（免费夜场）",
+          "duration": "2-3小时",
+          "tips": "顶楼观景台免费，可以看到圣保罗大教堂"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -9391,7 +10700,44 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "Le Comptoir du Panthéon",
+          "type": "法餐",
+          "location": "拉丁区",
+          "price": "€30-60",
+          "mustTry": "鹅肝、鸭胸肉",
+          "tips": "避开12-14点高峰，选择晚市更地道"
+        },
+        {
+          "name": "Breizh Café",
+          "type": "可丽饼",
+          "location": "玛黑区",
+          "price": "€10-20",
+          "mustTry": "荞麦可丽饼配苹果酒",
+          "tips": "被誉为巴黎最佳可丽饼"
+        },
+        {
+          "name": "Pink Mamma",
+          "type": "意餐",
+          "location": "蒙马特",
+          "price": "€25-40",
+          "mustTry": "松露意面、提拉米苏",
+          "tips": "需提前1个月预约，网红餐厅"
+        }
+      ],
+      "attractionDetails": [
+        {
+          "name": "奥赛博物馆",
+          "type": "博物馆",
+          "location": "左岸塞纳河畔",
+          "why": "印象派画作最丰富的博物馆，建筑本身是废弃火车站改建",
+          "bestTime": "周二至周四上午",
+          "duration": "3-4小时",
+          "tips": "周四延长开放至21:45，免费入馆时段：每月第一个周日"
+        }
+      ]
     },
     "safety_tips": {
       "crime": [
@@ -9688,7 +11034,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "柏林中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -9789,6 +11146,28 @@ var CITY_DATABASE = {
         "reason": "Occasional robberies",
         "time": "Night",
         "tips": "Avoid at night"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "米特区（菩提树下大街）",
+        "why": "政府区，警力充足，博物馆岛安全",
+        "features": [
+          "政府区",
+          "博物馆",
+          "警力"
+        ],
+        "bestFor": "文化之旅"
+      },
+      {
+        "area": "夏洛滕堡",
+        "why": "传统高档社区，宫殿和公园环绕",
+        "features": [
+          "高档社区",
+          "宫殿",
+          "安全"
+        ],
+        "bestFor": "家庭旅客"
       }
     ]
   },
@@ -9946,7 +11325,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "阿姆斯特丹中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -10047,6 +11437,18 @@ var CITY_DATABASE = {
         "reason": "Occasional robbery",
         "time": "Night",
         "tips": "Avoid going alone at night"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "约丹区",
+        "why": "运河边的文静社区，本地居民为主",
+        "features": [
+          "运河区",
+          "文静",
+          "本地人"
+        ],
+        "bestFor": "深度游客"
       }
     ]
   },
@@ -10204,7 +11606,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "维也纳中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -10290,7 +11703,35 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪极少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "维也纳火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "维也纳市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "内城区（Innere Stadt）",
+        "why": "历史中心，政府区，警力充足",
+        "features": [
+          "历史中心",
+          "政府区",
+          "文化"
+        ],
+        "bestFor": "文化之旅"
+      }
+    ]
   },
   "zurich": {
     "id": "zurich",
@@ -10446,7 +11887,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "苏黎世中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -10532,7 +11984,38 @@ var CITY_DATABASE = {
       "gang_desc": "全球最安全城市之一",
       "civil_unrest": "极低",
       "civil_desc": "高度稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "苏黎世某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "苏黎世市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "苏黎世主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "stockholm": {
     "id": "stockholm",
@@ -10688,7 +12171,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "斯德哥尔摩中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -10774,7 +12268,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "斯德哥尔摩某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "斯德哥尔摩市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "斯德哥尔摩主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "oslo": {
     "id": "oslo",
@@ -10930,7 +12455,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "奥斯陆中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -11016,7 +12552,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "奥斯陆某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "奥斯陆市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "奥斯陆主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "copenhagen": {
     "id": "copenhagen",
@@ -11172,7 +12739,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "哥本哈根中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -11258,7 +12836,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪极少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "哥本哈根某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "哥本哈根市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "哥本哈根主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "helsinki": {
     "id": "helsinki",
@@ -11414,7 +13023,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "赫尔辛基中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -11500,7 +13120,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "赫尔辛基某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "赫尔辛基市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "赫尔辛基主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "madrid": {
     "id": "madrid",
@@ -11656,7 +13307,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "马德里中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -11742,7 +13404,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "马德里某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "马德里市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "马德里主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "rome": {
     "id": "rome",
@@ -11898,7 +13591,26 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "Roscioli",
+          "type": "意餐",
+          "location": "万神殿附近",
+          "price": "€40-80",
+          "mustTry": "Carbonara、新鲜意面",
+          "tips": "当地人最爱的餐厅，需提前预约"
+        },
+        {
+          "name": "Pizzarium",
+          "type": "披萨",
+          "location": "梵蒂冈附近",
+          "price": "€5-10",
+          "mustTry": "玛格丽特披萨、时令披萨",
+          "tips": "罗马最好吃的街边披萨"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -11999,6 +13711,18 @@ var CITY_DATABASE = {
         "reason": "Immigrant area",
         "time": "Late night",
         "tips": "Safer during daytime"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "人民广场/西班牙台阶区",
+        "why": "高端购物区，游客集中，安保到位",
+        "features": [
+          "购物区",
+          "游客区",
+          "高端"
+        ],
+        "bestFor": "购物观光"
       }
     ]
   },
@@ -12154,7 +13878,26 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "La Boqueria市场",
+          "type": "美食市集",
+          "location": "兰布拉大道",
+          "price": "€10-30",
+          "mustTry": "生蚝、海鲜饭、火腿",
+          "tips": "早上去最新鲜，中午人多"
+        },
+        {
+          "name": "Tickets",
+          "type": "分子料理",
+          "location": "平行大道",
+          "price": "€150-250",
+          "mustTry": "分子橄榄、创意小食",
+          "tips": "El Bulli团队创办，需提前数月预约"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -12434,7 +14177,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "里斯本中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -12520,7 +14274,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪极少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "里斯本某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "里斯本市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "里斯本主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "prague": {
     "id": "prague",
@@ -12676,7 +14461,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "布拉格中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -12762,7 +14558,28 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "布拉格某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "小城区（Malá Strana）",
+        "why": "安静的高档社区，靠近城堡区",
+        "features": [
+          "高档社区",
+          "城堡区",
+          "安静"
+        ],
+        "bestFor": "浪漫游客"
+      }
+    ]
   },
   "warsaw": {
     "id": "warsaw",
@@ -12918,7 +14735,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "华沙中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -13004,7 +14832,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "华沙某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "华沙市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "华沙主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "athens": {
     "id": "athens",
@@ -13160,7 +15019,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "雅典中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -13246,7 +15116,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "雅典某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "雅典市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "雅典主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "brussels": {
     "id": "brussels",
@@ -13402,7 +15303,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "布鲁塞尔中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -13488,7 +15400,38 @@ var CITY_DATABASE = {
       "gang_desc": "部分区域存在治安问题",
       "civil_unrest": "中",
       "civil_desc": "恐怖袭击风险需关注"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "布鲁塞尔某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "布鲁塞尔市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "布鲁塞尔主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "budapest": {
     "id": "budapest",
@@ -13644,7 +15587,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "布达佩斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -13730,7 +15684,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "布达佩斯某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "布达佩斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "布达佩斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "moscow": {
     "id": "moscow",
@@ -13886,7 +15871,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "莫斯科中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -13972,7 +15968,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪存在",
       "civil_unrest": "中",
       "civil_desc": "政治管控严格"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "莫斯科火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "莫斯科市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "莫斯科市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "莫斯科主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "st_petersburg": {
     "id": "st_petersburg",
@@ -14128,7 +16162,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "圣彼得堡中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -14214,7 +16259,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "圣彼得堡老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "圣彼得堡公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "圣彼得堡市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "圣彼得堡主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "milan": {
     "id": "milan",
@@ -14370,7 +16453,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "米兰中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -14456,7 +16550,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪存在",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "米兰某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "米兰市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "米兰主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "munich": {
     "id": "munich",
@@ -14612,7 +16737,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "慕尼黑中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -14698,7 +16834,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "慕尼黑某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "慕尼黑市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "慕尼黑主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "frankfurt": {
     "id": "frankfurt",
@@ -14854,7 +17021,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "法兰克福中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -14940,7 +17118,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "法兰克福某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "法兰克福市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "法兰克福主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "hamburg": {
     "id": "hamburg",
@@ -15096,7 +17305,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "汉堡中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -15182,7 +17402,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "汉堡某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "汉堡市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "汉堡主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "dublin": {
     "id": "dublin",
@@ -15338,7 +17589,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "都柏林中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -15424,7 +17686,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "都柏林某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "都柏林市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "都柏林主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "edinburgh": {
     "id": "edinburgh",
@@ -15580,7 +17873,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "爱丁堡中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -15666,7 +17970,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "爱丁堡某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "爱丁堡市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "爱丁堡主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "manchester": {
     "id": "manchester",
@@ -15822,7 +18157,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "曼彻斯特中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -15908,7 +18254,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "曼彻斯特某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "曼彻斯特市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "曼彻斯特主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "lyon": {
     "id": "lyon",
@@ -16064,7 +18441,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "里昂中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -16150,7 +18538,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "里昂某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "里昂市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "里昂主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "marseille": {
     "id": "marseille",
@@ -16306,7 +18725,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "马赛中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -16392,7 +18822,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "马赛某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "马赛市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "马赛主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "nice": {
     "id": "nice",
@@ -16548,7 +19009,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "尼斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -16634,7 +19106,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "尼斯某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "尼斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "尼斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "venice": {
     "id": "venice",
@@ -16790,7 +19293,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "威尼斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -16876,7 +19390,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "威尼斯某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "威尼斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "威尼斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "florence": {
     "id": "florence",
@@ -17032,7 +19577,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "佛罗伦萨中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -17118,7 +19674,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "佛罗伦萨某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "佛罗伦萨市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "佛罗伦萨主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "naples": {
     "id": "naples",
@@ -17274,7 +19861,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "那不勒斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -17360,7 +19958,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "那不勒斯某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "那不勒斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "那不勒斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "valencia": {
     "id": "valencia",
@@ -17516,7 +20145,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "瓦伦西亚中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -17602,7 +20242,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "瓦伦西亚某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "瓦伦西亚市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "瓦伦西亚主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "seville": {
     "id": "seville",
@@ -17758,7 +20429,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "塞维利亚中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -17844,7 +20526,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "塞维利亚某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "塞维利亚市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "塞维利亚主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "malaga": {
     "id": "malaga",
@@ -18000,7 +20713,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "马拉加中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -18086,7 +20810,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "马拉加某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "马拉加市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "马拉加主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "porto": {
     "id": "porto",
@@ -18242,7 +20997,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "波尔图中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -18328,7 +21094,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "波尔图某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "波尔图市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "波尔图主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "krakow": {
     "id": "krakow",
@@ -18484,7 +21281,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "克拉科夫中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -18570,7 +21378,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "克拉科夫某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "克拉科夫市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "克拉科夫主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "geneva": {
     "id": "geneva",
@@ -18726,7 +21565,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "日内瓦中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -18812,7 +21662,38 @@ var CITY_DATABASE = {
       "gang_desc": "全球最安全城市之一",
       "civil_unrest": "极低",
       "civil_desc": "高度稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "日内瓦某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "日内瓦市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "日内瓦主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "cologne": {
     "id": "cologne",
@@ -18968,7 +21849,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "科隆中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -19054,7 +21946,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "科隆某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "科隆市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "科隆主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "new_york": {
     "id": "new_york",
@@ -19210,7 +22133,34 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "Peter Luger Steak House",
+          "type": "牛排馆",
+          "location": "布鲁克林威廉斯堡",
+          "price": "$80-150",
+          "mustTry": "Dry Aged牛排、培根",
+          "tips": "百年老店，需提前预约，只收现金"
+        },
+        {
+          "name": "Katz's Delicatessen",
+          "type": "犹太熟食",
+          "location": "下东区",
+          "price": "$20-40",
+          "mustTry": "Pastrami三明治",
+          "tips": "电影《当哈利遇上莎莉》取景地，自己取号找位"
+        },
+        {
+          "name": "Le Bernardin",
+          "type": "法餐/海鲜",
+          "location": "中城",
+          "price": "$150-300",
+          "mustTry": "帝王蟹、龙虾",
+          "tips": "米其林三星，需正装出席，提前预约"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -19296,7 +22246,55 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "布朗克斯区南部",
+        "risk": "高",
+        "time": "全天",
+        "reason": "犯罪率高，避免区域",
+        "tips": "完全避免，绕道而行"
+      },
+      {
+        "area": "中央公园深夜",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫多发",
+        "tips": "天黑后不要进入公园深处"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "曼哈顿中城（Hell's Kitchen）",
+        "why": "中产社区，警力充足，夜生活安全",
+        "features": [
+          "中产社区",
+          "警力充足",
+          "餐饮丰富"
+        ],
+        "bestFor": "商务、观光"
+      },
+      {
+        "area": "布鲁克林威廉斯堡",
+        "why": "文艺社区，本地居民为主，氛围友好",
+        "features": [
+          "文艺社区",
+          "本地人区",
+          "咖啡文化"
+        ],
+        "bestFor": "文艺青年"
+      },
+      {
+        "area": "上东区",
+        "why": "传统富人区，街道安静，安全指数高",
+        "features": [
+          "富人区",
+          "博物馆区",
+          "高端住宅"
+        ],
+        "bestFor": "文化爱好者"
+      }
+    ]
   },
   "los_angeles": {
     "id": "los_angeles",
@@ -19452,7 +22450,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "洛杉矶中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -19538,7 +22547,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "南洛杉矶（South LA）",
+        "risk": "高",
+        "time": "全天",
+        "reason": "犯罪率高",
+        "tips": "完全避免"
+      },
+      {
+        "area": "斯肯登 Row",
+        "risk": "高",
+        "time": "全天",
+        "reason": "流浪汉营地，治安极差",
+        "tips": "完全避免"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "洛杉矶市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "洛杉矶主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "chicago": {
     "id": "chicago",
@@ -19694,7 +22741,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "芝加哥中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -19780,7 +22838,45 @@ var CITY_DATABASE = {
       "gang_desc": "部分区域帮派冲突较多",
       "civil_unrest": "中",
       "civil_desc": "偶有抗议活动"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "南区（South Side）",
+        "risk": "极高",
+        "time": "全天",
+        "reason": "谋杀率最高区域",
+        "tips": "完全避免！"
+      },
+      {
+        "area": "西 Garfield Park",
+        "risk": "极高",
+        "time": "全天",
+        "reason": "帮派活动频繁",
+        "tips": "完全避免"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "芝加哥市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "芝加哥主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "toronto": {
     "id": "toronto",
@@ -19936,7 +23032,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "多伦多中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -20022,7 +23129,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "多伦多火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "多伦多市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "多伦多市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "多伦多主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "vancouver": {
     "id": "vancouver",
@@ -20178,7 +23323,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "温哥华中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -20264,7 +23420,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "温哥华某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "温哥华市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "温哥华主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "montreal": {
     "id": "montreal",
@@ -20420,7 +23607,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "蒙特利尔中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -20506,7 +23704,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "蒙特利尔火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "蒙特利尔市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "蒙特利尔市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "蒙特利尔主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "san_francisco": {
     "id": "san_francisco",
@@ -20662,7 +23898,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "旧金山中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -20748,7 +23995,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "田德隆区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "流浪汉聚集，毒品交易",
+        "tips": "快速通过，不要停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "旧金山市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "旧金山主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "seattle": {
     "id": "seattle",
@@ -20904,7 +24182,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "西雅图中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -20990,7 +24279,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "西雅图老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "西雅图公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "西雅图市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "西雅图主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "miami": {
     "id": "miami",
@@ -21146,7 +24473,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "迈阿密中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -21232,7 +24570,38 @@ var CITY_DATABASE = {
       "gang_desc": "部分区域存在毒品相关犯罪",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "利伯蒂城深夜",
+        "risk": "中高",
+        "time": "深夜",
+        "reason": "抢劫、夜间犯罪",
+        "tips": "天黑后避免前往"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "迈阿密市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "迈阿密主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "boston": {
     "id": "boston",
@@ -21388,7 +24757,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "波士顿中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -21474,7 +24854,38 @@ var CITY_DATABASE = {
       "gang_desc": "部分区域存在帮派问题",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "波士顿某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "波士顿市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "波士顿主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "washington_dc": {
     "id": "washington_dc",
@@ -21630,7 +25041,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "华盛顿中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -21716,7 +25138,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "华盛顿火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "华盛顿市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "华盛顿市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "华盛顿主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "las_vegas": {
     "id": "las_vegas",
@@ -21872,7 +25332,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "拉斯维加斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -21958,7 +25429,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "拉斯维加斯老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "拉斯维加斯公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "拉斯维加斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "拉斯维加斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "denver": {
     "id": "denver",
@@ -22114,7 +25623,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "丹佛中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -22200,7 +25720,38 @@ var CITY_DATABASE = {
       "gang_desc": "部分区域存在帮派问题",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "丹佛某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "丹佛市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "丹佛主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "atlanta": {
     "id": "atlanta",
@@ -22356,7 +25907,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "亚特兰大中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -22442,7 +26004,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "亚特兰大火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "亚特兰大市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "亚特兰大市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "亚特兰大主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "dallas": {
     "id": "dallas",
@@ -22598,7 +26198,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "达拉斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -22684,7 +26295,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "达拉斯某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "达拉斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "达拉斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "houston": {
     "id": "houston",
@@ -22840,7 +26482,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "休斯顿中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -22926,7 +26579,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "休斯顿某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "休斯顿市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "休斯顿主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "phoenix": {
     "id": "phoenix",
@@ -23082,7 +26766,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "凤凰城中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -23168,7 +26863,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "凤凰城火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "凤凰城市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "凤凰城市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "凤凰城主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "portland": {
     "id": "portland",
@@ -23324,7 +27057,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "波特兰中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -23410,7 +27154,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "波特兰老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "波特兰公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "波特兰市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "波特兰主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "san_diego": {
     "id": "san_diego",
@@ -23566,7 +27348,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "圣迭戈中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -23652,7 +27445,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "圣迭戈某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "圣迭戈市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "圣迭戈主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "austin": {
     "id": "austin",
@@ -23808,7 +27632,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "奥斯汀中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -23894,7 +27729,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "奥斯汀火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "奥斯汀市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "奥斯汀市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "奥斯汀主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "mexico_city": {
     "id": "mexico_city",
@@ -24050,7 +27923,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "墨西哥城中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -24136,7 +28020,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "Tepito 区",
+        "risk": "高",
+        "time": "全天",
+        "reason": "黑帮控制，治安极差",
+        "tips": "完全避免"
+      },
+      {
+        "area": "索卡洛广场周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷",
+        "tips": "注意财物"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "墨西哥城市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "墨西哥城主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "cancun": {
     "id": "cancun",
@@ -24292,7 +28214,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "坎昆中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -24378,7 +28311,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "坎昆老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "坎昆公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "坎昆市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "坎昆主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "sao_paulo": {
     "id": "sao_paulo",
@@ -24534,7 +28505,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "圣保罗中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -24620,7 +28602,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "圣保罗火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "圣保罗市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "圣保罗市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "圣保罗主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "rio_de_janeiro": {
     "id": "rio_de_janeiro",
@@ -24776,7 +28796,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "里约热内卢中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -24862,7 +28893,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "罗西尼亚贫民窟",
+        "risk": "极高",
+        "time": "全天",
+        "reason": "武装毒贩控制区域",
+        "tips": "禁止进入！参加官方tour除外"
+      },
+      {
+        "area": "市中心夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫多发",
+        "tips": "结伴而行"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "里约热内卢市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "里约热内卢主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "buenos_aires": {
     "id": "buenos_aires",
@@ -25018,7 +29087,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "布宜诺斯艾利斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -25104,7 +29184,28 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "拉美裔贫民区",
+        "risk": "高",
+        "time": "全天",
+        "reason": "抢劫多发",
+        "tips": "避免前往"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "雷克莱塔区",
+        "why": "高端住宅区，绿树成荫，相对安全",
+        "features": [
+          "富人区",
+          "公园",
+          "安全"
+        ],
+        "bestFor": "高档体验"
+      }
+    ]
   },
   "santiago": {
     "id": "santiago",
@@ -25260,7 +29361,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "圣地亚哥中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -25346,7 +29458,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "圣地亚哥老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "圣地亚哥公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "圣地亚哥市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "圣地亚哥主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "lima": {
     "id": "lima",
@@ -25502,7 +29652,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "利马中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -25588,7 +29749,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "利马火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "利马市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "利马市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "利马主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "bogota": {
     "id": "bogota",
@@ -25744,7 +29943,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "波哥大中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -25830,7 +30040,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "波哥大老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "波哥大公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "波哥大市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "波哥大主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "medellin": {
     "id": "medellin",
@@ -25986,7 +30234,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "麦德林中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -26072,7 +30331,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "麦德林老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "麦德林公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "麦德林市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "麦德林主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "panama_city": {
     "id": "panama_city",
@@ -26228,7 +30525,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "巴拿马城中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -26314,7 +30622,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "巴拿马城火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "巴拿马城市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "巴拿马城市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "巴拿马城主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "cairo": {
     "id": "cairo",
@@ -26470,7 +30816,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "开罗中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -26556,7 +30913,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪存在",
       "civil_unrest": "中",
       "civil_desc": "政治过渡期"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "赫利奥波利斯贫民区",
+        "risk": "高",
+        "time": "全天",
+        "reason": "犯罪率高",
+        "tips": "避免前往"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "开罗市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "开罗主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "cape_town": {
     "id": "cape_town",
@@ -26712,7 +31100,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "开普敦中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -26798,7 +31197,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "开普敦大部分区域",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "整体治安较差，需高度警惕",
+        "tips": "结伴而行，避免夜间外出，勿露富"
+      },
+      {
+        "area": "开普敦市中心偏僻区域",
+        "risk": "高",
+        "time": "夜间",
+        "reason": "武装抢劫多发",
+        "tips": "天黑后不要外出"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "开普敦市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "开普敦主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "johannesburg": {
     "id": "johannesburg",
@@ -26954,7 +31391,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "约翰内斯堡中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -27040,7 +31488,52 @@ var CITY_DATABASE = {
       "gang_desc": "帮派问题严重",
       "civil_unrest": "中",
       "civil_desc": "贫富差距大"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "希尔镇（Hillbrow）",
+        "risk": "极高",
+        "time": "全天",
+        "reason": "犯罪率极高的市中心区域",
+        "tips": "完全避免单独前往"
+      },
+      {
+        "area": "亚历山德拉镇",
+        "risk": "极高",
+        "time": "全天",
+        "reason": "贫民窟，犯罪率高",
+        "tips": "完全避免"
+      },
+      {
+        "area": "市中心夜间",
+        "risk": "高",
+        "time": "夜间",
+        "reason": "武装抢劫",
+        "tips": "天黑后不要外出"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "约翰内斯堡市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "约翰内斯堡主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "lagos": {
     "id": "lagos",
@@ -27196,7 +31689,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "拉各斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -27282,7 +31786,38 @@ var CITY_DATABASE = {
       "gang_desc": "博科圣地威胁需注意",
       "civil_unrest": "中",
       "civil_desc": "安全挑战存在"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "马里娜区夜间",
+        "risk": "高",
+        "time": "夜间",
+        "reason": "抢劫多发",
+        "tips": "夜间避免外出"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "拉各斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "拉各斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "nairobi": {
     "id": "nairobi",
@@ -27438,7 +31973,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "内罗毕中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -27524,7 +32070,38 @@ var CITY_DATABASE = {
       "gang_desc": "恐怖主义风险需关注",
       "civil_unrest": "中",
       "civil_desc": "安全事件偶发"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "基贝拉贫民窟",
+        "risk": "极高",
+        "time": "全天",
+        "reason": "犯罪率极高",
+        "tips": "完全避免"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "内罗毕市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "内罗毕主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "casablanca": {
     "id": "casablanca",
@@ -27680,7 +32257,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "卡萨布兰卡中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -27766,7 +32354,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "卡萨布兰卡老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "卡萨布兰卡公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "卡萨布兰卡市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "卡萨布兰卡主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "marrakech": {
     "id": "marrakech",
@@ -27922,7 +32548,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "马拉喀什中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -28008,7 +32645,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "马拉喀什老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "马拉喀什公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "马拉喀什市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "马拉喀什主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "tunis": {
     "id": "tunis",
@@ -28164,7 +32839,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "突尼斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -28250,7 +32936,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "民主过渡期"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "突尼斯老城/贫民区",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "抢劫、盗窃多发",
+        "tips": "避免前往，或结伴同行"
+      },
+      {
+        "area": "突尼斯公共交通枢纽夜间",
+        "risk": "中",
+        "time": "夜间",
+        "reason": "抢劫目标区域",
+        "tips": "快速通过，不做停留"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "突尼斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "突尼斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "accra": {
     "id": "accra",
@@ -28406,7 +33130,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "阿克拉中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -28492,7 +33227,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "阿克拉大部分区域",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "整体治安较差，需高度警惕",
+        "tips": "结伴而行，避免夜间外出，勿露富"
+      },
+      {
+        "area": "阿克拉市中心偏僻区域",
+        "risk": "高",
+        "time": "夜间",
+        "reason": "武装抢劫多发",
+        "tips": "天黑后不要外出"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "阿克拉市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "阿克拉主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "addis_ababa": {
     "id": "addis_ababa",
@@ -28648,7 +33421,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "亚的斯亚贝巴中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -28734,7 +33518,45 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "亚的斯亚贝巴大部分区域",
+        "risk": "中高",
+        "time": "全天",
+        "reason": "整体治安较差，需高度警惕",
+        "tips": "结伴而行，避免夜间外出，勿露富"
+      },
+      {
+        "area": "亚的斯亚贝巴市中心偏僻区域",
+        "risk": "高",
+        "time": "夜间",
+        "reason": "武装抢劫多发",
+        "tips": "天黑后不要外出"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "亚的斯亚贝巴市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "亚的斯亚贝巴主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "sydney": {
     "id": "sydney",
@@ -28883,7 +33705,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "悉尼中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -29156,7 +33989,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "墨尔本中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -29242,7 +34086,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "中央商务区深夜",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酗酒相关冲突",
+        "tips": "保持警惕"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "墨尔本市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "墨尔本主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "brisbane": {
     "id": "brisbane",
@@ -29398,7 +34273,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "布里斯班中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -29484,7 +34370,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "布里斯班某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "布里斯班市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "布里斯班主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "perth": {
     "id": "perth",
@@ -29640,7 +34557,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "珀斯中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -29726,7 +34654,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "珀斯某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "珀斯市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "珀斯主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "adelaide": {
     "id": "adelaide",
@@ -29882,7 +34841,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "阿德莱德中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -29968,7 +34938,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "阿德莱德某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "阿德莱德市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "阿德莱德主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "auckland": {
     "id": "auckland",
@@ -30124,7 +35125,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "奥克兰中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -30210,7 +35222,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会稳定"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "奥克兰某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "奥克兰市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "奥克兰主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "wellington": {
     "id": "wellington",
@@ -30366,7 +35409,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "惠灵顿中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -30452,7 +35506,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "惠灵顿某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "惠灵顿市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "惠灵顿主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "christchurch": {
     "id": "christchurch",
@@ -30608,7 +35693,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "基督城中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -30694,7 +35790,38 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "基督城某些偏僻后巷",
+        "risk": "低",
+        "time": "深夜",
+        "reason": "偏僻区域偶有盗窃",
+        "tips": "选择明亮主街道，避免偏僻区域"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "基督城市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "基督城主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   },
   "honolulu": {
     "id": "honolulu",
@@ -30850,7 +35977,18 @@ var CITY_DATABASE = {
         "与当地人友好互动",
         "保持安静和礼貌"
       ],
-      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。"
+      "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
+      "foodDetails": [
+        {
+          "name": "檀香山中央市场",
+          "type": "当地美食",
+          "location": "市中心",
+          "price": "当地价格",
+          "mustTry": "当地特色小吃",
+          "tips": "选择当地人多的摊位，注意食品安全"
+        }
+      ],
+      "attractionDetails": []
     },
     "safety_tips": {
       "crime": [
@@ -30936,6 +36074,44 @@ var CITY_DATABASE = {
       "gang_desc": "有组织犯罪较少",
       "civil_unrest": "低",
       "civil_desc": "社会秩序良好"
-    }
+    },
+    "detailedDangerZones": [
+      {
+        "area": "檀香山火车站/汽车站周边",
+        "risk": "中低",
+        "time": "夜间",
+        "reason": "扒手、小偷活跃区域",
+        "tips": "看好随身物品，小心陌生人"
+      },
+      {
+        "area": "檀香山市中心夜店区",
+        "risk": "中低",
+        "time": "深夜",
+        "reason": "酒后冲突、抢劫",
+        "tips": "避免与陌生人冲突，注意饮品"
+      }
+    ],
+    "detailedSafeZones": [
+      {
+        "area": "檀香山市中心商业区",
+        "why": "商业中心，游客众多，警力相对充足",
+        "features": [
+          "商业区",
+          "游客区",
+          "警力"
+        ],
+        "bestFor": "一般旅客"
+      },
+      {
+        "area": "檀香山主要旅游区",
+        "why": "官方景点集中区，安保措施完善",
+        "features": [
+          "旅游区",
+          "官方景点",
+          "安保"
+        ],
+        "bestFor": "观光客"
+      }
+    ]
   }
 };

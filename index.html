@@ -3167,9 +3167,12 @@ function showLoadingBriefly(cb) {
   try {
     renderCityGrid('全部');
     console.log('[SafeCity] renderCityGrid completed');
+    // 隐藏loading overlay
+    document.getElementById('loading').classList.remove('show');
   } catch(e) {
     console.error('[SafeCity] Error in renderCityGrid:', e);
     document.getElementById('city-grid').innerHTML = '<div style="color:red;padding:20px;text-align:center;">页面加载出错: ' + e.message + '</div>';
+    document.getElementById('loading').classList.remove('show');
   }
 })();
 </script>
