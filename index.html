@@ -1572,6 +1572,23 @@ function backToHome() {
 // ─────────────────────────────────────────────────────
 // 安全颜色计算
 // ─────────────────────────────────────────────────────
+// 安全等级颜色配置
+const SAFETY_COLORS = {
+  'A+': { bg: '#059669', text: '#fff', label: '极安全' },
+  'A':  { bg: '#10b981', text: '#fff', label: '很安全' },
+  'A-': { bg: '#34d399', text: '#000', label: '安全' },
+  'B+': { bg: '#fbbf24', text: '#000', label: '较安全' },
+  'B':  { bg: '#facc15', text: '#000', label: '基本安全' },
+  'B-': { bg: '#f59e0b', text: '#000', label: '注意安全' },
+  'C+': { bg: '#f97316', text: '#fff', label: '谨慎前往' },
+  'C':  { bg: '#ea580c', text: '#fff', label: '不建议' },
+  'C-': { bg: '#ef4444', text: '#fff', label: '高风险' },
+  'D+': { bg: '#dc2626', text: '#fff', label: '危险' },
+  'D':  { bg: '#b91c1c', text: '#fff', label: '很危险' },
+  'D-': { bg: '#991b1b', text: '#fff', label: '极度危险' },
+  'F':  { bg: '#7f1d1d', text: '#fff', label: '禁止前往' }
+};
+
 function scoreColor(score) {
   if (score >= 90) return '#10b981';
   if (score >= 75) return '#22c55e';
