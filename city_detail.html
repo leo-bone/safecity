@@ -257,6 +257,34 @@
     .emergency-icon.fire { background: rgba(249,115,22,0.2); }
     .emergency-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
     .emergency-number { font-size: 28px; font-weight: 800; color: var(--accent); }
+
+    /* Conflict Section */
+    .conflict-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .conflict-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .conflict-card.high { border-color: rgba(239,68,68,0.5); background: rgba(239,68,68,0.08); }
+    .conflict-card.medium { border-color: rgba(245,158,11,0.5); background: rgba(245,158,11,0.05); }
+    .conflict-card.low { border-color: rgba(16,185,129,0.4); background: rgba(16,185,129,0.05); }
+    .conflict-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .conflict-icon { font-size: 28px; }
+    .conflict-title { font-size: 16px; font-weight: 600; }
+    .conflict-level {
+      display: inline-block; padding: 4px 12px; border-radius: 20px;
+      font-size: 14px; font-weight: 700;
+    }
+    .conflict-level.high { background: rgba(239,68,68,0.2); color: #ef4444; }
+    .conflict-level.medium { background: rgba(245,158,11,0.2); color: #f59e0b; }
+    .conflict-level.low { background: rgba(16,185,129,0.2); color: #10b981; }
+    .conflict-desc { color: var(--text2); font-size: 14px; line-height: 1.6; margin-top: 8px; }
     
     .org-list {
       display: grid;
@@ -450,6 +478,12 @@
       <div class="loading">加载安全数据中...</div>
     </section>
     
+    <!-- Conflict Section -->
+    <section class="section" id="section-conflict">
+      <h2 class="section-title">⚠️ 冲突风险评估</h2>
+      <div class="conflict-grid" id="conflict-grid"></div>
+    </section>
+    
     <!-- Emergency Section -->
     <section class="section" id="section-emergency">
       <h2 class="section-title">📞 紧急联系信息</h2>
@@ -631,6 +665,41 @@
         });
       }
       document.getElementById('consulate-list').innerHTML = conHtml;
+      
+      // Conflict Section
+      const conflictGrid = document.getElementById('conflict-grid');
+      if (city.conflict) {
+        const c = city.conflict;
+        let conflictHTML = '';
+        
+        // 战争风险
+        const warLevel = c.war_risk === '中' || c.war_risk === '高' ? 'high' : (c.war_risk === '低' ? 'medium' : 'low');
+        conflictHTML += '<div class="conflict-card ' + warLevel + '">';
+        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">⚔️</span><span class="conflict-title">战争风险</span></div>';
+        conflictHTML += '<span class="conflict-level ' + warLevel + '">' + (c.war_risk || '无') + '</span>';
+        conflictHTML += '<p class="conflict-desc">' + (c.war_desc || '暂无描述') + '</p>';
+        conflictHTML += '</div>';
+        
+        // 帮派活动
+        const gangLevel = c.gang_activity === '高' || c.gang_activity === '较高' ? 'high' : (c.gang_activity === '中等' ? 'medium' : 'low');
+        conflictHTML += '<div class="conflict-card ' + gangLevel + '">';
+        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">🚨</span><span class="conflict-title">帮派活动</span></div>';
+        conflictHTML += '<span class="conflict-level ' + gangLevel + '">' + (c.gang_activity || '极少') + '</span>';
+        conflictHTML += '<p class="conflict-desc">' + (c.gang_desc || '暂无描述') + '</p>';
+        conflictHTML += '</div>';
+        
+        // 社会动荡
+        const civilLevel = c.civil_unrest === '高' ? 'high' : (c.civil_unrest === '中' ? 'medium' : 'low');
+        conflictHTML += '<div class="conflict-card ' + civilLevel + '">';
+        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">📢</span><span class="conflict-title">社会动荡</span></div>';
+        conflictHTML += '<span class="conflict-level ' + civilLevel + '">' + (c.civil_unrest || '低') + '</span>';
+        conflictHTML += '<p class="conflict-desc">' + (c.civil_desc || '暂无描述') + '</p>';
+        conflictHTML += '</div>';
+        
+        conflictGrid.innerHTML = conflictHTML;
+      } else {
+        conflictGrid.innerHTML = '<div class="conflict-card low"><p style="color:var(--text2)">暂无冲突风险数据</p></div>';
+      }
     }
     renderEmergency();
     

@@ -327,6 +327,30 @@
     }
     .view-detail-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
+    /* ─────────── Conflict 风险标签 ─────────── */
+    .conflict-badges {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      margin-top: 10px; padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .conflict-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 8px; border-radius: 4px;
+      font-size: 10px; font-weight: 600; white-space: nowrap;
+    }
+    .conflict-badge.warning {
+      background: rgba(245,158,11,0.15); color: #f59e0b;
+      border: 1px solid rgba(245,158,11,0.3);
+    }
+    .conflict-badge.danger {
+      background: rgba(239,68,68,0.15); color: #ef4444;
+      border: 1px solid rgba(239,68,68,0.3);
+    }
+    .conflict-badge.safe {
+      background: rgba(16,185,129,0.12); color: #10b981;
+      border: 1px solid rgba(16,185,129,0.25);
+    }
+
     /* ─────────── 城市详情页 ─────────── */
     #city-detail-page { display: none; padding-top: 64px; }
     #city-detail-page.active { display: block; }
@@ -482,6 +506,60 @@
       white-space: nowrap; font-size: 11px; font-weight: 700;
       padding: 3px 8px; border-radius: 6px; align-self: flex-start;
     }
+
+    /* 冲突风险详情面板 */
+    .conflict-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .conflict-detail-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 20px;
+      transition: all 0.2s;
+    }
+    .conflict-detail-card:hover { border-color: var(--border2); }
+    .conflict-detail-card.high-risk {
+      border-color: rgba(239,68,68,0.4);
+      background: rgba(239,68,68,0.06);
+    }
+    .conflict-detail-card.medium-risk {
+      border-color: rgba(245,158,11,0.4);
+      background: rgba(245,158,11,0.04);
+    }
+    .conflict-detail-card.low-risk {
+      border-color: rgba(16,185,129,0.3);
+      background: rgba(16,185,129,0.04);
+    }
+    .conflict-detail-header {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+    }
+    .conflict-detail-icon { font-size: 32px; line-height: 1; }
+    .conflict-detail-title { font-size: 16px; font-weight: 700; }
+    .conflict-detail-level {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 12px; border-radius: 20px;
+      font-size: 13px; font-weight: 700; margin-bottom: 10px;
+    }
+    .conflict-detail-level.high { background: rgba(239,68,68,0.2); color: #ef4444; }
+    .conflict-detail-level.medium { background: rgba(245,158,11,0.2); color: #f59e0b; }
+    .conflict-detail-level.low { background: rgba(16,185,129,0.2); color: #10b981; }
+    .conflict-detail-desc { font-size: 14px; color: var(--text2); line-height: 1.6; }
+    .conflict-detail-warning {
+      margin-top: 12px; padding: 10px 12px;
+      background: rgba(239,68,68,0.1); border-radius: 8px;
+      font-size: 13px; color: #fca5a5;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .conflict-detail-warning.medium {
+      background: rgba(245,158,11,0.1);
+      color: #fcd34d;
+    }
+    .conflict-detail-warning.low {
+      background: rgba(16,185,129,0.1);
+      color: #6ee7b7;
+    }
+
     .hotspot-area { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
     .hotspot-desc { font-size: 13px; color: var(--text2); line-height: 1.5; }
 
@@ -1047,7 +1125,7 @@
 <!-- ████ 首页 ████ -->
 <div id="home-page" class="page active">
   <div id="hero">
-    <div class="hero-badge">🌍 全球 100 座城市安全数据 · 7大洲全覆盖</div>
+    <div class="hero-badge">🌍 145 座城市安全数据 · 7大洲全覆盖</div>
     <h1 class="hero-title">全球城市安全<br>旅行指南</h1>
     <p class="hero-subtitle">
       出行前，先了解目的地的真实安全状况。<br>
@@ -1060,11 +1138,11 @@
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num" id="stat-cities">100</div>
+        <div class="hero-stat-num" id="stat-cities">145</div>
         <div class="hero-stat-label">收录城市</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-num">8</div>
         <div class="hero-stat-label">洲际覆盖</div>
       </div>
       <div class="hero-stat">
@@ -1130,6 +1208,7 @@
 
   <div class="detail-tabs">
     <button class="detail-tab active" onclick="switchDetailTab('safety', this)">🛡️ 安全评估</button>
+    <button class="detail-tab" onclick="switchDetailTab('conflict', this)">⚠️ 冲突风险</button>
     <button class="detail-tab" onclick="switchDetailTab('emergency', this)">📞 紧急联系</button>
     <button class="detail-tab" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
     <button class="detail-tab" onclick="switchDetailTab('lifestyle', this)">🍜 吃喝玩乐</button>
@@ -1149,6 +1228,15 @@
     <div class="safety-grid" id="safety-metrics-grid"></div>
     <div class="sub-section-title">🛡️ 出行安全建议</div>
     <ul class="tips-list" id="safety-tips-list"></ul>
+  </div>
+
+  <!-- 冲突风险面板 -->
+  <div id="panel-conflict" class="detail-panel">
+    <div class="section-header">
+      <h2>⚠️ 冲突风险评估</h2>
+      <p>包括战争风险、帮派活动和社会动荡等冲突相关风险评估</p>
+    </div>
+    <div class="conflict-detail-grid" id="conflict-detail-grid"></div>
   </div>
 
   <!-- 紧急联系面板 -->
@@ -1375,6 +1463,46 @@ function getScoreClass(score) {
   return 'score-critical';
 }
 
+// Conflict 风险标签生成
+function getConflictBadges(city) {
+  const data = CITY_DATABASE[city.id];
+  if (!data || !data.conflict) return '';
+  const c = data.conflict;
+  let badges = [];
+
+  // 战争风险 - 更全面的判断
+  const war = c.war_risk || '无';
+  if (war === '高' || war === '中高' || war === '中高危') {
+    badges.push('<span class="conflict-badge danger">⚠️ 战争: ' + war + '</span>');
+  } else if (war === '中' || war === '较高') {
+    badges.push('<span class="conflict-badge warning">⚡ 战争: ' + war + '</span>');
+  } else if (war === '低' || war === '中低' || war === '中低危') {
+    badges.push('<span class="conflict-badge safe">✓ 战争: ' + war + '</span>');
+  }
+
+  // 帮派活动 - 更全面的判断
+  const gang = c.gang_activity || '极少';
+  if (gang === '高' || gang === '较高' || gang === '高危') {
+    badges.push('<span class="conflict-badge danger">⚠️ 帮派: ' + gang + '</span>');
+  } else if (gang === '中' || gang === '中等' || gang === '中等偏高') {
+    badges.push('<span class="conflict-badge warning">⚡ 帮派: ' + gang + '</span>');
+  } else if (gang === '低' || gang === '低中') {
+    badges.push('<span class="conflict-badge safe">✓ 帮派: ' + gang + '</span>');
+  }
+
+  // 社会动荡 - 更全面的判断
+  const civil = c.civil_unrest || '低';
+  if (civil === '高' || civil === '较高') {
+    badges.push('<span class="conflict-badge danger">⚠️ 动荡: ' + civil + '</span>');
+  } else if (civil === '中' || civil === '中等' || civil === '中低') {
+    badges.push('<span class="conflict-badge warning">⚡ 动荡: ' + civil + '</span>');
+  } else if (civil === '低' || civil === '极少') {
+    badges.push('<span class="conflict-badge safe">✓ 动荡: ' + civil + '</span>');
+  }
+
+  return badges.join('');
+}
+
 // ─────────────────────────────────────────────────────
 // 首页城市卡片渲染
 // ─────────────────────────────────────────────────────
@@ -1450,6 +1578,9 @@ function renderCityGrid(filterContinent = '全部') {
             </div>`;
           }).join('')}
         </div>
+        <div class="conflict-badges">
+          ${getConflictBadges(city)}
+        </div>
         <div class="city-card-footer">
           <div class="city-overall">
             <span class="city-overall-label">综合安全分</span>
@@ -1522,6 +1653,7 @@ function populateCityDetail(data) {
 
   // 渲染各面板
   renderSafetyPanel(adaptedData);
+  renderConflictPanel(adaptedData);
   renderEmergencyPanel(adaptedData);
   renderLifestylePanel(adaptedData);
   renderHotspotsPanel(adaptedData);
@@ -1658,7 +1790,8 @@ function normalizeCityData(data) {
       safetyIndex: data.safetyIndex,
       areaSafety: data.areaSafety,
       localRecommendations: data.localRecommendations,
-      safetyTips: data.safetyTips
+      safetyTips: data.safetyTips,
+      conflict: data.conflict || (data.areaSafety?.conflict || null)
     };
   }
   
@@ -1800,6 +1933,86 @@ function renderSafetyPanel(data) {
   tipsList.innerHTML = tips.map((tip, i) => `
     <li><span class="tip-icon">${tipIcons[i % tipIcons.length]}</span><span>${tip}</span></li>
   `).join('');
+}
+
+// ─────────────────────────────────────────────────────
+// 冲突风险面板
+// ─────────────────────────────────────────────────────
+function renderConflictPanel(data) {
+  const grid = document.getElementById('conflict-detail-grid');
+  if (!grid) return;
+
+  const conflict = data.conflict;
+  if (!conflict) {
+    grid.innerHTML = `
+      <div class="conflict-detail-card low-risk" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+        <div style="font-size: 48px; margin-bottom: 12px;">🛡️</div>
+        <div style="font-size: 16px; color: var(--text2);">暂无冲突风险数据</div>
+        <div style="font-size: 13px; color: var(--text3); margin-top: 8px;">该城市目前没有战争、帮派活动或社会动荡相关风险信息</div>
+      </div>`;
+    return;
+  }
+
+  let html = '';
+
+  // 战争风险
+  const warRisk = conflict.war_risk || '无';
+  const warLevel = (warRisk === '中' || warRisk === '高' || warRisk === '较高') ? 'high' :
+                   (warRisk === '低' || warRisk === '中低') ? 'medium' : 'low';
+  const warWarning = warLevel === 'high' ? '建议关注目的地安全形势，出发前查看外交部领事保护中心提醒' :
+                     warLevel === 'medium' ? '建议关注当地安全公告，保持警惕' : '暂无特殊战争风险提醒';
+  html += `
+    <div class="conflict-detail-card ${warLevel}-risk">
+      <div class="conflict-detail-header">
+        <span class="conflict-detail-icon">⚔️</span>
+        <span class="conflict-detail-title">战争风险</span>
+      </div>
+      <div class="conflict-detail-level ${warLevel}">${warRisk}</div>
+      <div class="conflict-detail-desc">${conflict.war_desc || '暂无详细描述'}</div>
+      <div class="conflict-detail-warning ${warLevel !== 'low' ? warLevel : ''}">
+        <span>💡</span><span>${warWarning}</span>
+      </div>
+    </div>`;
+
+  // 帮派活动
+  const gangRisk = conflict.gang_activity || '极少';
+  const gangLevel = (gangRisk === '高' || gangRisk === '较高') ? 'high' :
+                    (gangRisk === '中' || gangRisk === '中等' || gangRisk === '中低') ? 'medium' : 'low';
+  const gangWarning = gangLevel === 'high' ? '避免前往贫民窟和偏僻街区，夜间不要独自外出' :
+                      gangLevel === 'medium' ? '注意财物安全，避免在人少处展示贵重物品' : '帮派活动风险较低';
+  html += `
+    <div class="conflict-detail-card ${gangLevel}-risk">
+      <div class="conflict-detail-header">
+        <span class="conflict-detail-icon">🚨</span>
+        <span class="conflict-detail-title">帮派活动</span>
+      </div>
+      <div class="conflict-detail-level ${gangLevel}">${gangRisk}</div>
+      <div class="conflict-detail-desc">${conflict.gang_desc || '暂无详细描述'}</div>
+      <div class="conflict-detail-warning ${gangLevel !== 'low' ? gangLevel : ''}">
+        <span>💡</span><span>${gangWarning}</span>
+      </div>
+    </div>`;
+
+  // 社会动荡
+  const civilRisk = conflict.civil_unrest || '低';
+  const civilLevel = (civilRisk === '高' || civilRisk === '较高') ? 'high' :
+                     (civilRisk === '中' || civilRisk === '中等') ? 'medium' : 'low';
+  const civilWarning = civilLevel === 'high' ? '避免参与任何抗议活动，远离人群聚集地' :
+                       civilLevel === 'medium' ? '关注当地新闻，避免前往示威区域' : '社会稳定，暂无动荡风险';
+  html += `
+    <div class="conflict-detail-card ${civilLevel}-risk">
+      <div class="conflict-detail-header">
+        <span class="conflict-detail-icon">📢</span>
+        <span class="conflict-detail-title">社会动荡</span>
+      </div>
+      <div class="conflict-detail-level ${civilLevel}">${civilRisk}</div>
+      <div class="conflict-detail-desc">${conflict.civil_desc || '暂无详细描述'}</div>
+      <div class="conflict-detail-warning ${civilLevel !== 'low' ? civilLevel : ''}">
+        <span>💡</span><span>${civilWarning}</span>
+      </div>
+    </div>`;
+
+  grid.innerHTML = html;
 }
 
 // ─────────────────────────────────────────────────────
@@ -2365,7 +2578,7 @@ function performSearch(q) {
   const results = CITY_INDEX.filter(c => {
     const data = CITY_DATABASE[c.id];
     return c.name.includes(q) ||
-      (data.nameEn && data.nameEn.toLowerCase().includes(lq)) ||
+      (c.nameEn && c.nameEn.toLowerCase().includes(lq)) ||
       c.country.includes(q) ||
       c.continent.includes(q);
   });
@@ -2416,6 +2629,9 @@ function renderSearchResults(results) {
               </div>
             </div>`;
           }).join('')}
+        </div>
+        <div class="conflict-badges">
+          ${getConflictBadges(city)}
         </div>
         <div class="city-card-footer">
           <div class="city-overall">
@@ -2670,7 +2886,25 @@ function showLoadingBriefly(cb) {
 (function init() {
   console.log('[SafeCity] Starting init...');
   console.log('[SafeCity] CITY_DATABASE defined:', typeof CITY_DATABASE !== 'undefined');
-  console.log('[SafeCity] CITY_DATABASE keys:', typeof CITY_DATABASE !== 'undefined' ? Object.keys(CITY_DATABASE).length : 0);
+  // 从CITY_DATABASE创建城市索引
+  window.CITY_INDEX = Object.keys(CITY_DATABASE).map(cityId => {
+    const data = CITY_DATABASE[cityId];
+    const safetyObj = data.safety || {};
+    const safetyIndexObj = data.safetyIndex || {};
+    return {
+      id: cityId,
+      name: data.name,
+      nameEn: data.nameEn || '',
+      country: data.country,
+      continent: data.continent,
+      flag: data.flag,
+      image: data.image,
+      safetyScore: safetyObj.overall || safetyIndexObj.overall || 50,
+      safetyGrade: safetyObj.grade || safetyIndexObj.grade || 'B'
+    };
+  });
+  
+  console.log('[SafeCity] CITY_INDEX created:', CITY_INDEX.length, 'cities');
   console.log('[SafeCity] CITY_DATABASE_DETAIL defined:', typeof CITY_DATABASE_DETAIL !== 'undefined');
   try {
     renderCityGrid('全部');
@@ -2690,7 +2924,7 @@ function showLoadingBriefly(cb) {
       <span style="font-size:18px;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:1px;">SafeCity Global</span>
     </div>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px 32px;margin-bottom:20px;color:rgba(255,255,255,0.55);font-size:13px;">
-      <span>🏙️ 收录100座全球城市</span>
+      <span>🏙️ 收录145座全球城市</span>
       <span>🌐 7大洲全覆盖</span>
       <span>📊 50+安全维度评估</span>
       <span>🔄 持续更新数据</span>
