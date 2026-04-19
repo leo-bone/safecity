@@ -1387,10 +1387,15 @@
     <button class="detail-tab" onclick="switchDetailTab('conflict', this)">⚠️ 冲突风险</button>
     <button class="detail-tab" onclick="switchDetailTab('emergency', this)">📞 紧急联系</button>
     <button class="detail-tab" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
+    <button class="detail-tab" onclick="switchDetailTab('transport', this)">🚇 交通指南</button>
+    <button class="detail-tab" onclick="switchDetailTab('hospital', this)">🏨 推荐医院</button>
+    <button class="detail-tab" onclick="switchDetailTab('embassy', this)">🏛️ 使领馆</button>
     <button class="detail-tab" onclick="switchDetailTab('lifestyle', this)">🍜 吃喝玩乐</button>
     <button class="detail-tab" onclick="switchDetailTab('hotspots', this)">⚠️ 危险区域</button>
     <button class="detail-tab" onclick="switchDetailTab('food-safety', this)">🍱 食品安全</button>
     <button class="detail-tab" onclick="switchDetailTab('disease-prevention', this)">🏥 疾病预防</button>
+    <button class="detail-tab" onclick="switchDetailTab('safety-app', this)">📱 安全应用</button>
+    <button class="detail-tab" onclick="switchDetailTab('self-defense', this)">🛡️ 自保策略</button>
     <button class="detail-tab" onclick="switchDetailTab('history', this)">📜 历史背景</button>
   </div>
 
@@ -1484,12 +1489,31 @@
     </div>
   </div>
 
-  <!-- 实时数据面板 -->
-  <div id="panel-transport" class="detail-panel"><div id="transport-content"></div></div>
-  <div id="panel-hospital" class="detail-panel"><div id="hospital-content"></div></div>
-  <div id="panel-embassy" class="detail-panel"><div id="embassy-content"></div></div>
-  <div id="panel-safety-app" class="detail-panel"><div id="safety-app-content"></div></div>
-  <div id="panel-self-defense" class="detail-panel"><div id="self-defense-content"></div></div>
+  <!-- 交通指南面板 -->
+  <div id="panel-transport" class="detail-panel">
+    <div class="section-header"><h2>🚇 交通指南</h2><p>当地公共交通系统详解，包括地铁、公交、出租车等</p></div>
+    <div id="transport-content"></div>
+  </div>
+  <!-- 推荐医院面板 -->
+  <div id="panel-hospital" class="detail-panel">
+    <div class="section-header"><h2>🏨 推荐医院</h2><p>支持外语服务的优质医疗机构</p></div>
+    <div id="hospital-content"></div>
+  </div>
+  <!-- 使领馆面板 -->
+  <div id="panel-embassy" class="detail-panel">
+    <div class="section-header"><h2>🏛️ 使领馆信息</h2><p>中国驻当地使领馆联系方式及地址</p></div>
+    <div id="embassy-content"></div>
+  </div>
+  <!-- 安全应用面板 -->
+  <div id="panel-safety-app" class="detail-panel">
+    <div class="section-header"><h2>📱 安全应用</h2><p>推荐下载的本地安全类应用</p></div>
+    <div id="safety-app-content"></div>
+  </div>
+  <!-- 自保策略面板 -->
+  <div id="panel-self-defense" class="detail-panel">
+    <div class="section-header"><h2>🛡️ 自保策略</h2><p>日常安全须知及紧急情况应对指南</p></div>
+    <div id="self-defense-content"></div>
+  </div>
   <div id="panel-live" class="detail-panel">
     <div class="section-header">
       <h2>🌐 实时数据</h2>
@@ -2044,6 +2068,12 @@ function switchDetailTab(tabName, btn) {
   // 特殊初始化
   if (tabName === 'history') setTimeout(drawRadarChart, 100);
   if (tabName === 'live' && currentCity) loadCityLiveData(currentCity);
+  // 新增tab的渲染函数调用
+  if (tabName === 'transport' && currentCity) renderTransport(CITY_DATABASE[currentCity]);
+  if (tabName === 'hospital' && currentCity) renderHospital(CITY_DATABASE[currentCity]);
+  if (tabName === 'embassy' && currentCity) renderEmbassyEnhanced(CITY_DATABASE[currentCity]);
+  if (tabName === 'safety-app' && currentCity) renderSafetyApp(CITY_DATABASE[currentCity]);
+  if (tabName === 'self-defense' && currentCity) renderSelfDefense(CITY_DATABASE[currentCity]);
 }
 
 // ─────────────────────────────────────────────────────
