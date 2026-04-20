@@ -173,6 +173,37 @@
       color: white;
     }
 
+    /* Sub Tabs */
+    .sub-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      padding: 12px 24px;
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+    }
+    .sub-tab-btn {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--card-bg);
+      color: var(--text2);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .sub-tab-btn:hover { border-color: var(--accent); color: var(--text); }
+    .sub-tab-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    /* Sub Content */
+    .sub-content { display: none; padding-top: 20px; }
+    .sub-content.active { display: block; }
+
     /* Sections */
     .section {
       max-width: 1200px;
@@ -248,6 +279,12 @@
       gap: 8px;
     }
     .subsection-title .icon { font-size: 20px; }
+    .no-data {
+      color: var(--text2);
+      padding: 40px;
+      text-align: center;
+      font-size: 14px;
+    }
 
     /* Hospital Cards */
     .hospital-grid {
@@ -684,23 +721,53 @@
     </div>
   </div>
 
-  <!-- Navigation Tabs - 精简为2个主标签 -->
+  <!-- Navigation Tabs - 2个主标签 -->
   <nav class="nav-tabs">
     <button class="tab-btn active" data-tab="emergency">🚨 紧急联系</button>
     <button class="tab-btn" data-tab="lifestyle">🍜 吃喝玩乐</button>
   </nav>
 
+  <!-- Emergency Sub-Tabs -->
+  <div class="sub-tabs" id="em-sub-tabs">
+    <button class="sub-tab-btn active" data-sub="phones">📞 急救电话</button>
+    <button class="sub-tab-btn" data-sub="hospitals">🏥 推荐医院</button>
+    <button class="sub-tab-btn" data-sub="consulates">🏛️ 使领馆</button>
+    <button class="sub-tab-btn" data-sub="apps">📱 安全App</button>
+    <button class="sub-tab-btn" data-sub="selfprotect">🛡️ 自保策略</button>
+    <button class="sub-tab-btn" data-sub="transport">🚇 交通指南</button>
+  </div>
+
+  <!-- Lifestyle Sub-Tabs -->
+  <div class="sub-tabs" id="ls-sub-tabs" style="display:none;">
+    <button class="sub-tab-btn active" data-sub="food">🍜 当地美食</button>
+    <button class="sub-tab-btn" data-sub="attractions">🏛️ 必游景点</button>
+    <button class="sub-tab-btn" data-sub="nightlife">🌃 夜生活</button>
+    <button class="sub-tab-btn" data-sub="safety">🍽️ 食品安全</button>
+  </div>
+
   <main>
     <div class="loading" id="loading">加载安全数据中...</div>
 
-    <!-- Emergency Section - 综合紧急联系 -->
+    <!-- Emergency Section -->
     <section class="section" id="section-emergency">
-      <div class="emergency-section" id="emergency-section"></div>
+      <div class="emergency-section" id="emergency-section">
+        <div class="sub-content active" id="em-phones"></div>
+        <div class="sub-content" id="em-hospitals"></div>
+        <div class="sub-content" id="em-consulates"></div>
+        <div class="sub-content" id="em-apps"></div>
+        <div class="sub-content" id="em-selfprotect"></div>
+        <div class="sub-content" id="em-transport"></div>
+      </div>
     </section>
 
-    <!-- Lifestyle Section - 综合吃喝玩乐 -->
+    <!-- Lifestyle Section -->
     <section class="section" id="section-lifestyle">
-      <div class="lifestyle-section" id="lifestyle-section"></div>
+      <div class="lifestyle-section" id="lifestyle-section">
+        <div class="sub-content active" id="ls-food"></div>
+        <div class="sub-content" id="ls-attractions"></div>
+        <div class="sub-content" id="ls-nightlife"></div>
+        <div class="sub-content" id="ls-safety"></div>
+      </div>
     </section>
   </main>
 
@@ -898,107 +965,105 @@
       const country = city.country || '';
       const cityName = city.name || '';
 
-      // 从实际数据构建 emergencyContacts
-      const ec = {
-        phoneNumbers: {
-          police: em.police || '',
-          ambulance: em.ambulance || '',
-          fire: em.fire || '',
-          tourist: em.tourist || ''
-        },
-        hospitals: getHospitals(cityName, country, ls),
-        consulates: getConsulates(country),
-        safetyApps: getSafetyApps(country),
-        selfProtection: getSelfProtection(country),
-        transport: { modes: getTransport(cityName, country) }
+      // 1. Emergency Phone Numbers -> em-phones
+      const phones = {
+        police: em.police || '',
+        ambulance: em.ambulance || '',
+        fire: em.fire || '',
+        tourist: em.tourist || ''
       };
-
-      let html = '';
-
-      // 1. Emergency Phone Numbers
-      const phones = ec.phoneNumbers;
       const hasPhones = phones.police || phones.ambulance || phones.fire || phones.tourist;
+      let phonesHtml = '';
       if (hasPhones) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">📞</span>紧急求助电话</h3>';
-        html += '<div class="emergency-phones">';
-        if (phones.police) html += '<div class="emergency-card"><div class="emergency-icon">👮</div><div class="emergency-title">报警电话</div><div class="emergency-number">' + phones.police + '</div></div>';
-        if (phones.ambulance) html += '<div class="emergency-card"><div class="emergency-icon">🚑</div><div class="emergency-title">急救电话</div><div class="emergency-number">' + phones.ambulance + '</div></div>';
-        if (phones.fire) html += '<div class="emergency-card"><div class="emergency-icon">🚒</div><div class="emergency-title">消防电话</div><div class="emergency-number">' + phones.fire + '</div></div>';
-        if (phones.tourist) html += '<div class="emergency-card"><div class="emergency-icon">🎒</div><div class="emergency-title">旅游热线</div><div class="emergency-number">' + phones.tourist + '</div></div>';
-        html += '</div></div>';
+        phonesHtml += '<div class="emergency-phones">';
+        if (phones.police) phonesHtml += '<div class="emergency-card"><div class="emergency-icon">👮</div><div class="emergency-title">报警电话</div><div class="emergency-number">' + phones.police + '</div></div>';
+        if (phones.ambulance) phonesHtml += '<div class="emergency-card"><div class="emergency-icon">🚑</div><div class="emergency-title">急救电话</div><div class="emergency-number">' + phones.ambulance + '</div></div>';
+        if (phones.fire) phonesHtml += '<div class="emergency-card"><div class="emergency-icon">🚒</div><div class="emergency-title">消防电话</div><div class="emergency-number">' + phones.fire + '</div></div>';
+        if (phones.tourist) phonesHtml += '<div class="emergency-card"><div class="emergency-icon">🎒</div><div class="emergency-title">旅游热线</div><div class="emergency-number">' + phones.tourist + '</div></div>';
+        phonesHtml += '</div>';
+      } else {
+        phonesHtml = '<p class="no-data">暂无急救电话数据</p>';
       }
+      document.getElementById('em-phones').innerHTML = phonesHtml;
 
-      // 2. Hospitals
-      const hospitals = ec.hospitals;
+      // 2. Hospitals -> em-hospitals
+      const hospitals = getHospitals(cityName, country, ls);
+      let hospitalsHtml = '';
       if (hospitals.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🏥</span>推荐医院</h3>';
-        html += '<div class="hospital-grid">';
+        hospitalsHtml += '<div class="hospital-grid">';
         hospitals.forEach(function(h) {
           var tags = '';
           if (h.emergency24h) tags += '<span class="hospital-tag emergency-tag">24H急诊</span>';
           (h.features || []).forEach(function(f) { tags += '<span class="hospital-tag">' + f + '</span>'; });
-          html += '<div class="hospital-card"><div class="hospital-name">' + h.name + '</div><div class="hospital-address">' + (h.address || '') + '</div><div class="hospital-phone">📞 ' + (h.phone || '') + '</div><div class="hospital-tags">' + tags + '</div></div>';
+          hospitalsHtml += '<div class="hospital-card"><div class="hospital-name">' + h.name + '</div><div class="hospital-address">' + (h.address || '') + '</div><div class="hospital-phone">📞 ' + (h.phone || '') + '</div><div class="hospital-tags">' + tags + '</div></div>';
         });
-        html += '</div></div>';
+        hospitalsHtml += '</div>';
+      } else {
+        hospitalsHtml = '<p class="no-data">暂无医院数据</p>';
       }
+      document.getElementById('em-hospitals').innerHTML = hospitalsHtml;
 
-      // 3. Consulates
-      const consulates = ec.consulates;
+      // 3. Consulates -> em-consulates
+      const consulates = getConsulates(country);
+      let consulatesHtml = '';
       if (consulates.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🏛️</span>使领馆信息</h3>';
-        html += '<div class="consulate-list">';
+        consulatesHtml += '<div class="consulate-list">';
         consulates.forEach(function(c) {
           var svcs = '';
           (c.services || []).forEach(function(s) { svcs += '<span class="hospital-tag">' + s + '</span>'; });
-          html += '<div class="consulate-card"><div class="consulate-info"><h4>' + c.name + '</h4><p>📍 ' + (c.address || '') + '</p></div><div class="consulate-phone">📞 ' + (c.phone || '') + '</div><div class="hospital-tags">' + svcs + '</div></div>';
+          consulatesHtml += '<div class="consulate-card"><div class="consulate-info"><h4>' + c.name + '</h4><p>📍 ' + (c.address || '') + '</p></div><div class="consulate-phone">📞 ' + (c.phone || '') + '</div><div class="hospital-tags">' + svcs + '</div></div>';
         });
-        html += '</div></div>';
+        consulatesHtml += '</div>';
+      } else {
+        consulatesHtml = '<p class="no-data">暂无使领馆数据</p>';
       }
+      document.getElementById('em-consulates').innerHTML = consulatesHtml;
 
-      // 4. Safety Apps
-      const safetyApps = ec.safetyApps;
+      // 4. Safety Apps -> em-apps
+      const safetyApps = getSafetyApps(country);
+      let appsHtml = '';
       if (safetyApps.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">📱</span>安全防护App</h3>';
-        html += '<div class="apps-grid">';
+        appsHtml += '<div class="apps-grid">';
         safetyApps.forEach(function(app) {
-          html += '<div class="app-item"><div class="app-icon">📱</div><div class="app-info"><h4>' + app.name + '</h4><p>' + (app.desc || '') + '</p></div></div>';
+          appsHtml += '<div class="app-item"><div class="app-icon">📱</div><div class="app-info"><h4>' + app.name + '</h4><p>' + (app.desc || '') + '</p></div></div>';
         });
-        html += '</div></div>';
+        appsHtml += '</div>';
+      } else {
+        appsHtml = '<p class="no-data">暂无安全App推荐</p>';
       }
+      document.getElementById('em-apps').innerHTML = appsHtml;
 
-      // 5. Self Protection Tips
-      const selfProtection = ec.selfProtection;
+      // 5. Self Protection -> em-selfprotect
+      const selfProtection = getSelfProtection(country);
+      let spHtml = '';
       if (selfProtection.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🛡️</span>自保安全指南</h3>';
-        html += '<div class="selfprotect-grid">';
+        spHtml += '<div class="selfprotect-grid">';
         selfProtection.forEach(function(sp) {
           var tips = '';
           (sp.tips || []).forEach(function(t) { tips += '<li>' + t + '</li>'; });
-          html += '<div class="selfprotect-card"><div class="selfprotect-header"><span class="icon">' + (sp.icon || '•') + '</span><h4>' + sp.title + '</h4></div><ul class="selfprotect-tips">' + tips + '</ul></div>';
+          spHtml += '<div class="selfprotect-card"><div class="selfprotect-header"><span class="icon">' + (sp.icon || '•') + '</span><h4>' + sp.title + '</h4></div><ul class="selfprotect-tips">' + tips + '</ul></div>';
         });
-        html += '</div></div>';
+        spHtml += '</div>';
+      } else {
+        spHtml = '<p class="no-data">暂无自保策略</p>';
       }
+      document.getElementById('em-selfprotect').innerHTML = spHtml;
 
-      // 6. Transport
-      const modes = ec.transport ? ec.transport.modes : [];
+      // 6. Transport -> em-transport
+      const modes = getTransport(cityName, country);
+      let transportHtml = '';
       if (modes.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🚇</span>交通出行指南</h3>';
-        html += '<div class="transport-grid">';
+        transportHtml += '<div class="transport-grid">';
         modes.forEach(function(m) {
           var tips = '';
           (m.tips || []).forEach(function(t) { tips += '<li>' + t + '</li>'; });
-          html += '<div class="transport-card"><div class="transport-header"><span class="icon">' + (m.icon || '•') + '</span><h4>' + m.name + '</h4></div><div class="transport-desc">' + (m.desc || '') + '</div><ul class="transport-tips">' + tips + '</ul></div>';
+          transportHtml += '<div class="transport-card"><div class="transport-header"><span class="icon">' + (m.icon || '•') + '</span><h4>' + m.name + '</h4></div><div class="transport-desc">' + (m.desc || '') + '</div><ul class="transport-tips">' + tips + '</ul></div>';
         });
-        html += '</div></div>';
+        transportHtml += '</div>';
+      } else {
+        transportHtml = '<p class="no-data">暂无交通指南</p>';
       }
-
-      document.getElementById('emergency-section').innerHTML = html || '<p style="color:var(--text2);padding:40px;text-align:center;">暂无紧急联系数据</p>';
+      document.getElementById('em-transport').innerHTML = transportHtml;
     }
 
     // ========== 默认数据生成函数 ==========
@@ -1453,98 +1518,8 @@
     // ========================
     // RENDER LIFESTYLE - NEW
     // ========================
-    function renderLifestyle() {
-      const ls = city.lifestyle || {};
-      let html = '';
-
-      // Food
-      const food = ls.food || [];
-      if (food.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🍜</span>必尝美食推荐</h3>';
-        html += '<div class="food-grid">';
-
-        food.forEach(item => {
-          html += `
-            <div class="food-card">
-              <div class="food-header">
-                <span class="food-name">${item.name}</span>
-                <span class="food-type">${item.type || '美食'}</span>
-              </div>
-              ${item.price ? `<div class="food-price">💰 ${item.price}</div>` : ''}
-              <div class="food-desc">${item.desc || item.description || ''}</div>
-              ${item.tip ? `<div class="food-tip">💡 ${item.tip}</div>` : ''}
-            </div>
-          `;
-        });
-
-        html += '</div>';
-
-        // Food Safety Tips
-        var safetyTips = getFoodSafetyTips(city.country || '');
-        var safetyList = safetyTips.map(function(t) { return '<li>' + t + '</li>'; }).join('');
-        html += '<div class="food-safety">';
-        html += '<div class="food-safety-title">⚠️ 食品安全注意事项</div>';
-        html += '<ul class="food-safety-list">' + safetyList + '</ul>';
-        html += '</div>';
-        html += '</div>';
-      } else {
-        // 即使没有食物数据，也显示食品安全提示
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🍜</span>美食与食品安全</h3>';
-        var safetyTips = getFoodSafetyTips(city.country || '');
-        var safetyList = safetyTips.map(function(t) { return '<li>' + t + '</li>'; }).join('');
-        html += '<div class="food-safety">';
-        html += '<div class="food-safety-title">⚠️ 食品安全注意事项</div>';
-        html += '<ul class="food-safety-list">' + safetyList + '</ul>';
-        html += '</div>';
-        html += '</div>';
-      }
-      const attractions = ls.attractions || [];
-      if (attractions.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🏛️</span>热门景点</h3>';
-        html += '<div class="attractions-grid">';
-
-        attractions.forEach(item => {
-          html += `
-            <div class="attraction-card">
-              <div class="attraction-name">${item.name}</div>
-              <div class="attraction-type">${item.type || '景点'}</div>
-              <div class="attraction-desc">${item.description || ''}</div>
-              ${item.bestTime ? `<div class="attraction-meta"><span>⏰ 最佳时间: ${item.bestTime}</span></div>` : ''}
-            </div>
-          `;
-        });
-
-        html += '</div></div>';
-      }
-
-      // Nightlife
-      const nightlife = ls.nightlife || [];
-      if (nightlife.length > 0) {
-        html += '<div class="subsection">';
-        html += '<h3 class="subsection-title"><span class="icon">🌙</span>夜生活推荐</h3>';
-        html += '<div class="attractions-grid">';
-
-        nightlife.forEach(item => {
-          html += `
-            <div class="attraction-card">
-              <div class="attraction-name">${item.name}</div>
-              <div class="attraction-type">${item.type || '夜生活'}</div>
-              <div class="attraction-desc">${item.description || ''}</div>
-              ${item.tips ? `<div class="attraction-meta"><span>💡 ${item.tips}</span></div>` : ''}
-            </div>
-          `;
-        });
-
-        html += '</div></div>';
-      }
-
-      document.getElementById('lifestyle-section').innerHTML = html || '<p style="color:var(--text2);padding:40px;text-align:center;">暂无生活数据</p>';
-    }
     // ========================
-    // FOOD SAFETY TIPS (必须定义在 renderLifestyle 之前)
+    // FOOD SAFETY TIPS
     // ========================
     function getFoodSafetyTips(country) {
       var tips = {
@@ -1570,6 +1545,66 @@
         '俄罗斯': ['伏特加不要与碳酸饮料混饮', '鱼子酱注意来源可靠性', '黑面包配肉注意完全加热', '对乳糖不耐者注意奶制品', '自来水建议先煮沸'],
       };
       return tips[country] || ['选择干净卫生的餐厅', '饮用瓶装水', '避免生食', '注意食物过敏原', '街边小吃注意新鲜度'];
+    }
+
+    function renderLifestyle() {
+      const ls = city.lifestyle || {};
+
+      // 1. Food -> ls-food
+      const food = ls.food || [];
+      let foodHtml = '';
+      if (food.length > 0) {
+        foodHtml += '<div class="food-grid">';
+        food.forEach(item => {
+          foodHtml += '<div class="food-card"><div class="food-header"><span class="food-name">' + item.name + '</span><span class="food-type">' + (item.type || '美食') + '</span></div>';
+          if (item.price) foodHtml += '<div class="food-price">💰 ' + item.price + '</div>';
+          foodHtml += '<div class="food-desc">' + (item.desc || item.description || '') + '</div>';
+          if (item.tip) foodHtml += '<div class="food-tip">💡 ' + item.tip + '</div>';
+          foodHtml += '</div>';
+        });
+        foodHtml += '</div>';
+      } else {
+        foodHtml = '<p class="no-data">暂无美食推荐</p>';
+      }
+      document.getElementById('ls-food').innerHTML = foodHtml;
+
+      // 2. Attractions -> ls-attractions
+      const attractions = ls.attractions || [];
+      let attractionsHtml = '';
+      if (attractions.length > 0) {
+        attractionsHtml += '<div class="attractions-grid">';
+        attractions.forEach(item => {
+          attractionsHtml += '<div class="attraction-card"><div class="attraction-name">' + item.name + '</div><div class="attraction-type">' + (item.type || '景点') + '</div><div class="attraction-desc">' + (item.description || '') + '</div>';
+          if (item.bestTime) attractionsHtml += '<div class="attraction-meta"><span>⏰ 最佳时间: ' + item.bestTime + '</span></div>';
+          attractionsHtml += '</div>';
+        });
+        attractionsHtml += '</div>';
+      } else {
+        attractionsHtml = '<p class="no-data">暂无景点推荐</p>';
+      }
+      document.getElementById('ls-attractions').innerHTML = attractionsHtml;
+
+      // 3. Nightlife -> ls-nightlife
+      const nightlife = ls.nightlife || [];
+      let nightlifeHtml = '';
+      if (nightlife.length > 0) {
+        nightlifeHtml += '<div class="attractions-grid">';
+        nightlife.forEach(item => {
+          nightlifeHtml += '<div class="attraction-card"><div class="attraction-name">' + item.name + '</div><div class="attraction-type">' + (item.type || '夜生活') + '</div><div class="attraction-desc">' + (item.description || '') + '</div>';
+          if (item.tips) nightlifeHtml += '<div class="attraction-meta"><span>💡 ' + item.tips + '</span></div>';
+          nightlifeHtml += '</div>';
+        });
+        nightlifeHtml += '</div>';
+      } else {
+        nightlifeHtml = '<p class="no-data">暂无夜生活推荐</p>';
+      }
+      document.getElementById('ls-nightlife').innerHTML = nightlifeHtml;
+
+      // 4. Food Safety -> ls-safety
+      var safetyTips = getFoodSafetyTips(city.country || '');
+      var safetyList = safetyTips.map(function(t) { return '<li>' + t + '</li>'; }).join('');
+      var safetyHtml = '<div class="food-safety"><div class="food-safety-title">⚠️ 食品安全注意事项</div><ul class="food-safety-list">' + safetyList + '</ul></div>';
+      document.getElementById('ls-safety').innerHTML = safetyHtml;
     }
 
     renderLifestyle();
@@ -1627,12 +1662,39 @@
       btn.addEventListener('click', () => {
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.sub-tabs').forEach(t => t.style.display = 'none');
+        document.querySelectorAll('.sub-content').forEach(c => c.classList.remove('active'));
         btn.classList.add('active');
         document.getElementById('section-' + btn.dataset.tab).classList.add('active');
+        // Show sub-tabs for this main tab
+        const subTabId = btn.dataset.tab === 'emergency' ? 'em-sub-tabs' : 'ls-sub-tabs';
+        const subTab = document.getElementById(subTabId);
+        if (subTab) subTab.style.display = 'flex';
+        // Activate first sub-tab content
+        const firstSubBtn = subTab ? subTab.querySelector('.sub-tab-btn') : null;
+        if (firstSubBtn) {
+          const subId = btn.dataset.tab === 'emergency' ? 'em-' + firstSubBtn.dataset.sub : 'ls-' + firstSubBtn.dataset.sub;
+          document.getElementById(subId).classList.add('active');
+        }
       });
     });
 
-    // Show first tab
+    // Sub-Tab Navigation
+    document.querySelectorAll('.sub-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const parentTab = btn.closest('.sub-tabs').id;
+        const prefix = parentTab === 'em-sub-tabs' ? 'em-' : 'ls-';
+        // Remove active from all sub-tabs in this group
+        btn.closest('.sub-tabs').querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
+        // Remove active from all sub-content in this section
+        document.querySelectorAll('.sub-content').forEach(c => c.classList.remove('active'));
+        // Activate this sub-tab
+        btn.classList.add('active');
+        document.getElementById(prefix + btn.dataset.sub).classList.add('active');
+      });
+    });
+
+    // Show first tab and sub-tab by default
     document.getElementById('section-overview').classList.add('active');
   </script>
 </body>
