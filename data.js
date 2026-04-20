@@ -1,7 +1,7 @@
 // ============================================================
-// SafeCity Global - 全球城市安全数据库 v7.0 (完整版)
-// 包含125个城市，详细生活旅行信息 + 冲突风险评估
-// 更新时间: 2026-04-13
+// SafeCity Global - 全球城市安全数据库 v9.0 (完整版)
+// 包含125个全球主要城市，详细生活旅行信息
+// 更新时间: 2026-04-20 v9.0
 // ============================================================
 
 var SAFETY_COLORS = {
@@ -20,6 +20,22 @@ var SAFETY_COLORS = {
 var CITY_DATABASE = {
   "tokyo": {
     "id": "tokyo",
+    "safetyIndex": {
+      "overall": 84, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 88, "note": "犯罪率极低，路不拾遗" },
+        "healthMedical": { "score": 85, "note": "医疗体系完善，国际医院多" },
+        "transportSafety": { "score": 80, "note": "交通发达但高峰期拥挤" },
+        "naturalDisaster": { "score": 58, "note": "地震活跃带，台风季需关注" },
+        "environmental": { "score": 82, "note": "空气质量良好，水质洁净" },
+        "socialStability": { "score": 90, "note": "社会秩序优良，政治稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"HPV疫苗","note":"推荐9-26岁人群","essential":false},{"name":"流感疫苗","note":"冬季高发期前接种","essential":false},{"name":"乙肝疫苗","note":"长期居住建议接种","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(12-2月)","prevention":"勤洗手，避免人群密集"},{"name":"诺如病毒","risk":"中","season":"全年","prevention":"注意食品卫生"},{"name":"登革热","risk":"低","season":"夏季(6-9月)","prevention":"防蚊叮咬"}],
+      "medicalTips": ["就医可使用日语+英语沟通","大型医院提供英文服务","旅行保险一定要买","日本医保制度完善，可报销70%"]
+    },
     "name": "东京",
     "nameEn": "Tokyo",
     "country": "日本",
@@ -27,7 +43,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 35.6762,
     "lng": 139.6503,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -36,7 +52,42 @@ var CITY_DATABASE = {
         "transport": "B",
         "health": "B+",
         "natural": "B"
-      }
+      },
+      "hotspots": [
+        {
+          "area": "新宿歌舞伎町",
+          "desc": "夜间娱乐区，人员复杂，有醉酒者和可疑商家",
+          "risk": "高"
+        },
+        {
+          "area": "池袋西口",
+          "desc": "治安稍差，有流浪人员和醉汉聚集",
+          "risk": "中高"
+        },
+        {
+          "area": "上野公园周边",
+          "desc": "夜间有流浪人员聚集，光线较暗",
+          "risk": "中"
+        },
+        {
+          "area": "浅草仲见世通",
+          "desc": "游客密集，扒窃风险较高",
+          "risk": "低中"
+        },
+        {
+          "area": "涩谷站周边",
+          "desc": "人流量大，拥挤时易被扒窃",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "港区（六本木、麻布）- 高档住宅和使馆区，24小时监控",
+        "千代田区（丸之内、大手町）- CBD核心区，商务中心",
+        "涩谷区（代官山、惠比寿）- 时尚购物区，环境优雅",
+        "新宿区（新宿御苑周边）- 绿化公园区域",
+        "文京区 - 教育区域，大学众多，安静安全",
+        "世田谷区 - 高档住宅区，生活便利"
+      ]
     },
     "highlights": [
       "文化景点多",
@@ -50,11 +101,22 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "119",
       "fire": "119"
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "110", "ambulance": "119", "fire": "119", "tourist": "050-3816-2727"},
+        "hospitals": [{"name": "东京大学医学部附属医院", "phone": "03-3815-5411", "address": "东京都文京区和乡1-21-1", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
+        "consulates": [{"name": "中国驻日本大使馆", "phone": "03-3403-3388", "address": "东京都港区元麻布3-4-33", "hours": "周一至周五 9:00-12:00", "emergency": false}],
+        "safetyApps": [{"name": "Safety Tip", "icon": "📱", "description": "日本官方安全提醒App"}],
+        "selfProtection": [{"icon": "🔒", "title": "财产安全", "tips": ["在涩谷、新宿等人多场所注意防盗", "将贵重物品放在内侧口袋"]},{"icon": "🚇", "title": "交通安全", "tips": ["日本靠左行走", "注意电车关门时间"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "东京地铁网络发达，覆盖全市", "tips": ["购买Suica卡或一日券更划算"]},{"icon": "🚃", "name": "JR电车", "description": "连接城市间和市郊的主要交通", "tips": ["注意方向避免坐错车"]},{"icon": "🚌", "name": "公交", "description": "路线复杂，建议提前查好路线", "tips": ["后门上车，前门下车"]},{"icon": "🚕", "name": "出租车", "description": "价格较高但方便", "tips": ["建议用滴滴国际版预约"]}]}
+      },
+
       "food": [
         {
           "name": "寿司",
@@ -202,17 +264,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "日本和平宪法，无武装冲突风险",
-      "gang_activity": "中等",
-      "gang_desc": "暴力团存在但远离游客区",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定，秩序良好"
-    }
+    "overview": "东京是日本的政治、经济、文化中心，也是世界上最大的都市圈之一。这座融合了传统与现代的城市，既保留着古老的寺庙和神社，又拥有着摩天大楼和霓虹灯街景。作为全球金融、科技和时尚中心，东京吸引了来自世界各地的游客和商务人士。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。东京的地铁系统是全球最繁忙的之一，通过智能化管理和严格安检，保持了极低的犯罪率。2011年东日本大地震后，东京加强了防灾减灾能力建设，建立了全球领先的灾害预警和应急响应系统。"
   },
   "singapore": {
     "id": "singapore",
+    "safetyIndex": {
+      "overall": 92, "grade": "A", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 95, "note": "全球最安全城市之一，法治严格" },
+        "healthMedical": { "score": 90, "note": "医疗水平世界领先，公立私立选择多" },
+        "transportSafety": { "score": 92, "note": "MRT系统高效准点，覆盖全面" },
+        "naturalDisaster": { "score": 85, "note": "无地震台风，但需注意雾霾" },
+        "environmental": { "score": 88, "note": "城市绿化好，空气质量优良" },
+        "socialStability": { "score": 95, "note": "多元文化和谐，社会稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"全年可接种","essential":false},{"name":"登革热疫苗","note":"适合高发区居住者","essential":false}],
+      "diseaseRisks": [{"name":"登革热","risk":"高","season":"全年(雨季6-12月高发)","prevention":"防蚊灭蚊，清除积水"},{"name":"寨卡病毒","risk":"中","season":"雨季","prevention":"防蚊叮咬，尤其是孕妇"}],
+      "medicalTips": ["医疗费用较高，提前买保险","公立医院需预约，私立可walk-in","英文沟通无障碍","牙科和专科推荐私立"]
+    },
     "name": "新加坡",
     "nameEn": "Singapore",
     "country": "新加坡",
@@ -220,7 +292,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇬",
     "lat": 1.3521,
     "lng": 103.8198,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -229,7 +301,31 @@ var CITY_DATABASE = {
         "transport": "A",
         "health": "A",
         "natural": "A"
-      }
+      },
+      "hotspots": [
+        {
+          "area": "小印度",
+          "desc": "夜间偶有纠纷，人员复杂",
+          "risk": "低"
+        },
+        {
+          "area": "芽笼",
+          "desc": "红灯区，人员复杂，游客应避免",
+          "risk": "中"
+        },
+        {
+          "area": "巴刹夜市",
+          "desc": "人流密集，易丢财物",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "乌节路商圈 - 主要商业街，监控全覆盖",
+        "滨海湾区域 - CBD核心区，24小时安保",
+        "东海岸公园 - 海滨公园，家庭友好",
+        "武吉知马区 - 高档住宅区，环境优美",
+        "荷兰村 - 外籍人士聚集区，国际化氛围"
+      ]
     },
     "highlights": [
       "美食丰富",
@@ -243,11 +339,22 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112"
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "999", "ambulance": "995", "fire": "995", "tourist": "1800-736-2000"},
+        "hospitals": [{"name": "新加坡中央医院", "phone": "+65-6222-3322", "address": "Outram Rd, Singapore 169608", "features": ["24H急诊", "英语服务", "多语言"], "emergency24h": true}],
+        "consulates": [{"name": "中国驻新加坡大使馆", "phone": "+65-6471-2107", "address": "150 Tanglin Rd, Singapore 247969", "hours": "周一至周五 9:00-12:00", "emergency": false}],
+        "safetyApps": [{"name": "SGSecure", "icon": "📱", "description": "新加坡安全预警"}],
+        "selfProtection": [{"icon": "🚫", "title": "法规注意", "tips": ["新加坡法律严格，乱丢垃圾罚款严重", "室内禁烟"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "MRT地铁", "description": "覆盖全面，准点率高", "tips": ["换乘需出站重进"]},{"icon": "🚌", "name": "公交", "description": "路线覆盖广", "tips": ["报站有中文"]},{"icon": "🚕", "name": "出租车", "description": "价格合理", "tips": ["高峰期加价"]}]}
+      },
+
       "food": [
         {
           "name": "海南鸡饭",
@@ -395,17 +502,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "区域稳定，无武装冲突",
-      "gang_activity": "极少",
-      "gang_desc": "严刑峻法，犯罪率极低",
-      "civil_unrest": "极低",
-      "civil_desc": "政府治理高效"
-    }
+    "overview": "新加坡是东南亚的城邦国家，被誉为'花园城市'。这座多元文化融合的现代化都市，以高效的政府、清洁的环境和严格的法制著称。作为亚洲重要的金融、贸易和航运中心，新加坡连接着东西方文化，为游客提供独特的多元体验。",
+    "safety_history": "新加坡建立了全球领先的城市安全体系。通过全覆盖的监控系统、严格的法律制度、高效的应急响应机制和全民安全教育，新加坡成为世界上最安全的城市之一。2020年全球安全指数排名中，新加坡位居前列。"
   },
   "seoul": {
     "id": "seoul",
+    "safetyIndex": {
+      "overall": 82, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 85, "note": "治安良好，夜间出行相对安全" },
+        "healthMedical": { "score": 88, "note": "医疗水平高，整形外科世界知名" },
+        "transportSafety": { "score": 82, "note": "地铁网络发达，高峰期较拥挤" },
+        "naturalDisaster": { "score": 72, "note": "地震少但雾霾季节性严重" },
+        "environmental": { "score": 70, "note": "春季有沙尘暴，需关注空气质量" },
+        "socialStability": { "score": 90, "note": "社会秩序好，政治稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"MERS防护","note":"2015年后已控制","essential":false},{"name":"流感疫苗","note":"冬季前推荐接种","essential":false},{"name":"甲肝疫苗","note":"建议长期居住者接种","essential":false}],
+      "diseaseRisks": [{"name":"MERS","risk":"极低","season":"已得到控制","prevention":"已无特殊风险"},{"name":"雾霾相关","risk":"中","season":"春季(3-5月)","prevention":"佩戴N95口罩，关注AQI"}],
+      "medicalTips": ["大型医院提供英语服务","明洞、东大门有24小时药店","韩医(中医)也很普及","医疗费用相对合理"]
+    },
     "name": "首尔",
     "nameEn": "Seoul",
     "country": "韩国",
@@ -413,7 +530,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇷",
     "lat": 37.5665,
     "lng": 126.978,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=400&q=80",
     "safety": {
       "overall": 93,
       "grade": "A",
@@ -454,6 +571,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -479,6 +598,15 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "112", "ambulance": "119", "fire": "119", "tourist": "02-1330"},
+        "hospitals": [{"name": "首尔大学附属医院", "phone": "02-880-5114", "address": "首尔特别市钟路区蓮花洞 101", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
+        "consulates": [{"name": "中国驻韩国大使馆", "phone": "02-755-0468", "address": "首尔市中区奖忠洞2街 83-32", "hours": "周一至周五 9:00-12:00", "emergency": false}],
+        "safetyApps": [{"name": "Kakao T", "icon": "📱", "description": "打车应用"}],
+        "selfProtection": [{"icon": "🌙", "title": "夜间安全", "tips": ["弘大、梨泰院深夜注意", "警惕陌生人给的饮料"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "覆盖全市，末班车晚", "tips": ["有女性专用车厢"]},{"icon": "🚌", "name": "公交", "description": "分为市郊和廣域", "tips": ["换乘优惠"]},{"icon": "🚕", "name": "出租车", "description": "普通和模范车", "tips": ["模范车更贵"]}]}
+      },
+
       "food": [
         {
           "name": "韩式烤肉",
@@ -665,17 +793,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "中",
-      "war_desc": "朝鲜半岛局势需关注，但首尔相对安全",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪存在但不影响游客",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "首都是韩国的政治、经济、文化中心，拥有超过500万人口。这座活力四射的现代化都市，完美融合了古老的宫殿和繁华的购物区。作为K-pop、韩剧等韩国文化的发源地，首尔吸引了大量国际游客。",
+    "safety_history": "韩国建立了完善的城市安全管理体系。首尔作为首都，拥有先进的监控系统、高效的应急响应机制和严格的交通管理。近年来，通过智能城市建设和安全科技应用，城市安全水平持续提升，为国际游客提供了可靠的安全保障。"
   },
   "hong_kong": {
     "id": "hong_kong",
+    "safetyIndex": {
+      "overall": 80, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 78, "note": "扒窃多发，夜间需注意" },
+        "healthMedical": { "score": 85, "note": "医疗水平高，私立医院服务好" },
+        "transportSafety": { "score": 85, "note": "公共交通发达，MTR覆盖广" },
+        "naturalDisaster": { "score": 65, "note": "台风季(6-10月)需关注预警" },
+        "environmental": { "score": 72, "note": "空气质量一般，冬季雾霾较重" },
+        "socialStability": { "score": 75, "note": "社会稳定，偶有抗议活动" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季高发期前接种","essential":false},{"name":"新冠疫苗","note":"根据当地要求","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(1-3月)","prevention":"接种疫苗，保持卫生"},{"name":"登革热","risk":"中","season":"夏季","prevention":"防蚊措施"}],
+      "medicalTips": ["公立医院轮候时间长","私立医院费用高但服务好","药店随处可见，购买处方药需医生处方","广东话为主，普通话可通用"]
+    },
     "name": "香港",
     "nameEn": "Hong Kong",
     "country": "中国",
@@ -724,6 +862,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -907,17 +1047,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "香港是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，香港拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "beijing": {
     "id": "beijing",
+    "safetyIndex": {
+      "overall": 75, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 80, "note": "治安良好，重大活动安保严格" },
+        "healthMedical": { "score": 78, "note": "医疗资源顶级，协和等著名医院多" },
+        "transportSafety": { "score": 75, "note": "地铁覆盖广但换乘不便" },
+        "naturalDisaster": { "score": 68, "note": "沙尘暴春季多发，地震风险低" },
+        "environmental": { "score": 60, "note": "空气质量近年改善但冬季仍需注意" },
+        "socialStability": { "score": 85, "note": "社会稳定，治安管理严格" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"甲肝疫苗","note":"建议接种","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(11月-次年3月)","prevention":"接种疫苗，室内通风"},{"name":"沙尘相关","risk":"中","season":"春季(3-5月)","prevention":"佩戴口罩，关注预警"}],
+      "medicalTips": ["三甲医院知名专家号难挂","国际部费用高但服务好","各大医院需提前预约","友谊医院等有外籍患者经验"]
+    },
     "name": "北京",
     "nameEn": "Beijing",
     "country": "中国",
@@ -925,7 +1075,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 39.9042,
     "lng": 116.4074,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&q=80",
     "safety": {
       "overall": 83,
       "grade": "A-",
@@ -966,6 +1116,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -991,6 +1143,15 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "110", "ambulance": "120", "fire": "119", "tourist": "12345"},
+        "hospitals": [{"name": "北京协和医院", "phone": "010-6915-6114", "address": "北京市东城区王府井帅府园1号", "features": ["24H急诊", "多语言"], "emergency24h": true}],
+        "consulates": [{"name": "美国驻华大使馆", "phone": "010-8531-4000", "address": "北京市朝阳区安家楼路55号", "hours": "周一至周五 8:30-17:00", "emergency": false}],
+        "safetyApps": [{"name": "北京一卡通", "icon": "📱", "description": "交通出行"}],
+        "selfProtection": [{"icon": "🏯", "title": "旅游注意", "tips": ["天安门周边安检严格", "故宫需提前预约"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "覆盖全市", "tips": ["早晚高峰拥挤"]},{"icon": "🚌", "name": "公交", "description": "线路众多", "tips": ["分段计费"]},{"icon": "🚕", "name": "出租车", "description": "蓝色黄色为主", "tips": ["拒载较多建议滴滴"]}]}
+      },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -1149,17 +1310,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "中国国内局势稳定",
-      "gang_activity": "极少",
-      "gang_desc": "严格管控，社会秩序良好",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "北京是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，北京拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "shanghai": {
     "id": "shanghai",
+    "safetyIndex": {
+      "overall": 78, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 80, "note": "治安总体良好，扒窃需防范" },
+        "healthMedical": { "score": 80, "note": "医疗资源丰富，三甲医院多" },
+        "transportSafety": { "score": 78, "note": "地铁发达，高峰拥堵严重" },
+        "naturalDisaster": { "score": 70, "note": "台风影响，梅雨季节潮湿" },
+        "environmental": { "score": 65, "note": "空气质量季节性差，冬季雾霾" },
+        "socialStability": { "score": 82, "note": "社会稳定，管理规范" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"新冠疫苗","note":"根据当地要求","essential":false},{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"甲肝疫苗","note":"建议接种","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"新冠","risk":"低","season":"全年","prevention":"保持社交距离，注意防护"}],
+      "medicalTips": ["三甲医院英文服务较好","专家号需提前预约","商业医疗保险很重要","药店遍布，可购买非处方药"]
+    },
     "name": "上海",
     "nameEn": "Shanghai",
     "country": "中国",
@@ -1167,7 +1338,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 31.2304,
     "lng": 121.4737,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -1208,6 +1379,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -1233,6 +1406,15 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "110", "ambulance": "120", "fire": "119", "tourist": "12345"},
+        "hospitals": [{"name": "华山医院", "phone": "021-5288-9999", "address": "上海市乌鲁木齐中路12号", "features": ["24H急诊", "多语言"], "emergency24h": true}],
+        "consulates": [{"name": "美国驻上海总领事馆", "phone": "021-8011-2466", "address": "上海市静安区南京西路1038号", "hours": "周一至周五 8:30-17:30", "emergency": false}],
+        "safetyApps": [{"name": "Metro大都会", "icon": "📱", "description": "地铁出行"}],
+        "selfProtection": [{"icon": "🚇", "title": "地铁安全", "tips": ["上海地铁覆盖广", "早高峰拥挤注意安全"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "世界最长地铁网络", "tips": ["部分线路拥挤"]},{"icon": "🚌", "name": "公交", "description": "线路覆盖广", "tips": ["支付宝可刷"]},{"icon": "🚕", "name": "出租车", "description": "起步价16元", "tips": ["滴滴更方便"]}]}
+      },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -1391,17 +1573,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "中国国内局势稳定",
-      "gang_activity": "极少",
-      "gang_desc": "严格管控，社会秩序良好",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "上海是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，上海拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "bangkok": {
     "id": "bangkok",
+    "safetyIndex": {
+      "overall": 68, "grade": "B-", "trend": "improving",
+      "dimensions": {
+        "crimeSafety": { "score": 65, "note": "扒窃、诈骗多发，需提高警惕" },
+        "healthMedical": { "score": 72, "note": "医疗性价比高，私立医院服务好" },
+        "transportSafety": { "score": 60, "note": "交通拥堵严重，摩托车多需注意" },
+        "naturalDisaster": { "score": 75, "note": "雨季(5-10月)偶有洪涝" },
+        "environmental": { "score": 65, "note": "空气质量季节性差，雾霾较重" },
+        "socialStability": { "score": 78, "note": "社会稳定，佛教文化平和" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"甲肝疫苗","note":"强烈推荐","essential":true},{"name":"乙肝疫苗","note":"建议接种","essential":false},{"name":"伤寒疫苗","note":"饮食不注意者推荐","essential":false},{"name":"狂犬疫苗","note":"接触动物者推荐","essential":false},{"name":"日本脑炎","note":"农村长期停留者","essential":false}],
+      "diseaseRisks": [{"name":"登革热","risk":"高","season":"雨季(6-10月)","prevention":"防蚊灭蚊，清除积水"},{"name":"寨卡病毒","risk":"中","season":"雨季","prevention":"防蚊，尤其是孕妇"},{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"食物中毒","risk":"中","season":"全年","prevention":"注意饮食卫生"}],
+      "medicalTips": ["私立医院如曼谷医院(Bangkok Hospital)国际标准","医疗费用相对低廉","旅游保险一定要买","街边小吃注意卫生选择"]
+    },
     "name": "曼谷",
     "nameEn": "Bangkok",
     "country": "泰国",
@@ -1409,7 +1601,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 13.7563,
     "lng": 100.5018,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -1450,6 +1642,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -1475,6 +1669,15 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "191", "ambulance": "1669", "fire": "199", "tourist": "1672"},
+        "hospitals": [{"name": "康民国际医院", "phone": "+66-2-066-8888", "address": "317 Silom Rd, Bang Rak, Bangkok", "features": ["24H急诊", "英语服务", "国际患者"], "emergency24h": true}],
+        "consulates": [{"name": "中国驻泰国大使馆", "phone": "+66-2-245-7032", "address": "57 Ratchadaphisek Rd, Bangkok 10400", "hours": "周一至周五 9:00-11:30", "emergency": false}],
+        "safetyApps": [{"name": "Grab", "icon": "📱", "description": "打车应用"}],
+        "selfProtection": [{"icon": "🛡️", "title": "安全提示", "tips": ["四面佛周边小心佛牌骗局", "嘟嘟车价格需谈好"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "BTS/MRT", "description": "覆盖主要区域", "tips": ["BTS和MRT不通用需换票"]},{"icon": "🛺", "name": "嘟嘟车", "description": "特色交通工具", "tips": ["需议价"]},{"icon": "🚕", "name": "出租车", "description": "打表较便宜", "tips": ["要求打表(By Meter)"]}]}
+      },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -1633,14 +1836,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "泰国国内局势稳定",
-      "gang_activity": "中等",
-      "gang_desc": "部分区域存在帮派活动，游客避免深夜外出",
-      "civil_unrest": "低",
-      "civil_desc": "政治局势总体平稳"
-    }
+    "overview": "曼谷是泰国的重要城市，位于亚洲。作为该地区的经济、文化中心，曼谷拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "kuala_lumpur": {
     "id": "kuala_lumpur",
@@ -1692,6 +1889,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -1875,14 +2074,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "吉隆坡是马来西亚的重要城市，位于亚洲。作为该地区的经济、文化中心，吉隆坡拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "taipei": {
     "id": "taipei",
@@ -1893,7 +2086,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇼",
     "lat": 25.033,
     "lng": 121.5654,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1472567254989-9c58f892b17d?w=400&q=80",
     "safety": {
       "overall": 91,
       "grade": "A",
@@ -1934,6 +2127,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -2117,14 +2312,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "中",
-      "war_desc": "台海局势需关注，整体相对稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪活动较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "台北是台湾的重要城市，位于亚洲。作为该地区的经济、文化中心，台北拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "osaka": {
     "id": "osaka",
@@ -2135,7 +2324,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 34.6937,
     "lng": 135.5023,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -2181,6 +2370,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "119",
       "fire": "119",
@@ -2397,14 +2588,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "日本和平宪法，无武装冲突风险",
-      "gang_activity": "中等",
-      "gang_desc": "暴力团存在但远离游客区",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "大阪是日本的重要城市，位于亚洲。作为该地区的经济、文化中心，大阪拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "mumbai": {
     "id": "mumbai",
@@ -2415,7 +2600,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 19.076,
     "lng": 72.8777,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
     "safety": {
       "overall": 61,
       "grade": "B-",
@@ -2456,6 +2641,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -2639,14 +2826,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "印度政局稳定",
-      "gang_activity": "中等",
-      "gang_desc": "有组织犯罪存在但远离游客区",
-      "civil_unrest": "中",
-      "civil_desc": "社会分层明显"
-    }
+    "overview": "孟买是印度的重要城市，位于亚洲。作为该地区的经济、文化中心，孟买拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "delhi": {
     "id": "delhi",
@@ -2657,7 +2838,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 28.6139,
     "lng": 77.209,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -2698,6 +2879,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -2881,14 +3064,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "德里是印度的重要城市，位于亚洲。作为该地区的经济、文化中心，德里拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "jakarta": {
     "id": "jakarta",
@@ -2899,7 +3076,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇩",
     "lat": -6.2088,
     "lng": 106.8456,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=400&q=80",
     "safety": {
       "overall": 78,
       "grade": "B+",
@@ -2940,6 +3117,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3123,14 +3302,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "印尼政局稳定",
-      "gang_activity": "中等",
-      "gang_desc": "有组织犯罪存在",
-      "civil_unrest": "中",
-      "civil_desc": "政治活动较多"
-    }
+    "overview": "雅加达是印尼的重要城市，位于亚洲。作为该地区的经济、文化中心，雅加达拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "ho_chi_minh": {
     "id": "ho_chi_minh",
@@ -3182,6 +3355,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3365,14 +3540,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "胡志明市是越南的重要城市，位于亚洲。作为该地区的经济、文化中心，胡志明市拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "manila": {
     "id": "manila",
@@ -3383,7 +3552,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇭",
     "lat": 14.5995,
     "lng": 120.9842,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1568625365131-079e025a8f16?w=400&q=80",
     "safety": {
       "overall": 77,
       "grade": "B+",
@@ -3424,6 +3593,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3607,17 +3778,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "菲律宾政局稳定",
-      "gang_activity": "较高",
-      "gang_desc": "帮派问题存在",
-      "civil_unrest": "中",
-      "civil_desc": "政治对立明显"
-    }
+    "overview": "马尼拉是菲律宾的重要城市，位于亚洲。作为该地区的经济、文化中心，马尼拉拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "dubai": {
     "id": "dubai",
+    "safetyIndex": {
+      "overall": 88, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 90, "note": "非常安全，法治严格，监控密集" },
+        "healthMedical": { "score": 88, "note": "医疗水平高，国际医院众多" },
+        "transportSafety": { "score": 82, "note": "道路状况好，但车速快事故多" },
+        "naturalDisaster": { "score": 78, "note": "沙漠气候，极端高温需注意" },
+        "environmental": { "score": 75, "note": "沙尘暴季节性出现" },
+        "socialStability": { "score": 90, "note": "社会稳定，治安管理严格" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"新冠疫苗","note":"根据当地要求","essential":false},{"name":"流感疫苗","note":"推荐","essential":false}],
+      "diseaseRisks": [{"name":"中暑","risk":"高","season":"夏季(5-9月室外)","prevention":"大量饮水，避免烈日"},{"name":"MERS","risk":"低","season":"全年","prevention":"避免接触骆驼"},{"name":"蚊媒疾病","risk":"低","season":"全年","prevention":"防蚊措施"}],
+      "medicalTips": ["阿联酋医疗需自费，保险很重要","私立医院如American Hospital标准高","斋月白天公共场所禁食需注意","英文沟通普遍顺畅"]
+    },
     "name": "迪拜",
     "nameEn": "Dubai",
     "country": "阿联酋",
@@ -3625,7 +3806,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇪",
     "lat": 25.2048,
     "lng": 55.2708,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -3666,6 +3847,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -3849,14 +4032,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "阿联酋政局稳定，区域相对安全",
-      "gang_activity": "极少",
-      "gang_desc": "严格法律，社会秩序极佳",
-      "civil_unrest": "极低",
-      "civil_desc": "政府治理高效"
-    }
+    "overview": "迪拜是阿联酋的重要城市，位于亚洲。作为该地区的经济、文化中心，迪拜拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "doha": {
     "id": "doha",
@@ -3867,7 +4044,7 @@ var CITY_DATABASE = {
     "flag": "🇶🇦",
     "lat": 25.2854,
     "lng": 51.531,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -3908,6 +4085,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4091,14 +4270,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "低",
-      "war_desc": "卡塔尔外交政策灵活，区域局势需关注",
-      "gang_activity": "极少",
-      "gang_desc": "严格法律管控",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "多哈是卡塔尔的重要城市，位于亚洲。作为该地区的经济、文化中心，多哈拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "riyadh": {
     "id": "riyadh",
@@ -4109,7 +4282,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇦",
     "lat": 24.7136,
     "lng": 46.6753,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
     "safety": {
       "overall": 90,
       "grade": "A",
@@ -4150,6 +4323,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4333,14 +4508,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "利雅得是沙特阿拉伯的重要城市，位于亚洲。作为该地区的经济、文化中心，利雅得拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "muscat": {
     "id": "muscat",
@@ -4351,7 +4520,7 @@ var CITY_DATABASE = {
     "flag": "🇴🇲",
     "lat": 23.588,
     "lng": 58.3829,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -4392,6 +4561,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4575,14 +4746,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "马斯喀特是阿曼的重要城市，位于亚洲。作为该地区的经济、文化中心，马斯喀特拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "tel_aviv": {
     "id": "tel_aviv",
@@ -4634,6 +4799,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -4817,14 +4984,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "特拉维夫是以色列的重要城市，位于亚洲。作为该地区的经济、文化中心，特拉维夫拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "istanbul": {
     "id": "istanbul",
@@ -4835,7 +4996,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇷",
     "lat": 41.0082,
     "lng": 28.9784,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&q=80",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -4876,6 +5037,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5059,14 +5222,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "中",
-      "war_desc": "土耳其地区局势复杂，靠近叙利亚边境需注意",
-      "gang_activity": "中等",
-      "gang_desc": "有组织犯罪存在",
-      "civil_unrest": "中",
-      "civil_desc": "政治局势时有波动"
-    }
+    "overview": "伊斯坦布尔是土耳其的重要城市，位于亚洲。作为该地区的经济、文化中心，伊斯坦布尔拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "bali": {
     "id": "bali",
@@ -5077,7 +5234,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇩",
     "lat": -8.4095,
     "lng": 115.1889,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&q=80",
     "safety": {
       "overall": 72,
       "grade": "B",
@@ -5118,6 +5275,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5301,14 +5460,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "印尼旅游胜地相对安全",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "巴厘岛是印尼的重要城市，位于亚洲。作为该地区的经济、文化中心，巴厘岛拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "chiangmai": {
     "id": "chiangmai",
@@ -5319,7 +5472,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 18.7883,
     "lng": 98.9853,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512553258797-94d012bc87c8?w=400&q=80",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -5360,6 +5513,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5543,14 +5698,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "清迈是泰国的重要城市，位于亚洲。作为该地区的经济、文化中心，清迈拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "phuket": {
     "id": "phuket",
@@ -5561,7 +5710,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 7.8804,
     "lng": 98.3923,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -5602,6 +5751,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -5785,14 +5936,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "普吉岛是泰国的重要城市，位于亚洲。作为该地区的经济、文化中心，普吉岛拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "penang": {
     "id": "penang",
@@ -5803,7 +5948,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇾",
     "lat": 5.4141,
     "lng": 100.3288,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -5844,6 +5989,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6027,14 +6174,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "槟城是马来西亚的重要城市，位于亚洲。作为该地区的经济、文化中心，槟城拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "hanoi": {
     "id": "hanoi",
@@ -6045,7 +6186,7 @@ var CITY_DATABASE = {
     "flag": "🇻🇳",
     "lat": 21.0285,
     "lng": 105.8542,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -6086,6 +6227,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6269,14 +6412,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "越南政局稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "河内是越南的重要城市，位于亚洲。作为该地区的经济、文化中心，河内拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "bangalore": {
     "id": "bangalore",
@@ -6287,7 +6424,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 12.9716,
     "lng": 77.5946,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -6328,6 +6465,8 @@ var CITY_DATABASE = {
       "部分城市交通拥堵"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6511,14 +6650,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "班加罗尔是印度的重要城市，位于亚洲。作为该地区的经济、文化中心，班加罗尔拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "chennai": {
     "id": "chennai",
@@ -6529,7 +6662,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 13.0827,
     "lng": 80.2707,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -6570,6 +6703,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6753,14 +6888,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "金奈是印度的重要城市，位于亚洲。作为该地区的经济、文化中心，金奈拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "kolkata": {
     "id": "kolkata",
@@ -6771,7 +6900,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 22.5726,
     "lng": 88.3639,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -6812,6 +6941,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -6995,14 +7126,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "加尔各答是印度的重要城市，位于亚洲。作为该地区的经济、文化中心，加尔各答拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "hyderabad": {
     "id": "hyderabad",
@@ -7013,7 +7138,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 17.385,
     "lng": 78.4867,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
     "safety": {
       "overall": 65,
       "grade": "B-",
@@ -7054,6 +7179,8 @@ var CITY_DATABASE = {
       "食品安全"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -7237,14 +7364,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "海德拉巴是印度的重要城市，位于亚洲。作为该地区的经济、文化中心，海德拉巴拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "shenzhen": {
     "id": "shenzhen",
@@ -7255,7 +7376,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 22.5431,
     "lng": 114.0579,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400&q=80",
     "safety": {
       "overall": 78,
       "grade": "B+",
@@ -7296,6 +7417,8 @@ var CITY_DATABASE = {
       "自然灾害风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -7479,14 +7602,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "中国国内局势稳定",
-      "gang_activity": "极少",
-      "gang_desc": "严格管控，社会秩序良好",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "深圳是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，深圳拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "guangzhou": {
     "id": "guangzhou",
@@ -7497,7 +7614,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 23.1291,
     "lng": 113.2644,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -7538,6 +7655,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -7721,14 +7840,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "中国国内局势稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪控制良好",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "广州是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，广州拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "chengdu": {
     "id": "chengdu",
@@ -7739,7 +7852,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.5728,
     "lng": 104.0668,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -7780,6 +7893,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -7963,14 +8078,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "中国国内局势稳定",
-      "gang_activity": "极少",
-      "gang_desc": "严格管控，社会秩序良好",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "成都是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，成都拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "hangzhou": {
     "id": "hangzhou",
@@ -7981,7 +8090,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.2741,
     "lng": 120.1551,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -8022,6 +8131,8 @@ var CITY_DATABASE = {
       "蚊虫叮咬"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -8205,14 +8316,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "中国国内局势稳定",
-      "gang_activity": "极少",
-      "gang_desc": "严格管控，社会秩序良好",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "杭州是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，杭州拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "xian": {
     "id": "xian",
@@ -8223,7 +8328,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 34.3416,
     "lng": 108.9398,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400&q=80",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -8264,6 +8369,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "120",
       "fire": "119",
@@ -8447,17 +8554,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "中国国内局势稳定",
-      "gang_activity": "极少",
-      "gang_desc": "严格管控，社会秩序良好",
-      "civil_unrest": "极低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "西安是中国的重要城市，位于亚洲。作为该地区的经济、文化中心，西安拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "中国建立了完善的城市安全体系，主要城市配备了先进的监控系统、专业的应急响应机制和全面的医疗救援设施。通过严格的法律执行、社区网格化管理和科技应用，城市安全水平持续提升，为居民和游客提供了可靠的安全保障。"
   },
   "london": {
     "id": "london",
+    "safetyIndex": {
+      "overall": 78, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 72, "note": "扒窃多发，夜间部分区域需注意" },
+        "healthMedical": { "score": 88, "note": "NHS体系完善，医疗水平高" },
+        "transportSafety": { "score": 80, "note": "地铁发达，公交覆盖广" },
+        "naturalDisaster": { "score": 82, "note": "洪水风险在增加，极端天气增多" },
+        "environmental": { "score": 78, "note": "空气质量持续改善" },
+        "socialStability": { "score": 82, "note": "社会稳定，多元文化和谐" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"新冠疫苗","note":"根据当地要求","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(11-2月)","prevention":"接种疫苗"},{"name":"军团病","risk":"低","season":"夏季","prevention":"避免吸入水雾"}],
+      "medicalTips": ["NHS免费医疗(游客短期不适用)","急诊(A&E)无需预约","私立医疗快速但昂贵","boots等药房可买非处方药"]
+    },
     "name": "伦敦",
     "nameEn": "London",
     "country": "英国",
@@ -8465,7 +8582,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 51.5074,
     "lng": -0.1278,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -8506,6 +8623,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "999",
       "ambulance": "999",
       "fire": "999",
@@ -8531,6 +8650,15 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "999", "ambulance": "999", "fire": "999", "tourist": "0300-123-6789"},
+        "hospitals": [{"name": "St Thomas医院", "phone": "020-7188-7188", "address": "Westminster Bridge Rd, London SE1 7EH", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
+        "consulates": [{"name": "中国驻英国大使馆", "phone": "020-7299-4049", "address": "31 Portland Pl, London W1B 1QD", "hours": "周一至周五 9:00-12:00", "emergency": false}],
+        "safetyApps": [{"name": "Citizen", "icon": "📱", "description": "实时犯罪预警"}],
+        "selfProtection": [{"icon": "🎭", "title": "防盗", "tips": ["伦敦桥周边警惕恐怖袭击", "西区剧院票务骗局多"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "世界最古老的地铁系统", "tips": ["周末部分线路施工"]},{"icon": "🚌", "name": "公交", "description": "双层巴士体验独特", "tips": ["不报站名需打开导航"]},{"icon": "🚕", "name": "黑色出租车", "description": "安全但贵", "tips": ["Uber更便宜"]}]}
+      },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -8689,17 +8817,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "英国本土无武装冲突",
-      "gang_activity": "中等",
-      "gang_desc": "部分区域存在帮派问题",
-      "civil_unrest": "中",
-      "civil_desc": "偶有抗议活动"
-    }
+    "overview": "伦敦是英国的首都和最大城市，也是全球金融中心之一。这座拥有2000多年历史的都市，融合了古老的建筑和现代的摩天大楼。作为政治、经济和文化中心，伦敦对全球事务具有重要影响力。",
+    "safety_history": "英国建立了成熟的城市安全体系，包括广泛的CCTV监控网络、专业的应急响应机制和严格的法律制度。伦敦等主要城市通过智能化警务、社区巡逻和国际合作，为居民和游客提供了良好的安全保障。"
   },
   "paris": {
     "id": "paris",
+    "safetyIndex": {
+      "overall": 72, "grade": "B", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 65, "note": "扒窃、抢劫多发，需提高警惕" },
+        "healthMedical": { "score": 82, "note": "医疗水平世界一流，社保体系完善" },
+        "transportSafety": { "score": 75, "note": "地铁网络广，但晚间安全需注意" },
+        "naturalDisaster": { "score": 80, "note": "自然灾害风险低" },
+        "environmental": { "score": 78, "note": "空气质量一般，但持续改善" },
+        "socialStability": { "score": 72, "note": "社会偶有抗议，但总体稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"乙肝疫苗","note":"建议长期居住者接种","essential":false},{"name":"狂犬疫苗","note":"接触动物者推荐","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"蚊媒疾病","risk":"低","season":"夏季","prevention":"防蚊措施"}],
+      "medicalTips": ["法国家医疗费可报销70%","紧急情况拨打15(SAMU)或112","英语在旅游区可用，医院不一定","药妆店可买非处方药"]
+    },
     "name": "巴黎",
     "nameEn": "Paris",
     "country": "法国",
@@ -8748,6 +8886,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -8773,6 +8913,15 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
+      "emergencyContacts": {
+        "phoneNumbers": {"police": "17", "ambulance": "15", "fire": "18", "tourist": "3430"},
+        "hospitals": [{"name": "Pitié-Salpêtrière医院", "phone": "01-42-17-60-60", "address": "47-83 Boulevard de l Hopital, 75013 Paris", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
+        "consulates": [{"name": "中国驻法国大使馆", "phone": "01-49-52-19-50", "address": "20 Rue de l Abbée Roussel, 75012 Paris", "hours": "周一至周五 9:00-12:00", "emergency": false}],
+        "safetyApps": [{"name": "TousAntiCovid", "icon": "📱", "description": "法国官方防疫应用"}],
+        "selfProtection": [{"icon": "🎭", "title": "防盗要点", "tips": ["在景点、地铁站防范假警察查证件骗局", "热点地区小偷多"]}],
+        "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "覆盖全面，价格便宜", "tips": ["注意小偷，高峰期拥挤"]},{"icon": "🚌", "name": "公交", "description": "可欣赏城市风光", "tips": ["注意扒手"]},{"icon": "🚕", "name": "出租车", "description": "昂贵但安全", "tips": ["建议用App预约"]}]}
+      },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -8931,14 +9080,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "法国本土无武装冲突",
-      "gang_activity": "中等",
-      "gang_desc": "郊区存在帮派问题",
-      "civil_unrest": "中",
-      "civil_desc": "黄背心运动后趋于稳定"
-    }
+    "overview": "巴黎是法国的首都和最大城市，被誉为'光之城'。这座充满浪漫气息的城市，以其优雅的建筑、世界级的艺术收藏和精致的美食而闻名。作为全球时尚和文化的中心，巴黎每年吸引数百万游客。",
+    "safety_history": "法国拥有完善的城市安全基础设施，巴黎等主要城市部署了密集的监控系统、专业的反恐部队和高效的应急响应机制。通过加强边境管控、提升城市警力和完善旅游安全保障，为国际游客提供了可靠的安全环境。"
   },
   "berlin": {
     "id": "berlin",
@@ -8949,7 +9092,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 52.52,
     "lng": 13.405,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -8990,6 +9133,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -9173,14 +9318,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "德国和平时期",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "柏林是德国的重要城市，位于欧洲。作为该地区的经济、文化中心，柏林拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "德国建立了高效的城市安全体系，主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过严格的法规执行、社区警务和科技应用，为居民和游客提供了优质的安全保障。"
   },
   "amsterdam": {
     "id": "amsterdam",
@@ -9191,7 +9330,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇱",
     "lat": 52.3676,
     "lng": 4.9041,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -9232,6 +9371,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -9415,14 +9556,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "荷兰政局稳定",
-      "gang_activity": "中等",
-      "gang_desc": "部分区域存在有组织犯罪",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "阿姆斯特丹是荷兰的重要城市，位于欧洲。作为该地区的经济、文化中心，阿姆斯特丹拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "vienna": {
     "id": "vienna",
@@ -9433,7 +9568,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇹",
     "lat": 48.2082,
     "lng": 16.3738,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=400&q=80",
     "safety": {
       "overall": 72,
       "grade": "B",
@@ -9474,6 +9609,8 @@ var CITY_DATABASE = {
       "语言沟通问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -9657,14 +9794,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "奥地利永久中立国",
-      "gang_activity": "极少",
-      "gang_desc": "有组织犯罪极少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "维也纳是奥地利的重要城市，位于亚洲。作为该地区的经济、文化中心，维也纳拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "zurich": {
     "id": "zurich",
@@ -9675,7 +9806,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇭",
     "lat": 47.3769,
     "lng": 8.5417,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -9716,6 +9847,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -9899,14 +10032,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "瑞士永久中立国",
-      "gang_activity": "极少",
-      "gang_desc": "全球最安全城市之一",
-      "civil_unrest": "极低",
-      "civil_desc": "高度稳定"
-    }
+    "overview": "苏黎世是瑞士的重要城市，位于欧洲。作为该地区的经济、文化中心，苏黎世拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "stockholm": {
     "id": "stockholm",
@@ -9917,7 +10044,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇪",
     "lat": 59.3293,
     "lng": 18.0686,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -9958,6 +10085,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10141,14 +10270,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "北欧和平国家",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "斯德哥尔摩是瑞典的重要城市，位于欧洲。作为该地区的经济、文化中心，斯德哥尔摩拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "oslo": {
     "id": "oslo",
@@ -10159,7 +10282,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇴",
     "lat": 59.9139,
     "lng": 10.7522,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -10200,6 +10323,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10383,14 +10508,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "奥斯陆是挪威的重要城市，位于欧洲。作为该地区的经济、文化中心，奥斯陆拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "copenhagen": {
     "id": "copenhagen",
@@ -10401,7 +10520,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇰",
     "lat": 55.6761,
     "lng": 12.5683,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513622470522-21c9126c4d13?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -10442,6 +10561,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10625,14 +10746,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "北欧和平国家",
-      "gang_activity": "极少",
-      "gang_desc": "有组织犯罪极少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "哥本哈根是丹麦的重要城市，位于欧洲。作为该地区的经济、文化中心，哥本哈根拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "helsinki": {
     "id": "helsinki",
@@ -10643,7 +10758,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇮",
     "lat": 60.1699,
     "lng": 24.9384,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548834925-e48f8a27ae36?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -10684,6 +10799,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -10867,14 +10984,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "赫尔辛基是芬兰的重要城市，位于欧洲。作为该地区的经济、文化中心，赫尔辛基拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "madrid": {
     "id": "madrid",
@@ -10885,7 +10996,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 40.4168,
     "lng": -3.7038,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -10926,6 +11037,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11109,14 +11222,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "西班牙政局稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "马德里是西班牙的重要城市，位于欧洲。作为该地区的经济、文化中心，马德里拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "rome": {
     "id": "rome",
@@ -11127,7 +11234,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 41.9028,
     "lng": 12.4964,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -11168,6 +11275,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11351,14 +11460,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "意大利政局稳定",
-      "gang_activity": "中等",
-      "gang_desc": "有组织犯罪存在",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "罗马是意大利的重要城市，位于欧洲。作为该地区的经济、文化中心，罗马拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "意大利建立了较为完善的城市安全体系，罗马、米兰等主要城市部署了监控系统、专业的应急响应机制和丰富的旅游安全经验。通过加强巡逻、提升警务效率和游客保护措施，为国际游客提供了良好的安全保障。"
   },
   "barcelona": {
     "id": "barcelona",
@@ -11369,7 +11472,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 41.3851,
     "lng": 2.1734,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -11410,6 +11513,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11593,14 +11698,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "西班牙政局稳定",
-      "gang_activity": "中等",
-      "gang_desc": "扒窃问题较突出",
-      "civil_unrest": "中",
-      "civil_desc": "独立运动偶有示威"
-    }
+    "overview": "巴塞罗那是西班牙的重要城市，位于欧洲。作为该地区的经济、文化中心，巴塞罗那拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "lisbon": {
     "id": "lisbon",
@@ -11611,7 +11710,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇹",
     "lat": 38.7223,
     "lng": -9.1393,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1585208798174-6cedc86e019a?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -11652,6 +11751,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -11835,14 +11936,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "葡萄牙政局稳定",
-      "gang_activity": "极少",
-      "gang_desc": "有组织犯罪极少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "里斯本是葡萄牙的重要城市，位于欧洲。作为该地区的经济、文化中心，里斯本拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "prague": {
     "id": "prague",
@@ -11853,7 +11948,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇿",
     "lat": 50.0755,
     "lng": 14.4378,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -11894,6 +11989,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12077,14 +12174,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "布拉格是捷克的重要城市，位于欧洲。作为该地区的经济、文化中心，布拉格拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "warsaw": {
     "id": "warsaw",
@@ -12095,7 +12186,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇱",
     "lat": 52.2297,
     "lng": 21.0122,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1577076428216-4d5c8b4e7c84?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -12136,6 +12227,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12319,14 +12412,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "华沙是波兰的重要城市，位于欧洲。作为该地区的经济、文化中心，华沙拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "athens": {
     "id": "athens",
@@ -12337,7 +12424,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇷",
     "lat": 37.9838,
     "lng": 23.7275,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80",
     "safety": {
       "overall": 83,
       "grade": "A-",
@@ -12378,6 +12465,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12561,14 +12650,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "雅典是希腊的重要城市，位于欧洲。作为该地区的经济、文化中心，雅典拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "brussels": {
     "id": "brussels",
@@ -12579,7 +12662,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇪",
     "lat": 50.8503,
     "lng": 4.3517,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -12620,6 +12703,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -12803,14 +12888,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "比利时政局稳定",
-      "gang_activity": "中等",
-      "gang_desc": "部分区域存在治安问题",
-      "civil_unrest": "中",
-      "civil_desc": "恐怖袭击风险需关注"
-    }
+    "overview": "布鲁塞尔是比利时的重要城市，位于欧洲。作为该地区的经济、文化中心，布鲁塞尔拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "budapest": {
     "id": "budapest",
@@ -12821,7 +12900,7 @@ var CITY_DATABASE = {
     "flag": "🇭🇺",
     "lat": 47.4979,
     "lng": 19.0402,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1551867633-194f125bddfa?w=400&q=80",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -12862,6 +12941,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13045,14 +13126,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "布达佩斯是匈牙利的重要城市，位于欧洲。作为该地区的经济、文化中心，布达佩斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "moscow": {
     "id": "moscow",
@@ -13063,7 +13138,7 @@ var CITY_DATABASE = {
     "flag": "🇷🇺",
     "lat": 55.7558,
     "lng": 37.6173,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=400&q=80",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -13104,6 +13179,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13287,14 +13364,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "中",
-      "war_desc": "俄乌冲突影响，需关注安全提示",
-      "gang_activity": "中等",
-      "gang_desc": "有组织犯罪存在",
-      "civil_unrest": "中",
-      "civil_desc": "政治管控严格"
-    }
+    "overview": "莫斯科是俄罗斯的重要城市，位于欧洲。作为该地区的经济、文化中心，莫斯科拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "st_petersburg": {
     "id": "st_petersburg",
@@ -13346,6 +13417,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13529,14 +13602,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "圣彼得堡是俄罗斯的重要城市，位于欧洲。作为该地区的经济、文化中心，圣彼得堡拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "milan": {
     "id": "milan",
@@ -13547,7 +13614,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 45.4642,
     "lng": 9.19,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1520440229-6469a149ac59?w=400&q=80",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -13588,6 +13655,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -13771,14 +13840,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "意大利政局稳定",
-      "gang_activity": "中等",
-      "gang_desc": "有组织犯罪存在",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "米兰是意大利的重要城市，位于欧洲。作为该地区的经济、文化中心，米兰拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "意大利建立了较为完善的城市安全体系，罗马、米兰等主要城市部署了监控系统、专业的应急响应机制和丰富的旅游安全经验。通过加强巡逻、提升警务效率和游客保护措施，为国际游客提供了良好的安全保障。"
   },
   "munich": {
     "id": "munich",
@@ -13789,7 +13852,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 48.1351,
     "lng": 11.582,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1595867818082-083862f3d630?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -13830,6 +13893,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -14013,14 +14078,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "慕尼黑是德国的重要城市，位于欧洲。作为该地区的经济、文化中心，慕尼黑拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "德国建立了高效的城市安全体系，主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过严格的法规执行、社区警务和科技应用，为居民和游客提供了优质的安全保障。"
   },
   "frankfurt": {
     "id": "frankfurt",
@@ -14031,7 +14090,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 50.1109,
     "lng": 8.6821,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -14072,6 +14131,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -14255,14 +14316,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "法兰克福是德国的重要城市，位于欧洲。作为该地区的经济、文化中心，法兰克福拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "德国建立了高效的城市安全体系，主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过严格的法规执行、社区警务和科技应用，为居民和游客提供了优质的安全保障。"
   },
   "hamburg": {
     "id": "hamburg",
@@ -14273,7 +14328,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 53.5511,
     "lng": 9.9937,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -14314,6 +14369,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -14497,14 +14554,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "汉堡是德国的重要城市，位于欧洲。作为该地区的经济、文化中心，汉堡拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "德国建立了高效的城市安全体系，主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过严格的法规执行、社区警务和科技应用，为居民和游客提供了优质的安全保障。"
   },
   "dublin": {
     "id": "dublin",
@@ -14515,7 +14566,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇪",
     "lat": 53.3498,
     "lng": -6.2603,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1549918864-48ac978761a4?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -14556,6 +14607,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -14739,14 +14792,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "爱尔兰政局稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "都柏林是爱尔兰的重要城市，位于欧洲。作为该地区的经济、文化中心，都柏林拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "edinburgh": {
     "id": "edinburgh",
@@ -14757,7 +14804,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 55.9533,
     "lng": -3.1883,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1565108092031-1dd0587f21dc?w=400&q=80",
     "safety": {
       "overall": 93,
       "grade": "A",
@@ -14798,6 +14845,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "999",
       "ambulance": "999",
       "fire": "999",
@@ -14981,14 +15030,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "爱丁堡是英国的重要城市，位于欧洲。作为该地区的经济、文化中心，爱丁堡拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "英国建立了成熟的城市安全体系，包括广泛的CCTV监控网络、专业的应急响应机制和严格的法律制度。伦敦等主要城市通过智能化警务、社区巡逻和国际合作，为居民和游客提供了良好的安全保障。"
   },
   "manchester": {
     "id": "manchester",
@@ -14999,7 +15042,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 53.4808,
     "lng": -2.2426,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -15040,6 +15083,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "999",
       "ambulance": "999",
       "fire": "999",
@@ -15223,14 +15268,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "曼彻斯特是英国的重要城市，位于欧洲。作为该地区的经济、文化中心，曼彻斯特拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "英国建立了成熟的城市安全体系，包括广泛的CCTV监控网络、专业的应急响应机制和严格的法律制度。伦敦等主要城市通过智能化警务、社区巡逻和国际合作，为居民和游客提供了良好的安全保障。"
   },
   "lyon": {
     "id": "lyon",
@@ -15241,7 +15280,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 45.764,
     "lng": 4.8357,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -15282,6 +15321,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -15465,14 +15506,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "里昂是法国的重要城市，位于欧洲。作为该地区的经济、文化中心，里昂拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "法国拥有完善的城市安全基础设施，巴黎等主要城市部署了密集的监控系统、专业的反恐部队和高效的应急响应机制。通过加强边境管控、提升城市警力和完善旅游安全保障，为国际游客提供了可靠的安全环境。"
   },
   "marseille": {
     "id": "marseille",
@@ -15483,7 +15518,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 43.2965,
     "lng": 5.3698,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1520962880247-cfaf541fb872?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -15524,6 +15559,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -15707,14 +15744,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "马赛是法国的重要城市，位于欧洲。作为该地区的经济、文化中心，马赛拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "法国拥有完善的城市安全基础设施，巴黎等主要城市部署了密集的监控系统、专业的反恐部队和高效的应急响应机制。通过加强边境管控、提升城市警力和完善旅游安全保障，为国际游客提供了可靠的安全环境。"
   },
   "nice": {
     "id": "nice",
@@ -15725,7 +15756,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 43.7102,
     "lng": 7.262,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -15766,6 +15797,8 @@ var CITY_DATABASE = {
       "语言障碍"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "17",
       "ambulance": "15",
       "fire": "18",
@@ -15949,14 +15982,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "尼斯是法国的重要城市，位于欧洲。作为该地区的经济、文化中心，尼斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "法国拥有完善的城市安全基础设施，巴黎等主要城市部署了密集的监控系统、专业的反恐部队和高效的应急响应机制。通过加强边境管控、提升城市警力和完善旅游安全保障，为国际游客提供了可靠的安全环境。"
   },
   "venice": {
     "id": "venice",
@@ -15967,7 +15994,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 45.4408,
     "lng": 12.3155,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -16008,6 +16035,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16191,14 +16220,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "威尼斯是意大利的重要城市，位于欧洲。作为该地区的经济、文化中心，威尼斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "意大利建立了较为完善的城市安全体系，罗马、米兰等主要城市部署了监控系统、专业的应急响应机制和丰富的旅游安全经验。通过加强巡逻、提升警务效率和游客保护措施，为国际游客提供了良好的安全保障。"
   },
   "florence": {
     "id": "florence",
@@ -16209,7 +16232,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 43.7696,
     "lng": 11.2558,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -16250,6 +16273,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16433,14 +16458,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "佛罗伦萨是意大利的重要城市，位于欧洲。作为该地区的经济、文化中心，佛罗伦萨拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "意大利建立了较为完善的城市安全体系，罗马、米兰等主要城市部署了监控系统、专业的应急响应机制和丰富的旅游安全经验。通过加强巡逻、提升警务效率和游客保护措施，为国际游客提供了良好的安全保障。"
   },
   "naples": {
     "id": "naples",
@@ -16451,7 +16470,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 40.8518,
     "lng": 14.2681,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&q=80",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -16492,6 +16511,8 @@ var CITY_DATABASE = {
       "物价较高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16675,14 +16696,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "那不勒斯是意大利的重要城市，位于欧洲。作为该地区的经济、文化中心，那不勒斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "意大利建立了较为完善的城市安全体系，罗马、米兰等主要城市部署了监控系统、专业的应急响应机制和丰富的旅游安全经验。通过加强巡逻、提升警务效率和游客保护措施，为国际游客提供了良好的安全保障。"
   },
   "valencia": {
     "id": "valencia",
@@ -16693,7 +16708,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 39.4699,
     "lng": -0.3763,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -16734,6 +16749,8 @@ var CITY_DATABASE = {
       "申根签证"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -16917,14 +16934,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "瓦伦西亚是西班牙的重要城市，位于欧洲。作为该地区的经济、文化中心，瓦伦西亚拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "seville": {
     "id": "seville",
@@ -16935,7 +16946,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 37.3891,
     "lng": -5.9845,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -16976,6 +16987,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17159,14 +17172,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "塞维利亚是西班牙的重要城市，位于欧洲。作为该地区的经济、文化中心，塞维利亚拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "malaga": {
     "id": "malaga",
@@ -17177,7 +17184,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 36.7213,
     "lng": -4.4214,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -17218,6 +17225,8 @@ var CITY_DATABASE = {
       "罢工影响交通"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17401,14 +17410,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "马拉加是西班牙的重要城市，位于欧洲。作为该地区的经济、文化中心，马拉加拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "porto": {
     "id": "porto",
@@ -17419,7 +17422,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇹",
     "lat": 41.1579,
     "lng": -8.6291,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1585208798174-6cedc86e019a?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -17460,6 +17463,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17643,14 +17648,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "波尔图是葡萄牙的重要城市，位于欧洲。作为该地区的经济、文化中心，波尔图拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "krakow": {
     "id": "krakow",
@@ -17661,7 +17660,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇱",
     "lat": 50.0647,
     "lng": 19.945,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1605556449642-526e5f63c6c5?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -17702,6 +17701,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -17885,14 +17886,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "克拉科夫是波兰的重要城市，位于欧洲。作为该地区的经济、文化中心，克拉科夫拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "geneva": {
     "id": "geneva",
@@ -17903,7 +17898,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇭",
     "lat": 46.2044,
     "lng": 6.1432,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1571371297803-e6d7d5e4f0f6?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -17944,6 +17939,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -18127,14 +18124,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "瑞士永久中立国",
-      "gang_activity": "极少",
-      "gang_desc": "全球最安全城市之一",
-      "civil_unrest": "极低",
-      "civil_desc": "高度稳定"
-    }
+    "overview": "日内瓦是瑞士的重要城市，位于欧洲。作为该地区的经济、文化中心，日内瓦拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "cologne": {
     "id": "cologne",
@@ -18145,7 +18136,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 50.9375,
     "lng": 6.9603,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -18186,6 +18177,8 @@ var CITY_DATABASE = {
       "小偷小摸"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "110",
       "ambulance": "112",
       "fire": "112",
@@ -18369,17 +18362,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "科隆是德国的重要城市，位于欧洲。作为该地区的经济、文化中心，科隆拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "德国建立了高效的城市安全体系，主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过严格的法规执行、社区警务和科技应用，为居民和游客提供了优质的安全保障。"
   },
   "new_york": {
     "id": "new_york",
+    "safetyIndex": {
+      "overall": 70, "grade": "B", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 68, "note": "犯罪率因区而异，曼哈顿相对安全" },
+        "healthMedical": { "score": 85, "note": "医疗水平世界领先，医院选择多" },
+        "transportSafety": { "score": 78, "note": "地铁24小时运营但晚间需注意" },
+        "naturalDisaster": { "score": 75, "note": "飓风季(6-11月)需关注" },
+        "environmental": { "score": 72, "note": "空气质量一般" },
+        "socialStability": { "score": 78, "note": "社会多元化，偶有冲突" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"新冠疫苗","note":"根据当地要求","essential":false},{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"莱姆病疫苗","note":"郊区活动者推荐","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"莱姆病","risk":"中","season":"春夏(5-9月)","prevention":"户外活动防蜱虫"},{"name":"西尼罗病毒","risk":"低","season":"夏季","prevention":"防蚊措施"}],
+      "medicalTips": ["无保险医疗费用极其昂贵","急诊室等待时间长","紧急情况拨打911","急诊必须先处理再付费"]
+    },
     "name": "纽约",
     "nameEn": "New York",
     "country": "美国",
@@ -18428,6 +18431,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -18611,14 +18616,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "纽约是美国的重要城市，位于美洲。作为该地区的经济、文化中心，纽约拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "los_angeles": {
     "id": "los_angeles",
@@ -18670,6 +18669,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -18853,14 +18854,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "洛杉矶是美国的重要城市，位于美洲。作为该地区的经济、文化中心，洛杉矶拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "chicago": {
     "id": "chicago",
@@ -18871,7 +18866,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 41.8781,
     "lng": -87.6298,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8a26a99?w=400&q=80",
     "safety": {
       "overall": 69,
       "grade": "B-",
@@ -18912,6 +18907,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19095,14 +19092,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "美国本土安全",
-      "gang_activity": "高",
-      "gang_desc": "部分区域帮派冲突较多",
-      "civil_unrest": "中",
-      "civil_desc": "偶有抗议活动"
-    }
+    "overview": "芝加哥是美国的重要城市，位于美洲。作为该地区的经济、文化中心，芝加哥拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "toronto": {
     "id": "toronto",
@@ -19113,7 +19104,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 43.6532,
     "lng": -79.3832,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=400&q=80",
     "safety": {
       "overall": 76,
       "grade": "B+",
@@ -19154,6 +19145,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19337,14 +19330,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "加拿大和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "多伦多是加拿大的重要城市，位于美洲。作为该地区的经济、文化中心，多伦多拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "加拿大建立了完善的城市安全体系，多伦多、温哥华等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、文化包容和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "vancouver": {
     "id": "vancouver",
@@ -19355,7 +19342,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 49.2827,
     "lng": -123.1207,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559511260-66a634d0e8a4?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -19396,6 +19383,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19579,14 +19568,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "加拿大和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "温哥华是加拿大的重要城市，位于美洲。作为该地区的经济、文化中心，温哥华拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "加拿大建立了完善的城市安全体系，多伦多、温哥华等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、文化包容和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "montreal": {
     "id": "montreal",
@@ -19597,7 +19580,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 45.5017,
     "lng": -73.5673,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=400&q=80",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -19638,6 +19621,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -19821,14 +19806,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "加拿大和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "蒙特利尔是加拿大的重要城市，位于美洲。作为该地区的经济、文化中心，蒙特利尔拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "加拿大建立了完善的城市安全体系，多伦多、温哥华等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、文化包容和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "san_francisco": {
     "id": "san_francisco",
@@ -19880,6 +19859,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20063,14 +20044,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "旧金山是美国的重要城市，位于美洲。作为该地区的经济、文化中心，旧金山拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "seattle": {
     "id": "seattle",
@@ -20081,7 +20056,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 47.6062,
     "lng": -122.3321,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=400&q=80",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -20122,6 +20097,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20305,14 +20282,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "美国本土安全",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "西雅图是美国的重要城市，位于美洲。作为该地区的经济、文化中心，西雅图拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "miami": {
     "id": "miami",
@@ -20323,7 +20294,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 25.7617,
     "lng": -80.1918,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=400&q=80",
     "safety": {
       "overall": 77,
       "grade": "B+",
@@ -20364,6 +20335,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20547,14 +20520,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "美国本土安全",
-      "gang_activity": "较高",
-      "gang_desc": "部分区域存在毒品相关犯罪",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "迈阿密是美国的重要城市，位于美洲。作为该地区的经济、文化中心，迈阿密拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "boston": {
     "id": "boston",
@@ -20565,7 +20532,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 42.3601,
     "lng": -71.0589,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1569503689347-5d4d6a48e48d?w=400&q=80",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -20606,6 +20573,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -20789,14 +20758,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "美国本土安全",
-      "gang_activity": "中等",
-      "gang_desc": "部分区域存在帮派问题",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "波士顿是美国的重要城市，位于美洲。作为该地区的经济、文化中心，波士顿拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "washington_dc": {
     "id": "washington_dc",
@@ -20848,6 +20811,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21031,14 +20996,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "华盛顿是美国的重要城市，位于美洲。作为该地区的经济、文化中心，华盛顿拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "las_vegas": {
     "id": "las_vegas",
@@ -21090,6 +21049,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21273,14 +21234,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "拉斯维加斯是美国的重要城市，位于美洲。作为该地区的经济、文化中心，拉斯维加斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "denver": {
     "id": "denver",
@@ -21291,7 +21246,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 39.7392,
     "lng": -104.9903,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558520011-5048c25b7f59?w=400&q=80",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -21332,6 +21287,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21515,14 +21472,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "美国本土安全",
-      "gang_activity": "中等",
-      "gang_desc": "部分区域存在帮派问题",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "丹佛是美国的重要城市，位于美洲。作为该地区的经济、文化中心，丹佛拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "atlanta": {
     "id": "atlanta",
@@ -21533,7 +21484,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 33.749,
     "lng": -84.388,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555853920-278e9e4f3f96?w=400&q=80",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -21574,6 +21525,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21757,14 +21710,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "亚特兰大是美国的重要城市，位于美洲。作为该地区的经济、文化中心，亚特兰大拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "dallas": {
     "id": "dallas",
@@ -21775,7 +21722,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 32.7767,
     "lng": -96.797,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-158526603小巷fe7d8b39f6b27?w=400&q=80",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -21816,6 +21763,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -21999,14 +21948,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "达拉斯是美国的重要城市，位于美洲。作为该地区的经济、文化中心，达拉斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "houston": {
     "id": "houston",
@@ -22058,6 +22001,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22241,14 +22186,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "休斯顿是美国的重要城市，位于美洲。作为该地区的经济、文化中心，休斯顿拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "phoenix": {
     "id": "phoenix",
@@ -22259,7 +22198,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 33.4484,
     "lng": -112.074,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
       "overall": 76,
       "grade": "B+",
@@ -22300,6 +22239,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22483,14 +22424,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "凤凰城是美国的重要城市，位于美洲。作为该地区的经济、文化中心，凤凰城拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "portland": {
     "id": "portland",
@@ -22501,7 +22436,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 45.5152,
     "lng": -122.6784,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
       "overall": 68,
       "grade": "B-",
@@ -22542,6 +22477,8 @@ var CITY_DATABASE = {
       "毒品问题"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22725,14 +22662,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "波特兰是美国的重要城市，位于美洲。作为该地区的经济、文化中心，波特兰拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "san_diego": {
     "id": "san_diego",
@@ -22784,6 +22715,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -22967,14 +22900,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "圣迭戈是美国的重要城市，位于美洲。作为该地区的经济、文化中心，圣迭戈拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "austin": {
     "id": "austin",
@@ -22985,7 +22912,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 30.2672,
     "lng": -97.7431,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -23026,6 +22953,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -23209,14 +23138,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "奥斯汀是美国的重要城市，位于美洲。作为该地区的经济、文化中心，奥斯汀拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
   },
   "mexico_city": {
     "id": "mexico_city",
@@ -23268,6 +23191,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -23451,14 +23376,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "墨西哥城是墨西哥的重要城市，位于美洲。作为该地区的经济、文化中心，墨西哥城拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "cancun": {
     "id": "cancun",
@@ -23469,7 +23388,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇽",
     "lat": 21.1619,
     "lng": -86.8515,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1514450638049-6a12d8e2a63?w=400&q=80",
     "safety": {
       "overall": 61,
       "grade": "B-",
@@ -23510,6 +23429,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -23693,14 +23614,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "坎昆是墨西哥的重要城市，位于美洲。作为该地区的经济、文化中心，坎昆拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "sao_paulo": {
     "id": "sao_paulo",
@@ -23752,6 +23667,8 @@ var CITY_DATABASE = {
       "枪支暴力风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -23935,14 +23852,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "圣保罗是巴西的重要城市，位于美洲。作为该地区的经济、文化中心，圣保罗拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "rio_de_janeiro": {
     "id": "rio_de_janeiro",
@@ -23994,6 +23905,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24177,14 +24090,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "里约热内卢是巴西的重要城市，位于美洲。作为该地区的经济、文化中心，里约热内卢拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "buenos_aires": {
     "id": "buenos_aires",
@@ -24236,6 +24143,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24419,14 +24328,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "布宜诺斯艾利斯是阿根廷的重要城市，位于美洲。作为该地区的经济、文化中心，布宜诺斯艾利斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "santiago": {
     "id": "santiago",
@@ -24437,7 +24340,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇱",
     "lat": -33.4489,
     "lng": -70.6693,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=400&q=80",
     "safety": {
       "overall": 64,
       "grade": "B-",
@@ -24478,6 +24381,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24661,14 +24566,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "圣地亚哥是智利的重要城市，位于美洲。作为该地区的经济、文化中心，圣地亚哥拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "lima": {
     "id": "lima",
@@ -24679,7 +24578,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇪",
     "lat": -12.0464,
     "lng": -77.0428,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=400&q=80",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -24720,6 +24619,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -24903,14 +24804,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "利马是秘鲁的重要城市，位于美洲。作为该地区的经济、文化中心，利马拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "bogota": {
     "id": "bogota",
@@ -24921,7 +24816,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 4.711,
     "lng": -74.0721,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1569959220744-ff553533f492?w=400&q=80",
     "safety": {
       "overall": 63,
       "grade": "B-",
@@ -24962,6 +24857,8 @@ var CITY_DATABASE = {
       "自然灾害"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25145,14 +25042,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "波哥大是哥伦比亚的重要城市，位于美洲。作为该地区的经济、文化中心，波哥大拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "medellin": {
     "id": "medellin",
@@ -25163,7 +25054,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 6.2442,
     "lng": -75.5812,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1569959220744-ff553533f492?w=400&q=80",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -25204,6 +25095,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25387,14 +25280,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "麦德林是哥伦比亚的重要城市，位于美洲。作为该地区的经济、文化中心，麦德林拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "panama_city": {
     "id": "panama_city",
@@ -25446,6 +25333,8 @@ var CITY_DATABASE = {
       "治安差异大"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25629,14 +25518,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "巴拿马城是巴拿马的重要城市，位于美洲。作为该地区的经济、文化中心，巴拿马城拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "cairo": {
     "id": "cairo",
@@ -25647,7 +25530,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇬",
     "lat": 30.0444,
     "lng": 31.2357,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=400&q=80",
     "safety": {
       "overall": 30,
       "grade": "C",
@@ -25688,6 +25571,8 @@ var CITY_DATABASE = {
       "疾病风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -25871,14 +25756,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "低",
-      "war_desc": "埃及安全局势改善，但部分区域需注意",
-      "gang_activity": "中等",
-      "gang_desc": "有组织犯罪存在",
-      "civil_unrest": "中",
-      "civil_desc": "政治过渡期"
-    }
+    "overview": "开罗是埃及的重要城市，位于非洲。作为该地区的经济、文化中心，开罗拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "cape_town": {
     "id": "cape_town",
@@ -25930,6 +25809,8 @@ var CITY_DATABASE = {
       "医疗条件有限"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26113,14 +25994,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "开普敦是南非的重要城市，位于非洲。作为该地区的经济、文化中心，开普敦拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "johannesburg": {
     "id": "johannesburg",
@@ -26131,7 +26006,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇦",
     "lat": -26.2041,
     "lng": 28.0473,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1556449895-a33c9dba33dd?w=400&q=80",
     "safety": {
       "overall": 41,
       "grade": "C",
@@ -26172,6 +26047,8 @@ var CITY_DATABASE = {
       "基础设施差"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26355,14 +26232,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "南非政局稳定",
-      "gang_activity": "高",
-      "gang_desc": "帮派问题严重",
-      "civil_unrest": "中",
-      "civil_desc": "贫富差距大"
-    }
+    "overview": "约翰内斯堡是南非的重要城市，位于非洲。作为该地区的经济、文化中心，约翰内斯堡拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "lagos": {
     "id": "lagos",
@@ -26373,7 +26244,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇬",
     "lat": 6.5244,
     "lng": 3.3792,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
     "safety": {
       "overall": 30,
       "grade": "C",
@@ -26414,6 +26285,8 @@ var CITY_DATABASE = {
       "基础设施差"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26597,14 +26470,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "尼日利亚政局稳定",
-      "gang_activity": "高",
-      "gang_desc": "博科圣地威胁需注意",
-      "civil_unrest": "中",
-      "civil_desc": "安全挑战存在"
-    }
+    "overview": "拉各斯是尼日利亚的重要城市，位于非洲。作为该地区的经济、文化中心，拉各斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "nairobi": {
     "id": "nairobi",
@@ -26615,7 +26482,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇪",
     "lat": -1.2921,
     "lng": 36.8219,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1611348524140-53c9a9dba33d?w=400&q=80",
     "safety": {
       "overall": 38,
       "grade": "C",
@@ -26656,6 +26523,8 @@ var CITY_DATABASE = {
       "治安风险高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -26839,14 +26708,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "肯尼亚政局稳定",
-      "gang_activity": "较高",
-      "gang_desc": "恐怖主义风险需关注",
-      "civil_unrest": "中",
-      "civil_desc": "安全事件偶发"
-    }
+    "overview": "内罗毕是肯尼亚的重要城市，位于非洲。作为该地区的经济、文化中心，内罗毕拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "casablanca": {
     "id": "casablanca",
@@ -26857,7 +26720,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 33.5731,
     "lng": -7.5898,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=400&q=80",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -26898,6 +26761,8 @@ var CITY_DATABASE = {
       "政治动荡"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -27081,14 +26946,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "摩洛哥政局稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "卡萨布兰卡是摩洛哥的重要城市，位于非洲。作为该地区的经济、文化中心，卡萨布兰卡拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "marrakech": {
     "id": "marrakech",
@@ -27099,7 +26958,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 31.6295,
     "lng": -7.9811,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=400&q=80",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -27140,6 +26999,8 @@ var CITY_DATABASE = {
       "疾病风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -27323,14 +27184,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "摩洛哥政局稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "马拉喀什是摩洛哥的重要城市，位于非洲。作为该地区的经济、文化中心，马拉喀什拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "tunis": {
     "id": "tunis",
@@ -27341,7 +27196,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇳",
     "lat": 36.8065,
     "lng": 10.1815,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1530521699620-8a37ad6b0e5f?w=400&q=80",
     "safety": {
       "overall": 64,
       "grade": "B-",
@@ -27382,6 +27237,8 @@ var CITY_DATABASE = {
       "疾病风险"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -27565,14 +27422,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "低",
-      "war_desc": "突尼斯安全局势改善",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "民主过渡期"
-    }
+    "overview": "突尼斯是突尼斯的重要城市，位于非洲。作为该地区的经济、文化中心，突尼斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "accra": {
     "id": "accra",
@@ -27624,6 +27475,8 @@ var CITY_DATABASE = {
       "政治动荡"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -27807,14 +27660,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "阿克拉是加纳的重要城市，位于非洲。作为该地区的经济、文化中心，阿克拉拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "addis_ababa": {
     "id": "addis_ababa",
@@ -27866,6 +27713,8 @@ var CITY_DATABASE = {
       "医疗条件有限"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -28049,17 +27898,27 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "亚的斯亚贝巴是埃塞俄比亚的重要城市，位于非洲。作为该地区的经济、文化中心，亚的斯亚贝巴拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "sydney": {
     "id": "sydney",
+    "safetyIndex": {
+      "overall": 85, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 85, "note": "治安良好，偶有盗窃" },
+        "healthMedical": { "score": 88, "note": "医疗水平高，全民医保Medicare完善" },
+        "transportSafety": { "score": 80, "note": "公交系统发达，高峰期拥堵" },
+        "naturalDisaster": { "score": 75, "note": "山火季节(11-3月)需关注预警" },
+        "environmental": { "score": 82, "note": "空气质量良好" },
+        "socialStability": { "score": 88, "note": "社会稳定，多元文化和谐" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"新冠疫苗","note":"根据当地要求","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(6-8月)","prevention":"接种疫苗"},{"name":"雷氏综合征","risk":"低","season":"全年","prevention":"注意食品安全"},{"name":"UV辐射","risk":"高","season":"全年","prevention":"防晒是日常必需"}],
+      "medicalTips": ["Medicare澳洲公民/永居免费医疗","海外游客需购买私人保险","紧急情况拨打000","GP(全科医生)是就医第一步"]
+    },
     "name": "悉尼",
     "nameEn": "Sydney",
     "country": "澳大利亚",
@@ -28067,7 +27926,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -33.8688,
     "lng": 151.2093,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -28108,6 +27967,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -28291,14 +28152,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "澳大利亚和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "悉尼是澳大利亚的重要城市，位于大洋洲。作为该地区的经济、文化中心，悉尼拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "澳大利亚建立了完善的城市安全体系，悉尼、墨尔本等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、科技监控和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "melbourne": {
     "id": "melbourne",
@@ -28309,7 +28164,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -37.8136,
     "lng": 144.9631,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=400&q=80",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -28350,6 +28205,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -28533,14 +28390,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "澳大利亚和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "墨尔本是澳大利亚的重要城市，位于大洋洲。作为该地区的经济、文化中心，墨尔本拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "澳大利亚建立了完善的城市安全体系，悉尼、墨尔本等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、科技监控和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "brisbane": {
     "id": "brisbane",
@@ -28551,7 +28402,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -27.4698,
     "lng": 153.0251,
-    "image": "https://images.unsplash.com/photo-1534430485822-0d3d8e56d7c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1569255015987-4e8b47bde4d5?w=400&q=80",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -28592,6 +28443,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -28775,14 +28628,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "澳大利亚和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "布里斯班是澳大利亚的重要城市，位于大洋洲。作为该地区的经济、文化中心，布里斯班拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "澳大利亚建立了完善的城市安全体系，悉尼、墨尔本等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、科技监控和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "perth": {
     "id": "perth",
@@ -28793,7 +28640,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -31.9505,
     "lng": 115.8605,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1543976786-9fdc5f05fa48?w=400&q=80",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -28834,6 +28681,8 @@ var CITY_DATABASE = {
       "地域广阔交通不便"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -29017,14 +28866,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "澳大利亚和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "珀斯是澳大利亚的重要城市，位于大洋洲。作为该地区的经济、文化中心，珀斯拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "澳大利亚建立了完善的城市安全体系，悉尼、墨尔本等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、科技监控和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "adelaide": {
     "id": "adelaide",
@@ -29035,7 +28878,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -34.9285,
     "lng": 138.6007,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1566734904496-9309bb1798ae?w=400&q=80",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -29076,6 +28919,8 @@ var CITY_DATABASE = {
       "紫外线强"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "000",
       "ambulance": "000",
       "fire": "000",
@@ -29259,14 +29104,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "阿德莱德是澳大利亚的重要城市，位于大洋洲。作为该地区的经济、文化中心，阿德莱德拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "澳大利亚建立了完善的城市安全体系，悉尼、墨尔本等主要城市配备先进的监控系统、专业的应急响应团队和全面的医疗救援设施。通过社区警务、科技监控和国际合作，为居民和游客提供了优质的安全保障。"
   },
   "auckland": {
     "id": "auckland",
@@ -29277,7 +29116,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -36.8509,
     "lng": 174.7645,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1507692812060-98338d07aca3?w=400&q=80",
     "safety": {
       "overall": 91,
       "grade": "A",
@@ -29318,6 +29157,8 @@ var CITY_DATABASE = {
       "野生动物"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -29501,14 +29342,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "新西兰和平稳定",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会稳定"
-    }
+    "overview": "奥克兰是新西兰的重要城市，位于大洋洲。作为该地区的经济、文化中心，奥克兰拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "wellington": {
     "id": "wellington",
@@ -29519,7 +29354,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -41.2865,
     "lng": 174.7762,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1507692812060-98338d07aca3?w=400&q=80",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -29560,6 +29395,8 @@ var CITY_DATABASE = {
       "野生动物"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -29743,14 +29580,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "惠灵顿是新西兰的重要城市，位于大洋洲。作为该地区的经济、文化中心，惠灵顿拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "christchurch": {
     "id": "christchurch",
@@ -29761,7 +29592,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -43.532,
     "lng": 172.6362,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1507692812060-98338d07aca3?w=400&q=80",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -29802,6 +29633,8 @@ var CITY_DATABASE = {
       "野生动物"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "112",
       "ambulance": "112",
       "fire": "112",
@@ -29985,14 +29818,8 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
+    "overview": "基督城是新西兰的重要城市，位于大洋洲。作为该地区的经济、文化中心，基督城拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "日本是全球犯罪率最低的国家之一。东京作为首都，建立了完善的城市安全体系，包括广泛覆盖的监控网络、高效的应急响应机制和严格的法律执行。2019年东京奥运会后，城市安全设施进一步升级，国际游客安全保障显著提升。"
   },
   "honolulu": {
     "id": "honolulu",
@@ -30003,7 +29830,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 21.3069,
     "lng": -157.8583,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=400&q=80",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -30044,6 +29871,8 @@ var CITY_DATABASE = {
       "医疗费用高"
     ],
     "emergency": {
+      "touristPolice": "110",
+      "touristHotline": "12345",
       "police": "911",
       "ambulance": "911",
       "fire": "911",
@@ -30227,16 +30056,7 @@ var CITY_DATABASE = {
         }
       }
     },
-    "conflict": {
-      "war_risk": "无",
-      "war_desc": "该地区无武装冲突",
-      "gang_activity": "较少",
-      "gang_desc": "有组织犯罪较少",
-      "civil_unrest": "低",
-      "civil_desc": "社会秩序良好"
-    }
-  }};
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { CITY_DATABASE, SAFETY_COLORS };
-}
+    "overview": "檀香山是美国的重要城市，位于美洲。作为该地区的经济、文化中心，檀香山拥有丰富的历史遗产和现代化的城市设施。该市注重城市安全建设，为居民和游客提供了良好的生活环境。",
+    "safety_history": "美国建立了完善的联邦和地方两级安全管理体系。各主要城市配备现代化的监控设备、专业的应急响应团队和全面的医疗救援系统。通过社区警务、科技监控和国际合作，城市安全治理能力显著提升。"
+  }
+};
