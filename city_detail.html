@@ -615,55 +615,6 @@
       gap: 6px;
     }
 
-    /* 食品安全板块 */
-    .food-safety-section {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 28px;
-    }
-    .food-safety-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .food-safety-score {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 14px;
-    }
-    .food-safety-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-    .food-safety-item {
-      background: var(--bg2);
-      border-radius: 10px;
-      padding: 12px;
-    }
-    .food-safety-item h5 { font-size: 13px; margin-bottom: 4px; }
-    .food-safety-item p { font-size: 12px; color: var(--text2); }
-    .food-watch-list { list-style: none; display: grid; gap: 6px; }
-    .food-watch-list li {
-      font-size: 13px;
-      color: var(--text2);
-      padding: 6px 12px;
-      background: var(--bg2);
-      border-radius: 8px;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-    }
-    .food-watch-list li span.warn { color: var(--yellow); font-weight: 700; flex-shrink: 0; }
-
     /* ── Safety Tips ── */
     .tips-section { margin-bottom: 24px; }
     .tips-title { font-size: 15px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
@@ -910,12 +861,9 @@
       </div>
     </section>
     
-    <!-- ④ Lifestyle (含食品安全) -->
+    <!-- ④ Lifestyle (美食/景点/夜生活/节庆) -->
     <section class="section" id="section-lifestyle">
-      <h2 class="section-title">🍜 吃喝玩乐 & 食品安全</h2>
-
-      <!-- 食品安全概览 -->
-      <div class="food-safety-section" id="food-safety-overview"></div>
+      <h2 class="section-title">🍜 吃喝玩乐 & 特色体验</h2>
 
       <!-- 美食推荐 -->
       <div class="lifestyle-section" id="food-section"></div>
@@ -1346,21 +1294,6 @@
     // ─── Lifestyle ───
     function renderLifestyle() {
       const lr = city.localRecommendations || city.lifestyle || {};
-
-      // 食品安全概览
-      const fs = city.foodSafety || {};
-      const fsScore = fs.score || 0;
-      const fsLevel = fsScore >= 80 ? {cls:'tag-green',label:'较安全'} : fsScore >= 60 ? {cls:'tag-yellow',label:'需注意'} : {cls:'tag-red',label:'高风险'};
-      document.getElementById('food-safety-overview').innerHTML = `
-        <div class="food-safety-header">
-          <span style="font-size:22px;">🍽️</span>
-          <h3 style="font-size:16px;font-weight:700;">食品安全概况</h3>
-          ${fsScore ? '<span class="food-safety-score overview-tag ' + fsLevel.cls + '">' + fsScore + '分 · ' + fsLevel.label + '</span>' : ''}
-        </div>
-        ${fs.summary ? '<p style="font-size:13px;color:var(--text2);margin-bottom:14px;">' + fs.summary + '</p>' : ''}
-        ${fs.highlights ? '<div class="food-safety-grid">' + fs.highlights.map(h => '<div class="food-safety-item"><h5>' + h.title + '</h5><p>' + h.desc + '</p></div>').join('') + '</div>' : ''}
-        ${fs.warnings && fs.warnings.length ? '<ul class="food-watch-list">' + fs.warnings.map(w => '<li><span class="warn">⚠</span>' + w + '</li>').join('') + '</ul>' : '<p style="color:var(--text3);font-size:13px;">暂无详细食品安全数据</p>'}
-      `;
 
       // 美食
       const foods = lr.foodDrink || lr.food || [];
