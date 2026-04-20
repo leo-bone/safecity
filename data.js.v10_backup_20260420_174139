@@ -1,7 +1,7 @@
 // ============================================================
-// SafeCity Global - 全球城市安全数据库 v11.0 (完整版)
+// SafeCity Global - 全球城市安全数据库 v9.0 (完整版)
 // 包含125个全球主要城市，详细生活旅行信息
-// 更新时间: 2026-04-20 v11.0
+// 更新时间: 2026-04-20 v9.0
 // ============================================================
 
 var SAFETY_COLORS = {
@@ -889,52 +889,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -1962,60 +1916,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻马来西亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -2254,60 +2154,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻台湾使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -2557,60 +2403,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻日本使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "寿司",
@@ -2876,60 +2668,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印度使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -3168,60 +2906,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印度使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -3460,60 +3144,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印尼使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -3752,60 +3382,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "117",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻菲律宾使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -4044,60 +3620,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "117",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻菲律宾使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -4352,60 +3874,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻阿联酋使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -4644,60 +4112,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻卡塔尔使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -4936,60 +4350,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻阿曼使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -5228,60 +4588,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻阿曼使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -5520,60 +4826,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻以色列使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -5812,60 +5064,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻土耳其使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -6104,60 +5302,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻泰国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -6396,60 +5540,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻泰国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -6688,60 +5778,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻泰国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -6980,60 +6016,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻马来西亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -7272,60 +6254,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印度使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -7564,60 +6492,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印度使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -7856,60 +6730,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印度使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -8148,60 +6968,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印度使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -8440,60 +7206,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻印度使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -8732,52 +7444,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -9016,52 +7682,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -9300,52 +7920,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -9584,52 +8158,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -9868,52 +8396,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -10678,60 +9160,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻德国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -10970,60 +9398,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻奥地利使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -11262,60 +9636,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻奥地利使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -11554,60 +9874,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻瑞士使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -11846,60 +10112,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻瑞典使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -12138,60 +10350,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻丹麦使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -12430,60 +10588,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻丹麦使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -12722,60 +10826,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻芬兰使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -13014,60 +11064,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻意大利使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -13306,60 +11302,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻意大利使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -13598,60 +11540,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻西班牙使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -13890,60 +11778,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻葡萄牙使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -14182,60 +12016,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻波兰使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -14474,60 +12254,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻波兰使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -14766,60 +12492,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻希腊使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -15058,60 +12730,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻比利时使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -15350,60 +12968,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻俄罗斯使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -15642,60 +13206,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻俄罗斯使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -15934,60 +13444,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻俄罗斯使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -16226,60 +13682,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻德国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -16518,60 +13920,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻德国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -16810,60 +14158,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻德国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -17102,60 +14396,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻德国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -17394,60 +14634,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻英国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -17686,60 +14872,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻英国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -17978,60 +15110,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻英国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -18270,60 +15348,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻法国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -18562,60 +15586,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻法国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -18854,60 +15824,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻法国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -19146,60 +16062,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻意大利使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -19438,60 +16300,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻意大利使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -19730,60 +16538,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻西班牙使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -20022,60 +16776,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻西班牙使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -20314,60 +17014,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻西班牙使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -20606,60 +17252,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻葡萄牙使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -20898,60 +17490,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻葡萄牙使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -21190,60 +17728,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻波兰使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -21482,60 +17966,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻瑞士使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -21774,52 +18204,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "110",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -22074,60 +18458,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -22366,60 +18696,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -22658,60 +18934,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -22950,60 +19172,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻加拿大使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -23242,60 +19410,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻加拿大使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -23534,60 +19648,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "112",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻加拿大使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -23826,60 +19886,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -24118,60 +20124,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -24410,60 +20362,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -24702,60 +20600,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -24994,60 +20838,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -25286,60 +21076,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -25578,60 +21314,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -25870,60 +21552,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -26162,60 +21790,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -26454,60 +22028,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -26746,60 +22266,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -27038,60 +22504,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -27330,60 +22742,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -27622,60 +22980,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻美国使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -27914,60 +23218,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻墨西哥使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -28206,60 +23456,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "911",
-            "ambulance": "911",
-            "fire": "911"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻墨西哥使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -28498,60 +23694,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "190",
-            "ambulance": "192",
-            "fire": "193"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "192",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻巴西使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -28790,60 +23932,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "190",
-            "ambulance": "192",
-            "fire": "193"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "192",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻巴西使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -29082,60 +24170,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "101",
-            "ambulance": "107",
-            "fire": "100"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "107",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻阿根廷使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "地铁/捷运",
-                        "description": "覆盖全面，换乘方便"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -29374,60 +24408,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "133",
-            "ambulance": "131",
-            "fire": "132"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "131",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻智利使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -29666,60 +24646,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "123",
-            "ambulance": "123",
-            "fire": "119"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "123",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻哥伦比亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -29958,60 +24884,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "123",
-            "ambulance": "123",
-            "fire": "119"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "123",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻哥伦比亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -30250,60 +25122,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "123",
-            "ambulance": "123",
-            "fire": "119"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "123",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻哥伦比亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -30542,60 +25360,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "104",
-            "ambulance": "911",
-            "fire": "103"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "911",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻巴拿马使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -30834,60 +25598,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "10111",
-            "ambulance": "10177",
-            "fire": "10177"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "10177",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻南非使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -31126,60 +25836,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "10111",
-            "ambulance": "10177",
-            "fire": "10177"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "10177",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻南非使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -31418,60 +26074,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "10111",
-            "ambulance": "10177",
-            "fire": "10177"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "10177",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻南非使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -31710,60 +26312,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "999",
-            "ambulance": "999",
-            "fire": "999"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "999",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻肯尼亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -32002,60 +26550,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "999",
-            "ambulance": "999",
-            "fire": "999"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "999",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻肯尼亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -32294,60 +26788,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "19",
-            "ambulance": "15",
-            "fire": "15"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "15",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻摩洛哥使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -32586,60 +27026,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "19",
-            "ambulance": "15",
-            "fire": "15"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "15",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻摩洛哥使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -32878,60 +27264,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "197",
-            "ambulance": "190",
-            "fire": "198"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "190",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻突尼斯使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -33170,60 +27502,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "991",
-            "ambulance": "907",
-            "fire": "939"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "907",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻埃塞俄比亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -33462,60 +27740,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "991",
-            "ambulance": "907",
-            "fire": "939"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "907",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻埃塞俄比亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -33770,60 +27994,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "000",
-            "ambulance": "000",
-            "fire": "000"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "000",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻澳大利亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -34062,60 +28232,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "000",
-            "ambulance": "000",
-            "fire": "000"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "000",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻澳大利亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -34354,60 +28470,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "000",
-            "ambulance": "000",
-            "fire": "000"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "000",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻澳大利亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -34646,60 +28708,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "000",
-            "ambulance": "000",
-            "fire": "000"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心主要医院",
-                  "phone": "000",
-                  "address": "市中心区域",
-                  "features": [
-                        "急诊服务"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [
-            {
-                  "name": "中国驻澳大利亚使领馆",
-                  "phone": "请查询外交部领事服务网",
-                  "address": "请查询外交部领事服务网",
-                  "hours": "周一至周五 9:00-12:00",
-                  "emergency": false
-            }
-      ],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航和位置分享"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "财产安全",
-                  "tips": [
-                        "将贵重物品放在酒店保险箱",
-                        "避免在公共场所显露贵重物品"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -34938,51 +28946,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心医院",
-                  "phone": "112",
-                  "address": "市中心",
-                  "features": [
-                        "急诊"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "安全",
-                  "tips": [
-                        "注意财物"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -35221,51 +29184,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心医院",
-                  "phone": "112",
-                  "address": "市中心",
-                  "features": [
-                        "急诊"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "安全",
-                  "tips": [
-                        "注意财物"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -35504,51 +29422,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心医院",
-                  "phone": "112",
-                  "address": "市中心",
-                  "features": [
-                        "急诊"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "安全",
-                  "tips": [
-                        "注意财物"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -35787,51 +29660,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心医院",
-                  "phone": "112",
-                  "address": "市中心",
-                  "features": [
-                        "急诊"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "安全",
-                  "tips": [
-                        "注意财物"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
@@ -36070,51 +29898,6 @@ var CITY_DATABASE = {
       ]
     },
     "lifestyle": {
-      
-      "emergencyContacts": {
-      "phoneNumbers": {
-            "police": "112",
-            "ambulance": "112",
-            "fire": "112"
-      },
-      "hospitals": [
-            {
-                  "name": "市中心医院",
-                  "phone": "112",
-                  "address": "市中心",
-                  "features": [
-                        "急诊"
-                  ],
-                  "emergency24h": true
-            }
-      ],
-      "consulates": [],
-      "safetyApps": [
-            {
-                  "name": "Google Maps",
-                  "icon": "map",
-                  "description": "导航"
-            }
-      ],
-      "selfProtection": [
-            {
-                  "icon": "lock",
-                  "title": "安全",
-                  "tips": [
-                        "注意财物"
-                  ]
-            }
-      ],
-      "transport": {
-            "modes": [
-                  {
-                        "icon": "train",
-                        "name": "公共交通",
-                        "description": "覆盖全市"
-                  }
-            ]
-      }
-},
       "food": [
         {
           "name": "当地特色菜",
