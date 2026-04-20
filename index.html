@@ -327,6 +327,30 @@
     }
     .view-detail-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
+    /* ─────────── Conflict 风险标签 ─────────── */
+    .conflict-badges {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      margin-top: 10px; padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .conflict-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 8px; border-radius: 4px;
+      font-size: 10px; font-weight: 600; white-space: nowrap;
+    }
+    .conflict-badge.warning {
+      background: rgba(245,158,11,0.15); color: #f59e0b;
+      border: 1px solid rgba(245,158,11,0.3);
+    }
+    .conflict-badge.danger {
+      background: rgba(239,68,68,0.15); color: #ef4444;
+      border: 1px solid rgba(239,68,68,0.3);
+    }
+    .conflict-badge.safe {
+      background: rgba(16,185,129,0.12); color: #10b981;
+      border: 1px solid rgba(16,185,129,0.25);
+    }
+
     /* ─────────── 城市详情页 ─────────── */
     #city-detail-page { display: none; padding-top: 64px; }
     #city-detail-page.active { display: block; }
@@ -1047,7 +1071,7 @@
 <!-- ████ 首页 ████ -->
 <div id="home-page" class="page active">
   <div id="hero">
-    <div class="hero-badge">🌍 全球 100 座城市安全数据 · 7大洲全覆盖</div>
+    <div class="hero-badge">🌍 145 座城市安全数据 · 7大洲全覆盖</div>
     <h1 class="hero-title">全球城市安全<br>旅行指南</h1>
     <p class="hero-subtitle">
       出行前，先了解目的地的真实安全状况。<br>
@@ -1060,11 +1084,11 @@
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num" id="stat-cities">100</div>
+        <div class="hero-stat-num" id="stat-cities">145</div>
         <div class="hero-stat-label">收录城市</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-num">8</div>
         <div class="hero-stat-label">洲际覆盖</div>
       </div>
       <div class="hero-stat">
@@ -1131,9 +1155,11 @@
   <div class="detail-tabs">
     <button class="detail-tab active" onclick="switchDetailTab('safety', this)">🛡️ 安全评估</button>
     <button class="detail-tab" onclick="switchDetailTab('emergency', this)">📞 紧急联系</button>
-    <button class="detail-tab detail-tab-live" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
+    <button class="detail-tab" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
     <button class="detail-tab" onclick="switchDetailTab('lifestyle', this)">🍜 吃喝玩乐</button>
     <button class="detail-tab" onclick="switchDetailTab('hotspots', this)">⚠️ 危险区域</button>
+    <button class="detail-tab" onclick="switchDetailTab('food-safety', this)">🍱 食品安全</button>
+    <button class="detail-tab" onclick="switchDetailTab('disease-prevention', this)">🏥 疾病预防</button>
     <button class="detail-tab" onclick="switchDetailTab('history', this)">📜 历史背景</button>
   </div>
 
@@ -1162,8 +1188,10 @@
     <div class="embassy-list" id="embassy-list"></div>
     <div class="sub-section-title">📱 推荐安全应用</div>
     <div class="apps-grid" id="apps-grid"></div>
+    <div class="sub-section-title">🚇 交通指南</div>
+    <div id="transport-guide"></div>
     <div class="sub-section-title">🥋 自保策略</div>
-    <ul class="self-defense-list" id="self-defense-list"></ul>
+    <div id="self-defense-list"></div>
   </div>
 
   <!-- 吃喝玩乐面板 -->
@@ -1189,6 +1217,24 @@
     <div id="hotspots-list"></div>
     <div class="sub-section-title">✅ 相对安全区域</div>
     <div id="safe-areas-list"></div>
+  </div>
+
+  <!-- 食品安全面板 -->
+  <div id="panel-food-safety" class="detail-panel">
+    <div class="section-header">
+      <h2>🍱 食品安全指南</h2>
+      <p>当地饮用水、街头美食、餐厅卫生等详细情况</p>
+    </div>
+    <div id="food-safety-content"></div>
+  </div>
+
+  <!-- 疾病预防面板 -->
+  <div id="panel-disease-prevention" class="detail-panel">
+    <div class="section-header">
+      <h2>🏥 疾病预防与健康建议</h2>
+      <p>疫苗接种、传染病风险、季节性疾病预防</p>
+    </div>
+    <div id="disease-prevention-content"></div>
   </div>
 
   <!-- 历史背景面板 -->
@@ -1269,10 +1315,10 @@
 
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球100城市安全数据库 -->
-<script src="data.js?v=202604010000"></script>
-<script src="data_enhanced.js?v=202604010000"></script>
-<script src="data_new.js?v=202603312330"></script>
-<script src="realtime-api.js?v=202603312330"></script>
+<script src="data.js?v=202604060000"></script>
+<script src="data_enhanced.js?v=202604012200"></script>
+<script src="data_new.js?v=202604012200"></script>
+<script src="realtime-api.js?v=202604012200"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
@@ -1355,6 +1401,35 @@ function getScoreClass(score) {
   return 'score-critical';
 }
 
+// Conflict 风险标签生成
+function getConflictBadges(city) {
+  const data = CITY_DATABASE[city.id];
+  if (!data || !data.conflict) return '';
+  const c = data.conflict;
+  let badges = [];
+
+  // 战争风险
+  if (c.war_risk === '中' || c.war_risk === '高') {
+    badges.push('<span class="conflict-badge danger">⚠️ 战争: ' + c.war_risk + '</span>');
+  } else if (c.war_risk === '低') {
+    badges.push('<span class="conflict-badge warning">⚡ 战争: ' + c.war_risk + '</span>');
+  }
+
+  // 帮派活动
+  if (c.gang_activity === '高' || c.gang_activity === '较高') {
+    badges.push('<span class="conflict-badge danger">⚠️ 帮派: ' + c.gang_activity + '</span>');
+  } else if (c.gang_activity === '中等') {
+    badges.push('<span class="conflict-badge warning">⚡ 帮派: ' + c.gang_activity + '</span>');
+  }
+
+  // 社会动荡
+  if (c.civil_unrest === '高') {
+    badges.push('<span class="conflict-badge warning">⚡ 动荡: ' + c.civil_unrest + '</span>');
+  }
+
+  return badges.join('');
+}
+
 // ─────────────────────────────────────────────────────
 // 首页城市卡片渲染
 // ─────────────────────────────────────────────────────
@@ -1396,7 +1471,7 @@ function renderCityGrid(filterContinent = '全部') {
   cities = [...cities].sort((a, b) => b.safetyScore - a.safetyScore);
   
   // 维度名称中文映射
-  const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
+  const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害', food: '食品安全', disease: '疾病预防' };
 
   grid.innerHTML = cities.map((city, idx) => {
     const gs = gradeStyle(city.safetyGrade);
@@ -1419,7 +1494,7 @@ function renderCityGrid(filterContinent = '全部') {
         <div class="city-card-name">${city.name}</div>
         <div class="city-card-country">${city.country} · ${city.continent}</div>
         <div class="city-card-scores">
-          ${Object.entries(grades).slice(0, 4).map(([key, grade]) => {
+          ${Object.entries(grades).slice(0, 6).map(([key, grade]) => {
             const score = gradeToScore(grade);
             return `
             <div class="city-score-item">
@@ -1429,6 +1504,9 @@ function renderCityGrid(filterContinent = '全部') {
               </div>
             </div>`;
           }).join('')}
+        </div>
+        <div class="conflict-badges">
+          ${getConflictBadges(city)}
         </div>
         <div class="city-card-footer">
           <div class="city-overall">
@@ -1458,14 +1536,14 @@ function filterContinent(name, btn) {
 // 城市详情页
 // ─────────────────────────────────────────────────────
 function openCity(cityId) {
-  // 优先使用 data_new.js 中的详细数据
+  // 优先使用 data.js 中的完整数据（包含 emergency, lifestyle, safety.hotspots 等）
   let data = null;
-  if (typeof CITY_DATABASE_DETAIL !== 'undefined' && CITY_DATABASE_DETAIL[cityId]) {
-    data = CITY_DATABASE_DETAIL[cityId];
-  }
-  // 如果没有详细数据，回退到基础数据
-  if (!data && CITY_DATABASE[cityId]) {
+  if (CITY_DATABASE[cityId]) {
     data = CITY_DATABASE[cityId];
+  }
+  // 备用：使用 data_new.js 中的详细数据
+  if (!data && typeof CITY_DATABASE_DETAIL !== 'undefined' && CITY_DATABASE_DETAIL[cityId]) {
+    data = CITY_DATABASE_DETAIL[cityId];
   }
   if (!data) { showToast('城市数据加载中，敬请期待...'); return; }
   currentCity = data;
@@ -1505,138 +1583,133 @@ function populateCityDetail(data) {
   renderEmergencyPanel(adaptedData);
   renderLifestylePanel(adaptedData);
   renderHotspotsPanel(adaptedData);
+  renderFoodSafetyPanel(adaptedData);
+  renderDiseasePreventionPanel(adaptedData);
   renderHistoryPanel(adaptedData);
 }
 
-// 数据格式适配器：将 data_new.js 的新格式转换为旧格式兼容
+// 数据格式适配器：将新格式转换为渲染函数需要的格式
 function normalizeCityData(data) {
-  // 如果已经有 safety 字段（旧格式），直接返回
-  if (data.safety && data.safety.overall) {
+  // 优先使用 safetyIndex（新格式），避免被旧数据覆盖
+  const hasNewFormat = data.safetyIndex && data.emergencyContacts;
+  const hasOldFormat = data.safety && data.safety.overall && !data.safetyIndex;
+  
+  // 如果是旧格式（有 safety.overall 但没有 safetyIndex），直接返回
+  if (hasOldFormat) {
     return data;
   }
   
-  // 如果是 data_new.js 的新格式 (safetyIndex)
-  if (data.safetyIndex) {
-    // 转换紧急联系
-    const emergency = data.emergencyContacts ? {
-      police: data.emergencyContacts.phoneNumbers?.police || '',
-      ambulance: data.emergencyContacts.phoneNumbers?.ambulance || '',
-      fire: data.emergencyContacts.phoneNumbers?.fire || '',
-      nonEmergency: data.emergencyContacts.phoneNumbers?.nonEmergency || '',
-      touristPolice: data.emergencyContacts.phoneNumbers?.touristPolice || '',
-      touristHotline: data.emergencyContacts.phoneNumbers?.touristHotline || '',
+  // 如果是新格式或混合格式，转换为统一格式
+  if (hasNewFormat || data.safetyIndex) {
+    // 转换 emergencyContacts → emergency
+    const emergency = {
+      police: data.emergencyContacts?.phoneNumbers?.police || '',
+      ambulance: data.emergencyContacts?.phoneNumbers?.ambulance || '',
+      fire: data.emergencyContacts?.phoneNumbers?.fire || '',
+      touristPolice: data.emergencyContacts?.phoneNumbers?.touristPolice || '',
+      touristHotline: data.emergencyContacts?.phoneNumbers?.tourist || '',
       embassies: {},
-      hospitals: data.emergencyContacts.importantOrganizations?.filter(o => 
-        o.description?.includes('医院') || o.description?.includes('医疗')
-      ).map(h => ({ name: h.name, phone: h.phone, address: h.address || '' })) || [],
-      apps: data.safetyTips?.general?.slice(0, 5) || [],
-      selfDefense: data.safetyTips?.forWomen || []
-    } : data.emergency;
+      hospitals: (data.emergencyContacts?.hospitals || []).map(h => ({
+        name: h.name,
+        phone: h.phone,
+        address: h.address || ''
+      })),
+      apps: (data.emergencyContacts?.safetyApps || []).map(a => `${a.icon} ${a.name}`),
+      selfDefense: (data.emergencyContacts?.selfProtection || []).map(s => `${s.icon} ${s.title}: ${s.tips.join('；')}`)
+    };
     
-    // 转换领事馆
+    // 添加领事馆
     if (data.emergencyContacts?.consulates) {
       data.emergencyContacts.consulates.forEach(c => {
-        emergency.embassies[c.name] = c.phone;
+        emergency.embassies[c.name] = `${c.phone} ${c.hours || ''}`;
       });
     }
     
-    // 转换生活方式推荐 - 完整版（匹配渲染函数字段）
+    // 转换 lifestyle（旧格式）从 localRecommendations（新格式）
     const lifestyle = {
-      food: (data.localRecommendations?.foodDrink || []).map(f => ({ 
+      food: (data.localRecommendations?.foodDrink || data.lifestyle?.food || []).map(f => ({ 
         name: f.name, 
         type: f.type, 
         desc: f.description, 
-        price: f.priceRange,
-        tip: f.safetyTips 
+        price: f.priceRange || f.price,
+        tip: f.mustTry?.join('、') || f.foodSafety || f.tip
       })),
-      attractions: (data.localRecommendations?.attractions || []).map(a => ({ 
+      attractions: (data.localRecommendations?.attractions || data.lifestyle?.attractions || []).map(a => ({ 
         name: a.name, 
         type: a.type, 
         desc: a.description,
         bestTime: a.bestTime
       })),
-      nightlife: (data.localRecommendations?.nightlife || []).map(n => ({ 
+      nightlife: (data.localRecommendations?.nightlife || data.lifestyle?.nightlife || []).map(n => ({ 
         name: n.name, 
         type: n.type, 
-        desc: n.description, 
-        warning: n.warning 
+        desc: n.description
       })),
-      hiddenGems: (data.localRecommendations?.hiddenGems || []).map(h => ({ 
-        name: h.name, 
-        type: h.type, 
-        desc: h.description, 
-        insiderTip: h.insiderTip 
-      }))
+      festivals: data.localRecommendations?.festivals || data.lifestyle?.festivals || [],
+      transport: data.emergencyContacts?.transport ? 
+        data.emergencyContacts.transport.modes.map(m => `${m.icon} ${m.name}: ${m.description}`).join('\n\n') : 
+        (data.lifestyle?.transport || '')
     };
     
-    // 转换危险区域和安全区域 - 关键修复
+    // 转换危险区域和安全区域
     const hotspots = [];
     if (data.areaSafety?.cautionAreas) {
       data.areaSafety.cautionAreas.forEach(area => {
         hotspots.push({
           area: area.name,
-          desc: area.description,
-          risk: area.safetyLevel?.replace('-', '') || '中'
+          desc: `${area.description}${area.riskTime ? '⏰ ' + area.riskTime : ''}`,
+          risk: '中'
         });
       });
     }
     if (data.areaSafety?.dangerousAreas) {
       data.areaSafety.dangerousAreas.forEach(area => {
-        if (area.name !== '无特别危险区域') {
-          hotspots.push({
-            area: area.name,
-            desc: area.description,
-            risk: '高'
-          });
-        }
+        hotspots.push({
+          area: area.name,
+          desc: `${area.description}${area.riskTime ? '⏰ ' + area.riskTime : ''}`,
+          risk: '高'
+        });
       });
     }
     
-    const safeAreas = [];
-    // 兼容 safestAreas 和 safeAreas 两种字段名
-    const areasList = data.areaSafety?.safestAreas || data.areaSafety?.safeAreas || [];
-    if (areasList.length) {
-      areasList.forEach(area => {
-        safeAreas.push(area.name);
-      });
-    }
-    // 如果没有安全区域数据，用当地推荐景点代替
-    if (!safeAreas.length && data.localRecommendations?.attractions) {
-      data.localRecommendations.attractions.forEach(a => {
-        safeAreas.push(a.name);
-      });
-    }
+    const safeAreas = (data.areaSafety?.safestAreas || []).map(a => a.name);
     
-    // 构建完整的 safety 对象
+    // 构建 safety 对象
     const safety = {
-      overall: data.safetyIndex.overall || 70,
-      grade: data.safetyIndex.grade || 'B',
-      grades: {
-        crime: data.safetyIndex.dimensions?.crimeSafety?.grade || 'B',
-        transport: data.safetyIndex.dimensions?.transportSafety?.grade || 'B',
-        health: data.safetyIndex.dimensions?.healthMedical?.grade || 'B',
-        natural: data.safetyIndex.dimensions?.naturalDisaster?.grade || 'B',
-        environment: data.safetyIndex.dimensions?.environmental?.grade || 'B',
-        social: data.safetyIndex.dimensions?.socialStability?.grade || 'B'
+      overall: data.safetyIndex?.overall || data.safety?.overall || 70,
+      grade: data.safetyIndex?.grade || data.safety?.grade || 'B',
+      grades: data.safety?.grades || {
+        crime: 'B+',
+        transport: 'B',
+        health: 'A-',
+        natural: 'B'
       },
-      history: `${data.name}是${data.country}的重要城市，综合安全指数 ${data.safetyIndex.overall}/100（${data.safetyIndex.grade}级）。${data.safetyIndex.dimensions?.crimeSafety?.description || ''}`,
       hotspots: hotspots,
       safeAreas: safeAreas,
       tips: data.safetyTips?.general || []
     };
+    
+    // 转换 diseasePrevention 从 healthData
+    const diseasePrevention = data.healthData ? {
+      summary: data.healthData.vaccineNote || '暂无疾病预防总结',
+      vaccines: (data.healthData.vaccines?.recommended || []).join('、'),
+      diseases: (data.healthData.diseases || []).map(d => `${d.icon} ${d.name}(${d.risk}风险): ${d.description}`).join('\n\n'),
+      weather: '参考当地天气预报，注意季节性疾病',
+      tips: (data.healthData.medicalTips || []).map(t => `${t.title}: ${t.content}`).join('\n\n')
+    } : (data.diseasePrevention || {});
     
     return {
       ...data,
       safety: safety,
       emergency: emergency,
       lifestyle: lifestyle,
-      highlights: data.localRecommendations?.attractions?.map(a => a.name) || [],
-      risks: hotspots.map(h => h.area),
-      // 新增详细数据
+      diseasePrevention: diseasePrevention,
+      // 保留原始新格式数据
       safetyIndex: data.safetyIndex,
       areaSafety: data.areaSafety,
       localRecommendations: data.localRecommendations,
-      safetyTips: data.safetyTips
+      foodSafety: data.foodSafety,
+      healthData: data.healthData
     };
   }
   
@@ -1815,26 +1888,103 @@ function renderEmergencyPanel(data) {
         <span>📞 <a href="tel:${h.phone}" style="color:var(--accent)">${h.phone}</a></span>
         <span>📍 ${h.address}</span>
       </div>
+      ${h.features ? `<div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap;">
+        ${(h.features || []).map(f => `<span style="background:var(--card2);padding:2px 8px;border-radius:10px;font-size:11px;color:var(--text2);">${f}</span>`).join('')}
+      </div>` : ''}
     </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">如遇紧急医疗状况，请拨打救护车电话</div>';
 
-  // 大使馆
+  // 大使馆 - 优先使用顶层的中国大使馆数据，其次使用emergency.embassies
   const emList = document.getElementById('embassy-list');
-  emList.innerHTML = Object.entries(e.embassies || {}).map(([name, phone]) => `
-    <div class="embassy-item">
-      <span class="embassy-name">🏛️ ${name}</span>
-      <span class="embassy-phone">${phone}</span>
-      <button class="call-btn" onclick="copyText('${phone}','大使馆电话')">📋 复制</button>
-    </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">建议出发前查询所在国在该城市的领事馆电话</div>';
+  let embassyHtml = '';
+  
+  // 优先显示中国大使馆信息（顶层embassy字段）
+  if (data.embassy && data.embassy.name) {
+    embassyHtml = `
+      <div class="embassy-item" style="background:linear-gradient(135deg,rgba(220,53,69,0.1),rgba(220,53,69,0.05));border-color:rgba(220,53,69,0.3);">
+        <div style="flex:1;">
+          <span class="embassy-name">🏛️ ${data.embassy.name}</span>
+          <div style="margin-top:4px;">
+            <span style="color:var(--text-muted);font-size:12px;">📞</span> 
+            <a href="tel:${data.embassy.phone}" style="color:var(--accent);font-weight:600;">${data.embassy.phone}</a>
+            ${data.embassy.emergency ? `<span style="margin-left:8px;color:#ef4444;font-size:11px;">24小时领事保护: ${data.embassy.emergency}</span>` : ''}
+          </div>
+          <div style="margin-top:2px;">
+            <span style="color:var(--text-muted);font-size:12px;">📍</span> 
+            <span style="font-size:12px;">${data.embassy.address}</span>
+          </div>
+        </div>
+        <button class="call-btn" onclick="copyText('${data.embassy.phone}','中国大使馆电话')">📋 复制</button>
+      </div>`;
+  }
+  
+  // 添加其他大使馆（从emergency.embassies）
+  if (Object.keys(e.embassies || {}).length > 0) {
+    embassyHtml += Object.entries(e.embassies || {}).map(([name, phoneInfo]) => `
+      <div class="embassy-item">
+        <div style="flex:1;">
+          <span class="embassy-name">🏛️ ${name}</span>
+          <div style="font-size:12px;color:var(--text2);margin-top:2px;">${phoneInfo}</div>
+        </div>
+        <button class="call-btn" onclick="copyText('${phoneInfo}','大使馆电话')">📋 复制</button>
+      </div>`).join('');
+  }
+  
+  emList.innerHTML = embassyHtml || '<div style="color:var(--text-muted);padding:12px">建议出发前查询所在国在该城市的领事馆电话</div>';
 
   // 推荐APP
   const appsEl = document.getElementById('apps-grid');
-  appsEl.innerHTML = (e.apps || []).map(app => `
-    <div class="app-tag"><span class="app-tag-icon">📱</span>${app}</div>`).join('');
+  const appsData = data.emergencyContacts?.safetyApps || [];
+  if (appsData.length > 0) {
+    appsEl.innerHTML = appsData.map(app => `
+      <div class="app-tag" style="flex-direction:column;align-items:flex-start;padding:12px;">
+        <span style="font-size:18px;margin-bottom:4px;">${app.icon}</span>
+        <span style="font-weight:600;">${app.name}</span>
+        <span style="font-size:11px;color:var(--text2);margin-top:2px;">${app.description}</span>
+      </div>`).join('');
+  } else {
+    appsEl.innerHTML = (e.apps || []).map(app => `
+      <div class="app-tag"><span class="app-tag-icon">📱</span>${app}</div>`).join('');
+  }
+
+  // 交通指南
+  const transportEl = document.getElementById('transport-guide');
+  const transportData = data.emergencyContacts?.transport;
+  if (transportEl) {
+    if (transportData?.modes?.length > 0) {
+      transportEl.innerHTML = transportData.modes.map(m => `
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="font-size:24px;">${m.icon}</span>
+            <span style="font-weight:600;font-size:15px;">${m.name}</span>
+          </div>
+          <p style="color:var(--text);font-size:13px;line-height:1.6;margin:0 0 8px;">${m.description}</p>
+          ${m.tips?.length ? `<div style="margin-top:8px;">
+            ${m.tips.map(tip => `<div style="font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid var(--border);">💡 ${tip}</div>`).join('')}
+          </div>` : ''}
+        </div>`).join('');
+    } else {
+      transportEl.innerHTML = '<div style="color:var(--text-muted);padding:12px;">暂无交通指南信息</div>';
+    }
+  }
 
   // 自保策略
   const sdList = document.getElementById('self-defense-list');
-  sdList.innerHTML = (e.selfDefense || []).map(s => `
-    <li><span>🛡️</span><span>${s}</span></li>`).join('');
+  const selfProtection = data.emergencyContacts?.selfProtection || [];
+  if (selfProtection.length > 0) {
+    sdList.innerHTML = selfProtection.map(s => `
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+          <span style="font-size:18px;">${s.icon}</span>
+          <span style="font-weight:600;">${s.title}</span>
+        </div>
+        <ul style="margin:0;padding-left:20px;font-size:13px;color:var(--text);line-height:1.8;">
+          ${(s.tips || []).map(tip => `<li>${tip}</li>`).join('')}
+        </ul>
+      </div>`).join('');
+  } else {
+    sdList.innerHTML = (e.selfDefense || []).map(s => `
+      <li><span>🛡️</span><span>${s}</span></li>`).join('') || '<div style="color:var(--text-muted);padding:12px;">暂无自保策略信息</div>';
+  }
 }
 
 // ─────────────────────────────────────────────────────
@@ -2074,13 +2224,15 @@ function generateDefaultLifestyle(data) {
 // ─────────────────────────────────────────────────────
 function renderHotspotsPanel(data) {
   const s = data.safety || {};
+  // 优先使用 lifestyle.hotspots（更详细的真实数据），备用 safety.hotspots
+  const hotspots = data.lifestyle?.hotspots || s.hotspots || [];
   const riskColors = {
     '极高': '#dc2626', '高': '#ef4444', '中高': '#f97316',
     '中': '#f59e0b', '低中': '#22c55e', '法律风险': '#6366f1'
   };
 
   const hotspotsList = document.getElementById('hotspots-list');
-  hotspotsList.innerHTML = (s.hotspots || []).map(h => `
+  hotspotsList.innerHTML = (hotspots || []).map(h => `
     <div class="hotspot-card risk-${h.risk}">
       <div>
         <div class="hotspot-area">⚠️ ${h.area}</div>
@@ -2092,14 +2244,208 @@ function renderHotspotsPanel(data) {
     </div>`).join('') || `<div style="color:var(--text-muted);padding:16px">区域安全信息基于综合安全分 ${s.overall}/100</div>`;
 
   const safeEl = document.getElementById('safe-areas-list');
+  // 优先使用 lifestyle.safeAreas（真实数据），备用 safety.safeAreas
+  const safeAreas = data.lifestyle?.safeAreas || s.safeAreas || data.highlights || [];
   safeEl.innerHTML = `
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;">
-      ${(s.safeAreas || data.highlights || []).map(a => `
+      ${(safeAreas).map(a => `
         <span style="background:rgba(16,185,129,0.1);color:#10b981;border:1px solid rgba(16,185,129,0.25);
               border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;">
           ✓ ${a}
         </span>`).join('')}
     </div>`;
+}
+
+// ─────────────────────────────────────────────────────
+// 食品安全面板
+// ─────────────────────────────────────────────────────
+function renderFoodSafetyPanel(data) {
+  const fs = data.foodSafety || {};
+  const contentEl = document.getElementById('food-safety-content');
+  
+  if (!fs.summary && !fs.score) {
+    contentEl.innerHTML = '<div style="color:var(--text-muted);padding:20px;">暂无该城市食品安全数据</div>';
+    return;
+  }
+  
+  // 构建评分星级
+  const score = fs.score || 70;
+  const stars = Math.round(score / 20);
+  const starDisplay = '★'.repeat(stars) + '☆'.repeat(5 - stars);
+  
+  contentEl.innerHTML = `
+    ${fs.score ? `
+    <div style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(16,185,129,0.05));border:1px solid rgba(16,185,129,0.3);border-radius:12px;padding:20px;margin-bottom:16px;text-align:center;">
+      <div style="font-size:32px;color:#10b981;font-weight:700;">${score}<span style="font-size:16px;color:var(--text2);">/100</span></div>
+      <div style="font-size:20px;color:#10b981;letter-spacing:4px;margin-top:4px;">${starDisplay}</div>
+      <div style="font-size:14px;color:var(--text2);margin-top:4px;">食品安全指数</div>
+    </div>` : ''}
+    
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h3 style="margin:0 0 12px;font-size:16px;">📋 总体情况</h3>
+      <p style="color:var(--text);margin:0;line-height:1.7;">${fs.summary || fs.tapWater || '暂无详细说明'}</p>
+    </div>
+    
+    ${fs.highlights?.length ? `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px;">
+      <h4 style="margin:0 0 12px;font-size:14px;color:var(--accent);">✨ 食安亮点</h4>
+      ${fs.highlights.map(h => `
+        <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);">
+          <span style="color:var(--accent);">✓</span>
+          <div>
+            <div style="font-weight:600;font-size:13px;">${h.title}</div>
+            <div style="font-size:12px;color:var(--text2);margin-top:2px;">${h.desc}</div>
+          </div>
+        </div>`).join('')}
+    </div>` : ''}
+    
+    ${fs.warnings?.length ? `
+    <div style="background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(245,158,11,0.05));border:1px solid rgba(245,158,11,0.3);border-radius:12px;padding:16px;margin-bottom:16px;">
+      <h4 style="margin:0 0 12px;font-size:14px;color:#f59e0b;">⚠️ 食安警示</h4>
+      ${fs.warnings.map(w => `
+        <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);">
+          <span style="color:#f59e0b);">!</span>
+          <div style="font-size:13px;color:var(--text);">${w}</div>
+        </div>`).join('')}
+    </div>` : ''}
+    
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🚰 自来水</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.tapWater || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🦐 海鲜</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.seafood || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🍢 街头美食</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.streetFood || '无数据'}</p>
+      </div>
+      
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:#ef4444;">⚠️ 避免食用</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${fs.avoid || '无数据'}</p>
+      </div>
+    </div>
+  `;
+}
+
+// ─────────────────────────────────────────────────────
+// 疾病预防面板
+// ─────────────────────────────────────────────────────
+function renderDiseasePreventionPanel(data) {
+  const dp = data.diseasePrevention || {};
+  const hd = data.healthData || {};
+  const contentEl = document.getElementById('disease-prevention-content');
+  
+  if (!dp.summary && !hd.vaccineNote && !hd.diseases?.length) {
+    contentEl.innerHTML = '<div style="color:var(--text-muted);padding:20px;">暂无该城市疾病预防数据</div>';
+    return;
+  }
+  
+  // 疫苗标签颜色映射
+  const vaccineColor = (type) => {
+    if (type === 'required') return '#ef4444';
+    if (type === 'recommended') return '#10b981';
+    return '#6b7280';
+  };
+  const vaccineLabel = (type) => {
+    if (type === 'required') return '必须';
+    if (type === 'recommended') return '建议';
+    return '可选';
+  };
+  
+  // 疾病风险颜色
+  const riskColor = (risk) => {
+    if (risk === '高') return '#ef4444';
+    if (risk === '中') return '#f59e0b';
+    return '#10b981';
+  };
+  
+  contentEl.innerHTML = `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h3 style="margin:0 0 12px;font-size:16px;">📋 总体情况</h3>
+      <p style="color:var(--text);margin:0;line-height:1.7;">${dp.summary || hd.vaccineNote || '暂无详细说明'}</p>
+    </div>
+    
+    ${hd.vaccines ? `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px;">
+      <h4 style="margin:0 0 12px;font-size:14px;color:var(--accent);">💉 疫苗建议</h4>
+      ${hd.vaccines.required?.length ? `
+        <div style="margin-bottom:10px;">
+          <span style="background:#ef4444;color:white;padding:2px 8px;border-radius:10px;font-size:11px;margin-right:8px;">必须</span>
+          ${hd.vaccines.required.join('、')}
+        </div>` : ''}
+      ${hd.vaccines.recommended?.length ? `
+        <div style="margin-bottom:10px;">
+          <span style="background:#10b981;color:white;padding:2px 8px;border-radius:10px;font-size:11px;margin-right:8px;">建议</span>
+          ${hd.vaccines.recommended.join('、')}
+        </div>` : ''}
+      ${hd.vaccines.optional?.length ? `
+        <div style="color:var(--text2);font-size:13px;">
+          <span style="background:#6b7280;color:white;padding:2px 8px;border-radius:10px;font-size:11px;margin-right:8px;">可选</span>
+          ${hd.vaccines.optional.join('、')}
+        </div>` : ''}
+    </div>` : `
+    ${dp.vaccines ? `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px;">
+      <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">💉 疫苗建议</h4>
+      <p style="margin:0;font-size:13px;color:var(--text);">${dp.vaccines}</p>
+    </div>` : ''}
+    `}
+    
+    ${hd.diseases?.length ? `
+    <div style="margin-bottom:16px;">
+      <h4 style="margin:0 0 12px;font-size:14px;color:var(--accent);">🦠 疾病风险</h4>
+      ${hd.diseases.map(d => `
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="font-size:20px;">${d.icon}</span>
+            <span style="font-weight:600;font-size:15px;">${d.name}</span>
+            <span style="background:${riskColor(d.risk)};color:white;padding:2px 10px;border-radius:10px;font-size:11px;">${d.risk}风险</span>
+          </div>
+          <p style="margin:0;font-size:13px;color:var(--text);line-height:1.6;">${d.description}</p>
+          ${d.prevention?.length ? `
+          <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);">
+            <div style="font-size:12px;color:var(--accent);margin-bottom:6px;">预防措施：</div>
+            ${d.prevention.map(p => `<div style="font-size:12px;color:var(--text2);padding:2px 0;">• ${p}</div>`).join('')}
+          </div>` : ''}
+        </div>`).join('')}
+    </div>` : `
+    ${dp.diseases ? `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px;">
+      <h4 style="margin:0 0 8px;font-size:14px;color:#ef4444;">🦠 传染病风险</h4>
+      <p style="margin:0;font-size:13px;color:var(--text);white-space:pre-line;">${dp.diseases}</p>
+    </div>` : ''}
+    `}
+    
+    ${hd.medicalTips?.length ? `
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px;">
+      <h4 style="margin:0 0 12px;font-size:14px;color:var(--accent);">🏥 就医须知</h4>
+      ${hd.medicalTips.map(t => `
+        <div style="padding:10px 0;border-bottom:1px solid var(--border);">
+          <div style="font-weight:600;font-size:13px;color:var(--accent);margin-bottom:4px;">${t.title}</div>
+          <div style="font-size:12px;color:var(--text);line-height:1.6;">${t.content}</div>
+        </div>`).join('')}
+    </div>` : ''}
+    
+    ${dp.weather || dp.tips ? `
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;">
+      ${dp.weather ? `
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">🌡️ 气候与健康</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);">${dp.weather}</p>
+      </div>` : ''}
+      ${dp.tips ? `
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;">
+        <h4 style="margin:0 0 8px;font-size:14px;color:var(--accent);">💡 健康建议</h4>
+        <p style="margin:0;font-size:13px;color:var(--text);white-space:pre-line;">${dp.tips}</p>
+      </div>` : ''}
+    </div>` : ''}
+  `;
 }
 
 // ─────────────────────────────────────────────────────
@@ -2218,7 +2564,7 @@ function performSearch(q) {
   const results = CITY_INDEX.filter(c => {
     const data = CITY_DATABASE[c.id];
     return c.name.includes(q) ||
-      (data.nameEn && data.nameEn.toLowerCase().includes(lq)) ||
+      (c.nameEn && c.nameEn.toLowerCase().includes(lq)) ||
       c.country.includes(q) ||
       c.continent.includes(q);
   });
@@ -2241,7 +2587,7 @@ function renderSearchResults(results) {
   const tempGrid = filteredIndex.map((city, idx) => {
     const gs = gradeStyle(city.safetyGrade);
     const data = CITY_DATABASE[city.id];
-    const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害' };
+    const dimLabels = { crime: '犯罪安全', transport: '交通安全', health: '医疗健康', natural: '自然灾害', food: '食品安全', disease: '疾病预防' };
     const grades = (data.safety && data.safety.grades) || {};
     return `
     <div class="city-card fade-in" style="animation-delay:${idx * 0.05}s"
@@ -2259,7 +2605,7 @@ function renderSearchResults(results) {
         <div class="city-card-name">${city.name}</div>
         <div class="city-card-country">${city.country} · ${data.continent}</div>
         <div class="city-card-scores">
-          ${Object.entries(grades).slice(0, 4).map(([key, grade]) => {
+          ${Object.entries(grades).slice(0, 6).map(([key, grade]) => {
             const score = gradeToScore(grade);
             return `
             <div class="city-score-item">
@@ -2269,6 +2615,9 @@ function renderSearchResults(results) {
               </div>
             </div>`;
           }).join('')}
+        </div>
+        <div class="conflict-badges">
+          ${getConflictBadges(city)}
         </div>
         <div class="city-card-footer">
           <div class="city-overall">
@@ -2523,7 +2872,25 @@ function showLoadingBriefly(cb) {
 (function init() {
   console.log('[SafeCity] Starting init...');
   console.log('[SafeCity] CITY_DATABASE defined:', typeof CITY_DATABASE !== 'undefined');
-  console.log('[SafeCity] CITY_DATABASE keys:', typeof CITY_DATABASE !== 'undefined' ? Object.keys(CITY_DATABASE).length : 0);
+  // 从CITY_DATABASE创建城市索引
+  window.CITY_INDEX = Object.keys(CITY_DATABASE).map(cityId => {
+    const data = CITY_DATABASE[cityId];
+    const safetyObj = data.safety || {};
+    const safetyIndexObj = data.safetyIndex || {};
+    return {
+      id: cityId,
+      name: data.name,
+      nameEn: data.nameEn || '',
+      country: data.country,
+      continent: data.continent,
+      flag: data.flag,
+      image: data.image,
+      safetyScore: safetyObj.overall || safetyIndexObj.overall || 50,
+      safetyGrade: safetyObj.grade || safetyIndexObj.grade || 'B'
+    };
+  });
+  
+  console.log('[SafeCity] CITY_INDEX created:', CITY_INDEX.length, 'cities');
   console.log('[SafeCity] CITY_DATABASE_DETAIL defined:', typeof CITY_DATABASE_DETAIL !== 'undefined');
   try {
     renderCityGrid('全部');
@@ -2543,7 +2910,7 @@ function showLoadingBriefly(cb) {
       <span style="font-size:18px;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:1px;">SafeCity Global</span>
     </div>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px 32px;margin-bottom:20px;color:rgba(255,255,255,0.55);font-size:13px;">
-      <span>🏙️ 收录100座全球城市</span>
+      <span>🏙️ 收录145座全球城市</span>
       <span>🌐 7大洲全覆盖</span>
       <span>📊 50+安全维度评估</span>
       <span>🔄 持续更新数据</span>
