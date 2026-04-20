@@ -1044,53 +1044,158 @@
       var data = {
         '日本': [
           { name: '圣路加国际医院', address: '东京都中央区明石町8-1', phone: '+81-3-5550-7161', emergency24h: true, features: ['外语対応', '国际医疗', 'JCI认证'] },
-          { name: '国立国际医疗研究中心', address: '东京都新宿區戸山1-21-1', phone: '+81-3-3202-7181', emergency24h: true, features: ['国际医疗', '热带医学'] },
+          { name: '国立国际医疗研究中心', address: '东京都新宿區戶山1-21-1', phone: '+81-3-3202-7181', emergency24h: true, features: ['国际医疗', '热带医学', '旅行医学'] },
+          { name: '东京大学医学部附属医院', address: '东京都文京區本乡7-3-1', phone: '+81-3-5800-8631', emergency24h: true, features: ['综合医院', '急诊', '先端医疗'] },
         ],
         '中国': [
-          { name: '和睦家医院', address: '北京市朝阳区将台路6号', phone: '+86-10-5927-7120', emergency24h: true, features: ['外资医院', '外语服务', '24小时急诊'] },
-          { name: '北京协和医院国际医疗部', address: '北京市东城区东单北大街1号', phone: '+86-10-6915-6114', emergency24h: true, features: ['三甲医院', '专家门诊'] },
+          { name: '北京和睦家医院', address: '北京市朝阳区将台路6号', phone: '+86-10-5927-7120', emergency24h: true, features: ['外资医院', '外语服务', '24小时急诊'] },
+          { name: '北京协和医院国际医疗部', address: '北京市东城区东单北大街1号', phone: '+86-10-6915-6114', emergency24h: true, features: ['三甲医院', '专家门诊', '会诊中心'] },
+          { name: '上海华山医院特需部', address: '上海市乌鲁木齐中路12号', phone: '+86-21-5288-9999', emergency24h: true, features: ['三甲医院', '专家资源', '急诊'] },
         ],
         '美国': [
-          { name: 'Cedars-Sinai Medical Center', address: '8700 Beverly Blvd, Los Angeles', phone: '+1-310-423-3271', emergency24h: true, features: ['顶级医院', '急诊'] },
-          { name: 'NYU Langone Health', address: '550 1st Ave, New York', phone: '+1-212-263-7300', emergency24h: true, features: ['研究型医院', '急诊'] },
+          { name: 'Mayo Clinic', address: '200 First St SW, Rochester, MN', phone: '+1-507-284-2511', emergency24h: true, features: ['全美最佳医院', '急诊', '转诊中心'] },
+          { name: 'Cedars-Sinai Medical Center', address: '8700 Beverly Blvd, Los Angeles, CA', phone: '+1-310-423-3271', emergency24h: true, features: ['顶级医院', '急诊', '专科中心'] },
+          { name: 'NYU Langone Health', address: '550 1st Ave, New York, NY', phone: '+1-212-263-7300', emergency24h: true, features: ['研究型医院', '急诊', '创伤中心'] },
+          { name: 'UCSF Medical Center', address: '505 Parnassus Ave, San Francisco, CA', phone: '+1-415-476-1000', emergency24h: true, features: ['加州最佳', '急诊', '癌症中心'] },
         ],
         '英国': [
-          { name: "St Thomas' Hospital", address: 'Westminster Bridge Rd, London SE1', phone: '+44-20-7188-7188', emergency24h: true, features: ['急诊', '教学医院'] },
+          { name: "St Thomas' Hospital", address: 'Westminster Bridge Rd, London SE1 7EH', phone: '+44-20-7188-7188', emergency24h: true, features: ['急诊', '外伤中心', 'NHS体系'] },
+          { name: "King's College Hospital", address: 'Denmark Hill, London SE5 9RS', phone: '+44-20-3299-9000', emergency24h: true, features: ['急诊', '创伤中心', '教学医院'] },
+          { name: 'Royal Infirmary of Edinburgh', address: '51 Little France Crescent, Edinburgh', phone: '+44-131-536-1000', emergency24h: true, features: ['急诊', '苏格拉体系', '研究型'] },
+        ],
+        '法国': [
+          { name: "Hopital Pitie-Salpetriere", address: '47-83 Blvd de l-Hopital, Paris 75013', phone: '+33-1-4216-0000', emergency24h: true, features: ['急诊', '欧洲最大医院', '研究型'] },
+          { name: "Hopital Europeen Georges-Pompidou", address: '20 Rue Leblanc, Paris 75015', phone: '+33-1-5609-2000', emergency24h: true, features: ['急诊', '国际患者', '专科中心'] },
+          { name: 'CHU de Lyon', address: '59 Blvd Pinel, Lyon 69500', phone: '+33-4-7235-7500', emergency24h: true, features: ['急诊', '区域医疗中心', '法语服务'] },
+        ],
+        '德国': [
+          { name: 'Charite Berlin', address: 'Chariteplatz 1, 10117 Berlin', phone: '+49-30-450-50', emergency24h: true, features: ['德国最佳医院', '急诊', '研究型'] },
+          { name: 'Universitatsklinikum Heidelberg', address: 'Im Neuenheimer Feld 400, Heidelberg', phone: '+49-6221-560', emergency24h: true, features: ['肿瘤中心', '急诊', '国际医疗'] },
+          { name: 'Klinikum rechts der Isar', address: 'Ismaninger Str. 22, Munchen', phone: '+49-89-4140-0', emergency24h: true, features: ['急诊', '慕尼黑工大附属', '专科齐全'] },
+        ],
+        '意大利': [
+          { name: 'Policlinico San Matteo', address: 'Viale Camillo Golgi 19, Pavia', phone: '+39-0382-5011', emergency24h: true, features: ['急诊', '综合医院', '研究型'] },
+          { name: 'Ospedale Maggiore Policlinico', address: 'Via Francesco Sforza 35, Milano', phone: '+39-02-55031', emergency24h: true, features: ['急诊', '米兰核心', '多学科'] },
+        ],
+        '西班牙': [
+          { name: 'Hospital Clinic Barcelona', address: 'Carrer de Villarroel 170, Barcelona', phone: '+34-93-227-5400', emergency24h: true, features: ['急诊', '加泰罗尼亚最佳', '研究型'] },
+          { name: 'Hospital La Paz', address: 'Paseo de la Castellana 261, Madrid', phone: '+34-91-727-7000', emergency24h: true, features: ['急诊', '马德里最佳', '多专科'] },
+        ],
+        '荷兰': [
+          { name: 'AMC Amsterdam', address: 'Meibergdreef 9, Amsterdam', phone: '+31-20-566-9111', emergency24h: true, features: ['急诊', '荷兰最佳', '研究型'] },
+          { name: 'Erasmus MC Rotterdam', address: "Doctor Molenwaterplein 40, Rotterdam", phone: '+31-10-704-0704', emergency24h: true, features: ['急诊', '综合医院', '肿瘤中心'] },
+        ],
+        '瑞士': [
+          { name: 'Universitatsspital Zurich', address: 'Rimistrasse 100, Zurich', phone: '+41-44-255-1111', emergency24h: true, features: ['急诊', '瑞士最佳', '多语种'] },
+          { name: 'HUG Geneve', address: "Rue Gabrielle-Perret-Gentil 4, Geneve", phone: '+41-22-372-8000', emergency24h: true, features: ['急诊', '法语区核心', '国际患者'] },
         ],
         '澳大利亚': [
-          { name: 'Royal Prince Alfred Hospital', address: 'Missenden Rd, Camperdown NSW', phone: '+61-2-9515-6111', emergency24h: true, features: ['急诊', '创伤中心'] },
-          { name: 'Royal Melbourne Hospital', address: '300 Grattan St, Parkville VIC', phone: '+61-3-9342-7000', emergency24h: true, features: ['急诊', '研究型医院'] },
+          { name: 'Royal Prince Alfred Hospital', address: 'Missenden Rd, Camperdown NSW 2050', phone: '+61-2-9515-6111', emergency24h: true, features: ['急诊', '创伤中心', '悉尼内城区'] },
+          { name: 'Royal Melbourne Hospital', address: '300 Grattan St, Parkville VIC 3050', phone: '+61-3-9342-7000', emergency24h: true, features: ['急诊', '研究型医院', '墨尔本最佳'] },
+          { name: 'Royal Brisbane and Women Hospital', address: 'Butterfield St, Herston QLD', phone: '+61-7-3646-8111', emergency24h: true, features: ['急诊', '妇产科', '布里斯班核心'] },
         ],
         '加拿大': [
-          { name: 'Toronto General Hospital', address: '200 Elizabeth St, Toronto', phone: '+1-416-340-3111', emergency24h: true, features: ['急诊', '移植中心'] },
+          { name: 'Toronto General Hospital', address: '200 Elizabeth St, Toronto ON M5G 2C4', phone: '+1-416-340-3111', emergency24h: true, features: ['急诊', '移植中心', '加拿大最佳'] },
+          { name: 'Vancouver General Hospital', address: '899 W 12th Ave, Vancouver BC', phone: '+1-604-875-4111', emergency24h: true, features: ['急诊', '外伤中心', 'BC省核心'] },
+          { name: 'MUHC Montreal', address: '1001 Decarie Blvd, Montreal QC', phone: '+1-514-934-1934', emergency24h: true, features: ['急诊', '法语服务', '研究型'] },
         ],
         '新加坡': [
           { name: 'Singapore General Hospital', address: 'Outram Rd, Singapore 169608', phone: '+65-6222-3322', emergency24h: true, features: ['公立医院', '急诊', '外伤中心'] },
-          { name: 'Mount Elizabeth Hospital', address: '3 Mount Elizabeth, Singapore', phone: '+65-6731-2218', emergency24h: false, features: ['私立医院', '专科服务'] },
+          { name: 'Mount Elizabeth Hospital', address: '3 Mount Elizabeth, Singapore 228510', phone: '+65-6731-2218', emergency24h: false, features: ['私立医院', '专科服务', '高端医疗'] },
+          { name: 'National University Hospital', address: '5 Lower Kent Ridge Rd, Singapore', phone: '+65-6779-5555', emergency24h: true, features: ['急诊', '国立医院', '教学中心'] },
         ],
         '韩国': [
-          { name: '首尔大学医院', address: '首尔市钟路区大学路103号', phone: '+82-2-2072-2895', emergency24h: true, features: ['大型医院', '急诊中心'] },
+          { name: '首尔大学医院', address: '首尔市钟路区大學路103號', phone: '+82-2-2072-2895', emergency24h: true, features: ['韩国最佳', '急诊中心', '综合医院'] },
+          { name: '三星首尔医院', address: '首尔市江南區逸院洞516', phone: '+82-2-3410-0200', emergency24h: true, features: ['急诊', '癌症中心', '高级病房'] },
+          { name: 'Severance医院', address: '首尔市西大門區新村洞134', phone: '+82-2-2228-5800', emergency24h: true, features: ['急诊', '教会医院', '国际患者'] },
         ],
         '泰国': [
-          { name: 'Bumrungrad International Hospital', address: '33 Sukhumvit 3, Bangkok', phone: '+66-2-066-8888', emergency24h: true, features: ['国际医院', 'JCI认证', '英语服务'] },
+          { name: 'Bumrungrad International Hospital', address: '33 Sukhumvit 3, Bangkok 10110', phone: '+66-2-066-8888', emergency24h: true, features: ['国际医院', 'JCI认证', '英语服务'] },
+          { name: 'Bangkok Hospital', address: '2 Soi Soonvijai 7, Bangkok', phone: '+66-2-310-3000', emergency24h: true, features: ['急诊', '多语言', '连锁医院'] },
+          { name: 'Chulalongkorn Hospital', address: '1873 Rama IV Rd, Bangkok', phone: '+66-2-256-4000', emergency24h: true, features: ['急诊', '朱拉隆功大学', '公立医院'] },
         ],
-        '法国': [
-          { name: "Hopital Pitie-Salpetriere", address: '47-83 Blvd de l\'Hopital, Paris', phone: '+33-1-4216-0000', emergency24h: true, features: ['急诊', '研究型医院'] },
+        '马来西亚': [
+          { name: 'Prince Court Medical Centre', address: '39 Jalan Kia Peng, Kuala Lumpur', phone: '+60-3-2160-0000', emergency24h: true, features: ['私立医院', '国际患者', '专科齐全'] },
+          { name: 'Gleneagles Hospital KL', address: 'Block A, 286 Jalan Ampang, KL', phone: '+60-3-4141-3000', emergency24h: true, features: ['急诊', '私立', '心脏中心'] },
         ],
-        '德国': [
-          { name: 'Charite Berlin', address: 'Chariteplatz 1, 10117 Berlin', phone: '+49-30-450-50', emergency24h: true, features: ['德国最佳医院', '急诊'] },
+        '越南': [
+          { name: 'FV Hospital', address: '6 Nguyen Luong Bang, Saigon', phone: '+84-28-5411-3333', emergency24h: true, features: ['国际医院', 'JCI认证', '英语服务'] },
+          { name: 'Hanoi French Hospital', address: '1 Phuong Mai, Dong Da, Hanoi', phone: '+84-24-3577-1100', emergency24h: true, features: ['法语服务', '国际标准', '急诊'] },
+        ],
+        '印度尼西亚': [
+          { name: 'Siloam Hospitals', address: 'Jl. Rayo Padi MS-8, Jakarta', phone: '+62-21-7796-6000', emergency24h: true, features: ['连锁医院', '国际患者', '多语言'] },
+          { name: 'RSUPN Cipto Mangunkusumo', address: 'Jl. Pangeran Diponegoro No.71, Jakarta', phone: '+62-21-3190-1077', emergency24h: true, features: ['国立医院', '印尼最佳', '急诊'] },
+        ],
+        '菲律宾': [
+          { name: "St. Luke's Medical Center", address: 'Bonifacio Global City, Taguig', phone: '+63-2-8789-7700', emergency24h: true, features: ['私立医院', 'JCI认证', '心脏中心'] },
+          { name: 'Makati Medical Center', address: 'Amorsolo St, Makati City', phone: '+63-2-8888-9999', emergency24h: true, features: ['急诊', '私立', '马卡蒂核心'] },
+        ],
+        '印度': [
+          { name: 'Apollo Hospitals', address: '21 Greams Lane, Chennai', phone: '+91-44-2829-0202', emergency24h: true, features: ['印度最佳', 'JCI认证', '国际患者'] },
+          { name: 'Fortis Memorial Research Institute', address: 'Sector 44, Gurgaon, Delhi NCR', phone: '+91-124-492-1021', emergency24h: true, features: ['急诊', '多专科', '肿瘤中心'] },
         ],
         '阿联酋': [
-          { name: 'Cleveland Clinic Abu Dhabi', address: 'Al Maryah Island, Abu Dhabi', phone: '+971-2-659-0200', emergency24h: true, features: ['国际标准', '急诊'] },
+          { name: 'Cleveland Clinic Abu Dhabi', address: 'Al Maryah Island, Abu Dhabi', phone: '+971-2-659-0200', emergency24h: true, features: ['国际标准', '急诊', '阿布扎比核心'] },
+          { name: 'Mediclinic City Hospital', address: 'Building 37 - Dubai Healthcare City', phone: '+971-4-435-9999', emergency24h: true, features: ['急诊', '迪拜医疗城', '多专科'] },
+          { name: 'Shaikh Shakhbout Medical City', address: 'Al Mafraq, Abu Dhabi', phone: '+971-2-819-0000', emergency24h: true, features: ['急诊', '阿布扎比国立', '综合医院'] },
+        ],
+        '卡塔尔': [
+          { name: 'Hamad Medical Corporation', address: 'Al Rayyan Road, Doha', phone: '+974-4439-5777', emergency24h: true, features: ['国立医院', '急诊', '卡塔尔最佳'] },
+        ],
+        '土耳其': [
+          { name: 'Acibadem Healthcare Group', address: 'Cevreli Cad. No:26, Istanbul', phone: '+90-216-544-4444', emergency24h: true, features: ['JCI认证', '连锁医院', '国际患者'] },
+          { name: 'Memorial Hospitals', address: 'Piyalepasa Mah. Piyalepasa Cad. Istanbul', phone: '+90-212-314-6666', emergency24h: true, features: ['急诊', '私立', '多专科'] },
+        ],
+        '新西兰': [
+          { name: 'Auckland City Hospital', address: '2 Park Rd, Grafton, Auckland', phone: '+64-9-367-0000', emergency24h: true, features: ['急诊', '新西兰最大', '国立医院'] },
+          { name: 'Wellington Hospital', address: 'Riddiford St, Newtown, Wellington', phone: '+64-4-385-5999', emergency24h: true, features: ['急诊', '国立', '惠灵顿核心'] },
+        ],
+        '俄罗斯': [
+          { name: 'Sechenov University Hospital', address: '2/1 Bolshaya Pirogovskaya St, Moscow', phone: '+7-499-609-1400', emergency24h: true, features: ['国立医院', '急诊', '俄罗斯最佳'] },
+          { name: 'EMIAS Emergency Hospital', address: 'Skladochnaya ul. 7, Moscow', phone: '+7-495-304-0030', emergency24h: true, features: ['急诊', '莫斯科急救', '外科中心'] },
+        ],
+        '巴西': [
+          { name: 'Hospital Israelita Albert Einstein', address: 'Av. Albert Einstein, 627, Sao Paulo', phone: '+55-11-2151-1233', emergency24h: true, features: ['JCI认证', '巴西最佳', '国际患者'] },
+          { name: 'Hospital Sirio-Libanes', address: 'R. Dona Antonina, 130, Sao Paulo', phone: '+55-11-3394-5000', emergency24h: true, features: ['急诊', '私立', '肿瘤中心'] },
+        ],
+        '墨西哥': [
+          { name: 'Hospital ABC', address: 'Av. Carlos Graeser 154, Mexico City', phone: '+52-55-5230-8000', emergency24h: true, features: ['JCI认证', '私立', '国际患者'] },
+          { name: 'Hospital Angeles', address: 'Av. Emperador Cuauhtemoc 330, Mexico City', phone: '+52-55-5449-5000', emergency24h: true, features: ['急诊', '连锁医院', '多专科'] },
+        ],
+        '希腊': [
+          { name: 'General Hospital of Athens', address: 'Mesogeion 154, Athens', phone: '+30-210-770-8000', emergency24h: true, features: ['国立医院', '急诊', '希腊最佳'] },
+        ],
+        '葡萄牙': [
+          { name: 'Hospital Santa Maria', address: 'Av. Prof. Egas Moniz, Lisboa', phone: '+351-21-780-5000', emergency24h: true, features: ['国立医院', '急诊', '教学医院'] },
+        ],
+        '爱尔兰': [
+          { name: "St. Vincent's University Hospital", address: 'Elm Park, Dublin 4', phone: '+353-1-221-4000', emergency24h: true, features: ['国立医院', '急诊', '教学医院'] },
+        ],
+        '挪威': [
+          { name: 'Oslo University Hospital', address: 'Kirkeveien 166, Oslo', phone: '+47-915-02900', emergency24h: true, features: ['国立医院', '急诊', '挪威最佳'] },
+        ],
+        '瑞典': [
+          { name: 'Karolinska Universitetssjukhuset', address: 'Solna, Stockholm', phone: '+46-8-517-700-00', emergency24h: true, features: ['急诊', '瑞典最佳', '研究型'] },
+        ],
+        '阿根廷': [
+          { name: 'Hospital Italiano de Buenos Aires', address: 'Gascón 450, Buenos Aires', phone: '+54-11-4959-0200', emergency24h: true, features: ['JCI认证', '急诊', '私立'] },
+        ],
+        '智利': [
+          { name: 'Clínica Las Condes', address: 'Lo Fontecilla 441, Las Condes, Santiago', phone: '+56-2-2610-8000', emergency24h: true, features: ['急诊', '私立', '国际患者'] },
+        ],
+        '摩洛哥': [
+          { name: 'Clinique Internationale', address: 'Rue Ibn Haldhoun, Tanger', phone: '+212-539-340-600', emergency24h: true, features: ['急诊', '私立', '法语服务'] },
+        ],
+        '肯尼亚': [
+          { name: 'Aga Khan University Hospital', address: '3rd Parklands Ave, Nairobi', phone: '+254-20-366-2000', emergency24h: true, features: ['JCI认证', '急诊', '东非最佳'] },
         ],
       };
       if (data[country]) return data[country];
       return [
-        { name: cityName + '市中心医院', address: cityName + '市中心区域', phone: '', emergency24h: true, features: ['24小时急诊', '综合医疗'] },
-        { name: cityName + '大学附属医院', address: cityName + '医院区', phone: '', emergency24h: true, features: ['教学医院', '专家门诊'] },
+        { name: cityName + ' 中心医院', address: cityName + ' 市中心区域', phone: '', emergency24h: true, features: ['24小时急诊', '综合医疗', '外语服务'] },
+        { name: cityName + ' 大学附属医院', address: cityName + ' 医学院路', phone: '', emergency24h: true, features: ['教学医院', '专家门诊', '急诊'] },
       ];
     }
-
     function getConsulates(country) {
       var data = {
         '中国': [
@@ -1171,72 +1276,205 @@
     function getSafetyApps(country) {
       var data = {
         '中国': [
-          { name: '国家反诈中心', desc: '预防电信诈骗官方App' },
-          { name: '公安110', desc: '一键报警，自动GPS定位' },
+          { name: '国家反诈中心', desc: '预防电信诈骗，举报诈骗信息' },
+          { name: '公安110', desc: '一键报警，自动GPS定位发送' },
+          { name: '交管12123', desc: '交通违法查询处理' },
         ],
         '日本': [
-          { name: 'Safety tips', desc: '日本官方防灾应急App' },
-          { name: 'NHK避险', desc: 'NHK灾害信息实时推送' },
+          { name: 'Safety tips', desc: '日本官方防灾应急App，提供灾害预警和避难指南' },
+          { name: 'NHK避险', desc: 'NHK灾害信息实时推送，多语言支持' },
+          { name: 'Imakaze', desc: '实时气象预警和海啸警报' },
         ],
         '美国': [
-          { name: 'Noonlight', desc: '紧急求助+自动定位报警' },
-          { name: 'bSafe', desc: '一键SOS，实时位置共享' },
+          { name: 'Noonlight', desc: '紧急求助+自动定位报警，与警方联动' },
+          { name: 'bSafe', desc: '一键SOS，实时位置共享，语音监听' },
+          { name: 'Citizen', desc: '实时犯罪警报，附近危险事件提醒' },
         ],
         '英国': [
-          { name: 'bSafe', desc: '紧急求助+位置共享' },
+          { name: 'bSafe', desc: '紧急求助+位置共享，一键报警' },
+          { name: 'Silent SOS', desc: '无声报警，适合危险情况下使用' },
+        ],
+        '法国': [
+          { name: 'Toucan Alert', desc: '紧急求助，位置共享' },
+          { name: 'Sauv Life', desc: '法国心脏急救App，定位最近的除颤器' },
+        ],
+        '德国': [
+          { name: 'NINA', desc: '德国联邦民防App，灾害预警' },
+          { name: 'KATWARN', desc: '德国紧急预警系统' },
         ],
         '澳大利亚': [
-          { name: 'Emergency+', desc: '澳洲官方紧急求助（含GPS定位）' },
+          { name: 'Emergency+', desc: '澳洲官方紧急求助，自动提供GPS坐标给000' },
+          { name: 'Bureau of Meteorology', desc: '官方天气预警，洪水火灾警报' },
+        ],
+        '加拿大': [
+          { name: 'Canary', desc: '紧急求助，位置共享' },
+          { name: 'Alert Ready', desc: '加拿大官方紧急警报' },
         ],
         '新加坡': [
-          { name: 'SGSecure', desc: '新加坡政府安全预警App' },
+          { name: 'SGSecure', desc: '新加坡政府反恐安全预警App' },
+          { name: 'OneService', desc: '举报社区问题，市政服务' },
         ],
         '韩国': [
-          { name: 'Safe Korea', desc: '韩国安全预警App' },
+          { name: 'Safe Korea', desc: '韩国安全预警和紧急求助App' },
+          { name: 'Crime Prevention App', desc: '首尔市犯罪预防和报警App' },
         ],
         '泰国': [
-          { name: 'ไทยร่วมใจ', desc: '泰国政府紧急预警App' },
+          { name: 'Thai Rueng Chai', desc: '泰国政府紧急预警和求助App' },
+          { name: 'Police Inspector', desc: '泰国警方报警应用' },
+        ],
+        '马来西亚': [
+          { name: 'CCID Responsum', desc: '马来西亚商业犯罪举报App' },
+          { name: 'MASSALAMAT', desc: '马来西亚紧急救援服务' },
+        ],
+        '越南': [
+          { name: 'iHelpline', desc: '越南旅游警察紧急热线App' },
+          { name: 'Vietnam Travel Safety', desc: '越南旅行安全指南' },
+        ],
+        '印度尼西亚': [
+          { name: 'BMKG', desc: '印尼气象气候和地球物理局预警' },
+          { name: 'JAKI', desc: '雅加达政府综合服务App，含紧急功能' },
+        ],
+        '菲律宾': [
+          { name: 'Project Peacock', desc: '菲律宾警方紧急报警App' },
+          { name: 'Red Cross 143', desc: '菲律宾红十字会紧急响应' },
+        ],
+        '印度': [
+          { name: 'Polime Helpline', desc: '印度德里警方服务App' },
+          { name: 'M-indicator', desc: '孟买地铁安全信息' },
+        ],
+        '阿联酋': [
+          { name: 'Dubai Police Smart App', desc: '迪拜警方综合服务，含紧急报警' },
+          { name: 'AML Emergency', desc: '阿联酋医疗紧急服务' },
+        ],
+        '意大利': [
+          { name: '112 Where AREU', desc: '意大利紧急救援定位App' },
+        ],
+        '西班牙': [
+          { name: 'ALERTCOPS', desc: '西班牙警方紧急报警App' },
+        ],
+        '荷兰': [
+          { name: 'VeiligAlert', desc: '荷兰紧急警报App' },
+        ],
+        '瑞士': [
+          { name: 'Rega', desc: '瑞士空中救援App，可快速呼叫直升机救援' },
+          { name: 'Alertswiss', desc: '瑞士民防官方预警' },
+        ],
+        '新西兰': [
+          { name: 'Healthline', desc: '新西兰健康咨询热线' },
+          { name: 'Civil Defence NZ', desc: '新西兰民防紧急预警' },
+        ],
+        '俄罗斯': [
+          { name: '112 Russia', desc: '俄罗斯统一紧急救援电话App' },
+          { name: 'MChS России', desc: '俄罗斯紧急情况部官方App' },
+        ],
+        '土耳其': [
+          { name: 'AFAD', desc: '土耳其灾害与应急管理局App' },
+        ],
+        '巴西': [
+          { name: 'Delegacia Eletronica', desc: '巴西警方在线报警' },
+        ],
+        '墨西哥': [
+          { name: '911 CDMX', desc: '墨西哥城紧急服务App' },
+        ],
+        '埃及': [
+          { name: 'Egypt Police', desc: '埃及警方服务App' },
+        ],
+        '南非': [
+          { name: 'Namola', desc: '南非紧急响应App，连接私人安保' },
+        ],
+        '肯尼亚': [
+          { name: 'eSafetyKenya', desc: '肯尼亚网络安全和诈骗举报' },
         ],
       };
-      var asia = ['新加坡', '韩国', '泰国', '马来西亚', '越南', '印度尼西亚', '菲律宾', '印度'];
       if (data[country]) return data[country];
+      var asia = ['韩国', '泰国', '马来西亚', '越南', '印度尼西亚', '菲律宾', '印度', '巴基斯坦', '孟加拉国', '斯里兰卡', '尼泊尔'];
       if (asia.indexOf(country) >= 0) {
         return [
-          { name: 'Grab', desc: '正规打车+实时位置分享' },
-          { name: 'Google Maps', desc: '地图导航+离线地图' },
+          { name: 'Grab', desc: '正规打车+实时位置分享，可设置紧急联系人' },
+          { name: 'Google Maps', desc: '地图导航+离线地图下载' },
+          { name: 'WhatsApp Location', desc: '位置共享给家人朋友' },
         ];
       }
       return [
-        { name: 'Travel Safety', desc: '旅行安全助手' },
+        { name: 'Travel Safety', desc: '旅行安全助手，含紧急联系功能' },
         { name: 'bSafe', desc: '紧急求助+位置共享' },
+        { name: 'Google Maps', desc: '地图导航+离线地图下载' },
       ];
     }
-
     function getSelfProtection(country) {
-      var isAfrica = ['埃及', '南非', '肯尼亚', '尼日利亚', '加纳', '埃塞俄比亚', '摩洛哥', '突尼斯', '卡萨布兰卡', '马拉喀什'].indexOf(country) >= 0;
+      var isAfrica = ['埃及', '南非', '肯尼亚', '尼日利亚', '加纳', '埃塞俄比亚', '摩洛哥', '突尼斯', '坦桑尼亚', '赞比亚'].indexOf(country) >= 0;
+      var isAsia = ['中国', '日本', '韩国', '泰国', '越南', '印度', '印度尼西亚', '菲律宾', '马来西亚', '新加坡', '柬埔寨', '缅甸', '老挝'].indexOf(country) >= 0;
+      var isMiddleEast = ['阿联酋', '沙特阿拉伯', '卡塔尔', '科威特', '巴林', '阿曼', '土耳其', '伊朗', '以色列', '埃及'].indexOf(country) >= 0;
+      
       if (isAfrica) {
         return [
-          { icon: '🔒', title: '财物安全', tips: ['避免在公共场合展示贵重物品', '使用酒店保险箱', '现金和护照分开保管'] },
-          { icon: '🦟', title: '健康防护', tips: ['携带驱蚊液', '饮用瓶装水', '注意当地疾病预防'] },
-          { icon: '🏥', title: '医疗准备', tips: ['购买旅行保险', '携带常用药品', '提前了解疫苗要求'] },
-          { icon: '📱', title: '通讯联络', tips: ['购买当地电话卡', '告知亲友行程', '记录使领馆电话'] },
+          { icon: '🔒', title: '财物安全', tips: ['避免在公共场合展示贵重物品', '使用酒店保险箱存放护照和现金', '尽量使用无现金支付', '避免佩戴显眼的珠宝首饰', '重要证件拍照留存云端'] },
+          { icon: '🦟', title: '健康防护', tips: ['携带驱蚊液（含DEET成分）', '只饮用瓶装水或烧开水', '注意疟疾预防（咨询医生提前服药）', '携带肠胃药和常用感冒药', '避免食用街边来源不明的食物'] },
+          { icon: '🏥', title: '医疗准备', tips: ['购买包含医疗运送的旅行保险', '携带黄热病疫苗接种证明（如需要）', '随身携带常备药品清单', '提前了解最近的中国援非医疗队位置', '记下当地中国医疗队联系方式'] },
+          { icon: '📱', title: '通讯联络', tips: ['购买当地SIM卡或开通国际漫游', '告知家人朋友详细行程', '记录中国驻当地使领馆电话', '加入当地华人社群获取帮助', '每天定时与家人报平安'] },
+          { icon: '🚗', title: '交通出行', tips: ['避免夜间独自出行', '使用正规出租车或Uber/Bolt', '上车前拍照记录车牌', '不要接受陌生人搭讪', '贵重物品放车后备箱比车厢安全'] },
         ];
       }
+      
+      if (isMiddleEast) {
+        return [
+          { icon: '👗', title: '服饰礼仪', tips: ['着装保守，避免暴露', '女性避免单独与陌生男性接触', '携带头巾（进入清真寺需要）', '尊重当地宗教习俗', '斋月期间白天避免在公共场合饮食'] },
+          { icon: '🔒', title: '财物安全', tips: ['避免在公共场合数钱', '护照随身携带复印件', '使用酒店保险箱', '警惕针对游客的诈骗', '奢侈品尽量存放在酒店'] },
+          { icon: '🚗', title: '交通出行', tips: ['自驾需提前了解当地交规', '国际驾照需配合原驾照使用', '红灯可右转需注意安全', '市区停车需找正规停车场', '酒后驾驶处罚极其严厉'] },
+          { icon: '🏥', title: '医疗注意', tips: ['公立医院急诊免费（如适用）', '私立医院费用昂贵需保险', '携带个人处方药品需有医生证明', '注意斋月期间餐厅营业时间', '饮用水建议瓶装水'] },
+          { icon: '📱', title: '紧急联络', tips: ['记录当地报警电话', '使领馆24小时保护热线', '下载当地紧急求助App', '告知家人行程安排', '避免参与任何游行示威'] },
+        ];
+      }
+      
+      if (isAsia) {
+        return [
+          { icon: '🔒', title: '财物防盗', tips: ['将贵重物品存放在酒店保险箱', '使用贴身腰包或防盗内裤', '人多场所注意包前背', 'ATM取款注意遮挡密码', '护照和钱包分开放置'] },
+          { icon: '🚌', title: '交通出行', tips: ['选择正规出租车（记车牌）', '使用Grab/Bolt等正规打车软件', '嘟嘟车价格先谈好再上车', '市区内步行注意交通安全', '夜间避免独自前往偏僻地区'] },
+          { icon: '🏥', title: '医疗健康', tips: ['购买境外旅行保险', '随身携带常备药品', '了解附近国际医院位置', '食物注意新鲜度', '饮用瓶装水'] },
+          { icon: '📱', title: '通讯安全', tips: ['购买当地电话卡上网', '公共场所使用VPN保护隐私', '警惕电信诈骗（假警察/假海关）', '设置手机紧急联系人', '下载离线地图备用'] },
+          { icon: '🎭', title: '文化礼仪', tips: ['进入寺庙需脱鞋', '不要用脚指向人或佛像', '头部被认为是神圣的', '尊重当地宗教习俗', '小费文化（泰国、印尼等）'] },
+        ];
+      }
+      
+      // 欧美发达国家
       return [
-        { icon: '🔒', title: '财物安全', tips: ['将贵重物品存放在酒店保险箱', '避免在人多场所展示现金', '使用贴身腰包防盗'] },
-        { icon: '🚌', title: '交通出行', tips: ['乘坐正规出租车或公共交通', '使用打车App记录行程', '夜间避免独自前往偏僻区域'] },
-        { icon: '🏥', title: '医疗准备', tips: ['购买境外旅行保险', '随身携带常备药品', '了解附近医院位置'] },
-        { icon: '📱', title: '通讯联络', tips: ['保持手机电量充足', '提前下载离线地图', '告知亲友行程安排'] },
+        { icon: '🔒', title: '财物安全', tips: ['将贵重物品存放在酒店保险箱', '避免在人多场所展示现金', '信用卡开通即时通知', 'ATM取款选择白天人多时', '警惕新型诈骗（电话诈骗/感情诈骗）'] },
+        { icon: '🚌', title: '交通出行', tips: ['遵守交通规则（欧美闯红灯罚款重）', '乘坐公共交通注意保管好物品', 'Uber/Lyft比街头出租车更安全', '夜间避免地铁偏僻站下车', '自驾注意各国交规差异'] },
+        { icon: '🏥', title: '医疗准备', tips: ['购买境外旅行保险（含医疗运送）', '随身携带常备药品', '了解当地急诊流程（可能需要预约）', '处方药需有医生证明', 'NHS/Medicare等公费医疗需排队'] },
+        { icon: '📱', title: '通讯联络', tips: ['保持手机电量充足', '提前下载离线地图', '告知亲友行程安排', '入住告知酒店地址', '重要文件拍照存云端'] },
+        { icon: '🆘', title: '紧急应对', tips: ['记住当地报警电话（美国911，欧洲112）', '外交部全球领事保护热线：0086-10-12308', '记录中国驻当地使领馆电话', '遇事保持冷静，配合警方', '重要事情先联系使领馆'] },
       ];
     }
 
     function getTransport(cityName, country) {
-      return [
-        { icon: '🚌', name: '公共交通', desc: '覆盖城区，价格实惠', tips: ['办交通卡更便捷', '注意首末班车时间', '高峰期人较多'] },
-        { icon: '🚕', name: '出租车/网约车', desc: '随时可乘，舒适便捷', tips: ['使用正规出租车公司', '记下车牌号', '要求打表计费'] },
+      var isAsia = ['中国', '日本', '韩国', '泰国', '越南', '印度', '印度尼西亚', '菲律宾', '马来西亚', '新加坡'].indexOf(country) >= 0;
+      var isEurope = ['英国', '法国', '德国', '意大利', '西班牙', '荷兰', '瑞士', '比利时', '奥地利', '希腊', '葡萄牙'].indexOf(country) >= 0;
+      var isMiddleEast = ['阿联酋', '沙特阿拉伯', '卡塔尔', '土耳其'].indexOf(country) >= 0;
+      
+      var defaultModes = [
+        { icon: '🚇', name: '地铁/轻轨', desc: '覆盖城区主要区域，价格实惠', tips: ['办交通卡更便捷（可省排队买票）', '注意首末班车时间', '高峰期人较多注意防盗', '换乘时预留足够时间'] },
+        { icon: '🚌', name: '公交车', desc: '线路覆盖广，价格便宜', tips: ['使用Google Maps查线路', '部分城市需按铃下车', '准备好零钱或交通卡', '注意下车安全'] },
+        { icon: '🚕', name: '出租车', desc: '随时可乘，舒适便捷', tips: ['选择正规出租车公司', '记下车牌号发给家人', '要求打表计费（Meter）', 'Uber/Bolt更透明安全'] },
       ];
+      
+      var asiaModes = [
+        { icon: '🚇', name: '地铁/轻轨', desc: '亚洲城市地铁发达，覆盖广', tips: ['办城市交通卡（节省排队）', '早晚高峰期人很多', '部分城市有女性专用车厢', '注意末班车时间（很多城市23点末班）'] },
+        { icon: '🚌', name: '公共巴士', desc: '价格便宜，线路覆盖全', tips: ['Google Maps是必备', '有的城市需要按铃下车', '准备好零钱', '报站可能只有本地语言'] },
+        { icon: '🚕', name: '出租车/网约车', desc: '随时可乘，推荐使用', tips: ['Uber/Grab比街头拦车更规范', '摩托车（东南亚）快捷但危险', '三轮车(Tuk-tuk)价格先谈好', '酒后千万不能开车'] },
+        { icon: '🚶', name: '步行/共享单车', desc: '市中心适合步行', tips: ['Google Maps步行导航很准', '共享单车需押金和手机号', '注意人行道状况', '红灯过马路可能被罚款'] },
+      ];
+      
+      var europeModes = [
+        { icon: '🚇', name: '地铁/有轨电车', desc: '欧洲城市公共交通发达', tips: ['地铁票与公交通用（一票换乘）', '逃票罚款很重（50-60欧）', '注意保管交通卡（遗失不补）', '伦敦有Oyster卡可优惠'] },
+        { icon: '🚌', name: '公交/电车', desc: '覆盖地铁不到的区域', tips: ['Google Maps实时公交', '提前买票比上车买便宜', '有的城市需打票验证', '周日班次减少注意查看'] },
+        { icon: '🚕', name: '出租车', desc: '价格较高但安全可靠', tips: ['Uber比传统出租车便宜', '记下车牌号', '要求发票收据', '伦敦黑色出租车较贵'] },
+        { icon: '🚲', name: '共享单车/滑板车', desc: '环保便捷，短途首选', tips: ['需要当地手机号注册', '定点还车注意电子围栏', '骑行需戴头盔（澳洲强制）', '共享电动滑板车需驾照'] },
+      ];
+      
+      if (isAsia) return asiaModes;
+      if (isEurope) return europeModes;
+      return defaultModes;
     }
-
     renderEmergency();
 
 
