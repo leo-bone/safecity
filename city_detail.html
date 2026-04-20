@@ -1543,10 +1543,8 @@
 
       document.getElementById('lifestyle-section').innerHTML = html || '<p style="color:var(--text2);padding:40px;text-align:center;">暂无生活数据</p>';
     }
-    renderLifestyle();
-
     // ========================
-    // FOOD SAFETY TIPS
+    // FOOD SAFETY TIPS (必须定义在 renderLifestyle 之前)
     // ========================
     function getFoodSafetyTips(country) {
       var tips = {
@@ -1573,6 +1571,8 @@
       };
       return tips[country] || ['选择干净卫生的餐厅', '饮用瓶装水', '避免生食', '注意食物过敏原', '街边小吃注意新鲜度'];
     }
+
+    renderLifestyle();
 
     // ========================
     // RENDER TIPS
