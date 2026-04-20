@@ -484,59 +484,56 @@ var CITY_DATABASE = {
     "hospitals": [
       {
         "name": "东京大学医学部附属病院",
-        "nameEn": "The University of Tokyo Hospital",
-        "address": "东京都文京本郷7-3-1",
+        "nameEn": "University of Tokyo Hospital",
+        "address": "7-3-1 Hongo, Bunkyo-ku, Tokyo",
         "phone": "+81-3-3815-5411",
         "languages": [
-          "英语",
-          "中文",
-          "韩语"
+          "English",
+          "Chinese"
         ],
         "services": [
+          "综合内科",
+          "外科",
           "急诊",
-          "综合门诊",
-          "国际诊疗部"
+          "国际诊疗"
         ],
         "english": true,
-        "insurance": "国际保险可对接"
+        "insurance": "接受海外旅行保险"
       },
       {
         "name": "圣路加国际医院",
         "nameEn": "St. Luke's International Hospital",
-        "address": "东京都中央区明石町9-1",
-        "phone": "+81-3-3541-5151",
+        "address": "9-1 Akashicho, Chuo-ku, Tokyo",
+        "phone": "+81-3-5550-7166",
         "languages": [
-          "英语",
-          "中文",
-          "法语",
-          "德语",
-          "西班牙语",
-          "葡萄牙语"
+          "English",
+          "Chinese",
+          "Korean"
         ],
         "services": [
-          "全科",
+          "国际医疗",
           "急诊",
-          "体检",
-          "疫苗接种"
+          "妇产科",
+          "全科"
         ],
         "english": true,
-        "insurance": "国际保险全覆盖，24/7急诊"
+        "insurance": "接受大多数国际保险"
       },
       {
-        "name": "JCHO东京新宿大楼诊所",
-        "nameEn": "JCHO Tokyo Shinjuku Building Clinic",
-        "address": "东京都新宿区长町5-23",
-        "phone": "+81-3-5272-5100",
+        "name": "虎之门医院",
+        "nameEn": "Toranomon Hospital",
+        "address": "2-2-2 Toranomon, Minato-ku, Tokyo",
+        "phone": "+81-3-3588-1111",
         "languages": [
-          "英语"
+          "English"
         ],
         "services": [
           "内科",
           "外科",
-          "牙科"
+          "肿瘤科"
         ],
         "english": true,
-        "insurance": "国际保险可对接"
+        "insurance": "接受部分国际保险"
       }
     ],
     "embassies": {
@@ -3702,60 +3699,58 @@ var CITY_DATABASE = {
       {
         "name": "康民国际医院",
         "nameEn": "Bumrungrad International Hospital",
-        "address": "33 Sukhumvit 3, Wattana, Bangkok 10110",
-        "phone": "+66-2-066-8888",
+        "address": "33 Sukhumvit 3, Wattana, Bangkok",
+        "phone": "+66-2-667-1000",
         "languages": [
-          "英语",
-          "中文",
-          "日语",
-          "韩语",
-          "阿拉伯语",
-          "德语",
-          "法语"
+          "English",
+          "Chinese",
+          "Japanese",
+          "Arabic"
         ],
         "services": [
-          "急诊",
           "全科",
-          "体检",
-          "医美",
-          "试管婴儿"
+          "急诊",
+          "心脏科",
+          "肿瘤科",
+          "国际诊疗"
         ],
         "english": true,
-        "insurance": "国际保险直付，JCI认证全球最大国际医院"
+        "insurance": "接受国际保险及信用卡"
       },
       {
-        "name": "曼谷基督教医院",
-        "nameEn": "Bangkok Christian Hospital",
-        "address": "124 Silom Road, Bangrak, Bangkok 10500",
-        "phone": "+66-2-233-6981",
+        "name": "曼谷医院",
+        "nameEn": "Bangkok Hospital",
+        "address": "2 Soi Soonvijai 7, New Phetchaburi Rd",
+        "phone": "+66-2-310-3000",
         "languages": [
-          "英语",
-          "中文"
+          "English",
+          "Chinese",
+          "Japanese"
         ],
         "services": [
           "急诊",
-          "全科",
-          "专科"
+          "骨科",
+          "心脏科"
         ],
         "english": true,
-        "insurance": "价格实惠，接受国际保险"
+        "insurance": "接受大多数国际保险"
       },
       {
-        "name": "朱拉蓬国际医院",
-        "nameEn": "Chulalongkorn Hospital",
-        "address": "1873 Rama IV Road, Pathum Wan, Bangkok 10330",
-        "phone": "+66-2-256-5000",
+        "name": "三美泰医院",
+        "nameEn": "Samitivej Sukhumvit Hospital",
+        "address": "133 Sukhumvit 49, Wattana, Bangkok",
+        "phone": "+66-2-711-8000",
         "languages": [
-          "英语",
-          "泰语"
+          "English",
+          "Chinese"
         ],
         "services": [
-          "急诊",
-          "综合",
-          "教学医院"
+          "儿科",
+          "妇产科",
+          "急诊"
         ],
         "english": true,
-        "insurance": "公立医院，费用较低"
+        "insurance": "接受国际保险"
       }
     ],
     "embassies": {
@@ -11315,21 +11310,38 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "巴厘岛国际医院",
-        "nameEn": "巴厘岛 International Hospital",
-        "address": "巴厘岛市中心",
-        "phone": "请拨打当地急救120",
+        "name": "BIMC 巴厘岛国际医疗中心",
+        "nameEn": "BIMC Hospital Bali",
+        "address": "Jl. Bypass Ngurah Rai No.100X, Kuta",
+        "phone": "+62-361-761-263",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Chinese"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "创伤外科",
+          "全科",
+          "医疗转运"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "Kasih Ibu 医院",
+        "nameEn": "Kasih Ibu Hospital",
+        "address": "Jl. Teuku Umar No.120, Denpasar",
+        "phone": "+62-361-223-036",
+        "languages": [
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "妇产科",
+          "外科"
+        ],
+        "english": true,
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -11800,21 +11812,37 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "清迈国际医院",
-        "nameEn": "清迈 International Hospital",
-        "address": "清迈市中心",
-        "phone": "请拨打当地急救120",
+        "name": "清迈罗摩医院",
+        "nameEn": "Ram Hospital Chiang Mai",
+        "address": "8 Boonreungrit Rd, Suthep, Chiang Mai",
+        "phone": "+66-53-224-861",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Chinese"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "外科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受大多数国际保险"
+      },
+      {
+        "name": "麦卡迈国际医院",
+        "nameEn": "McCormick Hospital",
+        "address": "133 Kaeonawarat Rd, Chiang Mai",
+        "phone": "+66-53-921-777",
+        "languages": [
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "内科",
+          "外科"
+        ],
+        "english": true,
+        "insurance": "接受国际保险"
       }
     ],
     "safetyApps": [
@@ -12280,20 +12308,39 @@ var CITY_DATABASE = {
     "hospitals": [
       {
         "name": "普吉岛国际医院",
-        "nameEn": "普吉岛 International Hospital",
-        "address": "普吉岛市中心",
-        "phone": "请拨打当地急救120",
+        "nameEn": "Phuket International Hospital",
+        "address": "44 Chalermprakiat Ror 9 Rd, Phuket",
+        "phone": "+66-76-249-400",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Chinese",
+          "German"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "潜水减压"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "曼谷普吉岛医院",
+        "nameEn": "Bangkok Hospital Phuket",
+        "address": "2/1 Hongyok Utis Rd, Muang, Phuket",
+        "phone": "+66-76-254-425",
+        "languages": [
+          "English",
+          "Chinese",
+          "Japanese"
+        ],
+        "services": [
+          "急诊",
+          "心脏科",
+          "骨科"
+        ],
+        "english": true,
+        "insurance": "接受大多数国际保险"
       }
     ],
     "safetyApps": [
@@ -12757,21 +12804,39 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "槟城国际医院",
-        "nameEn": "槟城 International Hospital",
-        "address": "槟城市中心",
-        "phone": "请拨打当地急救120",
+        "name": "槟城国际医疗中心",
+        "nameEn": "Penang Adventist Hospital",
+        "address": "465 Jln Burma, Georgetown, Penang",
+        "phone": "+60-4-222-7200",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Chinese",
+          "Malay"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "心脏科",
+          "骨科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "槟城医学院医院",
+        "nameEn": "Hospital Lam Wah Ee",
+        "address": "141 Jln Tan Sri Teh Ewe Lim, Penang",
+        "phone": "+60-4-657-3333",
+        "languages": [
+          "English",
+          "Chinese"
+        ],
+        "services": [
+          "急诊",
+          "全科",
+          "手术"
+        ],
+        "english": true,
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -13235,21 +13300,40 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "河内国际医院",
-        "nameEn": "河内 International Hospital",
-        "address": "河内市中心",
-        "phone": "请拨打当地急救120",
+        "name": "河内法国医院",
+        "nameEn": "Hanoi French Hospital",
+        "address": "1 Phuong Mai, Dong Da, Hanoi",
+        "phone": "+84-24-3577-1100",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "French",
+          "Chinese"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "儿科",
+          "妇产科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "越日医院河内院",
+        "nameEn": "Vinmec Times City Hospital",
+        "address": "458 Minh Khai, Hai Ba Trung, Hanoi",
+        "phone": "+84-24-3974-3556",
+        "languages": [
+          "English",
+          "Japanese"
+        ],
+        "services": [
+          "急诊",
+          "肿瘤科",
+          "妇产科"
+        ],
+        "english": true,
+        "insurance": "接受国际保险"
       }
     ],
     "safetyApps": [
@@ -13713,21 +13797,38 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "班加罗尔国际医院",
-        "nameEn": "班加罗尔 International Hospital",
-        "address": "班加罗尔市中心",
-        "phone": "请拨打当地急救120",
+        "name": "马尼帕尔医院班加罗尔",
+        "nameEn": "Manipal Hospital Bangalore",
+        "address": "98 HAL Airport Road, Bangalore",
+        "phone": "+91-80-2502-4444",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Hindi"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "心脏科",
+          "骨科",
+          "肿瘤科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "阿波罗医院班加罗尔",
+        "nameEn": "Apollo Hospital Bangalore",
+        "address": "154/11 Opp IIM Bannerghatta Rd",
+        "phone": "+91-80-2630-4050",
+        "languages": [
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "全科",
+          "神经外科"
+        ],
+        "english": true,
+        "insurance": "接受国际健康保险"
       }
     ],
     "safetyApps": [
@@ -14191,21 +14292,39 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "金奈国际医院",
-        "nameEn": "金奈 International Hospital",
-        "address": "金奈市中心",
-        "phone": "请拨打当地急救120",
+        "name": "阿波罗医院金奈",
+        "nameEn": "Apollo Hospitals Chennai",
+        "address": "21 Greams Lane, Off Greams Rd, Chennai",
+        "phone": "+91-44-2829-3333",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Hindi",
+          "Tamil"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "心脏科",
+          "肾脏科",
+          "骨科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "福提斯·马拉尔医院",
+        "nameEn": "Fortis Malar Hospital",
+        "address": "52 1st Main Road, Gandhi Nagar, Chennai",
+        "phone": "+91-44-4289-2222",
+        "languages": [
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "心脏科",
+          "整形外科"
+        ],
+        "english": true,
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -14676,21 +14795,39 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "加尔各答国际医院",
-        "nameEn": "加尔各答 International Hospital",
-        "address": "加尔各答市中心",
-        "phone": "请拨打当地急救120",
+        "name": "阿波罗格伦伊格尔斯医院",
+        "nameEn": "Apollo Gleneagles Hospitals Kolkata",
+        "address": "58 Canal Circular Rd, Kadapara, Kolkata",
+        "phone": "+91-33-2320-2040",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Hindi",
+          "Bengali"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "心脏科",
+          "骨科",
+          "肿瘤科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "阿明医院",
+        "nameEn": "Amin Hospital",
+        "address": "12/1 Ho Chi Minh Sarani, Kolkata",
+        "phone": "+91-33-2281-8383",
+        "languages": [
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "全科",
+          "外科"
+        ],
+        "english": true,
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -15161,21 +15298,40 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "海德拉巴国际医院",
-        "nameEn": "海德拉巴 International Hospital",
-        "address": "海德拉巴市中心",
-        "phone": "请拨打当地急救120",
+        "name": "阿波罗医院海德拉巴",
+        "nameEn": "Apollo Hospitals Hyderabad",
+        "address": "Jubilee Hills, Hyderabad",
+        "phone": "+91-40-2360-7777",
         "languages": [
-          "当地语言",
-          "英语"
+          "English",
+          "Hindi",
+          "Telugu"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "心脏科",
+          "骨科",
+          "神经科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
+      },
+      {
+        "name": "雅西奥达医院",
+        "nameEn": "Yashoda Hospitals",
+        "address": "Alexander Rd, Kummari Guda, Hyderabad",
+        "phone": "+91-40-4567-4567",
+        "languages": [
+          "English",
+          "Hindi"
+        ],
+        "services": [
+          "急诊",
+          "肿瘤科",
+          "外科"
+        ],
+        "english": true,
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -15646,21 +15802,40 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "深圳国际医院",
-        "nameEn": "深圳 International Hospital",
-        "address": "深圳市中心",
-        "phone": "请拨打当地急救120",
+        "name": "深圳市人民医院",
+        "nameEn": "Shenzhen People's Hospital",
+        "address": "1017 Dongmen Bei Lu, Luohu, Shenzhen",
+        "phone": "+86-755-2553-3018",
         "languages": [
-          "当地语言",
-          "英语"
+          "Chinese",
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "全科",
+          "外科",
+          "儿科"
+        ],
+        "english": true,
+        "insurance": "接受国内外保险"
+      },
+      {
+        "name": "深圳和睦家医疗",
+        "nameEn": "Beijing United Family Hospital Shenzhen",
+        "address": "Level 3, MixC World, Nanshan",
+        "phone": "+86-755-8632-8300",
+        "languages": [
+          "English",
+          "Chinese",
+          "Japanese"
         ],
         "services": [
           "全科",
-          "急诊",
-          "内科"
+          "儿科",
+          "妇产科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
       }
     ],
     "safetyApps": [
@@ -16124,21 +16299,41 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "广州国际医院",
-        "nameEn": "广州 International Hospital",
-        "address": "广州市中心",
-        "phone": "请拨打当地急救120",
+        "name": "广州市第一人民医院",
+        "nameEn": "Guangzhou First People's Hospital",
+        "address": "1 Panfu Lu, Yuexiu, Guangzhou",
+        "phone": "+86-20-8108-9999",
         "languages": [
-          "当地语言",
-          "英语"
+          "Chinese",
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "全科",
+          "外科",
+          "妇产科"
+        ],
+        "english": true,
+        "insurance": "接受国内外保险"
+      },
+      {
+        "name": "广州和睦家医院",
+        "nameEn": "Guangzhou United Family Hospital",
+        "address": "5/F 368 Huanshidong Lu, Guangzhou",
+        "phone": "+86-20-8710-8880",
+        "languages": [
+          "English",
+          "Chinese",
+          "French"
         ],
         "services": [
           "全科",
           "急诊",
-          "内科"
+          "儿科",
+          "妇产科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国际保险"
       }
     ],
     "safetyApps": [
@@ -16602,21 +16797,38 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "成都国际医院",
-        "nameEn": "成都 International Hospital",
-        "address": "成都市中心",
-        "phone": "请拨打当地急救120",
+        "name": "成都市第三人民医院",
+        "nameEn": "Chengdu Third People's Hospital",
+        "address": "82 Qinglong Jie, Qingyang, Chengdu",
+        "phone": "+86-28-6630-1999",
         "languages": [
-          "当地语言",
-          "英语"
+          "Chinese",
+          "English"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "外科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国内外保险"
+      },
+      {
+        "name": "成都美华妇儿医院",
+        "nameEn": "Chengdu MeiHua Hospital",
+        "address": "16 Qintai Lu, Qingyang, Chengdu",
+        "phone": "+86-28-8511-0000",
+        "languages": [
+          "English",
+          "Chinese"
+        ],
+        "services": [
+          "妇产科",
+          "儿科",
+          "全科"
+        ],
+        "english": true,
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -17080,21 +17292,39 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "杭州国际医院",
-        "nameEn": "杭州 International Hospital",
-        "address": "杭州市中心",
-        "phone": "请拨打当地急救120",
+        "name": "浙江大学医学院附属第一医院",
+        "nameEn": "First Affiliated Hospital of Zhejiang University",
+        "address": "79 Qingchun Lu, Shangcheng, Hangzhou",
+        "phone": "+86-571-8723-6114",
         "languages": [
-          "当地语言",
-          "英语"
+          "Chinese",
+          "English"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "肝脏科",
+          "肿瘤科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国内外保险"
+      },
+      {
+        "name": "杭州市第一人民医院",
+        "nameEn": "Hangzhou First People's Hospital",
+        "address": "261 Huansha Lu, Shangcheng, Hangzhou",
+        "phone": "+86-571-5600-6114",
+        "languages": [
+          "Chinese",
+          "English"
+        ],
+        "services": [
+          "急诊",
+          "全科",
+          "外科"
+        ],
+        "english": true,
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -17558,21 +17788,39 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "西安国际医院",
-        "nameEn": "西安 International Hospital",
-        "address": "西安市中心",
-        "phone": "请拨打当地急救120",
+        "name": "西安交通大学第一附属医院",
+        "nameEn": "First Affiliated Hospital of Xi'an Jiao Tong University",
+        "address": "277 Yanta Xilu, Yanta, Xi'an",
+        "phone": "+86-29-8532-3901",
         "languages": [
-          "当地语言",
-          "英语"
+          "Chinese",
+          "English"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "心脏科",
+          "神经科"
         ],
         "english": true,
-        "insurance": "建议购买国际医疗保险"
+        "insurance": "接受国内外保险"
+      },
+      {
+        "name": "西安市中心医院",
+        "nameEn": "Xi'an Central Hospital",
+        "address": "161 Xi Wu Lu, Xincheng, Xi'an",
+        "phone": "+86-29-8762-5000",
+        "languages": [
+          "Chinese"
+        ],
+        "services": [
+          "急诊",
+          "全科",
+          "外科",
+          "妇产科"
+        ],
+        "english": false,
+        "insurance": "接受国内保险"
       }
     ],
     "safetyApps": [
@@ -19652,40 +19900,40 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "阿姆斯特丹学术医疗中心",
+        "name": "阿姆斯特丹大学医学中心",
         "nameEn": "Amsterdam UMC",
         "address": "Meibergdreef 9, 1105 AZ Amsterdam",
         "phone": "+31-20-566-9111",
         "languages": [
-          "荷兰语",
-          "英语",
-          "德语",
-          "法语"
+          "English",
+          "Dutch",
+          "German"
         ],
         "services": [
-          "全科",
           "急诊",
-          "专科"
+          "全科",
+          "肿瘤科",
+          "心脏科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "接受欧洲健康卡及国际保险"
       },
       {
-        "name": "阿姆斯特丹中心医院",
-        "nameEn": "MC Slotervaart Hospital",
-        "address": "Louwesweg 6, 1066 EC Amsterdam",
-        "phone": "+31-20-512-9333",
+        "name": "圣卢卡斯医院",
+        "nameEn": "Onze Lieve Vrouwe Gasthuis",
+        "address": "Oosterpark 9, 1091 AC Amsterdam",
+        "phone": "+31-20-599-9111",
         "languages": [
-          "荷兰语",
-          "英语"
+          "English",
+          "Dutch"
         ],
         "services": [
-          "全科",
           "急诊",
-          "妇科"
+          "骨科",
+          "外科"
         ],
         "english": true,
-        "insurance": "接受大多数保险"
+        "insurance": "接受大多数国际保险"
       }
     ],
     "safetyApps": [
@@ -23567,41 +23815,40 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "罗马国际医疗中心",
-        "nameEn": "Rome American Hospital",
-        "address": "Via Emilio Longoni 69, 00155 Rome",
-        "phone": "+39-06-225-51",
+        "name": "罗马宝儿国际医院",
+        "nameEn": "Policlinico Umberto I",
+        "address": "Viale del Policlinico 155, Roma",
+        "phone": "+39-06-4997-1",
         "languages": [
-          "意大利语",
-          "英语",
-          "法语",
-          "德语",
-          "西班牙语"
+          "English",
+          "Italian"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "外科",
+          "儿科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "接受欧洲健康卡及部分国际保险"
       },
       {
-        "name": "罗马综合医院",
-        "nameEn": "Policlinico Umberto I",
-        "address": "Viale del Policlinico, 155, 00161 Rome",
-        "phone": "+39-06-499-71",
+        "name": "国际诊所罗马",
+        "nameEn": "Rome American Hospital",
+        "address": "Via Emilio Longoni 69, Roma",
+        "phone": "+39-06-2255-1",
         "languages": [
-          "意大利语",
-          "英语"
+          "English",
+          "Italian",
+          "Chinese"
         ],
         "services": [
           "全科",
           "急诊",
-          "外科"
+          "妇产科"
         ],
         "english": true,
-        "insurance": "接受EU及国际保险"
+        "insurance": "接受国际保险及信用卡"
       }
     ],
     "safetyApps": [
@@ -48943,42 +49190,41 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "圣保罗以色列医院",
+        "name": "圣保罗以色列阿尔伯特爱因斯坦医院",
         "nameEn": "Hospital Israelita Albert Einstein",
-        "address": "Avenida Albert Einstein, 627, São Paulo",
+        "address": "Av. Albert Einstein 627, Sao Paulo",
         "phone": "+55-11-2151-1233",
         "languages": [
-          "葡萄牙语",
-          "英语",
-          "西班牙语",
-          "中文"
+          "English",
+          "Portuguese",
+          "Spanish"
         ],
         "services": [
-          "全科",
           "急诊",
-          "肿瘤"
+          "心脏科",
+          "肿瘤科",
+          "骨科"
         ],
         "english": true,
         "insurance": "接受国际保险"
       },
       {
-        "name": "阿马尔国际医院",
-        "nameEn": "Hospital Sírio-Libanês",
-        "address": "Rua Dona Adma Jafet, 91, São Paulo",
+        "name": "西里奥-利巴内斯医院",
+        "nameEn": "Hospital Sirio-Libanes",
+        "address": "Rua Dona Adma Jafet 91, Bela Vista",
         "phone": "+55-11-3155-0200",
         "languages": [
-          "葡萄牙语",
-          "英语",
-          "阿拉伯语",
-          "西班牙语"
+          "English",
+          "Portuguese",
+          "Arabic"
         ],
         "services": [
-          "全科",
           "急诊",
-          "心脏"
+          "全科",
+          "神经科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "接受大多数国际保险"
       }
     ],
     "safetyApps": [
@@ -49458,39 +49704,39 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "里约国际医院",
+        "name": "里约热内卢圣地亚哥医院",
         "nameEn": "Hospital Copa Star",
-        "address": "Rua Figueiredo de Magalhães, 875, Copacabana",
-        "phone": "+55-21-3463-0000",
+        "address": "Rua Figueiredo Magalhaes 875, Copacabana",
+        "phone": "+55-21-3080-9000",
         "languages": [
-          "葡萄牙语",
-          "英语",
-          "西班牙语"
+          "English",
+          "Portuguese",
+          "Spanish"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "心脏科",
+          "骨科"
         ],
         "english": true,
         "insurance": "接受国际保险"
       },
       {
-        "name": "里约奥斯瓦尔多-克鲁斯医院",
-        "nameEn": "Hospital Barra D'Or",
-        "address": "Av. Ayrton Senna, 2541, Barra da Tijuca",
-        "phone": "+55-21-3447-4100",
+        "name": "克利尼医院里约",
+        "nameEn": "Hospital Samaritano Rio",
+        "address": "Rua Bambina 98, Botafogo, Rio",
+        "phone": "+55-21-3318-9700",
         "languages": [
-          "葡萄牙语",
-          "英语"
+          "English",
+          "Portuguese"
         ],
         "services": [
-          "全科",
           "急诊",
-          "外科"
+          "外科",
+          "妇产科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -52861,38 +53107,39 @@ var CITY_DATABASE = {
     "hospitals": [
       {
         "name": "开罗克利奥帕特拉医院",
-        "nameEn": "Cleopatra Hospital",
-        "address": "9 Cleopatra Street, Heliopolis, Cairo",
-        "phone": "+20-2-2290-0008",
+        "nameEn": "Cleopatra Hospital Cairo",
+        "address": "Mesaha Square, Dokki, Cairo",
+        "phone": "+20-2-3748-2022",
         "languages": [
-          "阿拉伯语",
-          "英语",
-          "法语"
+          "English",
+          "Arabic",
+          "French"
         ],
         "services": [
-          "全科",
           "急诊",
-          "内科"
+          "全科",
+          "外科",
+          "妇产科"
         ],
         "english": true,
         "insurance": "接受国际保险"
       },
       {
-        "name": "开罗国际医院",
-        "nameEn": "Cairo International Hospital",
-        "address": "Ahmed Abd El Aziz St., Nasr City, Cairo",
-        "phone": "+20-2-2405-7000",
+        "name": "开罗达尔福瓦德医院",
+        "nameEn": "Dar Al Fouad Hospital",
+        "address": "26th of July Corridor, 6th of October",
+        "phone": "+20-38-52-4000",
         "languages": [
-          "阿拉伯语",
-          "英语"
+          "English",
+          "Arabic"
         ],
         "services": [
-          "全科",
           "急诊",
-          "外科"
+          "心脏科",
+          "肿瘤科"
         ],
         "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "接受国际保险"
       }
     ],
     "safetyApps": [

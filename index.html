@@ -414,8 +414,25 @@
     }
     .detail-tab:hover { color: var(--text); }
     .detail-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
-    .detail-panel { display: none; padding: 28px 24px 60px; animation: fadeIn 0.3s ease; }
+    .detail-panel { display: none; padding: 0 0 60px; animation: fadeIn 0.3s ease; }
     .detail-panel.active { display: block; }
+    /* 子Tab导航 */
+    .sub-tab-nav {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      padding: 16px 24px 0; border-bottom: 1px solid var(--border);
+      background: var(--bg); position: sticky; top: 0; z-index: 10;
+    }
+    .sub-tab-btn {
+      padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600;
+      color: var(--text2); background: var(--card); border: 1px solid var(--border);
+      cursor: pointer; transition: all 0.2s; white-space: nowrap; margin-bottom: 12px;
+    }
+    .sub-tab-btn:hover { color: var(--text); border-color: var(--accent); }
+    .sub-tab-btn.active { color: #fff; background: var(--accent); border-color: var(--accent); }
+    /* 子面板内容区 */
+    .emergency-sub-panel, .lifestyle-sub-panel {
+      padding: 24px 24px 20px; animation: fadeIn 0.25s ease;
+    }
 
     /* ─────────── 安全评估面板 ─────────── */
     .safety-grid {
@@ -1387,15 +1404,8 @@
     <button class="detail-tab" onclick="switchDetailTab('conflict', this)">⚠️ 冲突风险</button>
     <button class="detail-tab" onclick="switchDetailTab('emergency', this)">📞 紧急联系</button>
     <button class="detail-tab" onclick="switchDetailTab('live', this)">🌐 实时数据</button>
-    <button class="detail-tab" onclick="switchDetailTab('transport', this)">🚇 交通指南</button>
-    <button class="detail-tab" onclick="switchDetailTab('hospital', this)">🏨 推荐医院</button>
-    <button class="detail-tab" onclick="switchDetailTab('embassy', this)">🏛️ 使领馆</button>
     <button class="detail-tab" onclick="switchDetailTab('lifestyle', this)">🍜 吃喝玩乐</button>
     <button class="detail-tab" onclick="switchDetailTab('hotspots', this)">⚠️ 危险区域</button>
-    <button class="detail-tab" onclick="switchDetailTab('food-safety', this)">🍱 食品安全</button>
-    <button class="detail-tab" onclick="switchDetailTab('disease-prevention', this)">🏥 疾病预防</button>
-    <button class="detail-tab" onclick="switchDetailTab('safety-app', this)">📱 安全应用</button>
-    <button class="detail-tab" onclick="switchDetailTab('self-defense', this)">🛡️ 自保策略</button>
     <button class="detail-tab" onclick="switchDetailTab('history', this)">📜 历史背景</button>
   </div>
 
@@ -1422,33 +1432,108 @@
 
   <!-- 紧急联系面板 -->
   <div id="panel-emergency" class="detail-panel">
-    <div class="section-header">
-      <h2>紧急求助电话</h2>
-      <p>以下号码均为当地真实有效号码，遇到紧急情况请立即拨打</p>
+    <!-- 子Tab导航 -->
+    <div class="sub-tab-nav" id="emergency-sub-tabs">
+      <button class="sub-tab-btn active" onclick="switchEmergencySubTab('numbers', this)">🆘 紧急号码</button>
+      <button class="sub-tab-btn" onclick="switchEmergencySubTab('hospital', this)">🏥 推荐医院</button>
+      <button class="sub-tab-btn" onclick="switchEmergencySubTab('embassy', this)">🏛️ 使领馆</button>
+      <button class="sub-tab-btn" onclick="switchEmergencySubTab('transport', this)">🚇 交通指南</button>
+      <button class="sub-tab-btn" onclick="switchEmergencySubTab('apps', this)">📱 安全应用</button>
+      <button class="sub-tab-btn" onclick="switchEmergencySubTab('selfdefense', this)">🥋 自保策略</button>
     </div>
-    <div class="emergency-grid" id="emergency-numbers-grid"></div>
-    <div class="sub-section-title">🏥 推荐医院（含外语服务）</div>
-    <div id="hospitals-list"></div>
-    <div class="sub-section-title">🏛️ 大使馆 / 领事馆</div>
-    <div class="embassy-list" id="embassy-list"></div>
-    <div class="sub-section-title">📱 推荐安全应用</div>
-    <div class="apps-grid" id="apps-grid"></div>
-    <div class="sub-section-title">🥋 自保策略</div>
-    <ul class="self-defense-list" id="self-defense-list"></ul>
+    <!-- 紧急号码 -->
+    <div id="emergency-sub-numbers" class="emergency-sub-panel">
+      <div class="section-header">
+        <h2>🆘 紧急求助电话</h2>
+        <p>以下号码均为当地真实有效号码，遇到紧急情况请立即拨打</p>
+      </div>
+      <div class="emergency-grid" id="emergency-numbers-grid"></div>
+    </div>
+    <!-- 推荐医院 -->
+    <div id="emergency-sub-hospital" class="emergency-sub-panel" style="display:none">
+      <div class="section-header">
+        <h2>🏥 推荐医院（含外语服务）</h2>
+        <p>以下医院提供外语服务，建议出发前确认预约，携带护照和保险信息</p>
+      </div>
+      <div id="hospitals-list"></div>
+    </div>
+    <!-- 使领馆 -->
+    <div id="emergency-sub-embassy" class="emergency-sub-panel" style="display:none">
+      <div class="section-header">
+        <h2>🏛️ 中国大使馆 / 领事馆</h2>
+        <p>遇到护照遗失、紧急救援等情况，请联系中国驻当地使领馆</p>
+      </div>
+      <div class="embassy-list" id="embassy-list"></div>
+    </div>
+    <!-- 交通指南 -->
+    <div id="emergency-sub-transport" class="emergency-sub-panel" style="display:none">
+      <div class="section-header">
+        <h2>🚇 交通指南</h2>
+        <p>当地公共交通系统详解，包括地铁、公交、出租车及注意事项</p>
+      </div>
+      <div id="transport-info-new"></div>
+    </div>
+    <!-- 安全应用 -->
+    <div id="emergency-sub-apps" class="emergency-sub-panel" style="display:none">
+      <div class="section-header">
+        <h2>📱 推荐安全应用</h2>
+        <p>旅行前请提前安装，紧急时刻能快速求助</p>
+      </div>
+      <div class="apps-grid" id="apps-grid"></div>
+    </div>
+    <!-- 自保策略 -->
+    <div id="emergency-sub-selfdefense" class="emergency-sub-panel" style="display:none">
+      <div class="section-header">
+        <h2>🥋 自保策略</h2>
+        <p>出行前必读安全守则，保护自身与财产安全</p>
+      </div>
+      <ul class="self-defense-list" id="self-defense-list"></ul>
+    </div>
   </div>
 
   <!-- 吃喝玩乐面板 -->
   <div id="panel-lifestyle" class="detail-panel">
-    <div class="sub-section-title">🍽️ 美食推荐</div>
-    <div id="food-list"></div>
-    <div class="sub-section-title">🎡 景点推荐（含小众隐藏地）</div>
-    <div id="attractions-list"></div>
-    <div class="sub-section-title">🎉 节庆活动</div>
-    <div id="festivals-list"></div>
-    <div class="sub-section-title">🎎 文化习俗</div>
-    <ul class="customs-list" id="customs-list"></ul>
-    <div class="sub-section-title">🚇 交通指南</div>
-    <div class="transport-info" id="transport-info"></div>
+    <!-- 子Tab导航 -->
+    <div class="sub-tab-nav" id="lifestyle-sub-tabs">
+      <button class="sub-tab-btn active" onclick="switchLifestyleSubTab('food', this)">🍽️ 美食推荐</button>
+      <button class="sub-tab-btn" onclick="switchLifestyleSubTab('attractions', this)">🏛️ 景点推荐</button>
+      <button class="sub-tab-btn" onclick="switchLifestyleSubTab('festivals', this)">🎉 节庆活动</button>
+      <button class="sub-tab-btn" onclick="switchLifestyleSubTab('customs', this)">🎎 文化习俗</button>
+      <button class="sub-tab-btn" onclick="switchLifestyleSubTab('foodsafety', this)">🍱 食品安全</button>
+      <button class="sub-tab-btn" onclick="switchLifestyleSubTab('disease', this)">🏥 疾病预防</button>
+    </div>
+    <!-- 美食推荐 -->
+    <div id="lifestyle-sub-food" class="lifestyle-sub-panel">
+      <div id="food-list"></div>
+    </div>
+    <!-- 景点推荐 -->
+    <div id="lifestyle-sub-attractions" class="lifestyle-sub-panel" style="display:none">
+      <div id="attractions-list"></div>
+    </div>
+    <!-- 节庆活动 -->
+    <div id="lifestyle-sub-festivals" class="lifestyle-sub-panel" style="display:none">
+      <div id="festivals-list"></div>
+    </div>
+    <!-- 文化习俗 -->
+    <div id="lifestyle-sub-customs" class="lifestyle-sub-panel" style="display:none">
+      <ul class="customs-list" id="customs-list"></ul>
+    </div>
+    <!-- 食品安全 -->
+    <div id="lifestyle-sub-foodsafety" class="lifestyle-sub-panel" style="display:none">
+      <div class="section-header">
+        <h2>🍱 食品安全指南</h2>
+        <p>当地饮用水、街头美食、餐厅卫生等详细情况</p>
+      </div>
+      <div id="food-safety-content"></div>
+    </div>
+    <!-- 疾病预防 -->
+    <div id="lifestyle-sub-disease" class="lifestyle-sub-panel" style="display:none">
+      <div class="section-header">
+        <h2>🏥 疾病预防与健康建议</h2>
+        <p>疫苗接种、传染病风险、季节性疾病预防</p>
+      </div>
+      <div id="disease-prevention-content"></div>
+    </div>
   </div>
 
   <!-- 危险区域面板 -->
@@ -1462,24 +1547,6 @@
     <div id="safe-areas-list"></div>
   </div>
 
-  <!-- 食品安全面板 -->
-  <div id="panel-food-safety" class="detail-panel">
-    <div class="section-header">
-      <h2>🍱 食品安全指南</h2>
-      <p>当地饮用水、街头美食、餐厅卫生等详细情况</p>
-    </div>
-    <div id="food-safety-content"></div>
-  </div>
-
-  <!-- 疾病预防面板 -->
-  <div id="panel-disease-prevention" class="detail-panel">
-    <div class="section-header">
-      <h2>🏥 疾病预防与健康建议</h2>
-      <p>疫苗接种、传染病风险、季节性疾病预防</p>
-    </div>
-    <div id="disease-prevention-content"></div>
-  </div>
-
   <!-- 历史背景面板 -->
   <div id="panel-history" class="detail-panel">
     <div class="history-card" id="history-content"></div>
@@ -1489,31 +1556,6 @@
     </div>
   </div>
 
-  <!-- 交通指南面板 -->
-  <div id="panel-transport" class="detail-panel">
-    <div class="section-header"><h2>🚇 交通指南</h2><p>当地公共交通系统详解，包括地铁、公交、出租车等</p></div>
-    <div id="transport-content"></div>
-  </div>
-  <!-- 推荐医院面板 -->
-  <div id="panel-hospital" class="detail-panel">
-    <div class="section-header"><h2>🏨 推荐医院</h2><p>支持外语服务的优质医疗机构</p></div>
-    <div id="hospital-content"></div>
-  </div>
-  <!-- 使领馆面板 -->
-  <div id="panel-embassy" class="detail-panel">
-    <div class="section-header"><h2>🏛️ 使领馆信息</h2><p>中国驻当地使领馆联系方式及地址</p></div>
-    <div id="embassy-content"></div>
-  </div>
-  <!-- 安全应用面板 -->
-  <div id="panel-safety-app" class="detail-panel">
-    <div class="section-header"><h2>📱 安全应用</h2><p>推荐下载的本地安全类应用</p></div>
-    <div id="safety-app-content"></div>
-  </div>
-  <!-- 自保策略面板 -->
-  <div id="panel-self-defense" class="detail-panel">
-    <div class="section-header"><h2>🛡️ 自保策略</h2><p>日常安全须知及紧急情况应对指南</p></div>
-    <div id="self-defense-content"></div>
-  </div>
   <div id="panel-live" class="detail-panel">
     <div class="section-header">
       <h2>🌐 实时数据</h2>
@@ -2049,7 +2091,6 @@ function normalizeCityData(data) {
 }
 
 function switchDetailTab(tabName, btn) {
-  // 如果btn来自事件但不是实际按钮，找第一个tab按钮
   const allTabs = document.querySelectorAll('.detail-tab');
   const allPanels = document.querySelectorAll('.detail-panel');
   allTabs.forEach(t => t.classList.remove('active'));
@@ -2058,7 +2099,6 @@ function switchDetailTab(tabName, btn) {
   const targetPanel = document.getElementById(`panel-${tabName}`);
   if (targetPanel) targetPanel.classList.add('active');
   
-  // 找对应tab按钮激活
   allTabs.forEach(t => {
     if (t.getAttribute('onclick') && t.getAttribute('onclick').includes(`'${tabName}'`)) {
       t.classList.add('active');
@@ -2068,13 +2108,56 @@ function switchDetailTab(tabName, btn) {
   // 特殊初始化
   if (tabName === 'history') setTimeout(drawRadarChart, 100);
   if (tabName === 'live' && currentCity) loadCityLiveData(currentCity);
-  // 新增tab的渲染函数调用
-  if (tabName === 'transport' && currentCity) renderTransport(CITY_DATABASE[currentCity]);
-  if (tabName === 'hospital' && currentCity) renderHospital(CITY_DATABASE[currentCity]);
-  if (tabName === 'embassy' && currentCity) renderEmbassyEnhanced(CITY_DATABASE[currentCity]);
-  if (tabName === 'safety-app' && currentCity) renderSafetyApp(CITY_DATABASE[currentCity]);
-  if (tabName === 'self-defense' && currentCity) renderSelfDefense(CITY_DATABASE[currentCity]);
 }
+
+// 紧急联系子Tab切换
+function switchEmergencySubTab(subName, btn) {
+  document.querySelectorAll('#emergency-sub-tabs .sub-tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.emergency-sub-panel').forEach(p => p.style.display = 'none');
+  if (btn) btn.classList.add('active');
+  const panel = document.getElementById('emergency-sub-' + subName);
+  if (panel) panel.style.display = 'block';
+  // 渲染交通内容（写入新ID）
+  if (subName === 'transport' && currentCity) renderTransportNew(CITY_DATABASE[currentCity]);
+}
+
+// 吃喝玩乐子Tab切换
+function switchLifestyleSubTab(subName, btn) {
+  document.querySelectorAll('#lifestyle-sub-tabs .sub-tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.lifestyle-sub-panel').forEach(p => p.style.display = 'none');
+  if (btn) btn.classList.add('active');
+  const panel = document.getElementById('lifestyle-sub-' + subName);
+  if (panel) panel.style.display = 'block';
+}
+
+// 新的交通渲染函数（写入 transport-info-new）
+function renderTransportNew(d) {
+  const c = document.getElementById('transport-info-new');
+  if (!c) return;
+  const t = d.transportation;
+  if (!t) {
+    c.innerHTML = '<div style="text-align:center;color:var(--text3);padding:40px;">暂无交通指南数据</div>';
+    return;
+  }
+  let h = '';
+  const modes = [
+    { key:'metro', icon:'🚇' }, { key:'bus', icon:'🚌' }, { key:'taxi', icon:'🚕' },
+    { key:'train', icon:'🚆' }, { key:'boat', icon:'⛴️' }
+  ];
+  modes.forEach(m => {
+    if (t[m.key]) {
+      const info = t[m.key];
+      h += `<div class="transport-card">
+        <div class="transport-name">${m.icon} ${info.name || ''}</div>
+        <div class="transport-tips">${info.tips || ''}</div>
+        <div class="transport-info">${info.hours ? '⏰ '+info.hours : ''} ${info.cost ? '💰 '+info.cost : ''}</div>
+      </div>`;
+    }
+  });
+  if (t.app) h += `<div class="transport-app">📱 推荐App: ${t.app}</div>`;
+  c.innerHTML = h || '<div style="color:var(--text3);padding:20px;">暂无交通数据</div>';
+}
+
 
 // ─────────────────────────────────────────────────────
 // 安全评估面板
@@ -2277,7 +2360,7 @@ function renderConflictPanel(data) {
 function renderEmergencyPanel(data) {
   const e = data.emergency || {};
   
-  // 紧急号码卡片
+  // ── 1. 紧急号码 ──
   const numGrid = document.getElementById('emergency-numbers-grid');
   const numbers = [];
   if (e.police) numbers.push({ icon: '👮', label: '警察', number: e.police, sub: 'Police' });
@@ -2288,7 +2371,7 @@ function renderEmergencyPanel(data) {
   if (e.touristHotline) numbers.push({ icon: '📞', label: '旅游热线', number: e.touristHotline, sub: 'Tourist Hotline' });
   if (e.european) numbers.push({ icon: '🇪🇺', label: '欧盟急救', number: e.european, sub: 'EU Emergency' });
 
-  numGrid.innerHTML = numbers.map(n => `
+  if (numGrid) numGrid.innerHTML = numbers.map(n => `
     <div class="emergency-number-card">
       <div class="emergency-icon">${n.icon}</div>
       <div class="emergency-label">${n.label}</div>
@@ -2297,67 +2380,122 @@ function renderEmergencyPanel(data) {
       <button class="emergency-copy-btn" onclick="copyText('${n.number}','${n.label}号码')">📋 复制</button>
     </div>`).join('') || '<div style="color:var(--text-muted);padding:16px">暂无紧急联系信息</div>';
 
-  // 医院
+  // ── 2. 医院（优先用顶层hospitals字段，兼容emergency.hospitals旧结构） ──
   const hList = document.getElementById('hospitals-list');
-  hList.innerHTML = (e.hospitals || []).map(h => `
-    <div class="hospital-card">
-      <div class="hospital-name">🏥 ${h.name}</div>
-      <div class="hospital-meta">
-        <span>📞 <a href="tel:${h.phone}" style="color:var(--accent)">${h.phone}</a></span>
-        <span>📍 ${h.address}</span>
-      </div>
-    </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">如遇紧急医疗状况，请拨打救护车电话</div>';
+  const hospitals = data.hospitals || e.hospitals || [];
+  if (hList) {
+    if (hospitals.length > 0) {
+      hList.innerHTML = hospitals.map(h => `
+        <div class="hospital-card" style="margin-bottom:14px;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+            <div>
+              <div style="font-weight:700;font-size:15px;color:var(--text);">🏥 ${h.name || ''}</div>
+              ${h.nameEn ? `<div style="font-size:12px;color:var(--text2);margin-top:2px;">${h.nameEn}</div>` : ''}
+            </div>
+            ${h.english ? '<span style="background:#16a34a22;color:#16a34a;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;">🌐 外语服务</span>' : ''}
+          </div>
+          ${h.address ? `<div style="font-size:13px;color:var(--text2);margin-bottom:4px;">📍 ${h.address}</div>` : ''}
+          ${h.phone ? `<div style="font-size:14px;margin-bottom:6px;">📞 <a href="tel:${h.phone}" style="color:var(--accent);font-weight:600;">${h.phone}</a></div>` : ''}
+          ${h.languages && h.languages.length ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px;">${h.languages.map(l=>`<span style="background:var(--accent)22;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:11px;">${l}</span>`).join('')}</div>` : ''}
+          ${h.services && h.services.length ? `<div style="font-size:12px;color:var(--text2);">🩺 ${h.services.join(' · ')}</div>` : ''}
+          ${h.insurance ? `<div style="font-size:12px;color:var(--text2);margin-top:4px;">💳 ${h.insurance}</div>` : ''}
+        </div>`).join('');
+    } else {
+      hList.innerHTML = '<div style="color:var(--text-muted);padding:20px;text-align:center;">如遇紧急医疗状况，请拨打当地救护车电话</div>';
+    }
+  }
 
-  // 大使馆 - 优先使用顶层的中国大使馆数据，其次使用emergency.embassies
+  // ── 3. 使领馆（读取顶层 embassies 字段，新数据结构） ──
   const emList = document.getElementById('embassy-list');
-  let embassyHtml = '';
-  
-  // 优先显示中国大使馆信息（顶层embassy字段）
-  if (data.embassy && data.embassy.name) {
-    embassyHtml = `
-      <div class="embassy-item" style="background:linear-gradient(135deg,rgba(220,53,69,0.1),rgba(220,53,69,0.05));border-color:rgba(220,53,69,0.3);">
-        <div style="flex:1;">
-          <span class="embassy-name">🏛️ ${data.embassy.name}</span>
-          <div style="margin-top:4px;">
-            <span style="color:var(--text-muted);font-size:12px;">📞</span> 
-            <a href="tel:${data.embassy.phone}" style="color:var(--accent);font-weight:600;">${data.embassy.phone}</a>
-            ${data.embassy.emergency ? `<span style="margin-left:8px;color:#ef4444;font-size:11px;">24小时领事保护: ${data.embassy.emergency}</span>` : ''}
-          </div>
-          <div style="margin-top:2px;">
-            <span style="color:var(--text-muted);font-size:12px;">📧</span> 
-            <a href="mailto:${data.embassy.email || ''}" style="font-size:12px;">${data.embassy.email || '无'}</a>
-          </div>
-          <div style="margin-top:2px;">
-            <span style="color:var(--text-muted);font-size:12px;">📍</span> 
-            <span style="font-size:12px;">${data.embassy.address}</span>
-          </div>
-        </div>
-        <button class="call-btn" onclick="copyText('${data.embassy.phone}','中国大使馆电话')">📋 复制</button>
-      </div>`;
+  if (emList) {
+    let embassyHtml = '';
+    const emb = data.embassies;
+    
+    if (emb && emb.embassy && emb.embassy.name) {
+      const em = emb.embassy;
+      embassyHtml += `
+        <div style="background:linear-gradient(135deg,rgba(220,53,69,0.08),rgba(220,53,69,0.03));border:1px solid rgba(220,53,69,0.25);border-radius:14px;padding:18px;margin-bottom:14px;">
+          <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:10px;">🏛️ ${em.name}</div>
+          ${em.phone ? `<div style="margin-bottom:6px;">📞 <a href="tel:${em.phone}" style="color:var(--accent);font-weight:700;font-size:15px;">${em.phone}</a>
+            <button onclick="copyText('${em.phone}','大使馆电话')" style="margin-left:10px;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:3px 10px;font-size:12px;cursor:pointer;">复制</button>
+          </div>` : ''}
+          ${em.emergency ? `<div style="background:rgba(239,68,68,0.1);border-radius:8px;padding:8px 12px;margin-bottom:8px;font-size:13px;">🆘 24小时领事保护热线: <a href="tel:${em.emergency}" style="color:#ef4444;font-weight:700;">${em.emergency}</a></div>` : ''}
+          ${em.address ? `<div style="font-size:13px;color:var(--text2);margin-bottom:4px;">📍 ${em.address}</div>` : ''}
+          ${em.email ? `<div style="font-size:13px;color:var(--text2);margin-bottom:4px;">📧 <a href="mailto:${em.email}" style="color:var(--accent);">${em.email}</a></div>` : ''}
+          ${em.hours ? `<div style="font-size:12px;color:var(--text2);">⏰ 办公时间: ${em.hours}</div>` : ''}
+        </div>`;
+      
+      // 领事馆列表
+      if (emb.consulates && emb.consulates.length > 0) {
+        embassyHtml += `<div style="font-weight:600;margin-bottom:8px;color:var(--text2);">领事馆</div>`;
+        embassyHtml += emb.consulates.map(c => `
+          <div class="embassy-item">
+            <div style="flex:1;">
+              <div style="font-weight:600;font-size:14px;">🏛️ ${c.name || ''}</div>
+              ${c.address ? `<div style="font-size:12px;color:var(--text2);">📍 ${c.address}</div>` : ''}
+              ${c.phone ? `<div style="font-size:13px;">📞 <a href="tel:${c.phone}" style="color:var(--accent);">${c.phone}</a></div>` : ''}
+            </div>
+            ${c.phone ? `<button class="call-btn" onclick="copyText('${c.phone}','领事馆电话')">📋 复制</button>` : ''}
+          </div>`).join('');
+      }
+    } else if (data.embassy && data.embassy.name) {
+      // 兼容旧的顶层 embassy 字段
+      const em = data.embassy;
+      embassyHtml = `
+        <div style="background:linear-gradient(135deg,rgba(220,53,69,0.08),rgba(220,53,69,0.03));border:1px solid rgba(220,53,69,0.25);border-radius:14px;padding:18px;">
+          <div style="font-size:16px;font-weight:700;margin-bottom:8px;">🏛️ ${em.name}</div>
+          ${em.phone ? `<div>📞 <a href="tel:${em.phone}" style="color:var(--accent);font-weight:700;">${em.phone}</a></div>` : ''}
+          ${em.emergency ? `<div style="color:#ef4444;font-size:13px;margin-top:4px;">🆘 ${em.emergency}</div>` : ''}
+          ${em.address ? `<div style="font-size:13px;color:var(--text2);margin-top:6px;">📍 ${em.address}</div>` : ''}
+        </div>`;
+    } else {
+      embassyHtml = '<div style="color:var(--text-muted);padding:20px;text-align:center;">建议出发前查询所在国在该城市的领事馆联系方式</div>';
+    }
+    emList.innerHTML = embassyHtml;
   }
-  
-  // 添加其他大使馆（从emergency.embassies）
-  const otherEmbassies = Object.entries(e.embassies || {}).filter(([name]) => !name.includes('中国'));
-  if (otherEmbassies.length > 0) {
-    embassyHtml += otherEmbassies.map(([name, phone]) => `
-      <div class="embassy-item">
-        <span class="embassy-name">🏛️ ${name}</span>
-        <span class="embassy-phone">${phone}</span>
-        <button class="call-btn" onclick="copyText('${phone}','大使馆电话')">📋 复制</button>
-      </div>`).join('');
-  }
-  
-  emList.innerHTML = embassyHtml || '<div style="color:var(--text-muted);padding:12px">建议出发前查询所在国在该城市的领事馆电话</div>';
 
-  // 推荐APP
+  // ── 4. 安全应用（读取顶层 safetyApps 字段） ──
   const appsEl = document.getElementById('apps-grid');
-  appsEl.innerHTML = (e.apps || []).map(app => `
-    <div class="app-tag"><span class="app-tag-icon">📱</span>${app}</div>`).join('');
+  if (appsEl) {
+    const iconMap = {'shield':'🛡️','alert':'🚨','map':'🗺️','car':'🚗','train':'🚇','phone':'📞','mic':'🎤','bike':'🚴','bus':'🚌','taxi':'🚕','message':'💬','navigation':'🧭','translate':'🌐'};
+    const apps = data.safetyApps || e.apps || [];
+    if (apps.length > 0) {
+      const isRich = apps[0] && typeof apps[0] === 'object' && apps[0].name;
+      if (isRich) {
+        appsEl.innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;">` + apps.map(a => `
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center;">
+            <div style="font-size:28px;margin-bottom:8px;">${iconMap[a.icon]||'📱'}</div>
+            <div style="font-weight:700;font-size:14px;margin-bottom:4px;">${a.name}</div>
+            <div style="font-size:12px;color:var(--text2);">${a.desc||''}</div>
+          </div>`).join('') + `</div>`;
+      } else {
+        appsEl.innerHTML = apps.map(app => `<div class="app-tag"><span class="app-tag-icon">📱</span>${app}</div>`).join('');
+      }
+    } else {
+      appsEl.innerHTML = '<div style="color:var(--text-muted);padding:20px;text-align:center;">暂无安全应用推荐</div>';
+    }
+  }
 
-  // 自保策略
+  // ── 5. 自保策略（读取顶层 selfDefense 字段） ──
   const sdList = document.getElementById('self-defense-list');
-  sdList.innerHTML = (e.selfDefense || []).map(s => `
-    <li><span>🛡️</span><span>${s}</span></li>`).join('');
+  if (sdList) {
+    const sd = data.selfDefense || {};
+    let sdHtml = '';
+    if (sd.general && sd.general.length) {
+      sdHtml += `<div style="margin-bottom:20px;"><div style="font-weight:700;font-size:15px;color:var(--text);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border);">⚠️ 日常安全须知</div>`;
+      sdHtml += sd.general.map(t => `<li style="margin-bottom:8px;"><span>🛡️</span><span style="margin-left:8px;">${t}</span></li>`).join('');
+      sdHtml += '</div>';
+    }
+    if (sd.emergency && sd.emergency.length) {
+      sdHtml += `<div><div style="font-weight:700;font-size:15px;color:var(--text);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border);">🚨 紧急情况应对</div>`;
+      sdHtml += sd.emergency.map(t => `<li style="margin-bottom:8px;"><span>🆘</span><span style="margin-left:8px;">${t}</span></li>`).join('');
+      sdHtml += '</div>';
+    }
+    if (!sdHtml && e.selfDefense) {
+      sdHtml = (e.selfDefense || []).map(s => `<li><span>🛡️</span><span>${s}</span></li>`).join('');
+    }
+    sdList.innerHTML = sdHtml || '<div style="color:var(--text-muted);padding:20px;text-align:center;">暂无自保策略数据</div>';
+  }
 }
 
 // ─────────────────────────────────────────────────────
@@ -2468,9 +2606,7 @@ function renderLifestylePanel(data) {
   document.getElementById('customs-list').innerHTML = customsList.map((c, i) => `
     <li><span>${customIcons[i % customIcons.length]}</span><span>${c}</span></li>`).join('');
 
-  // 交通
-  const transportText = l.transport || lifestyle.transport;
-  document.getElementById('transport-info').textContent = transportText;
+  // 交通指南已移至"紧急联系"tab中展示
 }
 
 // 生成默认的 lifestyle 数据
