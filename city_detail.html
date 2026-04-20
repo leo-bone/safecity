@@ -6,112 +6,75 @@
   <title>{{city_name}} - SafeCity 全球城市安全指南</title>
   <meta name="description" content="{{city_name}}安全评估、紧急联系、区域安全指南">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0a0e1a;
-      --bg2: #0f1623;
-      --bg3: #141c2e;
-      --card: #1a2236;
-      --card2: #1f293d;
-      --border: rgba(255,255,255,0.08);
-      --border2: rgba(255,255,255,0.12);
-      --text: #e8edf5;
-      --text2: #8892a0;
-      --text3: #5a6475;
-      --accent: #3b82f6;
-      --accent2: #6366f1;
-      --green: #10b981;
-      --yellow: #f59e0b;
+      --bg: #0a0a0f;
+      --bg2: #12121a;
+      --card: #1a1a24;
+      --card2: #22222e;
+      --border: #2a2a3a;
+      --text: #f0f0f5;
+      --text2: #8888a0;
+      --accent: #6366f1;
+      --accent2: #8b5cf6;
+      --green: #22c55e;
+      --yellow: #eab308;
       --orange: #f97316;
       --red: #ef4444;
+      --blue: #3b82f6;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Noto Sans SC', 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
       color: var(--text);
-      min-height: 100vh;
       line-height: 1.6;
+      min-height: 100vh;
     }
-    a { color: inherit; text-decoration: none; }
-    
-    /* Header */
-    .header {
-      background: rgba(10,14,26,0.95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 16px 24px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 800;
-      font-size: 20px;
-    }
-    .logo-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-    }
-    .back-link {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--text2);
-      font-size: 14px;
-      transition: color 0.2s;
-    }
-    .back-link:hover { color: var(--accent); }
-    
+
     /* Hero */
     .hero {
       position: relative;
-      height: 320px;
-      overflow: hidden;
+      height: 340px;
+      background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%),
+                  var(--bg2) url(https://images.unsplash.com/photo-1480796927426-f609979314bd?w=1920) center/cover;
+      display: flex;
+      align-items: flex-end;
     }
     .hero-bg {
       position: absolute;
       inset: 0;
       background-size: cover;
       background-position: center;
-      filter: brightness(0.5);
+      filter: blur(2px);
     }
-    .hero-bg::after {
-      content: '';
+    .hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, var(--bg) 0%, transparent 50%);
+      background: linear-gradient(180deg, rgba(10,10,15,0.4) 0%, rgba(10,10,15,0.95) 100%);
     }
     .hero-content {
       position: relative;
       max-width: 1200px;
       margin: 0 auto;
       padding: 60px 24px 24px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      width: 100%;
     }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 20px;
+      transition: color 0.2s;
+    }
+    .back-btn:hover { color: var(--text); }
     .city-flag { font-size: 48px; margin-bottom: 12px; }
-    .city-name { font-size: 42px; font-weight: 800; margin-bottom: 8px; }
-    .city-name-en { font-size: 18px; color: var(--text2); margin-bottom: 16px; }
+    .city-name { font-size: 42px; font-weight: 800; margin-bottom: 4px; }
+    .city-name-en { font-size: 18px; color: var(--text2); margin-bottom: 12px; }
     .city-meta {
       display: flex;
       flex-wrap: wrap;
@@ -120,7 +83,7 @@
       color: var(--text2);
     }
     .city-meta span { display: flex; align-items: center; gap: 6px; }
-    
+
     /* Score Banner */
     .score-banner {
       max-width: 1200px;
@@ -179,8 +142,8 @@
     .dim-value.high { color: var(--green); }
     .dim-value.medium { color: var(--yellow); }
     .dim-value.low { color: var(--orange); }
-    
-    /* Navigation Tabs */
+
+    /* Navigation Tabs - NEW LAYOUT */
     .nav-tabs {
       max-width: 1200px;
       margin: 0 auto 24px;
@@ -198,10 +161,10 @@
       padding: 12px 20px;
       font-size: 14px;
       font-weight: 500;
-      color: var(--text2);
-      white-space: nowrap;
       cursor: pointer;
+      color: var(--text2);
       transition: all 0.2s;
+      white-space: nowrap;
     }
     .tab-btn:hover { border-color: var(--accent); color: var(--text); }
     .tab-btn.active {
@@ -209,14 +172,12 @@
       border-color: var(--accent);
       color: white;
     }
-    
-    /* Content Sections */
-    .content {
+
+    /* Sections */
+    .section {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 24px 48px;
-    }
-    .section {
+      padding: 0 24px 40px;
       display: none;
     }
     .section.active { display: block; }
@@ -224,91 +185,360 @@
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      color: var(--text);
     }
-    
-    /* Emergency Contacts */
-    .emergency-grid {
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text2);
+    }
+
+    /* ==================== */
+    /* EMERGENCY TAB - NEW  */
+    /* ==================== */
+    .emergency-section { display: flex; flex-direction: column; gap: 24px; }
+
+    /* Emergency Phone Cards */
+    .emergency-phones {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 16px;
-      margin-bottom: 32px;
     }
     .emergency-card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 20px;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .emergency-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
     }
     .emergency-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+    .emergency-title {
+      font-size: 13px;
+      color: var(--text2);
+      margin-bottom: 6px;
+    }
+    .emergency-number {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+      font-family: 'SF Mono', monospace;
+    }
+
+    /* Subsections */
+    .subsection {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .subsection-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      margin-bottom: 12px;
+      gap: 8px;
     }
-    .emergency-icon.police { background: rgba(59,130,246,0.2); }
-    .emergency-icon.medical { background: rgba(16,185,129,0.2); }
-    .emergency-icon.fire { background: rgba(249,115,22,0.2); }
-    .emergency-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
-    .emergency-number { font-size: 28px; font-weight: 800; color: var(--accent); }
+    .subsection-title .icon { font-size: 20px; }
 
-    /* Conflict Section */
-    .conflict-grid {
+    /* Hospital Cards */
+    .hospital-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .hospital-card {
+      background: var(--bg2);
+      border-radius: 12px;
+      padding: 16px;
+      border-left: 3px solid var(--green);
+    }
+    .hospital-name { font-weight: 600; margin-bottom: 4px; }
+    .hospital-address { font-size: 13px; color: var(--text2); margin-bottom: 8px; }
+    .hospital-phone { font-size: 14px; color: var(--accent); font-family: monospace; }
+    .hospital-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .hospital-tag {
+      background: rgba(99, 102, 241, 0.15);
+      color: var(--accent);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    .emergency-tag {
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--red);
+    }
+
+    /* Consulate Cards */
+    .consulate-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .consulate-card {
+      background: var(--bg2);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .consulate-info h4 { font-weight: 600; margin-bottom: 4px; }
+    .consulate-info p { font-size: 13px; color: var(--text2); }
+    .consulate-info .hours { font-size: 12px; color: var(--accent); margin-top: 4px; }
+    .consulate-phone { color: var(--accent); font-family: monospace; white-space: nowrap; }
+
+    /* Safety Apps */
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+    }
+    .app-item {
+      background: var(--bg2);
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .app-icon { font-size: 28px; }
+    .app-info h4 { font-weight: 500; font-size: 14px; }
+    .app-info p { font-size: 12px; color: var(--text2); }
+
+    /* Self Protection */
+    .selfprotect-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 16px;
-      margin-bottom: 32px;
     }
-    .conflict-card {
+    .selfprotect-card {
+      background: var(--bg2);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .selfprotect-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .selfprotect-header .icon { font-size: 24px; }
+    .selfprotect-header h4 { font-weight: 600; font-size: 15px; }
+    .selfprotect-tips {
+      list-style: none;
+      padding-left: 0;
+    }
+    .selfprotect-tips li {
+      font-size: 13px;
+      color: var(--text2);
+      padding: 6px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+    .selfprotect-tips li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* Transport */
+    .transport-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .transport-card {
+      background: var(--bg2);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .transport-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .transport-header .icon { font-size: 24px; }
+    .transport-header h4 { font-weight: 600; }
+    .transport-desc { font-size: 13px; color: var(--text2); margin-bottom: 8px; }
+    .transport-tips {
+      list-style: none;
+    }
+    .transport-tips li {
+      font-size: 12px;
+      color: var(--green);
+      padding: 3px 0;
+      padding-left: 12px;
+      position: relative;
+    }
+    .transport-tips li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+    }
+
+    /* ==================== */
+    /* LIFESTYLE TAB - NEW  */
+    /* ==================== */
+    .lifestyle-section { display: flex; flex-direction: column; gap: 24px; }
+
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .food-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      transition: all 0.2s;
+    }
+    .food-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .food-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+    .food-name { font-size: 16px; font-weight: 600; }
+    .food-type {
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent2);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    .food-price { font-size: 14px; color: var(--green); margin-bottom: 8px; }
+    .food-desc { font-size: 14px; color: var(--text2); margin-bottom: 8px; }
+    .food-tip {
+      background: var(--bg2);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: var(--yellow);
+      border-left: 3px solid var(--yellow);
+    }
+
+    /* Food Safety Alert */
+    .food-safety {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(249, 115, 22, 0.1));
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+    .food-safety-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--orange);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .food-safety-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 8px;
+    }
+    .food-safety-list li {
+      font-size: 13px;
+      color: var(--text2);
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    .food-safety-list li::before {
+      content: '⚠️';
+      position: absolute;
+      left: 0;
+    }
+
+    /* Attractions */
+    .attractions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .attraction-card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 20px;
     }
-    .conflict-card.high { border-color: rgba(239,68,68,0.5); background: rgba(239,68,68,0.08); }
-    .conflict-card.medium { border-color: rgba(245,158,11,0.5); background: rgba(245,158,11,0.05); }
-    .conflict-card.low { border-color: rgba(16,185,129,0.4); background: rgba(16,185,129,0.05); }
-    .conflict-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-    .conflict-icon { font-size: 28px; }
-    .conflict-title { font-size: 16px; font-weight: 600; }
-    .conflict-level {
-      display: inline-block; padding: 4px 12px; border-radius: 20px;
-      font-size: 14px; font-weight: 700;
+    .attraction-name { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+    .attraction-type {
+      font-size: 12px;
+      color: var(--blue);
+      margin-bottom: 8px;
     }
-    .conflict-level.high { background: rgba(239,68,68,0.2); color: #ef4444; }
-    .conflict-level.medium { background: rgba(245,158,11,0.2); color: #f59e0b; }
-    .conflict-level.low { background: rgba(16,185,129,0.2); color: #10b981; }
-    .conflict-desc { color: var(--text2); font-size: 14px; line-height: 1.6; margin-top: 8px; }
-    
-    .org-list {
-      display: grid;
+    .attraction-desc { font-size: 14px; color: var(--text2); margin-bottom: 8px; }
+    .attraction-meta {
+      display: flex;
       gap: 12px;
+      font-size: 12px;
+      color: var(--text2);
     }
-    .org-card {
+    .attraction-meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* ==================== */
+    /* OVERVIEW TAB         */
+    /* ==================== */
+    .overview-content { display: flex; flex-direction: column; gap: 24px; }
+    .overview-intro {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      border-radius: 16px;
+      padding: 24px;
     }
-    .org-info h4 { font-size: 15px; margin-bottom: 4px; }
-    .org-info p { font-size: 13px; color: var(--text2); }
-    .org-phone { font-weight: 600; color: var(--accent); }
-    
-    /* Area Safety */
-    .area-section { margin-bottom: 32px; }
-    .area-section-title {
-      font-size: 16px;
-      font-weight: 600;
+    .overview-intro h3 { font-size: 16px; margin-bottom: 12px; }
+    .overview-intro p { font-size: 14px; color: var(--text2); line-height: 1.8; }
+
+    .safety-warnings {
+      background: linear-gradient(135deg, rgba(234, 179, 8, 0.1), rgba(249, 115, 22, 0.1));
+      border: 1px solid rgba(234, 179, 8, 0.3);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .safety-warnings h3 {
+      font-size: 15px;
+      color: var(--yellow);
       margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .warning-list { list-style: none; }
+    .warning-list li {
+      font-size: 14px;
+      color: var(--text2);
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .warning-list li:last-child { border-bottom: none; }
+
+    /* Areas */
+    .area-section { margin-top: 24px; }
+    .area-section-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 16px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -316,11 +546,11 @@
     .area-section-title.safe { color: var(--green); }
     .area-section-title.caution { color: var(--yellow); }
     .area-section-title.danger { color: var(--red); }
-    
+
     .area-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
     }
     .area-card {
       background: var(--card);
@@ -332,124 +562,116 @@
     .area-desc { font-size: 13px; color: var(--text2); margin-bottom: 10px; }
     .area-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .area-tag {
-      background: var(--bg2);
-      border-radius: 6px;
-      padding: 4px 10px;
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--green);
+      padding: 3px 10px;
+      border-radius: 20px;
       font-size: 12px;
-      color: var(--text2);
     }
-    
-    /* Local Recommendations */
-    .rec-category { margin-bottom: 32px; }
-    .rec-grid {
+    .area-tag.risk {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--yellow);
+    }
+    .area-tag.danger {
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--red);
+    }
+
+    /* Tips */
+    .tips-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .tips-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tips-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .tips-list li {
+      font-size: 14px;
+      color: var(--text2);
+      padding: 8px 0;
+      padding-left: 20px;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .tips-list li:last-child { border-bottom: none; }
+    .tips-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* Conflict */
+    .conflict-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 16px;
     }
-    .rec-card {
+    .conflict-card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
+      border-radius: 12px;
+      padding: 16px;
     }
-    .rec-content { padding: 16px; }
-    .rec-name { font-weight: 600; margin-bottom: 4px; }
-    .rec-type { 
-      font-size: 12px; 
-      color: var(--accent); 
-      background: rgba(59,130,246,0.15);
-      padding: 2px 8px;
-      border-radius: 4px;
-      display: inline-block;
-      margin-bottom: 8px;
-    }
-    .rec-desc { font-size: 13px; color: var(--text2); margin-bottom: 10px; }
-    .rec-price { font-size: 13px; color: var(--text2); }
-    .rec-must-try {
-      margin-top: 10px;
-      padding-top: 10px;
-      border-top: 1px solid var(--border);
-    }
-    .rec-must-try-label { font-size: 12px; color: var(--text3); margin-bottom: 6px; }
-    .rec-must-try-items { display: flex; flex-wrap: wrap; gap: 6px; }
-    .must-try-tag {
-      background: rgba(16,185,129,0.15);
-      color: var(--green);
-      padding: 3px 10px;
-      border-radius: 6px;
-      font-size: 12px;
-    }
-    
-    /* Safety Tips */
-    .tips-section { margin-bottom: 24px; }
-    .tips-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
-    .tips-list { list-style: none; }
-    .tips-list li {
-      background: var(--card);
-      border-radius: 10px;
-      padding: 12px 16px;
-      margin-bottom: 8px;
-      font-size: 14px;
-      color: var(--text2);
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    .tips-list li::before {
-      content: '✓';
-      color: var(--green);
-      font-weight: 700;
-    }
-    
-    /* Loading */
-    .loading {
-      text-align: center;
-      padding: 60px;
-      color: var(--text2);
-    }
-    
+    .conflict-card.high { border-left: 4px solid var(--red); }
+    .conflict-card.medium { border-left: 4px solid var(--yellow); }
+    .conflict-card.low { border-left: 4px solid var(--green); }
+    .conflict-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .conflict-level { font-size: 12px; margin-bottom: 8px; }
+    .conflict-level.high { color: var(--red); }
+    .conflict-level.medium { color: var(--yellow); }
+    .conflict-level.low { color: var(--green); }
+    .conflict-desc { font-size: 13px; color: var(--text2); }
+
     /* Footer */
     footer {
-      background: #080c18;
-      border-top: 1px solid var(--border);
-      padding: 32px 24px;
       text-align: center;
-      color: var(--text3);
+      padding: 40px 24px;
+      color: var(--text2);
       font-size: 13px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
     }
-    
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
     @media (max-width: 768px) {
-      .score-card { flex-direction: column; text-align: center; }
-      .overall-score { border-right: none; padding-right: 0; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+      .city-name { font-size: 28px; }
+      .score-card { flex-direction: column; gap: 20px; }
+      .overall-score { padding-right: 0; border-right: none; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
       .dimension-scores { grid-template-columns: repeat(2, 1fr); }
+      .score-number { font-size: 48px; }
     }
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header-content">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">🛡️</div>
-        <span>SafeCity</span>
-      </a>
-      <a href="index.html" class="back-link">
-        ← 返回首页
-      </a>
-    </div>
-  </header>
-  
+
   <!-- Hero -->
-  <div class="hero">
+  <header class="hero">
     <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
+      <a href="index.html" class="back-btn">← 返回首页</a>
       <div class="city-flag" id="city-flag">🏙️</div>
       <h1 class="city-name" id="city-name">加载中...</h1>
-      <p class="city-name-en" id="city-name-en">Loading...</p>
+      <p class="city-name-en" id="city-name-en"></p>
       <div class="city-meta" id="city-meta"></div>
     </div>
-  </div>
-  
+  </header>
+
   <!-- Score Banner -->
   <div class="score-banner">
     <div class="score-card">
@@ -461,39 +683,29 @@
       <div class="dimension-scores" id="dimension-scores"></div>
     </div>
   </div>
-  
-  <!-- Navigation -->
+
+  <!-- Navigation Tabs -->
   <nav class="nav-tabs">
     <button class="tab-btn active" data-tab="overview">📊 安全概览</button>
-    <button class="tab-btn" data-tab="emergency">📞 紧急联系</button>
+    <button class="tab-btn" data-tab="emergency">🚨 紧急联系</button>
     <button class="tab-btn" data-tab="areas">🗺️ 区域安全</button>
     <button class="tab-btn" data-tab="lifestyle">🍜 吃喝玩乐</button>
     <button class="tab-btn" data-tab="tips">💡 安全贴士</button>
   </nav>
-  
-  <!-- Content -->
-  <main class="content">
+
+  <main>
+    <div class="loading" id="loading">加载安全数据中...</div>
+
     <!-- Overview Section -->
-    <section class="section active" id="section-overview">
-      <div class="loading">加载安全数据中...</div>
+    <section class="section" id="section-overview">
+      <div class="overview-content" id="overview-content"></div>
     </section>
-    
-    <!-- Conflict Section -->
-    <section class="section" id="section-conflict">
-      <h2 class="section-title">⚠️ 冲突风险评估</h2>
-      <div class="conflict-grid" id="conflict-grid"></div>
-    </section>
-    
-    <!-- Emergency Section -->
+
+    <!-- Emergency Section - REBUILT -->
     <section class="section" id="section-emergency">
-      <h2 class="section-title">📞 紧急联系信息</h2>
-      <div class="emergency-grid" id="emergency-grid"></div>
-      <h3 class="section-title" style="font-size:16px;margin-top:32px;">🏢 重要机构</h3>
-      <div class="org-list" id="org-list"></div>
-      <h3 class="section-title" style="font-size:16px;margin-top:32px;">🏛️ 领事馆</h3>
-      <div class="org-list" id="consulate-list"></div>
+      <div class="emergency-section" id="emergency-section"></div>
     </section>
-    
+
     <!-- Areas Section -->
     <section class="section" id="section-areas">
       <div class="area-section">
@@ -509,55 +721,47 @@
         <div class="area-grid" id="danger-areas"></div>
       </div>
     </section>
-    
-    <!-- Lifestyle Section -->
+
+    <!-- Lifestyle Section - REBUILT -->
     <section class="section" id="section-lifestyle">
-      <div class="rec-category" id="food-category"></div>
-      <div class="rec-category" id="attractions-category"></div>
-      <div class="rec-category" id="nightlife-category"></div>
+      <div class="lifestyle-section" id="lifestyle-section"></div>
     </section>
-    
+
     <!-- Tips Section -->
     <section class="section" id="section-tips">
       <div id="safety-tips-content"></div>
     </section>
   </main>
-  
+
   <footer>
     <p>⚠️ 免责声明：本网站安全评分仅供参考，基于公开数据和综合评估，不构成专业安全建议。</p>
-    <p>© 2026 SafeCity Global · 数据仅供参考 · <a href="https://safecity.uichain.org">safecity.uichain.org</a></p>
+    <p>© 2026 SafeCity Global · <a href="https://safecity.uichain.org">safecity.uichain.org</a></p>
   </footer>
-  
-  <!-- Load Data: data_new.js has detailed data, data.js is fallback -->
-  <script src="data_new.js"></script>
+
+  <script src="data.js"></script>
   <script>
     // Get city from URL
     const urlParams = new URLSearchParams(window.location.search);
     const cityId = urlParams.get('city') || 'tokyo';
-    
-    // Find city data - first check data_new.js, then fall back to data.js
+
+    // Find city data
     let city = CITY_DATABASE[cityId];
-    if (!city && typeof CITY_DATABASE_BASIC !== 'undefined') {
-      city = CITY_DATABASE_BASIC[cityId];
-    }
-    if (!city && typeof CITY_DATABASE !== 'undefined') {
-      // Try to get from the global if CITY_DATABASE_BASIC not defined
-      city = window.CITY_DATABASE && window.CITY_DATABASE[cityId];
-    }
-    
+
     if (!city) {
       document.body.innerHTML = '<div class="loading"><h2>城市数据未找到</h2><p>请返回首页选择城市</p></div>';
       throw new Error('City not found: ' + cityId);
     }
-    
+
     // Update page title
     document.title = `${city.name} - SafeCity 全球城市安全指南`;
-    
+    document.getElementById('loading').style.display = 'none';
+
     // Render Hero
-    document.getElementById('hero-bg').style.backgroundImage = `url(${city.image})`;
+    const bgImage = city.image || `https://images.unsplash.com/photo-1480796927426-f609979314bd?w=1920`;
+    document.getElementById('hero-bg').style.backgroundImage = `url(${bgImage})`;
     document.getElementById('city-flag').textContent = city.flag || '🏙️';
     document.getElementById('city-name').textContent = city.name;
-    document.getElementById('city-name-en').textContent = `${city.nameEn || ''} ${city.country || ''}`;
+    document.getElementById('city-name-en').textContent = city.nameEn || '';
     document.getElementById('city-meta').innerHTML = `
       <span>🌍 ${city.continent || ''}</span>
       <span>👥 ${city.population || ''}</span>
@@ -565,7 +769,7 @@
       <span>💰 ${city.currency || ''}</span>
       <span>🕐 ${city.timezone || ''}</span>
     `;
-    
+
     // Render Score
     if (city.safetyIndex) {
       document.getElementById('overall-score').textContent = city.safetyIndex.overall || '--';
@@ -573,8 +777,7 @@
       const trend = city.safetyIndex.trend;
       const trendText = trend === 'improving' ? '↗️ 改善中' : trend === 'declining' ? '↘️ 下降' : '→ 稳定';
       document.getElementById('score-trend').textContent = trendText;
-      
-      // Dimensions
+
       const dims = city.safetyIndex.dimensions;
       const dimNames = {
         crimeSafety: '犯罪安全',
@@ -599,247 +802,396 @@
       }
       document.getElementById('dimension-scores').innerHTML = dimHtml;
     }
-    
-    // Render Emergency Contacts
-    function renderEmergency() {
-      const ec = city.emergencyContacts;
-      if (!ec) return;
-      
+
+    // ========================
+    // RENDER OVERVIEW
+    // ========================
+    function renderOverview() {
+      const ec = city.emergencyContacts || {};
+      const si = city.safetyIndex || {};
       let html = '';
-      if (ec.phoneNumbers) {
-        const pn = ec.phoneNumbers;
-        if (pn.police) html += `
-          <div class="emergency-card">
-            <div class="emergency-icon police">👮</div>
-            <div class="emergency-title">报警电话</div>
-            <div class="emergency-number">${pn.police}</div>
-          </div>
-        `;
-        if (pn.ambulance) html += `
-          <div class="emergency-card">
-            <div class="emergency-icon medical">🏥</div>
-            <div class="emergency-title">急救电话</div>
-            <div class="emergency-number">${pn.ambulance}</div>
-          </div>
-        `;
-        if (pn.fire) html += `
-          <div class="emergency-card">
-            <div class="emergency-icon fire">🚒</div>
-            <div class="emergency-title">消防电话</div>
-            <div class="emergency-number">${pn.fire}</div>
+
+      // Safety Overview Card
+      html += `
+        <div class="overview-intro">
+          <h3>📍 城市安全总览</h3>
+          <p>${city.name}（${city.nameEn || ''}）是${city.continent || ''}地区的重要城市。该城市综合安全评分为 ${si.overall || '--'} 分，
+          安全等级为 ${si.grade || '-' || ''}。${si.dimensions?.crimeSafety?.note || '请参考各分项评分了解更多。'}</p>
+        </div>
+      `;
+
+      // Key Warnings
+      if (si.dimensions) {
+        const warnings = [];
+        for (const [key, val] of Object.entries(si.dimensions)) {
+          if (val.score < 65) {
+            const names = {
+              crimeSafety: '犯罪安全',
+              healthMedical: '医疗健康',
+              transportSafety: '交通安全',
+              naturalDisaster: '自然灾害',
+              environmental: '环境安全',
+              socialStability: '社会稳定'
+            };
+            warnings.push(`<strong>${names[key]}</strong>得分较低（${val.score}分）：${val.note || ''}`);
+          }
+        }
+        if (warnings.length > 0) {
+          html += `
+            <div class="safety-warnings">
+              <h3>⚠️ 需重点关注</h3>
+              <ul class="warning-list">
+                ${warnings.map(w => `<li>${w}</li>`).join('')}
+              </ul>
+            </div>
+          `;
+        }
+      }
+
+      // Areas
+      const areas = city.areas || [];
+      const safe = areas.filter(a => a.safety === 'safe' || a.rating >= 4);
+      const caution = areas.filter(a => a.safety === 'caution' || (a.rating >= 2 && a.rating < 4));
+      const danger = areas.filter(a => a.safety === 'danger' || a.rating < 2);
+
+      let areasHtml = '';
+
+      if (safe.length > 0) {
+        areasHtml += `
+          <div class="area-section">
+            <h3 class="area-section-title safe">✅ 推荐安全区域</h3>
+            <div class="area-grid">
+              ${safe.map(a => `
+                <div class="area-card">
+                  <div class="area-name">${a.name}</div>
+                  <div class="area-desc">${a.description || ''}</div>
+                  <div class="area-tags">
+                    ${(a.features || []).map(f => `<span class="area-tag">${f}</span>`).join('')}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
           </div>
         `;
       }
-      document.getElementById('emergency-grid').innerHTML = html;
-      
-      // Organizations
-      let orgHtml = '';
-      if (ec.importantOrganizations) {
-        ec.importantOrganizations.forEach(org => {
-          orgHtml += `
-            <div class="org-card">
-              <div class="org-info">
-                <h4>${org.name}</h4>
-                <p>${org.description || ''}</p>
+
+      if (caution.length > 0) {
+        areasHtml += `
+          <div class="area-section">
+            <h3 class="area-section-title caution">⚠️ 需注意区域</h3>
+            <div class="area-grid">
+              ${caution.map(a => `
+                <div class="area-card">
+                  <div class="area-name">${a.name}</div>
+                  <div class="area-desc">${a.description || ''}</div>
+                  <div class="area-tags">
+                    ${(a.risks || []).map(f => `<span class="area-tag risk">${f}</span>`).join('')}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      if (danger.length > 0) {
+        areasHtml += `
+          <div class="area-section">
+            <h3 class="area-section-title danger">🚫 危险区域</h3>
+            <div class="area-grid">
+              ${danger.map(a => `
+                <div class="area-card">
+                  <div class="area-name">${a.name}</div>
+                  <div class="area-desc">${a.description || ''}</div>
+                  <div class="area-tags">
+                    ${(a.risks || []).map(f => `<span class="area-tag danger">${f}</span>`).join('')}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      html += areasHtml;
+      document.getElementById('overview-content').innerHTML = html;
+    }
+    renderOverview();
+
+    // ========================
+    // RENDER EMERGENCY - NEW
+    // ========================
+    function renderEmergency() {
+      const ec = city.emergencyContacts || {};
+      let html = '';
+
+      // 1. Emergency Phone Numbers
+      html += '<div class="subsection">';
+      html += '<h3 class="subsection-title"><span class="icon">📞</span>紧急求助电话</h3>';
+      html += '<div class="emergency-phones">';
+
+      const phones = ec.phoneNumbers || {};
+      if (phones.police) {
+        html += `
+          <div class="emergency-card">
+            <div class="emergency-icon">👮</div>
+            <div class="emergency-title">报警电话</div>
+            <div class="emergency-number">${phones.police}</div>
+          </div>
+        `;
+      }
+      if (phones.ambulance) {
+        html += `
+          <div class="emergency-card">
+            <div class="emergency-icon">🚑</div>
+            <div class="emergency-title">急救电话</div>
+            <div class="emergency-number">${phones.ambulance}</div>
+          </div>
+        `;
+      }
+      if (phones.fire) {
+        html += `
+          <div class="emergency-card">
+            <div class="emergency-icon">🚒</div>
+            <div class="emergency-title">消防电话</div>
+            <div class="emergency-number">${phones.fire}</div>
+          </div>
+        `;
+      }
+      if (phones.tourist) {
+        html += `
+          <div class="emergency-card">
+            <div class="emergency-icon">🎒</div>
+            <div class="emergency-title">旅游热线</div>
+            <div class="emergency-number">${phones.tourist}</div>
+          </div>
+        `;
+      }
+      html += '</div></div>';
+
+      // 2. Hospitals
+      const hospitals = ec.hospitals || [];
+      if (hospitals.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">🏥</span>推荐医院</h3>';
+        html += '<div class="hospital-grid">';
+
+        hospitals.forEach(h => {
+          html += `
+            <div class="hospital-card">
+              <div class="hospital-name">${h.name}</div>
+              <div class="hospital-address">${h.address || ''}</div>
+              <div class="hospital-phone">📞 ${h.phone || ''}</div>
+              <div class="hospital-tags">
+                ${h.emergency24h ? '<span class="hospital-tag emergency-tag">24H急诊</span>' : ''}
+                ${(h.features || []).map(f => `<span class="hospital-tag">${f}</span>`).join('')}
               </div>
-              <div class="org-phone">${org.phone || ''}</div>
             </div>
           `;
         });
+
+        html += '</div></div>';
       }
-      document.getElementById('org-list').innerHTML = orgHtml;
-      
-      // Consulates
-      let conHtml = '';
-      if (ec.consulates) {
-        ec.consulates.forEach(c => {
-          conHtml += `
-            <div class="org-card">
-              <div class="org-info">
+
+      // 3. Consulates
+      const consulates = ec.consulates || [];
+      if (consulates.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">🏛️</span>使领馆信息</h3>';
+        html += '<div class="consulate-list">';
+
+        consulates.forEach(c => {
+          html += `
+            <div class="consulate-card">
+              <div class="consulate-info">
                 <h4>${c.name}</h4>
                 <p>${c.address || ''}</p>
+                ${c.hours ? `<p class="hours">🕐 ${c.hours}</p>` : ''}
               </div>
-              <div class="org-phone">${c.phone || ''}</div>
+              <div class="consulate-phone">${c.phone || ''}</div>
             </div>
           `;
         });
+
+        html += '</div></div>';
       }
-      document.getElementById('consulate-list').innerHTML = conHtml;
-      
-      // Conflict Section
-      const conflictGrid = document.getElementById('conflict-grid');
-      if (city.conflict) {
-        const c = city.conflict;
-        let conflictHTML = '';
-        
-        // 战争风险
-        const warLevel = c.war_risk === '中' || c.war_risk === '高' ? 'high' : (c.war_risk === '低' ? 'medium' : 'low');
-        conflictHTML += '<div class="conflict-card ' + warLevel + '">';
-        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">⚔️</span><span class="conflict-title">战争风险</span></div>';
-        conflictHTML += '<span class="conflict-level ' + warLevel + '">' + (c.war_risk || '无') + '</span>';
-        conflictHTML += '<p class="conflict-desc">' + (c.war_desc || '暂无描述') + '</p>';
-        conflictHTML += '</div>';
-        
-        // 帮派活动
-        const gangLevel = c.gang_activity === '高' || c.gang_activity === '较高' ? 'high' : (c.gang_activity === '中等' ? 'medium' : 'low');
-        conflictHTML += '<div class="conflict-card ' + gangLevel + '">';
-        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">🚨</span><span class="conflict-title">帮派活动</span></div>';
-        conflictHTML += '<span class="conflict-level ' + gangLevel + '">' + (c.gang_activity || '极少') + '</span>';
-        conflictHTML += '<p class="conflict-desc">' + (c.gang_desc || '暂无描述') + '</p>';
-        conflictHTML += '</div>';
-        
-        // 社会动荡
-        const civilLevel = c.civil_unrest === '高' ? 'high' : (c.civil_unrest === '中' ? 'medium' : 'low');
-        conflictHTML += '<div class="conflict-card ' + civilLevel + '">';
-        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">📢</span><span class="conflict-title">社会动荡</span></div>';
-        conflictHTML += '<span class="conflict-level ' + civilLevel + '">' + (c.civil_unrest || '低') + '</span>';
-        conflictHTML += '<p class="conflict-desc">' + (c.civil_desc || '暂无描述') + '</p>';
-        conflictHTML += '</div>';
-        
-        conflictGrid.innerHTML = conflictHTML;
-      } else {
-        conflictGrid.innerHTML = '<div class="conflict-card low"><p style="color:var(--text2)">暂无冲突风险数据</p></div>';
+
+      // 4. Safety Apps
+      const safetyApps = ec.safetyApps || [];
+      if (safetyApps.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">📱</span>安全防护App</h3>';
+        html += '<div class="apps-grid">';
+
+        safetyApps.forEach(app => {
+          html += `
+            <div class="app-item">
+              <div class="app-icon">${app.icon || '📱'}</div>
+              <div class="app-info">
+                <h4>${app.name}</h4>
+                <p>${app.description || ''}</p>
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div></div>';
       }
+
+      // 5. Self Protection Tips
+      const selfProtection = ec.selfProtection || [];
+      if (selfProtection.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">🛡️</span>自保安全指南</h3>';
+        html += '<div class="selfprotect-grid">';
+
+        selfProtection.forEach(sp => {
+          html += `
+            <div class="selfprotect-card">
+              <div class="selfprotect-header">
+                <span class="icon">${sp.icon || '•'}</span>
+                <h4>${sp.title}</h4>
+              </div>
+              <ul class="selfprotect-tips">
+                ${(sp.tips || []).map(t => `<li>${t}</li>`).join('')}
+              </ul>
+            </div>
+          `;
+        });
+
+        html += '</div></div>';
+      }
+
+      // 6. Transport
+      const transport = ec.transport || {};
+      const modes = transport.modes || [];
+      if (modes.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">🚇</span>交通出行指南</h3>';
+        html += '<div class="transport-grid">';
+
+        modes.forEach(m => {
+          html += `
+            <div class="transport-card">
+              <div class="transport-header">
+                <span class="icon">${m.icon || '•'}</span>
+                <h4>${m.name}</h4>
+              </div>
+              <div class="transport-desc">${m.description || ''}</div>
+              <ul class="transport-tips">
+                ${(m.tips || []).map(t => `<li>${t}</li>`).join('')}
+              </ul>
+            </div>
+          `;
+        });
+
+        html += '</div></div>';
+      }
+
+      document.getElementById('emergency-section').innerHTML = html || '<p style="color:var(--text2);padding:40px;text-align:center;">暂无紧急联系数据</p>';
     }
     renderEmergency();
-    
-    // Render Area Safety
-    function renderAreas() {
-      const as = city.areaSafety;
-      if (!as) return;
-      
-      // Safe areas
-      let safeHtml = '';
-      if (as.safestAreas) {
-        as.safestAreas.forEach(area => {
-          safeHtml += `
-            <div class="area-card">
-              <div class="area-name">${area.name}</div>
-              <div class="area-desc">${area.description || ''}</div>
-              <div class="area-tags">
-                ${area.features ? area.features.map(f => `<span class="area-tag">${f}</span>`).join('') : ''}
-              </div>
-            </div>
-          `;
-        });
-      }
-      document.getElementById('safe-areas').innerHTML = safeHtml || '<p style="color:var(--text2)">暂无数据</p>';
-      
-      // Caution areas
-      let cautionHtml = '';
-      if (as.cautionAreas) {
-        as.cautionAreas.forEach(area => {
-          cautionHtml += `
-            <div class="area-card">
-              <div class="area-name">${area.name}</div>
-              <div class="area-desc">${area.description || ''}</div>
-              <div class="area-tags">
-                ${area.risks ? area.risks.map(f => `<span class="area-tag" style="background:rgba(245,158,11,0.15);color:var(--yellow)">${f}</span>`).join('') : ''}
-              </div>
-            </div>
-          `;
-        });
-      }
-      document.getElementById('caution-areas').innerHTML = cautionHtml || '<p style="color:var(--text2)">暂无数据</p>';
-      
-      // Danger areas
-      let dangerHtml = '';
-      if (as.dangerousAreas) {
-        as.dangerousAreas.forEach(area => {
-          dangerHtml += `
-            <div class="area-card">
-              <div class="area-name">${area.name}</div>
-              <div class="area-desc">${area.description || ''}</div>
-            </div>
-          `;
-        });
-      }
-      document.getElementById('danger-areas').innerHTML = dangerHtml || '<p style="color:var(--text2)">暂无数据</p>';
-    }
-    renderAreas();
-    
-    // Render Local Recommendations
+
+    // ========================
+    // RENDER LIFESTYLE - NEW
+    // ========================
     function renderLifestyle() {
-      const lr = city.localRecommendations;
-      if (!lr) return;
-      
-      // Food & Drink
-      if (lr.foodDrink && lr.foodDrink.length) {
-        let html = '<h3 class="section-title" style="font-size:16px">🍜 美食推荐</h3><div class="rec-grid">';
-        lr.foodDrink.forEach(item => {
+      const ls = city.lifestyle || {};
+      let html = '';
+
+      // Food
+      const food = ls.food || [];
+      if (food.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">🍜</span>必尝美食推荐</h3>';
+        html += '<div class="food-grid">';
+
+        food.forEach(item => {
           html += `
-            <div class="rec-card">
-              <div class="rec-content">
-                <div class="rec-name">${item.name}</div>
-                <div class="rec-type">${item.type || '美食'}</div>
-                <div class="rec-desc">${item.description || ''}</div>
-                ${item.priceRange ? `<div class="rec-price">💰 ${item.priceRange}</div>` : ''}
-                ${item.mustTry ? `
-                  <div class="rec-must-try">
-                    <div class="rec-must-try-label">必尝美食</div>
-                    <div class="rec-must-try-items">
-                      ${item.mustTry.map(t => `<span class="must-try-tag">${t}</span>`).join('')}
-                    </div>
-                  </div>
-                ` : ''}
+            <div class="food-card">
+              <div class="food-header">
+                <span class="food-name">${item.name}</span>
+                <span class="food-type">${item.type || '美食'}</span>
               </div>
+              ${item.price ? `<div class="food-price">💰 ${item.price}</div>` : ''}
+              <div class="food-desc">${item.desc || item.description || ''}</div>
+              ${item.tip ? `<div class="food-tip">💡 ${item.tip}</div>` : ''}
             </div>
           `;
         });
+
         html += '</div>';
-        document.getElementById('food-category').innerHTML = html;
+
+        // Food Safety
+        html += `
+          <div class="food-safety">
+            <div class="food-safety-title">⚠️ 食品安全注意事项</div>
+            <ul class="food-safety-list">
+              <li>选择干净卫生的餐厅用餐</li>
+              <li>饮用瓶装水，避免直接饮用自来水</li>
+              <li>街边小吃注意新鲜度和制作环境</li>
+              <li>对海鲜过敏者请谨慎选择</li>
+              <li>品尝当地生食前请确认食材新鲜度</li>
+            </ul>
+          </div>
+        `;
+
+        html += '</div>';
       }
-      
+
       // Attractions
-      if (lr.attractions && lr.attractions.length) {
-        let html = '<h3 class="section-title" style="font-size:16px">🏛️ 景点推荐</h3><div class="rec-grid">';
-        lr.attractions.forEach(item => {
+      const attractions = ls.attractions || [];
+      if (attractions.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">🏛️</span>热门景点</h3>';
+        html += '<div class="attractions-grid">';
+
+        attractions.forEach(item => {
           html += `
-            <div class="rec-card">
-              <div class="rec-content">
-                <div class="rec-name">${item.name}</div>
-                <div class="rec-type">${item.type || '景点'}</div>
-                <div class="rec-desc">${item.description || ''}</div>
-                ${item.bestTime ? `<div class="rec-price">⏰ 最佳时间: ${item.bestTime}</div>` : ''}
-              </div>
+            <div class="attraction-card">
+              <div class="attraction-name">${item.name}</div>
+              <div class="attraction-type">${item.type || '景点'}</div>
+              <div class="attraction-desc">${item.description || ''}</div>
+              ${item.bestTime ? `<div class="attraction-meta"><span>⏰ 最佳时间: ${item.bestTime}</span></div>` : ''}
             </div>
           `;
         });
-        html += '</div>';
-        document.getElementById('attractions-category').innerHTML = html;
+
+        html += '</div></div>';
       }
-      
+
       // Nightlife
-      if (lr.nightlife && lr.nightlife.length) {
-        let html = '<h3 class="section-title" style="font-size:16px">🌙 夜生活</h3><div class="rec-grid">';
-        lr.nightlife.forEach(item => {
+      const nightlife = ls.nightlife || [];
+      if (nightlife.length > 0) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">🌙</span>夜生活推荐</h3>';
+        html += '<div class="attractions-grid">';
+
+        nightlife.forEach(item => {
           html += `
-            <div class="rec-card">
-              <div class="rec-content">
-                <div class="rec-name">${item.name}</div>
-                <div class="rec-type">${item.type || '夜生活'}</div>
-                <div class="rec-desc">${item.description || ''}</div>
-                ${item.tips ? `<div class="rec-price">💡 ${item.tips}</div>` : ''}
-              </div>
+            <div class="attraction-card">
+              <div class="attraction-name">${item.name}</div>
+              <div class="attraction-type">${item.type || '夜生活'}</div>
+              <div class="attraction-desc">${item.description || ''}</div>
+              ${item.tips ? `<div class="attraction-meta"><span>💡 ${item.tips}</span></div>` : ''}
             </div>
           `;
         });
-        html += '</div>';
-        document.getElementById('nightlife-category').innerHTML = html;
+
+        html += '</div></div>';
       }
+
+      document.getElementById('lifestyle-section').innerHTML = html || '<p style="color:var(--text2);padding:40px;text-align:center;">暂无生活数据</p>';
     }
     renderLifestyle();
-    
-    // Render Safety Tips
+
+    // ========================
+    // RENDER TIPS
+    // ========================
     function renderTips() {
-      const st = city.safetyTips;
-      if (!st) {
-        document.getElementById('section-overview').innerHTML = '<div class="loading">暂无详细安全数据</div>';
-        return;
-      }
-      
+      const st = city.safetyTips || city.emergencyContacts?.safety_tips || {};
       let html = '';
-      
+
       if (st.general && st.general.length) {
         html += `
           <div class="tips-section">
@@ -850,44 +1202,37 @@
           </div>
         `;
       }
-      
-      if (st.forWomen && st.forWomen.length) {
-        html += `
-          <div class="tips-section">
-            <div class="tips-title">👩 女性出行建议</div>
-            <ul class="tips-list">
-              ${st.forWomen.map(t => `<li>${t}</li>`).join('')}
-            </ul>
-          </div>
-        `;
-      }
-      
-      if (st.forFamilies && st.forFamilies.length) {
-        html += `
-          <div class="tips-section">
-            <div class="tips-title">👨‍👩‍👧 家庭出行建议</div>
-            <ul class="tips-list">
-              ${st.forFamilies.map(t => `<li>${t}</li>`).join('')}
-            </ul>
-          </div>
-        `;
-      }
-      
-      if (st.emergencyProcedures && st.emergencyProcedures.length) {
+
+      if (st.emergency && st.emergency.length) {
         html += `
           <div class="tips-section">
             <div class="tips-title">🚨 紧急情况应对</div>
             <ul class="tips-list">
-              ${st.emergencyProcedures.map(t => `<li>${t}</li>`).join('')}
+              ${st.emergency.map(t => `<li>${t}</li>`).join('')}
             </ul>
           </div>
         `;
       }
-      
-      document.getElementById('safety-tips-content').innerHTML = html || '<p style="color:var(--text2)">暂无数据</p>';
+
+      if (st.special && st.special.length) {
+        html += `
+          <div class="tips-section">
+            <div class="tips-title">🎯 特别注意事项</div>
+            <ul class="tips-list">
+              ${st.special.map(t => `<li>${t}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }
+
+      if (!html) {
+        html = '<p style="color:var(--text2);padding:40px;text-align:center;">暂无安全贴士数据</p>';
+      }
+
+      document.getElementById('safety-tips-content').innerHTML = html;
     }
     renderTips();
-    
+
     // Tab Navigation
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -897,6 +1242,9 @@
         document.getElementById('section-' + btn.dataset.tab).classList.add('active');
       });
     });
+
+    // Show first tab
+    document.getElementById('section-overview').classList.add('active');
   </script>
 </body>
 </html>

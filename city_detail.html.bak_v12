@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{city_name}} - SafeCity 全球城市安全指南</title>
+  <meta name="description" content="{{city_name}}安全评估、紧急联系、区域安全指南">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --bg2: #0f1623;
+      --bg3: #141c2e;
+      --card: #1a2236;
+      --card2: #1f293d;
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.12);
+      --text: #e8edf5;
+      --text2: #8892a0;
+      --text3: #5a6475;
+      --accent: #3b82f6;
+      --accent2: #6366f1;
+      --green: #10b981;
+      --yellow: #f59e0b;
+      --orange: #f97316;
+      --red: #ef4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans SC', 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    
+    /* Header */
+    .header {
+      background: rgba(10,14,26,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .back-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text2);
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--accent); }
+    
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.5);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--bg) 0%, transparent 50%);
+    }
+    .hero-content {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .city-flag { font-size: 48px; margin-bottom: 12px; }
+    .city-name { font-size: 42px; font-weight: 800; margin-bottom: 8px; }
+    .city-name-en { font-size: 18px; color: var(--text2); margin-bottom: 16px; }
+    .city-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--text2);
+    }
+    .city-meta span { display: flex; align-items: center; gap: 6px; }
+    
+    /* Score Banner */
+    .score-banner {
+      max-width: 1200px;
+      margin: -40px auto 24px;
+      padding: 0 24px;
+      position: relative;
+      z-index: 10;
+    }
+    .score-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    .overall-score {
+      text-align: center;
+      padding-right: 32px;
+      border-right: 1px solid var(--border);
+    }
+    .score-number {
+      font-size: 64px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--green), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+    }
+    .score-grade {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--green);
+      margin-top: 4px;
+    }
+    .score-trend {
+      font-size: 13px;
+      color: var(--text2);
+      margin-top: 8px;
+    }
+    .dimension-scores {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .dim-score {
+      background: var(--bg2);
+      border-radius: 12px;
+      padding: 12px 16px;
+    }
+    .dim-name { font-size: 12px; color: var(--text2); margin-bottom: 4px; }
+    .dim-value { font-size: 22px; font-weight: 700; }
+    .dim-value.high { color: var(--green); }
+    .dim-value.medium { color: var(--yellow); }
+    .dim-value.low { color: var(--orange); }
+    
+    /* Navigation Tabs */
+    .nav-tabs {
+      max-width: 1200px;
+      margin: 0 auto 24px;
+      padding: 0 24px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-tabs::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text2);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover { border-color: var(--accent); color: var(--text); }
+    .tab-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    
+    /* Content Sections */
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+    }
+    .section {
+      display: none;
+    }
+    .section.active { display: block; }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    /* Emergency Contacts */
+    .emergency-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .emergency-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .emergency-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .emergency-icon.police { background: rgba(59,130,246,0.2); }
+    .emergency-icon.medical { background: rgba(16,185,129,0.2); }
+    .emergency-icon.fire { background: rgba(249,115,22,0.2); }
+    .emergency-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+    .emergency-number { font-size: 28px; font-weight: 800; color: var(--accent); }
+
+    /* Conflict Section */
+    .conflict-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .conflict-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .conflict-card.high { border-color: rgba(239,68,68,0.5); background: rgba(239,68,68,0.08); }
+    .conflict-card.medium { border-color: rgba(245,158,11,0.5); background: rgba(245,158,11,0.05); }
+    .conflict-card.low { border-color: rgba(16,185,129,0.4); background: rgba(16,185,129,0.05); }
+    .conflict-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .conflict-icon { font-size: 28px; }
+    .conflict-title { font-size: 16px; font-weight: 600; }
+    .conflict-level {
+      display: inline-block; padding: 4px 12px; border-radius: 20px;
+      font-size: 14px; font-weight: 700;
+    }
+    .conflict-level.high { background: rgba(239,68,68,0.2); color: #ef4444; }
+    .conflict-level.medium { background: rgba(245,158,11,0.2); color: #f59e0b; }
+    .conflict-level.low { background: rgba(16,185,129,0.2); color: #10b981; }
+    .conflict-desc { color: var(--text2); font-size: 14px; line-height: 1.6; margin-top: 8px; }
+    
+    .org-list {
+      display: grid;
+      gap: 12px;
+    }
+    .org-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .org-info h4 { font-size: 15px; margin-bottom: 4px; }
+    .org-info p { font-size: 13px; color: var(--text2); }
+    .org-phone { font-weight: 600; color: var(--accent); }
+    
+    /* Area Safety */
+    .area-section { margin-bottom: 32px; }
+    .area-section-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .area-section-title.safe { color: var(--green); }
+    .area-section-title.caution { color: var(--yellow); }
+    .area-section-title.danger { color: var(--red); }
+    
+    .area-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 12px;
+    }
+    .area-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .area-name { font-weight: 600; margin-bottom: 6px; }
+    .area-desc { font-size: 13px; color: var(--text2); margin-bottom: 10px; }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .area-tag {
+      background: var(--bg2);
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 12px;
+      color: var(--text2);
+    }
+    
+    /* Local Recommendations */
+    .rec-category { margin-bottom: 32px; }
+    .rec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .rec-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .rec-content { padding: 16px; }
+    .rec-name { font-weight: 600; margin-bottom: 4px; }
+    .rec-type { 
+      font-size: 12px; 
+      color: var(--accent); 
+      background: rgba(59,130,246,0.15);
+      padding: 2px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .rec-desc { font-size: 13px; color: var(--text2); margin-bottom: 10px; }
+    .rec-price { font-size: 13px; color: var(--text2); }
+    .rec-must-try {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .rec-must-try-label { font-size: 12px; color: var(--text3); margin-bottom: 6px; }
+    .rec-must-try-items { display: flex; flex-wrap: wrap; gap: 6px; }
+    .must-try-tag {
+      background: rgba(16,185,129,0.15);
+      color: var(--green);
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    
+    /* Safety Tips */
+    .tips-section { margin-bottom: 24px; }
+    .tips-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+    .tips-list { list-style: none; }
+    .tips-list li {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: var(--text2);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .tips-list li::before {
+      content: '✓';
+      color: var(--green);
+      font-weight: 700;
+    }
+    
+    /* Loading */
+    .loading {
+      text-align: center;
+      padding: 60px;
+      color: var(--text2);
+    }
+    
+    /* Footer */
+    footer {
+      background: #080c18;
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      color: var(--text3);
+      font-size: 13px;
+    }
+    
+    @media (max-width: 768px) {
+      .score-card { flex-direction: column; text-align: center; }
+      .overall-score { border-right: none; padding-right: 0; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+      .dimension-scores { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🛡️</div>
+        <span>SafeCity</span>
+      </a>
+      <a href="index.html" class="back-link">
+        ← 返回首页
+      </a>
+    </div>
+  </header>
+  
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-content">
+      <div class="city-flag" id="city-flag">🏙️</div>
+      <h1 class="city-name" id="city-name">加载中...</h1>
+      <p class="city-name-en" id="city-name-en">Loading...</p>
+      <div class="city-meta" id="city-meta"></div>
+    </div>
+  </div>
+  
+  <!-- Score Banner -->
+  <div class="score-banner">
+    <div class="score-card">
+      <div class="overall-score">
+        <div class="score-number" id="overall-score">--</div>
+        <div class="score-grade" id="score-grade">-</div>
+        <div class="score-trend" id="score-trend">综合安全评分</div>
+      </div>
+      <div class="dimension-scores" id="dimension-scores"></div>
+    </div>
+  </div>
+  
+  <!-- Navigation -->
+  <nav class="nav-tabs">
+    <button class="tab-btn active" data-tab="overview">📊 安全概览</button>
+    <button class="tab-btn" data-tab="emergency">📞 紧急联系</button>
+    <button class="tab-btn" data-tab="areas">🗺️ 区域安全</button>
+    <button class="tab-btn" data-tab="lifestyle">🍜 吃喝玩乐</button>
+    <button class="tab-btn" data-tab="tips">💡 安全贴士</button>
+  </nav>
+  
+  <!-- Content -->
+  <main class="content">
+    <!-- Overview Section -->
+    <section class="section active" id="section-overview">
+      <div class="loading">加载安全数据中...</div>
+    </section>
+    
+    <!-- Conflict Section -->
+    <section class="section" id="section-conflict">
+      <h2 class="section-title">⚠️ 冲突风险评估</h2>
+      <div class="conflict-grid" id="conflict-grid"></div>
+    </section>
+    
+    <!-- Emergency Section -->
+    <section class="section" id="section-emergency">
+      <h2 class="section-title">📞 紧急联系信息</h2>
+      <div class="emergency-grid" id="emergency-grid"></div>
+      <h3 class="section-title" style="font-size:16px;margin-top:32px;">🏢 重要机构</h3>
+      <div class="org-list" id="org-list"></div>
+      <h3 class="section-title" style="font-size:16px;margin-top:32px;">🏛️ 领事馆</h3>
+      <div class="org-list" id="consulate-list"></div>
+    </section>
+    
+    <!-- Areas Section -->
+    <section class="section" id="section-areas">
+      <div class="area-section">
+        <h3 class="area-section-title safe">✅ 推荐安全区域</h3>
+        <div class="area-grid" id="safe-areas"></div>
+      </div>
+      <div class="area-section">
+        <h3 class="area-section-title caution">⚠️ 需注意区域</h3>
+        <div class="area-grid" id="caution-areas"></div>
+      </div>
+      <div class="area-section">
+        <h3 class="area-section-title danger">🚫 危险区域</h3>
+        <div class="area-grid" id="danger-areas"></div>
+      </div>
+    </section>
+    
+    <!-- Lifestyle Section -->
+    <section class="section" id="section-lifestyle">
+      <div class="rec-category" id="food-category"></div>
+      <div class="rec-category" id="attractions-category"></div>
+      <div class="rec-category" id="nightlife-category"></div>
+    </section>
+    
+    <!-- Tips Section -->
+    <section class="section" id="section-tips">
+      <div id="safety-tips-content"></div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>⚠️ 免责声明：本网站安全评分仅供参考，基于公开数据和综合评估，不构成专业安全建议。</p>
+    <p>© 2026 SafeCity Global · 数据仅供参考 · <a href="https://safecity.uichain.org">safecity.uichain.org</a></p>
+  </footer>
+  
+  <!-- Load Data: data_new.js has detailed data, data.js is fallback -->
+  <script src="data_new.js"></script>
+  <script>
+    // Get city from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const cityId = urlParams.get('city') || 'tokyo';
+    
+    // Find city data - first check data_new.js, then fall back to data.js
+    let city = CITY_DATABASE[cityId];
+    if (!city && typeof CITY_DATABASE_BASIC !== 'undefined') {
+      city = CITY_DATABASE_BASIC[cityId];
+    }
+    if (!city && typeof CITY_DATABASE !== 'undefined') {
+      // Try to get from the global if CITY_DATABASE_BASIC not defined
+      city = window.CITY_DATABASE && window.CITY_DATABASE[cityId];
+    }
+    
+    if (!city) {
+      document.body.innerHTML = '<div class="loading"><h2>城市数据未找到</h2><p>请返回首页选择城市</p></div>';
+      throw new Error('City not found: ' + cityId);
+    }
+    
+    // Update page title
+    document.title = `${city.name} - SafeCity 全球城市安全指南`;
+    
+    // Render Hero
+    document.getElementById('hero-bg').style.backgroundImage = `url(${city.image})`;
+    document.getElementById('city-flag').textContent = city.flag || '🏙️';
+    document.getElementById('city-name').textContent = city.name;
+    document.getElementById('city-name-en').textContent = `${city.nameEn || ''} ${city.country || ''}`;
+    document.getElementById('city-meta').innerHTML = `
+      <span>🌍 ${city.continent || ''}</span>
+      <span>👥 ${city.population || ''}</span>
+      <span>🗣️ ${city.language || ''}</span>
+      <span>💰 ${city.currency || ''}</span>
+      <span>🕐 ${city.timezone || ''}</span>
+    `;
+    
+    // Render Score
+    if (city.safetyIndex) {
+      document.getElementById('overall-score').textContent = city.safetyIndex.overall || '--';
+      document.getElementById('score-grade').textContent = city.safetyIndex.grade || '-';
+      const trend = city.safetyIndex.trend;
+      const trendText = trend === 'improving' ? '↗️ 改善中' : trend === 'declining' ? '↘️ 下降' : '→ 稳定';
+      document.getElementById('score-trend').textContent = trendText;
+      
+      // Dimensions
+      const dims = city.safetyIndex.dimensions;
+      const dimNames = {
+        crimeSafety: '犯罪安全',
+        healthMedical: '医疗健康',
+        transportSafety: '交通安全',
+        naturalDisaster: '自然灾害',
+        environmental: '环境安全',
+        socialStability: '社会稳定'
+      };
+      let dimHtml = '';
+      for (const [key, val] of Object.entries(dimNames)) {
+        if (dims && dims[key]) {
+          const score = dims[key].score || 0;
+          const cls = score >= 80 ? 'high' : score >= 60 ? 'medium' : 'low';
+          dimHtml += `
+            <div class="dim-score">
+              <div class="dim-name">${val}</div>
+              <div class="dim-value ${cls}">${score}</div>
+            </div>
+          `;
+        }
+      }
+      document.getElementById('dimension-scores').innerHTML = dimHtml;
+    }
+    
+    // Render Emergency Contacts
+    function renderEmergency() {
+      const ec = city.emergencyContacts;
+      if (!ec) return;
+      
+      let html = '';
+      if (ec.phoneNumbers) {
+        const pn = ec.phoneNumbers;
+        if (pn.police) html += `
+          <div class="emergency-card">
+            <div class="emergency-icon police">👮</div>
+            <div class="emergency-title">报警电话</div>
+            <div class="emergency-number">${pn.police}</div>
+          </div>
+        `;
+        if (pn.ambulance) html += `
+          <div class="emergency-card">
+            <div class="emergency-icon medical">🏥</div>
+            <div class="emergency-title">急救电话</div>
+            <div class="emergency-number">${pn.ambulance}</div>
+          </div>
+        `;
+        if (pn.fire) html += `
+          <div class="emergency-card">
+            <div class="emergency-icon fire">🚒</div>
+            <div class="emergency-title">消防电话</div>
+            <div class="emergency-number">${pn.fire}</div>
+          </div>
+        `;
+      }
+      document.getElementById('emergency-grid').innerHTML = html;
+      
+      // Organizations
+      let orgHtml = '';
+      if (ec.importantOrganizations) {
+        ec.importantOrganizations.forEach(org => {
+          orgHtml += `
+            <div class="org-card">
+              <div class="org-info">
+                <h4>${org.name}</h4>
+                <p>${org.description || ''}</p>
+              </div>
+              <div class="org-phone">${org.phone || ''}</div>
+            </div>
+          `;
+        });
+      }
+      document.getElementById('org-list').innerHTML = orgHtml;
+      
+      // Consulates
+      let conHtml = '';
+      if (ec.consulates) {
+        ec.consulates.forEach(c => {
+          conHtml += `
+            <div class="org-card">
+              <div class="org-info">
+                <h4>${c.name}</h4>
+                <p>${c.address || ''}</p>
+              </div>
+              <div class="org-phone">${c.phone || ''}</div>
+            </div>
+          `;
+        });
+      }
+      document.getElementById('consulate-list').innerHTML = conHtml;
+      
+      // Conflict Section
+      const conflictGrid = document.getElementById('conflict-grid');
+      if (city.conflict) {
+        const c = city.conflict;
+        let conflictHTML = '';
+        
+        // 战争风险
+        const warLevel = c.war_risk === '中' || c.war_risk === '高' ? 'high' : (c.war_risk === '低' ? 'medium' : 'low');
+        conflictHTML += '<div class="conflict-card ' + warLevel + '">';
+        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">⚔️</span><span class="conflict-title">战争风险</span></div>';
+        conflictHTML += '<span class="conflict-level ' + warLevel + '">' + (c.war_risk || '无') + '</span>';
+        conflictHTML += '<p class="conflict-desc">' + (c.war_desc || '暂无描述') + '</p>';
+        conflictHTML += '</div>';
+        
+        // 帮派活动
+        const gangLevel = c.gang_activity === '高' || c.gang_activity === '较高' ? 'high' : (c.gang_activity === '中等' ? 'medium' : 'low');
+        conflictHTML += '<div class="conflict-card ' + gangLevel + '">';
+        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">🚨</span><span class="conflict-title">帮派活动</span></div>';
+        conflictHTML += '<span class="conflict-level ' + gangLevel + '">' + (c.gang_activity || '极少') + '</span>';
+        conflictHTML += '<p class="conflict-desc">' + (c.gang_desc || '暂无描述') + '</p>';
+        conflictHTML += '</div>';
+        
+        // 社会动荡
+        const civilLevel = c.civil_unrest === '高' ? 'high' : (c.civil_unrest === '中' ? 'medium' : 'low');
+        conflictHTML += '<div class="conflict-card ' + civilLevel + '">';
+        conflictHTML += '<div class="conflict-header"><span class="conflict-icon">📢</span><span class="conflict-title">社会动荡</span></div>';
+        conflictHTML += '<span class="conflict-level ' + civilLevel + '">' + (c.civil_unrest || '低') + '</span>';
+        conflictHTML += '<p class="conflict-desc">' + (c.civil_desc || '暂无描述') + '</p>';
+        conflictHTML += '</div>';
+        
+        conflictGrid.innerHTML = conflictHTML;
+      } else {
+        conflictGrid.innerHTML = '<div class="conflict-card low"><p style="color:var(--text2)">暂无冲突风险数据</p></div>';
+      }
+    }
+    renderEmergency();
+    
+    // Render Area Safety
+    function renderAreas() {
+      const as = city.areaSafety;
+      if (!as) return;
+      
+      // Safe areas
+      let safeHtml = '';
+      if (as.safestAreas) {
+        as.safestAreas.forEach(area => {
+          safeHtml += `
+            <div class="area-card">
+              <div class="area-name">${area.name}</div>
+              <div class="area-desc">${area.description || ''}</div>
+              <div class="area-tags">
+                ${area.features ? area.features.map(f => `<span class="area-tag">${f}</span>`).join('') : ''}
+              </div>
+            </div>
+          `;
+        });
+      }
+      document.getElementById('safe-areas').innerHTML = safeHtml || '<p style="color:var(--text2)">暂无数据</p>';
+      
+      // Caution areas
+      let cautionHtml = '';
+      if (as.cautionAreas) {
+        as.cautionAreas.forEach(area => {
+          cautionHtml += `
+            <div class="area-card">
+              <div class="area-name">${area.name}</div>
+              <div class="area-desc">${area.description || ''}</div>
+              <div class="area-tags">
+                ${area.risks ? area.risks.map(f => `<span class="area-tag" style="background:rgba(245,158,11,0.15);color:var(--yellow)">${f}</span>`).join('') : ''}
+              </div>
+            </div>
+          `;
+        });
+      }
+      document.getElementById('caution-areas').innerHTML = cautionHtml || '<p style="color:var(--text2)">暂无数据</p>';
+      
+      // Danger areas
+      let dangerHtml = '';
+      if (as.dangerousAreas) {
+        as.dangerousAreas.forEach(area => {
+          dangerHtml += `
+            <div class="area-card">
+              <div class="area-name">${area.name}</div>
+              <div class="area-desc">${area.description || ''}</div>
+            </div>
+          `;
+        });
+      }
+      document.getElementById('danger-areas').innerHTML = dangerHtml || '<p style="color:var(--text2)">暂无数据</p>';
+    }
+    renderAreas();
+    
+    // Render Local Recommendations
+    function renderLifestyle() {
+      const lr = city.localRecommendations;
+      if (!lr) return;
+      
+      // Food & Drink
+      if (lr.foodDrink && lr.foodDrink.length) {
+        let html = '<h3 class="section-title" style="font-size:16px">🍜 美食推荐</h3><div class="rec-grid">';
+        lr.foodDrink.forEach(item => {
+          html += `
+            <div class="rec-card">
+              <div class="rec-content">
+                <div class="rec-name">${item.name}</div>
+                <div class="rec-type">${item.type || '美食'}</div>
+                <div class="rec-desc">${item.description || ''}</div>
+                ${item.priceRange ? `<div class="rec-price">💰 ${item.priceRange}</div>` : ''}
+                ${item.mustTry ? `
+                  <div class="rec-must-try">
+                    <div class="rec-must-try-label">必尝美食</div>
+                    <div class="rec-must-try-items">
+                      ${item.mustTry.map(t => `<span class="must-try-tag">${t}</span>`).join('')}
+                    </div>
+                  </div>
+                ` : ''}
+              </div>
+            </div>
+          `;
+        });
+        html += '</div>';
+        document.getElementById('food-category').innerHTML = html;
+      }
+      
+      // Attractions
+      if (lr.attractions && lr.attractions.length) {
+        let html = '<h3 class="section-title" style="font-size:16px">🏛️ 景点推荐</h3><div class="rec-grid">';
+        lr.attractions.forEach(item => {
+          html += `
+            <div class="rec-card">
+              <div class="rec-content">
+                <div class="rec-name">${item.name}</div>
+                <div class="rec-type">${item.type || '景点'}</div>
+                <div class="rec-desc">${item.description || ''}</div>
+                ${item.bestTime ? `<div class="rec-price">⏰ 最佳时间: ${item.bestTime}</div>` : ''}
+              </div>
+            </div>
+          `;
+        });
+        html += '</div>';
+        document.getElementById('attractions-category').innerHTML = html;
+      }
+      
+      // Nightlife
+      if (lr.nightlife && lr.nightlife.length) {
+        let html = '<h3 class="section-title" style="font-size:16px">🌙 夜生活</h3><div class="rec-grid">';
+        lr.nightlife.forEach(item => {
+          html += `
+            <div class="rec-card">
+              <div class="rec-content">
+                <div class="rec-name">${item.name}</div>
+                <div class="rec-type">${item.type || '夜生活'}</div>
+                <div class="rec-desc">${item.description || ''}</div>
+                ${item.tips ? `<div class="rec-price">💡 ${item.tips}</div>` : ''}
+              </div>
+            </div>
+          `;
+        });
+        html += '</div>';
+        document.getElementById('nightlife-category').innerHTML = html;
+      }
+    }
+    renderLifestyle();
+    
+    // Render Safety Tips
+    function renderTips() {
+      const st = city.safetyTips;
+      if (!st) {
+        document.getElementById('section-overview').innerHTML = '<div class="loading">暂无详细安全数据</div>';
+        return;
+      }
+      
+      let html = '';
+      
+      if (st.general && st.general.length) {
+        html += `
+          <div class="tips-section">
+            <div class="tips-title">📌 通用安全建议</div>
+            <ul class="tips-list">
+              ${st.general.map(t => `<li>${t}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }
+      
+      if (st.forWomen && st.forWomen.length) {
+        html += `
+          <div class="tips-section">
+            <div class="tips-title">👩 女性出行建议</div>
+            <ul class="tips-list">
+              ${st.forWomen.map(t => `<li>${t}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }
+      
+      if (st.forFamilies && st.forFamilies.length) {
+        html += `
+          <div class="tips-section">
+            <div class="tips-title">👨‍👩‍👧 家庭出行建议</div>
+            <ul class="tips-list">
+              ${st.forFamilies.map(t => `<li>${t}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }
+      
+      if (st.emergencyProcedures && st.emergencyProcedures.length) {
+        html += `
+          <div class="tips-section">
+            <div class="tips-title">🚨 紧急情况应对</div>
+            <ul class="tips-list">
+              ${st.emergencyProcedures.map(t => `<li>${t}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }
+      
+      document.getElementById('safety-tips-content').innerHTML = html || '<p style="color:var(--text2)">暂无数据</p>';
+    }
+    renderTips();
+    
+    // Tab Navigation
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('section-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
