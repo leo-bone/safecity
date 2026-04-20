@@ -91,7 +91,7 @@ var CITY_DATABASE = {
       "ambulance": "119",
       "fire": "119"
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "110", "ambulance": "119", "fire": "119", "tourist": "050-3816-2727"},
         "hospitals": [{"name": "东京大学医学部附属医院", "phone": "03-3815-5411", "address": "东京都文京区和乡1-21-1", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
@@ -100,6 +100,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🔒", "title": "财产安全", "tips": ["在涩谷、新宿等人多场所注意防盗", "将贵重物品放在内侧口袋"]},{"icon": "🚇", "title": "交通安全", "tips": ["日本靠左行走", "注意电车关门时间"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "东京地铁网络发达，覆盖全市", "tips": ["购买Suica卡或一日券更划算"]},{"icon": "🚃", "name": "JR电车", "description": "连接城市间和市郊的主要交通", "tips": ["注意方向避免坐错车"]},{"icon": "🚌", "name": "公交", "description": "路线复杂，建议提前查好路线", "tips": ["后门上车，前门下车"]},{"icon": "🚕", "name": "出租车", "description": "价格较高但方便", "tips": ["建议用滴滴国际版预约"]}]}
       },
+
       "food": [
         {
           "name": "寿司",
@@ -312,7 +313,7 @@ var CITY_DATABASE = {
       "ambulance": "112",
       "fire": "112"
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "999", "ambulance": "995", "fire": "995", "tourist": "1800-736-2000"},
         "hospitals": [{"name": "新加坡中央医院", "phone": "+65-6222-3322", "address": "Outram Rd, Singapore 169608", "features": ["24H急诊", "英语服务", "多语言"], "emergency24h": true}],
@@ -321,6 +322,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🚫", "title": "法规注意", "tips": ["新加坡法律严格，乱丢垃圾罚款严重", "室内禁烟"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "MRT地铁", "description": "覆盖全面，准点率高", "tips": ["换乘需出站重进"]},{"icon": "🚌", "name": "公交", "description": "路线覆盖广", "tips": ["报站有中文"]},{"icon": "🚕", "name": "出租车", "description": "价格合理", "tips": ["高峰期加价"]}]}
       },
+
       "food": [
         {
           "name": "海南鸡饭",
@@ -547,7 +549,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "112", "ambulance": "119", "fire": "119", "tourist": "02-1330"},
         "hospitals": [{"name": "首尔大学附属医院", "phone": "02-880-5114", "address": "首尔特别市钟路区蓮花洞 101", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
@@ -556,6 +558,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🌙", "title": "夜间安全", "tips": ["弘大、梨泰院深夜注意", "警惕陌生人给的饮料"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "覆盖全市，末班车晚", "tips": ["有女性专用车厢"]},{"icon": "🚌", "name": "公交", "description": "分为市郊和廣域", "tips": ["换乘优惠"]},{"icon": "🚕", "name": "出租车", "description": "普通和模范车", "tips": ["模范车更贵"]}]}
       },
+
       "food": [
         {
           "name": "韩式烤肉",
@@ -1059,7 +1062,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "110", "ambulance": "120", "fire": "119", "tourist": "12345"},
         "hospitals": [{"name": "北京协和医院", "phone": "010-6915-6114", "address": "北京市东城区王府井帅府园1号", "features": ["24H急诊", "多语言"], "emergency24h": true}],
@@ -1068,6 +1071,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🏯", "title": "旅游注意", "tips": ["天安门周边安检严格", "故宫需提前预约"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "覆盖全市", "tips": ["早晚高峰拥挤"]},{"icon": "🚌", "name": "公交", "description": "线路众多", "tips": ["分段计费"]},{"icon": "🚕", "name": "出租车", "description": "蓝色黄色为主", "tips": ["拒载较多建议滴滴"]}]}
       },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -1305,7 +1309,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "110", "ambulance": "120", "fire": "119", "tourist": "12345"},
         "hospitals": [{"name": "华山医院", "phone": "021-5288-9999", "address": "上海市乌鲁木齐中路12号", "features": ["24H急诊", "多语言"], "emergency24h": true}],
@@ -1314,6 +1318,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🚇", "title": "地铁安全", "tips": ["上海地铁覆盖广", "早高峰拥挤注意安全"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "世界最长地铁网络", "tips": ["部分线路拥挤"]},{"icon": "🚌", "name": "公交", "description": "线路覆盖广", "tips": ["支付宝可刷"]},{"icon": "🚕", "name": "出租车", "description": "起步价16元", "tips": ["滴滴更方便"]}]}
       },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -1551,7 +1556,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "191", "ambulance": "1669", "fire": "199", "tourist": "1672"},
         "hospitals": [{"name": "康民国际医院", "phone": "+66-2-066-8888", "address": "317 Silom Rd, Bang Rak, Bangkok", "features": ["24H急诊", "英语服务", "国际患者"], "emergency24h": true}],
@@ -1560,6 +1565,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🛡️", "title": "安全提示", "tips": ["四面佛周边小心佛牌骗局", "嘟嘟车价格需谈好"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "BTS/MRT", "description": "覆盖主要区域", "tips": ["BTS和MRT不通用需换票"]},{"icon": "🛺", "name": "嘟嘟车", "description": "特色交通工具", "tips": ["需议价"]},{"icon": "🚕", "name": "出租车", "description": "打表较便宜", "tips": ["要求打表(By Meter)"]}]}
       },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -8499,7 +8505,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "999", "ambulance": "999", "fire": "999", "tourist": "0300-123-6789"},
         "hospitals": [{"name": "St Thomas医院", "phone": "020-7188-7188", "address": "Westminster Bridge Rd, London SE1 7EH", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
@@ -8508,6 +8514,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🎭", "title": "防盗", "tips": ["伦敦桥周边警惕恐怖袭击", "西区剧院票务骗局多"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "世界最古老的地铁系统", "tips": ["周末部分线路施工"]},{"icon": "🚌", "name": "公交", "description": "双层巴士体验独特", "tips": ["不报站名需打开导航"]},{"icon": "🚕", "name": "黑色出租车", "description": "安全但贵", "tips": ["Uber更便宜"]}]}
       },
+
       "food": [
         {
           "name": "当地特色菜",
@@ -8745,7 +8752,7 @@ var CITY_DATABASE = {
         "保存当地紧急联系方式"
       ]
     },
-    "lifestyle": {,
+    "lifestyle": {
       "emergencyContacts": {
         "phoneNumbers": {"police": "17", "ambulance": "15", "fire": "18", "tourist": "3430"},
         "hospitals": [{"name": "Pitié-Salpêtrière医院", "phone": "01-42-17-60-60", "address": "47-83 Boulevard de l Hopital, 75013 Paris", "features": ["24H急诊", "英语服务"], "emergency24h": true}],
@@ -8754,6 +8761,7 @@ var CITY_DATABASE = {
         "selfProtection": [{"icon": "🎭", "title": "防盗要点", "tips": ["在景点、地铁站防范假警察查证件骗局", "热点地区小偷多"]}],
         "transport": {"modes": [{"icon": "🚇", "name": "地铁", "description": "覆盖全面，价格便宜", "tips": ["注意小偷，高峰期拥挤"]},{"icon": "🚌", "name": "公交", "description": "可欣赏城市风光", "tips": ["注意扒手"]},{"icon": "🚕", "name": "出租车", "description": "昂贵但安全", "tips": ["建议用App预约"]}]}
       },
+
       "food": [
         {
           "name": "当地特色菜",
