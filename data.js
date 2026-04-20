@@ -1,7 +1,7 @@
 // ============================================================
-// SafeCity Global - 全球城市安全数据库 v5.1 (完整版)
+// SafeCity Global - 全球城市安全数据库 v9.0 (完整版)
 // 包含125个全球主要城市，详细生活旅行信息
-// 更新时间: 2026-03-31T16:01:25.783Z
+// 更新时间: 2026-04-20 v9.0
 // ============================================================
 
 var SAFETY_COLORS = {
@@ -20,6 +20,22 @@ var SAFETY_COLORS = {
 var CITY_DATABASE = {
   "tokyo": {
     "id": "tokyo",
+    "safetyIndex": {
+      "overall": 84, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 88, "note": "犯罪率极低，路不拾遗" },
+        "healthMedical": { "score": 85, "note": "医疗体系完善，国际医院多" },
+        "transportSafety": { "score": 80, "note": "交通发达但高峰期拥挤" },
+        "naturalDisaster": { "score": 58, "note": "地震活跃带，台风季需关注" },
+        "environmental": { "score": 82, "note": "空气质量良好，水质洁净" },
+        "socialStability": { "score": 90, "note": "社会秩序优良，政治稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"HPV疫苗","note":"推荐9-26岁人群","essential":false},{"name":"流感疫苗","note":"冬季高发期前接种","essential":false},{"name":"乙肝疫苗","note":"长期居住建议接种","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(12-2月)","prevention":"勤洗手，避免人群密集"},{"name":"诺如病毒","risk":"中","season":"全年","prevention":"注意食品卫生"},{"name":"登革热","risk":"低","season":"夏季(6-9月)","prevention":"防蚊叮咬"}],
+      "medicalTips": ["就医可使用日语+英语沟通","大型医院提供英文服务","旅行保险一定要买","日本医保制度完善，可报销70%"]
+    },
     "name": "东京",
     "nameEn": "Tokyo",
     "country": "日本",
@@ -253,6 +269,22 @@ var CITY_DATABASE = {
   },
   "singapore": {
     "id": "singapore",
+    "safetyIndex": {
+      "overall": 92, "grade": "A", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 95, "note": "全球最安全城市之一，法治严格" },
+        "healthMedical": { "score": 90, "note": "医疗水平世界领先，公立私立选择多" },
+        "transportSafety": { "score": 92, "note": "MRT系统高效准点，覆盖全面" },
+        "naturalDisaster": { "score": 85, "note": "无地震台风，但需注意雾霾" },
+        "environmental": { "score": 88, "note": "城市绿化好，空气质量优良" },
+        "socialStability": { "score": 95, "note": "多元文化和谐，社会稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"全年可接种","essential":false},{"name":"登革热疫苗","note":"适合高发区居住者","essential":false}],
+      "diseaseRisks": [{"name":"登革热","risk":"高","season":"全年(雨季6-12月高发)","prevention":"防蚊灭蚊，清除积水"},{"name":"寨卡病毒","risk":"中","season":"雨季","prevention":"防蚊叮咬，尤其是孕妇"}],
+      "medicalTips": ["医疗费用较高，提前买保险","公立医院需预约，私立可walk-in","英文沟通无障碍","牙科和专科推荐私立"]
+    },
     "name": "新加坡",
     "nameEn": "Singapore",
     "country": "新加坡",
@@ -475,6 +507,22 @@ var CITY_DATABASE = {
   },
   "seoul": {
     "id": "seoul",
+    "safetyIndex": {
+      "overall": 82, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 85, "note": "治安良好，夜间出行相对安全" },
+        "healthMedical": { "score": 88, "note": "医疗水平高，整形外科世界知名" },
+        "transportSafety": { "score": 82, "note": "地铁网络发达，高峰期较拥挤" },
+        "naturalDisaster": { "score": 72, "note": "地震少但雾霾季节性严重" },
+        "environmental": { "score": 70, "note": "春季有沙尘暴，需关注空气质量" },
+        "socialStability": { "score": 90, "note": "社会秩序好，政治稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"MERS防护","note":"2015年后已控制","essential":false},{"name":"流感疫苗","note":"冬季前推荐接种","essential":false},{"name":"甲肝疫苗","note":"建议长期居住者接种","essential":false}],
+      "diseaseRisks": [{"name":"MERS","risk":"极低","season":"已得到控制","prevention":"已无特殊风险"},{"name":"雾霾相关","risk":"中","season":"春季(3-5月)","prevention":"佩戴N95口罩，关注AQI"}],
+      "medicalTips": ["大型医院提供英语服务","明洞、东大门有24小时药店","韩医(中医)也很普及","医疗费用相对合理"]
+    },
     "name": "首尔",
     "nameEn": "Seoul",
     "country": "韩国",
@@ -750,6 +798,22 @@ var CITY_DATABASE = {
   },
   "hong_kong": {
     "id": "hong_kong",
+    "safetyIndex": {
+      "overall": 80, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 78, "note": "扒窃多发，夜间需注意" },
+        "healthMedical": { "score": 85, "note": "医疗水平高，私立医院服务好" },
+        "transportSafety": { "score": 85, "note": "公共交通发达，MTR覆盖广" },
+        "naturalDisaster": { "score": 65, "note": "台风季(6-10月)需关注预警" },
+        "environmental": { "score": 72, "note": "空气质量一般，冬季雾霾较重" },
+        "socialStability": { "score": 75, "note": "社会稳定，偶有抗议活动" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季高发期前接种","essential":false},{"name":"新冠疫苗","note":"根据当地要求","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(1-3月)","prevention":"接种疫苗，保持卫生"},{"name":"登革热","risk":"中","season":"夏季","prevention":"防蚊措施"}],
+      "medicalTips": ["公立医院轮候时间长","私立医院费用高但服务好","药店随处可见，购买处方药需医生处方","广东话为主，普通话可通用"]
+    },
     "name": "香港",
     "nameEn": "Hong Kong",
     "country": "中国",
@@ -988,6 +1052,22 @@ var CITY_DATABASE = {
   },
   "beijing": {
     "id": "beijing",
+    "safetyIndex": {
+      "overall": 75, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 80, "note": "治安良好，重大活动安保严格" },
+        "healthMedical": { "score": 78, "note": "医疗资源顶级，协和等著名医院多" },
+        "transportSafety": { "score": 75, "note": "地铁覆盖广但换乘不便" },
+        "naturalDisaster": { "score": 68, "note": "沙尘暴春季多发，地震风险低" },
+        "environmental": { "score": 60, "note": "空气质量近年改善但冬季仍需注意" },
+        "socialStability": { "score": 85, "note": "社会稳定，治安管理严格" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"甲肝疫苗","note":"建议接种","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(11月-次年3月)","prevention":"接种疫苗，室内通风"},{"name":"沙尘相关","risk":"中","season":"春季(3-5月)","prevention":"佩戴口罩，关注预警"}],
+      "medicalTips": ["三甲医院知名专家号难挂","国际部费用高但服务好","各大医院需提前预约","友谊医院等有外籍患者经验"]
+    },
     "name": "北京",
     "nameEn": "Beijing",
     "country": "中国",
@@ -1235,6 +1315,22 @@ var CITY_DATABASE = {
   },
   "shanghai": {
     "id": "shanghai",
+    "safetyIndex": {
+      "overall": 78, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 80, "note": "治安总体良好，扒窃需防范" },
+        "healthMedical": { "score": 80, "note": "医疗资源丰富，三甲医院多" },
+        "transportSafety": { "score": 78, "note": "地铁发达，高峰拥堵严重" },
+        "naturalDisaster": { "score": 70, "note": "台风影响，梅雨季节潮湿" },
+        "environmental": { "score": 65, "note": "空气质量季节性差，冬季雾霾" },
+        "socialStability": { "score": 82, "note": "社会稳定，管理规范" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"新冠疫苗","note":"根据当地要求","essential":false},{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"甲肝疫苗","note":"建议接种","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"新冠","risk":"低","season":"全年","prevention":"保持社交距离，注意防护"}],
+      "medicalTips": ["三甲医院英文服务较好","专家号需提前预约","商业医疗保险很重要","药店遍布，可购买非处方药"]
+    },
     "name": "上海",
     "nameEn": "Shanghai",
     "country": "中国",
@@ -1482,6 +1578,22 @@ var CITY_DATABASE = {
   },
   "bangkok": {
     "id": "bangkok",
+    "safetyIndex": {
+      "overall": 68, "grade": "B-", "trend": "improving",
+      "dimensions": {
+        "crimeSafety": { "score": 65, "note": "扒窃、诈骗多发，需提高警惕" },
+        "healthMedical": { "score": 72, "note": "医疗性价比高，私立医院服务好" },
+        "transportSafety": { "score": 60, "note": "交通拥堵严重，摩托车多需注意" },
+        "naturalDisaster": { "score": 75, "note": "雨季(5-10月)偶有洪涝" },
+        "environmental": { "score": 65, "note": "空气质量季节性差，雾霾较重" },
+        "socialStability": { "score": 78, "note": "社会稳定，佛教文化平和" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"甲肝疫苗","note":"强烈推荐","essential":true},{"name":"乙肝疫苗","note":"建议接种","essential":false},{"name":"伤寒疫苗","note":"饮食不注意者推荐","essential":false},{"name":"狂犬疫苗","note":"接触动物者推荐","essential":false},{"name":"日本脑炎","note":"农村长期停留者","essential":false}],
+      "diseaseRisks": [{"name":"登革热","risk":"高","season":"雨季(6-10月)","prevention":"防蚊灭蚊，清除积水"},{"name":"寨卡病毒","risk":"中","season":"雨季","prevention":"防蚊，尤其是孕妇"},{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"食物中毒","risk":"中","season":"全年","prevention":"注意饮食卫生"}],
+      "medicalTips": ["私立医院如曼谷医院(Bangkok Hospital)国际标准","医疗费用相对低廉","旅游保险一定要买","街边小吃注意卫生选择"]
+    },
     "name": "曼谷",
     "nameEn": "Bangkok",
     "country": "泰国",
@@ -3671,6 +3783,22 @@ var CITY_DATABASE = {
   },
   "dubai": {
     "id": "dubai",
+    "safetyIndex": {
+      "overall": 88, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 90, "note": "非常安全，法治严格，监控密集" },
+        "healthMedical": { "score": 88, "note": "医疗水平高，国际医院众多" },
+        "transportSafety": { "score": 82, "note": "道路状况好，但车速快事故多" },
+        "naturalDisaster": { "score": 78, "note": "沙漠气候，极端高温需注意" },
+        "environmental": { "score": 75, "note": "沙尘暴季节性出现" },
+        "socialStability": { "score": 90, "note": "社会稳定，治安管理严格" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"新冠疫苗","note":"根据当地要求","essential":false},{"name":"流感疫苗","note":"推荐","essential":false}],
+      "diseaseRisks": [{"name":"中暑","risk":"高","season":"夏季(5-9月室外)","prevention":"大量饮水，避免烈日"},{"name":"MERS","risk":"低","season":"全年","prevention":"避免接触骆驼"},{"name":"蚊媒疾病","risk":"低","season":"全年","prevention":"防蚊措施"}],
+      "medicalTips": ["阿联酋医疗需自费，保险很重要","私立医院如American Hospital标准高","斋月白天公共场所禁食需注意","英文沟通普遍顺畅"]
+    },
     "name": "迪拜",
     "nameEn": "Dubai",
     "country": "阿联酋",
@@ -8431,6 +8559,22 @@ var CITY_DATABASE = {
   },
   "london": {
     "id": "london",
+    "safetyIndex": {
+      "overall": 78, "grade": "B+", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 72, "note": "扒窃多发，夜间部分区域需注意" },
+        "healthMedical": { "score": 88, "note": "NHS体系完善，医疗水平高" },
+        "transportSafety": { "score": 80, "note": "地铁发达，公交覆盖广" },
+        "naturalDisaster": { "score": 82, "note": "洪水风险在增加，极端天气增多" },
+        "environmental": { "score": 78, "note": "空气质量持续改善" },
+        "socialStability": { "score": 82, "note": "社会稳定，多元文化和谐" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"新冠疫苗","note":"根据当地要求","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(11-2月)","prevention":"接种疫苗"},{"name":"军团病","risk":"低","season":"夏季","prevention":"避免吸入水雾"}],
+      "medicalTips": ["NHS免费医疗(游客短期不适用)","急诊(A&E)无需预约","私立医疗快速但昂贵","boots等药房可买非处方药"]
+    },
     "name": "伦敦",
     "nameEn": "London",
     "country": "英国",
@@ -8678,6 +8822,22 @@ var CITY_DATABASE = {
   },
   "paris": {
     "id": "paris",
+    "safetyIndex": {
+      "overall": 72, "grade": "B", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 65, "note": "扒窃、抢劫多发，需提高警惕" },
+        "healthMedical": { "score": 82, "note": "医疗水平世界一流，社保体系完善" },
+        "transportSafety": { "score": 75, "note": "地铁网络广，但晚间安全需注意" },
+        "naturalDisaster": { "score": 80, "note": "自然灾害风险低" },
+        "environmental": { "score": 78, "note": "空气质量一般，但持续改善" },
+        "socialStability": { "score": 72, "note": "社会偶有抗议，但总体稳定" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"乙肝疫苗","note":"建议长期居住者接种","essential":false},{"name":"狂犬疫苗","note":"接触动物者推荐","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"蚊媒疾病","risk":"低","season":"夏季","prevention":"防蚊措施"}],
+      "medicalTips": ["法国家医疗费可报销70%","紧急情况拨打15(SAMU)或112","英语在旅游区可用，医院不一定","药妆店可买非处方药"]
+    },
     "name": "巴黎",
     "nameEn": "Paris",
     "country": "法国",
@@ -18207,6 +18367,22 @@ var CITY_DATABASE = {
   },
   "new_york": {
     "id": "new_york",
+    "safetyIndex": {
+      "overall": 70, "grade": "B", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 68, "note": "犯罪率因区而异，曼哈顿相对安全" },
+        "healthMedical": { "score": 85, "note": "医疗水平世界领先，医院选择多" },
+        "transportSafety": { "score": 78, "note": "地铁24小时运营但晚间需注意" },
+        "naturalDisaster": { "score": 75, "note": "飓风季(6-11月)需关注" },
+        "environmental": { "score": 72, "note": "空气质量一般" },
+        "socialStability": { "score": 78, "note": "社会多元化，偶有冲突" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"新冠疫苗","note":"根据当地要求","essential":false},{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"莱姆病疫苗","note":"郊区活动者推荐","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季","prevention":"接种疫苗"},{"name":"莱姆病","risk":"中","season":"春夏(5-9月)","prevention":"户外活动防蜱虫"},{"name":"西尼罗病毒","risk":"低","season":"夏季","prevention":"防蚊措施"}],
+      "medicalTips": ["无保险医疗费用极其昂贵","急诊室等待时间长","紧急情况拨打911","急诊必须先处理再付费"]
+    },
     "name": "纽约",
     "nameEn": "New York",
     "country": "美国",
@@ -27727,6 +27903,22 @@ var CITY_DATABASE = {
   },
   "sydney": {
     "id": "sydney",
+    "safetyIndex": {
+      "overall": 85, "grade": "A-", "trend": "stable",
+      "dimensions": {
+        "crimeSafety": { "score": 85, "note": "治安良好，偶有盗窃" },
+        "healthMedical": { "score": 88, "note": "医疗水平高，全民医保Medicare完善" },
+        "transportSafety": { "score": 80, "note": "公交系统发达，高峰期拥堵" },
+        "naturalDisaster": { "score": 75, "note": "山火季节(11-3月)需关注预警" },
+        "environmental": { "score": 82, "note": "空气质量良好" },
+        "socialStability": { "score": 88, "note": "社会稳定，多元文化和谐" }
+      }
+    },
+    "healthData": {
+      "vaccines": [{"name":"流感疫苗","note":"冬季前接种","essential":false},{"name":"新冠疫苗","note":"根据当地要求","essential":false}],
+      "diseaseRisks": [{"name":"流感","risk":"中","season":"冬季(6-8月)","prevention":"接种疫苗"},{"name":"雷氏综合征","risk":"低","season":"全年","prevention":"注意食品安全"},{"name":"UV辐射","risk":"高","season":"全年","prevention":"防晒是日常必需"}],
+      "medicalTips": ["Medicare澳洲公民/永居免费医疗","海外游客需购买私人保险","紧急情况拨打000","GP(全科医生)是就医第一步"]
+    },
     "name": "悉尼",
     "nameEn": "Sydney",
     "country": "澳大利亚",
