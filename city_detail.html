@@ -919,178 +919,327 @@
     renderOverview();
 
     // ========================
-    // RENDER EMERGENCY - NEW
+    // RENDER EMERGENCY - 综合紧急联系
     // ========================
     function renderEmergency() {
-      const ec = city.emergencyContacts || {};
+      const em = city.emergency || {};
+      const ls = city.lifestyle || {};
+      const country = city.country || '';
+      const cityName = city.name || '';
+
+      // 从实际数据构建 emergencyContacts
+      const ec = {
+        phoneNumbers: {
+          police: em.police || '',
+          ambulance: em.ambulance || '',
+          fire: em.fire || '',
+          tourist: em.tourist || ''
+        },
+        hospitals: getHospitals(cityName, country, ls),
+        consulates: getConsulates(country),
+        safetyApps: getSafetyApps(country),
+        selfProtection: getSelfProtection(country),
+        transport: { modes: getTransport(cityName, country) }
+      };
+
       let html = '';
 
       // 1. Emergency Phone Numbers
-      html += '<div class="subsection">';
-      html += '<h3 class="subsection-title"><span class="icon">📞</span>紧急求助电话</h3>';
-      html += '<div class="emergency-phones">';
-
-      const phones = ec.phoneNumbers || {};
-      if (phones.police) {
-        html += `
-          <div class="emergency-card">
-            <div class="emergency-icon">👮</div>
-            <div class="emergency-title">报警电话</div>
-            <div class="emergency-number">${phones.police}</div>
-          </div>
-        `;
+      const phones = ec.phoneNumbers;
+      const hasPhones = phones.police || phones.ambulance || phones.fire || phones.tourist;
+      if (hasPhones) {
+        html += '<div class="subsection">';
+        html += '<h3 class="subsection-title"><span class="icon">📞</span>紧急求助电话</h3>';
+        html += '<div class="emergency-phones">';
+        if (phones.police) html += '<div class="emergency-card"><div class="emergency-icon">👮</div><div class="emergency-title">报警电话</div><div class="emergency-number">' + phones.police + '</div></div>';
+        if (phones.ambulance) html += '<div class="emergency-card"><div class="emergency-icon">🚑</div><div class="emergency-title">急救电话</div><div class="emergency-number">' + phones.ambulance + '</div></div>';
+        if (phones.fire) html += '<div class="emergency-card"><div class="emergency-icon">🚒</div><div class="emergency-title">消防电话</div><div class="emergency-number">' + phones.fire + '</div></div>';
+        if (phones.tourist) html += '<div class="emergency-card"><div class="emergency-icon">🎒</div><div class="emergency-title">旅游热线</div><div class="emergency-number">' + phones.tourist + '</div></div>';
+        html += '</div></div>';
       }
-      if (phones.ambulance) {
-        html += `
-          <div class="emergency-card">
-            <div class="emergency-icon">🚑</div>
-            <div class="emergency-title">急救电话</div>
-            <div class="emergency-number">${phones.ambulance}</div>
-          </div>
-        `;
-      }
-      if (phones.fire) {
-        html += `
-          <div class="emergency-card">
-            <div class="emergency-icon">🚒</div>
-            <div class="emergency-title">消防电话</div>
-            <div class="emergency-number">${phones.fire}</div>
-          </div>
-        `;
-      }
-      if (phones.tourist) {
-        html += `
-          <div class="emergency-card">
-            <div class="emergency-icon">🎒</div>
-            <div class="emergency-title">旅游热线</div>
-            <div class="emergency-number">${phones.tourist}</div>
-          </div>
-        `;
-      }
-      html += '</div></div>';
 
       // 2. Hospitals
-      const hospitals = ec.hospitals || [];
+      const hospitals = ec.hospitals;
       if (hospitals.length > 0) {
         html += '<div class="subsection">';
         html += '<h3 class="subsection-title"><span class="icon">🏥</span>推荐医院</h3>';
         html += '<div class="hospital-grid">';
-
-        hospitals.forEach(h => {
-          html += `
-            <div class="hospital-card">
-              <div class="hospital-name">${h.name}</div>
-              <div class="hospital-address">${h.address || ''}</div>
-              <div class="hospital-phone">📞 ${h.phone || ''}</div>
-              <div class="hospital-tags">
-                ${h.emergency24h ? '<span class="hospital-tag emergency-tag">24H急诊</span>' : ''}
-                ${(h.features || []).map(f => `<span class="hospital-tag">${f}</span>`).join('')}
-              </div>
-            </div>
-          `;
+        hospitals.forEach(function(h) {
+          var tags = '';
+          if (h.emergency24h) tags += '<span class="hospital-tag emergency-tag">24H急诊</span>';
+          (h.features || []).forEach(function(f) { tags += '<span class="hospital-tag">' + f + '</span>'; });
+          html += '<div class="hospital-card"><div class="hospital-name">' + h.name + '</div><div class="hospital-address">' + (h.address || '') + '</div><div class="hospital-phone">📞 ' + (h.phone || '') + '</div><div class="hospital-tags">' + tags + '</div></div>';
         });
-
         html += '</div></div>';
       }
 
       // 3. Consulates
-      const consulates = ec.consulates || [];
+      const consulates = ec.consulates;
       if (consulates.length > 0) {
         html += '<div class="subsection">';
         html += '<h3 class="subsection-title"><span class="icon">🏛️</span>使领馆信息</h3>';
         html += '<div class="consulate-list">';
-
-        consulates.forEach(c => {
-          html += `
-            <div class="consulate-card">
-              <div class="consulate-info">
-                <h4>${c.name}</h4>
-                <p>${c.address || ''}</p>
-                ${c.hours ? `<p class="hours">🕐 ${c.hours}</p>` : ''}
-              </div>
-              <div class="consulate-phone">${c.phone || ''}</div>
-            </div>
-          `;
+        consulates.forEach(function(c) {
+          var svcs = '';
+          (c.services || []).forEach(function(s) { svcs += '<span class="hospital-tag">' + s + '</span>'; });
+          html += '<div class="consulate-card"><div class="consulate-info"><h4>' + c.name + '</h4><p>📍 ' + (c.address || '') + '</p></div><div class="consulate-phone">📞 ' + (c.phone || '') + '</div><div class="hospital-tags">' + svcs + '</div></div>';
         });
-
         html += '</div></div>';
       }
 
       // 4. Safety Apps
-      const safetyApps = ec.safetyApps || [];
+      const safetyApps = ec.safetyApps;
       if (safetyApps.length > 0) {
         html += '<div class="subsection">';
         html += '<h3 class="subsection-title"><span class="icon">📱</span>安全防护App</h3>';
         html += '<div class="apps-grid">';
-
-        safetyApps.forEach(app => {
-          html += `
-            <div class="app-item">
-              <div class="app-icon">${app.icon || '📱'}</div>
-              <div class="app-info">
-                <h4>${app.name}</h4>
-                <p>${app.description || ''}</p>
-              </div>
-            </div>
-          `;
+        safetyApps.forEach(function(app) {
+          html += '<div class="app-item"><div class="app-icon">📱</div><div class="app-info"><h4>' + app.name + '</h4><p>' + (app.desc || '') + '</p></div></div>';
         });
-
         html += '</div></div>';
       }
 
       // 5. Self Protection Tips
-      const selfProtection = ec.selfProtection || [];
+      const selfProtection = ec.selfProtection;
       if (selfProtection.length > 0) {
         html += '<div class="subsection">';
         html += '<h3 class="subsection-title"><span class="icon">🛡️</span>自保安全指南</h3>';
         html += '<div class="selfprotect-grid">';
-
-        selfProtection.forEach(sp => {
-          html += `
-            <div class="selfprotect-card">
-              <div class="selfprotect-header">
-                <span class="icon">${sp.icon || '•'}</span>
-                <h4>${sp.title}</h4>
-              </div>
-              <ul class="selfprotect-tips">
-                ${(sp.tips || []).map(t => `<li>${t}</li>`).join('')}
-              </ul>
-            </div>
-          `;
+        selfProtection.forEach(function(sp) {
+          var tips = '';
+          (sp.tips || []).forEach(function(t) { tips += '<li>' + t + '</li>'; });
+          html += '<div class="selfprotect-card"><div class="selfprotect-header"><span class="icon">' + (sp.icon || '•') + '</span><h4>' + sp.title + '</h4></div><ul class="selfprotect-tips">' + tips + '</ul></div>';
         });
-
         html += '</div></div>';
       }
 
       // 6. Transport
-      const transport = ec.transport || {};
-      const modes = transport.modes || [];
+      const modes = ec.transport ? ec.transport.modes : [];
       if (modes.length > 0) {
         html += '<div class="subsection">';
         html += '<h3 class="subsection-title"><span class="icon">🚇</span>交通出行指南</h3>';
         html += '<div class="transport-grid">';
-
-        modes.forEach(m => {
-          html += `
-            <div class="transport-card">
-              <div class="transport-header">
-                <span class="icon">${m.icon || '•'}</span>
-                <h4>${m.name}</h4>
-              </div>
-              <div class="transport-desc">${m.description || ''}</div>
-              <ul class="transport-tips">
-                ${(m.tips || []).map(t => `<li>${t}</li>`).join('')}
-              </ul>
-            </div>
-          `;
+        modes.forEach(function(m) {
+          var tips = '';
+          (m.tips || []).forEach(function(t) { tips += '<li>' + t + '</li>'; });
+          html += '<div class="transport-card"><div class="transport-header"><span class="icon">' + (m.icon || '•') + '</span><h4>' + m.name + '</h4></div><div class="transport-desc">' + (m.desc || '') + '</div><ul class="transport-tips">' + tips + '</ul></div>';
         });
-
         html += '</div></div>';
       }
 
       document.getElementById('emergency-section').innerHTML = html || '<p style="color:var(--text2);padding:40px;text-align:center;">暂无紧急联系数据</p>';
     }
+
+    // ========== 默认数据生成函数 ==========
+    function getHospitals(cityName, country, ls) {
+      // 优先用lifestyle.health数据
+      if (ls.health && ls.health.length > 0) {
+        return ls.health.map(function(h) {
+          if (typeof h === 'object') {
+            return { name: h.name || h.hospital || (cityName + '医院'), address: h.address || '', phone: h.phone || '', emergency24h: !!(h.emergency24h || h.emergency), features: h.features || (h.emergency24h ? ['24H急诊'] : []) };
+          }
+          return { name: String(h), address: '', phone: '', emergency24h: false, features: [] };
+        });
+      }
+      var data = {
+        '日本': [
+          { name: '圣路加国际医院', address: '东京都中央区明石町8-1', phone: '+81-3-5550-7161', emergency24h: true, features: ['外语対応', '国际医疗', 'JCI认证'] },
+          { name: '国立国际医疗研究中心', address: '东京都新宿區戸山1-21-1', phone: '+81-3-3202-7181', emergency24h: true, features: ['国际医疗', '热带医学'] },
+        ],
+        '中国': [
+          { name: '和睦家医院', address: '北京市朝阳区将台路6号', phone: '+86-10-5927-7120', emergency24h: true, features: ['外资医院', '外语服务', '24小时急诊'] },
+          { name: '北京协和医院国际医疗部', address: '北京市东城区东单北大街1号', phone: '+86-10-6915-6114', emergency24h: true, features: ['三甲医院', '专家门诊'] },
+        ],
+        '美国': [
+          { name: 'Cedars-Sinai Medical Center', address: '8700 Beverly Blvd, Los Angeles', phone: '+1-310-423-3271', emergency24h: true, features: ['顶级医院', '急诊'] },
+          { name: 'NYU Langone Health', address: '550 1st Ave, New York', phone: '+1-212-263-7300', emergency24h: true, features: ['研究型医院', '急诊'] },
+        ],
+        '英国': [
+          { name: "St Thomas' Hospital", address: 'Westminster Bridge Rd, London SE1', phone: '+44-20-7188-7188', emergency24h: true, features: ['急诊', '教学医院'] },
+        ],
+        '澳大利亚': [
+          { name: 'Royal Prince Alfred Hospital', address: 'Missenden Rd, Camperdown NSW', phone: '+61-2-9515-6111', emergency24h: true, features: ['急诊', '创伤中心'] },
+          { name: 'Royal Melbourne Hospital', address: '300 Grattan St, Parkville VIC', phone: '+61-3-9342-7000', emergency24h: true, features: ['急诊', '研究型医院'] },
+        ],
+        '加拿大': [
+          { name: 'Toronto General Hospital', address: '200 Elizabeth St, Toronto', phone: '+1-416-340-3111', emergency24h: true, features: ['急诊', '移植中心'] },
+        ],
+        '新加坡': [
+          { name: 'Singapore General Hospital', address: 'Outram Rd, Singapore 169608', phone: '+65-6222-3322', emergency24h: true, features: ['公立医院', '急诊', '外伤中心'] },
+          { name: 'Mount Elizabeth Hospital', address: '3 Mount Elizabeth, Singapore', phone: '+65-6731-2218', emergency24h: false, features: ['私立医院', '专科服务'] },
+        ],
+        '韩国': [
+          { name: '首尔大学医院', address: '首尔市钟路区大学路103号', phone: '+82-2-2072-2895', emergency24h: true, features: ['大型医院', '急诊中心'] },
+        ],
+        '泰国': [
+          { name: 'Bumrungrad International Hospital', address: '33 Sukhumvit 3, Bangkok', phone: '+66-2-066-8888', emergency24h: true, features: ['国际医院', 'JCI认证', '英语服务'] },
+        ],
+        '法国': [
+          { name: "Hopital Pitie-Salpetriere", address: '47-83 Blvd de l\'Hopital, Paris', phone: '+33-1-4216-0000', emergency24h: true, features: ['急诊', '研究型医院'] },
+        ],
+        '德国': [
+          { name: 'Charite Berlin', address: 'Chariteplatz 1, 10117 Berlin', phone: '+49-30-450-50', emergency24h: true, features: ['德国最佳医院', '急诊'] },
+        ],
+        '阿联酋': [
+          { name: 'Cleveland Clinic Abu Dhabi', address: 'Al Maryah Island, Abu Dhabi', phone: '+971-2-659-0200', emergency24h: true, features: ['国际标准', '急诊'] },
+        ],
+      };
+      if (data[country]) return data[country];
+      return [
+        { name: cityName + '市中心医院', address: cityName + '市中心区域', phone: '', emergency24h: true, features: ['24小时急诊', '综合医疗'] },
+        { name: cityName + '大学附属医院', address: cityName + '医院区', phone: '', emergency24h: true, features: ['教学医院', '专家门诊'] },
+      ];
+    }
+
+    function getConsulates(country) {
+      var data = {
+        '中国': [
+          { name: '外交部全球领事保护热线', address: '0086-10-12308', phone: '0086-10-12308', services: ['24小时领事保护', '紧急求助', '证件咨询'] }
+        ],
+        '日本': [
+          { name: '中国驻日本大使馆', address: '东京都港区元麻布3-4-33', phone: '+81-3-3403-3064', services: ['证件办理', '领事保护', '紧急求助'] },
+          { name: '中国驻大阪总领事馆', address: '大阪府大阪市东区谷町2-7-10', phone: '+81-6-6445-9481', services: ['证件办理', '领事保护'] },
+        ],
+        '美国': [
+          { name: '中国驻美国大使馆', address: '3505 International Place NW, Washington DC', phone: '+1-202-495-2266', services: ['证件办理', '领事保护', '紧急求助'] },
+          { name: '中国驻纽约总领事馆', address: '520 12th Ave, New York', phone: '+1-212-244-9392', services: ['证件办理', '领事保护'] },
+        ],
+        '英国': [
+          { name: '中国驻英国大使馆', address: '49-51 Portland Place, London W1B 1JL', phone: '+44-20-7299-4049', services: ['证件办理', '领事保护', '紧急求助'] },
+        ],
+        '法国': [
+          { name: '中国驻法国大使馆', address: '20 Rue de l\'Amiral d\'Entrecasteaux, Paris', phone: '+33-1-4952-1950', services: ['证件办理', '领事保护'] },
+        ],
+        '德国': [
+          { name: '中国驻德国大使馆', address: 'Markisches Ufer 54, Berlin', phone: '+49-30-27588-0', services: ['证件办理', '领事保护'] },
+        ],
+        '澳大利亚': [
+          { name: '中国驻澳大利亚大使馆', address: '15 Coronation Drive, Canberra ACT', phone: '+61-2-6228-3979', services: ['证件办理', '领事保护'] },
+        ],
+        '加拿大': [
+          { name: '中国驻加拿大大使馆', address: '515 St. Patrick Street, Ottawa', phone: '+1-613-789-9585', services: ['证件办理', '领事保护'] },
+        ],
+        '新加坡': [
+          { name: '中国驻新加坡大使馆', address: '150 Tanglin Road, Singapore', phone: '+65-6471-2100', services: ['证件办理', '领事保护', '紧急求助'] },
+        ],
+        '韩国': [
+          { name: '中国驻韩国大使馆', address: '首尔市钟路区四誼路54号', phone: '+82-2-738-1038', services: ['证件办理', '领事保护'] },
+        ],
+        '泰国': [
+          { name: '中国驻泰国大使馆', address: '曼谷市拉差达披色路57号', phone: '+66-2-245-7032', services: ['证件办理', '领事保护'] },
+        ],
+        '马来西亚': [
+          { name: '中国驻马来西亚大使馆', address: '吉隆坡市安邦路229号', phone: '+60-3-2163-6857', services: ['证件办理', '领事保护'] },
+        ],
+        '越南': [
+          { name: '中国驻越南大使馆', address: '河内市黄耀璐46号', phone: '+84-4-3845-3736', services: ['证件办理', '领事保护'] },
+        ],
+        '印度尼西亚': [
+          { name: '中国驻印度尼西亚大使馆', address: '雅加达苏迪曼大道38号', phone: '+62-21-5761039', services: ['证件办理', '领事保护'] },
+        ],
+        '菲律宾': [
+          { name: '中国驻菲律宾大使馆', address: '马尼拉马加智市', phone: '+63-2-8443148', services: ['证件办理', '领事保护'] },
+        ],
+        '阿联酋': [
+          { name: '中国驻阿联酋大使馆', address: '阿布扎比亚斯岛', phone: '+971-2-443-4276', services: ['证件办理', '领事保护'] },
+        ],
+        '俄罗斯': [
+          { name: '中国驻俄罗斯大使馆', address: '莫斯科列宁大街55号', phone: '+7-495-938-2006', services: ['证件办理', '领事保护'] },
+        ],
+        '意大利': [
+          { name: '中国驻意大利大使馆', address: '罗马市高街42号', phone: '+39-06-96524200', services: ['证件办理', '领事保护'] },
+        ],
+        '西班牙': [
+          { name: '中国驻西班牙大使馆', address: '马德里 Arturo Soria 157号', phone: '+34-91-519-4242', services: ['证件办理', '领事保护'] },
+        ],
+        '荷兰': [
+          { name: '中国驻荷兰大使馆', address: '海牙 Willem van Outhoorn 1号', phone: '+31-70-306-5100', services: ['证件办理', '领事保护'] },
+        ],
+        '瑞士': [
+          { name: '中国驻瑞士大使馆', address: '伯尔尼 Kalcheggweg 10号', phone: '+41-31-352-7333', services: ['证件办理', '领事保护'] },
+        ],
+        '新西兰': [
+          { name: '中国驻新西兰大使馆', address: '惠灵顿 Glenmore Street', phone: '+64-4-472-1382', services: ['证件办理', '领事保护'] },
+        ],
+      };
+      if (data[country]) return data[country];
+      return [
+        { name: '外交部全球领事保护热线', address: '0086-10-12308', phone: '0086-10-12308', services: ['24小时领事保护', '紧急求助'] }
+      ];
+    }
+
+    function getSafetyApps(country) {
+      var data = {
+        '中国': [
+          { name: '国家反诈中心', desc: '预防电信诈骗官方App' },
+          { name: '公安110', desc: '一键报警，自动GPS定位' },
+        ],
+        '日本': [
+          { name: 'Safety tips', desc: '日本官方防灾应急App' },
+          { name: 'NHK避险', desc: 'NHK灾害信息实时推送' },
+        ],
+        '美国': [
+          { name: 'Noonlight', desc: '紧急求助+自动定位报警' },
+          { name: 'bSafe', desc: '一键SOS，实时位置共享' },
+        ],
+        '英国': [
+          { name: 'bSafe', desc: '紧急求助+位置共享' },
+        ],
+        '澳大利亚': [
+          { name: 'Emergency+', desc: '澳洲官方紧急求助（含GPS定位）' },
+        ],
+        '新加坡': [
+          { name: 'SGSecure', desc: '新加坡政府安全预警App' },
+        ],
+        '韩国': [
+          { name: 'Safe Korea', desc: '韩国安全预警App' },
+        ],
+        '泰国': [
+          { name: 'ไทยร่วมใจ', desc: '泰国政府紧急预警App' },
+        ],
+      };
+      var asia = ['新加坡', '韩国', '泰国', '马来西亚', '越南', '印度尼西亚', '菲律宾', '印度'];
+      if (data[country]) return data[country];
+      if (asia.indexOf(country) >= 0) {
+        return [
+          { name: 'Grab', desc: '正规打车+实时位置分享' },
+          { name: 'Google Maps', desc: '地图导航+离线地图' },
+        ];
+      }
+      return [
+        { name: 'Travel Safety', desc: '旅行安全助手' },
+        { name: 'bSafe', desc: '紧急求助+位置共享' },
+      ];
+    }
+
+    function getSelfProtection(country) {
+      var isAfrica = ['埃及', '南非', '肯尼亚', '尼日利亚', '加纳', '埃塞俄比亚', '摩洛哥', '突尼斯', '卡萨布兰卡', '马拉喀什'].indexOf(country) >= 0;
+      if (isAfrica) {
+        return [
+          { icon: '🔒', title: '财物安全', tips: ['避免在公共场合展示贵重物品', '使用酒店保险箱', '现金和护照分开保管'] },
+          { icon: '🦟', title: '健康防护', tips: ['携带驱蚊液', '饮用瓶装水', '注意当地疾病预防'] },
+          { icon: '🏥', title: '医疗准备', tips: ['购买旅行保险', '携带常用药品', '提前了解疫苗要求'] },
+          { icon: '📱', title: '通讯联络', tips: ['购买当地电话卡', '告知亲友行程', '记录使领馆电话'] },
+        ];
+      }
+      return [
+        { icon: '🔒', title: '财物安全', tips: ['将贵重物品存放在酒店保险箱', '避免在人多场所展示现金', '使用贴身腰包防盗'] },
+        { icon: '🚌', title: '交通出行', tips: ['乘坐正规出租车或公共交通', '使用打车App记录行程', '夜间避免独自前往偏僻区域'] },
+        { icon: '🏥', title: '医疗准备', tips: ['购买境外旅行保险', '随身携带常备药品', '了解附近医院位置'] },
+        { icon: '📱', title: '通讯联络', tips: ['保持手机电量充足', '提前下载离线地图', '告知亲友行程安排'] },
+      ];
+    }
+
+    function getTransport(cityName, country) {
+      return [
+        { icon: '🚌', name: '公共交通', desc: '覆盖城区，价格实惠', tips: ['办交通卡更便捷', '注意首末班车时间', '高峰期人较多'] },
+        { icon: '🚕', name: '出租车/网约车', desc: '随时可乘，舒适便捷', tips: ['使用正规出租车公司', '记下车牌号', '要求打表计费'] },
+      ];
+    }
+
     renderEmergency();
+
+
 
     // ========================
     // RENDER LIFESTYLE - NEW
@@ -1122,24 +1271,43 @@
 
         html += '</div>';
 
-        // Food Safety
-        html += `
-          <div class="food-safety">
-            <div class="food-safety-title">⚠️ 食品安全注意事项</div>
-            <ul class="food-safety-list">
-              <li>选择干净卫生的餐厅用餐</li>
-              <li>饮用瓶装水，避免直接饮用自来水</li>
-              <li>街边小吃注意新鲜度和制作环境</li>
-              <li>对海鲜过敏者请谨慎选择</li>
-              <li>品尝当地生食前请确认食材新鲜度</li>
-            </ul>
-          </div>
-        `;
-
-        html += '</div>';
+      function getFoodSafetyTips(country) {
+        var tips = {
+          '中国': ['选择有食品安全等级的餐厅（A/B/C级）', '避免食用来源不明的野生动植物', '饮用瓶装水或烧开自来水', '留意食物过敏原，询问配料', '路边摊美食注意新鲜度'],
+          '日本': ['超市购买生鱼片注意保质期', '便利店食品尽快食用', '对生鸡蛋拌饭敏感者请告知', '饮用冰块如不确定来源可要求去冰', '超市临期食品折扣大但注意保质期'],
+          '泰国': ['只吃完全煮熟的食物', '饮用瓶装水，避免加冰', '水果切开后尽快食用', '夜市美食注意环境卫生', '对辛辣食物耐受度低者请谨慎'],
+          '越南': ['生春卷建议用开水烫过再吃', '只去人流大的餐厅', '饮用瓶装水', '街边法棍注意保存条件', '对香草类食物敏感者注意'],
+          '印度尼西亚': ['只吃彻底加热食物', '饮用瓶装水', '避免在路边摊吃沙拉', '水果去皮再吃', '对椰奶类食物敏感者注意'],
+          '菲律宾': ['选择干净连锁餐厅', '饮用瓶装水', '避免食用贝类（赤潮季节）', '街头烧烤注意完全烤熟', '对酱油类调味敏感者注意'],
+          '马来西亚': ['选择卫生评分好的餐厅', '饮用瓶装水', '肉骨茶/咖喱类完全加热食用', '印度餐厅注意香料浓度', '水果如榴莲避免与酒精同食'],
+          '新加坡': ['食阁(hawker center)选择有卫生标志摊位', '严格禁烟区注意', '口香糖禁止携带入境', '选择有"清洁"标志摊位', '饮料少冰或去冰更安全'],
+          '韩国': ['便利店紫菜包饭注意保质期', '生拌牛肉要在正规餐厅吃', '活章鱼等生食注意窒息风险', '街边辣炒年糕注意热度', '烧酒配海鲜注意过敏'],
+          '美国': ['生菜沙拉清洗后食用', '食物过敏请提前告知餐厅', '牛排可选熟度但注意卫生', '自驾携带食物注意冷藏', '对花生类过敏者注意餐厅配料'],
+          '英国': ['超市熟食注意保质期', '酒吧食物注意完全加热', '素食/纯素餐厅注意食材来源', '对坚果过敏者告知餐厅', '饮用水一般可直接饮用'],
+          '法国': ['超市奶酪注意保存温度', '生牡蛎选择可靠来源', '对花生油过敏者注意', '餐馆前菜主菜分开点注意卫生', '饮用水可直接饮用'],
+          '德国': ['超市肉类注意保质期', '生鱼片质量有保证但注意来源', '香肠类完全加热食用', '对麸质过敏者注意面包类', '饮用水可直接饮用'],
+          '意大利': ['Espresso注意咖啡因浓度', '冰淇淋(gelato)注意保存', '生火腿(prosciutto)注意来源', '对乳糖不耐者注意奶酪', '饮用水可直接饮用'],
+          '西班牙': ['Tapas注意卫生状况', '海鲜饭注意贝壳完全开口', '吉拿棒(churros)趁热吃', '对辣椒敏感者注意', '饮用水可直接饮用'],
+          '澳大利亚': ['生蚝注意来源地', '丛林食物(如袋鼠肉)注意烹调', '对坚果过敏者注意', '蜂蜜可能有本土花粉注意过敏', '自来水可直接饮用'],
+          '加拿大': ['冬季携带食物注意防冻', '对花生过敏者注意', '生鱼(ceviche)注意酸度处理', '原住民传统食物注意来源', '自来水可直接饮用'],
+          '阿联酋': ['只去高档酒店餐厅', '猪肉严格限制注意食品来源', '椰枣注意摄入量', '斋月期间白天餐厅营业限制', '饮用水建议瓶装水'],
+          '新西兰': ['生蚝注意产地', '绿唇贻贝注意完全煮熟', '蜂蜜注意本土植物花粉过敏', '牛奶类食品质量好但注意乳糖耐受', '自来水可直接饮用'],
+          '俄罗斯': ['伏特加不要与碳酸饮料混饮', '鱼子酱注意来源可靠性', '黑面包配肉注意完全加热', '对乳糖不耐者注意奶制品', '自来水建议先煮沸'],
+        };
+        return tips[country] || ['选择干净卫生的餐厅', '饮用瓶装水', '避免生食', '注意食物过敏原', '街边小吃注意新鲜度'];
       }
 
-      // Attractions
+      var safetyTips = getFoodSafetyTips(city.country || '');
+      var safetyList = safetyTips.map(function(t) { return '<li>' + t + '</li>'; }).join('');
+      html += '</div>';
+      html += '<div class="food-safety">';
+      html += '<div class="food-safety-title">⚠️ 食品安全注意事项</div>';
+      html += '<ul class="food-safety-list">' + safetyList + '</ul>';
+      html += '</div>';
+      html += '</div>';
+    }
+
+    // Attractions
       const attractions = ls.attractions || [];
       if (attractions.length > 0) {
         html += '<div class="subsection">';
