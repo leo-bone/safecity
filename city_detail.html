@@ -959,11 +959,145 @@
   </footer>
   
   <script src="data.js"></script>
+  <script src="data_enhanced.js"></script>
+  <script src="data_new.js"></script>
+  <script>
+    // ─────────────────────────────────────────────────────
+    // 数据适配层：支持 data.js(旧) 和 data_new.js/enhanced(新) 两种结构
+    // ─────────────────────────────────────────────────────
+    function normalizeCityData(data) {
+      // 优先使用新格式
+      const hasNewFormat = data.safetyIndex && data.emergencyContacts;
+      const hasOldFormat = data.safety && data.safety.overall && !data.safetyIndex;
+      
+      if (hasOldFormat) {
+        return data;
+      }
+      
+      if (hasNewFormat || data.safetyIndex) {
+        const emergency = {
+          police: data.emergencyContacts?.phoneNumbers?.police || '',
+          ambulance: data.emergencyContacts?.phoneNumbers?.ambulance || '',
+          fire: data.emergencyContacts?.phoneNumbers?.fire || '',
+          touristPolice: data.emergencyContacts?.phoneNumbers?.touristPolice || '',
+          touristHotline: data.emergencyContacts?.phoneNumbers?.tourist || '',
+          embassies: {},
+          hospitals: (data.emergencyContacts?.hospitals || []).map(h => ({
+            name: h.name,
+            phone: h.phone,
+            address: h.address || '',
+            features: h.features
+          })),
+          apps: (data.emergencyContacts?.safetyApps || []).map(a => `${a.icon} ${a.name}`),
+          selfDefense: (data.emergencyContacts?.selfProtection || []).map(s => `${s.icon} ${s.title}: ${s.tips.join('；')}`)
+        };
+        
+        if (data.emergencyContacts?.consulates) {
+          data.emergencyContacts.consulates.forEach(c => {
+            emergency.embassies[c.name] = `${c.phone} ${c.hours || ''}`;
+          });
+        }
+        
+        const lifestyle = {
+          food: (data.localRecommendations?.foodDrink || data.lifestyle?.food || []).map(f => ({ 
+            name: f.name, type: f.type, desc: f.description, price: f.priceRange || f.price, tip: f.mustTry?.join('、') || f.foodSafety || f.tip 
+          })),
+          attractions: (data.localRecommendations?.attractions || data.lifestyle?.attractions || []).map(a => ({ 
+            name: a.name, type: a.type, desc: a.description, bestTime: a.bestTime 
+          })),
+          nightlife: (data.localRecommendations?.nightlife || data.lifestyle?.nightlife || []).map(n => ({ 
+            name: n.name, type: n.type, desc: n.description 
+          })),
+          festivals: data.localRecommendations?.festivals || data.lifestyle?.festivals || [],
+          transport: data.emergencyContacts?.transport ? 
+            data.emergencyContacts.transport.modes.map(m => `${m.icon} ${m.name}: ${m.description}`).join('\n\n') : 
+            (data.lifestyle?.transport || '')
+        };
+        
+        const hotspots = [];
+        if (data.areaSafety?.cautionAreas) {
+          data.areaSafety.cautionAreas.forEach(area => {
+            hotspots.push({
+              area: area.name,
+              desc: `${area.description}${area.riskTime ? '⏰ ' + area.riskTime : ''}`,
+              risk: '中'
+            });
+          });
+        }
+        if (data.areaSafety?.dangerousAreas) {
+          data.areaSafety.dangerousAreas.forEach(area => {
+            hotspots.push({
+              area: area.name,
+              desc: `${area.description}${area.riskTime ? '⏰ ' + area.riskTime : ''}`,
+              risk: '高'
+            });
+          });
+        }
+        
+        const safeAreas = (data.areaSafety?.safestAreas || []).map(a => a.name);
+        
+        const safety = {
+          overall: data.safetyIndex?.overall || data.safety?.overall || 70,
+          grade: data.safetyIndex?.grade || data.safety?.grade || 'B',
+          grades: data.safety?.grades || {
+            crime: 'B+',
+            transport: 'B',
+            health: 'A-',
+            natural: 'B'
+          },
+          hotspots: hotspots,
+          safeAreas: safeAreas,
+          tips: data.safetyTips?.general || []
+        };
+        
+        const diseasePrevention = data.healthData ? {
+          summary: data.healthData.vaccineNote || '暂无疾病预防总结',
+          vaccines: (data.healthData.vaccines?.recommended || []).join('、'),
+          diseases: (data.healthData.diseases || []).map(d => `${d.icon} ${d.name}(${d.risk}风险): ${d.description}`).join('\n\n'),
+          weather: '参考当地天气预报，注意季节性疾病',
+          tips: (data.healthData.medicalTips || []).map(t => `${t.title}: ${t.content}`).join('\n\n')
+        } : (data.diseasePrevention || {});
+        
+        return {
+          ...data,
+          safety: safety,
+          emergency: emergency,
+          lifestyle: lifestyle,
+          diseasePrevention: diseasePrevention,
+          safetyIndex: data.safetyIndex,
+          areaSafety: data.areaSafety,
+          localRecommendations: data.localRecommendations,
+          foodSafety: data.foodSafety,
+          healthData: data.healthData
+        };
+      }
+      
+      return data;
+    }
+    
+    // 获取城市数据 - 优先从 data_new.js/enhanced 查找
+    function getCityData(cityName) {
+      // 1. 优先从 data_enhanced.js 查找（新格式完整数据）
+      if (typeof enhancedCities !== 'undefined' && enhancedCities[cityName]) {
+        return normalizeCityData(enhancedCities[cityName]);
+      }
+      // 2. 其次从 data_new.js 查找
+      if (typeof newCityData !== 'undefined' && newCityData[cityName]) {
+        return normalizeCityData(newCityData[cityName]);
+      }
+      // 3. 最后从 data.js 查找（兼容旧格式）
+      if (typeof allCities !== 'undefined' && allCities[cityName]) {
+        return normalizeCityData(allCities[cityName]);
+      }
+      return null;
+    }
+  </script>
   <script>
     // ─── 获取城市数据 ───
     const urlParams = new URLSearchParams(window.location.search);
     const cityId = urlParams.get('city') || 'tokyo';
-    const city = CITY_DATABASE && CITY_DATABASE[cityId];
+    // 优先从 enhanced/new 格式获取数据，兼容旧格式
+    const city = getCityData(cityId) || (CITY_DATABASE && CITY_DATABASE[cityId]);
     
     if (!city) {
       document.body.innerHTML = '<div class="loading" style="padding:80px;text-align:center;"><h2 style="color:#e8edf5">城市数据未找到</h2><p style="color:#7a8899;margin-top:8px">请返回首页选择城市</p><a href="index.html" style="display:inline-block;margin-top:16px;padding:10px 20px;background:#3b82f6;color:#fff;border-radius:8px;">返回首页</a></div>';
