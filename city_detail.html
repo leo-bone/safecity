@@ -684,52 +684,23 @@
     </div>
   </div>
 
-  <!-- Navigation Tabs -->
+  <!-- Navigation Tabs - 精简为2个主标签 -->
   <nav class="nav-tabs">
-    <button class="tab-btn active" data-tab="overview">📊 安全概览</button>
-    <button class="tab-btn" data-tab="emergency">🚨 紧急联系</button>
-    <button class="tab-btn" data-tab="areas">🗺️ 区域安全</button>
+    <button class="tab-btn active" data-tab="emergency">🚨 紧急联系</button>
     <button class="tab-btn" data-tab="lifestyle">🍜 吃喝玩乐</button>
-    <button class="tab-btn" data-tab="tips">💡 安全贴士</button>
   </nav>
 
   <main>
     <div class="loading" id="loading">加载安全数据中...</div>
 
-    <!-- Overview Section -->
-    <section class="section" id="section-overview">
-      <div class="overview-content" id="overview-content"></div>
-    </section>
-
-    <!-- Emergency Section - REBUILT -->
+    <!-- Emergency Section - 综合紧急联系 -->
     <section class="section" id="section-emergency">
       <div class="emergency-section" id="emergency-section"></div>
     </section>
 
-    <!-- Areas Section -->
-    <section class="section" id="section-areas">
-      <div class="area-section">
-        <h3 class="area-section-title safe">✅ 推荐安全区域</h3>
-        <div class="area-grid" id="safe-areas"></div>
-      </div>
-      <div class="area-section">
-        <h3 class="area-section-title caution">⚠️ 需注意区域</h3>
-        <div class="area-grid" id="caution-areas"></div>
-      </div>
-      <div class="area-section">
-        <h3 class="area-section-title danger">🚫 危险区域</h3>
-        <div class="area-grid" id="danger-areas"></div>
-      </div>
-    </section>
-
-    <!-- Lifestyle Section - REBUILT -->
+    <!-- Lifestyle Section - 综合吃喝玩乐 -->
     <section class="section" id="section-lifestyle">
       <div class="lifestyle-section" id="lifestyle-section"></div>
-    </section>
-
-    <!-- Tips Section -->
-    <section class="section" id="section-tips">
-      <div id="safety-tips-content"></div>
     </section>
   </main>
 
