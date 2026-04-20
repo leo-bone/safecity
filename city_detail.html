@@ -1211,7 +1211,7 @@
     // ─── Emergency ───
     function renderEmergency() {
       // 支持新版emergencyContacts和旧版emergency
-      const ec = city.emergencyContacts || {};
+      const ec = city.lifestyle?.emergencyContacts || city.emergencyContacts || {};
       const oldEc = city.emergency || {};
 
       // 紧急电话
