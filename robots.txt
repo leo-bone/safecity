@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# 城市详情页（带参数的 URL 也允许抓取）
+Allow: /city_detail.html
+
+Sitemap: https://safecity.uichain.org/sitemap.xml
