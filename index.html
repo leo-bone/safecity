@@ -1882,8 +1882,8 @@ function renderCityGrid(filterContinent = '全部') {
   // 渲染完成后异步注入实时天气徽章
   if (typeof RT_UI !== 'undefined') RT_UI.injectCityWeatherBadges();
   // 实时天气状态徽章（随并发加载进度刷新）
-  if (typeof REALTIME_API !== 'undefined') {
-    const tick = () => REALTIME_API.renderStatus('rt-status');
+  if (typeof RT_UI !== 'undefined') {
+    const tick = () => RT_UI.renderStatus('rt-status');
     [2000, 5000, 9000, 15000].forEach(ms => setTimeout(tick, ms));
   }
 }

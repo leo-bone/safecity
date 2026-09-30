@@ -8,7 +8,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 35.6762,
     "lng": 139.6503,
-    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&q=85",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -51,7 +51,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言沟通问题",
       "食品安全",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "110",
@@ -619,7 +621,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇬",
     "lat": 1.3521,
     "lng": 103.8198,
-    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -657,7 +659,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言沟通问题",
       "食品安全",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "999",
@@ -1159,7 +1163,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇷",
     "lat": 37.5665,
     "lng": 126.978,
-    "image": "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=1200&q=85",
     "safety": {
       "overall": 93,
       "grade": "A",
@@ -1202,7 +1206,9 @@ var CITY_DATABASE = {
     "risks": [
       "自然灾害风险",
       "蚊虫叮咬",
-      "部分城市交通拥堵"
+      "部分城市交通拥堵",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -1743,7 +1749,7 @@ var CITY_DATABASE = {
     "flag": "🇭🇰",
     "lat": 22.3193,
     "lng": 114.1694,
-    "image": "https://images.unsplash.com/photo-1473893604213-3df9c15611c0?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1473893604213-3df9c15611c0?w=1200&q=85",
     "safety": {
       "overall": 82,
       "grade": "A-",
@@ -1781,7 +1787,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "语言沟通问题",
-      "部分城市交通拥堵"
+      "部分城市交通拥堵",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "999",
@@ -2255,7 +2263,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 39.9042,
     "lng": 116.4074,
-    "image": "https://images.unsplash.com/photo-1508804052814-cd3ba865a116?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508804052814-cd3ba865a116?w=1200&q=85",
     "safety": {
       "overall": 83,
       "grade": "A-",
@@ -2293,7 +2301,9 @@ var CITY_DATABASE = {
     "risks": [
       "蚊虫叮咬",
       "部分城市交通拥堵",
-      "食品安全"
+      "食品安全",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "110",
@@ -2762,7 +2772,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 31.2304,
     "lng": 121.4737,
-    "image": "https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -2800,7 +2810,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言沟通问题",
       "自然灾害风险",
-      "食品安全"
+      "食品安全",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "110",
@@ -3268,7 +3280,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 13.7563,
     "lng": 100.5018,
-    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -3305,7 +3317,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "食品安全",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "191",
@@ -3828,7 +3842,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇾",
     "lat": 3.139,
     "lng": 101.6869,
-    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=85",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -3866,7 +3880,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "语言沟通问题",
-      "食品安全"
+      "食品安全",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "999",
@@ -4336,7 +4352,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇼",
     "lat": 25.033,
     "lng": 121.5654,
-    "image": "https://images.unsplash.com/photo-1548886939-1f7b5a51a234?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548886939-1f7b5a51a234?w=1200&q=85",
     "safety": {
       "overall": 91,
       "grade": "A",
@@ -4367,7 +4383,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "食品安全",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "110",
@@ -4838,7 +4856,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇵",
     "lat": 34.6937,
     "lng": 135.5023,
-    "image": "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -4881,7 +4899,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言沟通问题",
       "食品安全",
-      "自然灾害风险"
+      "自然灾害风险",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "110",
@@ -5372,7 +5392,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 19.076,
     "lng": 72.8777,
-    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=85",
     "safety": {
       "overall": 61,
       "grade": "B-",
@@ -5410,7 +5430,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言沟通问题",
       "食品安全",
-      "自然灾害风险"
+      "自然灾害风险",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "100",
@@ -5875,7 +5897,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 28.6139,
     "lng": 77.209,
-    "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&q=85",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -5913,7 +5935,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "蚊虫叮咬",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "100",
@@ -6379,7 +6403,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇩",
     "lat": -6.2088,
     "lng": 106.8456,
-    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=1200&q=85",
     "safety": {
       "overall": 78,
       "grade": "B+",
@@ -6417,7 +6441,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言沟通问题",
       "自然灾害风险",
-      "部分城市交通拥堵"
+      "部分城市交通拥堵",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "110",
@@ -6889,7 +6915,7 @@ var CITY_DATABASE = {
     "flag": "🇻🇳",
     "lat": 10.8231,
     "lng": 106.6297,
-    "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=85",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -6927,7 +6953,9 @@ var CITY_DATABASE = {
     "risks": [
       "自然灾害风险",
       "语言沟通问题",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "113",
@@ -7392,7 +7420,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇭",
     "lat": 14.5995,
     "lng": 120.9842,
-    "image": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200&q=85",
     "safety": {
       "overall": 77,
       "grade": "B+",
@@ -7430,7 +7458,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "食品安全",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "117",
@@ -7895,7 +7925,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇪",
     "lat": 25.2048,
     "lng": 55.2708,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -7928,7 +7958,9 @@ var CITY_DATABASE = {
     "risks": [
       "自然灾害风险",
       "部分城市交通拥堵",
-      "语言沟通问题"
+      "语言沟通问题",
+      "夏季极端高温，户外需防中暑与脱水",
+      "部分区域政治敏感，避免前往边境与示威区"
     ],
     "emergency": {
       "police": "999",
@@ -8410,7 +8442,7 @@ var CITY_DATABASE = {
     "flag": "🇶🇦",
     "lat": 25.2854,
     "lng": 51.531,
-    "image": "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1200&q=85",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -8448,7 +8480,9 @@ var CITY_DATABASE = {
     "risks": [
       "自然灾害风险",
       "部分城市交通拥堵",
-      "语言沟通问题"
+      "语言沟通问题",
+      "夏季极端高温，户外需防中暑与脱水",
+      "部分区域政治敏感，避免前往边境与示威区"
     ],
     "emergency": {
       "police": "999",
@@ -8906,7 +8940,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇦",
     "lat": 24.7136,
     "lng": 46.6753,
-    "image": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1200&q=85",
     "safety": {
       "overall": 90,
       "grade": "A",
@@ -8944,7 +8978,9 @@ var CITY_DATABASE = {
     "risks": [
       "自然灾害风险",
       "部分城市交通拥堵",
-      "语言沟通问题"
+      "语言沟通问题",
+      "夏季极端高温，户外需防中暑与脱水",
+      "部分区域政治敏感，避免前往边境与示威区"
     ],
     "emergency": {
       "police": "999",
@@ -9402,7 +9438,7 @@ var CITY_DATABASE = {
     "flag": "🇴🇲",
     "lat": 23.588,
     "lng": 58.3829,
-    "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=1200&q=85",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -9440,7 +9476,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "蚊虫叮咬",
-      "语言沟通问题"
+      "语言沟通问题",
+      "夏季极端高温，户外需防中暑与脱水",
+      "部分区域政治敏感，避免前往边境与示威区"
     ],
     "emergency": {
       "police": "112",
@@ -9898,7 +9936,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇱",
     "lat": 32.0853,
     "lng": 34.7818,
-    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=1200&q=85",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -9936,7 +9974,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "部分城市交通拥堵",
-      "自然灾害风险"
+      "自然灾害风险",
+      "夏季极端高温，户外需防中暑与脱水",
+      "部分区域政治敏感，避免前往边境与示威区"
     ],
     "emergency": {
       "police": "100",
@@ -10397,7 +10437,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇷",
     "lat": 41.0082,
     "lng": 28.9784,
-    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=85",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -10435,7 +10475,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "部分城市交通拥堵",
-      "自然灾害风险"
+      "自然灾害风险",
+      "夏季极端高温，户外需防中暑与脱水",
+      "部分区域政治敏感，避免前往边境与示威区"
     ],
     "emergency": {
       "police": "155",
@@ -10907,7 +10949,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇩",
     "lat": -8.4095,
     "lng": 115.1889,
-    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=85",
     "safety": {
       "overall": 72,
       "grade": "B",
@@ -10945,7 +10987,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "蚊虫叮咬",
-      "自然灾害风险"
+      "自然灾害风险",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -11392,7 +11436,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 18.7883,
     "lng": 98.9853,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=1200&q=85",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -11430,7 +11474,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "部分城市交通拥堵",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -11878,7 +11924,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 7.8804,
     "lng": 98.3923,
-    "image": "https://images.unsplash.com/photo-1589394815349-1b6cfc8e9c86?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1589394815349-1b6cfc8e9c86?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -11916,7 +11962,9 @@ var CITY_DATABASE = {
     "risks": [
       "蚊虫叮咬",
       "食品安全",
-      "部分城市交通拥堵"
+      "部分城市交通拥堵",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -12356,7 +12404,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇾",
     "lat": 5.4141,
     "lng": 100.3288,
-    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=85",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -12394,7 +12442,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "自然灾害风险",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -12834,7 +12884,7 @@ var CITY_DATABASE = {
     "flag": "🇻🇳",
     "lat": 21.0285,
     "lng": 105.8542,
-    "image": "https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?w=1200&q=85",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -12872,7 +12922,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "部分城市交通拥堵",
-      "自然灾害风险"
+      "自然灾害风险",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "113",
@@ -13312,7 +13364,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 12.9716,
     "lng": 77.5946,
-    "image": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -13350,7 +13402,9 @@ var CITY_DATABASE = {
     "risks": [
       "蚊虫叮咬",
       "自然灾害风险",
-      "部分城市交通拥堵"
+      "部分城市交通拥堵",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -13790,7 +13844,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 13.0827,
     "lng": 80.2707,
-    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&q=85",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -13828,7 +13882,9 @@ var CITY_DATABASE = {
     "risks": [
       "蚊虫叮咬",
       "自然灾害风险",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -14268,7 +14324,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 22.5726,
     "lng": 88.3639,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -14306,7 +14362,9 @@ var CITY_DATABASE = {
     "risks": [
       "蚊虫叮咬",
       "自然灾害风险",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -14753,7 +14811,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 17.385,
     "lng": 78.4867,
-    "image": "https://images.unsplash.com/photo-1600100397608-f2dc55ecc5fd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1600100397608-f2dc55ecc5fd?w=1200&q=85",
     "safety": {
       "overall": 65,
       "grade": "B-",
@@ -14791,7 +14849,9 @@ var CITY_DATABASE = {
     "risks": [
       "蚊虫叮咬",
       "部分城市交通拥堵",
-      "食品安全"
+      "食品安全",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -15238,7 +15298,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 22.5431,
     "lng": 114.0579,
-    "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&q=85",
     "safety": {
       "overall": 78,
       "grade": "B+",
@@ -15276,7 +15336,9 @@ var CITY_DATABASE = {
     "risks": [
       "蚊虫叮咬",
       "语言沟通问题",
-      "自然灾害风险"
+      "自然灾害风险",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -15723,7 +15785,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 23.1291,
     "lng": 113.2644,
-    "image": "https://images.unsplash.com/photo-1515636905755-0b2e49c9a36d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1515636905755-0b2e49c9a36d?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -15761,7 +15823,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "语言沟通问题",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -16201,7 +16265,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.5728,
     "lng": 104.0668,
-    "image": "https://images.unsplash.com/photo-1523839768568-21b8c3b4e57f?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1523839768568-21b8c3b4e57f?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -16239,7 +16303,9 @@ var CITY_DATABASE = {
     "risks": [
       "食品安全",
       "部分城市交通拥堵",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -16679,7 +16745,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.2741,
     "lng": 120.1551,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -16717,7 +16783,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "自然灾害风险",
-      "蚊虫叮咬"
+      "蚊虫叮咬",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -17157,7 +17225,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 34.3416,
     "lng": 108.9398,
-    "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200&q=85",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -17195,7 +17263,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "蚊虫叮咬",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "112",
@@ -17635,7 +17705,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 51.5074,
     "lng": -0.1278,
-    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -17672,7 +17742,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "罢工影响交通",
-      "申根签证"
+      "申根签证",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "999",
@@ -18173,7 +18245,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 48.8566,
     "lng": 2.3522,
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -18215,7 +18287,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "罢工影响交通",
-      "申根签证"
+      "申根签证",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "17",
@@ -18725,7 +18799,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 52.52,
     "lng": 13.405,
-    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -18763,7 +18837,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "语言障碍",
-      "申根签证"
+      "申根签证",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "110",
@@ -19254,7 +19330,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇱",
     "lat": 52.3676,
     "lng": 4.9041,
-    "image": "https://images.unsplash.com/photo-1576924542622-772c88e57db7?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1576924542622-772c88e57db7?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -19292,7 +19368,9 @@ var CITY_DATABASE = {
     "risks": [
       "罢工影响交通",
       "语言障碍",
-      "物价较高"
+      "物价较高",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -19748,7 +19826,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇹",
     "lat": 48.2082,
     "lng": 16.3738,
-    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1200&q=85",
     "safety": {
       "overall": 72,
       "grade": "B",
@@ -19786,7 +19864,9 @@ var CITY_DATABASE = {
     "risks": [
       "部分城市交通拥堵",
       "蚊虫叮咬",
-      "语言沟通问题"
+      "语言沟通问题",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度",
+      "交通混行普遍，过马路与乘车格外谨慎"
     ],
     "emergency": {
       "police": "133",
@@ -20242,7 +20322,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇭",
     "lat": 47.3769,
     "lng": 8.5417,
-    "image": "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -20280,7 +20360,9 @@ var CITY_DATABASE = {
     "risks": [
       "罢工影响交通",
       "语言障碍",
-      "物价较高"
+      "物价较高",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "117",
@@ -20740,7 +20822,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇪",
     "lat": 59.3293,
     "lng": 18.0686,
-    "image": "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -20778,7 +20860,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言障碍",
       "小偷小摸",
-      "物价较高"
+      "物价较高",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -21236,7 +21320,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇴",
     "lat": 59.9139,
     "lng": 10.7522,
-    "image": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=1200&q=85",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -21274,7 +21358,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "罢工影响交通",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -21715,7 +21801,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇰",
     "lat": 55.6761,
     "lng": 12.5683,
-    "image": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -21753,7 +21839,9 @@ var CITY_DATABASE = {
     "risks": [
       "罢工影响交通",
       "物价较高",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -22194,7 +22282,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇮",
     "lat": 60.1699,
     "lng": 24.9384,
-    "image": "https://images.unsplash.com/photo-1548604571-072cd00ee2e1?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548604571-072cd00ee2e1?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -22232,7 +22320,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "罢工影响交通",
-      "申根签证"
+      "申根签证",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -22673,7 +22763,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 40.4168,
     "lng": -3.7038,
-    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -22711,7 +22801,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "物价较高",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "091",
@@ -23169,7 +23261,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 41.9028,
     "lng": 12.4964,
-    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -23207,7 +23299,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "申根签证",
-      "罢工影响交通"
+      "罢工影响交通",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "113",
@@ -23664,7 +23758,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 41.3851,
     "lng": 2.1734,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -23700,7 +23794,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "申根签证",
-      "罢工影响交通"
+      "罢工影响交通",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "092",
@@ -24176,7 +24272,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇹",
     "lat": 38.7223,
     "lng": -9.1393,
-    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -24214,7 +24310,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "申根签证",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -24655,7 +24753,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇿",
     "lat": 50.0755,
     "lng": 14.4378,
-    "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -24693,7 +24791,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "罢工影响交通",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "158",
@@ -25142,7 +25242,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇱",
     "lat": 52.2297,
     "lng": 21.0122,
-    "image": "https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -25180,7 +25280,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "罢工影响交通",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "997",
@@ -25621,7 +25723,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇷",
     "lat": 37.9838,
     "lng": 23.7275,
-    "image": "https://images.unsplash.com/photo-1555993539-1732b0258235?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=85",
     "safety": {
       "overall": 83,
       "grade": "A-",
@@ -25659,7 +25761,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "小偷小摸",
-      "罢工影响交通"
+      "罢工影响交通",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "100",
@@ -26100,7 +26204,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇪",
     "lat": 50.8503,
     "lng": 4.3517,
-    "image": "https://images.unsplash.com/photo-1562620436-46b0ccf85649?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1562620436-46b0ccf85649?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -26138,7 +26242,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "罢工影响交通",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "101",
@@ -26579,7 +26685,7 @@ var CITY_DATABASE = {
     "flag": "🇭🇺",
     "lat": 47.4979,
     "lng": 19.0402,
-    "image": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=1200&q=85",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -26617,7 +26723,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "语言障碍",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "107",
@@ -27058,7 +27166,7 @@ var CITY_DATABASE = {
     "flag": "🇷🇺",
     "lat": 55.7558,
     "lng": 37.6173,
-    "image": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=1200&q=85",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -27096,7 +27204,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "小偷小摸",
-      "罢工影响交通"
+      "罢工影响交通",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "102",
@@ -27563,7 +27673,7 @@ var CITY_DATABASE = {
     "flag": "🇷🇺",
     "lat": 59.9311,
     "lng": 30.3609,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=1200&q=85",
     "safety": {
       "overall": 65,
       "grade": "B-",
@@ -27601,7 +27711,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "语言障碍",
-      "罢工影响交通"
+      "罢工影响交通",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "102",
@@ -28050,7 +28162,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 45.4642,
     "lng": 9.19,
-    "image": "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -28088,7 +28200,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "申根签证",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "113",
@@ -28529,7 +28643,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 48.1351,
     "lng": 11.582,
-    "image": "https://images.unsplash.com/photo-1595867818082-083862f3d630?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1595867818082-083862f3d630?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -28567,7 +28681,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "小偷小摸",
-      "物价较高"
+      "物价较高",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "110",
@@ -29008,7 +29124,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 50.1109,
     "lng": 8.6821,
-    "image": "https://images.unsplash.com/photo-1562620436-46b0ccf85649?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1562620436-46b0ccf85649?w=1200&q=85",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -29046,7 +29162,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "小偷小摸",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "110",
@@ -29487,7 +29605,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 53.5511,
     "lng": 9.9937,
-    "image": "https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -29525,7 +29643,9 @@ var CITY_DATABASE = {
     "risks": [
       "罢工影响交通",
       "物价较高",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "110",
@@ -29966,7 +30086,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇪",
     "lat": 53.3498,
     "lng": -6.2603,
-    "image": "https://images.unsplash.com/photo-1548286978-e2c4e3c2e8e8?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548286978-e2c4e3c2e8e8?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -30004,7 +30124,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言障碍",
       "小偷小摸",
-      "申根签证"
+      "申根签证",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "999",
@@ -30445,7 +30567,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 55.9533,
     "lng": -3.1883,
-    "image": "https://images.unsplash.com/photo-1548286978-e2c4e3c2e8e8?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548286978-e2c4e3c2e8e8?w=1200&q=85",
     "safety": {
       "overall": 93,
       "grade": "A",
@@ -30483,7 +30605,9 @@ var CITY_DATABASE = {
     "risks": [
       "罢工影响交通",
       "语言障碍",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "999",
@@ -30924,7 +31048,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 53.4808,
     "lng": -2.2426,
-    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=85",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -30962,7 +31086,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "申根签证",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "999",
@@ -31403,7 +31529,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 45.764,
     "lng": 4.8357,
-    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -31441,7 +31567,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "申根签证",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "17",
@@ -31882,7 +32010,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 43.2965,
     "lng": 5.3698,
-    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -31920,7 +32048,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "申根签证",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "17",
@@ -32361,7 +32491,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 43.7102,
     "lng": 7.262,
-    "image": "https://images.unsplash.com/photo-1491166617655-0723a8234082?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1491166617655-0723a8234082?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -32399,7 +32529,9 @@ var CITY_DATABASE = {
     "risks": [
       "小偷小摸",
       "罢工影响交通",
-      "语言障碍"
+      "语言障碍",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "17",
@@ -32840,7 +32972,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 45.4408,
     "lng": 12.3155,
-    "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=85",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -32878,7 +33010,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "申根签证",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "113",
@@ -33319,7 +33453,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 43.7696,
     "lng": 11.2558,
-    "image": "https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -33357,7 +33491,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "物价较高",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "113",
@@ -33798,7 +33934,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇹",
     "lat": 40.8518,
     "lng": 14.2681,
-    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1200&q=85",
     "safety": {
       "overall": 88,
       "grade": "A-",
@@ -33836,7 +33972,9 @@ var CITY_DATABASE = {
     "risks": [
       "罢工影响交通",
       "小偷小摸",
-      "物价较高"
+      "物价较高",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -34277,7 +34415,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 39.4699,
     "lng": -0.3763,
-    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -34315,7 +34453,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言障碍",
       "物价较高",
-      "申根签证"
+      "申根签证",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -34756,7 +34896,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 37.3891,
     "lng": -5.9845,
-    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -34794,7 +34934,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "语言障碍",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -35235,7 +35377,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇸",
     "lat": 36.7213,
     "lng": -4.4214,
-    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -35273,7 +35415,9 @@ var CITY_DATABASE = {
     "risks": [
       "语言障碍",
       "申根签证",
-      "罢工影响交通"
+      "罢工影响交通",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -35714,7 +35858,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇹",
     "lat": 41.1579,
     "lng": -8.6291,
-    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -35752,7 +35896,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "物价较高",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -36193,7 +36339,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇱",
     "lat": 50.0647,
     "lng": 19.945,
-    "image": "https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -36231,7 +36377,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "物价较高",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -36672,7 +36820,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇭",
     "lat": 46.2044,
     "lng": 6.1432,
-    "image": "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -36710,7 +36858,9 @@ var CITY_DATABASE = {
     "risks": [
       "申根签证",
       "物价较高",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "117",
@@ -37151,7 +37301,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 50.9375,
     "lng": 6.9603,
-    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -37189,7 +37339,9 @@ var CITY_DATABASE = {
     "risks": [
       "物价较高",
       "罢工影响交通",
-      "小偷小摸"
+      "小偷小摸",
+      "旅游热点扒手与抢包高发，财物分散保管",
+      "部分城市示威集会频繁，避开人群聚集"
     ],
     "emergency": {
       "police": "112",
@@ -37630,7 +37782,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 40.7128,
     "lng": -74.006,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=1200&q=85",
     "safety": {
       "overall": 67,
       "grade": "B-",
@@ -37668,7 +37820,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "自然灾害",
-      "医疗费用高"
+      "医疗费用高",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -38235,7 +38389,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 34.0522,
     "lng": -118.2437,
-    "image": "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1200&q=85",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -38273,7 +38427,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "自然灾害",
-      "毒品问题"
+      "毒品问题",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -38761,7 +38917,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 41.8781,
     "lng": -87.6298,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=1200&q=85",
     "safety": {
       "overall": 69,
       "grade": "B-",
@@ -38799,7 +38955,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "自然灾害",
-      "毒品问题"
+      "毒品问题",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -39268,7 +39426,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 43.6532,
     "lng": -79.3832,
-    "image": "https://images.unsplash.com/photo-1517090186835-e348b621c9ca?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1517090186835-e348b621c9ca?w=1200&q=85",
     "safety": {
       "overall": 76,
       "grade": "B+",
@@ -39306,7 +39464,9 @@ var CITY_DATABASE = {
     "risks": [
       "治安差异大",
       "枪支暴力风险",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -39774,7 +39934,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 49.2827,
     "lng": -123.1207,
-    "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -39812,7 +39972,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "毒品问题",
-      "医疗费用高"
+      "医疗费用高",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -40272,7 +40434,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇦",
     "lat": 45.5017,
     "lng": -73.5673,
-    "image": "https://images.unsplash.com/photo-1548544149-4835e62ee5b3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548544149-4835e62ee5b3?w=1200&q=85",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -40310,7 +40472,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "毒品问题",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -40757,7 +40921,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 37.7749,
     "lng": -122.4194,
-    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&q=85",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -40795,7 +40959,9 @@ var CITY_DATABASE = {
     "risks": [
       "毒品问题",
       "自然灾害",
-      "治安差异大"
+      "治安差异大",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -41258,7 +41424,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 47.6062,
     "lng": -122.3321,
-    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=1200&q=85",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -41296,7 +41462,9 @@ var CITY_DATABASE = {
     "risks": [
       "毒品问题",
       "自然灾害",
-      "治安差异大"
+      "治安差异大",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -41744,7 +41912,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 25.7617,
     "lng": -80.1918,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=1200&q=85",
     "safety": {
       "overall": 77,
       "grade": "B+",
@@ -41782,7 +41950,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "毒品问题",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -42222,7 +42392,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 42.3601,
     "lng": -71.0589,
-    "image": "https://images.unsplash.com/photo-1509872716523-2e6cba8e6be3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1509872716523-2e6cba8e6be3?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -42260,7 +42430,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "毒品问题",
-      "治安差异大"
+      "治安差异大",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -42700,7 +42872,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 38.9072,
     "lng": -77.0369,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=1200&q=85",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -42738,7 +42910,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "毒品问题",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -43207,7 +43381,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 36.1699,
     "lng": -115.1398,
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=85",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -43245,7 +43419,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "毒品问题",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -43692,7 +43868,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 39.7392,
     "lng": -104.9903,
-    "image": "https://images.unsplash.com/photo-1546156929-a4c0ac411f47?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1546156929-a4c0ac411f47?w=1200&q=85",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -43730,7 +43906,9 @@ var CITY_DATABASE = {
     "risks": [
       "自然灾害",
       "枪支暴力风险",
-      "毒品问题"
+      "毒品问题",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "112",
@@ -44170,7 +44348,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 33.749,
     "lng": -84.388,
-    "image": "https://images.unsplash.com/photo-1564937060-eb4edbe4568f?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1564937060-eb4edbe4568f?w=1200&q=85",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -44208,7 +44386,9 @@ var CITY_DATABASE = {
     "risks": [
       "治安差异大",
       "医疗费用高",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -44655,7 +44835,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 32.7767,
     "lng": -96.797,
-    "image": "https://images.unsplash.com/photo-1567449303078-57ad995bd17f?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1567449303078-57ad995bd17f?w=1200&q=85",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -44693,7 +44873,9 @@ var CITY_DATABASE = {
     "risks": [
       "治安差异大",
       "医疗费用高",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -45133,7 +45315,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 29.7604,
     "lng": -95.3698,
-    "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1200&q=85",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -45171,7 +45353,9 @@ var CITY_DATABASE = {
     "risks": [
       "毒品问题",
       "治安差异大",
-      "医疗费用高"
+      "医疗费用高",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -45611,7 +45795,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 33.4484,
     "lng": -112.074,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85",
     "safety": {
       "overall": 76,
       "grade": "B+",
@@ -45649,7 +45833,9 @@ var CITY_DATABASE = {
     "risks": [
       "毒品问题",
       "治安差异大",
-      "医疗费用高"
+      "医疗费用高",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -46096,7 +46282,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 45.5152,
     "lng": -122.6784,
-    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=1200&q=85",
     "safety": {
       "overall": 68,
       "grade": "B-",
@@ -46134,7 +46320,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "治安差异大",
-      "毒品问题"
+      "毒品问题",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "112",
@@ -46581,7 +46769,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 32.7157,
     "lng": -117.1611,
-    "image": "https://images.unsplash.com/photo-1562088287-bde35a1ea917?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1562088287-bde35a1ea917?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -46619,7 +46807,9 @@ var CITY_DATABASE = {
     "risks": [
       "毒品问题",
       "治安差异大",
-      "医疗费用高"
+      "医疗费用高",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -47059,7 +47249,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 30.2672,
     "lng": -97.7431,
-    "image": "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=85",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -47097,7 +47287,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "医疗费用高",
-      "自然灾害"
+      "自然灾害",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "112",
@@ -47544,7 +47736,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇽",
     "lat": 19.4326,
     "lng": -99.1332,
-    "image": "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=1200&q=85",
     "safety": {
       "overall": 59,
       "grade": "C+",
@@ -47582,7 +47774,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "枪支暴力风险",
-      "治安差异大"
+      "治安差异大",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "911",
@@ -48050,7 +48244,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇽",
     "lat": 21.1619,
     "lng": -86.8515,
-    "image": "https://images.unsplash.com/photo-1590212151175-e58edd96185b?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1590212151175-e58edd96185b?w=1200&q=85",
     "safety": {
       "overall": 61,
       "grade": "B-",
@@ -48088,7 +48282,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "枪支暴力风险",
-      "治安差异大"
+      "治安差异大",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "112",
@@ -48535,7 +48731,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇷",
     "lat": -23.5505,
     "lng": -46.6333,
-    "image": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=1200&q=85",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -48573,7 +48769,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "自然灾害",
-      "枪支暴力风险"
+      "枪支暴力风险",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "190",
@@ -49047,7 +49245,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇷",
     "lat": -22.9068,
     "lng": -43.1729,
-    "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1200&q=85",
     "safety": {
       "overall": 57,
       "grade": "C+",
@@ -49085,7 +49283,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "自然灾害",
-      "医疗费用高"
+      "医疗费用高",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "190",
@@ -49553,7 +49753,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇷",
     "lat": -34.6037,
     "lng": -58.3816,
-    "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=1200&q=85",
     "safety": {
       "overall": 55,
       "grade": "C+",
@@ -49591,7 +49791,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗费用高",
       "治安差异大",
-      "自然灾害"
+      "自然灾害",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "101",
@@ -50039,7 +50241,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇱",
     "lat": -33.4489,
     "lng": -70.6693,
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=85",
     "safety": {
       "overall": 64,
       "grade": "B-",
@@ -50077,7 +50279,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "治安差异大",
-      "医疗费用高"
+      "医疗费用高",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "133",
@@ -50523,7 +50727,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇪",
     "lat": -12.0464,
     "lng": -77.0428,
-    "image": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=1200&q=85",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -50561,7 +50765,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "毒品问题",
-      "治安差异大"
+      "治安差异大",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "105",
@@ -51007,7 +51213,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 4.711,
     "lng": -74.0721,
-    "image": "https://images.unsplash.com/photo-1562613009-b9e87ef94756?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1562613009-b9e87ef94756?w=1200&q=85",
     "safety": {
       "overall": 63,
       "grade": "B-",
@@ -51045,7 +51251,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "医疗费用高",
-      "自然灾害"
+      "自然灾害",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "123",
@@ -51491,7 +51699,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 6.2442,
     "lng": -75.5812,
-    "image": "https://images.unsplash.com/photo-1553701826-6e8e0eb44720?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1553701826-6e8e0eb44720?w=1200&q=85",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -51529,7 +51737,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "自然灾害",
-      "治安差异大"
+      "治安差异大",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "123",
@@ -51975,7 +52185,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇦",
     "lat": 8.9824,
     "lng": -79.5199,
-    "image": "https://images.unsplash.com/photo-1556984124-3a5e5a07cc6d?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1556984124-3a5e5a07cc6d?w=1200&q=85",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -52013,7 +52223,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "自然灾害",
-      "治安差异大"
+      "治安差异大",
+      "扒手与抢手机高发，财物贴身保管",
+      "部分区域治安较差，避免夜间独行"
     ],
     "emergency": {
       "police": "112",
@@ -52459,7 +52671,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇬",
     "lat": 30.0444,
     "lng": 31.2357,
-    "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=1200&q=85",
     "safety": {
       "overall": 30,
       "grade": "C",
@@ -52497,7 +52709,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗条件有限",
       "治安风险高",
-      "疾病风险"
+      "疾病风险",
+      "夏季极端高温，户外需防中暑与脱水",
+      "部分区域政治敏感，避免前往边境与示威区"
     ],
     "emergency": {
       "police": "122",
@@ -52955,7 +53169,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇦",
     "lat": -33.9249,
     "lng": 18.4241,
-    "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=1200&q=85",
     "safety": {
       "overall": 44,
       "grade": "C",
@@ -52993,7 +53207,9 @@ var CITY_DATABASE = {
     "risks": [
       "治安风险高",
       "基础设施差",
-      "医疗条件有限"
+      "医疗条件有限",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "10111",
@@ -53467,7 +53683,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇦",
     "lat": -26.2041,
     "lng": 28.0473,
-    "image": "https://images.unsplash.com/photo-1564565562150-46b4e7fc5978?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1564565562150-46b4e7fc5978?w=1200&q=85",
     "safety": {
       "overall": 41,
       "grade": "C",
@@ -53505,7 +53721,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗条件有限",
       "政治动荡",
-      "基础设施差"
+      "基础设施差",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "10111",
@@ -53980,7 +54198,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇬",
     "lat": 6.5244,
     "lng": 3.3792,
-    "image": "https://images.unsplash.com/photo-1578860289429-de227cc56de9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1578860289429-de227cc56de9?w=1200&q=85",
     "safety": {
       "overall": 30,
       "grade": "C",
@@ -54018,7 +54236,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗条件有限",
       "政治动荡",
-      "基础设施差"
+      "基础设施差",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "199",
@@ -54460,7 +54680,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇪",
     "lat": -1.2921,
     "lng": 36.8219,
-    "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1200&q=85",
     "safety": {
       "overall": 38,
       "grade": "C",
@@ -54498,7 +54718,9 @@ var CITY_DATABASE = {
     "risks": [
       "疾病风险",
       "医疗条件有限",
-      "治安风险高"
+      "治安风险高",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "999",
@@ -54959,7 +55181,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 33.5731,
     "lng": -7.5898,
-    "image": "https://images.unsplash.com/photo-1548801340-4c5db0c89d08?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1548801340-4c5db0c89d08?w=1200&q=85",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -54997,7 +55219,9 @@ var CITY_DATABASE = {
     "risks": [
       "基础设施差",
       "治安风险高",
-      "政治动荡"
+      "政治动荡",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "19",
@@ -55443,7 +55667,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 31.6295,
     "lng": -7.9811,
-    "image": "https://images.unsplash.com/photo-1562221433-0d75d0ddcfbd?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1562221433-0d75d0ddcfbd?w=1200&q=85",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -55481,7 +55705,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗条件有限",
       "政治动荡",
-      "疾病风险"
+      "疾病风险",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "112",
@@ -55927,7 +56153,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇳",
     "lat": 36.8065,
     "lng": 10.1815,
-    "image": "https://images.unsplash.com/photo-1609166214994-502d326bafee?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1609166214994-502d326bafee?w=1200&q=85",
     "safety": {
       "overall": 64,
       "grade": "B-",
@@ -55965,7 +56191,9 @@ var CITY_DATABASE = {
     "risks": [
       "医疗条件有限",
       "政治动荡",
-      "疾病风险"
+      "疾病风险",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "112",
@@ -56411,7 +56639,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇭",
     "lat": 5.6037,
     "lng": -0.187,
-    "image": "https://images.unsplash.com/photo-1608581830332-ec32be60d9ea?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1608581830332-ec32be60d9ea?w=1200&q=85",
     "safety": {
       "overall": 42,
       "grade": "C",
@@ -56449,7 +56677,9 @@ var CITY_DATABASE = {
     "risks": [
       "治安风险高",
       "疾病风险",
-      "政治动荡"
+      "政治动荡",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "191",
@@ -56895,7 +57125,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇹",
     "lat": 9.032,
     "lng": 38.7469,
-    "image": "https://images.unsplash.com/photo-1609165395285-d6d7b89f5f7c?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1609165395285-d6d7b89f5f7c?w=1200&q=85",
     "safety": {
       "overall": 42,
       "grade": "C",
@@ -56933,7 +57163,9 @@ var CITY_DATABASE = {
     "risks": [
       "政治动荡",
       "疾病风险",
-      "医疗条件有限"
+      "医疗条件有限",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）",
+      "饮水与食物卫生需谨慎，只喝瓶装或煮沸水"
     ],
     "emergency": {
       "police": "991",
@@ -57379,7 +57611,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -33.8688,
     "lng": 151.2093,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -57410,7 +57642,9 @@ var CITY_DATABASE = {
     "risks": [
       "天气变化快",
       "野生动物",
-      "地域广阔交通不便"
+      "地域广阔交通不便",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "000",
@@ -57851,7 +58085,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -37.8136,
     "lng": 144.9631,
-    "image": "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=1200&q=85",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -57889,7 +58123,9 @@ var CITY_DATABASE = {
     "risks": [
       "紫外线强",
       "野生动物",
-      "地域广阔交通不便"
+      "地域广阔交通不便",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "000",
@@ -58349,7 +58585,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -27.4698,
     "lng": 153.0251,
-    "image": "https://images.unsplash.com/photo-1524820197278-540916411e20?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1524820197278-540916411e20?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -58387,7 +58623,9 @@ var CITY_DATABASE = {
     "risks": [
       "天气变化快",
       "野生动物",
-      "地域广阔交通不便"
+      "地域广阔交通不便",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "000",
@@ -58826,7 +59064,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -31.9505,
     "lng": 115.8605,
-    "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=1200&q=85",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -58864,7 +59102,9 @@ var CITY_DATABASE = {
     "risks": [
       "海洋生物危险",
       "紫外线强",
-      "地域广阔交通不便"
+      "地域广阔交通不便",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "000",
@@ -59303,7 +59543,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -34.9285,
     "lng": 138.6007,
-    "image": "https://images.unsplash.com/photo-1524820197278-540916411e20?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1524820197278-540916411e20?w=1200&q=85",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -59341,7 +59581,9 @@ var CITY_DATABASE = {
     "risks": [
       "海洋生物危险",
       "地域广阔交通不便",
-      "紫外线强"
+      "紫外线强",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "000",
@@ -59780,7 +60022,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -36.8509,
     "lng": 174.7645,
-    "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1200&q=85",
     "safety": {
       "overall": 91,
       "grade": "A",
@@ -59818,7 +60060,9 @@ var CITY_DATABASE = {
     "risks": [
       "紫外线强",
       "地域广阔交通不便",
-      "野生动物"
+      "野生动物",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "111",
@@ -60257,7 +60501,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -41.2865,
     "lng": 174.7762,
-    "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -60295,7 +60539,9 @@ var CITY_DATABASE = {
     "risks": [
       "紫外线强",
       "地域广阔交通不便",
-      "野生动物"
+      "野生动物",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "111",
@@ -60734,7 +60980,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -43.532,
     "lng": 172.6362,
-    "image": "https://images.unsplash.com/photo-1568405186213-ba8f1af47c49?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1568405186213-ba8f1af47c49?w=1200&q=85",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -60772,7 +61018,9 @@ var CITY_DATABASE = {
     "risks": [
       "天气变化快",
       "海洋生物危险",
-      "野生动物"
+      "野生动物",
+      "紫外线极强，需高倍防晒与持续补水",
+      "海岸暗流与海洋生物（箱水母、鲨鱼）需警惕"
     ],
     "emergency": {
       "police": "112",
@@ -61211,7 +61459,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 21.3069,
     "lng": -157.8583,
-    "image": "https://images.unsplash.com/photo-1507876466758-e3f4f8d22bd9?w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1507876466758-e3f4f8d22bd9?w=1200&q=85",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -61249,7 +61497,9 @@ var CITY_DATABASE = {
     "risks": [
       "枪支暴力风险",
       "毒品问题",
-      "医疗费用高"
+      "医疗费用高",
+      "医疗费用昂贵，务必购买旅行医疗险",
+      "部分城市特定街区治安差，提前规划路线"
     ],
     "emergency": {
       "police": "911",
@@ -61706,8 +61956,7 @@ var CITY_DATABASE = {
       },
       "consulates": []
     }
-  }
-,
+  },
   "dakar": {
     "id": "dakar",
     "name": "达喀尔",
@@ -61717,7 +61966,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇳",
     "lat": 14.7167,
     "lng": -17.4677,
-    "image": "https://picsum.photos/seed/safecity_dakar/400/180",
+    "image": "https://picsum.photos/seed/safecity_dakar/1600/600",
     "safety": {
       "overall": 58,
       "grade": "B-",
@@ -61750,7 +61999,8 @@ var CITY_DATABASE = {
       "扒窃与抢包",
       "交通拥堵",
       "高温",
-      "(旱季)沙尘"
+      "(旱季)沙尘",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）"
     ],
     "emergency": {
       "police": "17",
@@ -61833,7 +62083,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇮",
     "lat": 5.36,
     "lng": -4.0083,
-    "image": "https://picsum.photos/seed/safecity_abidjan/400/180",
+    "image": "https://picsum.photos/seed/safecity_abidjan/1600/600",
     "safety": {
       "overall": 55,
       "grade": "B-",
@@ -61866,7 +62116,8 @@ var CITY_DATABASE = {
       "扒窃与抢包",
       "沿海洪涝",
       "疟疾风险",
-      "路况复杂"
+      "路况复杂",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）"
     ],
     "emergency": {
       "police": "110",
@@ -61949,7 +62200,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇬",
     "lat": 0.3476,
     "lng": 32.5825,
-    "image": "https://picsum.photos/seed/safecity_kampala/400/180",
+    "image": "https://picsum.photos/seed/safecity_kampala/1600/600",
     "safety": {
       "overall": 54,
       "grade": "B-",
@@ -61982,7 +62233,8 @@ var CITY_DATABASE = {
       "扒窃",
       "摩托车抢包",
       "疟疾",
-      "路况与照明"
+      "路况与照明",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）"
     ],
     "emergency": {
       "police": "999",
@@ -62065,7 +62317,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇼",
     "lat": -17.8252,
     "lng": 31.0335,
-    "image": "https://picsum.photos/seed/safecity_harare/400/180",
+    "image": "https://picsum.photos/seed/safecity_harare/1600/600",
     "safety": {
       "overall": 50,
       "grade": "B-",
@@ -62098,7 +62350,8 @@ var CITY_DATABASE = {
       "经济不稳带来的街头犯罪",
       "现金短缺",
       "疟疾（周边）",
-      "夜间安全"
+      "夜间安全",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）"
     ],
     "emergency": {
       "police": "995",
@@ -62181,7 +62434,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇲",
     "lat": -15.3875,
     "lng": 28.3228,
-    "image": "https://picsum.photos/seed/safecity_lusaka/400/180",
+    "image": "https://picsum.photos/seed/safecity_lusaka/1600/600",
     "safety": {
       "overall": 54,
       "grade": "B-",
@@ -62214,7 +62467,8 @@ var CITY_DATABASE = {
       "扒窃",
       "街头诈骗",
       "疟疾（周边）",
-      "夜间照明不足"
+      "夜间照明不足",
+      "部分国家疟疾/登革热风险，做好防蚊与药物预防（遵医嘱）"
     ],
     "emergency": {
       "police": "911",
@@ -62297,7 +62551,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇴",
     "lat": 31.9454,
     "lng": 35.9284,
-    "image": "https://picsum.photos/seed/safecity_amman/400/180",
+    "image": "https://picsum.photos/seed/safecity_amman/1600/600",
     "safety": {
       "overall": 74,
       "grade": "B+",
@@ -62330,7 +62584,8 @@ var CITY_DATABASE = {
       "扒窃（旅游区）",
       "夏季高温",
       "交通拥堵",
-      "区域局势波动"
+      "区域局势波动",
+      "夏季极端高温，户外需防中暑与脱水"
     ],
     "emergency": {
       "police": "911",
@@ -62413,7 +62668,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇼",
     "lat": 29.3759,
     "lng": 47.9774,
-    "image": "https://picsum.photos/seed/safecity_kuwait_city/400/180",
+    "image": "https://picsum.photos/seed/safecity_kuwait_city/1600/600",
     "safety": {
       "overall": 76,
       "grade": "A-",
@@ -62446,7 +62701,8 @@ var CITY_DATABASE = {
       "夏季极端高温",
       "沙尘暴",
       "驾车激进",
-      "油价相关拥堵"
+      "油价相关拥堵",
+      "夏季极端高温，户外需防中暑与脱水"
     ],
     "emergency": {
       "police": "112",
@@ -62529,7 +62785,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇪",
     "lat": 24.4539,
     "lng": 54.3773,
-    "image": "https://picsum.photos/seed/safecity_abu_dhabi/400/180",
+    "image": "https://picsum.photos/seed/safecity_abu_dhabi/1600/600",
     "safety": {
       "overall": 88,
       "grade": "A",
@@ -62562,7 +62818,8 @@ var CITY_DATABASE = {
       "夏季极端高温",
       "驾车高速",
       "沙尘",
-      "跨文化交流"
+      "跨文化交流",
+      "夏季极端高温，户外需防中暑与脱水"
     ],
     "emergency": {
       "police": "999",
@@ -62645,7 +62902,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇭",
     "lat": 26.2285,
     "lng": 50.586,
-    "image": "https://picsum.photos/seed/safecity_manama/400/180",
+    "image": "https://picsum.photos/seed/safecity_manama/1600/600",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -62678,7 +62935,8 @@ var CITY_DATABASE = {
       "夏季高温",
       "沙尘",
       "驾车激进",
-      "周五人流"
+      "周五人流",
+      "夏季极端高温，户外需防中暑与脱水"
     ],
     "emergency": {
       "police": "999",
@@ -62761,7 +63019,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -28.0167,
     "lng": 153.4,
-    "image": "https://picsum.photos/seed/safecity_gold_coast/400/180",
+    "image": "https://picsum.photos/seed/safecity_gold_coast/1600/600",
     "safety": {
       "overall": 82,
       "grade": "A-",
@@ -62794,7 +63052,8 @@ var CITY_DATABASE = {
       "烈日与溺水",
       "酒后滋事",
       "暑期人流",
-      "偶发抢劫"
+      "偶发抢劫",
+      "紫外线极强，需高倍防晒与持续补水"
     ],
     "emergency": {
       "police": "000",
@@ -62877,7 +63136,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -16.9186,
     "lng": 145.7781,
-    "image": "https://picsum.photos/seed/safecity_cairns/400/180",
+    "image": "https://picsum.photos/seed/safecity_cairns/1600/600",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -62910,7 +63169,8 @@ var CITY_DATABASE = {
       "烈日与溺水",
       "箱水母（夏季）",
       "热带暴雨",
-      "蚊虫"
+      "蚊虫",
+      "紫外线极强，需高倍防晒与持续补水"
     ],
     "emergency": {
       "police": "000",
@@ -62993,7 +63253,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -42.8821,
     "lng": 147.3272,
-    "image": "https://picsum.photos/seed/safecity_hobart/400/180",
+    "image": "https://picsum.photos/seed/safecity_hobart/1600/600",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -63026,7 +63286,8 @@ var CITY_DATABASE = {
       "冬季寒冷",
       "强风与野火（周边）",
       "夜间人少",
-      "海鲜价高"
+      "海鲜价高",
+      "紫外线极强，需高倍防晒与持续补水"
     ],
     "emergency": {
       "police": "000",
@@ -63109,7 +63370,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇨",
     "lat": -0.1807,
     "lng": -78.4678,
-    "image": "https://picsum.photos/seed/safecity_quito/400/180",
+    "image": "https://picsum.photos/seed/safecity_quito/1600/600",
     "safety": {
       "overall": 60,
       "grade": "B-",
@@ -63142,7 +63403,8 @@ var CITY_DATABASE = {
       "扒窃与抢包",
       "高反",
       "地震带",
-      "交通拥堵"
+      "交通拥堵",
+      "扒手与抢手机高发，财物贴身保管"
     ],
     "emergency": {
       "police": "101",
@@ -63225,7 +63487,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇷",
     "lat": 9.9281,
     "lng": -84.0907,
-    "image": "https://picsum.photos/seed/safecity_san_jose/400/180",
+    "image": "https://picsum.photos/seed/safecity_san_jose/1600/600",
     "safety": {
       "overall": 62,
       "grade": "B-",
@@ -63258,7 +63520,8 @@ var CITY_DATABASE = {
       "扒窃与抢包",
       "夜间安全",
       "火山与地震",
-      "暴雨季"
+      "暴雨季",
+      "扒手与抢手机高发，财物贴身保管"
     ],
     "emergency": {
       "police": "911",
@@ -63341,7 +63604,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇺",
     "lat": 23.1136,
     "lng": -82.3666,
-    "image": "https://picsum.photos/seed/safecity_havana/400/180",
+    "image": "https://picsum.photos/seed/safecity_havana/1600/600",
     "safety": {
       "overall": 62,
       "grade": "B-",
@@ -63374,7 +63637,8 @@ var CITY_DATABASE = {
       "旅游诈骗",
       "扒窃",
       "物资短缺",
-      "网络不便"
+      "网络不便",
+      "扒手与抢手机高发，财物贴身保管"
     ],
     "emergency": {
       "police": "106",
@@ -63457,7 +63721,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇷",
     "lat": -25.4284,
     "lng": -49.2733,
-    "image": "https://picsum.photos/seed/safecity_curitiba/400/180",
+    "image": "https://picsum.photos/seed/safecity_curitiba/1600/600",
     "safety": {
       "overall": 72,
       "grade": "B+",
@@ -63490,7 +63754,8 @@ var CITY_DATABASE = {
       "偶发抢劫",
       "扒窃",
       "冬季湿冷",
-      "物价中等"
+      "物价中等",
+      "扒手与抢手机高发，财物贴身保管"
     ],
     "emergency": {
       "police": "190",
@@ -63573,7 +63838,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 29.9511,
     "lng": -90.0715,
-    "image": "https://picsum.photos/seed/safecity_new_orleans/400/180",
+    "image": "https://picsum.photos/seed/safecity_new_orleans/1600/600",
     "safety": {
       "overall": 52,
       "grade": "B-",
@@ -63606,7 +63871,8 @@ var CITY_DATABASE = {
       "部分区高犯罪",
       "飓风与洪涝",
       "高温高湿",
-      "夜间安全"
+      "夜间安全",
+      "医疗费用昂贵，务必购买旅行医疗险"
     ],
     "emergency": {
       "police": "911",
@@ -63689,7 +63955,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 27.9506,
     "lng": -82.4572,
-    "image": "https://picsum.photos/seed/safecity_tampa/400/180",
+    "image": "https://picsum.photos/seed/safecity_tampa/1600/600",
     "safety": {
       "overall": 68,
       "grade": "B",
@@ -63722,7 +63988,8 @@ var CITY_DATABASE = {
       "午后雷暴",
       "飓风季",
       "偶发抢劫",
-      "高温"
+      "高温",
+      "医疗费用昂贵，务必购买旅行医疗险"
     ],
     "emergency": {
       "police": "911",
@@ -63805,7 +64072,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 44.9778,
     "lng": -93.265,
-    "image": "https://picsum.photos/seed/safecity_minneapolis/400/180",
+    "image": "https://picsum.photos/seed/safecity_minneapolis/1600/600",
     "safety": {
       "overall": 66,
       "grade": "B",
@@ -63838,7 +64105,8 @@ var CITY_DATABASE = {
       "严冬极寒",
       "冰雪路面",
       "偶发枪击",
-      "暴风雪"
+      "暴风雪",
+      "医疗费用昂贵，务必购买旅行医疗险"
     ],
     "emergency": {
       "police": "911",
@@ -63921,7 +64189,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 29.563,
     "lng": 106.5516,
-    "image": "https://picsum.photos/seed/safecity_chongqing/400/180",
+    "image": "https://picsum.photos/seed/safecity_chongqing/1600/600",
     "safety": {
       "overall": 78,
       "grade": "A-",
@@ -63954,7 +64222,8 @@ var CITY_DATABASE = {
       "阶梯与坡道多",
       "夏季闷热",
       "轻轨拥挤",
-      "麻辣肠胃"
+      "麻辣肠胃",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度"
     ],
     "emergency": {
       "police": "110",
@@ -64037,7 +64306,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 36.0671,
     "lng": 120.3826,
-    "image": "https://picsum.photos/seed/safecity_qingdao/400/180",
+    "image": "https://picsum.photos/seed/safecity_qingdao/1600/600",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -64070,7 +64339,8 @@ var CITY_DATABASE = {
       "旅游季人多",
       "海鲜过敏",
       "夏季潮汐",
-      "海雾"
+      "海雾",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度"
     ],
     "emergency": {
       "police": "110",
@@ -64153,7 +64423,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 18.2528,
     "lng": 109.5119,
-    "image": "https://picsum.photos/seed/safecity_sanya/400/180",
+    "image": "https://picsum.photos/seed/safecity_sanya/1600/600",
     "safety": {
       "overall": 76,
       "grade": "B+",
@@ -64186,7 +64456,8 @@ var CITY_DATABASE = {
       "旅游消费陷阱",
       "台风季",
       "日晒强烈",
-      "海鲜宰客"
+      "海鲜宰客",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度"
     ],
     "emergency": {
       "police": "110",
@@ -64269,7 +64540,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇷",
     "lat": 35.1796,
     "lng": 129.0756,
-    "image": "https://picsum.photos/seed/safecity_busan/400/180",
+    "image": "https://picsum.photos/seed/safecity_busan/1600/600",
     "safety": {
       "overall": 82,
       "grade": "A-",
@@ -64302,7 +64573,8 @@ var CITY_DATABASE = {
       "夏季台风",
       "地铁拥挤",
       "酒后治安",
-      "扒窃"
+      "扒窃",
+      "部分地区饮食卫生差异大，生冷食物注意新鲜度"
     ],
     "emergency": {
       "police": "112",
@@ -64376,4 +64648,4 @@ var CITY_DATABASE = {
       "attractionDetails": []
     }
   }
-} ;
+};

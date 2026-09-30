@@ -404,7 +404,6 @@ const REALTIME_API = (() => {
     cacheBadge,
     cacheFlush,
     cacheInvalidate,
-    renderStatus,
 
     // 直接访问缓存（用于调试）
     _mem: mem,
