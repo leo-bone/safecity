@@ -404,6 +404,7 @@ const REALTIME_API = (() => {
     cacheBadge,
     cacheFlush,
     cacheInvalidate,
+    renderStatus,
 
     // 直接访问缓存（用于调试）
     _mem: mem,
@@ -623,33 +624,64 @@ const RT_UI = {
     }).join('');
   },
 
-  // ─── 首页城市卡片：批量注入实时天气徽章 ──────────────────
+  // ─── 实时状态汇总（LIVE/CACHED/OFFLINE 统计） ────────────
+  _lastStatus: null,
+
+  // ─── 首页城市卡片：批量注入实时天气徽章（并发受限，防限流） ──
   async injectCityWeatherBadges() {
-    // 获取所有可见城市卡片
-    const cards = document.querySelectorAll('.city-card[data-city-id]');
+    const cards = Array.from(document.querySelectorAll('.city-card[data-city-id]'));
     if (!cards.length) return;
 
-    // 并行拉取所有城市天气（利用缓存）
-    await Promise.allSettled(Array.from(cards).map(async card => {
-      const cityId = card.getAttribute('data-city-id');
-      const lat    = parseFloat(card.getAttribute('data-lat'));
-      const lng    = parseFloat(card.getAttribute('data-lng'));
-      if (!cityId || isNaN(lat) || isNaN(lng)) return;
+    // 并发上限：避免上百张卡片同时打 Open-Meteo 触发限流导致大面积失败
+    const CONCURRENCY = 8;
+    let idx = 0;
+    let live = 0, cached = 0, failed = 0;
 
-      const w = await REALTIME_API.getWeather(lat, lng, cityId);
-      if (!w) return;
+    async function worker() {
+      while (idx < cards.length) {
+        const card = cards[idx++];
+        const cityId = card.getAttribute('data-city-id');
+        const lat    = parseFloat(card.getAttribute('data-lat'));
+        const lng    = parseFloat(card.getAttribute('data-lng'));
+        if (!cityId || isNaN(lat) || isNaN(lng)) continue;
 
-      // 查找或创建天气徽章容器
-      let badge = card.querySelector('.city-weather-badge');
-      if (!badge) {
-        badge = document.createElement('div');
-        badge.className = 'city-weather-badge';
-        const img = card.querySelector('.city-card-img');
-        if (img) img.appendChild(badge);
+        let w = null;
+        try { w = await REALTIME_API.getWeather(lat, lng, cityId); }
+        catch (e) { w = null; }
+
+        if (!w) { failed++; continue; }
+        if (w._src === 'cached') cached++; else live++;
+
+        // 查找或创建天气徽章容器
+        let badge = card.querySelector('.city-weather-badge');
+        if (!badge) {
+          badge = document.createElement('div');
+          badge.className = 'city-weather-badge';
+          const img = card.querySelector('.city-card-img');
+          if (img) img.appendChild(badge);
+        }
+        badge.innerHTML = `${w.current.weatherIcon} ${w.current.temp}°`;
+        badge.title     = `${w.current.weatherDesc}，湿度 ${w.current.humidity}%，风速 ${w.current.windSpeed}km/h`;
+        badge.classList.toggle('cached', w._src === 'cached');
+        if (w.current.hasAlert) badge.classList.add('alert');
       }
-      badge.innerHTML = `${w.current.weatherIcon} ${w.current.temp}°`;
-      badge.title     = `${w.current.weatherDesc}，湿度 ${w.current.humidity}%，风速 ${w.current.windSpeed}km/h`;
-      if (w.current.hasAlert) badge.classList.add('alert');
-    }));
+    }
+
+    const workers = Array.from({ length: Math.min(CONCURRENCY, cards.length) }, () => worker());
+    await Promise.all(workers);
+
+    this._lastStatus = { live, cached, failed, total: cards.length };
+  },
+
+  // 渲染实时状态徽章（注入到指定元素）
+  renderStatus(elId) {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    const s = this._lastStatus;
+    if (!s) { el.innerHTML = `<span class="rt-status-pill unknown">📡 实时数据加载中…</span>`; return; }
+    const ok = s.live + s.cached;
+    const cls = s.failed === 0 ? 'ok' : (ok > s.failed ? 'partial' : 'down');
+    el.innerHTML = `<span class="rt-status-pill ${cls}">📡 实时天气 ${ok}/${s.total} 城已加载` +
+      (s.failed > 0 ? ` · ${s.failed} 城暂不可用` : '') + `</span>`;
   },
 };

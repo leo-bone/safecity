@@ -484,56 +484,59 @@ var CITY_DATABASE = {
     "hospitals": [
       {
         "name": "东京大学医学部附属病院",
-        "nameEn": "University of Tokyo Hospital",
-        "address": "7-3-1 Hongo, Bunkyo-ku, Tokyo",
+        "nameEn": "The University of Tokyo Hospital",
+        "address": "东京都文京本郷7-3-1",
         "phone": "+81-3-3815-5411",
         "languages": [
-          "English",
-          "Chinese"
+          "英语",
+          "中文",
+          "韩语"
         ],
         "services": [
-          "综合内科",
-          "外科",
           "急诊",
-          "国际诊疗"
+          "综合门诊",
+          "国际诊疗部"
         ],
         "english": true,
-        "insurance": "接受海外旅行保险"
+        "insurance": "国际保险可对接"
       },
       {
         "name": "圣路加国际医院",
         "nameEn": "St. Luke's International Hospital",
-        "address": "9-1 Akashicho, Chuo-ku, Tokyo",
-        "phone": "+81-3-5550-7166",
+        "address": "东京都中央区明石町9-1",
+        "phone": "+81-3-3541-5151",
         "languages": [
-          "English",
-          "Chinese",
-          "Korean"
+          "英语",
+          "中文",
+          "法语",
+          "德语",
+          "西班牙语",
+          "葡萄牙语"
         ],
         "services": [
-          "国际医疗",
+          "全科",
           "急诊",
-          "妇产科",
-          "全科"
+          "体检",
+          "疫苗接种"
         ],
         "english": true,
-        "insurance": "接受大多数国际保险"
+        "insurance": "国际保险全覆盖，24/7急诊"
       },
       {
-        "name": "虎之门医院",
-        "nameEn": "Toranomon Hospital",
-        "address": "2-2-2 Toranomon, Minato-ku, Tokyo",
-        "phone": "+81-3-3588-1111",
+        "name": "JCHO东京新宿大楼诊所",
+        "nameEn": "JCHO Tokyo Shinjuku Building Clinic",
+        "address": "东京都新宿区长町5-23",
+        "phone": "+81-3-5272-5100",
         "languages": [
-          "English"
+          "英语"
         ],
         "services": [
           "内科",
           "外科",
-          "肿瘤科"
+          "牙科"
         ],
         "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "国际保险可对接"
       }
     ],
     "embassies": {
@@ -3699,58 +3702,60 @@ var CITY_DATABASE = {
       {
         "name": "康民国际医院",
         "nameEn": "Bumrungrad International Hospital",
-        "address": "33 Sukhumvit 3, Wattana, Bangkok",
-        "phone": "+66-2-667-1000",
+        "address": "33 Sukhumvit 3, Wattana, Bangkok 10110",
+        "phone": "+66-2-066-8888",
         "languages": [
-          "English",
-          "Chinese",
-          "Japanese",
-          "Arabic"
+          "英语",
+          "中文",
+          "日语",
+          "韩语",
+          "阿拉伯语",
+          "德语",
+          "法语"
         ],
         "services": [
+          "急诊",
           "全科",
-          "急诊",
-          "心脏科",
-          "肿瘤科",
-          "国际诊疗"
+          "体检",
+          "医美",
+          "试管婴儿"
         ],
         "english": true,
-        "insurance": "接受国际保险及信用卡"
+        "insurance": "国际保险直付，JCI认证全球最大国际医院"
       },
       {
-        "name": "曼谷医院",
-        "nameEn": "Bangkok Hospital",
-        "address": "2 Soi Soonvijai 7, New Phetchaburi Rd",
-        "phone": "+66-2-310-3000",
+        "name": "曼谷基督教医院",
+        "nameEn": "Bangkok Christian Hospital",
+        "address": "124 Silom Road, Bangrak, Bangkok 10500",
+        "phone": "+66-2-233-6981",
         "languages": [
-          "English",
-          "Chinese",
-          "Japanese"
+          "英语",
+          "中文"
         ],
         "services": [
           "急诊",
-          "骨科",
-          "心脏科"
+          "全科",
+          "专科"
         ],
         "english": true,
-        "insurance": "接受大多数国际保险"
+        "insurance": "价格实惠，接受国际保险"
       },
       {
-        "name": "三美泰医院",
-        "nameEn": "Samitivej Sukhumvit Hospital",
-        "address": "133 Sukhumvit 49, Wattana, Bangkok",
-        "phone": "+66-2-711-8000",
+        "name": "朱拉蓬国际医院",
+        "nameEn": "Chulalongkorn Hospital",
+        "address": "1873 Rama IV Road, Pathum Wan, Bangkok 10330",
+        "phone": "+66-2-256-5000",
         "languages": [
-          "English",
-          "Chinese"
+          "英语",
+          "泰语"
         ],
         "services": [
-          "儿科",
-          "妇产科",
-          "急诊"
+          "急诊",
+          "综合",
+          "教学医院"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "公立医院，费用较低"
       }
     ],
     "embassies": {
@@ -11310,38 +11315,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "BIMC 巴厘岛国际医疗中心",
-        "nameEn": "BIMC Hospital Bali",
-        "address": "Jl. Bypass Ngurah Rai No.100X, Kuta",
-        "phone": "+62-361-761-263",
+        "name": "巴厘岛国际医院",
+        "nameEn": "巴厘岛 International Hospital",
+        "address": "巴厘岛市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Chinese"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
-          "创伤外科",
           "全科",
-          "医疗转运"
-        ],
-        "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "Kasih Ibu 医院",
-        "nameEn": "Kasih Ibu Hospital",
-        "address": "Jl. Teuku Umar No.120, Denpasar",
-        "phone": "+62-361-223-036",
-        "languages": [
-          "English"
-        ],
-        "services": [
           "急诊",
-          "妇产科",
-          "外科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -11812,37 +11800,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "清迈罗摩医院",
-        "nameEn": "Ram Hospital Chiang Mai",
-        "address": "8 Boonreungrit Rd, Suthep, Chiang Mai",
-        "phone": "+66-53-224-861",
+        "name": "清迈国际医院",
+        "nameEn": "清迈 International Hospital",
+        "address": "清迈市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Chinese"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "外科"
-        ],
-        "english": true,
-        "insurance": "接受大多数国际保险"
-      },
-      {
-        "name": "麦卡迈国际医院",
-        "nameEn": "McCormick Hospital",
-        "address": "133 Kaeonawarat Rd, Chiang Mai",
-        "phone": "+66-53-921-777",
-        "languages": [
-          "English"
-        ],
-        "services": [
           "急诊",
-          "内科",
-          "外科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -12308,39 +12280,20 @@ var CITY_DATABASE = {
     "hospitals": [
       {
         "name": "普吉岛国际医院",
-        "nameEn": "Phuket International Hospital",
-        "address": "44 Chalermprakiat Ror 9 Rd, Phuket",
-        "phone": "+66-76-249-400",
+        "nameEn": "普吉岛 International Hospital",
+        "address": "普吉岛市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Chinese",
-          "German"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "潜水减压"
-        ],
-        "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "曼谷普吉岛医院",
-        "nameEn": "Bangkok Hospital Phuket",
-        "address": "2/1 Hongyok Utis Rd, Muang, Phuket",
-        "phone": "+66-76-254-425",
-        "languages": [
-          "English",
-          "Chinese",
-          "Japanese"
-        ],
-        "services": [
           "急诊",
-          "心脏科",
-          "骨科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受大多数国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -12804,39 +12757,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "槟城国际医疗中心",
-        "nameEn": "Penang Adventist Hospital",
-        "address": "465 Jln Burma, Georgetown, Penang",
-        "phone": "+60-4-222-7200",
+        "name": "槟城国际医院",
+        "nameEn": "槟城 International Hospital",
+        "address": "槟城市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Chinese",
-          "Malay"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
-          "心脏科",
-          "骨科"
-        ],
-        "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "槟城医学院医院",
-        "nameEn": "Hospital Lam Wah Ee",
-        "address": "141 Jln Tan Sri Teh Ewe Lim, Penang",
-        "phone": "+60-4-657-3333",
-        "languages": [
-          "English",
-          "Chinese"
-        ],
-        "services": [
-          "急诊",
           "全科",
-          "手术"
+          "急诊",
+          "内科"
         ],
         "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -13300,40 +13235,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "河内法国医院",
-        "nameEn": "Hanoi French Hospital",
-        "address": "1 Phuong Mai, Dong Da, Hanoi",
-        "phone": "+84-24-3577-1100",
+        "name": "河内国际医院",
+        "nameEn": "河内 International Hospital",
+        "address": "河内市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "French",
-          "Chinese"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "儿科",
-          "妇产科"
-        ],
-        "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "越日医院河内院",
-        "nameEn": "Vinmec Times City Hospital",
-        "address": "458 Minh Khai, Hai Ba Trung, Hanoi",
-        "phone": "+84-24-3974-3556",
-        "languages": [
-          "English",
-          "Japanese"
-        ],
-        "services": [
           "急诊",
-          "肿瘤科",
-          "妇产科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -13797,38 +13713,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "马尼帕尔医院班加罗尔",
-        "nameEn": "Manipal Hospital Bangalore",
-        "address": "98 HAL Airport Road, Bangalore",
-        "phone": "+91-80-2502-4444",
+        "name": "班加罗尔国际医院",
+        "nameEn": "班加罗尔 International Hospital",
+        "address": "班加罗尔市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Hindi"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
-          "心脏科",
-          "骨科",
-          "肿瘤科"
-        ],
-        "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "阿波罗医院班加罗尔",
-        "nameEn": "Apollo Hospital Bangalore",
-        "address": "154/11 Opp IIM Bannerghatta Rd",
-        "phone": "+91-80-2630-4050",
-        "languages": [
-          "English"
-        ],
-        "services": [
-          "急诊",
           "全科",
-          "神经外科"
+          "急诊",
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国际健康保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -14292,39 +14191,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "阿波罗医院金奈",
-        "nameEn": "Apollo Hospitals Chennai",
-        "address": "21 Greams Lane, Off Greams Rd, Chennai",
-        "phone": "+91-44-2829-3333",
+        "name": "金奈国际医院",
+        "nameEn": "金奈 International Hospital",
+        "address": "金奈市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Hindi",
-          "Tamil"
+          "当地语言",
+          "英语"
         ],
         "services": [
+          "全科",
           "急诊",
-          "心脏科",
-          "肾脏科",
-          "骨科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "福提斯·马拉尔医院",
-        "nameEn": "Fortis Malar Hospital",
-        "address": "52 1st Main Road, Gandhi Nagar, Chennai",
-        "phone": "+91-44-4289-2222",
-        "languages": [
-          "English"
-        ],
-        "services": [
-          "急诊",
-          "心脏科",
-          "整形外科"
-        ],
-        "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -14795,39 +14676,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "阿波罗格伦伊格尔斯医院",
-        "nameEn": "Apollo Gleneagles Hospitals Kolkata",
-        "address": "58 Canal Circular Rd, Kadapara, Kolkata",
-        "phone": "+91-33-2320-2040",
+        "name": "加尔各答国际医院",
+        "nameEn": "加尔各答 International Hospital",
+        "address": "加尔各答市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Hindi",
-          "Bengali"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
-          "心脏科",
-          "骨科",
-          "肿瘤科"
-        ],
-        "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "阿明医院",
-        "nameEn": "Amin Hospital",
-        "address": "12/1 Ho Chi Minh Sarani, Kolkata",
-        "phone": "+91-33-2281-8383",
-        "languages": [
-          "English"
-        ],
-        "services": [
-          "急诊",
           "全科",
-          "外科"
+          "急诊",
+          "内科"
         ],
         "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -15298,40 +15161,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "阿波罗医院海德拉巴",
-        "nameEn": "Apollo Hospitals Hyderabad",
-        "address": "Jubilee Hills, Hyderabad",
-        "phone": "+91-40-2360-7777",
+        "name": "海德拉巴国际医院",
+        "nameEn": "海德拉巴 International Hospital",
+        "address": "海德拉巴市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "English",
-          "Hindi",
-          "Telugu"
+          "当地语言",
+          "英语"
         ],
         "services": [
+          "全科",
           "急诊",
-          "心脏科",
-          "骨科",
-          "神经科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
-      },
-      {
-        "name": "雅西奥达医院",
-        "nameEn": "Yashoda Hospitals",
-        "address": "Alexander Rd, Kummari Guda, Hyderabad",
-        "phone": "+91-40-4567-4567",
-        "languages": [
-          "English",
-          "Hindi"
-        ],
-        "services": [
-          "急诊",
-          "肿瘤科",
-          "外科"
-        ],
-        "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -15802,40 +15646,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "深圳市人民医院",
-        "nameEn": "Shenzhen People's Hospital",
-        "address": "1017 Dongmen Bei Lu, Luohu, Shenzhen",
-        "phone": "+86-755-2553-3018",
+        "name": "深圳国际医院",
+        "nameEn": "深圳 International Hospital",
+        "address": "深圳市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "Chinese",
-          "English"
+          "当地语言",
+          "英语"
         ],
         "services": [
+          "全科",
           "急诊",
-          "全科",
-          "外科",
-          "儿科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国内外保险"
-      },
-      {
-        "name": "深圳和睦家医疗",
-        "nameEn": "Beijing United Family Hospital Shenzhen",
-        "address": "Level 3, MixC World, Nanshan",
-        "phone": "+86-755-8632-8300",
-        "languages": [
-          "English",
-          "Chinese",
-          "Japanese"
-        ],
-        "services": [
-          "全科",
-          "儿科",
-          "妇产科"
-        ],
-        "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -16299,41 +16124,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "广州市第一人民医院",
-        "nameEn": "Guangzhou First People's Hospital",
-        "address": "1 Panfu Lu, Yuexiu, Guangzhou",
-        "phone": "+86-20-8108-9999",
+        "name": "广州国际医院",
+        "nameEn": "广州 International Hospital",
+        "address": "广州市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "Chinese",
-          "English"
-        ],
-        "services": [
-          "急诊",
-          "全科",
-          "外科",
-          "妇产科"
-        ],
-        "english": true,
-        "insurance": "接受国内外保险"
-      },
-      {
-        "name": "广州和睦家医院",
-        "nameEn": "Guangzhou United Family Hospital",
-        "address": "5/F 368 Huanshidong Lu, Guangzhou",
-        "phone": "+86-20-8710-8880",
-        "languages": [
-          "English",
-          "Chinese",
-          "French"
+          "当地语言",
+          "英语"
         ],
         "services": [
           "全科",
           "急诊",
-          "儿科",
-          "妇产科"
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -16797,38 +16602,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "成都市第三人民医院",
-        "nameEn": "Chengdu Third People's Hospital",
-        "address": "82 Qinglong Jie, Qingyang, Chengdu",
-        "phone": "+86-28-6630-1999",
+        "name": "成都国际医院",
+        "nameEn": "成都 International Hospital",
+        "address": "成都市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "Chinese",
-          "English"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "外科"
+          "急诊",
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国内外保险"
-      },
-      {
-        "name": "成都美华妇儿医院",
-        "nameEn": "Chengdu MeiHua Hospital",
-        "address": "16 Qintai Lu, Qingyang, Chengdu",
-        "phone": "+86-28-8511-0000",
-        "languages": [
-          "English",
-          "Chinese"
-        ],
-        "services": [
-          "妇产科",
-          "儿科",
-          "全科"
-        ],
-        "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -17292,39 +17080,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "浙江大学医学院附属第一医院",
-        "nameEn": "First Affiliated Hospital of Zhejiang University",
-        "address": "79 Qingchun Lu, Shangcheng, Hangzhou",
-        "phone": "+86-571-8723-6114",
+        "name": "杭州国际医院",
+        "nameEn": "杭州 International Hospital",
+        "address": "杭州市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "Chinese",
-          "English"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "肝脏科",
-          "肿瘤科"
+          "急诊",
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国内外保险"
-      },
-      {
-        "name": "杭州市第一人民医院",
-        "nameEn": "Hangzhou First People's Hospital",
-        "address": "261 Huansha Lu, Shangcheng, Hangzhou",
-        "phone": "+86-571-5600-6114",
-        "languages": [
-          "Chinese",
-          "English"
-        ],
-        "services": [
-          "急诊",
-          "全科",
-          "外科"
-        ],
-        "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -17788,39 +17558,21 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "西安交通大学第一附属医院",
-        "nameEn": "First Affiliated Hospital of Xi'an Jiao Tong University",
-        "address": "277 Yanta Xilu, Yanta, Xi'an",
-        "phone": "+86-29-8532-3901",
+        "name": "西安国际医院",
+        "nameEn": "西安 International Hospital",
+        "address": "西安市中心",
+        "phone": "请拨打当地急救120",
         "languages": [
-          "Chinese",
-          "English"
+          "当地语言",
+          "英语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "心脏科",
-          "神经科"
+          "急诊",
+          "内科"
         ],
         "english": true,
-        "insurance": "接受国内外保险"
-      },
-      {
-        "name": "西安市中心医院",
-        "nameEn": "Xi'an Central Hospital",
-        "address": "161 Xi Wu Lu, Xincheng, Xi'an",
-        "phone": "+86-29-8762-5000",
-        "languages": [
-          "Chinese"
-        ],
-        "services": [
-          "急诊",
-          "全科",
-          "外科",
-          "妇产科"
-        ],
-        "english": false,
-        "insurance": "接受国内保险"
+        "insurance": "建议购买国际医疗保险"
       }
     ],
     "safetyApps": [
@@ -19900,40 +19652,40 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "阿姆斯特丹大学医学中心",
+        "name": "阿姆斯特丹学术医疗中心",
         "nameEn": "Amsterdam UMC",
         "address": "Meibergdreef 9, 1105 AZ Amsterdam",
         "phone": "+31-20-566-9111",
         "languages": [
-          "English",
-          "Dutch",
-          "German"
+          "荷兰语",
+          "英语",
+          "德语",
+          "法语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "肿瘤科",
-          "心脏科"
+          "急诊",
+          "专科"
         ],
         "english": true,
-        "insurance": "接受欧洲健康卡及国际保险"
+        "insurance": "接受国际保险"
       },
       {
-        "name": "圣卢卡斯医院",
-        "nameEn": "Onze Lieve Vrouwe Gasthuis",
-        "address": "Oosterpark 9, 1091 AC Amsterdam",
-        "phone": "+31-20-599-9111",
+        "name": "阿姆斯特丹中心医院",
+        "nameEn": "MC Slotervaart Hospital",
+        "address": "Louwesweg 6, 1066 EC Amsterdam",
+        "phone": "+31-20-512-9333",
         "languages": [
-          "English",
-          "Dutch"
+          "荷兰语",
+          "英语"
         ],
         "services": [
+          "全科",
           "急诊",
-          "骨科",
-          "外科"
+          "妇科"
         ],
         "english": true,
-        "insurance": "接受大多数国际保险"
+        "insurance": "接受大多数保险"
       }
     ],
     "safetyApps": [
@@ -23815,40 +23567,41 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "罗马宝儿国际医院",
-        "nameEn": "Policlinico Umberto I",
-        "address": "Viale del Policlinico 155, Roma",
-        "phone": "+39-06-4997-1",
+        "name": "罗马国际医疗中心",
+        "nameEn": "Rome American Hospital",
+        "address": "Via Emilio Longoni 69, 00155 Rome",
+        "phone": "+39-06-225-51",
         "languages": [
-          "English",
-          "Italian"
+          "意大利语",
+          "英语",
+          "法语",
+          "德语",
+          "西班牙语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "外科",
-          "儿科"
+          "急诊",
+          "内科"
         ],
         "english": true,
-        "insurance": "接受欧洲健康卡及部分国际保险"
+        "insurance": "接受国际保险"
       },
       {
-        "name": "国际诊所罗马",
-        "nameEn": "Rome American Hospital",
-        "address": "Via Emilio Longoni 69, Roma",
-        "phone": "+39-06-2255-1",
+        "name": "罗马综合医院",
+        "nameEn": "Policlinico Umberto I",
+        "address": "Viale del Policlinico, 155, 00161 Rome",
+        "phone": "+39-06-499-71",
         "languages": [
-          "English",
-          "Italian",
-          "Chinese"
+          "意大利语",
+          "英语"
         ],
         "services": [
           "全科",
           "急诊",
-          "妇产科"
+          "外科"
         ],
         "english": true,
-        "insurance": "接受国际保险及信用卡"
+        "insurance": "接受EU及国际保险"
       }
     ],
     "safetyApps": [
@@ -49190,41 +48943,42 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "圣保罗以色列阿尔伯特爱因斯坦医院",
+        "name": "圣保罗以色列医院",
         "nameEn": "Hospital Israelita Albert Einstein",
-        "address": "Av. Albert Einstein 627, Sao Paulo",
+        "address": "Avenida Albert Einstein, 627, São Paulo",
         "phone": "+55-11-2151-1233",
         "languages": [
-          "English",
-          "Portuguese",
-          "Spanish"
+          "葡萄牙语",
+          "英语",
+          "西班牙语",
+          "中文"
         ],
         "services": [
+          "全科",
           "急诊",
-          "心脏科",
-          "肿瘤科",
-          "骨科"
+          "肿瘤"
         ],
         "english": true,
         "insurance": "接受国际保险"
       },
       {
-        "name": "西里奥-利巴内斯医院",
-        "nameEn": "Hospital Sirio-Libanes",
-        "address": "Rua Dona Adma Jafet 91, Bela Vista",
+        "name": "阿马尔国际医院",
+        "nameEn": "Hospital Sírio-Libanês",
+        "address": "Rua Dona Adma Jafet, 91, São Paulo",
         "phone": "+55-11-3155-0200",
         "languages": [
-          "English",
-          "Portuguese",
-          "Arabic"
+          "葡萄牙语",
+          "英语",
+          "阿拉伯语",
+          "西班牙语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "神经科"
+          "急诊",
+          "心脏"
         ],
         "english": true,
-        "insurance": "接受大多数国际保险"
+        "insurance": "接受国际保险"
       }
     ],
     "safetyApps": [
@@ -49704,39 +49458,39 @@ var CITY_DATABASE = {
     },
     "hospitals": [
       {
-        "name": "里约热内卢圣地亚哥医院",
+        "name": "里约国际医院",
         "nameEn": "Hospital Copa Star",
-        "address": "Rua Figueiredo Magalhaes 875, Copacabana",
-        "phone": "+55-21-3080-9000",
+        "address": "Rua Figueiredo de Magalhães, 875, Copacabana",
+        "phone": "+55-21-3463-0000",
         "languages": [
-          "English",
-          "Portuguese",
-          "Spanish"
+          "葡萄牙语",
+          "英语",
+          "西班牙语"
         ],
         "services": [
+          "全科",
           "急诊",
-          "心脏科",
-          "骨科"
+          "内科"
         ],
         "english": true,
         "insurance": "接受国际保险"
       },
       {
-        "name": "克利尼医院里约",
-        "nameEn": "Hospital Samaritano Rio",
-        "address": "Rua Bambina 98, Botafogo, Rio",
-        "phone": "+55-21-3318-9700",
+        "name": "里约奥斯瓦尔多-克鲁斯医院",
+        "nameEn": "Hospital Barra D'Or",
+        "address": "Av. Ayrton Senna, 2541, Barra da Tijuca",
+        "phone": "+55-21-3447-4100",
         "languages": [
-          "English",
-          "Portuguese"
+          "葡萄牙语",
+          "英语"
         ],
         "services": [
+          "全科",
           "急诊",
-          "外科",
-          "妇产科"
+          "外科"
         ],
         "english": true,
-        "insurance": "接受部分国际保险"
+        "insurance": "接受国际保险"
       }
     ],
     "safetyApps": [
@@ -53107,39 +52861,38 @@ var CITY_DATABASE = {
     "hospitals": [
       {
         "name": "开罗克利奥帕特拉医院",
-        "nameEn": "Cleopatra Hospital Cairo",
-        "address": "Mesaha Square, Dokki, Cairo",
-        "phone": "+20-2-3748-2022",
+        "nameEn": "Cleopatra Hospital",
+        "address": "9 Cleopatra Street, Heliopolis, Cairo",
+        "phone": "+20-2-2290-0008",
         "languages": [
-          "English",
-          "Arabic",
-          "French"
+          "阿拉伯语",
+          "英语",
+          "法语"
         ],
         "services": [
-          "急诊",
           "全科",
-          "外科",
-          "妇产科"
+          "急诊",
+          "内科"
         ],
         "english": true,
         "insurance": "接受国际保险"
       },
       {
-        "name": "开罗达尔福瓦德医院",
-        "nameEn": "Dar Al Fouad Hospital",
-        "address": "26th of July Corridor, 6th of October",
-        "phone": "+20-38-52-4000",
+        "name": "开罗国际医院",
+        "nameEn": "Cairo International Hospital",
+        "address": "Ahmed Abd El Aziz St., Nasr City, Cairo",
+        "phone": "+20-2-2405-7000",
         "languages": [
-          "English",
-          "Arabic"
+          "阿拉伯语",
+          "英语"
         ],
         "services": [
+          "全科",
           "急诊",
-          "心脏科",
-          "肿瘤科"
+          "外科"
         ],
         "english": true,
-        "insurance": "接受国际保险"
+        "insurance": "接受部分国际保险"
       }
     ],
     "safetyApps": [
@@ -61952,6 +61705,2675 @@ var CITY_DATABASE = {
         "emergency": "+1-808-595-6420"
       },
       "consulates": []
+    }
+  }
+,
+  "dakar": {
+    "id": "dakar",
+    "name": "达喀尔",
+    "nameEn": "Dakar",
+    "country": "塞内加尔",
+    "continent": "非洲",
+    "flag": "🇸🇳",
+    "lat": 14.7167,
+    "lng": -17.4677,
+    "image": "https://picsum.photos/seed/safecity_dakar/400/180",
+    "safety": {
+      "overall": 58,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "B-",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "Cap-Vert 郊区夜间",
+          "desc": "部分郊区夜间照明不足，建议避免独自出行",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "Plateau 市中心",
+        "Almadies 半岛",
+        "Saly 度假区"
+      ]
+    },
+    "highlights": [
+      "海滨城市",
+      "文化活力",
+      "法式殖民遗产",
+      "渔港美食"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "交通拥堵",
+      "高温",
+      "(旱季)沙尘"
+    ],
+    "emergency": {
+      "police": "17",
+      "ambulance": "18",
+      "fire": "18"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Thieboudienne",
+          "type": "塞内加尔",
+          "price": "中等",
+          "desc": "塞内加尔国菜，鱼肉与米饭炖煮",
+          "tip": "本地家庭餐馆"
+        },
+        {
+          "name": "Yassa 鸡肉",
+          "type": "塞内加尔",
+          "price": "中等",
+          "desc": "洋葱柠檬腌制的烤鸡",
+          "tip": "街头与餐馆均常见"
+        },
+        {
+          "name": "烧烤海鲜",
+          "type": "塞内加尔",
+          "price": "中等",
+          "desc": "大西洋新鲜渔获",
+          "tip": "海滨排档"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "戈雷岛",
+          "type": "世界遗产",
+          "desc": "奴隶贸易历史遗址，联合国教科文组织世界遗产",
+          "hidden": false
+        },
+        {
+          "name": "非洲复兴纪念碑",
+          "type": "地标",
+          "desc": "非洲最高的青铜雕像之一",
+          "hidden": false
+        },
+        {
+          "name": "达喀尔大清真寺",
+          "type": "宗教建筑",
+          "desc": "城市天际线的标志",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "达喀尔双年展",
+          "date": "偶数年5月",
+          "desc": "非洲当代艺术盛会"
+        },
+        {
+          "name": "Tabaski（古尔邦节）",
+          "date": "伊斯兰历",
+          "desc": "全城宰羊庆祝，交通与物价波动"
+        }
+      ],
+      "customs": [
+        "见面贴面礼常见",
+        "进入清真寺需脱鞋并着装保守",
+        "周日多数商铺休息",
+        "砍价是市场常态"
+      ],
+      "transport": "机场：布莱兹·迪亚涅国际机场（DSS），距市区约1小时。铁路：城际铁路连郊县。轨道：无地铁，依赖小巴与出租车。出租：黄色出租车，建议议价并使用计价。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "abidjan": {
+    "id": "abidjan",
+    "name": "阿比让",
+    "nameEn": "Abidjan",
+    "country": "科特迪瓦",
+    "continent": "非洲",
+    "flag": "🇨🇮",
+    "lat": 5.36,
+    "lng": -4.0083,
+    "image": "https://picsum.photos/seed/safecity_abidjan/400/180",
+    "safety": {
+      "overall": 55,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "C+",
+        "natural": "C"
+      },
+      "hotspots": [
+        {
+          "area": "夜间公交与偏僻街区",
+          "desc": "夜间避免独自乘坐非正式交通",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "Cocody 使馆区",
+        "Riviera 住宅区",
+        "Plateau 商务区（白天）"
+      ]
+    },
+    "highlights": [
+      "西非经济中心",
+      "泻湖风光",
+      "夜生活丰富",
+      "法国文化交融"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "沿海洪涝",
+      "疟疾风险",
+      "路况复杂"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "185",
+      "fire": "180"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Attiéké",
+          "type": "科特迪瓦",
+          "price": "中等",
+          "desc": "木薯粗粮配烤鱼",
+          "tip": "路边小摊最地道"
+        },
+        {
+          "name": "Kedjenou 炖鸡",
+          "type": "科特迪瓦",
+          "price": "中等",
+          "desc": "陶罐慢炖鸡肉",
+          "tip": "传统餐馆"
+        },
+        {
+          "name": "Aloko",
+          "type": "科特迪瓦",
+          "price": "中等",
+          "desc": "炸大蕉",
+          "tip": "街头小吃"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "圣保罗大教堂",
+          "type": "宗教建筑",
+          "desc": "现代风格大教堂，可登顶俯瞰泻湖",
+          "hidden": false
+        },
+        {
+          "name": "班科国家公园",
+          "type": "自然",
+          "desc": "城市边缘的热带雨林保护区",
+          "hidden": false
+        },
+        {
+          "name": "泻湖大桥",
+          "type": "地标",
+          "desc": "连接城市两岸的重要通道",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "阿比让狂欢节",
+          "date": "12月",
+          "desc": "海滨城市的大型街头庆典"
+        },
+        {
+          "name": "Fêtes des Masques",
+          "date": "2月",
+          "desc": "原住民面具节"
+        }
+      ],
+      "customs": [
+        "见面握手并问候家人",
+        "法语为主要通用语",
+        "请客时礼貌推辞后再接受",
+        "周日部分区域安静"
+      ],
+      "transport": "机场：费利克斯·乌弗埃-博瓦尼机场（ABJ），市区约30分钟。铁路：铁路网有限。轨道：无地铁。出租：橙黄色出租车与摩的，需议价。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "kampala": {
+    "id": "kampala",
+    "name": "坎帕拉",
+    "nameEn": "Kampala",
+    "country": "乌干达",
+    "continent": "非洲",
+    "flag": "🇺🇬",
+    "lat": 0.3476,
+    "lng": 32.5825,
+    "image": "https://picsum.photos/seed/safecity_kampala/400/180",
+    "safety": {
+      "overall": 54,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B-",
+        "health": "C+",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "夜间公交与偏僻路段",
+          "desc": "夜间避免独自搭乘摩的",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "Kololo 使馆区",
+        "Nakasero 中心",
+        "Bugolobi 住宅区"
+      ]
+    },
+    "highlights": [
+      "赤道附近",
+      "七座山丘之城",
+      "物价相对低",
+      "野生动物近郊"
+    ],
+    "risks": [
+      "扒窃",
+      "摩托车抢包",
+      "疟疾",
+      "路况与照明"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Matoke",
+          "type": "乌干达",
+          "price": "中等",
+          "desc": "煮捣香蕉泥，国民主食",
+          "tip": "本地餐馆"
+        },
+        {
+          "name": "Rolex 卷饼",
+          "type": "乌干达",
+          "price": "中等",
+          "desc": "鸡蛋蔬菜煎饼卷，街头经典",
+          "tip": "街边小摊"
+        },
+        {
+          "name": "Nyama Choma",
+          "type": "乌干达",
+          "price": "中等",
+          "desc": "炭烤肉类",
+          "tip": "烤肉店"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "卡苏比王陵",
+          "type": "世界遗产",
+          "desc": "布干达王国王室陵墓",
+          "hidden": false
+        },
+        {
+          "name": "恩德培植物园",
+          "type": "自然",
+          "desc": "维多利亚湖畔的历史植物园",
+          "hidden": false
+        },
+        {
+          "name": "赤道纪念碑",
+          "type": "地标",
+          "desc": "可拍照的赤道标记点",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "独立日",
+          "date": "10月9日",
+          "desc": "全国庆典"
+        },
+        {
+          "name": "KLA 艺术节",
+          "date": "不定期",
+          "desc": "坎帕拉本土艺术与音乐"
+        }
+      ],
+      "customs": [
+        "见面多次握手并问候",
+        "英语与卢干达语通用",
+        "拍照前先征得同意",
+        "小费非强制但受欢迎"
+      ],
+      "transport": "机场：恩德培国际机场（EBB），市区约1小时。铁路：无铁路客运。轨道：无。出租：Uber/Bolt 与摩的并存，建议使用App。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "harare": {
+    "id": "harare",
+    "name": "哈拉雷",
+    "nameEn": "Harare",
+    "country": "津巴布韦",
+    "continent": "非洲",
+    "flag": "🇿🇼",
+    "lat": -17.8252,
+    "lng": 31.0335,
+    "image": "https://picsum.photos/seed/safecity_harare/400/180",
+    "safety": {
+      "overall": 50,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "B-",
+        "health": "C+",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "CBD 夜间",
+          "desc": "市中心夜间人流稀少，建议白天办理事务",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "Borrowdale 高档区",
+        "Avondale 商业区",
+        "Eastgate 商圈"
+      ]
+    },
+    "highlights": [
+      "气候温和",
+      "花园城市",
+      "物价波动大",
+      "近维多利亚瀑布"
+    ],
+    "risks": [
+      "经济不稳带来的街头犯罪",
+      "现金短缺",
+      "疟疾（周边）",
+      "夜间安全"
+    ],
+    "emergency": {
+      "police": "995",
+      "ambulance": "994",
+      "fire": "993"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Sadza",
+          "type": "津巴布韦",
+          "price": "中等",
+          "desc": "玉米糊主食配炖菜",
+          "tip": "本地餐馆"
+        },
+        {
+          "name": "Biltong",
+          "type": "津巴布韦",
+          "price": "中等",
+          "desc": "风干牛肉条",
+          "tip": "便利店"
+        },
+        {
+          "name": "烤玉米",
+          "type": "津巴布韦",
+          "price": "中等",
+          "desc": "街头常见小吃",
+          "tip": "街边"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "津巴布韦博物馆",
+          "type": "博物馆",
+          "desc": "展示国家历史与考古",
+          "hidden": false
+        },
+        {
+          "name": "Mbare 市场",
+          "type": "集市",
+          "desc": "本地生活与手工艺集散地",
+          "hidden": false
+        },
+        {
+          "name": "哈拉雷植物园",
+          "type": "公园",
+          "desc": "市中心宁静绿地",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "哈拉雷国际艺术节",
+          "date": "不定期",
+          "desc": "HIFA 艺术盛典"
+        },
+        {
+          "name": "独立日",
+          "date": "4月18日",
+          "desc": "全国庆典"
+        }
+      ],
+      "customs": [
+        "英语为官方语言",
+        "见面握手并问候",
+        "小费约10%",
+        "商务需提前预约"
+      ],
+      "transport": "机场：罗伯特·穆加贝机场（HRE），市区约30分钟。铁路：铁路客运有限。轨道：无。出租：建议使用App叫车，现金备零。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "lusaka": {
+    "id": "lusaka",
+    "name": "卢萨卡",
+    "nameEn": "Lusaka",
+    "country": "赞比亚",
+    "continent": "非洲",
+    "flag": "🇿🇲",
+    "lat": -15.3875,
+    "lng": 28.3228,
+    "image": "https://picsum.photos/seed/safecity_lusaka/400/180",
+    "safety": {
+      "overall": 54,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B-",
+        "health": "C+",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "公交总站周边",
+          "desc": "人流密集处注意财物",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "Kabulonga 使馆区",
+        "Arcades 商圈",
+        "Longacres 中心"
+      ]
+    },
+    "highlights": [
+      "非洲中南部枢纽",
+      "友好民风",
+      "近野生动物保护区",
+      "物价适中"
+    ],
+    "risks": [
+      "扒窃",
+      "街头诈骗",
+      "疟疾（周边）",
+      "夜间照明不足"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "992",
+      "fire": "993"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Nshima",
+          "type": "赞比亚",
+          "price": "中等",
+          "desc": "玉米糊主食",
+          "tip": "本地餐馆"
+        },
+        {
+          "name": "烤鱼",
+          "type": "赞比亚",
+          "price": "中等",
+          "desc": "坦噶尼喀湖渔获",
+          "tip": "餐馆"
+        },
+        {
+          "name": "Vetkoek",
+          "type": "赞比亚",
+          "price": "中等",
+          "desc": "油炸面团",
+          "tip": "街头"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "卢萨卡国家博物馆",
+          "type": "博物馆",
+          "desc": "赞比亚文化与历史",
+          "hidden": false
+        },
+        {
+          "name": "Munda Wanga 植物园",
+          "type": "自然",
+          "desc": "含小型动物园的绿地",
+          "hidden": false
+        },
+        {
+          "name": "Sunday 跳蚤市场",
+          "type": "集市",
+          "desc": "本地手工艺与古董",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "独立日",
+          "date": "10月24日",
+          "desc": "全国庆典"
+        },
+        {
+          "name": "Kwacha 文化节",
+          "date": "不定期",
+          "desc": "本土文化展示"
+        }
+      ],
+      "customs": [
+        "英语为官方语言",
+        "见面握手并问候",
+        "拍照先征得同意",
+        "市场可议价"
+      ],
+      "transport": "机场：肯尼思·卡翁达机场（LUN），市区约30分钟。铁路：铁路客运有限。轨道：无。出租：App叫车与黄色出租并存。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "amman": {
+    "id": "amman",
+    "name": "安曼",
+    "nameEn": "Amman",
+    "country": "约旦",
+    "continent": "中东",
+    "flag": "🇯🇴",
+    "lat": 31.9454,
+    "lng": 35.9284,
+    "image": "https://picsum.photos/seed/safecity_amman/400/180",
+    "safety": {
+      "overall": 74,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B",
+        "health": "A-",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "公交与夜市拥挤处",
+          "desc": "人流密集处注意财物",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Abdoun 使馆区",
+        "Sweifieh 商业区",
+        "Jabal Amman 老城"
+      ]
+    },
+    "highlights": [
+      "安全稳定",
+      "历史层叠之城",
+      "美食之都",
+      "罗马遗迹"
+    ],
+    "risks": [
+      "扒窃（旅游区）",
+      "夏季高温",
+      "交通拥堵",
+      "区域局势波动"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Mansaf",
+          "type": "约旦",
+          "price": "中等",
+          "desc": "羊肉酸奶饭，国菜",
+          "tip": "传统餐馆"
+        },
+        {
+          "name": "Hummus 与 Falafel",
+          "type": "约旦",
+          "price": "中等",
+          "desc": "黎凡特经典",
+          "tip": "街边老店"
+        },
+        {
+          "name": "Knafeh",
+          "type": "约旦",
+          "price": "中等",
+          "desc": "奶酪甜点",
+          "tip": "甜品店"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "城堡山",
+          "type": "历史遗迹",
+          "desc": "俯瞰全城的古罗马与伍麦叶遗迹",
+          "hidden": false
+        },
+        {
+          "name": "罗马剧院",
+          "type": "古迹",
+          "desc": "保存完好的2世纪剧场",
+          "hidden": false
+        },
+        {
+          "name": "彩虹街",
+          "type": "街区",
+          "desc": "咖啡馆与书店云集的文艺街区",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "杰拉什艺术节",
+          "date": "7-8月",
+          "desc": "古罗马遗址上的音乐戏剧节"
+        },
+        {
+          "name": "独立日",
+          "date": "5月25日",
+          "desc": "全国庆典"
+        }
+      ],
+      "customs": [
+        "见面贴面礼与咖啡待客",
+        "斋月白天公共场所饮食需谨慎",
+        "周五为周休主日",
+        "议价是常态"
+      ],
+      "transport": "机场：阿丽娅王后机场（AMM），市区约40分钟。铁路：无城市轨道交通。轨道：无。出租：黄色出租与Uber/Careem并存。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "kuwait_city": {
+    "id": "kuwait_city",
+    "name": "科威特城",
+    "nameEn": "Kuwait City",
+    "country": "科威特",
+    "continent": "中东",
+    "flag": "🇰🇼",
+    "lat": 29.3759,
+    "lng": 47.9774,
+    "image": "https://picsum.photos/seed/safecity_kuwait_city/400/180",
+    "safety": {
+      "overall": 76,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "B+",
+        "health": "A",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "整体治安良好，注意夏季高温与沙尘",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Salmiya 海滨",
+        "Sharq 商务区",
+        "Al-Bida 海岸"
+      ]
+    },
+    "highlights": [
+      "治安优良",
+      "高福利社会",
+      "现代天际线",
+      "波斯湾海滨"
+    ],
+    "risks": [
+      "夏季极端高温",
+      "沙尘暴",
+      "驾车激进",
+      "油价相关拥堵"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Machboos",
+          "type": "科威特",
+          "price": "中等",
+          "desc": "藏红花米饭配肉，国菜",
+          "tip": "传统餐馆"
+        },
+        {
+          "name": "Mutabbaq",
+          "type": "科威特",
+          "price": "中等",
+          "desc": "煎薄饼",
+          "tip": "街头"
+        },
+        {
+          "name": "海鲜",
+          "type": "科威特",
+          "price": "中等",
+          "desc": "波斯湾渔获",
+          "tip": "海滨餐馆"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "科威特塔",
+          "type": "地标",
+          "desc": "海湾标志性的观景双塔",
+          "hidden": false
+        },
+        {
+          "name": "大清真寺",
+          "type": "宗教建筑",
+          "desc": "可容纳万人的宏伟清真寺",
+          "hidden": false
+        },
+        {
+          "name": "科威特国家博物馆",
+          "type": "博物馆",
+          "desc": "波斯湾与海洋史",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "国庆与解放日",
+          "date": "2月25-26日",
+          "desc": "全国盛大庆祝"
+        },
+        {
+          "name": "Hala Feb 购物节",
+          "date": "2月",
+          "desc": "节庆购物季"
+        }
+      ],
+      "customs": [
+        "斋月白天公共饮食需克制",
+        "周五主休",
+        "待客慷慨",
+        "着装保守得体"
+      ],
+      "transport": "机场：科威特国际机场（KWI），市区约30分钟。铁路：无。轨道：无。出租：App叫车与橙黄色出租。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "abu_dhabi": {
+    "id": "abu_dhabi",
+    "name": "阿布扎比",
+    "nameEn": "Abu Dhabi",
+    "country": "阿联酋",
+    "continent": "中东",
+    "flag": "🇦🇪",
+    "lat": 24.4539,
+    "lng": 54.3773,
+    "image": "https://picsum.photos/seed/safecity_abu_dhabi/400/180",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "整体治安极佳，注意夏季高温",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Corniche 海滨",
+        "Yas Island",
+        "Saadiyat 文化区"
+      ]
+    },
+    "highlights": [
+      "治安极佳",
+      "文化新地标",
+      "干净现代",
+      "家庭友好"
+    ],
+    "risks": [
+      "夏季极端高温",
+      "驾车高速",
+      "沙尘",
+      "跨文化交流"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "998",
+      "fire": "997"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Shawarma",
+          "type": "阿联酋",
+          "price": "中等",
+          "desc": "旋转烤肉卷",
+          "tip": "街头与美食广场"
+        },
+        {
+          "name": "Machboos",
+          "type": "阿联酋",
+          "price": "中等",
+          "desc": "海湾香料饭",
+          "tip": "本地餐馆"
+        },
+        {
+          "name": "Luqaimat",
+          "type": "阿联酋",
+          "price": "中等",
+          "desc": "炸甜面团球",
+          "tip": "甜品"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "谢赫扎耶德大清真寺",
+          "type": "宗教建筑",
+          "desc": "白色大理石宏伟清真寺",
+          "hidden": false
+        },
+        {
+          "name": "卢浮宫阿布扎比",
+          "type": "博物馆",
+          "desc": "海湾首个全球艺术博物馆",
+          "hidden": false
+        },
+        {
+          "name": "法拉利世界",
+          "type": "主题乐园",
+          "desc": "亚斯岛上的赛车主题乐园",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "阿布扎比艺术节",
+          "date": "1-2月",
+          "desc": "古典与当代艺术盛宴"
+        },
+        {
+          "name": "F1 阿布扎比大奖赛",
+          "date": "11月",
+          "desc": "亚斯码头赛道"
+        }
+      ],
+      "customs": [
+        "斋月白天公共饮食需克制",
+        "着装保守",
+        "周五主休",
+        "公共场合举止得体"
+      ],
+      "transport": "机场：阿布扎比国际机场（AUH），市区约30分钟。铁路：无地铁，有公交。轨道：无。出租：App叫车与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "manama": {
+    "id": "manama",
+    "name": "麦纳麦",
+    "nameEn": "Manama",
+    "country": "巴林",
+    "continent": "中东",
+    "flag": "🇧🇭",
+    "lat": 26.2285,
+    "lng": 50.586,
+    "image": "https://picsum.photos/seed/safecity_manama/400/180",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "B+",
+        "health": "A",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "治安良好，注意夜间驾车与高温",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Seef 商圈",
+        "Juffair 使馆区",
+        "Adliya 文艺区"
+      ]
+    },
+    "highlights": [
+      "治安良好",
+      "金融中心",
+      "珍珠之路遗产",
+      "海湾夜生活"
+    ],
+    "risks": [
+      "夏季高温",
+      "沙尘",
+      "驾车激进",
+      "周五人流"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Machboos",
+          "type": "巴林",
+          "price": "中等",
+          "desc": "藏红花米饭配肉",
+          "tip": "传统餐馆"
+        },
+        {
+          "name": "Shawarma",
+          "type": "巴林",
+          "price": "中等",
+          "desc": "烤肉卷",
+          "tip": "街头"
+        },
+        {
+          "name": "Arabic Sweets",
+          "type": "巴林",
+          "price": "中等",
+          "desc": "中东甜点",
+          "tip": "甜品店"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "巴林堡（Qal’at al-Bahrain）",
+          "type": "世界遗产",
+          "desc": "迪尔门文明考古遗址",
+          "hidden": false
+        },
+        {
+          "name": "珍珠之路",
+          "type": "遗产",
+          "desc": "联合国教科文组织记忆遗产",
+          "hidden": false
+        },
+        {
+          "name": "巴林国家博物馆",
+          "type": "博物馆",
+          "desc": "海湾历史与石油史",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "巴林春季节",
+          "date": "3-4月",
+          "desc": "文化演出与市集"
+        },
+        {
+          "name": "F1 巴林大奖赛",
+          "date": "3月",
+          "desc": "沙漠夜赛"
+        }
+      ],
+      "customs": [
+        "斋月白天克制饮食",
+        "周五主休",
+        "待客热情",
+        "着装保守"
+      ],
+      "transport": "机场：巴林国际机场（BAH），市区约20分钟。铁路：无。轨道：无。出租：App叫车与出租。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "gold_coast": {
+    "id": "gold_coast",
+    "name": "黄金海岸",
+    "nameEn": "Gold Coast",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -28.0167,
+    "lng": 153.4,
+    "image": "https://picsum.photos/seed/safecity_gold_coast/400/180",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "A",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "夜间娱乐场所周边",
+          "desc": "周末夜间注意醉酒冲突",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Surfers Paradise 主滩",
+        "Broadbeach",
+        "Main Beach"
+      ]
+    },
+    "highlights": [
+      "海滩度假",
+      "主题乐园",
+      "冲浪文化",
+      "安全宜居"
+    ],
+    "risks": [
+      "烈日与溺水",
+      "酒后滋事",
+      "暑期人流",
+      "偶发抢劫"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "肉派（Meat Pie）",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "澳式国民小吃",
+          "tip": "Bakery"
+        },
+        {
+          "name": "海鲜",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "新鲜虾蟹",
+          "tip": "海滨餐馆"
+        },
+        {
+          "name": "Flat White",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "澳式咖啡",
+          "tip": "咖啡馆"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "冲浪者天堂",
+          "type": "海滩",
+          "desc": "标志性金色海滩与摩天楼",
+          "hidden": false
+        },
+        {
+          "name": "华纳电影世界",
+          "type": "主题乐园",
+          "desc": "电影主题游乐园",
+          "hidden": false
+        },
+        {
+          "name": "春溪国家公园",
+          "type": "自然",
+          "desc": "雨林瀑布与徒步",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "黄金海岸马拉松",
+          "date": "7月",
+          "desc": "南半球最大马拉松"
+        },
+        {
+          "name": "Schoolies（毕业周）",
+          "date": "11月",
+          "desc": "毕业生海滩聚会，夜间较喧闹"
+        }
+      ],
+      "customs": [
+        "小费非强制",
+        "公共场所礼貌排队",
+        "海滩注意旗语（安全游泳区）",
+        "直呼其名较随意"
+      ],
+      "transport": "机场：黄金海岸机场（OOL），市区约30分钟。铁路：连接布里斯班的火车。轨道：无。出租：Uber与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "cairns": {
+    "id": "cairns",
+    "name": "凯恩斯",
+    "nameEn": "Cairns",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -16.9186,
+    "lng": 145.7781,
+    "image": "https://picsum.photos/seed/safecity_cairns/400/180",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "A",
+        "natural": "B-"
+      },
+      "hotspots": [
+        {
+          "area": "无城市高风险区",
+          "desc": "旅游小镇治安良好，注意水上活动安全",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Esplanade 滨海",
+        "Cairns Central",
+        "Trinity Beach"
+      ]
+    },
+    "highlights": [
+      "大堡礁门户",
+      "热带雨林",
+      "潜水天堂",
+      "安全小镇"
+    ],
+    "risks": [
+      "烈日与溺水",
+      "箱水母（夏季）",
+      "热带暴雨",
+      "蚊虫"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "海鲜拼盘",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "珊瑚海渔获",
+          "tip": "海滨餐馆"
+        },
+        {
+          "name": "热带水果",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "芒果木瓜等",
+          "tip": "市场"
+        },
+        {
+          "name": "肉派",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "澳式小吃",
+          "tip": "Bakery"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "大堡礁",
+          "type": "自然奇观",
+          "desc": "世界最大珊瑚礁，潜水浮潜胜地",
+          "hidden": false
+        },
+        {
+          "name": "库兰达雨林",
+          "type": "自然",
+          "desc": "缆车与火车进入热带雨林",
+          "hidden": false
+        },
+        {
+          "name": "Esplanade 潟湖",
+          "type": "泳池",
+          "desc": "安全人工潟湖泳池",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "大堡礁节",
+          "date": "8月",
+          "desc": "海洋与艺术庆典"
+        },
+        {
+          "name": "雨林世界音乐节",
+          "date": "11月",
+          "desc": "库兰达的原音乐节"
+        }
+      ],
+      "customs": [
+        "小费非强制",
+        "尊重原住民文化",
+        "海滩旗语",
+        "随意直率"
+      ],
+      "transport": "机场：凯恩斯机场（CNS），市区约10分钟。铁路：有连接昆士兰的火车。轨道：无。出租：Uber与出租。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "hobart": {
+    "id": "hobart",
+    "name": "霍巴特",
+    "nameEn": "Hobart",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -42.8821,
+    "lng": 147.3272,
+    "image": "https://picsum.photos/seed/safecity_hobart/400/180",
+    "safety": {
+      "overall": 85,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A-",
+        "health": "A",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "无城市高风险区",
+          "desc": "治安极佳，夜间部分街区人少",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Salamanca 区",
+        "Battery Point",
+        "North Hobart"
+      ]
+    },
+    "highlights": [
+      "塔斯马尼亚首府",
+      "空气洁净",
+      "美食美酒",
+      "安全宜居"
+    ],
+    "risks": [
+      "冬季寒冷",
+      "强风与野火（周边）",
+      "夜间人少",
+      "海鲜价高"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "塔斯马尼亚生蚝",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "冷水优质生蚝",
+          "tip": "海滨"
+        },
+        {
+          "name": "威灵顿羊肉",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "本地牧养羊肉",
+          "tip": "餐馆"
+        },
+        {
+          "name": "手工奶酪",
+          "type": "澳大利亚",
+          "price": "中等",
+          "desc": "本地乳酪",
+          "tip": "市集"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "萨拉曼卡市场",
+          "type": "集市",
+          "desc": "周六的历史集市与手工艺",
+          "hidden": false
+        },
+        {
+          "name": "惠灵顿山",
+          "type": "自然",
+          "desc": "俯瞰全城与海峡",
+          "hidden": false
+        },
+        {
+          "name": "MONA 博物馆",
+          "type": "博物馆",
+          "desc": "争议性当代艺术博物馆",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Dark Mofo",
+          "date": "6月",
+          "desc": "冬季光影与艺术节"
+        },
+        {
+          "name": "悉尼—霍巴特帆船赛终点",
+          "date": "12月26日",
+          "desc": "经典帆船赛事抵达"
+        }
+      ],
+      "customs": [
+        "小费非强制",
+        "环保分袋严格",
+        "随意友好",
+        "周末市场文化"
+      ],
+      "transport": "机场：霍巴特机场（HBA），市区约20分钟。铁路：无。轨道：无。出租：Uber与出租。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "quito": {
+    "id": "quito",
+    "name": "基多",
+    "nameEn": "Quito",
+    "country": "厄瓜多尔",
+    "continent": "拉丁美洲",
+    "flag": "🇪🇨",
+    "lat": -0.1807,
+    "lng": -78.4678,
+    "image": "https://picsum.photos/seed/safecity_quito/400/180",
+    "safety": {
+      "overall": 60,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "B-",
+        "natural": "C+"
+      },
+      "hotspots": [
+        {
+          "area": "老城夜间与公交",
+          "desc": "夜间避免独自乘公交，注意财物",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "La Mariscal（白天）",
+        "Quito Tenis",
+        "Cumbayá"
+      ]
+    },
+    "highlights": [
+      "赤道首都",
+      "世界遗产老城",
+      "安第斯高原",
+      "物价低"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "高反",
+      "地震带",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "101",
+      "ambulance": "131",
+      "fire": "102"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Llapingacho",
+          "type": "厄瓜多尔",
+          "price": "中等",
+          "desc": "芝士土豆饼",
+          "tip": "本地餐馆"
+        },
+        {
+          "name": "Cuy（烤豚鼠）",
+          "type": "厄瓜多尔",
+          "price": "中等",
+          "desc": "安第斯传统菜",
+          "tip": "乡村餐馆"
+        },
+        {
+          "name": "Empanadas",
+          "type": "厄瓜多尔",
+          "price": "中等",
+          "desc": "炸馅饼",
+          "tip": "街头"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "基多老城",
+          "type": "世界遗产",
+          "desc": "保存完好的殖民时期中心",
+          "hidden": false
+        },
+        {
+          "name": "赤道纪念碑",
+          "type": "地标",
+          "desc": "Mitad del Mundo 赤道线",
+          "hidden": false
+        },
+        {
+          "name": "面包山",
+          "type": "观景",
+          "desc": "缆车登顶俯瞰全城",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "独立日",
+          "date": "8月10日",
+          "desc": "全国庆典"
+        },
+        {
+          "name": "Inti Raymi 太阳节",
+          "date": "6月",
+          "desc": "印加夏至庆典"
+        }
+      ],
+      "customs": [
+        "见面贴面礼",
+        "西语为主",
+        "小费约10%",
+        "市场可议价"
+      ],
+      "transport": "机场：马里奥·科博机场（UIO），市区约1小时。铁路：无城市轨道交通。轨道：无。出租：App叫车更稳妥。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "san_jose": {
+    "id": "san_jose",
+    "name": "圣何塞",
+    "nameEn": "San José",
+    "country": "哥斯达黎加",
+    "continent": "拉丁美洲",
+    "flag": "🇨🇷",
+    "lat": 9.9281,
+    "lng": -84.0907,
+    "image": "https://picsum.photos/seed/safecity_san_jose/400/180",
+    "safety": {
+      "overall": 62,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "B",
+        "natural": "B-"
+      },
+      "hotspots": [
+        {
+          "area": "市中心夜间与公交",
+          "desc": "夜间避免独自步行，注意财物",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "Escazú 使馆区",
+        "Rohrmoser",
+        "Los Yoses"
+      ]
+    },
+    "highlights": [
+      "和平稳定",
+      "生态旅游门户",
+      "物价适中",
+      "民主典范"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "夜间安全",
+      "火山与地震",
+      "暴雨季"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Casado",
+          "type": "哥斯达黎加",
+          "price": "中等",
+          "desc": "米饭豆类配肉，国民套餐",
+          "tip": "苏打小馆"
+        },
+        {
+          "name": "Gallo Pinto",
+          "type": "哥斯达黎加",
+          "price": "中等",
+          "desc": "黑豆米饭",
+          "tip": "早餐"
+        },
+        {
+          "name": "新鲜果汁",
+          "type": "哥斯达黎加",
+          "price": "中等",
+          "desc": "热带水果",
+          "tip": "街头"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "国家剧院",
+          "type": "建筑",
+          "desc": "法式风格文化地标",
+          "hidden": false
+        },
+        {
+          "name": "黄金博物馆",
+          "type": "博物馆",
+          "desc": "前哥伦布黄金工艺品",
+          "hidden": false
+        },
+        {
+          "name": "中央市场",
+          "type": "集市",
+          "desc": "本地生活与小吃",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "独立日",
+          "date": "9月15日",
+          "desc": "全国庆祝"
+        },
+        {
+          "name": "玉米节",
+          "date": "8月",
+          "desc": "乡村庆典"
+        }
+      ],
+      "customs": [
+        "西班牙语",
+        "见面握手",
+        "小费约10%",
+        "环保意识强"
+      ],
+      "transport": "机场：胡安·圣玛丽亚机场（SJO），市区约30分钟。铁路：城铁有限。轨道：无。出租：Uber与出租。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "havana": {
+    "id": "havana",
+    "name": "哈瓦那",
+    "nameEn": "Havana",
+    "country": "古巴",
+    "continent": "拉丁美洲",
+    "flag": "🇨🇺",
+    "lat": 23.1136,
+    "lng": -82.3666,
+    "image": "https://picsum.photos/seed/safecity_havana/400/180",
+    "safety": {
+      "overall": 62,
+      "grade": "B-",
+      "grades": {
+        "crime": "B",
+        "transport": "B-",
+        "health": "B-",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "旅游区兜售与假币",
+          "desc": "警惕主动搭讪与换汇骗局",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "Vedado 区",
+        "Habana Vieja（白天）",
+        "Miramar"
+      ]
+    },
+    "highlights": [
+      "殖民老城",
+      "老爷车文化",
+      "音乐之都",
+      "物价低"
+    ],
+    "risks": [
+      "旅游诈骗",
+      "扒窃",
+      "物资短缺",
+      "网络不便"
+    ],
+    "emergency": {
+      "police": "106",
+      "ambulance": "104",
+      "fire": "105"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Ropa Vieja",
+          "type": "古巴",
+          "price": "中等",
+          "desc": "炖牛肉丝",
+          "tip": "家庭餐馆"
+        },
+        {
+          "name": "Cuban Sandwich",
+          "type": "古巴",
+          "price": "中等",
+          "desc": "古巴三明治",
+          "tip": "街边"
+        },
+        {
+          "name": "Mojito",
+          "type": "古巴",
+          "price": "中等",
+          "desc": "朗姆薄荷饮",
+          "tip": "La Bodeguita"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "哈瓦那老城",
+          "type": "世界遗产",
+          "desc": "殖民时期广场与城堡",
+          "hidden": false
+        },
+        {
+          "name": "海滨大道 Malecón",
+          "type": "地标",
+          "desc": "滨海漫步长堤",
+          "hidden": false
+        },
+        {
+          "name": "革命广场",
+          "type": "地标",
+          "desc": "城市政治中心",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "圣地亚哥狂欢节",
+          "date": "7月",
+          "desc": "全国最盛大的街头狂欢"
+        },
+        {
+          "name": "独立日",
+          "date": "10月10日",
+          "desc": "全国庆典"
+        }
+      ],
+      "customs": [
+        "西班牙语",
+        "音乐与舞蹈文化",
+        "小费受欢迎",
+        "拍照先征得同意"
+      ],
+      "transport": "机场：何塞·马蒂机场（HAV），市区约30分钟。铁路：铁路有限。轨道：无。出租：国营出租与老爷车出租。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "curitiba": {
+    "id": "curitiba",
+    "name": "库里蒂巴",
+    "nameEn": "Curitiba",
+    "country": "巴西",
+    "continent": "拉丁美洲",
+    "flag": "🇧🇷",
+    "lat": -25.4284,
+    "lng": -49.2733,
+    "image": "https://picsum.photos/seed/safecity_curitiba/400/180",
+    "safety": {
+      "overall": 72,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "公交与夜市",
+          "desc": "人流密集处注意财物",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Batel",
+        "Água Verde",
+        "Centro（白天）"
+      ]
+    },
+    "highlights": [
+      "城市规划典范",
+      "公交系统先进",
+      "安全宜居",
+      "公园众多"
+    ],
+    "risks": [
+      "偶发抢劫",
+      "扒窃",
+      "冬季湿冷",
+      "物价中等"
+    ],
+    "emergency": {
+      "police": "190",
+      "ambulance": "192",
+      "fire": "193"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Pão de Queijo",
+          "type": "巴西",
+          "price": "中等",
+          "desc": "芝士面包",
+          "tip": "面包店"
+        },
+        {
+          "name": "Barreado",
+          "type": "巴西",
+          "price": "中等",
+          "desc": "慢炖牛肉",
+          "tip": "本地餐馆"
+        },
+        {
+          "name": "Churrasco",
+          "type": "巴西",
+          "price": "中等",
+          "desc": "巴西烤肉",
+          "tip": "烤肉店"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "火车公园",
+          "type": "公园",
+          "desc": "旧火车站改造的绿地",
+          "hidden": false
+        },
+        {
+          "name": "奥斯卡·尼迈耶博物馆",
+          "type": "博物馆",
+          "desc": "眼科状当代艺术馆",
+          "hidden": false
+        },
+        {
+          "name": "植物园",
+          "type": "公园",
+          "desc": "法式花园与温室",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "独立日",
+          "date": "9月7日",
+          "desc": "全国庆典"
+        },
+        {
+          "name": "Curitiba 美食节",
+          "date": "不定期",
+          "desc": "本地餐饮活动"
+        }
+      ],
+      "customs": [
+        "葡萄牙语",
+        "小费10%左右",
+        "见面贴面礼",
+        "足球文化浓厚"
+      ],
+      "transport": "机场：阿丰索·佩纳机场（CWB），市区约30分钟。铁路：无城市轨道交通。轨道：有快速公交BRT系统。出租：Uber与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "new_orleans": {
+    "id": "new_orleans",
+    "name": "新奥尔良",
+    "nameEn": "New Orleans",
+    "country": "美国",
+    "continent": "北美洲",
+    "flag": "🇺🇸",
+    "lat": 29.9511,
+    "lng": -90.0715,
+    "image": "https://picsum.photos/seed/safecity_new_orleans/400/180",
+    "safety": {
+      "overall": 52,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "B",
+        "health": "B+",
+        "natural": "C"
+      },
+      "hotspots": [
+        {
+          "area": "部分西区与夜间偏僻街",
+          "desc": "避免夜间独自前往高犯罪率街区",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "French Quarter（夜间人流）",
+        "Garden District",
+        "Uptown"
+      ]
+    },
+    "highlights": [
+      "爵士乐之都",
+      "美食天堂",
+      "独特法式风情",
+      "节庆之城"
+    ],
+    "risks": [
+      "部分区高犯罪",
+      "飓风与洪涝",
+      "高温高湿",
+      "夜间安全"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Gumbo",
+          "type": "美国",
+          "price": "中等",
+          "desc": "海鲜秋葵浓汤",
+          "tip": "老字号餐馆"
+        },
+        {
+          "name": "Beignets",
+          "type": "美国",
+          "price": "中等",
+          "desc": "糖粉油炸面团",
+          "tip": "Café du Monde"
+        },
+        {
+          "name": "Po’ Boy",
+          "type": "美国",
+          "price": "中等",
+          "desc": "炸虾三明治",
+          "tip": "街头"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "法国区",
+          "type": "历史街区",
+          "desc": "波旁街与杰克逊广场",
+          "hidden": false
+        },
+        {
+          "name": "河口战场",
+          "type": "历史",
+          "desc": "1812年战争遗址",
+          "hidden": false
+        },
+        {
+          "name": "沼泽游船",
+          "type": "自然",
+          "desc": "密西西比河三角洲生态",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Mardi Gras 狂欢节",
+          "date": "2-3月",
+          "desc": "最著名的街头狂欢"
+        },
+        {
+          "name": "爵士音乐节",
+          "date": "4-5月",
+          "desc": "全球爵士盛会"
+        }
+      ],
+      "customs": [
+        "小费15-20%",
+        "见面直接称呼名",
+        "节庆文化浓",
+        "多元包容"
+      ],
+      "transport": "机场：路易斯·阿姆斯特朗机场（MSY），市区约30分钟。铁路：有街车与公交。轨道：无。出租：Uber与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "tampa": {
+    "id": "tampa",
+    "name": "坦帕",
+    "nameEn": "Tampa",
+    "country": "美国",
+    "continent": "北美洲",
+    "flag": "🇺🇸",
+    "lat": 27.9506,
+    "lng": -82.4572,
+    "image": "https://picsum.photos/seed/safecity_tampa/400/180",
+    "safety": {
+      "overall": 68,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "B+",
+        "health": "B+",
+        "natural": "C+"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "整体安全，注意夏季午后雷暴与飓风季",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Hyde Park",
+        "Bayshore",
+        "Downtown（白天）"
+      ]
+    },
+    "highlights": [
+      "阳光海滨",
+      "主题乐园近",
+      "经济活跃",
+      "家庭友好"
+    ],
+    "risks": [
+      "午后雷暴",
+      "飓风季",
+      "偶发抢劫",
+      "高温"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Cuban Sandwich",
+          "type": "美国",
+          "price": "中等",
+          "desc": "古巴三明治",
+          "tip": "Ybor老店"
+        },
+        {
+          "name": "石蟹",
+          "type": "美国",
+          "price": "中等",
+          "desc": "佛州特产",
+          "tip": "季节限定"
+        },
+        {
+          "name": "Key Lime Pie",
+          "type": "美国",
+          "price": "中等",
+          "desc": "青柠派",
+          "tip": "甜品店"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Ybor City",
+          "type": "历史街区",
+          "desc": "古巴移民历史街区与夜生活",
+          "hidden": false
+        },
+        {
+          "name": "Busch Gardens",
+          "type": "主题乐园",
+          "desc": "非洲主题动物园与过山车",
+          "hidden": false
+        },
+        {
+          "name": "清水滩",
+          "type": "海滩",
+          "desc": "邻近的优质海滩",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Gasparilla 海盗节",
+          "date": "1-2月",
+          "desc": "海盗主题城市庆典"
+        },
+        {
+          "name": "州博会",
+          "date": "2月",
+          "desc": "佛州博览会"
+        }
+      ],
+      "customs": [
+        "小费15-20%",
+        "直率随意",
+        "多元文化",
+        "驾车文化"
+      ],
+      "transport": "机场：坦帕国际机场（TPA），市区约20分钟。铁路：有街车与公交。轨道：无。出租：Uber与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "minneapolis": {
+    "id": "minneapolis",
+    "name": "明尼阿波利斯",
+    "nameEn": "Minneapolis",
+    "country": "美国",
+    "continent": "北美洲",
+    "flag": "🇺🇸",
+    "lat": 44.9778,
+    "lng": -93.265,
+    "image": "https://picsum.photos/seed/safecity_minneapolis/400/180",
+    "safety": {
+      "overall": 66,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "B+",
+        "health": "A-",
+        "natural": "C+"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "整体安全，冬季注意极寒与冰雪",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "Uptown",
+        "Lake Calhoun 区",
+        "North Loop"
+      ]
+    },
+    "highlights": [
+      "千湖之城",
+      "宜居安全",
+      "文化艺术强",
+      "户外活动"
+    ],
+    "risks": [
+      "严冬极寒",
+      "冰雪路面",
+      "偶发枪击",
+      "暴风雪"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "Juicy Lucy 芝士堡",
+          "type": "美国",
+          "price": "中等",
+          "desc": "爆浆芝士汉堡",
+          "tip": "本地Pub"
+        },
+        {
+          "name": "Hotdish",
+          "type": "美国",
+          "price": "中等",
+          "desc": "烤箱炖菜",
+          "tip": "家常菜"
+        },
+        {
+          "name": "野生稻米",
+          "type": "美国",
+          "price": "中等",
+          "desc": "明州特产",
+          "tip": "餐馆"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "密西西比河滨",
+          "type": "自然",
+          "desc": "瀑布与步道公园",
+          "hidden": false
+        },
+        {
+          "name": "步行桥雕塑园",
+          "type": "艺术",
+          "desc": "室外雕塑公园",
+          "hidden": false
+        },
+        {
+          "name": "美国购物中心",
+          "type": "购物",
+          "desc": "全美最大室内 Mall",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "水节",
+          "date": "6月",
+          "desc": "城市河流庆典"
+        },
+        {
+          "name": "圣诞集市",
+          "date": "12月",
+          "desc": "冬季市集"
+        }
+      ],
+      "customs": [
+        "小费15-20%",
+        "友善但保持距离",
+        "冬季装备必备",
+        "湖畔文化"
+      ],
+      "transport": "机场：明尼阿波利斯机场（MSP），市区约20分钟。铁路：有轻轨连接机场与市区。轨道：有轻轨（Blue/Green线）。出租：Uber与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "chongqing": {
+    "id": "chongqing",
+    "name": "重庆",
+    "nameEn": "Chongqing",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 29.563,
+    "lng": 106.5516,
+    "image": "https://picsum.photos/seed/safecity_chongqing/400/180",
+    "safety": {
+      "overall": 78,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "治安良好，注意防扒与夏季高温",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "解放碑商圈",
+        "江北嘴",
+        "南滨路"
+      ]
+    },
+    "highlights": [
+      "山城地貌",
+      "火锅之都",
+      "夜景迷人",
+      "物价适中"
+    ],
+    "risks": [
+      "阶梯与坡道多",
+      "夏季闷热",
+      "轻轨拥挤",
+      "麻辣肠胃"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "重庆火锅",
+          "type": "中国",
+          "price": "中等",
+          "desc": "麻辣牛油锅底",
+          "tip": "老火锅店"
+        },
+        {
+          "name": "小面",
+          "type": "中国",
+          "price": "中等",
+          "desc": "麻辣面条早餐",
+          "tip": "街边小馆"
+        },
+        {
+          "name": "酸辣粉",
+          "type": "中国",
+          "price": "中等",
+          "desc": "红薯粉酸辣",
+          "tip": "小吃摊"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "洪崖洞",
+          "type": "地标",
+          "desc": "吊脚楼夜景网红地标",
+          "hidden": false
+        },
+        {
+          "name": "长江索道",
+          "type": "体验",
+          "desc": "跨江空中缆车",
+          "hidden": false
+        },
+        {
+          "name": "磁器口古镇",
+          "type": "古镇",
+          "desc": "千年古镇与小吃",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "重庆火锅节",
+          "date": "10月",
+          "desc": "全城火锅主题活动"
+        },
+        {
+          "name": "春节灯会",
+          "date": "农历正月",
+          "desc": "传统灯会"
+        }
+      ],
+      "customs": [
+        "微信支付宝普及",
+        "小费不流行",
+        "方言与普通话并存",
+        "热情直率"
+      ],
+      "transport": "机场：江北国际机场（CKG），市区约40分钟。铁路：成渝高铁连接成都。轨道：有10余条轻轨/地铁线。出租：网约车与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "qingdao": {
+    "id": "qingdao",
+    "name": "青岛",
+    "nameEn": "Qingdao",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 36.0671,
+    "lng": 120.3826,
+    "image": "https://picsum.photos/seed/safecity_qingdao/400/180",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "治安良好，旅游区防扒",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "八大关",
+        "五四广场",
+        "栈桥周边"
+      ]
+    },
+    "highlights": [
+      "海滨啤酒城",
+      "红瓦绿树",
+      "德式建筑",
+      "凉爽夏季"
+    ],
+    "risks": [
+      "旅游季人多",
+      "海鲜过敏",
+      "夏季潮汐",
+      "海雾"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "青岛啤酒",
+          "type": "中国",
+          "price": "中等",
+          "desc": "原浆鲜啤",
+          "tip": "啤酒节/酒馆"
+        },
+        {
+          "name": "海鲜",
+          "type": "中国",
+          "price": "中等",
+          "desc": "蛤蜊与海螺",
+          "tip": "啤酒屋"
+        },
+        {
+          "name": "鲅鱼水饺",
+          "type": "中国",
+          "price": "中等",
+          "desc": "本地特色",
+          "tip": "饺子馆"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "栈桥",
+          "type": "地标",
+          "desc": "伸入海中的百年长廊",
+          "hidden": false
+        },
+        {
+          "name": "八大关",
+          "type": "街区",
+          "desc": "万国建筑博物苑",
+          "hidden": false
+        },
+        {
+          "name": "崂山",
+          "type": "自然",
+          "desc": "海上名山与道观",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "青岛国际啤酒节",
+          "date": "8月",
+          "desc": "亚洲最大啤酒节"
+        },
+        {
+          "name": "海洋节",
+          "date": "7月",
+          "desc": "海洋主题庆典"
+        }
+      ],
+      "customs": [
+        "扫码支付普及",
+        "小费不流行",
+        "海边长者晨练文化",
+        "直爽好客"
+      ],
+      "transport": "机场：胶东国际机场（TAO），市区约1小时。铁路：高铁直达多城。轨道：有地铁线。出租：网约车与出租普及。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "sanya": {
+    "id": "sanya",
+    "name": "三亚",
+    "nameEn": "Sanya",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 18.2528,
+    "lng": 109.5119,
+    "image": "https://picsum.photos/seed/safecity_sanya/400/180",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "B",
+        "natural": "B-"
+      },
+      "hotspots": [
+        {
+          "area": "部分海鲜排档与拉客",
+          "desc": "警惕高价海鲜与黑车拉客",
+          "risk": "中"
+        }
+      ],
+      "safeAreas": [
+        "亚龙湾",
+        "海棠湾",
+        "大东海（白天）"
+      ]
+    },
+    "highlights": [
+      "热带海岛",
+      "度假天堂",
+      "潜水胜地",
+      "阳光沙滩"
+    ],
+    "risks": [
+      "旅游消费陷阱",
+      "台风季",
+      "日晒强烈",
+      "海鲜宰客"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "海鲜",
+          "type": "中国",
+          "price": "中等",
+          "desc": "现捞现做",
+          "tip": "明码标价市场加工"
+        },
+        {
+          "name": "椰子鸡",
+          "type": "中国",
+          "price": "中等",
+          "desc": "椰子清汤鸡",
+          "tip": "火锅店"
+        },
+        {
+          "name": "清补凉",
+          "type": "中国",
+          "price": "中等",
+          "desc": "椰奶甜品",
+          "tip": "街头"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "亚龙湾",
+          "type": "海滩",
+          "desc": "细沙碧水的度假海湾",
+          "hidden": false
+        },
+        {
+          "name": "天涯海角",
+          "type": "地标",
+          "desc": "著名石刻景区",
+          "hidden": false
+        },
+        {
+          "name": "南山文化苑",
+          "type": "文化",
+          "desc": "海上观音圣像",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "天涯海角国际婚庆节",
+          "date": "不定期",
+          "desc": "婚庆主题"
+        },
+        {
+          "name": "海南欢乐节",
+          "date": "11月",
+          "desc": "全省旅游节"
+        }
+      ],
+      "customs": [
+        "扫码支付普及",
+        "小费不流行",
+        "度假休闲文化",
+        "物价较内地高"
+      ],
+      "transport": "机场：凤凰国际机场（SYX），市区约30分钟。铁路：环岛高铁连接海口。轨道：无。出租：网约车与出租。",
+      "foodDetails": [],
+      "attractionDetails": []
+    }
+  },
+  "busan": {
+    "id": "busan",
+    "name": "釜山",
+    "nameEn": "Busan",
+    "country": "韩国",
+    "continent": "亚洲",
+    "flag": "🇰🇷",
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "image": "https://picsum.photos/seed/safecity_busan/400/180",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A",
+        "health": "A",
+        "natural": "B"
+      },
+      "hotspots": [
+        {
+          "area": "无特别高风险区",
+          "desc": "治安良好，夜间饮酒区稍乱",
+          "risk": "低"
+        }
+      ],
+      "safeAreas": [
+        "海云台",
+        "西面",
+        "广安里"
+      ]
+    },
+    "highlights": [
+      "海港都市",
+      "海滩与温泉",
+      "美食之都",
+      "物价低于首尔"
+    ],
+    "risks": [
+      "夏季台风",
+      "地铁拥挤",
+      "酒后治安",
+      "扒窃"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "119",
+      "fire": "119"
+    },
+    "lifestyle": {
+      "food": [
+        {
+          "name": "猪肉汤饭",
+          "type": "韩国",
+          "price": "中等",
+          "desc": "Gukbap 暖胃汤饭",
+          "tip": "老店"
+        },
+        {
+          "name": "海鲜",
+          "type": "韩国",
+          "price": "中等",
+          "desc": "札嘎其现捞",
+          "tip": "市场"
+        },
+        {
+          "name": "海鲜煎饼",
+          "type": "韩国",
+          "price": "中等",
+          "desc": "Pajeon",
+          "tip": "啤酒馆"
+        }
+      ],
+      "attractions": [
+        {
+          "name": "海云台海滩",
+          "type": "海滩",
+          "desc": "韩国最著名海滩",
+          "hidden": false
+        },
+        {
+          "name": "甘川文化村",
+          "type": "艺术街区",
+          "desc": "彩色阶梯壁画村",
+          "hidden": false
+        },
+        {
+          "name": "札嘎其市场",
+          "type": "市场",
+          "desc": "韩国最大水产市场",
+          "hidden": false
+        }
+      ],
+      "festivals": [
+        {
+          "name": "釜山国际电影节",
+          "date": "10月",
+          "desc": "亚洲重要电影节"
+        },
+        {
+          "name": "海云台沙雕节",
+          "date": "夏季",
+          "desc": "沙滩沙雕展"
+        }
+      ],
+      "customs": [
+        "韩语与敬语",
+        "小费不流行",
+        "脱鞋入室",
+        "饮酒文化浓"
+      ],
+      "transport": "机场：金海国际机场（PUS），市区约40分钟。铁路：KTX高速连接首尔。轨道：有4条地铁线。出租：网约车与出租。",
+      "foodDetails": [],
+      "attractionDetails": []
     }
   }
 } ;

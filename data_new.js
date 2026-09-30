@@ -16673,4 +16673,2374 @@ var CITY_DATABASE_DETAIL = {
       "保存紧急联系方式"
     ]
   }
+,
+  "dakar": {
+    "id": "dakar",
+    "name": "达喀尔",
+    "nameEn": "Dakar",
+    "country": "塞内加尔",
+    "continent": "非洲",
+    "flag": "🇸🇳",
+    "lat": 14.7167,
+    "lng": -17.4677,
+    "image": "https://picsum.photos/seed/safecity_dakar/1200/400",
+    "safety": {
+      "overall": 58,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "B-",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "海滨城市",
+      "文化活力",
+      "法式殖民遗产",
+      "渔港美食"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "交通拥堵",
+      "高温",
+      "(旱季)沙尘"
+    ],
+    "emergency": {
+      "police": "17",
+      "ambulance": "18",
+      "fire": "18",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "达喀尔双年展",
+        "month": "偶数年5月",
+        "description": "非洲当代艺术盛会"
+      },
+      {
+        "name": "Tabaski（古尔邦节）",
+        "month": "伊斯兰历",
+        "description": "全城宰羊庆祝，交通与物价波动"
+      }
+    ],
+    "transport": {
+      "airport": "布莱兹·迪亚涅国际机场（DSS），距市区约1小时",
+      "train": "城际铁路连郊县",
+      "subway": "无地铁，依赖小巴与出租车",
+      "taxi": "黄色出租车，建议议价并使用计价"
+    },
+    "attractions": [
+      {
+        "name": "戈雷岛",
+        "category": "世界遗产",
+        "description": "奴隶贸易历史遗址，联合国教科文组织世界遗产"
+      },
+      {
+        "name": "非洲复兴纪念碑",
+        "category": "地标",
+        "description": "非洲最高的青铜雕像之一"
+      },
+      {
+        "name": "达喀尔大清真寺",
+        "category": "宗教建筑",
+        "description": "城市天际线的标志"
+      }
+    ],
+    "food": [
+      {
+        "name": "Thieboudienne",
+        "description": "塞内加尔国菜，鱼肉与米饭炖煮",
+        "recommendation": "本地家庭餐馆"
+      },
+      {
+        "name": "Yassa 鸡肉",
+        "description": "洋葱柠檬腌制的烤鸡",
+        "recommendation": "街头与餐馆均常见"
+      },
+      {
+        "name": "烧烤海鲜",
+        "description": "大西洋新鲜渔获",
+        "recommendation": "海滨排档"
+      }
+    ],
+    "customs": [
+      "见面贴面礼常见",
+      "进入清真寺需脱鞋并着装保守",
+      "周日多数商铺休息",
+      "砍价是市场常态"
+    ],
+    "tips": [
+      "沿海地区注意防晒与补水",
+      "使用瓶装水",
+      "夜间减少步行",
+      "保留护照复印件"
+    ]
+  },
+  "abidjan": {
+    "id": "abidjan",
+    "name": "阿比让",
+    "nameEn": "Abidjan",
+    "country": "科特迪瓦",
+    "continent": "非洲",
+    "flag": "🇨🇮",
+    "lat": 5.36,
+    "lng": -4.0083,
+    "image": "https://picsum.photos/seed/safecity_abidjan/1200/400",
+    "safety": {
+      "overall": 55,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "C+",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "西非经济中心",
+      "泻湖风光",
+      "夜生活丰富",
+      "法国文化交融"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "沿海洪涝",
+      "疟疾风险",
+      "路况复杂"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "185",
+      "fire": "180",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "阿比让狂欢节",
+        "month": "12月",
+        "description": "海滨城市的大型街头庆典"
+      },
+      {
+        "name": "Fêtes des Masques",
+        "month": "2月",
+        "description": "原住民面具节"
+      }
+    ],
+    "transport": {
+      "airport": "费利克斯·乌弗埃-博瓦尼机场（ABJ），市区约30分钟",
+      "train": "铁路网有限",
+      "subway": "无地铁",
+      "taxi": "橙黄色出租车与摩的，需议价"
+    },
+    "attractions": [
+      {
+        "name": "圣保罗大教堂",
+        "category": "宗教建筑",
+        "description": "现代风格大教堂，可登顶俯瞰泻湖"
+      },
+      {
+        "name": "班科国家公园",
+        "category": "自然",
+        "description": "城市边缘的热带雨林保护区"
+      },
+      {
+        "name": "泻湖大桥",
+        "category": "地标",
+        "description": "连接城市两岸的重要通道"
+      }
+    ],
+    "food": [
+      {
+        "name": "Attiéké",
+        "description": "木薯粗粮配烤鱼",
+        "recommendation": "路边小摊最地道"
+      },
+      {
+        "name": "Kedjenou 炖鸡",
+        "description": "陶罐慢炖鸡肉",
+        "recommendation": "传统餐馆"
+      },
+      {
+        "name": "Aloko",
+        "description": "炸大蕉",
+        "recommendation": "街头小吃"
+      }
+    ],
+    "customs": [
+      "见面握手并问候家人",
+      "法语为主要通用语",
+      "请客时礼貌推辞后再接受",
+      "周日部分区域安静"
+    ],
+    "tips": [
+      "黄热病疫苗为入境强制要求",
+      "防蚊防疟",
+      "避免饮用生水",
+      "夜间减少外出"
+    ]
+  },
+  "kampala": {
+    "id": "kampala",
+    "name": "坎帕拉",
+    "nameEn": "Kampala",
+    "country": "乌干达",
+    "continent": "非洲",
+    "flag": "🇺🇬",
+    "lat": 0.3476,
+    "lng": 32.5825,
+    "image": "https://picsum.photos/seed/safecity_kampala/1200/400",
+    "safety": {
+      "overall": 54,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B-",
+        "health": "C+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "赤道附近",
+      "七座山丘之城",
+      "物价相对低",
+      "野生动物近郊"
+    ],
+    "risks": [
+      "扒窃",
+      "摩托车抢包",
+      "疟疾",
+      "路况与照明"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "112",
+      "fire": "112",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "独立日",
+        "month": "10月9日",
+        "description": "全国庆典"
+      },
+      {
+        "name": "KLA 艺术节",
+        "month": "不定期",
+        "description": "坎帕拉本土艺术与音乐"
+      }
+    ],
+    "transport": {
+      "airport": "恩德培国际机场（EBB），市区约1小时",
+      "train": "无铁路客运",
+      "subway": "无",
+      "taxi": "Uber/Bolt 与摩的并存，建议使用App"
+    },
+    "attractions": [
+      {
+        "name": "卡苏比王陵",
+        "category": "世界遗产",
+        "description": "布干达王国王室陵墓"
+      },
+      {
+        "name": "恩德培植物园",
+        "category": "自然",
+        "description": "维多利亚湖畔的历史植物园"
+      },
+      {
+        "name": "赤道纪念碑",
+        "category": "地标",
+        "description": "可拍照的赤道标记点"
+      }
+    ],
+    "food": [
+      {
+        "name": "Matoke",
+        "description": "煮捣香蕉泥，国民主食",
+        "recommendation": "本地餐馆"
+      },
+      {
+        "name": "Rolex 卷饼",
+        "description": "鸡蛋蔬菜煎饼卷，街头经典",
+        "recommendation": "街边小摊"
+      },
+      {
+        "name": "Nyama Choma",
+        "description": "炭烤肉类",
+        "recommendation": "烤肉店"
+      }
+    ],
+    "customs": [
+      "见面多次握手并问候",
+      "英语与卢干达语通用",
+      "拍照前先征得同意",
+      "小费非强制但受欢迎"
+    ],
+    "tips": [
+      "防蚊防疟必备",
+      "饮用瓶装水",
+      "夜间拼车更安全",
+      "保留证件复印件"
+    ]
+  },
+  "harare": {
+    "id": "harare",
+    "name": "哈拉雷",
+    "nameEn": "Harare",
+    "country": "津巴布韦",
+    "continent": "非洲",
+    "flag": "🇿🇼",
+    "lat": -17.8252,
+    "lng": 31.0335,
+    "image": "https://picsum.photos/seed/safecity_harare/1200/400",
+    "safety": {
+      "overall": 50,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "B-",
+        "health": "C+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "气候温和",
+      "花园城市",
+      "物价波动大",
+      "近维多利亚瀑布"
+    ],
+    "risks": [
+      "经济不稳带来的街头犯罪",
+      "现金短缺",
+      "疟疾（周边）",
+      "夜间安全"
+    ],
+    "emergency": {
+      "police": "995",
+      "ambulance": "994",
+      "fire": "993",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "哈拉雷国际艺术节",
+        "month": "不定期",
+        "description": "HIFA 艺术盛典"
+      },
+      {
+        "name": "独立日",
+        "month": "4月18日",
+        "description": "全国庆典"
+      }
+    ],
+    "transport": {
+      "airport": "罗伯特·穆加贝机场（HRE），市区约30分钟",
+      "train": "铁路客运有限",
+      "subway": "无",
+      "taxi": "建议使用App叫车，现金备零"
+    },
+    "attractions": [
+      {
+        "name": "津巴布韦博物馆",
+        "category": "博物馆",
+        "description": "展示国家历史与考古"
+      },
+      {
+        "name": "Mbare 市场",
+        "category": "集市",
+        "description": "本地生活与手工艺集散地"
+      },
+      {
+        "name": "哈拉雷植物园",
+        "category": "公园",
+        "description": "市中心宁静绿地"
+      }
+    ],
+    "food": [
+      {
+        "name": "Sadza",
+        "description": "玉米糊主食配炖菜",
+        "recommendation": "本地餐馆"
+      },
+      {
+        "name": "Biltong",
+        "description": "风干牛肉条",
+        "recommendation": "便利店"
+      },
+      {
+        "name": "烤玉米",
+        "description": "街头常见小吃",
+        "recommendation": "街边"
+      }
+    ],
+    "customs": [
+      "英语为官方语言",
+      "见面握手并问候",
+      "小费约10%",
+      "商务需提前预约"
+    ],
+    "tips": [
+      "备足美元现金零钱",
+      "关注汇率与物价",
+      "避免夜间步行",
+      "饮用瓶装水"
+    ]
+  },
+  "lusaka": {
+    "id": "lusaka",
+    "name": "卢萨卡",
+    "nameEn": "Lusaka",
+    "country": "赞比亚",
+    "continent": "非洲",
+    "flag": "🇿🇲",
+    "lat": -15.3875,
+    "lng": 28.3228,
+    "image": "https://picsum.photos/seed/safecity_lusaka/1200/400",
+    "safety": {
+      "overall": 54,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B-",
+        "health": "C+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "非洲中南部枢纽",
+      "友好民风",
+      "近野生动物保护区",
+      "物价适中"
+    ],
+    "risks": [
+      "扒窃",
+      "街头诈骗",
+      "疟疾（周边）",
+      "夜间照明不足"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "992",
+      "fire": "993",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "独立日",
+        "month": "10月24日",
+        "description": "全国庆典"
+      },
+      {
+        "name": "Kwacha 文化节",
+        "month": "不定期",
+        "description": "本土文化展示"
+      }
+    ],
+    "transport": {
+      "airport": "肯尼思·卡翁达机场（LUN），市区约30分钟",
+      "train": "铁路客运有限",
+      "subway": "无",
+      "taxi": "App叫车与黄色出租并存"
+    },
+    "attractions": [
+      {
+        "name": "卢萨卡国家博物馆",
+        "category": "博物馆",
+        "description": "赞比亚文化与历史"
+      },
+      {
+        "name": "Munda Wanga 植物园",
+        "category": "自然",
+        "description": "含小型动物园的绿地"
+      },
+      {
+        "name": "Sunday 跳蚤市场",
+        "category": "集市",
+        "description": "本地手工艺与古董"
+      }
+    ],
+    "food": [
+      {
+        "name": "Nshima",
+        "description": "玉米糊主食",
+        "recommendation": "本地餐馆"
+      },
+      {
+        "name": "烤鱼",
+        "description": "坦噶尼喀湖渔获",
+        "recommendation": "餐馆"
+      },
+      {
+        "name": "Vetkoek",
+        "description": "油炸面团",
+        "recommendation": "街头"
+      }
+    ],
+    "customs": [
+      "英语为官方语言",
+      "见面握手并问候",
+      "拍照先征得同意",
+      "市场可议价"
+    ],
+    "tips": [
+      "防蚊防疟",
+      "饮用瓶装水",
+      "夜间减少步行",
+      "备小额现金"
+    ]
+  },
+  "amman": {
+    "id": "amman",
+    "name": "安曼",
+    "nameEn": "Amman",
+    "country": "约旦",
+    "continent": "中东",
+    "flag": "🇯🇴",
+    "lat": 31.9454,
+    "lng": 35.9284,
+    "image": "https://picsum.photos/seed/safecity_amman/1200/400",
+    "safety": {
+      "overall": 74,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B",
+        "health": "A-",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "安全稳定",
+      "历史层叠之城",
+      "美食之都",
+      "罗马遗迹"
+    ],
+    "risks": [
+      "扒窃（旅游区）",
+      "夏季高温",
+      "交通拥堵",
+      "区域局势波动"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "杰拉什艺术节",
+        "month": "7-8月",
+        "description": "古罗马遗址上的音乐戏剧节"
+      },
+      {
+        "name": "独立日",
+        "month": "5月25日",
+        "description": "全国庆典"
+      }
+    ],
+    "transport": {
+      "airport": "阿丽娅王后机场（AMM），市区约40分钟",
+      "train": "无城市轨道交通",
+      "subway": "无",
+      "taxi": "黄色出租与Uber/Careem并存"
+    },
+    "attractions": [
+      {
+        "name": "城堡山",
+        "category": "历史遗迹",
+        "description": "俯瞰全城的古罗马与伍麦叶遗迹"
+      },
+      {
+        "name": "罗马剧院",
+        "category": "古迹",
+        "description": "保存完好的2世纪剧场"
+      },
+      {
+        "name": "彩虹街",
+        "category": "街区",
+        "description": "咖啡馆与书店云集的文艺街区"
+      }
+    ],
+    "food": [
+      {
+        "name": "Mansaf",
+        "description": "羊肉酸奶饭，国菜",
+        "recommendation": "传统餐馆"
+      },
+      {
+        "name": "Hummus 与 Falafel",
+        "description": "黎凡特经典",
+        "recommendation": "街边老店"
+      },
+      {
+        "name": "Knafeh",
+        "description": "奶酪甜点",
+        "recommendation": "甜品店"
+      }
+    ],
+    "customs": [
+      "见面贴面礼与咖啡待客",
+      "斋月白天公共场所饮食需谨慎",
+      "周五为周休主日",
+      "议价是常态"
+    ],
+    "tips": [
+      "自来水建议烧开",
+      "夏季防晒补水",
+      "尊重宗教习俗",
+      "保留护照复印件"
+    ]
+  },
+  "kuwait_city": {
+    "id": "kuwait_city",
+    "name": "科威特城",
+    "nameEn": "Kuwait City",
+    "country": "科威特",
+    "continent": "中东",
+    "flag": "🇰🇼",
+    "lat": 29.3759,
+    "lng": 47.9774,
+    "image": "https://picsum.photos/seed/safecity_kuwait_city/1200/400",
+    "safety": {
+      "overall": 76,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "B+",
+        "health": "A",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "治安优良",
+      "高福利社会",
+      "现代天际线",
+      "波斯湾海滨"
+    ],
+    "risks": [
+      "夏季极端高温",
+      "沙尘暴",
+      "驾车激进",
+      "油价相关拥堵"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "国庆与解放日",
+        "month": "2月25-26日",
+        "description": "全国盛大庆祝"
+      },
+      {
+        "name": "Hala Feb 购物节",
+        "month": "2月",
+        "description": "节庆购物季"
+      }
+    ],
+    "transport": {
+      "airport": "科威特国际机场（KWI），市区约30分钟",
+      "train": "无",
+      "subway": "无",
+      "taxi": "App叫车与橙黄色出租"
+    },
+    "attractions": [
+      {
+        "name": "科威特塔",
+        "category": "地标",
+        "description": "海湾标志性的观景双塔"
+      },
+      {
+        "name": "大清真寺",
+        "category": "宗教建筑",
+        "description": "可容纳万人的宏伟清真寺"
+      },
+      {
+        "name": "科威特国家博物馆",
+        "category": "博物馆",
+        "description": "波斯湾与海洋史"
+      }
+    ],
+    "food": [
+      {
+        "name": "Machboos",
+        "description": "藏红花米饭配肉，国菜",
+        "recommendation": "传统餐馆"
+      },
+      {
+        "name": "Mutabbaq",
+        "description": "煎薄饼",
+        "recommendation": "街头"
+      },
+      {
+        "name": "海鲜",
+        "description": "波斯湾渔获",
+        "recommendation": "海滨餐馆"
+      }
+    ],
+    "customs": [
+      "斋月白天公共饮食需克制",
+      "周五主休",
+      "待客慷慨",
+      "着装保守得体"
+    ],
+    "tips": [
+      "夏季避免正午户外",
+      "沙尘天戴口罩",
+      "自来水可饮但偏咸",
+      "备现金"
+    ]
+  },
+  "abu_dhabi": {
+    "id": "abu_dhabi",
+    "name": "阿布扎比",
+    "nameEn": "Abu Dhabi",
+    "country": "阿联酋",
+    "continent": "中东",
+    "flag": "🇦🇪",
+    "lat": 24.4539,
+    "lng": 54.3773,
+    "image": "https://picsum.photos/seed/safecity_abu_dhabi/1200/400",
+    "safety": {
+      "overall": 88,
+      "grade": "A",
+      "grades": {
+        "crime": "A",
+        "transport": "A",
+        "health": "A",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "治安极佳",
+      "文化新地标",
+      "干净现代",
+      "家庭友好"
+    ],
+    "risks": [
+      "夏季极端高温",
+      "驾车高速",
+      "沙尘",
+      "跨文化交流"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "998",
+      "fire": "997",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "阿布扎比艺术节",
+        "month": "1-2月",
+        "description": "古典与当代艺术盛宴"
+      },
+      {
+        "name": "F1 阿布扎比大奖赛",
+        "month": "11月",
+        "description": "亚斯码头赛道"
+      }
+    ],
+    "transport": {
+      "airport": "阿布扎比国际机场（AUH），市区约30分钟",
+      "train": "无地铁，有公交",
+      "subway": "无",
+      "taxi": "App叫车与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "谢赫扎耶德大清真寺",
+        "category": "宗教建筑",
+        "description": "白色大理石宏伟清真寺"
+      },
+      {
+        "name": "卢浮宫阿布扎比",
+        "category": "博物馆",
+        "description": "海湾首个全球艺术博物馆"
+      },
+      {
+        "name": "法拉利世界",
+        "category": "主题乐园",
+        "description": "亚斯岛上的赛车主题乐园"
+      }
+    ],
+    "food": [
+      {
+        "name": "Shawarma",
+        "description": "旋转烤肉卷",
+        "recommendation": "街头与美食广场"
+      },
+      {
+        "name": "Machboos",
+        "description": "海湾香料饭",
+        "recommendation": "本地餐馆"
+      },
+      {
+        "name": "Luqaimat",
+        "description": "炸甜面团球",
+        "recommendation": "甜品"
+      }
+    ],
+    "customs": [
+      "斋月白天公共饮食需克制",
+      "着装保守",
+      "周五主休",
+      "公共场合举止得体"
+    ],
+    "tips": [
+      "夏季气温超45°C避免户外",
+      "尊重宗教与性别规范",
+      "自来水可饮",
+      "备现金小额"
+    ]
+  },
+  "manama": {
+    "id": "manama",
+    "name": "麦纳麦",
+    "nameEn": "Manama",
+    "country": "巴林",
+    "continent": "中东",
+    "flag": "🇧🇭",
+    "lat": 26.2285,
+    "lng": 50.586,
+    "image": "https://picsum.photos/seed/safecity_manama/1200/400",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "B+",
+        "health": "A",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "治安良好",
+      "金融中心",
+      "珍珠之路遗产",
+      "海湾夜生活"
+    ],
+    "risks": [
+      "夏季高温",
+      "沙尘",
+      "驾车激进",
+      "周五人流"
+    ],
+    "emergency": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "巴林春季节",
+        "month": "3-4月",
+        "description": "文化演出与市集"
+      },
+      {
+        "name": "F1 巴林大奖赛",
+        "month": "3月",
+        "description": "沙漠夜赛"
+      }
+    ],
+    "transport": {
+      "airport": "巴林国际机场（BAH），市区约20分钟",
+      "train": "无",
+      "subway": "无",
+      "taxi": "App叫车与出租"
+    },
+    "attractions": [
+      {
+        "name": "巴林堡（Qal’at al-Bahrain）",
+        "category": "世界遗产",
+        "description": "迪尔门文明考古遗址"
+      },
+      {
+        "name": "珍珠之路",
+        "category": "遗产",
+        "description": "联合国教科文组织记忆遗产"
+      },
+      {
+        "name": "巴林国家博物馆",
+        "category": "博物馆",
+        "description": "海湾历史与石油史"
+      }
+    ],
+    "food": [
+      {
+        "name": "Machboos",
+        "description": "藏红花米饭配肉",
+        "recommendation": "传统餐馆"
+      },
+      {
+        "name": "Shawarma",
+        "description": "烤肉卷",
+        "recommendation": "街头"
+      },
+      {
+        "name": "Arabic Sweets",
+        "description": "中东甜点",
+        "recommendation": "甜品店"
+      }
+    ],
+    "customs": [
+      "斋月白天克制饮食",
+      "周五主休",
+      "待客热情",
+      "着装保守"
+    ],
+    "tips": [
+      "夏季避免正午户外",
+      "沙尘天防护",
+      "自来水可饮",
+      "备现金"
+    ]
+  },
+  "gold_coast": {
+    "id": "gold_coast",
+    "name": "黄金海岸",
+    "nameEn": "Gold Coast",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -28.0167,
+    "lng": 153.4,
+    "image": "https://picsum.photos/seed/safecity_gold_coast/1200/400",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "A",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "海滩度假",
+      "主题乐园",
+      "冲浪文化",
+      "安全宜居"
+    ],
+    "risks": [
+      "烈日与溺水",
+      "酒后滋事",
+      "暑期人流",
+      "偶发抢劫"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "黄金海岸马拉松",
+        "month": "7月",
+        "description": "南半球最大马拉松"
+      },
+      {
+        "name": "Schoolies（毕业周）",
+        "month": "11月",
+        "description": "毕业生海滩聚会，夜间较喧闹"
+      }
+    ],
+    "transport": {
+      "airport": "黄金海岸机场（OOL），市区约30分钟",
+      "train": "连接布里斯班的火车",
+      "subway": "无",
+      "taxi": "Uber与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "冲浪者天堂",
+        "category": "海滩",
+        "description": "标志性金色海滩与摩天楼"
+      },
+      {
+        "name": "华纳电影世界",
+        "category": "主题乐园",
+        "description": "电影主题游乐园"
+      },
+      {
+        "name": "春溪国家公园",
+        "category": "自然",
+        "description": "雨林瀑布与徒步"
+      }
+    ],
+    "food": [
+      {
+        "name": "肉派（Meat Pie）",
+        "description": "澳式国民小吃",
+        "recommendation": "Bakery"
+      },
+      {
+        "name": "海鲜",
+        "description": "新鲜虾蟹",
+        "recommendation": "海滨餐馆"
+      },
+      {
+        "name": "Flat White",
+        "description": "澳式咖啡",
+        "recommendation": "咖啡馆"
+      }
+    ],
+    "customs": [
+      "小费非强制",
+      "公共场所礼貌排队",
+      "海滩注意旗语（安全游泳区）",
+      "直呼其名较随意"
+    ],
+    "tips": [
+      "严格遵守海滩旗语防溺",
+      "防晒补水",
+      "野生动物勿靠近",
+      "紧急统一拨000"
+    ]
+  },
+  "cairns": {
+    "id": "cairns",
+    "name": "凯恩斯",
+    "nameEn": "Cairns",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -16.9186,
+    "lng": 145.7781,
+    "image": "https://picsum.photos/seed/safecity_cairns/1200/400",
+    "safety": {
+      "overall": 84,
+      "grade": "A-",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "A",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "大堡礁门户",
+      "热带雨林",
+      "潜水天堂",
+      "安全小镇"
+    ],
+    "risks": [
+      "烈日与溺水",
+      "箱水母（夏季）",
+      "热带暴雨",
+      "蚊虫"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "大堡礁节",
+        "month": "8月",
+        "description": "海洋与艺术庆典"
+      },
+      {
+        "name": "雨林世界音乐节",
+        "month": "11月",
+        "description": "库兰达的原音乐节"
+      }
+    ],
+    "transport": {
+      "airport": "凯恩斯机场（CNS），市区约10分钟",
+      "train": "有连接昆士兰的火车",
+      "subway": "无",
+      "taxi": "Uber与出租"
+    },
+    "attractions": [
+      {
+        "name": "大堡礁",
+        "category": "自然奇观",
+        "description": "世界最大珊瑚礁，潜水浮潜胜地"
+      },
+      {
+        "name": "库兰达雨林",
+        "category": "自然",
+        "description": "缆车与火车进入热带雨林"
+      },
+      {
+        "name": "Esplanade 潟湖",
+        "category": "泳池",
+        "description": "安全人工潟湖泳池"
+      }
+    ],
+    "food": [
+      {
+        "name": "海鲜拼盘",
+        "description": "珊瑚海渔获",
+        "recommendation": "海滨餐馆"
+      },
+      {
+        "name": "热带水果",
+        "description": "芒果木瓜等",
+        "recommendation": "市场"
+      },
+      {
+        "name": "肉派",
+        "description": "澳式小吃",
+        "recommendation": "Bakery"
+      }
+    ],
+    "customs": [
+      "小费非强制",
+      "尊重原住民文化",
+      "海滩旗语",
+      "随意直率"
+    ],
+    "tips": [
+      "夏季远离箱水母区",
+      "防晒防蚊",
+      "浮潜注意安全",
+      "紧急拨000"
+    ]
+  },
+  "hobart": {
+    "id": "hobart",
+    "name": "霍巴特",
+    "nameEn": "Hobart",
+    "country": "澳大利亚",
+    "continent": "大洋洲",
+    "flag": "🇦🇺",
+    "lat": -42.8821,
+    "lng": 147.3272,
+    "image": "https://picsum.photos/seed/safecity_hobart/1200/400",
+    "safety": {
+      "overall": 85,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A-",
+        "health": "A",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "塔斯马尼亚首府",
+      "空气洁净",
+      "美食美酒",
+      "安全宜居"
+    ],
+    "risks": [
+      "冬季寒冷",
+      "强风与野火（周边）",
+      "夜间人少",
+      "海鲜价高"
+    ],
+    "emergency": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "Dark Mofo",
+        "month": "6月",
+        "description": "冬季光影与艺术节"
+      },
+      {
+        "name": "悉尼—霍巴特帆船赛终点",
+        "month": "12月26日",
+        "description": "经典帆船赛事抵达"
+      }
+    ],
+    "transport": {
+      "airport": "霍巴特机场（HBA），市区约20分钟",
+      "train": "无",
+      "subway": "无",
+      "taxi": "Uber与出租"
+    },
+    "attractions": [
+      {
+        "name": "萨拉曼卡市场",
+        "category": "集市",
+        "description": "周六的历史集市与手工艺"
+      },
+      {
+        "name": "惠灵顿山",
+        "category": "自然",
+        "description": "俯瞰全城与海峡"
+      },
+      {
+        "name": "MONA 博物馆",
+        "category": "博物馆",
+        "description": "争议性当代艺术博物馆"
+      }
+    ],
+    "food": [
+      {
+        "name": "塔斯马尼亚生蚝",
+        "description": "冷水优质生蚝",
+        "recommendation": "海滨"
+      },
+      {
+        "name": "威灵顿羊肉",
+        "description": "本地牧养羊肉",
+        "recommendation": "餐馆"
+      },
+      {
+        "name": "手工奶酪",
+        "description": "本地乳酪",
+        "recommendation": "市集"
+      }
+    ],
+    "customs": [
+      "小费非强制",
+      "环保分袋严格",
+      "随意友好",
+      "周末市场文化"
+    ],
+    "tips": [
+      "冬季保暖",
+      "野火季关注预警",
+      "自驾小心野生动物",
+      "紧急拨000"
+    ]
+  },
+  "quito": {
+    "id": "quito",
+    "name": "基多",
+    "nameEn": "Quito",
+    "country": "厄瓜多尔",
+    "continent": "拉丁美洲",
+    "flag": "🇪🇨",
+    "lat": -0.1807,
+    "lng": -78.4678,
+    "image": "https://picsum.photos/seed/safecity_quito/1200/400",
+    "safety": {
+      "overall": 60,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "B-",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "赤道首都",
+      "世界遗产老城",
+      "安第斯高原",
+      "物价低"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "高反",
+      "地震带",
+      "交通拥堵"
+    ],
+    "emergency": {
+      "police": "101",
+      "ambulance": "131",
+      "fire": "102",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "独立日",
+        "month": "8月10日",
+        "description": "全国庆典"
+      },
+      {
+        "name": "Inti Raymi 太阳节",
+        "month": "6月",
+        "description": "印加夏至庆典"
+      }
+    ],
+    "transport": {
+      "airport": "马里奥·科博机场（UIO），市区约1小时",
+      "train": "无城市轨道交通",
+      "subway": "无",
+      "taxi": "App叫车更稳妥"
+    },
+    "attractions": [
+      {
+        "name": "基多老城",
+        "category": "世界遗产",
+        "description": "保存完好的殖民时期中心"
+      },
+      {
+        "name": "赤道纪念碑",
+        "category": "地标",
+        "description": "Mitad del Mundo 赤道线"
+      },
+      {
+        "name": "面包山",
+        "category": "观景",
+        "description": "缆车登顶俯瞰全城"
+      }
+    ],
+    "food": [
+      {
+        "name": "Llapingacho",
+        "description": "芝士土豆饼",
+        "recommendation": "本地餐馆"
+      },
+      {
+        "name": "Cuy（烤豚鼠）",
+        "description": "安第斯传统菜",
+        "recommendation": "乡村餐馆"
+      },
+      {
+        "name": "Empanadas",
+        "description": "炸馅饼",
+        "recommendation": "街头"
+      }
+    ],
+    "customs": [
+      "见面贴面礼",
+      "西语为主",
+      "小费约10%",
+      "市场可议价"
+    ],
+    "tips": [
+      "防高反慢动作",
+      "防扒窃",
+      "饮用瓶装水",
+      "夜间少步行"
+    ]
+  },
+  "san_jose": {
+    "id": "san_jose",
+    "name": "圣何塞",
+    "nameEn": "San José",
+    "country": "哥斯达黎加",
+    "continent": "拉丁美洲",
+    "flag": "🇨🇷",
+    "lat": 9.9281,
+    "lng": -84.0907,
+    "image": "https://picsum.photos/seed/safecity_san_jose/1200/400",
+    "safety": {
+      "overall": 62,
+      "grade": "B-",
+      "grades": {
+        "crime": "B-",
+        "transport": "B",
+        "health": "B",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "和平稳定",
+      "生态旅游门户",
+      "物价适中",
+      "民主典范"
+    ],
+    "risks": [
+      "扒窃与抢包",
+      "夜间安全",
+      "火山与地震",
+      "暴雨季"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "独立日",
+        "month": "9月15日",
+        "description": "全国庆祝"
+      },
+      {
+        "name": "玉米节",
+        "month": "8月",
+        "description": "乡村庆典"
+      }
+    ],
+    "transport": {
+      "airport": "胡安·圣玛丽亚机场（SJO），市区约30分钟",
+      "train": "城铁有限",
+      "subway": "无",
+      "taxi": "Uber与出租"
+    },
+    "attractions": [
+      {
+        "name": "国家剧院",
+        "category": "建筑",
+        "description": "法式风格文化地标"
+      },
+      {
+        "name": "黄金博物馆",
+        "category": "博物馆",
+        "description": "前哥伦布黄金工艺品"
+      },
+      {
+        "name": "中央市场",
+        "category": "集市",
+        "description": "本地生活与小吃"
+      }
+    ],
+    "food": [
+      {
+        "name": "Casado",
+        "description": "米饭豆类配肉，国民套餐",
+        "recommendation": "苏打小馆"
+      },
+      {
+        "name": "Gallo Pinto",
+        "description": "黑豆米饭",
+        "recommendation": "早餐"
+      },
+      {
+        "name": "新鲜果汁",
+        "description": "热带水果",
+        "recommendation": "街头"
+      }
+    ],
+    "customs": [
+      "西班牙语",
+      "见面握手",
+      "小费约10%",
+      "环保意识强"
+    ],
+    "tips": [
+      "防扒窃",
+      "饮用瓶装水",
+      "暴雨季注意路况",
+      "夜归拼车"
+    ]
+  },
+  "havana": {
+    "id": "havana",
+    "name": "哈瓦那",
+    "nameEn": "Havana",
+    "country": "古巴",
+    "continent": "拉丁美洲",
+    "flag": "🇨🇺",
+    "lat": 23.1136,
+    "lng": -82.3666,
+    "image": "https://picsum.photos/seed/safecity_havana/1200/400",
+    "safety": {
+      "overall": 62,
+      "grade": "B-",
+      "grades": {
+        "crime": "B",
+        "transport": "B-",
+        "health": "B-",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "殖民老城",
+      "老爷车文化",
+      "音乐之都",
+      "物价低"
+    ],
+    "risks": [
+      "旅游诈骗",
+      "扒窃",
+      "物资短缺",
+      "网络不便"
+    ],
+    "emergency": {
+      "police": "106",
+      "ambulance": "104",
+      "fire": "105",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "圣地亚哥狂欢节",
+        "month": "7月",
+        "description": "全国最盛大的街头狂欢"
+      },
+      {
+        "name": "独立日",
+        "month": "10月10日",
+        "description": "全国庆典"
+      }
+    ],
+    "transport": {
+      "airport": "何塞·马蒂机场（HAV），市区约30分钟",
+      "train": "铁路有限",
+      "subway": "无",
+      "taxi": "国营出租与老爷车出租"
+    },
+    "attractions": [
+      {
+        "name": "哈瓦那老城",
+        "category": "世界遗产",
+        "description": "殖民时期广场与城堡"
+      },
+      {
+        "name": "海滨大道 Malecón",
+        "category": "地标",
+        "description": "滨海漫步长堤"
+      },
+      {
+        "name": "革命广场",
+        "category": "地标",
+        "description": "城市政治中心"
+      }
+    ],
+    "food": [
+      {
+        "name": "Ropa Vieja",
+        "description": "炖牛肉丝",
+        "recommendation": "家庭餐馆"
+      },
+      {
+        "name": "Cuban Sandwich",
+        "description": "古巴三明治",
+        "recommendation": "街边"
+      },
+      {
+        "name": "Mojito",
+        "description": "朗姆薄荷饮",
+        "recommendation": "La Bodeguita"
+      }
+    ],
+    "customs": [
+      "西班牙语",
+      "音乐与舞蹈文化",
+      "小费受欢迎",
+      "拍照先征得同意"
+    ],
+    "tips": [
+      "使用正规换汇（Cadeca）",
+      "防扒窃",
+      "网络需购买上网卡",
+      "备小额现金"
+    ]
+  },
+  "curitiba": {
+    "id": "curitiba",
+    "name": "库里蒂巴",
+    "nameEn": "Curitiba",
+    "country": "巴西",
+    "continent": "拉丁美洲",
+    "flag": "🇧🇷",
+    "lat": -25.4284,
+    "lng": -49.2733,
+    "image": "https://picsum.photos/seed/safecity_curitiba/1200/400",
+    "safety": {
+      "overall": 72,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "城市规划典范",
+      "公交系统先进",
+      "安全宜居",
+      "公园众多"
+    ],
+    "risks": [
+      "偶发抢劫",
+      "扒窃",
+      "冬季湿冷",
+      "物价中等"
+    ],
+    "emergency": {
+      "police": "190",
+      "ambulance": "192",
+      "fire": "193",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "独立日",
+        "month": "9月7日",
+        "description": "全国庆典"
+      },
+      {
+        "name": "Curitiba 美食节",
+        "month": "不定期",
+        "description": "本地餐饮活动"
+      }
+    ],
+    "transport": {
+      "airport": "阿丰索·佩纳机场（CWB），市区约30分钟",
+      "train": "无城市轨道交通",
+      "subway": "有快速公交BRT系统",
+      "taxi": "Uber与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "火车公园",
+        "category": "公园",
+        "description": "旧火车站改造的绿地"
+      },
+      {
+        "name": "奥斯卡·尼迈耶博物馆",
+        "category": "博物馆",
+        "description": "眼科状当代艺术馆"
+      },
+      {
+        "name": "植物园",
+        "category": "公园",
+        "description": "法式花园与温室"
+      }
+    ],
+    "food": [
+      {
+        "name": "Pão de Queijo",
+        "description": "芝士面包",
+        "recommendation": "面包店"
+      },
+      {
+        "name": "Barreado",
+        "description": "慢炖牛肉",
+        "recommendation": "本地餐馆"
+      },
+      {
+        "name": "Churrasco",
+        "description": "巴西烤肉",
+        "recommendation": "烤肉店"
+      }
+    ],
+    "customs": [
+      "葡萄牙语",
+      "小费10%左右",
+      "见面贴面礼",
+      "足球文化浓厚"
+    ],
+    "tips": [
+      "公交系统高效多用BRT",
+      "防扒窃",
+      "冬季保暖",
+      "紧急分别拨190/192/193"
+    ]
+  },
+  "new_orleans": {
+    "id": "new_orleans",
+    "name": "新奥尔良",
+    "nameEn": "New Orleans",
+    "country": "美国",
+    "continent": "北美洲",
+    "flag": "🇺🇸",
+    "lat": 29.9511,
+    "lng": -90.0715,
+    "image": "https://picsum.photos/seed/safecity_new_orleans/1200/400",
+    "safety": {
+      "overall": 52,
+      "grade": "B-",
+      "grades": {
+        "crime": "C+",
+        "transport": "B",
+        "health": "B+",
+        "natural": "C"
+      }
+    },
+    "highlights": [
+      "爵士乐之都",
+      "美食天堂",
+      "独特法式风情",
+      "节庆之城"
+    ],
+    "risks": [
+      "部分区高犯罪",
+      "飓风与洪涝",
+      "高温高湿",
+      "夜间安全"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "Mardi Gras 狂欢节",
+        "month": "2-3月",
+        "description": "最著名的街头狂欢"
+      },
+      {
+        "name": "爵士音乐节",
+        "month": "4-5月",
+        "description": "全球爵士盛会"
+      }
+    ],
+    "transport": {
+      "airport": "路易斯·阿姆斯特朗机场（MSY），市区约30分钟",
+      "train": "有街车与公交",
+      "subway": "无",
+      "taxi": "Uber与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "法国区",
+        "category": "历史街区",
+        "description": "波旁街与杰克逊广场"
+      },
+      {
+        "name": "河口战场",
+        "category": "历史",
+        "description": "1812年战争遗址"
+      },
+      {
+        "name": "沼泽游船",
+        "category": "自然",
+        "description": "密西西比河三角洲生态"
+      }
+    ],
+    "food": [
+      {
+        "name": "Gumbo",
+        "description": "海鲜秋葵浓汤",
+        "recommendation": "老字号餐馆"
+      },
+      {
+        "name": "Beignets",
+        "description": "糖粉油炸面团",
+        "recommendation": "Café du Monde"
+      },
+      {
+        "name": "Po’ Boy",
+        "description": "炸虾三明治",
+        "recommendation": "街头"
+      }
+    ],
+    "customs": [
+      "小费15-20%",
+      "见面直接称呼名",
+      "节庆文化浓",
+      "多元包容"
+    ],
+    "tips": [
+      "夜间结伴",
+      "关注飓风季预警",
+      "高温补水",
+      "紧急拨911"
+    ]
+  },
+  "tampa": {
+    "id": "tampa",
+    "name": "坦帕",
+    "nameEn": "Tampa",
+    "country": "美国",
+    "continent": "北美洲",
+    "flag": "🇺🇸",
+    "lat": 27.9506,
+    "lng": -82.4572,
+    "image": "https://picsum.photos/seed/safecity_tampa/1200/400",
+    "safety": {
+      "overall": 68,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "B+",
+        "health": "B+",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "阳光海滨",
+      "主题乐园近",
+      "经济活跃",
+      "家庭友好"
+    ],
+    "risks": [
+      "午后雷暴",
+      "飓风季",
+      "偶发抢劫",
+      "高温"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "Gasparilla 海盗节",
+        "month": "1-2月",
+        "description": "海盗主题城市庆典"
+      },
+      {
+        "name": "州博会",
+        "month": "2月",
+        "description": "佛州博览会"
+      }
+    ],
+    "transport": {
+      "airport": "坦帕国际机场（TPA），市区约20分钟",
+      "train": "有街车与公交",
+      "subway": "无",
+      "taxi": "Uber与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "Ybor City",
+        "category": "历史街区",
+        "description": "古巴移民历史街区与夜生活"
+      },
+      {
+        "name": "Busch Gardens",
+        "category": "主题乐园",
+        "description": "非洲主题动物园与过山车"
+      },
+      {
+        "name": "清水滩",
+        "category": "海滩",
+        "description": "邻近的优质海滩"
+      }
+    ],
+    "food": [
+      {
+        "name": "Cuban Sandwich",
+        "description": "古巴三明治",
+        "recommendation": "Ybor老店"
+      },
+      {
+        "name": "石蟹",
+        "description": "佛州特产",
+        "recommendation": "季节限定"
+      },
+      {
+        "name": "Key Lime Pie",
+        "description": "青柠派",
+        "recommendation": "甜品店"
+      }
+    ],
+    "customs": [
+      "小费15-20%",
+      "直率随意",
+      "多元文化",
+      "驾车文化"
+    ],
+    "tips": [
+      "午后雷暴带伞",
+      "飓风季关注预警",
+      "海滩防晒",
+      "紧急拨911"
+    ]
+  },
+  "minneapolis": {
+    "id": "minneapolis",
+    "name": "明尼阿波利斯",
+    "nameEn": "Minneapolis",
+    "country": "美国",
+    "continent": "北美洲",
+    "flag": "🇺🇸",
+    "lat": 44.9778,
+    "lng": -93.265,
+    "image": "https://picsum.photos/seed/safecity_minneapolis/1200/400",
+    "safety": {
+      "overall": 66,
+      "grade": "B",
+      "grades": {
+        "crime": "B",
+        "transport": "B+",
+        "health": "A-",
+        "natural": "C+"
+      }
+    },
+    "highlights": [
+      "千湖之城",
+      "宜居安全",
+      "文化艺术强",
+      "户外活动"
+    ],
+    "risks": [
+      "严冬极寒",
+      "冰雪路面",
+      "偶发枪击",
+      "暴风雪"
+    ],
+    "emergency": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "水节",
+        "month": "6月",
+        "description": "城市河流庆典"
+      },
+      {
+        "name": "圣诞集市",
+        "month": "12月",
+        "description": "冬季市集"
+      }
+    ],
+    "transport": {
+      "airport": "明尼阿波利斯机场（MSP），市区约20分钟",
+      "train": "有轻轨连接机场与市区",
+      "subway": "有轻轨（Blue/Green线）",
+      "taxi": "Uber与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "密西西比河滨",
+        "category": "自然",
+        "description": "瀑布与步道公园"
+      },
+      {
+        "name": "步行桥雕塑园",
+        "category": "艺术",
+        "description": "室外雕塑公园"
+      },
+      {
+        "name": "美国购物中心",
+        "category": "购物",
+        "description": "全美最大室内 Mall"
+      }
+    ],
+    "food": [
+      {
+        "name": "Juicy Lucy 芝士堡",
+        "description": "爆浆芝士汉堡",
+        "recommendation": "本地Pub"
+      },
+      {
+        "name": "Hotdish",
+        "description": "烤箱炖菜",
+        "recommendation": "家常菜"
+      },
+      {
+        "name": "野生稻米",
+        "description": "明州特产",
+        "recommendation": "餐馆"
+      }
+    ],
+    "customs": [
+      "小费15-20%",
+      "友善但保持距离",
+      "冬季装备必备",
+      "湖畔文化"
+    ],
+    "tips": [
+      "冬季防寒-20°C常见",
+      "冰雪天慢行",
+      "紧急拨911",
+      "室内暖气足"
+    ]
+  },
+  "chongqing": {
+    "id": "chongqing",
+    "name": "重庆",
+    "nameEn": "Chongqing",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 29.563,
+    "lng": 106.5516,
+    "image": "https://picsum.photos/seed/safecity_chongqing/1200/400",
+    "safety": {
+      "overall": 78,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "山城地貌",
+      "火锅之都",
+      "夜景迷人",
+      "物价适中"
+    ],
+    "risks": [
+      "阶梯与坡道多",
+      "夏季闷热",
+      "轻轨拥挤",
+      "麻辣肠胃"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "重庆火锅节",
+        "month": "10月",
+        "description": "全城火锅主题活动"
+      },
+      {
+        "name": "春节灯会",
+        "month": "农历正月",
+        "description": "传统灯会"
+      }
+    ],
+    "transport": {
+      "airport": "江北国际机场（CKG），市区约40分钟",
+      "train": "成渝高铁连接成都",
+      "subway": "有10余条轻轨/地铁线",
+      "taxi": "网约车与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "洪崖洞",
+        "category": "地标",
+        "description": "吊脚楼夜景网红地标"
+      },
+      {
+        "name": "长江索道",
+        "category": "体验",
+        "description": "跨江空中缆车"
+      },
+      {
+        "name": "磁器口古镇",
+        "category": "古镇",
+        "description": "千年古镇与小吃"
+      }
+    ],
+    "food": [
+      {
+        "name": "重庆火锅",
+        "description": "麻辣牛油锅底",
+        "recommendation": "老火锅店"
+      },
+      {
+        "name": "小面",
+        "description": "麻辣面条早餐",
+        "recommendation": "街边小馆"
+      },
+      {
+        "name": "酸辣粉",
+        "description": "红薯粉酸辣",
+        "recommendation": "小吃摊"
+      }
+    ],
+    "customs": [
+      "微信支付宝普及",
+      "小费不流行",
+      "方言与普通话并存",
+      "热情直率"
+    ],
+    "tips": [
+      "备肠胃药应对麻辣",
+      "导航注意高低差",
+      "防暑补水",
+      "紧急拨110/120/119"
+    ]
+  },
+  "qingdao": {
+    "id": "qingdao",
+    "name": "青岛",
+    "nameEn": "Qingdao",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 36.0671,
+    "lng": 120.3826,
+    "image": "https://picsum.photos/seed/safecity_qingdao/1200/400",
+    "safety": {
+      "overall": 80,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A-",
+        "health": "B+",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "海滨啤酒城",
+      "红瓦绿树",
+      "德式建筑",
+      "凉爽夏季"
+    ],
+    "risks": [
+      "旅游季人多",
+      "海鲜过敏",
+      "夏季潮汐",
+      "海雾"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "青岛国际啤酒节",
+        "month": "8月",
+        "description": "亚洲最大啤酒节"
+      },
+      {
+        "name": "海洋节",
+        "month": "7月",
+        "description": "海洋主题庆典"
+      }
+    ],
+    "transport": {
+      "airport": "胶东国际机场（TAO），市区约1小时",
+      "train": "高铁直达多城",
+      "subway": "有地铁线",
+      "taxi": "网约车与出租普及"
+    },
+    "attractions": [
+      {
+        "name": "栈桥",
+        "category": "地标",
+        "description": "伸入海中的百年长廊"
+      },
+      {
+        "name": "八大关",
+        "category": "街区",
+        "description": "万国建筑博物苑"
+      },
+      {
+        "name": "崂山",
+        "category": "自然",
+        "description": "海上名山与道观"
+      }
+    ],
+    "food": [
+      {
+        "name": "青岛啤酒",
+        "description": "原浆鲜啤",
+        "recommendation": "啤酒节/酒馆"
+      },
+      {
+        "name": "海鲜",
+        "description": "蛤蜊与海螺",
+        "recommendation": "啤酒屋"
+      },
+      {
+        "name": "鲅鱼水饺",
+        "description": "本地特色",
+        "recommendation": "饺子馆"
+      }
+    ],
+    "customs": [
+      "扫码支付普及",
+      "小费不流行",
+      "海边长者晨练文化",
+      "直爽好客"
+    ],
+    "tips": [
+      "海鲜配啤酒适量",
+      "海边注意潮汐与防晒",
+      "防扒",
+      "紧急拨110/120/119"
+    ]
+  },
+  "sanya": {
+    "id": "sanya",
+    "name": "三亚",
+    "nameEn": "Sanya",
+    "country": "中国",
+    "continent": "亚洲",
+    "flag": "🇨🇳",
+    "lat": 18.2528,
+    "lng": 109.5119,
+    "image": "https://picsum.photos/seed/safecity_sanya/1200/400",
+    "safety": {
+      "overall": 76,
+      "grade": "B+",
+      "grades": {
+        "crime": "B+",
+        "transport": "B+",
+        "health": "B",
+        "natural": "B-"
+      }
+    },
+    "highlights": [
+      "热带海岛",
+      "度假天堂",
+      "潜水胜地",
+      "阳光沙滩"
+    ],
+    "risks": [
+      "旅游消费陷阱",
+      "台风季",
+      "日晒强烈",
+      "海鲜宰客"
+    ],
+    "emergency": {
+      "police": "110",
+      "ambulance": "120",
+      "fire": "119",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "天涯海角国际婚庆节",
+        "month": "不定期",
+        "description": "婚庆主题"
+      },
+      {
+        "name": "海南欢乐节",
+        "month": "11月",
+        "description": "全省旅游节"
+      }
+    ],
+    "transport": {
+      "airport": "凤凰国际机场（SYX），市区约30分钟",
+      "train": "环岛高铁连接海口",
+      "subway": "无",
+      "taxi": "网约车与出租"
+    },
+    "attractions": [
+      {
+        "name": "亚龙湾",
+        "category": "海滩",
+        "description": "细沙碧水的度假海湾"
+      },
+      {
+        "name": "天涯海角",
+        "category": "地标",
+        "description": "著名石刻景区"
+      },
+      {
+        "name": "南山文化苑",
+        "category": "文化",
+        "description": "海上观音圣像"
+      }
+    ],
+    "food": [
+      {
+        "name": "海鲜",
+        "description": "现捞现做",
+        "recommendation": "明码标价市场加工"
+      },
+      {
+        "name": "椰子鸡",
+        "description": "椰子清汤鸡",
+        "recommendation": "火锅店"
+      },
+      {
+        "name": "清补凉",
+        "description": "椰奶甜品",
+        "recommendation": "街头"
+      }
+    ],
+    "customs": [
+      "扫码支付普及",
+      "小费不流行",
+      "度假休闲文化",
+      "物价较内地高"
+    ],
+    "tips": [
+      "海鲜先问价再加工",
+      "警惕拉客",
+      "强日晒防晒",
+      "台风季关注预警"
+    ]
+  },
+  "busan": {
+    "id": "busan",
+    "name": "釜山",
+    "nameEn": "Busan",
+    "country": "韩国",
+    "continent": "亚洲",
+    "flag": "🇰🇷",
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "image": "https://picsum.photos/seed/safecity_busan/1200/400",
+    "safety": {
+      "overall": 82,
+      "grade": "A-",
+      "grades": {
+        "crime": "A-",
+        "transport": "A",
+        "health": "A",
+        "natural": "B"
+      }
+    },
+    "highlights": [
+      "海港都市",
+      "海滩与温泉",
+      "美食之都",
+      "物价低于首尔"
+    ],
+    "risks": [
+      "夏季台风",
+      "地铁拥挤",
+      "酒后治安",
+      "扒窃"
+    ],
+    "emergency": {
+      "police": "112",
+      "ambulance": "119",
+      "fire": "119",
+      "tourist_hotline": ""
+    },
+    "festivals": [
+      {
+        "name": "釜山国际电影节",
+        "month": "10月",
+        "description": "亚洲重要电影节"
+      },
+      {
+        "name": "海云台沙雕节",
+        "month": "夏季",
+        "description": "沙滩沙雕展"
+      }
+    ],
+    "transport": {
+      "airport": "金海国际机场（PUS），市区约40分钟",
+      "train": "KTX高速连接首尔",
+      "subway": "有4条地铁线",
+      "taxi": "网约车与出租"
+    },
+    "attractions": [
+      {
+        "name": "海云台海滩",
+        "category": "海滩",
+        "description": "韩国最著名海滩"
+      },
+      {
+        "name": "甘川文化村",
+        "category": "艺术街区",
+        "description": "彩色阶梯壁画村"
+      },
+      {
+        "name": "札嘎其市场",
+        "category": "市场",
+        "description": "韩国最大水产市场"
+      }
+    ],
+    "food": [
+      {
+        "name": "猪肉汤饭",
+        "description": "Gukbap 暖胃汤饭",
+        "recommendation": "老店"
+      },
+      {
+        "name": "海鲜",
+        "description": "札嘎其现捞",
+        "recommendation": "市场"
+      },
+      {
+        "name": "海鲜煎饼",
+        "description": "Pajeon",
+        "recommendation": "啤酒馆"
+      }
+    ],
+    "customs": [
+      "韩语与敬语",
+      "小费不流行",
+      "脱鞋入室",
+      "饮酒文化浓"
+    ],
+    "tips": [
+      "地铁T-money卡通用",
+      "防台风季",
+      "饮酒后注意",
+      "紧急拨112/119"
+    ]
+  }
 };

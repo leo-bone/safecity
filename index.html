@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SafeCity Global — 全球城市安全旅行指南</title>
-  <meta name="description" content="SafeCity Global 收录全球125座城市的安全评分，涵盖犯罪风险、自然灾害、医疗水平、交通安全，为您的国际旅行提供真实可靠的安全参考。">
+  <meta name="description" content="SafeCity Global 收录全球148座城市的安全评分，涵盖犯罪风险、自然灾害、医疗水平、交通安全，为您的国际旅行提供真实可靠的安全参考。">
   <meta name="keywords" content="城市安全,旅行安全,全球安全指南,SafeCity,安全评分,出行攻略,旅游安全,犯罪风险">
   <meta name="author" content="SafeCity Global">
   <meta name="robots" content="index, follow">
@@ -12,12 +12,12 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://safecity.uichain.org/">
   <meta property="og:title" content="SafeCity Global — 全球城市安全旅行指南">
-  <meta property="og:description" content="收录全球125座城市安全数据，7大洲全覆盖。出行前了解目的地真实安全状况。">
+  <meta property="og:description" content="收录全球148座城市安全数据，7大洲全覆盖。出行前了解目的地真实安全状况。">
   <meta property="og:image" content="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SafeCity Global — 全球城市安全旅行指南">
-  <meta name="twitter:description" content="收录全球125座城市安全数据，7大洲全覆盖。">
+  <meta name="twitter:description" content="收录全球148座城市安全数据，7大洲全覆盖。">
   <!-- Canonical -->
   <link rel="canonical" href="https://safecity.uichain.org/">
   <!-- 移动端主题色 / 站点图标（内联 SVG，避免额外请求） -->
@@ -31,7 +31,7 @@
     "name": "SafeCity Global",
     "alternateName": "全球城市安全旅行指南",
     "url": "https://safecity.uichain.org/",
-    "description": "收录全球125座城市的安全评分，涵盖犯罪风险、自然灾害、医疗水平与交通安全，为国际出行提供安全参考。",
+    "description": "收录全球148座城市的安全评分，涵盖犯罪风险、自然灾害、医疗水平与交通安全，为国际出行提供安全参考。",
     "inLanguage": "zh-CN",
     "publisher": { "@type": "Organization", "name": "SafeCity Global" },
     "potentialAction": {
@@ -1257,6 +1257,42 @@
     .city-weather-badge.alert {
       background: rgba(239,68,68,0.75); border-color: rgba(239,68,68,0.5);
     }
+    .city-weather-badge.cached {
+      background: rgba(245,158,11,0.7); border-color: rgba(245,158,11,0.5);
+    }
+    .rt-status-wrap { margin: 4px 0 10px; }
+    .rt-status-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 20px;
+      border: 1px solid transparent;
+    }
+    .rt-status-pill.ok { background: rgba(34,197,94,0.14); color: #16a34a; border-color: rgba(34,197,94,0.3); }
+    .rt-status-pill.partial { background: rgba(245,158,11,0.14); color: #d97706; border-color: rgba(245,158,11,0.3); }
+    .rt-status-pill.down { background: rgba(239,68,68,0.14); color: #dc2626; border-color: rgba(239,68,68,0.3); }
+    .rt-status-pill.unknown { background: rgba(100,116,139,0.14); color: #64748b; border-color: rgba(100,116,139,0.3); }
+
+    /* 回到顶部按钮 */
+    #back-to-top {
+      position: fixed; right: 20px; bottom: 22px; z-index: 60;
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(15,21,38,0.82); backdrop-filter: blur(8px);
+      color: #e8edf5; font-size: 20px; line-height: 1; cursor: pointer;
+      opacity: 0; visibility: hidden; transform: translateY(12px);
+      transition: opacity 0.25s, transform 0.25s, background 0.2s;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+    }
+    #back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+    #back-to-top:hover { background: rgba(34,197,94,0.85); }
+
+    /* 顶部进度条（页面切换） */
+    #top-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 90;
+      background: linear-gradient(90deg,#22c55e,#4fa3e3);
+      box-shadow: 0 0 10px rgba(79,163,227,0.6);
+      opacity: 0; transition: width 0.4s ease, opacity 0.3s;
+    }
+    #top-progress.run { opacity: 1; }
       .transport-card { background: var(--card-bg); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
     .transport-name { font-weight: 600; font-size: 15px; margin-bottom: 8px; }
     .transport-tips { font-size: 13px; color: var(--text2); line-height: 1.5; margin-bottom: 6px; }
@@ -1318,11 +1354,13 @@
   <div class="loading-text">加载城市数据...</div>
 </div>
 <div class="toast" id="toast"></div>
+<div id="top-progress"></div>
+<button id="back-to-top" aria-label="回到顶部" title="回到顶部">↑</button>
 
 <!-- ████ 首页 ████ -->
 <div id="home-page" class="page active">
   <div id="hero">
-    <div class="hero-badge">🌍 125 座城市安全数据 · 7大洲全覆盖</div>
+    <div class="hero-badge" id="hero-badge">🌍 城市安全数据 · 7大洲全覆盖</div>
     <h1 class="hero-title">全球城市安全<br>旅行指南</h1>
     <p class="hero-subtitle">
       出行前，先了解目的地的真实安全状况。<br>
@@ -1375,6 +1413,7 @@
     <button class="continent-tab" onclick="filterContinent('中东', this)">🕌 中东</button>
   </div>
 
+  <div id="rt-status" class="rt-status-wrap"></div>
   <div class="section-title">城市安全评分榜</div>
   <div id="city-grid"></div>
 </div>
@@ -1602,13 +1641,13 @@
 </div>
 
 <!-- ████ JS 主逻辑 ████ -->
-<!-- 全球125城市安全数据库 -->
-<!-- 城市安全数据库（125 城，1.8MB）-->
-<script src="data_enhanced.js?v=202609300000"></script>
+<!-- 全球城市安全数据库（148 城）-->
+<!-- 城市安全数据库（148 城）-->
+<script src="data_enhanced.js?v=202609301830"></script>
 <!-- 城市详情数据库 v4.0 -->
-<script src="data_new.js?v=202609300000"></script>
+<script src="data_new.js?v=202609301830"></script>
 <!-- 实时数据接口 -->
-<script src="realtime-api.js?v=202609300000"></script>
+<script src="realtime-api.js?v=202609301830"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
@@ -1625,6 +1664,7 @@ function showPage(name) {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active');
   });
+  runTopProgress();
   
   const pages = {
     'home': 'home-page',
@@ -1841,6 +1881,11 @@ function renderCityGrid(filterContinent = '全部') {
   document.getElementById('stat-cities').textContent = Object.keys(CITY_DATABASE).length + '+';
   // 渲染完成后异步注入实时天气徽章
   if (typeof RT_UI !== 'undefined') RT_UI.injectCityWeatherBadges();
+  // 实时天气状态徽章（随并发加载进度刷新）
+  if (typeof REALTIME_API !== 'undefined') {
+    const tick = () => REALTIME_API.renderStatus('rt-status');
+    [2000, 5000, 9000, 15000].forEach(ms => setTimeout(tick, ms));
+  }
 }
 
 function filterContinent(name, btn) {
@@ -3246,6 +3291,46 @@ function showLoadingBriefly(cb) {
   }, 400);
 }
 
+// 动态更新大洲标签计数 / 英雄徽章 / 页脚城市数
+function updateDynamicCounts() {
+  const total = Object.keys(CITY_DATABASE).length;
+  const counts = {};
+  Object.values(CITY_DATABASE).forEach(c => { counts[c.continent] = (counts[c.continent] || 0) + 1; });
+  const map = { '全部城市':'__all__', '🌏 亚洲':'亚洲', '🏰 欧洲':'欧洲', '🗽 北美洲':'北美洲',
+                '🌮 拉丁美洲':'拉丁美洲', '🦁 非洲':'非洲', '🦘 大洋洲':'大洋洲', '🕌 中东':'中东' };
+  document.querySelectorAll('#continent-tabs .continent-tab').forEach(btn => {
+    if (!btn.dataset.base) btn.dataset.base = btn.textContent;
+    const k = map[btn.dataset.base];
+    const n = k === '__all__' ? total : (counts[k] || 0);
+    btn.textContent = btn.dataset.base + ' ' + n;
+  });
+  const hb = document.getElementById('hero-badge');
+  if (hb) hb.textContent = `🌍 ${total} 座城市安全数据 · 7大洲全覆盖`;
+  const fc = document.getElementById('foot-cities');
+  if (fc) fc.textContent = total;
+}
+
+// 回到顶部按钮
+function setupBackToTop() {
+  const btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 500);
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+// 页面切换顶部进度条
+function runTopProgress() {
+  const bar = document.getElementById('top-progress');
+  if (!bar) return;
+  bar.classList.add('run');
+  bar.style.width = '0%';
+  requestAnimationFrame(() => { bar.style.width = '85%'; });
+  setTimeout(() => { bar.style.width = '100%'; }, 350);
+  setTimeout(() => { bar.classList.remove('run'); bar.style.width = '0%'; }, 900);
+}
+
 // ─────────────────────────────────────────────────────
 // 初始化
 // ─────────────────────────────────────────────────────
@@ -3275,6 +3360,8 @@ function showLoadingBriefly(cb) {
   try {
     renderCityGrid('全部');
     console.log('[SafeCity] renderCityGrid completed');
+    updateDynamicCounts();
+    setupBackToTop();
     // 隐藏loading overlay
     document.getElementById('loading').classList.remove('show');
   } catch(e) {
@@ -3300,14 +3387,15 @@ function showLoadingBriefly(cb) {
       <span style="font-size:18px;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:1px;">SafeCity Global</span>
     </div>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px 32px;margin-bottom:20px;color:rgba(255,255,255,0.55);font-size:13px;">
-      <span>🏙️ 收录125座全球城市</span>
+      <span>🏙️ 收录<span id="foot-cities">148</span>座全球城市</span>
       <span>🌐 7大洲全覆盖</span>
       <span>📊 4维安全评估</span>
       <span>🔄 持续更新数据</span>
     </div>
     <div style="margin-bottom:16px;color:rgba(255,255,255,0.3);font-size:12px;line-height:1.7;">
-      ⚠️ <strong style="color:rgba(255,255,255,0.5);">免责声明：</strong>本站安全评分仅供参考，基于公开数据和综合评估，不构成专业安全建议。<br>
-      出行前请参考<a href="https://travel.state.gov" target="_blank" style="color:#4fa3e3;text-decoration:none;">美国国务院旅行建议</a>、<a href="https://www.gov.cn/zhuanti/2022-07/28/content_5703136.htm" target="_blank" style="color:#4fa3e3;text-decoration:none;">中国外交部领事服务</a>等官方安全提示。
+      ⚠️ <strong style="color:rgba(255,255,255,0.5);">免责声明：</strong>本站安全评分仅供参考，基于公开数据与综合评估，不构成专业安全建议。<br>
+      出行前请参考<a href="https://travel.state.gov" target="_blank" style="color:#4fa3e3;text-decoration:none;">美国国务院旅行建议</a>、<a href="https://www.gov.cn/zhuanti/2022-07/28/content_5703136.htm" target="_blank" style="color:#4fa3e3;text-decoration:none;">中国外交部领事服务</a>等官方安全提示。<br>
+      📡 <strong style="color:rgba(255,255,255,0.5);">实时数据：</strong>天气来自 Open-Meteo，全球灾害预警来自 GDACS（联合国），地震数据来自 USGS，均免费公开、自动缓存与降级。
     </div>
     <div style="color:rgba(255,255,255,0.25);font-size:12px;">
       © 2026 SafeCity Global · 数据仅供参考 · <a href="https://safecity.uichain.org" style="color:rgba(255,255,255,0.35);text-decoration:none;">safecity.uichain.org</a>
