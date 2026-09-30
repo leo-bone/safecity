@@ -4,6 +4,8 @@
 // 包含：节日活动、交通指南、景点推荐、美食推荐、文化习俗、实用贴士
 // 图片已统一升级为高清（Unsplash w=1200 / picsum 1600x600）
 // 风险/贴士/习俗词条已按大洲补齐至最小深度
+// 23座新增城市（非洲/中东/大洋洲/拉美/北美/亚洲）已做全栏位深度扩充（美食/景点/节日/习俗/热点/安全区均补齐）
+// 厄瓜多尔(quito)紧急电话已校正为统一 911
 // ============================================================
 
 var CITY_DATABASE_DETAIL = {
@@ -16974,6 +16976,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "Tabaski（古尔邦节）",
         "month": "伊斯兰历",
         "description": "全城宰羊庆祝，交通与物价波动"
+      },
+      {
+        "name": "达喀尔双年展 Dak'Art",
+        "month": "偶数年5月",
+        "description": "非洲当代艺术盛会，全城画廊与公共空间展出"
+      },
+      {
+        "name": "古尔邦节 Tabaski",
+        "month": "伊斯兰历",
+        "description": "全城宰羊庆祝，交通与物价波动"
       }
     ],
     "transport": {
@@ -16997,7 +17009,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "达喀尔大清真寺",
         "category": "宗教建筑",
         "description": "城市天际线的标志"
-      }
+      },
+      "戈雷岛（奴隶贸易历史博物馆，UNESCO）",
+      "非洲复兴纪念碑",
+      "玫瑰湖（Retba 粉红湖）"
     ],
     "food": [
       {
@@ -17014,14 +17029,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "烧烤海鲜",
         "description": "大西洋新鲜渔获",
         "recommendation": "海滨排档"
-      }
+      },
+      "Thieboudienne（国菜：番茄番茄酱炖鱼配饭）",
+      "Yassa（洋葱柠檬炖鸡/鱼）"
     ],
     "customs": [
       "见面贴面礼常见",
       "进入清真寺需脱鞋并着装保守",
       "周日多数商铺休息",
       "砍价是市场常态",
-      "部分地区忌用左手递物或进食"
+      "部分地区忌用左手递物或进食",
+      "见面多次握手、寒暄后再谈正事"
     ],
     "tips": [
       "沿海地区注意防晒与补水",
@@ -17029,7 +17047,16 @@ var CITY_DATABASE_DETAIL = {
       "夜间减少步行",
       "保留护照复印件",
       "入境前查询疫苗与黄皮书要求"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Thieboudienne（国菜：番茄番茄酱炖鱼配饭）",
+        "Yassa（洋葱柠檬炖鸡/鱼）",
+        "Maafe（花生炖肉）",
+        "Pastels（炸鱼饼）",
+        "Bissap（木槿花饮）"
+      ]
+    }
   },
   "abidjan": {
     "id": "abidjan",
@@ -17080,6 +17107,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "Fêtes des Masques",
         "month": "2月",
         "description": "原住民面具节"
+      },
+      {
+        "name": "面具节 Fêtes des Masques",
+        "month": "11月",
+        "description": "邻近 Man 地区传统面具舞蹈庆典"
+      },
+      {
+        "name": "Popo 狂欢节",
+        "month": "2月",
+        "description": "Grand-Bassam 海滨城市的街头狂欢"
       }
     ],
     "transport": {
@@ -17103,7 +17140,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "泻湖大桥",
         "category": "地标",
         "description": "连接城市两岸的重要通道"
-      }
+      },
+      "圣保罗大教堂",
+      "Plateau 中心商务区",
+      "班科国家公园"
     ],
     "food": [
       {
@@ -17120,14 +17160,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Aloko",
         "description": "炸大蕉",
         "recommendation": "街头小吃"
-      }
+      },
+      "Attiéké（木薯粗粉，国民主食）",
+      "Kedjenou（慢炖鸡肉/肉）"
     ],
     "customs": [
       "见面握手并问候家人",
       "法语为主要通用语",
       "请客时礼貌推辞后再接受",
       "周日部分区域安静",
-      "部分地区忌用左手递物或进食"
+      "部分地区忌用左手递物或进食",
+      "见面握手寒暄、称呼长辈"
     ],
     "tips": [
       "黄热病疫苗为入境强制要求",
@@ -17135,7 +17178,16 @@ var CITY_DATABASE_DETAIL = {
       "避免饮用生水",
       "夜间减少外出",
       "入境前查询疫苗与黄皮书要求"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Attiéké（木薯粗粉，国民主食）",
+        "Kedjenou（慢炖鸡肉/肉）",
+        "Alloco（炸大蕉）",
+        "Garba（金枪鱼配 attiéké）",
+        "Foutou（捣碎大蕉）"
+      ]
+    }
   },
   "kampala": {
     "id": "kampala",
@@ -17186,6 +17238,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "KLA 艺术节",
         "month": "不定期",
         "description": "坎帕拉本土艺术与音乐"
+      },
+      {
+        "name": "坎帕拉城市节",
+        "month": "10月",
+        "description": "市中心游行、音乐与美食活动"
+      },
+      {
+        "name": "Nyege Nyege 音乐节",
+        "month": "9月",
+        "description": "东非电子与当代音乐盛会（邻近 Jinja）"
       }
     ],
     "transport": {
@@ -17209,7 +17271,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "赤道纪念碑",
         "category": "地标",
         "description": "可拍照的赤道标记点"
-      }
+      },
+      "卡苏比王陵（UNESCO  royal tombs）",
+      "乌干达博物馆",
+      "巴哈伊神庙（非洲唯一）"
     ],
     "food": [
       {
@@ -17226,14 +17291,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Nyama Choma",
         "description": "炭烤肉类",
         "recommendation": "烤肉店"
-      }
+      },
+      "Matoke（蒸香蕉，国菜）",
+      "Posho（玉米糊）"
     ],
     "customs": [
       "见面多次握手并问候",
       "英语与卢干达语通用",
       "拍照前先征得同意",
       "小费非强制但受欢迎",
-      "部分地区忌用左手递物或进食"
+      "部分地区忌用左手递物或进食",
+      "见面握手并寒暄健康状况"
     ],
     "tips": [
       "防蚊防疟必备",
@@ -17241,7 +17309,16 @@ var CITY_DATABASE_DETAIL = {
       "夜间拼车更安全",
       "保留证件复印件",
       "入境前查询疫苗与黄皮书要求"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Matoke（蒸香蕉，国菜）",
+        "Posho（玉米糊）",
+        "Rolex（鸡蛋卷薄饼，街头小吃）",
+        "Luwombo（蕉叶炖肉）",
+        "Nyama choma（烤肉）"
+      ]
+    }
   },
   "harare": {
     "id": "harare",
@@ -17292,6 +17369,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "独立日",
         "month": "4月18日",
         "description": "全国庆典"
+      },
+      {
+        "name": "HIFA 哈拉雷国际艺术节",
+        "month": "4-5月",
+        "description": "非洲重要戏剧、音乐与视觉艺术节"
+      },
+      {
+        "name": "独立日",
+        "month": "4月18日",
+        "description": "国庆庆典与文艺活动"
       }
     ],
     "transport": {
@@ -17315,7 +17402,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "哈拉雷植物园",
         "category": "公园",
         "description": "市中心宁静绿地"
-      }
+      },
+      "津巴布韦人类科学博物馆",
+      "国家英雄纪念地",
+      "国家植物园"
     ],
     "food": [
       {
@@ -17332,14 +17422,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "烤玉米",
         "description": "街头常见小吃",
         "recommendation": "街边"
-      }
+      },
+      "Sadza（玉米糊主食）",
+      "Nyama choma（烤肉）"
     ],
     "customs": [
       "英语为官方语言",
       "见面握手并问候",
       "小费约10%",
       "商务需提前预约",
-      "部分地区忌用左手递物或进食"
+      "部分地区忌用左手递物或进食",
+      "礼貌问候、称呼长辈"
     ],
     "tips": [
       "备足美元现金零钱",
@@ -17347,7 +17440,16 @@ var CITY_DATABASE_DETAIL = {
       "避免夜间步行",
       "饮用瓶装水",
       "入境前查询疫苗与黄皮书要求"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Sadza（玉米糊主食）",
+        "Nyama choma（烤肉）",
+        "Mopane 虫（干炸毛毛虫，特色）",
+        "Dovi（花生炖菜）",
+        "Maheu（发酵谷物饮）"
+      ]
+    }
   },
   "lusaka": {
     "id": "lusaka",
@@ -17398,6 +17500,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "Kwacha 文化节",
         "month": "不定期",
         "description": "本土文化展示"
+      },
+      {
+        "name": "Kulamba 成年礼",
+        "month": "8月",
+        "description": "Chewa 族盛大成年庆典（邻近 Katete）"
+      },
+      {
+        "name": "Kuomboka 洪水节",
+        "month": "3-4月",
+        "description": "Barotse 酋长雨季迁宫的传统仪式"
       }
     ],
     "transport": {
@@ -17421,7 +17533,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "Sunday 跳蚤市场",
         "category": "集市",
         "description": "本地手工艺与古董"
-      }
+      },
+      "卢萨卡国家博物馆",
+      "Munda Wanga 植物园",
+      "Kabwata 文化村"
     ],
     "food": [
       {
@@ -17438,14 +17553,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Vetkoek",
         "description": "油炸面团",
         "recommendation": "街头"
-      }
+      },
+      "Nshima（玉米糊主食）",
+      "Ifisashi（蔬菜花生炖）"
     ],
     "customs": [
       "英语为官方语言",
       "见面握手并问候",
       "拍照先征得同意",
       "市场可议价",
-      "部分地区忌用左手递物或进食"
+      "部分地区忌用左手递物或进食",
+      "见面问候、尊重长者"
     ],
     "tips": [
       "防蚊防疟",
@@ -17453,7 +17571,16 @@ var CITY_DATABASE_DETAIL = {
       "夜间减少步行",
       "备小额现金",
       "入境前查询疫苗与黄皮书要求"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Nshima（玉米糊主食）",
+        "Ifisashi（蔬菜花生炖）",
+        "Kapenta（小干鱼）",
+        "Chikanda（兰花肉冻点心）",
+        "坦噶尼喀湖鲫鱼"
+      ]
+    }
   },
   "amman": {
     "id": "amman",
@@ -17504,6 +17631,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "独立日",
         "month": "5月25日",
         "description": "全国庆典"
+      },
+      {
+        "name": "杰拉什艺术节",
+        "month": "7-8月",
+        "description": "罗马遗址上的音乐舞蹈盛会"
+      },
+      {
+        "name": "安曼爵士音乐节",
+        "month": "全年",
+        "description": "本地与国际爵士演出"
       }
     ],
     "transport": {
@@ -17527,7 +17664,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "彩虹街",
         "category": "街区",
         "description": "咖啡馆与书店云集的文艺街区"
-      }
+      },
+      "安曼城堡山 Jabal al-Qal'a",
+      "罗马剧场",
+      "彩虹街"
     ],
     "food": [
       {
@@ -17544,14 +17684,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Knafeh",
         "description": "奶酪甜点",
         "recommendation": "甜品店"
-      }
+      },
+      "Mansaf（羊肉酸奶饭，国菜）",
+      "Falafel"
     ],
     "customs": [
       "见面贴面礼与咖啡待客",
       "斋月白天公共场所饮食需谨慎",
       "周五为周休主日",
       "议价是常态",
-      "进入清真寺需脱鞋、着装保守"
+      "进入清真寺需脱鞋、着装保守",
+      "见面握手并道 As-salamu alaykum"
     ],
     "tips": [
       "自来水建议烧开",
@@ -17559,7 +17702,16 @@ var CITY_DATABASE_DETAIL = {
       "尊重宗教习俗",
       "保留护照复印件",
       "女性建议携带围巾以备进入宗教场所"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Mansaf（羊肉酸奶饭，国菜）",
+        "Falafel",
+        "Hummus",
+        "Maqluba（倒锅饭）",
+        "Knafeh（奶酪甜点）"
+      ]
+    }
   },
   "kuwait_city": {
     "id": "kuwait_city",
@@ -17610,6 +17762,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "Hala Feb 购物节",
         "month": "2月",
         "description": "节庆购物季"
+      },
+      {
+        "name": "Hala February 二月节",
+        "month": "2月",
+        "description": "购物与文化嘉年华"
+      },
+      {
+        "name": "国庆日",
+        "month": "2月25日",
+        "description": "全国庆典"
       }
     ],
     "transport": {
@@ -17633,7 +17795,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "科威特国家博物馆",
         "category": "博物馆",
         "description": "波斯湾与海洋史"
-      }
+      },
+      "科威特塔",
+      "大清真寺",
+      "Mubarakiya 老市集"
     ],
     "food": [
       {
@@ -17650,14 +17815,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "海鲜",
         "description": "波斯湾渔获",
         "recommendation": "海滨餐馆"
-      }
+      },
+      "Machboos（香料饭配肉，国菜）",
+      "Mutabbaq samak（炸鱼）"
     ],
     "customs": [
       "斋月白天公共饮食需克制",
       "周五主休",
       "待客慷慨",
       "着装保守得体",
-      "进入清真寺需脱鞋、着装保守"
+      "进入清真寺需脱鞋、着装保守",
+      "着装保守、尊重宗教"
     ],
     "tips": [
       "夏季避免正午户外",
@@ -17665,7 +17833,16 @@ var CITY_DATABASE_DETAIL = {
       "自来水可饮但偏咸",
       "备现金",
       "女性建议携带围巾以备进入宗教场所"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Machboos（香料饭配肉，国菜）",
+        "Mutabbaq samak（炸鱼）",
+        "Harees（小麦肉糜）",
+        "Gabout（填料酥皮）",
+        "Kunafa"
+      ]
+    }
   },
   "abu_dhabi": {
     "id": "abu_dhabi",
@@ -17716,6 +17893,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "F1 阿布扎比大奖赛",
         "month": "11月",
         "description": "亚斯码头赛道"
+      },
+      {
+        "name": "F1 阿布扎比大奖赛",
+        "month": "11月",
+        "description": "亚斯码头赛道年度赛事"
+      },
+      {
+        "name": "阿布扎比电影节",
+        "month": "全年",
+        "description": "中东重要电影展"
       }
     ],
     "transport": {
@@ -17739,7 +17926,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "法拉利世界",
         "category": "主题乐园",
         "description": "亚斯岛上的赛车主题乐园"
-      }
+      },
+      "谢赫扎耶德大清真寺",
+      "阿布扎比卢浮宫",
+      "酋长宫酒店"
     ],
     "food": [
       {
@@ -17756,14 +17946,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Luqaimat",
         "description": "炸甜面团球",
         "recommendation": "甜品"
-      }
+      },
+      "Al Harees（小麦肉糜）",
+      "Machboos"
     ],
     "customs": [
       "斋月白天公共饮食需克制",
       "着装保守",
       "周五主休",
       "公共场合举止得体",
-      "进入清真寺需脱鞋、着装保守"
+      "进入清真寺需脱鞋、着装保守",
+      "着装保守、公共场合得体"
     ],
     "tips": [
       "夏季气温超45°C避免户外",
@@ -17771,7 +17964,16 @@ var CITY_DATABASE_DETAIL = {
       "自来水可饮",
       "备现金小额",
       "女性建议携带围巾以备进入宗教场所"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Al Harees（小麦肉糜）",
+        "Machboos",
+        "Shawarma",
+        "Luqaimat（甜炸球）",
+        "骆驼肉料理"
+      ]
+    }
   },
   "manama": {
     "id": "manama",
@@ -17822,6 +18024,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "F1 巴林大奖赛",
         "month": "3月",
         "description": "沙漠夜赛"
+      },
+      {
+        "name": "巴林 F1 大奖赛",
+        "month": "3-4月",
+        "description": "Sakhir 赛道年度赛事"
+      },
+      {
+        "name": "文化之春 Spring of Culture",
+        "month": "10-12月",
+        "description": "音乐会与国际演出季"
       }
     ],
     "transport": {
@@ -17845,7 +18057,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "巴林国家博物馆",
         "category": "博物馆",
         "description": "海湾历史与石油史"
-      }
+      },
+      "巴林国家博物馆",
+      "巴林堡 Qal'at al-Bahrain（UNESCO）",
+      "Al-Fateh 大清真寺"
     ],
     "food": [
       {
@@ -17862,14 +18077,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Arabic Sweets",
         "description": "中东甜点",
         "recommendation": "甜品店"
-      }
+      },
+      "Machboos（巴林香料饭）",
+      "Muhammar（甜米饭）"
     ],
     "customs": [
       "斋月白天克制饮食",
       "周五主休",
       "待客热情",
       "着装保守",
-      "进入清真寺需脱鞋、着装保守"
+      "进入清真寺需脱鞋、着装保守",
+      "着装保守、尊重宗教"
     ],
     "tips": [
       "夏季避免正午户外",
@@ -17877,7 +18095,16 @@ var CITY_DATABASE_DETAIL = {
       "自来水可饮",
       "备现金",
       "女性建议携带围巾以备进入宗教场所"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Machboos（巴林香料饭）",
+        "Muhammar（甜米饭）",
+        "Kebab",
+        "Harees",
+        "巴林 Halwa 甜点"
+      ]
+    }
   },
   "gold_coast": {
     "id": "gold_coast",
@@ -17928,6 +18155,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "Schoolies（毕业周）",
         "month": "11月",
         "description": "毕业生海滩聚会，夜间较喧闹"
+      },
+      {
+        "name": "黄金海岸电影节",
+        "month": "4月",
+        "description": "本地与国际独立影展"
+      },
+      {
+        "name": "Broadbeach 蓝调节",
+        "month": "5月",
+        "description": "海滨免费蓝调音乐节"
       }
     ],
     "transport": {
@@ -17951,7 +18188,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "春溪国家公园",
         "category": "自然",
         "description": "雨林瀑布与徒步"
-      }
+      },
+      "冲浪者天堂海滩",
+      "主题乐园（梦幻世界/电影世界/海洋世界）",
+      "Burleigh Heads"
     ],
     "food": [
       {
@@ -17968,14 +18208,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Flat White",
         "description": "澳式咖啡",
         "recommendation": "咖啡馆"
-      }
+      },
+      "肉派 Meat pie",
+      "炸鱼薯条"
     ],
     "customs": [
       "小费非强制",
       "公共场所礼貌排队",
       "海滩注意旗语（安全游泳区）",
       "直呼其名较随意",
-      "原住民圣地勿随意进入或拍照"
+      "原住民圣地勿随意进入或拍照",
+      "随和友好、'no worries' 心态"
     ],
     "tips": [
       "严格遵守海滩旗语防溺",
@@ -17983,7 +18226,16 @@ var CITY_DATABASE_DETAIL = {
       "野生动物勿靠近",
       "紧急统一拨000",
       "自驾靠左行驶，熟悉交规再上路"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "肉派 Meat pie",
+        "炸鱼薯条",
+        "Lamington 椰子蛋糕",
+        "Barramundi 鱼",
+        "海鲜拼盘"
+      ]
+    }
   },
   "cairns": {
     "id": "cairns",
@@ -18034,6 +18286,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "雨林世界音乐节",
         "month": "11月",
         "description": "库兰达的原音乐节"
+      },
+      {
+        "name": "凯恩斯节 Cairns Festival",
+        "month": "8月",
+        "description": "音乐、艺术与社区活动月"
+      },
+      {
+        "name": "凯恩斯铁人赛",
+        "month": "6月",
+        "description": "闻名的三铁赛事"
       }
     ],
     "transport": {
@@ -18057,7 +18319,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "Esplanade 潟湖",
         "category": "泳池",
         "description": "安全人工潟湖泳池"
-      }
+      },
+      "大堡礁（一日游）",
+      "戴恩树雨林",
+      "Kuranda 观光火车"
     ],
     "food": [
       {
@@ -18074,14 +18339,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "肉派",
         "description": "澳式小吃",
         "recommendation": "Bakery"
-      }
+      },
+      "Barramundi 鱼",
+      "芒果"
     ],
     "customs": [
       "小费非强制",
       "尊重原住民文化",
       "海滩旗语",
       "随意直率",
-      "原住民圣地勿随意进入或拍照"
+      "原住民圣地勿随意进入或拍照",
+      "海滩在旗帜间游泳"
     ],
     "tips": [
       "夏季远离箱水母区",
@@ -18089,7 +18357,16 @@ var CITY_DATABASE_DETAIL = {
       "浮潜注意安全",
       "紧急拨000",
       "自驾靠左行驶，熟悉交规再上路"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Barramundi 鱼",
+        "芒果",
+        "海鲜拼盘",
+        "袋鼠/鳄鱼肉",
+        "Lamington"
+      ]
+    }
   },
   "hobart": {
     "id": "hobart",
@@ -18140,6 +18417,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "悉尼—霍巴特帆船赛终点",
         "month": "12月26日",
         "description": "经典帆船赛事抵达"
+      },
+      {
+        "name": "塔斯马尼亚味觉节",
+        "month": "12-1月",
+        "description": "全州美食美酒盛宴"
+      },
+      {
+        "name": "Dark Mofo",
+        "month": "6月",
+        "description": "MONA 举办的冬夜艺术节"
       }
     ],
     "transport": {
@@ -18163,7 +18450,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "MONA 博物馆",
         "category": "博物馆",
         "description": "争议性当代艺术博物馆"
-      }
+      },
+      "Salamanca 集市",
+      "惠灵顿山 kunanyi",
+      "MONA 古今艺术博物馆"
     ],
     "food": [
       {
@@ -18180,14 +18470,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "手工奶酪",
         "description": "本地乳酪",
         "recommendation": "市集"
-      }
+      },
+      "塔斯马尼亚三文鱼",
+      "生蚝"
     ],
     "customs": [
       "小费非强制",
       "环保分袋严格",
       "随意友好",
       "周末市场文化",
-      "原住民圣地勿随意进入或拍照"
+      "原住民圣地勿随意进入或拍照",
+      "随和、小费非必须"
     ],
     "tips": [
       "冬季保暖",
@@ -18195,7 +18488,16 @@ var CITY_DATABASE_DETAIL = {
       "自驾小心野生动物",
       "紧急拨000",
       "自驾靠左行驶，熟悉交规再上路"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "塔斯马尼亚三文鱼",
+        "生蚝",
+        "Leatherwood 蜂蜜",
+        "袋鼠肉",
+        "手工奶酪（Bruny）"
+      ]
+    }
   },
   "quito": {
     "id": "quito",
@@ -18231,10 +18533,9 @@ var CITY_DATABASE_DETAIL = {
       "扒手与抢手机高发，财物贴身保管"
     ],
     "emergency": {
-      "police": "101",
-      "ambulance": "131",
-      "fire": "102",
-      "tourist_hotline": ""
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
     },
     "festivals": [
       {
@@ -18246,6 +18547,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "Inti Raymi 太阳节",
         "month": "6月",
         "description": "印加夏至庆典"
+      },
+      {
+        "name": "Inti Raymi 太阳节",
+        "month": "6月",
+        "description": "印加传统的冬至太阳庆典"
+      },
+      {
+        "name": "狂欢节 Carnaval",
+        "month": "2-3月",
+        "description": "全国泼水与游行"
       }
     ],
     "transport": {
@@ -18269,7 +18580,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "面包山",
         "category": "观景",
         "description": "缆车登顶俯瞰全城"
-      }
+      },
+      "旧城区（历史中心，UNESCO）",
+      "Basílica del Voto Nacional 大教堂",
+      "赤道纪念碑 Mitad del Mundo"
     ],
     "food": [
       {
@@ -18286,14 +18600,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Empanadas",
         "description": "炸馅饼",
         "recommendation": "街头"
-      }
+      },
+      "Cuy（高原烤豚鼠）",
+      "Llapingacho（土豆饼）"
     ],
     "customs": [
       "见面贴面礼",
       "西语为主",
       "小费约10%",
       "市场可议价",
-      "小费文化普遍（餐厅约10%）"
+      "小费文化普遍（餐厅约10%）",
+      "见面贴面礼问候"
     ],
     "tips": [
       "防高反慢动作",
@@ -18301,7 +18618,16 @@ var CITY_DATABASE_DETAIL = {
       "饮用瓶装水",
       "夜间少步行",
       "打车用 Uber/DiDi 等可追踪平台"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Cuy（高原烤豚鼠）",
+        "Llapingacho（土豆饼）",
+        "Ceviche 酸橘汁腌鱼",
+        "Locro de papa（土豆汤）",
+        "Empanadas de viento"
+      ]
+    }
   },
   "san_jose": {
     "id": "san_jose",
@@ -18352,6 +18678,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "玉米节",
         "month": "8月",
         "description": "乡村庆典"
+      },
+      {
+        "name": "独立日",
+        "month": "9月15日",
+        "description": "中美洲独立庆典"
+      },
+      {
+        "name": "Palmares 节",
+        "month": "1月",
+        "description": "两周音乐与牛仔竞技"
       }
     ],
     "transport": {
@@ -18375,7 +18711,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "中央市场",
         "category": "集市",
         "description": "本地生活与小吃"
-      }
+      },
+      "国家剧院",
+      "前哥伦布黄金博物馆",
+      "中央市场"
     ],
     "food": [
       {
@@ -18392,14 +18731,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "新鲜果汁",
         "description": "热带水果",
         "recommendation": "街头"
-      }
+      },
+      "Gallo pinto（豆饭，国菜）",
+      "Casado（套餐）"
     ],
     "customs": [
       "西班牙语",
       "见面握手",
       "小费约10%",
       "环保意识强",
-      "小费文化普遍（餐厅约10%）"
+      "小费文化普遍（餐厅约10%）",
+      "'pura vida' 问候"
     ],
     "tips": [
       "防扒窃",
@@ -18407,7 +18749,16 @@ var CITY_DATABASE_DETAIL = {
       "暴雨季注意路况",
       "夜归拼车",
       "打车用 Uber/DiDi 等可追踪平台"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Gallo pinto（豆饭，国菜）",
+        "Casado（套餐）",
+        "Olla de carne（牛骨汤）",
+        "Tamales",
+        "Chifrijo"
+      ]
+    }
   },
   "havana": {
     "id": "havana",
@@ -18458,6 +18809,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "独立日",
         "month": "10月10日",
         "description": "全国庆典"
+      },
+      {
+        "name": "哈瓦那狂欢节",
+        "month": "7-8月",
+        "description": "街头游行与音乐"
+      },
+      {
+        "name": "国际爵士音乐节",
+        "month": "12月",
+        "description": "世界级爵士演出"
       }
     ],
     "transport": {
@@ -18481,7 +18842,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "革命广场",
         "category": "地标",
         "description": "城市政治中心"
-      }
+      },
+      "旧哈瓦那 Habana Vieja（UNESCO）",
+      "Malecón 海滨大道",
+      "国会大厦 Capitolio"
     ],
     "food": [
       {
@@ -18498,14 +18862,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Mojito",
         "description": "朗姆薄荷饮",
         "recommendation": "La Bodeguita"
-      }
+      },
+      "Ropa vieja（撕碎牛肉）",
+      "Arroz con pollo"
     ],
     "customs": [
       "西班牙语",
       "音乐与舞蹈文化",
       "小费受欢迎",
       "拍照先征得同意",
-      "小费文化普遍（餐厅约10%）"
+      "小费文化普遍（餐厅约10%）",
+      "见面贴面礼问候"
     ],
     "tips": [
       "使用正规换汇（Cadeca）",
@@ -18513,7 +18880,16 @@ var CITY_DATABASE_DETAIL = {
       "网络需购买上网卡",
       "备小额现金",
       "打车用 Uber/DiDi 等可追踪平台"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Ropa vieja（撕碎牛肉）",
+        "Arroz con pollo",
+        "Moros y cristianos（豆饭）",
+        "Tostones（炸大蕉）",
+        "Cubano 三明治"
+      ]
+    }
   },
   "curitiba": {
     "id": "curitiba",
@@ -18564,6 +18940,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "Curitiba 美食节",
         "month": "不定期",
         "description": "本地餐饮活动"
+      },
+      {
+        "name": "Curitiba 夏季节",
+        "month": "1月",
+        "description": "免费户外音乐与演出"
+      },
+      {
+        "name": "圣诞灯饰",
+        "month": "11-1月",
+        "description": "市中心大规模灯饰与活动"
       }
     ],
     "transport": {
@@ -18587,7 +18973,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "植物园",
         "category": "公园",
         "description": "法式花园与温室"
-      }
+      },
+      "植物园 Jardim Botânico",
+      "Tanguá 公园",
+      "Wire Opera 钢丝绳歌剧院"
     ],
     "food": [
       {
@@ -18604,14 +18993,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Churrasco",
         "description": "巴西烤肉",
         "recommendation": "烤肉店"
-      }
+      },
+      "Barreado（慢炖牛肉）",
+      "Pão de queijo（芝士面包）"
     ],
     "customs": [
       "葡萄牙语",
       "小费10%左右",
       "见面贴面礼",
       "足球文化浓厚",
-      "小费文化普遍（餐厅约10%）"
+      "小费文化普遍（餐厅约10%）",
+      "见面贴面礼问候"
     ],
     "tips": [
       "公交系统高效多用BRT",
@@ -18619,7 +19011,16 @@ var CITY_DATABASE_DETAIL = {
       "冬季保暖",
       "紧急分别拨190/192/193",
       "打车用 Uber/DiDi 等可追踪平台"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Barreado（慢炖牛肉）",
+        "Pão de queijo（芝士面包）",
+        "Feijoada 黑豆炖肉",
+        "Coxinha 炸饺",
+        "Churrasco 烤肉"
+      ]
+    }
   },
   "new_orleans": {
     "id": "new_orleans",
@@ -18670,6 +19071,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "爵士音乐节",
         "month": "4-5月",
         "description": "全球爵士盛会"
+      },
+      {
+        "name": "Mardi Gras 狂欢节",
+        "month": "2-3月",
+        "description": "全城游行与面具庆典"
+      },
+      {
+        "name": "爵士与传统音乐节",
+        "month": "4-5月",
+        "description": "世界级音乐盛事"
       }
     ],
     "transport": {
@@ -18693,7 +19104,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "沼泽游船",
         "category": "自然",
         "description": "密西西比河三角洲生态"
-      }
+      },
+      "法国区 French Quarter",
+      "Bourbon 街",
+      "Garden District"
     ],
     "food": [
       {
@@ -18710,14 +19124,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Po’ Boy",
         "description": "炸虾三明治",
         "recommendation": "街头"
-      }
+      },
+      "Gumbo 秋葵汤",
+      "Jambalaya 什锦饭"
     ],
     "customs": [
       "小费15-20%",
       "见面直接称呼名",
       "节庆文化浓",
       "多元包容",
-      "服务行业小费是惯例而非可选"
+      "服务行业小费是惯例而非可选",
+      "友好随和的'y'all'"
     ],
     "tips": [
       "夜间结伴",
@@ -18725,7 +19142,16 @@ var CITY_DATABASE_DETAIL = {
       "高温补水",
       "紧急拨911",
       "紧急统一拨 911（警/救/火）"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Gumbo 秋葵汤",
+        "Jambalaya 什锦饭",
+        "Po'boy 三明治",
+        "Beignets 糖粉甜甜圈",
+        "Crawfish étouffée"
+      ]
+    }
   },
   "tampa": {
     "id": "tampa",
@@ -18776,6 +19202,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "州博会",
         "month": "2月",
         "description": "佛州博览会"
+      },
+      {
+        "name": "Gasparilla 海盗节",
+        "month": "1-2月",
+        "description": "海盗主题游行与庆祝"
+      },
+      {
+        "name": "草莓节",
+        "month": "3月",
+        "description": "邻近 Plant City 的农业庆典"
       }
     ],
     "transport": {
@@ -18799,7 +19235,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "清水滩",
         "category": "海滩",
         "description": "邻近的优质海滩"
-      }
+      },
+      "Busch Gardens 主题乐园",
+      "Ybor City 历史区",
+      "Tampa Riverwalk"
     ],
     "food": [
       {
@@ -18816,14 +19255,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "Key Lime Pie",
         "description": "青柠派",
         "recommendation": "甜品店"
-      }
+      },
+      "Cuban sandwich 古巴三明治",
+      "魔鬼蟹 deviled crab"
     ],
     "customs": [
       "小费15-20%",
       "直率随意",
       "多元文化",
       "驾车文化",
-      "服务行业小费是惯例而非可选"
+      "服务行业小费是惯例而非可选",
+      "随和休闲"
     ],
     "tips": [
       "午后雷暴带伞",
@@ -18831,7 +19273,16 @@ var CITY_DATABASE_DETAIL = {
       "海滩防晒",
       "紧急拨911",
       "紧急统一拨 911（警/救/火）"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Cuban sandwich 古巴三明治",
+        "魔鬼蟹 deviled crab",
+        "石蟹钳",
+        "Key lime pie 青柠派",
+        "Grouper 鱼三明治"
+      ]
+    }
   },
   "minneapolis": {
     "id": "minneapolis",
@@ -18882,6 +19333,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "圣诞集市",
         "month": "12月",
         "description": "冬季市集"
+      },
+      {
+        "name": "Aquatennial 水节",
+        "month": "7月",
+        "description": "河流与烟花庆祝"
+      },
+      {
+        "name": "双城马拉松",
+        "month": "10月",
+        "description": "闻名全美的城市马拉松"
       }
     ],
     "transport": {
@@ -18905,7 +19366,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "美国购物中心",
         "category": "购物",
         "description": "全美最大室内 Mall"
-      }
+      },
+      "美国购物中心 Mall of America",
+      "Minnehaha 瀑布",
+      "Walker 艺术中心与雕塑园"
     ],
     "food": [
       {
@@ -18922,14 +19386,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "野生稻米",
         "description": "明州特产",
         "recommendation": "餐馆"
-      }
+      },
+      "Juicy Lucy 芝士爆浆汉堡",
+      "Hotdish 砂锅炖菜"
     ],
     "customs": [
       "小费15-20%",
       "友善但保持距离",
       "冬季装备必备",
       "湖畔文化",
-      "服务行业小费是惯例而非可选"
+      "服务行业小费是惯例而非可选",
+      "'Minnesota nice' 礼貌"
     ],
     "tips": [
       "冬季防寒-20°C常见",
@@ -18937,7 +19404,16 @@ var CITY_DATABASE_DETAIL = {
       "紧急拨911",
       "室内暖气足",
       "紧急统一拨 911（警/救/火）"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "Juicy Lucy 芝士爆浆汉堡",
+        "Hotdish 砂锅炖菜",
+        "Walleye 鱼",
+        "野米汤",
+        "Tater tot hotdish"
+      ]
+    }
   },
   "chongqing": {
     "id": "chongqing",
@@ -18988,6 +19464,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "春节灯会",
         "month": "农历正月",
         "description": "传统灯会"
+      },
+      {
+        "name": "三峡国际旅游节",
+        "month": "全年",
+        "description": "长江三峡文化与旅游盛事"
+      },
+      {
+        "name": "重庆国际啤酒节",
+        "month": "夏季",
+        "description": "夏日啤酒与音乐活动"
       }
     ],
     "transport": {
@@ -19011,7 +19497,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "磁器口古镇",
         "category": "古镇",
         "description": "千年古镇与小吃"
-      }
+      },
+      "洪崖洞",
+      "解放碑",
+      "磁器口古镇"
     ],
     "food": [
       {
@@ -19028,14 +19517,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "酸辣粉",
         "description": "红薯粉酸辣",
         "recommendation": "小吃摊"
-      }
+      },
+      "重庆火锅（麻辣）",
+      "重庆小面"
     ],
     "customs": [
       "微信支付宝普及",
       "小费不流行",
       "方言与普通话并存",
       "热情直率",
-      "进寺庙脱鞋、着装遮盖肩腿"
+      "进寺庙脱鞋、着装遮盖肩腿",
+      "麻辣饮食文化盛行"
     ],
     "tips": [
       "备肠胃药应对麻辣",
@@ -19043,7 +19535,16 @@ var CITY_DATABASE_DETAIL = {
       "防暑补水",
       "紧急拨110/120/119",
       "下载离线地图与翻译App应对语言障碍"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "重庆火锅（麻辣）",
+        "重庆小面",
+        "辣子鸡",
+        "毛血旺",
+        "万州烤鱼"
+      ]
+    }
   },
   "qingdao": {
     "id": "qingdao",
@@ -19094,6 +19595,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "海洋节",
         "month": "7月",
         "description": "海洋主题庆典"
+      },
+      {
+        "name": "青岛国际啤酒节",
+        "month": "8月",
+        "description": "亚洲最大啤酒盛会"
+      },
+      {
+        "name": "青岛海洋节",
+        "month": "7月",
+        "description": "海洋主题系列活动"
       }
     ],
     "transport": {
@@ -19117,7 +19628,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "崂山",
         "category": "自然",
         "description": "海上名山与道观"
-      }
+      },
+      "栈桥",
+      "八大关",
+      "崂山"
     ],
     "food": [
       {
@@ -19134,14 +19648,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "鲅鱼水饺",
         "description": "本地特色",
         "recommendation": "饺子馆"
-      }
+      },
+      "青岛啤酒",
+      "辣炒蛤蜊"
     ],
     "customs": [
       "扫码支付普及",
       "小费不流行",
       "海边长者晨练文化",
       "直爽好客",
-      "进寺庙脱鞋、着装遮盖肩腿"
+      "进寺庙脱鞋、着装遮盖肩腿",
+      "啤酒与海鲜饮食文化"
     ],
     "tips": [
       "海鲜配啤酒适量",
@@ -19149,7 +19666,16 @@ var CITY_DATABASE_DETAIL = {
       "防扒",
       "紧急拨110/120/119",
       "下载离线地图与翻译App应对语言障碍"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "青岛啤酒",
+        "辣炒蛤蜊",
+        "鲅鱼水饺",
+        "锅贴",
+        "海鲜烧烤"
+      ]
+    }
   },
   "sanya": {
     "id": "sanya",
@@ -19200,6 +19726,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "海南欢乐节",
         "month": "11月",
         "description": "全省旅游节"
+      },
+      {
+        "name": "三亚国际马拉松",
+        "month": "3月",
+        "description": "海滨赛道马拉松"
+      },
+      {
+        "name": "海南欢乐节",
+        "month": "全年",
+        "description": "全省旅游文化庆典"
       }
     ],
     "transport": {
@@ -19223,7 +19759,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "南山文化苑",
         "category": "文化",
         "description": "海上观音圣像"
-      }
+      },
+      "亚龙湾",
+      "天涯海角",
+      "南山寺"
     ],
     "food": [
       {
@@ -19240,14 +19779,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "清补凉",
         "description": "椰奶甜品",
         "recommendation": "街头"
-      }
+      },
+      "海南鸡饭",
+      "文昌鸡"
     ],
     "customs": [
       "扫码支付普及",
       "小费不流行",
       "度假休闲文化",
       "物价较内地高",
-      "进寺庙脱鞋、着装遮盖肩腿"
+      "进寺庙脱鞋、着装遮盖肩腿",
+      "海岛度假休闲文化"
     ],
     "tips": [
       "海鲜先问价再加工",
@@ -19255,7 +19797,16 @@ var CITY_DATABASE_DETAIL = {
       "强日晒防晒",
       "台风季关注预警",
       "下载离线地图与翻译App应对语言障碍"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "海南鸡饭",
+        "文昌鸡",
+        "椰子鸡火锅",
+        "海鲜",
+        "清补凉"
+      ]
+    }
   },
   "busan": {
     "id": "busan",
@@ -19306,6 +19857,16 @@ var CITY_DATABASE_DETAIL = {
         "name": "海云台沙雕节",
         "month": "夏季",
         "description": "沙滩沙雕展"
+      },
+      {
+        "name": "釜山国际电影节 BIFF",
+        "month": "10月",
+        "description": "亚洲重要电影节"
+      },
+      {
+        "name": "海云台沙节",
+        "month": "6月",
+        "description": "海滩沙雕与活动"
       }
     ],
     "transport": {
@@ -19329,7 +19890,10 @@ var CITY_DATABASE_DETAIL = {
         "name": "札嘎其市场",
         "category": "市场",
         "description": "韩国最大水产市场"
-      }
+      },
+      "海云台",
+      "甘川文化村",
+      "札嘎其市场"
     ],
     "food": [
       {
@@ -19346,14 +19910,17 @@ var CITY_DATABASE_DETAIL = {
         "name": "海鲜煎饼",
         "description": "Pajeon",
         "recommendation": "啤酒馆"
-      }
+      },
+      "札嘎其海鲜",
+      "猪肉汤饭 Dwaeji-gukbap"
     ],
     "customs": [
       "韩语与敬语",
       "小费不流行",
       "脱鞋入室",
       "饮酒文化浓",
-      "进寺庙脱鞋、着装遮盖肩腿"
+      "进寺庙脱鞋、着装遮盖肩腿",
+      "鞠躬问候"
     ],
     "tips": [
       "地铁T-money卡通用",
@@ -19361,6 +19928,15 @@ var CITY_DATABASE_DETAIL = {
       "饮酒后注意",
       "紧急拨112/119",
       "下载离线地图与翻译App应对语言障碍"
-    ]
+    ],
+    "lifestyle": {
+      "food": [
+        "札嘎其海鲜",
+        "猪肉汤饭 Dwaeji-gukbap",
+        "辣炒年糕 Tteokbokki",
+        "海鲜煎饼",
+        "烤牛肠"
+      ]
+    }
   }
 };

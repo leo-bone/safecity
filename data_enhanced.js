@@ -61981,12 +61981,23 @@ var CITY_DATABASE = {
           "area": "Cap-Vert 郊区夜间",
           "desc": "部分郊区夜间照明不足，建议避免独自出行",
           "risk": "中"
+        },
+        {
+          "area": "Marché Tilène / Hôtel de Ville",
+          "desc": "中心市场与市政厅周边扒手活跃",
+          "risk": "中"
+        },
+        {
+          "area": "长途汽车总站",
+          "desc": "车站周边拉客与小额诈骗较多",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Plateau 市中心",
         "Almadies 半岛",
-        "Saly 度假区"
+        "Saly 度假区",
+        "Fann / Point E 使馆区"
       ]
     },
     "highlights": [
@@ -62029,7 +62040,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "大西洋新鲜渔获",
           "tip": "海滨排档"
-        }
+        },
+        "Thieboudienne（国菜：番茄番茄酱炖鱼配饭）",
+        "Yassa（洋葱柠檬炖鸡/鱼）"
       ],
       "attractions": [
         {
@@ -62049,7 +62062,10 @@ var CITY_DATABASE = {
           "type": "宗教建筑",
           "desc": "城市天际线的标志",
           "hidden": false
-        }
+        },
+        "戈雷岛（奴隶贸易历史博物馆，UNESCO）",
+        "非洲复兴纪念碑",
+        "玫瑰湖（Retba 粉红湖）"
       ],
       "festivals": [
         {
@@ -62061,13 +62077,17 @@ var CITY_DATABASE = {
           "name": "Tabaski（古尔邦节）",
           "date": "伊斯兰历",
           "desc": "全城宰羊庆祝，交通与物价波动"
-        }
+        },
+        "达喀尔双年展 Dak'Art（偶数年5月）",
+        "古尔邦节 Tabaski（伊斯兰历）"
       ],
       "customs": [
         "见面贴面礼常见",
         "进入清真寺需脱鞋并着装保守",
         "周日多数商铺休息",
-        "砍价是市场常态"
+        "砍价是市场常态",
+        "见面多次握手、寒暄后再谈正事",
+        "进入清真寺与民宅须脱鞋"
       ],
       "transport": "机场：布莱兹·迪亚涅国际机场（DSS），距市区约1小时。铁路：城际铁路连郊县。轨道：无地铁，依赖小巴与出租车。出租：黄色出租车，建议议价并使用计价。",
       "foodDetails": [],
@@ -62098,12 +62118,23 @@ var CITY_DATABASE = {
           "area": "夜间公交与偏僻街区",
           "desc": "夜间避免独自乘坐非正式交通",
           "risk": "中"
+        },
+        {
+          "area": "Marcory / Adjamé 夜间",
+          "desc": "部分街区夜间盗窃与抢劫风险较高",
+          "risk": "中"
+        },
+        {
+          "area": "长途汽车站",
+          "desc": "车站周边扒手与拉客诈骗",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Cocody 使馆区",
         "Riviera 住宅区",
-        "Plateau 商务区（白天）"
+        "Plateau 商务区（白天）",
+        "Plateau"
       ]
     },
     "highlights": [
@@ -62146,7 +62177,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "炸大蕉",
           "tip": "街头小吃"
-        }
+        },
+        "Attiéké（木薯粗粉，国民主食）",
+        "Kedjenou（慢炖鸡肉/肉）"
       ],
       "attractions": [
         {
@@ -62166,7 +62199,10 @@ var CITY_DATABASE = {
           "type": "地标",
           "desc": "连接城市两岸的重要通道",
           "hidden": false
-        }
+        },
+        "圣保罗大教堂",
+        "Plateau 中心商务区",
+        "班科国家公园"
       ],
       "festivals": [
         {
@@ -62178,13 +62214,17 @@ var CITY_DATABASE = {
           "name": "Fêtes des Masques",
           "date": "2月",
           "desc": "原住民面具节"
-        }
+        },
+        "面具节 Fêtes des Masques（11月，Man 地区）",
+        "Popo 狂欢节（2月，Grand-Bassam）"
       ],
       "customs": [
         "见面握手并问候家人",
         "法语为主要通用语",
         "请客时礼貌推辞后再接受",
-        "周日部分区域安静"
+        "周日部分区域安静",
+        "见面握手寒暄、称呼长辈",
+        "尊重宗教与长者，着装保守"
       ],
       "transport": "机场：费利克斯·乌弗埃-博瓦尼机场（ABJ），市区约30分钟。铁路：铁路网有限。轨道：无地铁。出租：橙黄色出租车与摩的，需议价。",
       "foodDetails": [],
@@ -62215,12 +62255,23 @@ var CITY_DATABASE = {
           "area": "夜间公交与偏僻路段",
           "desc": "夜间避免独自搭乘摩的",
           "risk": "中"
+        },
+        {
+          "area": "Old Kampala 陡坡夜间",
+          "desc": "老城区坡道夜间照明差、偶有抢劫",
+          "risk": "中"
+        },
+        {
+          "area": "出租车总站",
+          "desc": "车站周边扒手与拉客",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Kololo 使馆区",
         "Nakasero 中心",
-        "Bugolobi 住宅区"
+        "Bugolobi 住宅区",
+        "Kololo"
       ]
     },
     "highlights": [
@@ -62263,7 +62314,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "炭烤肉类",
           "tip": "烤肉店"
-        }
+        },
+        "Matoke（蒸香蕉，国菜）",
+        "Posho（玉米糊）"
       ],
       "attractions": [
         {
@@ -62283,7 +62336,10 @@ var CITY_DATABASE = {
           "type": "地标",
           "desc": "可拍照的赤道标记点",
           "hidden": false
-        }
+        },
+        "卡苏比王陵（UNESCO  royal tombs）",
+        "乌干达博物馆",
+        "巴哈伊神庙（非洲唯一）"
       ],
       "festivals": [
         {
@@ -62295,13 +62351,17 @@ var CITY_DATABASE = {
           "name": "KLA 艺术节",
           "date": "不定期",
           "desc": "坎帕拉本土艺术与音乐"
-        }
+        },
+        "坎帕拉城市节（10月）",
+        "Nyege Nyege 音乐节（9月，Jinja）"
       ],
       "customs": [
         "见面多次握手并问候",
         "英语与卢干达语通用",
         "拍照前先征得同意",
-        "小费非强制但受欢迎"
+        "小费非强制但受欢迎",
+        "见面握手并寒暄健康状况",
+        "尊重长者、称呼长辈"
       ],
       "transport": "机场：恩德培国际机场（EBB），市区约1小时。铁路：无铁路客运。轨道：无。出租：Uber/Bolt 与摩的并存，建议使用App。",
       "foodDetails": [],
@@ -62332,12 +62392,23 @@ var CITY_DATABASE = {
           "area": "CBD 夜间",
           "desc": "市中心夜间人流稀少，建议白天办理事务",
           "risk": "中"
+        },
+        {
+          "area": "CBD 中心商务区夜间",
+          "desc": "市中心夜间抢劫风险，避免独行",
+          "risk": "中"
+        },
+        {
+          "area": "通勤小巴站点",
+          "desc": "小巴总站扒手与拥挤扒窃",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Borrowdale 高档区",
         "Avondale 商业区",
-        "Eastgate 商圈"
+        "Eastgate 商圈",
+        "Borrowdale"
       ]
     },
     "highlights": [
@@ -62380,7 +62451,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "街头常见小吃",
           "tip": "街边"
-        }
+        },
+        "Sadza（玉米糊主食）",
+        "Nyama choma（烤肉）"
       ],
       "attractions": [
         {
@@ -62400,7 +62473,10 @@ var CITY_DATABASE = {
           "type": "公园",
           "desc": "市中心宁静绿地",
           "hidden": false
-        }
+        },
+        "津巴布韦人类科学博物馆",
+        "国家英雄纪念地",
+        "国家植物园"
       ],
       "festivals": [
         {
@@ -62412,13 +62488,17 @@ var CITY_DATABASE = {
           "name": "独立日",
           "date": "4月18日",
           "desc": "全国庆典"
-        }
+        },
+        "哈拉雷国际艺术节 HIFA（4/5月）",
+        "独立日（4月18日）"
       ],
       "customs": [
         "英语为官方语言",
         "见面握手并问候",
         "小费约10%",
-        "商务需提前预约"
+        "商务需提前预约",
+        "礼貌问候、称呼长辈",
+        "着装得体、尊重宗教场所"
       ],
       "transport": "机场：罗伯特·穆加贝机场（HRE），市区约30分钟。铁路：铁路客运有限。轨道：无。出租：建议使用App叫车，现金备零。",
       "foodDetails": [],
@@ -62449,12 +62529,23 @@ var CITY_DATABASE = {
           "area": "公交总站周边",
           "desc": "人流密集处注意财物",
           "risk": "中"
+        },
+        {
+          "area": "长途汽车站",
+          "desc": "车站周边扒手与拉客",
+          "risk": "中"
+        },
+        {
+          "area": "CBD 夜间",
+          "desc": "市中心夜间财物注意看管",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Kabulonga 使馆区",
         "Arcades 商圈",
-        "Longacres 中心"
+        "Longacres 中心",
+        "Kabulonga"
       ]
     },
     "highlights": [
@@ -62497,7 +62588,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "油炸面团",
           "tip": "街头"
-        }
+        },
+        "Nshima（玉米糊主食）",
+        "Ifisashi（蔬菜花生炖）"
       ],
       "attractions": [
         {
@@ -62517,7 +62610,10 @@ var CITY_DATABASE = {
           "type": "集市",
           "desc": "本地手工艺与古董",
           "hidden": false
-        }
+        },
+        "卢萨卡国家博物馆",
+        "Munda Wanga 植物园",
+        "Kabwata 文化村"
       ],
       "festivals": [
         {
@@ -62529,13 +62625,17 @@ var CITY_DATABASE = {
           "name": "Kwacha 文化节",
           "date": "不定期",
           "desc": "本土文化展示"
-        }
+        },
+        "Kulamba 成年礼（8月，Katete）",
+        "Kuomboka 洪水节（3/4月，Barotse）"
       ],
       "customs": [
         "英语为官方语言",
         "见面握手并问候",
         "拍照先征得同意",
-        "市场可议价"
+        "市场可议价",
+        "见面问候、尊重长者",
+        "着装得体、宗教场所保守"
       ],
       "transport": "机场：肯尼思·卡翁达机场（LUN），市区约30分钟。铁路：铁路客运有限。轨道：无。出租：App叫车与黄色出租并存。",
       "foodDetails": [],
@@ -62566,12 +62666,23 @@ var CITY_DATABASE = {
           "area": "公交与夜市拥挤处",
           "desc": "人流密集处注意财物",
           "risk": "低"
+        },
+        {
+          "area": " downtown 市中心",
+          "desc": "老城拥挤街区扒手较多",
+          "risk": "中"
+        },
+        {
+          "area": "Abdali 在建区域",
+          "desc": "施工区夜间照明与治安混杂",
+          "risk": "低"
         }
       ],
       "safeAreas": [
         "Abdoun 使馆区",
         "Sweifieh 商业区",
-        "Jabal Amman 老城"
+        "Jabal Amman 老城",
+        "Abdoun"
       ]
     },
     "highlights": [
@@ -62614,7 +62725,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "奶酪甜点",
           "tip": "甜品店"
-        }
+        },
+        "Mansaf（羊肉酸奶饭，国菜）",
+        "Falafel"
       ],
       "attractions": [
         {
@@ -62634,7 +62747,10 @@ var CITY_DATABASE = {
           "type": "街区",
           "desc": "咖啡馆与书店云集的文艺街区",
           "hidden": false
-        }
+        },
+        "安曼城堡山 Jabal al-Qal'a",
+        "罗马剧场",
+        "彩虹街"
       ],
       "festivals": [
         {
@@ -62646,13 +62762,17 @@ var CITY_DATABASE = {
           "name": "独立日",
           "date": "5月25日",
           "desc": "全国庆典"
-        }
+        },
+        "杰拉什艺术节（7/8月）",
+        "安曼爵士音乐节"
       ],
       "customs": [
         "见面贴面礼与咖啡待客",
         "斋月白天公共场所饮食需谨慎",
         "周五为周休主日",
-        "议价是常态"
+        "议价是常态",
+        "见面握手并道 As-salamu alaykum",
+        "宗教场所脱鞋、着装保守"
       ],
       "transport": "机场：阿丽娅王后机场（AMM），市区约40分钟。铁路：无城市轨道交通。轨道：无。出租：黄色出租与Uber/Careem并存。",
       "foodDetails": [],
@@ -62683,12 +62803,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "整体治安良好，注意夏季高温与沙尘",
           "risk": "低"
+        },
+        {
+          "area": "拥挤老市集",
+          "desc": "Mubarakiya 市集扒手",
+          "risk": "中"
+        },
+        {
+          "area": "夜间滨海",
+          "desc": "偏僻滨海区夜间谨慎",
+          "risk": "低"
         }
       ],
       "safeAreas": [
         "Salmiya 海滨",
         "Sharq 商务区",
-        "Al-Bida 海岸"
+        "Al-Bida 海岸",
+        "Salmiya"
       ]
     },
     "highlights": [
@@ -62731,7 +62862,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "波斯湾渔获",
           "tip": "海滨餐馆"
-        }
+        },
+        "Machboos（香料饭配肉，国菜）",
+        "Mutabbaq samak（炸鱼）"
       ],
       "attractions": [
         {
@@ -62751,7 +62884,10 @@ var CITY_DATABASE = {
           "type": "博物馆",
           "desc": "波斯湾与海洋史",
           "hidden": false
-        }
+        },
+        "科威特塔",
+        "大清真寺",
+        "Mubarakiya 老市集"
       ],
       "festivals": [
         {
@@ -62763,13 +62899,17 @@ var CITY_DATABASE = {
           "name": "Hala Feb 购物节",
           "date": "2月",
           "desc": "节庆购物季"
-        }
+        },
+        "Hala February 二月节（2月）",
+        "国庆日（2月25日）"
       ],
       "customs": [
         "斋月白天公共饮食需克制",
         "周五主休",
         "待客慷慨",
-        "着装保守得体"
+        "着装保守得体",
+        "着装保守、尊重宗教",
+        "见面握手问候"
       ],
       "transport": "机场：科威特国际机场（KWI），市区约30分钟。铁路：无。轨道：无。出租：App叫车与橙黄色出租。",
       "foodDetails": [],
@@ -62800,12 +62940,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "整体治安极佳，注意夏季高温",
           "risk": "低"
+        },
+        {
+          "area": "拥挤老市集",
+          "desc": "市集扒手",
+          "risk": "中"
+        },
+        {
+          "area": "夜间 Corniche",
+          "desc": "偏僻滨海夜间谨慎",
+          "risk": "低"
         }
       ],
       "safeAreas": [
         "Corniche 海滨",
         "Yas Island",
-        "Saadiyat 文化区"
+        "Saadiyat 文化区",
+        "Al Reem 岛"
       ]
     },
     "highlights": [
@@ -62848,7 +62999,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "炸甜面团球",
           "tip": "甜品"
-        }
+        },
+        "Al Harees（小麦肉糜）",
+        "Machboos"
       ],
       "attractions": [
         {
@@ -62868,7 +63021,10 @@ var CITY_DATABASE = {
           "type": "主题乐园",
           "desc": "亚斯岛上的赛车主题乐园",
           "hidden": false
-        }
+        },
+        "谢赫扎耶德大清真寺",
+        "阿布扎比卢浮宫",
+        "酋长宫酒店"
       ],
       "festivals": [
         {
@@ -62880,13 +63036,17 @@ var CITY_DATABASE = {
           "name": "F1 阿布扎比大奖赛",
           "date": "11月",
           "desc": "亚斯码头赛道"
-        }
+        },
+        "阿布扎比电影节",
+        "F1 阿布扎比大奖赛（11月）"
       ],
       "customs": [
         "斋月白天公共饮食需克制",
         "着装保守",
         "周五主休",
-        "公共场合举止得体"
+        "公共场合举止得体",
+        "着装保守、公共场合得体",
+        "公共场合避免亲密举止"
       ],
       "transport": "机场：阿布扎比国际机场（AUH），市区约30分钟。铁路：无地铁，有公交。轨道：无。出租：App叫车与出租普及。",
       "foodDetails": [],
@@ -62917,12 +63077,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "治安良好，注意夜间驾车与高温",
           "risk": "低"
+        },
+        {
+          "area": "Manama 老市集",
+          "desc": "市集扒手",
+          "risk": "中"
+        },
+        {
+          "area": "深夜街区",
+          "desc": "深夜独自前往陌生区谨慎",
+          "risk": "低"
         }
       ],
       "safeAreas": [
         "Seef 商圈",
         "Juffair 使馆区",
-        "Adliya 文艺区"
+        "Adliya 文艺区",
+        "Juffair"
       ]
     },
     "highlights": [
@@ -62965,7 +63136,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "中东甜点",
           "tip": "甜品店"
-        }
+        },
+        "Machboos（巴林香料饭）",
+        "Muhammar（甜米饭）"
       ],
       "attractions": [
         {
@@ -62985,7 +63158,10 @@ var CITY_DATABASE = {
           "type": "博物馆",
           "desc": "海湾历史与石油史",
           "hidden": false
-        }
+        },
+        "巴林国家博物馆",
+        "巴林堡 Qal'at al-Bahrain（UNESCO）",
+        "Al-Fateh 大清真寺"
       ],
       "festivals": [
         {
@@ -62997,13 +63173,17 @@ var CITY_DATABASE = {
           "name": "F1 巴林大奖赛",
           "date": "3月",
           "desc": "沙漠夜赛"
-        }
+        },
+        "巴林 F1 大奖赛（3/4月）",
+        "文化之春（10-12月）"
       ],
       "customs": [
         "斋月白天克制饮食",
         "周五主休",
         "待客热情",
-        "着装保守"
+        "着装保守",
+        "着装保守、尊重宗教",
+        "进清真寺脱鞋"
       ],
       "transport": "机场：巴林国际机场（BAH），市区约20分钟。铁路：无。轨道：无。出租：App叫车与出租。",
       "foodDetails": [],
@@ -63034,12 +63214,23 @@ var CITY_DATABASE = {
           "area": "夜间娱乐场所周边",
           "desc": "周末夜间注意醉酒冲突",
           "risk": "低"
+        },
+        {
+          "area": "Surfers Paradise 深夜",
+          "desc": "深夜饮酒相关冲突与财物案",
+          "risk": "中"
+        },
+        {
+          "area": "黑暗海滩夜间",
+          "desc": "无救生员海滩夜间危险",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Surfers Paradise 主滩",
         "Broadbeach",
-        "Main Beach"
+        "Main Beach",
+        "Robina"
       ]
     },
     "highlights": [
@@ -63082,7 +63273,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "澳式咖啡",
           "tip": "咖啡馆"
-        }
+        },
+        "肉派 Meat pie",
+        "炸鱼薯条"
       ],
       "attractions": [
         {
@@ -63102,7 +63295,10 @@ var CITY_DATABASE = {
           "type": "自然",
           "desc": "雨林瀑布与徒步",
           "hidden": false
-        }
+        },
+        "冲浪者天堂海滩",
+        "主题乐园（梦幻世界/电影世界/海洋世界）",
+        "Burleigh Heads"
       ],
       "festivals": [
         {
@@ -63114,13 +63310,17 @@ var CITY_DATABASE = {
           "name": "Schoolies（毕业周）",
           "date": "11月",
           "desc": "毕业生海滩聚会，夜间较喧闹"
-        }
+        },
+        "黄金海岸电影节（4月）",
+        "Broadbeach 蓝调节（5月）"
       ],
       "customs": [
         "小费非强制",
         "公共场所礼貌排队",
         "海滩注意旗语（安全游泳区）",
-        "直呼其名较随意"
+        "直呼其名较随意",
+        "随和友好、'no worries' 心态",
+        "小费非必须"
       ],
       "transport": "机场：黄金海岸机场（OOL），市区约30分钟。铁路：连接布里斯班的火车。轨道：无。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -63151,12 +63351,23 @@ var CITY_DATABASE = {
           "area": "无城市高风险区",
           "desc": "旅游小镇治安良好，注意水上活动安全",
           "risk": "低"
+        },
+        {
+          "area": "海滨夜间",
+          "desc": "泻湖周边深夜饮酒需克制",
+          "risk": "中"
+        },
+        {
+          "area": "深夜 CBD",
+          "desc": "市中心夜间少量盗窃",
+          "risk": "低"
         }
       ],
       "safeAreas": [
         "Esplanade 滨海",
         "Cairns Central",
-        "Trinity Beach"
+        "Trinity Beach",
+        "Palm Cove"
       ]
     },
     "highlights": [
@@ -63199,7 +63410,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "澳式小吃",
           "tip": "Bakery"
-        }
+        },
+        "Barramundi 鱼",
+        "芒果"
       ],
       "attractions": [
         {
@@ -63219,7 +63432,10 @@ var CITY_DATABASE = {
           "type": "泳池",
           "desc": "安全人工潟湖泳池",
           "hidden": false
-        }
+        },
+        "大堡礁（一日游）",
+        "戴恩树雨林",
+        "Kuranda 观光火车"
       ],
       "festivals": [
         {
@@ -63231,13 +63447,17 @@ var CITY_DATABASE = {
           "name": "雨林世界音乐节",
           "date": "11月",
           "desc": "库兰达的原音乐节"
-        }
+        },
+        "凯恩斯节（8月）",
+        "大堡礁海洋节"
       ],
       "customs": [
         "小费非强制",
         "尊重原住民文化",
         "海滩旗语",
-        "随意直率"
+        "随意直率",
+        "海滩在旗帜间游泳",
+        "强烈紫外线需高倍防晒"
       ],
       "transport": "机场：凯恩斯机场（CNS），市区约10分钟。铁路：有连接昆士兰的火车。轨道：无。出租：Uber与出租。",
       "foodDetails": [],
@@ -63268,12 +63488,23 @@ var CITY_DATABASE = {
           "area": "无城市高风险区",
           "desc": "治安极佳，夜间部分街区人少",
           "risk": "低"
+        },
+        {
+          "area": "深夜 CBD 滨水",
+          "desc": "滨水区深夜少量财物案",
+          "risk": "低"
+        },
+        {
+          "area": "昏暗公园",
+          "desc": "夜间公园照明不足",
+          "risk": "低"
         }
       ],
       "safeAreas": [
         "Salamanca 区",
         "Battery Point",
-        "North Hobart"
+        "North Hobart",
+        "Sandy Bay"
       ]
     },
     "highlights": [
@@ -63316,7 +63547,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "本地乳酪",
           "tip": "市集"
-        }
+        },
+        "塔斯马尼亚三文鱼",
+        "生蚝"
       ],
       "attractions": [
         {
@@ -63336,7 +63569,10 @@ var CITY_DATABASE = {
           "type": "博物馆",
           "desc": "争议性当代艺术博物馆",
           "hidden": false
-        }
+        },
+        "Salamanca 集市",
+        "惠灵顿山 kunanyi",
+        "MONA 古今艺术博物馆"
       ],
       "festivals": [
         {
@@ -63348,13 +63584,17 @@ var CITY_DATABASE = {
           "name": "悉尼—霍巴特帆船赛终点",
           "date": "12月26日",
           "desc": "经典帆船赛事抵达"
-        }
+        },
+        "塔斯马尼亚味觉节（12-1月）",
+        "Dark Mofo（6月）"
       ],
       "customs": [
         "小费非强制",
         "环保分袋严格",
         "随意友好",
-        "周末市场文化"
+        "周末市场文化",
+        "随和、小费非必须",
+        "天气多变需分层穿衣"
       ],
       "transport": "机场：霍巴特机场（HBA），市区约20分钟。铁路：无。轨道：无。出租：Uber与出租。",
       "foodDetails": [],
@@ -63385,12 +63625,23 @@ var CITY_DATABASE = {
           "area": "老城夜间与公交",
           "desc": "夜间避免独自乘公交，注意财物",
           "risk": "中"
+        },
+        {
+          "area": "La Mariscal 深夜",
+          "desc": "酒吧区夜间盗窃与抢劫",
+          "risk": "中"
+        },
+        {
+          "area": "El Panecillo",
+          "desc": "孤立山顶，避免独行",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "La Mariscal（白天）",
         "Quito Tenis",
-        "Cumbayá"
+        "Cumbayá",
+        "La Carolina"
       ]
     },
     "highlights": [
@@ -63407,9 +63658,9 @@ var CITY_DATABASE = {
       "扒手与抢手机高发，财物贴身保管"
     ],
     "emergency": {
-      "police": "101",
-      "ambulance": "131",
-      "fire": "102"
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
     },
     "lifestyle": {
       "food": [
@@ -63433,7 +63684,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "炸馅饼",
           "tip": "街头"
-        }
+        },
+        "Cuy（高原烤豚鼠）",
+        "Llapingacho（土豆饼）"
       ],
       "attractions": [
         {
@@ -63453,7 +63706,10 @@ var CITY_DATABASE = {
           "type": "观景",
           "desc": "缆车登顶俯瞰全城",
           "hidden": false
-        }
+        },
+        "旧城区（历史中心，UNESCO）",
+        "Basílica del Voto Nacional 大教堂",
+        "赤道纪念碑 Mitad del Mundo"
       ],
       "festivals": [
         {
@@ -63465,13 +63721,17 @@ var CITY_DATABASE = {
           "name": "Inti Raymi 太阳节",
           "date": "6月",
           "desc": "印加夏至庆典"
-        }
+        },
+        "Inti Raymi 太阳节（6月）",
+        "狂欢节（2/3月）"
       ],
       "customs": [
         "见面贴面礼",
         "西语为主",
         "小费约10%",
-        "市场可议价"
+        "市场可议价",
+        "见面贴面礼问候",
+        "着装得体、宗教场所保守"
       ],
       "transport": "机场：马里奥·科博机场（UIO），市区约1小时。铁路：无城市轨道交通。轨道：无。出租：App叫车更稳妥。",
       "foodDetails": [],
@@ -63502,12 +63762,23 @@ var CITY_DATABASE = {
           "area": "市中心夜间与公交",
           "desc": "夜间避免独自步行，注意财物",
           "risk": "中"
+        },
+        {
+          "area": "Coca-Cola 汽车总站",
+          "desc": "总站周边盗窃与拉客",
+          "risk": "中"
+        },
+        {
+          "area": "downtown 夜间",
+          "desc": "市中心夜间谨慎",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Escazú 使馆区",
         "Rohrmoser",
-        "Los Yoses"
+        "Los Yoses",
+        "Escazú"
       ]
     },
     "highlights": [
@@ -63550,7 +63821,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "热带水果",
           "tip": "街头"
-        }
+        },
+        "Gallo pinto（豆饭，国菜）",
+        "Casado（套餐）"
       ],
       "attractions": [
         {
@@ -63570,7 +63843,10 @@ var CITY_DATABASE = {
           "type": "集市",
           "desc": "本地生活与小吃",
           "hidden": false
-        }
+        },
+        "国家剧院",
+        "前哥伦布黄金博物馆",
+        "中央市场"
       ],
       "festivals": [
         {
@@ -63582,13 +63858,17 @@ var CITY_DATABASE = {
           "name": "玉米节",
           "date": "8月",
           "desc": "乡村庆典"
-        }
+        },
+        "独立日（9月15日）",
+        "Palmares 节（1月）"
       ],
       "customs": [
         "西班牙语",
         "见面握手",
         "小费约10%",
-        "环保意识强"
+        "环保意识强",
+        "'pura vida' 问候",
+        "礼貌、着装得体"
       ],
       "transport": "机场：胡安·圣玛丽亚机场（SJO），市区约30分钟。铁路：城铁有限。轨道：无。出租：Uber与出租。",
       "foodDetails": [],
@@ -63619,12 +63899,23 @@ var CITY_DATABASE = {
           "area": "旅游区兜售与假币",
           "desc": "警惕主动搭讪与换汇骗局",
           "risk": "中"
+        },
+        {
+          "area": "旧哈瓦那拥挤区",
+          "desc": "游客密集区扒手",
+          "risk": "中"
+        },
+        {
+          "area": "Malecón 夜间",
+          "desc": "海滨夜间盗窃",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Vedado 区",
         "Habana Vieja（白天）",
-        "Miramar"
+        "Miramar",
+        "Vedado"
       ]
     },
     "highlights": [
@@ -63667,7 +63958,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "朗姆薄荷饮",
           "tip": "La Bodeguita"
-        }
+        },
+        "Ropa vieja（撕碎牛肉）",
+        "Arroz con pollo"
       ],
       "attractions": [
         {
@@ -63687,7 +63980,10 @@ var CITY_DATABASE = {
           "type": "地标",
           "desc": "城市政治中心",
           "hidden": false
-        }
+        },
+        "旧哈瓦那 Habana Vieja（UNESCO）",
+        "Malecón 海滨大道",
+        "国会大厦 Capitolio"
       ],
       "festivals": [
         {
@@ -63699,13 +63995,17 @@ var CITY_DATABASE = {
           "name": "独立日",
           "date": "10月10日",
           "desc": "全国庆典"
-        }
+        },
+        "哈瓦那狂欢节（7/8月）",
+        "国际爵士音乐节（12月）"
       ],
       "customs": [
         "西班牙语",
         "音乐与舞蹈文化",
         "小费受欢迎",
-        "拍照先征得同意"
+        "拍照先征得同意",
+        "见面贴面礼问候",
+        "餐厅可给小费"
       ],
       "transport": "机场：何塞·马蒂机场（HAV），市区约30分钟。铁路：铁路有限。轨道：无。出租：国营出租与老爷车出租。",
       "foodDetails": [],
@@ -63736,12 +64036,23 @@ var CITY_DATABASE = {
           "area": "公交与夜市",
           "desc": "人流密集处注意财物",
           "risk": "低"
+        },
+        {
+          "area": "Estaçã da Luz 站区",
+          "desc": "车站周边盗窃",
+          "risk": "中"
+        },
+        {
+          "area": "拥挤汽车总站",
+          "desc": "总站扒手",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Batel",
         "Água Verde",
-        "Centro（白天）"
+        "Centro（白天）",
+        "Bigorrilho"
       ]
     },
     "highlights": [
@@ -63784,7 +64095,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "巴西烤肉",
           "tip": "烤肉店"
-        }
+        },
+        "Barreado（慢炖牛肉）",
+        "Pão de queijo（芝士面包）"
       ],
       "attractions": [
         {
@@ -63804,7 +64117,10 @@ var CITY_DATABASE = {
           "type": "公园",
           "desc": "法式花园与温室",
           "hidden": false
-        }
+        },
+        "植物园 Jardim Botânico",
+        "Tanguá 公园",
+        "Wire Opera 钢丝绳歌剧院"
       ],
       "festivals": [
         {
@@ -63816,13 +64132,17 @@ var CITY_DATABASE = {
           "name": "Curitiba 美食节",
           "date": "不定期",
           "desc": "本地餐饮活动"
-        }
+        },
+        "Curitiba 夏季节（1月）",
+        "爵士音乐节"
       ],
       "customs": [
         "葡萄牙语",
         "小费10%左右",
         "见面贴面礼",
-        "足球文化浓厚"
+        "足球文化浓厚",
+        "见面贴面礼问候",
+        "宗教场所着装得体"
       ],
       "transport": "机场：阿丰索·佩纳机场（CWB），市区约30分钟。铁路：无城市轨道交通。轨道：有快速公交BRT系统。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -63853,12 +64173,23 @@ var CITY_DATABASE = {
           "area": "部分西区与夜间偏僻街",
           "desc": "避免夜间独自前往高犯罪率街区",
           "risk": "中"
+        },
+        {
+          "area": "Bourbon 街深夜",
+          "desc": "深夜饮酒相关盗窃与冲突",
+          "risk": "中"
+        },
+        {
+          "area": "Central City",
+          "desc": "部分街区犯罪率较高",
+          "risk": "高"
         }
       ],
       "safeAreas": [
         "French Quarter（夜间人流）",
         "Garden District",
-        "Uptown"
+        "Uptown",
+        "French Quarter（白天）"
       ]
     },
     "highlights": [
@@ -63901,7 +64232,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "炸虾三明治",
           "tip": "街头"
-        }
+        },
+        "Gumbo 秋葵汤",
+        "Jambalaya 什锦饭"
       ],
       "attractions": [
         {
@@ -63921,7 +64254,10 @@ var CITY_DATABASE = {
           "type": "自然",
           "desc": "密西西比河三角洲生态",
           "hidden": false
-        }
+        },
+        "法国区 French Quarter",
+        "Bourbon 街",
+        "Garden District"
       ],
       "festivals": [
         {
@@ -63933,13 +64269,17 @@ var CITY_DATABASE = {
           "name": "爵士音乐节",
           "date": "4-5月",
           "desc": "全球爵士盛会"
-        }
+        },
+        "狂欢节 Mardi Gras（2/3月）",
+        "爵士与传统音乐节（4/5月）"
       ],
       "customs": [
         "小费15-20%",
         "见面直接称呼名",
         "节庆文化浓",
-        "多元包容"
+        "多元包容",
+        "友好随和的'y'all'",
+        "音乐文化尊重"
       ],
       "transport": "机场：路易斯·阿姆斯特朗机场（MSY），市区约30分钟。铁路：有街车与公交。轨道：无。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -63970,12 +64310,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "整体安全，注意夏季午后雷暴与飓风季",
           "risk": "低"
+        },
+        {
+          "area": "Ybor City 深夜",
+          "desc": "历史区深夜犯罪",
+          "risk": "中"
+        },
+        {
+          "area": "Sulpher Springs",
+          "desc": "部分街区治安较差",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Hyde Park",
         "Bayshore",
-        "Downtown（白天）"
+        "Downtown（白天）",
+        "Clearwater Beach"
       ]
     },
     "highlights": [
@@ -64018,7 +64369,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "青柠派",
           "tip": "甜品店"
-        }
+        },
+        "Cuban sandwich 古巴三明治",
+        "魔鬼蟹 deviled crab"
       ],
       "attractions": [
         {
@@ -64038,7 +64391,10 @@ var CITY_DATABASE = {
           "type": "海滩",
           "desc": "邻近的优质海滩",
           "hidden": false
-        }
+        },
+        "Busch Gardens 主题乐园",
+        "Ybor City 历史区",
+        "Tampa Riverwalk"
       ],
       "festivals": [
         {
@@ -64050,13 +64406,17 @@ var CITY_DATABASE = {
           "name": "州博会",
           "date": "2月",
           "desc": "佛州博览会"
-        }
+        },
+        "Gasparilla 海盗节（1/2月）",
+        "加勒比狂欢节"
       ],
       "customs": [
         "小费15-20%",
         "直率随意",
         "多元文化",
-        "驾车文化"
+        "驾车文化",
+        "随和休闲",
+        "海滩下午雷暴留意"
       ],
       "transport": "机场：坦帕国际机场（TPA），市区约20分钟。铁路：有街车与公交。轨道：无。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -64087,12 +64447,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "整体安全，冬季注意极寒与冰雪",
           "risk": "低"
+        },
+        {
+          "area": "北侧北区",
+          "desc": "部分街区犯罪率较高",
+          "risk": "高"
+        },
+        {
+          "area": "downtown skyway 夜间",
+          "desc": "空中连廊非营业时段人少",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "Uptown",
         "Lake Calhoun 区",
-        "North Loop"
+        "North Loop",
+        "Linden Hills"
       ]
     },
     "highlights": [
@@ -64135,7 +64506,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "明州特产",
           "tip": "餐馆"
-        }
+        },
+        "Juicy Lucy 芝士爆浆汉堡",
+        "Hotdish 砂锅炖菜"
       ],
       "attractions": [
         {
@@ -64155,7 +64528,10 @@ var CITY_DATABASE = {
           "type": "购物",
           "desc": "全美最大室内 Mall",
           "hidden": false
-        }
+        },
+        "美国购物中心 Mall of America",
+        "Minnehaha 瀑布",
+        "Walker 艺术中心与雕塑园"
       ],
       "festivals": [
         {
@@ -64167,13 +64543,17 @@ var CITY_DATABASE = {
           "name": "圣诞集市",
           "date": "12月",
           "desc": "冬季市集"
-        }
+        },
+        "Aquatennial 水节（7月）",
+        "双城马拉松（10月）"
       ],
       "customs": [
         "小费15-20%",
         "友善但保持距离",
         "冬季装备必备",
-        "湖畔文化"
+        "湖畔文化",
+        "'Minnesota nice' 礼貌",
+        "冬季极寒需保暖着装"
       ],
       "transport": "机场：明尼阿波利斯机场（MSP），市区约20分钟。铁路：有轻轨连接机场与市区。轨道：有轻轨（Blue/Green线）。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -64204,12 +64584,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "治安良好，注意防扒与夏季高温",
           "risk": "低"
+        },
+        {
+          "area": "解放碑夜间拥挤",
+          "desc": "核心商圈夜间人流大、扒窃多发",
+          "risk": "中"
+        },
+        {
+          "area": "火车站周边",
+          "desc": "交通枢纽拉客与小额诈骗",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "解放碑商圈",
         "江北嘴",
-        "南滨路"
+        "南滨路",
+        "观音桥"
       ]
     },
     "highlights": [
@@ -64252,7 +64643,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "红薯粉酸辣",
           "tip": "小吃摊"
-        }
+        },
+        "重庆火锅（麻辣）",
+        "重庆小面"
       ],
       "attractions": [
         {
@@ -64272,7 +64665,10 @@ var CITY_DATABASE = {
           "type": "古镇",
           "desc": "千年古镇与小吃",
           "hidden": false
-        }
+        },
+        "洪崖洞",
+        "解放碑",
+        "磁器口古镇"
       ],
       "festivals": [
         {
@@ -64284,13 +64680,17 @@ var CITY_DATABASE = {
           "name": "春节灯会",
           "date": "农历正月",
           "desc": "传统灯会"
-        }
+        },
+        "重庆火锅节（10月）",
+        "春节灯会"
       ],
       "customs": [
         "微信支付宝普及",
         "小费不流行",
         "方言与普通话并存",
-        "热情直率"
+        "热情直率",
+        "麻辣饮食文化盛行",
+        "火锅是重要社交方式"
       ],
       "transport": "机场：江北国际机场（CKG），市区约40分钟。铁路：成渝高铁连接成都。轨道：有10余条轻轨/地铁线。出租：网约车与出租普及。",
       "foodDetails": [],
@@ -64321,12 +64721,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "治安良好，旅游区防扒",
           "risk": "低"
+        },
+        {
+          "area": "火车站周边",
+          "desc": "交通枢纽扒窃与拉客",
+          "risk": "中"
+        },
+        {
+          "area": "台东步行街拥挤",
+          "desc": "热门商圈人流密集、扒手",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "八大关",
         "五四广场",
-        "栈桥周边"
+        "栈桥周边",
+        "市南区"
       ]
     },
     "highlights": [
@@ -64369,7 +64780,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "本地特色",
           "tip": "饺子馆"
-        }
+        },
+        "青岛啤酒",
+        "辣炒蛤蜊"
       ],
       "attractions": [
         {
@@ -64389,7 +64802,10 @@ var CITY_DATABASE = {
           "type": "自然",
           "desc": "海上名山与道观",
           "hidden": false
-        }
+        },
+        "栈桥",
+        "八大关",
+        "崂山"
       ],
       "festivals": [
         {
@@ -64401,13 +64817,17 @@ var CITY_DATABASE = {
           "name": "海洋节",
           "date": "7月",
           "desc": "海洋主题庆典"
-        }
+        },
+        "青岛国际啤酒节（8月）",
+        "海洋节（7月）"
       ],
       "customs": [
         "扫码支付普及",
         "小费不流行",
         "海边长者晨练文化",
-        "直爽好客"
+        "直爽好客",
+        "啤酒与海鲜饮食文化",
+        "公共场所禁烟"
       ],
       "transport": "机场：胶东国际机场（TAO），市区约1小时。铁路：高铁直达多城。轨道：有地铁线。出租：网约车与出租普及。",
       "foodDetails": [],
@@ -64438,12 +64858,23 @@ var CITY_DATABASE = {
           "area": "部分海鲜排档与拉客",
           "desc": "警惕高价海鲜与黑车拉客",
           "risk": "中"
+        },
+        {
+          "area": "大东海夜间",
+          "desc": "海滩夜间盗窃与宰客",
+          "risk": "中"
+        },
+        {
+          "area": "旅游区消费",
+          "desc": "部分商家宰客、认准明码标价",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "亚龙湾",
         "海棠湾",
-        "大东海（白天）"
+        "大东海（白天）",
+        "三亚湾"
       ]
     },
     "highlights": [
@@ -64486,7 +64917,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "椰奶甜品",
           "tip": "街头"
-        }
+        },
+        "海南鸡饭",
+        "文昌鸡"
       ],
       "attractions": [
         {
@@ -64506,7 +64939,10 @@ var CITY_DATABASE = {
           "type": "文化",
           "desc": "海上观音圣像",
           "hidden": false
-        }
+        },
+        "亚龙湾",
+        "天涯海角",
+        "南山寺"
       ],
       "festivals": [
         {
@@ -64518,13 +64954,17 @@ var CITY_DATABASE = {
           "name": "海南欢乐节",
           "date": "11月",
           "desc": "全省旅游节"
-        }
+        },
+        "三亚国际马拉松（3月）",
+        "海南欢乐节"
       ],
       "customs": [
         "扫码支付普及",
         "小费不流行",
         "度假休闲文化",
-        "物价较内地高"
+        "物价较内地高",
+        "海岛度假休闲文化",
+        "高倍防晒、注意补水"
       ],
       "transport": "机场：凤凰国际机场（SYX），市区约30分钟。铁路：环岛高铁连接海口。轨道：无。出租：网约车与出租。",
       "foodDetails": [],
@@ -64555,12 +64995,23 @@ var CITY_DATABASE = {
           "area": "无特别高风险区",
           "desc": "治安良好，夜间饮酒区稍乱",
           "risk": "低"
+        },
+        {
+          "area": "西面 Seomyeon 夜间",
+          "desc": "繁华区拥挤、扒手与醉客",
+          "risk": "中"
+        },
+        {
+          "area": "海云台夏季人群",
+          "desc": "旺季海滩人流密集、看管财物",
+          "risk": "中"
         }
       ],
       "safeAreas": [
         "海云台",
         "西面",
-        "广安里"
+        "广安里",
+        "釜山大学附近"
       ]
     },
     "highlights": [
@@ -64603,7 +65054,9 @@ var CITY_DATABASE = {
           "price": "中等",
           "desc": "Pajeon",
           "tip": "啤酒馆"
-        }
+        },
+        "札嘎其海鲜",
+        "猪肉汤饭 Dwaeji-gukbap"
       ],
       "attractions": [
         {
@@ -64623,7 +65076,10 @@ var CITY_DATABASE = {
           "type": "市场",
           "desc": "韩国最大水产市场",
           "hidden": false
-        }
+        },
+        "海云台",
+        "甘川文化村",
+        "札嘎其市场"
       ],
       "festivals": [
         {
@@ -64635,13 +65091,17 @@ var CITY_DATABASE = {
           "name": "海云台沙雕节",
           "date": "夏季",
           "desc": "沙滩沙雕展"
-        }
+        },
+        "釜山国际电影节 BIFF（10月）",
+        "海云台沙节（6月）"
       ],
       "customs": [
         "韩语与敬语",
         "小费不流行",
         "脱鞋入室",
-        "饮酒文化浓"
+        "饮酒文化浓",
+        "鞠躬问候",
+        "进屋脱鞋"
       ],
       "transport": "机场：金海国际机场（PUS），市区约40分钟。铁路：KTX高速连接首尔。轨道：有4条地铁线。出租：网约车与出租。",
       "foodDetails": [],
