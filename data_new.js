@@ -8,6 +8,8 @@
 // 厄瓜多尔(quito)紧急电话已校正为统一 911
 // ============================================================
 CITY_DATABASE_DETAIL =
+CITY_DATABASE =
+CITY_DATABASE =
 CITY_DATABASE = {
   "tokyo": {
     "id": "tokyo",
@@ -14971,9 +14973,9 @@ CITY_DATABASE = {
         "description": ""
       },
       {
-        "name": "开罗公园",
-        "category": "公园",
-        "description": "市中心绿地休闲区"
+        "name": "开罗塔（Cairo Tower）",
+        "category": "地标",
+        "description": "格济拉岛上的187米观景塔，可俯瞰全城与尼罗河"
       }
     ],
     "food": [
@@ -17914,14 +17916,9 @@ CITY_DATABASE = {
     },
     "attractions": [
       {
-        "name": "卡苏比王陵",
+        "name": "卡苏比王陵（Kasubi Tombs）",
         "category": "世界遗产",
-        "description": "布干达王国王室陵墓"
-      },
-      {
-        "name": "恩德培植物园",
-        "category": "自然",
-        "description": "维多利亚湖畔的历史植物园"
+        "description": "布干达王室陵墓，联合国教科文组织世界文化遗产"
       },
       {
         "name": "赤道纪念碑",
@@ -17942,6 +17939,11 @@ CITY_DATABASE = {
         "name": "乌干达国家清真寺（Uganda National Mosque，老坎帕拉山，可登塔俯瞰全城）",
         "category": "景点",
         "description": ""
+      },
+      {
+        "name": "纳米伦贝大教堂（Namirembe Cathedral）",
+        "category": "宗教建筑",
+        "description": "乌干达最古老的新教大教堂，位于山顶可俯瞰坎帕拉"
       }
     ],
     "food": [
@@ -18091,9 +18093,9 @@ CITY_DATABASE = {
         "description": ""
       },
       {
-        "name": "国家植物园",
-        "category": "景点",
-        "description": ""
+        "name": "津巴布韦国家美术馆（National Gallery of Zimbabwe）",
+        "category": "文化",
+        "description": "展示津巴布韦现代艺术与石雕"
       }
     ],
     "food": [

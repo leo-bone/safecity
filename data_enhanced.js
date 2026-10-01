@@ -1,4 +1,6 @@
 CITY_DATABASE =
+CITY_DATABASE =
+CITY_DATABASE =
 CITY_DATABASE = {
   "tokyo": {
     "id": "tokyo",
@@ -56648,9 +56650,9 @@ CITY_DATABASE = {
           "hidden": false
         },
         {
-          "name": "开罗公园",
-          "type": "公园",
-          "desc": "市中心绿地休闲区",
+          "name": "开罗塔（Cairo Tower）",
+          "type": "地标",
+          "desc": "格济拉岛上的187米观景塔，可俯瞰全城与尼罗河",
           "hidden": false
         }
       ],
@@ -67615,15 +67617,9 @@ CITY_DATABASE = {
       ],
       "attractions": [
         {
-          "name": "卡苏比王陵",
+          "name": "卡苏比王陵（Kasubi Tombs）",
           "type": "世界遗产",
-          "desc": "布干达王国王室陵墓",
-          "hidden": false
-        },
-        {
-          "name": "恩德培植物园",
-          "type": "自然",
-          "desc": "维多利亚湖畔的历史植物园",
+          "desc": "布干达王室陵墓，联合国教科文组织世界文化遗产",
           "hidden": false
         },
         {
@@ -67648,6 +67644,12 @@ CITY_DATABASE = {
           "name": "乌干达国家清真寺（Uganda National Mosque，老坎帕拉山，可登塔俯瞰全城）",
           "type": "景点",
           "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "纳米伦贝大教堂（Namirembe Cathedral）",
+          "type": "宗教建筑",
+          "desc": "乌干达最古老的新教大教堂，位于山顶可俯瞰坎帕拉",
           "hidden": false
         }
       ],
@@ -68148,9 +68150,9 @@ CITY_DATABASE = {
           "hidden": false
         },
         {
-          "name": "国家植物园",
-          "type": "景点",
-          "desc": "",
+          "name": "津巴布韦国家美术馆（National Gallery of Zimbabwe）",
+          "type": "文化",
+          "desc": "展示津巴布韦现代艺术与石雕",
           "hidden": false
         }
       ],
