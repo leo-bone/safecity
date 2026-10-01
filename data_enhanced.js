@@ -1,4 +1,5 @@
-var CITY_DATABASE = {
+CITY_DATABASE =
+CITY_DATABASE = {
   "tokyo": {
     "id": "tokyo",
     "name": "东京",
@@ -40,7 +41,8 @@ var CITY_DATABASE = {
         "Shibuya-ku (Daikanyama, Ebisu)",
         "Bunkyo & Chiyoda",
         "Meguro River Area"
-      ]
+      ],
+      "history": "东京旧称江户，1603年德川幕府在此开府，1868年改名东京并成为日本首都，如今是日本政治、经济与文化中心。城市治安良好、医疗发达，主要风险是地震与台风；夏季闷热潮湿易中暑，6—10月台风季可能造成交通中断，新宿、涩谷等枢纽早晚高峰人流极密集，需保管好随身物品。"
     },
     "highlights": [
       "文化景点多",
@@ -63,62 +65,99 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "Sukiyabashi Jiro (�的寿司)",
-          "type": "Sushi",
-          "price": "¥30,000+ (omakase)",
-          "desc": "Ginza - Otoro (fatty tuna)",
-          "tip": "Must book 1-2 months ahead, closed Monday"
+          "name": "江户前寿司",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Ichiran Ramen",
-          "type": "Ramen",
-          "price": "¥1,000-1,500",
-          "desc": "Shibuya/Shinjuku - Rich Tonkotsu Ramen",
-          "tip": "24hr, single-seat booth design"
+          "name": "酱油拉面",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "A5 Wagyu BBQ",
-          "type": "BBQ",
-          "price": "¥5,000-15,000",
-          "desc": "Various - Wagyu Beef Set",
-          "tip": "Highly ranked on tabelog.com"
+          "name": "天妇罗",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "文字烧（もんじゃ焼き）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "鳗鱼饭（うな丼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "Nezu Museum",
-          "type": "Art Museum",
-          "desc": "Omotesando/Aoyama: Hidden gem, garden called 'Most Beautiful in Tokyo', quiet and peaceful",
-          "hidden": true
+          "name": "浅草寺（Sensō-ji）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         },
         {
-          "name": "Kagurazaka",
-          "type": "Old Street",
-          "desc": "Iidabashi area: Known as 'Little Kyoto', stone paths, lanterns, traditional izakayas",
-          "hidden": true
+          "name": "东京晴空塔（Tokyo Skytree）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         },
         {
-          "name": "Nakameguro",
-          "type": "Neighborhood",
-          "desc": "Meguro River area: Dense concentration of art shops, highest coffee shop density in Tokyo",
-          "hidden": true
+          "name": "明治神宫",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "涩谷路口（Shibuya Crossing）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "皇居东御苑",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "上野公园（上野恩赐公园）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "樱花节",
-          "date": "3月下旬-4月上旬",
-          "desc": "全国赏樱热潮"
+          "name": "樱花季（花见）",
+          "date": "3月下旬—4月上旬",
+          "desc": "上野公园、千鸟之渊等地樱花盛开的赏花季。"
         },
         {
           "name": "神田祭",
-          "date": "5月中旬",
-          "desc": "日本三大祭之一"
+          "date": "5月中旬（奇数年为大祭）",
+          "desc": "神田明神的传统神舆巡游，日本三大祭之一。"
         },
         {
-          "name": "花火大会",
-          "date": "7-8月",
-          "desc": "夏日烟花盛宴"
+          "name": "隅田川花火大会",
+          "date": "7月最后一个星期六",
+          "desc": "东京最具代表性的夏季烟火大会，浅草一带人潮拥挤。"
+        },
+        {
+          "name": "浅草三社祭",
+          "date": "5月第三个周末",
+          "desc": "浅草神社的江户风情祭典，数十座神舆巡行。"
         }
       ],
       "customs": [
@@ -126,7 +165,10 @@ var CITY_DATABASE = {
         "不要在电车上大声说话",
         "给小费是不礼貌的行为",
         "不要边走边吃",
-        "公共场合尽量避免大声打电话"
+        "公共场合尽量避免大声打电话",
+        "进入室内需要脱鞋，注意袜子要干净",
+        "公共场所保持安静，电车内不要大声说话",
+        "不要边走边吃，在便利店门口吃完再走"
       ],
       "transport": "公共交通非常发达，地铁和电车是最主要交通方式，购买一日券更划算。",
       "foodDetails": [
@@ -658,7 +700,8 @@ var CITY_DATABASE = {
         "Marina Bay",
         "East Coast Park",
         "Bukit Timah"
-      ]
+      ],
+      "history": "新加坡1819年由莱佛士开埠，1965年独立，凭借马六甲海峡区位发展为全球航运与金融中心，是华族、马来族、印度族共处的多元社会。法律严格、治安极佳，医疗水平先进；全年高温多雨、午后雷暴频繁，偶受邻国烟霾影响，地铁内禁止饮食，携带与乱丢口香糖、乱扔垃圾会被罚款。"
     },
     "highlights": [
       "美食丰富",
@@ -681,56 +724,99 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "Tian Tian Hainanese Chicken Rice",
-          "type": "Singaporean",
-          "price": "SGD 4-6",
-          "desc": "Maxwell Food Centre - Hainanese Chicken Rice",
-          "tip": "May sell out by noon, go early"
+          "name": "海南鸡饭",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Song Fa Bak Kut Teh",
-          "type": "Bak Kut Teh",
-          "price": "SGD 8-15",
-          "desc": "Clarke Quay/Chinatown - Herbal Bak Kut Teh + You Tiao",
-          "tip": "50-year history, unlimited soup refills"
+          "name": "辣椒螃蟹",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Jumbo Seafood",
-          "type": "Seafood",
-          "price": "SGD 50-100",
-          "desc": "East Coast/Clarke Quay - Chili Crab, MRT Crabs",
-          "tip": "Reservation required, higher cost per person"
+          "name": "叻沙（Laksa）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "肉骨茶（Bak Kut Teh）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "咖椰吐司（Kaya Toast）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "Haji Lane",
-          "type": "Creative District",
-          "desc": "Near Bugis: Rainbow alley, graffiti walls, local designer shops",
-          "hidden": true
+          "name": "滨海湾花园（Gardens by the Bay）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         },
         {
-          "name": "Southern Ridges",
-          "type": "Hiking",
-          "desc": "Mount Faber Park-Henderson Waves: Most beautiful hiking trail in Singapore, overlooks entire city",
-          "hidden": true
+          "name": "鱼尾狮公园（Merlion Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣淘沙岛（Sentosa）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "滨海湾金沙（Marina Bay Sands）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "新加坡动物园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "牛车水（Chinatown）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "春节",
-          "date": "1-2月",
-          "desc": "华人传统新年"
+          "name": "春节（农历新年）",
+          "date": "1月—2月",
+          "desc": "牛车水一带张灯结彩，有妆艺游行与街头庆祝。"
         },
         {
-          "name": "开斋节",
-          "date": "4-5月",
-          "desc": "马来族重要节日"
+          "name": "开斋节（Hari Raya Aidilfitri）",
+          "date": "斋月结束后（伊斯兰历10月1日）",
+          "desc": "芽笼士乃夜市与马来社区开放家宴庆祝。"
         },
         {
-          "name": "屠妖节",
-          "date": "10-11月",
-          "desc": "印度族光明节"
+          "name": "屠妖节（Deepavali）",
+          "date": "10月—11月",
+          "desc": "小印度街区点灯亮起，印度族裔最重要的节日。"
+        },
+        {
+          "name": "新加坡大奖赛（F1夜间赛）",
+          "date": "9月—10月",
+          "desc": "滨海湾街道赛道举行的世界一级方程式夜赛。"
         }
       ],
       "customs": [
@@ -738,7 +824,10 @@ var CITY_DATABASE = {
         "不要随地乱扔垃圾",
         "地铁上禁止饮食",
         "过马路必须等绿灯",
-        "尊重多元文化习俗"
+        "尊重多元文化习俗",
+        "严禁携带口香糖入境",
+        "地铁和公交上禁止饮食",
+        "公共场所禁止吸烟，只能在指定区域"
       ],
       "transport": "地铁和巴士网络完善，易通卡可通用所有公共交通，出租车安全可靠。",
       "foodDetails": [
@@ -1215,7 +1304,8 @@ var CITY_DATABASE = {
           "desc": "Wholesale market area, mixed crowd - Shopping during day is safer",
           "risk": "Low"
         }
-      ]
+      ],
+      "history": "首尔古称汉阳，1394年朝鲜王朝定都于此，战后高速发展为大韩民国首都与经济中心。治安总体良好、医疗资源发达；需留意大型集会游行与弘大、梨泰院等夜间娱乐区的纠纷，冬季严寒、夏季梅雨闷热，春季时有沙尘与细颗粒物，地铁与商圈人流密集。"
     },
     "highlights": [
       "发达公共交通",
@@ -1238,68 +1328,99 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "Wangsimni Tteokbokkeum (Wangsimni)",
-          "type": "Rice Cake",
-          "price": "₩8,000-15,000",
-          "desc": "Wangsimni - Spicy Rice Cakes",
-          "tip": "Local favorite, long queue at peak"
+          "name": "韩式烤肉（불고기／갈비）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Gwangjang Market (�的市场)",
-          "type": "Market Food",
-          "price": "₩5,000-15,000/piece",
-          "desc": "Gwangjang Market - Mung Bean Pancakes, Yukhoe",
-          "tip": "Some stalls close after 8pm"
+          "name": "石锅拌饭（비빔밥）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Myeongdong Kyoja",
-          "type": "Korean",
-          "price": "₩10,000-20,000",
-          "desc": "Myeongdong - Kalguksu, Mandu",
-          "tip": "Local favorite, simple menu"
+          "name": "辣炒年糕（떡볶이）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "参鸡汤（삼계탕）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "部队锅（부대찌개）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "Bukchon Hanok Village",
-          "type": "Traditional Culture",
-          "desc": "Samcheong-dong: 600-year history traditional Hanok, 10min walk from Anguk Station Line 3",
-          "hidden": true
+          "name": "景福宫（경복궁）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         },
         {
-          "name": "Ikseong-dong",
-          "type": "Creative Area",
-          "desc": "Euljiro 3-ga: Seoul's 'Gulangyu', narrow alleys with indie cafes",
-          "hidden": true
+          "name": "昌德宫（창덕궁）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         },
         {
-          "name": "Hannam-dong",
-          "type": "Shopping",
-          "desc": "Itaewon Station: Designer brands, independent shops, Korean version of 'Nanhua Alley'",
-          "hidden": true
+          "name": "北村韩屋村（북촌한옥마을）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "N首尔塔（N서울타워）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "明洞（명동）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "汉江公园（한강공원）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "首尔灯光节",
+          "name": "首尔灯光节（Seoul Lantern Festival）",
           "date": "11月",
-          "desc": "首尔市中心的灯光艺术装置，夜景迷人"
+          "desc": "清溪川沿岸布置大型灯饰装置。"
         },
         {
           "name": "江南樱花节",
-          "date": "4月",
-          "desc": "樱花盛开季节，汝矣岛赏樱胜地"
+          "date": "4月上旬",
+          "desc": "江南区樱花大道的赏樱庆典与街头演出。"
         },
         {
           "name": "首尔国际烟花节",
           "date": "10月",
-          "desc": "韩流音乐配合盛大烟花表演",
-          "hidden": false
+          "desc": "汝矣岛汉江公园举行的多国烟花表演，观礼人流极大。"
         },
         {
-          "name": "首尔佛诞日灯会",
-          "date": "5月",
-          "desc": "庆祝佛诞日，寺庙和街道装饰灯笼"
+          "name": "佛诞日灯会（燃灯会）",
+          "date": "5月（农历四月初八前后）",
+          "desc": "曹溪寺一带手绘莲灯巡游，韩国国家级非物质文化遗产。"
         }
       ],
       "customs": [
@@ -1309,7 +1430,8 @@ var CITY_DATABASE = {
         "不要给小费，韩国没有小费文化",
         "公共场合保持安静，不要大声说话",
         "用筷子时不要指人",
-        "不要用筷子插食物，这被认为不吉利"
+        "不要用筷子插食物，这被认为不吉利",
+        "接受物品用双手表示尊重"
       ],
       "transport": "地铁系统发达，覆盖全市，T-money卡可用于交通和便利店支付。出租车分普通、模范、大型三种，价格递增。",
       "foodDetails": [
@@ -1806,7 +1928,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "香港1842年起为英国殖民地，1997年回归中国，实行'一国两制'，为中国特别行政区与国际金融、航运中心。治安良好，公立与私立医疗均较完善（公立医院候诊时间较长）；夏季湿热多雨，5—10月为台风季，挂八号风球时渡轮与航班停运，道路靠左行驶，节假日景点与地铁人流拥挤。"
     },
     "highlights": [
       "发达公共交通",
@@ -1829,82 +1952,108 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "港式点心（饮茶）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "烧鹅",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "云吞面",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "蛋挞",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "煲仔饭",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "太平山顶（Victoria Peak）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "维多利亚港（尖沙咀海滨）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "香港迪士尼乐园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "天坛大佛与昂坪360",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "香港海洋公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "庙街夜市",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "农历新年维港烟花汇演",
+          "date": "农历年初二（1月—2月）",
+          "desc": "维多利亚港上空的大型贺岁烟花，尖沙咀一带挤满观众。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "长洲太平清醮",
+          "date": "4月下旬—5月（农历四月初八前后）",
+          "desc": "长洲岛的抢包山与飘色巡游，香港国家级非遗项目。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "香港书展",
+          "date": "7月中下旬",
+          "desc": "湾仔会议展览中心举办的华语地区大型书展。"
+        },
+        {
+          "name": "香港美酒佳肴巡礼",
+          "date": "10月下旬",
+          "desc": "中环海滨举行的美食与美酒户外展销活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "茶餐厅有搭台文化，可能要拼桌",
+        "用餐速度快，不要久坐",
+        "排队文化盛行，请自觉排队",
+        "地铁禁食",
+        "电梯靠右站，左边留给赶时间的人"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -2330,7 +2479,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "北京为元、明、清三朝都城，建都史逾800年，现为中国首都与政治文化中心。治安良好，三甲医院资源充足；春季多风沙、夏季高温多暴雨、冬季干冷，故宫、长城等热门景区需实名预约且人流极大，地铁需安检，节假日注意拥挤风险。"
     },
     "highlights": [
       "医疗水平高",
@@ -2353,82 +2503,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "北京烤鸭",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "炸酱面",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "涮羊肉",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "豆汁儿",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "卤煮火烧",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "故宫博物院",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "天安门广场",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "八达岭长城",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "天坛公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "颐和园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "什刹海与南锣鼓巷",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "地坛春节文化庙会",
+          "date": "农历正月初一至初五（1月—2月）",
+          "desc": "地坛公园的传统庙会，含仿清祭地表演与小吃摊。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "北京国际电影节",
+          "date": "4月中下旬",
+          "desc": "红毯、展映与电影市场活动，吸引大量影迷。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "北京马拉松",
+          "date": "10月下旬",
+          "desc": "从天安门广场起跑的城市马拉松赛事。"
+        },
+        {
+          "name": "香山红叶文化节",
+          "date": "10月中旬—11月中旬",
+          "desc": "香山公园黄栌红叶观赏季，周末登山人流极大。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -2849,7 +3024,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "上海1843年开埠，曾设英美法等租界，现为中国经济、金融与航运中心，外滩与陆家嘴隔黄浦江相望。治安良好、医疗发达；6—7月为梅雨、7—9月为台风季，夏季闷热、冬季湿冷，地铁与外滩观景平台节假日人流极密集，过马路需留意非机动车。"
     },
     "highlights": [
       "文化景点多",
@@ -2872,82 +3048,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "南翔小笼包",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "生煎包（生煎馒头）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "本帮红烧肉",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "葱油拌面",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "腌笃鲜",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "外滩（The Bund）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "豫园",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "东方明珠广播电视塔",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "上海博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "南京路步行街",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "田子坊",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "豫园新春灯会",
+          "date": "农历腊月至2月",
+          "desc": "豫园商城的生肖主题灯会，是上海最有年味的活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "上海国际电影节",
+          "date": "6月",
+          "desc": "中国唯一的国际A类电影节，展映场次覆盖全市影院。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "上海旅游节",
+          "date": "9月中下旬",
+          "desc": "含花车巡游与景区半价优惠的年度旅游推广活动。"
+        },
+        {
+          "name": "上海马拉松",
+          "date": "11月下旬",
+          "desc": "穿越外滩与徐汇滨江的城市马拉松，报名极为抢手。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -3366,7 +3567,8 @@ var CITY_DATABASE = {
           "desc": "Bars, occasional scams - Avoid being dragged into overpriced bars",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "曼谷1782年由拉玛一世建都，是泰国政治、经济与佛教中心，旧称'天使之城'。医疗条件好，私立医院尤佳；城市治安尚可，但需防范扒窃、嘟嘟车宰客与假宝石骗局，雨季（5—10月）暴雨内涝，全年高温，交通严重拥堵，政治集会期间应避开民主纪念碑一带。"
     },
     "highlights": [
       "文化景点多",
@@ -3389,70 +3591,108 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "Jay Fai ( Michelin 3-Star)",
-          "type": "Michelin Street",
-          "price": "฿300-800",
-          "desc": "Near Khao San - Crab Omelette, Tom Yum",
-          "tip": "Michelin 3-star, 2hr+ queue, wearing goggles while cooking is iconic"
+          "name": "冬阴功汤（ต้มยำกุ้ง）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Thipsamai (Best Pad Thai)",
-          "type": "Pad Thai",
-          "price": "฿100-200",
-          "desc": "Siam Square - Signature Pad Thai",
-          "tip": "Over 50 years, Golden Egg Fried Rice is must-try"
+          "name": "泰式炒河粉（Pad Thai）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "青木瓜沙拉（Som Tam）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "绿咖喱鸡（แกงเขียวหวาน）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "芒果糯米饭（ข้าวเหนียวมะม่วง）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "大皇宫与玉佛寺（Wat Phra Kaew）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "卧佛寺（Wat Pho）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "郑王庙（Wat Arun）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "四面佛（Erawan Shrine）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "恰图恰周末市场（Chatuchak）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "湄南河（Chao Phraya River）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "宋干节（泼水节）",
+          "date": "4月13日—15日",
+          "desc": "泰国新年，全城泼水庆祝，考山路与是隆路水战最热闹。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "万佛节（Makha Bucha）",
+          "date": "2月（泰历三月满月）",
+          "desc": "佛教重要节日，信众绕寺点烛，王室成员常出席仪式。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "水灯节（Loy Krathong）",
+          "date": "11月（泰历十二月满月）",
+          "desc": "向河面放水灯祈福，湄南河畔与河畔商场有庆典。"
+        },
+        {
+          "name": "唐人街农历新年",
+          "date": "1月—2月",
+          "desc": "耀华力路张灯结彩，舞龙舞狮与路边宴席规模盛大。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "进寺庙需脱鞋，着装保守",
+        "不要摸别人的头",
+        "不要用脚指人或物",
+        "对王室要尊重，不要议论",
+        "双手合十是常见问候"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -3939,7 +4179,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "吉隆坡1857年因锡矿开埠，1896年成为马来联邦首府，现为马来西亚首都，双子塔与独立广场是城市象征。治安中等，需注意扒手、摩托车飞车抢包与假导游；医疗条件良好（以私立医院为主），全年高温多雨、午后雷暴，个别年份受烟霾影响，轻轨出行便利。"
     },
     "highlights": [
       "美食丰富",
@@ -3962,82 +4203,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "椰浆饭（Nasi Lemak）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "肉骨茶（Bak Kut Teh）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "福建炒面（Hokkien Mee）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "印度煎饼（Roti Canai）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "沙嗲（Satay）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "双子塔（Petronas Twin Towers）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "黑风洞（Batu Caves）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "独立广场（Merdeka Square）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "吉隆坡塔（KL Tower）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "国家清真寺（Masjid Negara）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "茨厂街（Petaling Street）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "大宝森节（Thaipusam）",
+          "date": "1月—2月（泰米尔历泰月满月）",
+          "desc": "黑风洞举行的大型印度教苦行还愿庆典，参与者可达数十万。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "开斋节（Hari Raya Aidilfitri）",
+          "date": "斋月结束后",
+          "desc": "马来家庭开放门户（Open House），商场与夜市装饰一新。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "马来西亚国庆日",
+          "date": "8月31日",
+          "desc": "独立广场举行阅兵与升旗仪式，晚间有烟花。"
+        },
+        {
+          "name": "屠妖节（Deepavali）",
+          "date": "10月—11月",
+          "desc": "印度族裔的灯节，砖厂一带（Brickfields）点灯庆祝。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -4452,7 +4718,8 @@ var CITY_DATABASE = {
           "desc": "Young crowd, occasional arguments - Generally safe, watch belongings",
           "risk": "Low"
         }
-      ]
+      ],
+      "history": "台北1884年筑台北府城，日据时期为总督府驻地，战后成为台湾地区政治、经济与文化中心，故宫博物院藏有大量迁台文物。治安良好、医疗优质；夏季闷热多台风，盆地湿热，冬季湿冷多雨，地震与台风为主要自然灾害，捷运车厢内禁止饮食，道路机车流量大需留意。"
     },
     "highlights": [
       "购物便利",
@@ -4475,77 +4742,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "Din Tai Fung",
-          "type": "Xiao Long Bao",
-          "price": "NT$300-600",
-          "desc": "Xinyi/multiple - Xiaolongbao, Spicy Wontons",
-          "tip": "World-famous, Michelin 1-star"
+          "name": "牛肉面",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Shangjia Fish Market",
-          "type": "Seafood",
-          "price": "NT$500-1500",
-          "desc": "Zhongshan Fish Market - Nigiri Sushi, Sea Urchin",
-          "tip": "Standing-eat area has best value"
+          "name": "卤肉饭",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "Lin Dong Fang Beef Noodles",
-          "type": "Beef Noodles",
-          "price": "NT$150-300",
-          "desc": "Bade Road - Half-Tendon Half-Meat Noodles",
-          "tip": "24hr, add chili oil for extra flavor"
+          "name": "蚵仔煎",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "珍珠奶茶",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "凤梨酥",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "台北101",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "国立故宫博物院",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "中正纪念堂",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "士林夜市",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "艋舺龙山寺",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西门町",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "台北灯节",
+          "date": "元宵节前后（2月）",
+          "desc": "西区或东区设主灯区，展出大型花灯与光雕。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "台北国际书展",
+          "date": "2月",
+          "desc": "世贸一馆举办的华文出版界年度盛会。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "台北电影节",
+          "date": "6月下旬—7月",
+          "desc": "以台湾电影为主的国际影展，含国际新导演竞赛。"
+        },
+        {
+          "name": "台北跨年晚会与101烟火",
+          "date": "12月31日",
+          "desc": "市政府前广场跨年演唱会与101大楼烟火秀，散场人潮拥挤。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -4978,7 +5275,8 @@ var CITY_DATABASE = {
           "desc": "人流密集，注意财物",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "大阪古为'难波'，丰臣秀吉筑大阪城，江户时代是日本'天下厨房'，现为西日本商业与美食中心。治安总体尚可，但新世界一带夜间需谨慎；医疗发达，夏季闷热，6—10月为台风季，南海海槽地震风险被反复提示，道顿堀与环球影城等景区人流拥挤。"
     },
     "highlights": [
       "购物便利",
@@ -5001,99 +5299,99 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "寿司",
-          "type": "日本料理",
-          "price": "¥2,000-5,000",
-          "desc": "新鲜生鱼片配醋饭，日本料理的代表",
-          "tip": "建议选择有「刺身通」认证的店铺，每日更新鱼获信息"
+          "name": "章鱼烧（たこ焼き）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "拉面",
-          "type": "面食",
-          "price": "¥800-1,500",
-          "desc": "浓郁汤底配上Q弹手工面条，各地风味独特",
-          "tip": "拉面店通常营业时间较短，建议提前查询营业时间"
+          "name": "御好烧（お好み焼き）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "天妇罗",
-          "type": "日本料理",
-          "price": "¥1,500-3,000",
-          "desc": "酥脆外衣包裹新鲜海鲜蔬菜，配特制天妇罗汁",
-          "tip": "老字号天妇罗店往往需要预约"
+          "name": "串炸（串カツ）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "烤肉",
-          "type": "烧烤",
-          "price": "¥3,000-6,000",
-          "desc": "高品质和牛烤肉，炭火烤制，肉质鲜嫩",
-          "tip": "高级和牛店铺通常限量和预约"
+          "name": "箱押寿司（押し寿司）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "怀石料理",
-          "type": "高级料理",
-          "price": "¥15,000-30,000",
-          "desc": "传统多道菜精致料理，体验日本饮食文化精髓",
-          "tip": "需要提前预约，用餐时长2-3小时"
+          "name": "狐狸乌冬面（きつねうどん）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "浅草寺",
-          "type": "寺庙",
-          "desc": "东京最古老的佛教寺庙，雷门大灯笼是标志性景点",
+          "name": "大阪城（大阪城天守阁）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "涩谷十字路口",
-          "type": "地标",
-          "desc": "世界最繁忙的十字路口，人流量惊人",
+          "name": "道顿堀（Dotonbori）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "明治神宫",
-          "type": "神社",
-          "desc": "供奉明治天皇和昭宪皇太后的神社，位于繁华都市中的绿洲",
+          "name": "新世界与通天阁",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "筑地市场",
-          "type": "市场",
-          "desc": "传统海鲜市场，可以体验清晨竞拍和新鲜海鲜",
+          "name": "日本环球影城（USJ）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "代官山茑屋书店",
-          "type": "书店",
-          "desc": "被评为全球最美书店，设计独特，艺术气息浓厚",
-          "hidden": true
+          "name": "梅田蓝天大厦空中庭园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         },
         {
-          "name": "根津美术馆庭园",
-          "type": "庭园",
-          "desc": "精致的传统日式庭园，人少清幽",
-          "hidden": true
+          "name": "海游馆（Osaka Aquarium Kaiyukan）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "樱花节",
-          "date": "3月下旬-4月上旬",
-          "desc": "全国赏樱热潮，上野公园、新宿御苑等都是著名赏樱地"
+          "name": "造币局樱花通道开放",
+          "date": "4月中旬",
+          "desc": "大阪造币局院内樱花通道限时对外开放，品种逾百。"
         },
         {
-          "name": "神田祭",
-          "date": "5月中旬",
-          "desc": "日本三大祭之一，传统神舆游行，热闹非凡"
+          "name": "天神祭",
+          "date": "7月24日—25日",
+          "desc": "大阪天满宫的祭典，含船渡御与奉纳烟火，日本三大祭之一。"
         },
         {
-          "name": "花火大会",
-          "date": "7-8月",
-          "desc": "夏日盛大烟花盛宴，隅田川花火大会最著名"
+          "name": "淀川花火大会",
+          "date": "8月上旬",
+          "desc": "淀川河畔的大型烟火大会，观众极多需注意散场安全。"
         },
         {
-          "name": "时代祭",
-          "date": "10月22日",
-          "desc": "京都传统祭典，展示平安时代的历史服饰和传统"
+          "name": "大阪光之盛宴",
+          "date": "11月—12月",
+          "desc": "御堂筋行道树灯光与中之岛光雕投影的冬季灯饰季。"
         }
       ],
       "customs": [
@@ -5103,7 +5401,8 @@ var CITY_DATABASE = {
         "不要边走边吃，站在店铺旁边吃完再走",
         "公共场合尽量避免大声打电话，使用耳机接听",
         "递东西时使用双手，表示尊重",
-        "不要用筷子直插米饭（像上香一样）"
+        "不要用筷子直插米饭（像上香一样）",
+        "尊重当地文化和习俗"
       ],
       "transport": "公共交通非常发达，地铁和电车是最主要交通方式。建议购买一日券（Tokyo Metro 24/48/72小时券）、西瓜卡（Suica）或Pasmo卡，充值即可使用。出租车价格较高，但服务优质。",
       "foodDetails": [
@@ -5519,7 +5818,8 @@ var CITY_DATABASE = {
           "desc": "Red-light area vicinity - Avoid going alone",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "孟买原由七个小岛组成，1661年作为葡萄牙公主嫁妆转入英国手中，后发展为印度金融与影视（宝莱坞）中心。私立医疗条件好；需注意扒窃、出租车与突突车议价，避免夜间独自去偏僻区域，6—9月季风期暴雨内涝严重，街边饮食与自来水有卫生风险，登革热高发。"
     },
     "highlights": [
       "文化景点多",
@@ -5542,82 +5842,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "瓦达帕夫（Vada Pav）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "帕夫巴吉（Pav Bhaji）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "贝拉普里（Bhel Puri）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "塞夫普里（Sev Puri）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "孟买香饭（Mumbai Biryani）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "印度门（Gateway of India）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "贾特拉帕蒂·希瓦吉终点站（CST）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "象岛石窟（Elephanta Caves）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "海滨大道（Marine Drive）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "哈吉阿里清真寺（Haji Ali Dargah）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "班德拉-沃利海上大桥（Bandra-Worli Sea Link）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "象头神节（Ganesh Chaturthi）",
+          "date": "8月—9月",
+          "desc": "全市设神像供台，最后一天将神像送入阿拉伯海，场面壮观。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "胡里节（Holi）",
+          "date": "3月",
+          "desc": "洒色彩粉的春季节庆，参加者建议护眼并结伴而行。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "卡拉戈达艺术节（Kala Ghoda Arts Festival）",
+          "date": "2月",
+          "desc": "南孟买艺术区举办的免费艺术、戏剧与音乐节。"
+        },
+        {
+          "name": "排灯节（Diwali）",
+          "date": "10月—11月",
+          "desc": "全城点灯与烟火，商业区人流和噪音都很大。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -6034,7 +6359,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "德里分为沙贾汗所建的旧德里（沙贾汗纳巴德）与英国人规划的新德里（1931年落成），现为印度首都。医疗资源较好但分布不均；治安需谨慎，女性旅客尤其应避免夜间独行，4—6月极端高温，11月至次年1月雾霾严重，街边食品与饮水需谨慎。"
     },
     "highlights": [
       "医疗水平高",
@@ -6057,82 +6383,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "黄油鸡（Butter Chicken）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "唐杜里烤鸡（Tandoori Chicken）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "鹰嘴豆咖喱配炸饼（Chole Bhature）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "烤肉串（Seekh Kebab）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "香料土豆饼（Aloo Tikki）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "红堡（Red Fort）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "印度门（India Gate）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "库特卜塔（Qutub Minar）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "胡马雍陵（Humayun's Tomb）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "莲花寺（Lotus Temple）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "贾玛清真寺（Jama Masjid）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "共和国日阅兵",
+          "date": "1月26日",
+          "desc": "国王大道（Kartavya Path）举行阅兵与文化方阵游行。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "胡里节（Holi）",
+          "date": "3月",
+          "desc": "洒粉庆祝的春季节日，建议只参加有组织的活动。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "十胜节与拉姆里拉（Dussehra/Ramlila）",
+          "date": "9月—10月",
+          "desc": "红堡一带演出《罗摩衍那》并焚烧十首魔王巨像。"
+        },
+        {
+          "name": "排灯节（Diwali）",
+          "date": "10月—11月",
+          "desc": "印度最重要的灯节，家家点灯并燃放鞭炮。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -6550,7 +6901,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "雅加达前身为荷兰东印度公司1619年所建的巴达维亚，现为印度尼西亚首都与经济中心，也是地面沉降最快的城市之一。治安一般，需防扒手与摩托车抢包；交通常年严重拥堵，11月至次年3月雨季内涝，空气污染较重，自来水不宜饮用，登革热常年流行。"
     },
     "highlights": [
       "医疗水平高",
@@ -6573,82 +6925,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "印尼炒饭（Nasi Goreng）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "沙嗲（Sate Ayam）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "加多加多（Gado-gado）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "椰浆饭（Nasi Uduk）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "巴达维索托汤（Soto Betawi）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "国家纪念碑（Monas）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "雅加达老城区（Kota Tua）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "伊斯蒂赫拉尔大清真寺（Masjid Istiqlal）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "印尼缩影公园（Taman Mini Indonesia Indah）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "安佐尔梦幻乐园（Ancol Dreamland）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉古南动物园（Ragunan Zoo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "印尼独立日",
+          "date": "8月17日",
+          "desc": "全国升旗仪式与社区拔河、爬椰子树等民间比赛。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "开斋节（Lebaran）",
+          "date": "斋月结束后",
+          "desc": "全国性返乡高峰，城市道路空旷而车站机场极度拥挤。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "雅加达博览会（Jakarta Fair）",
+          "date": "6月中旬—7月中旬",
+          "desc": "凯马腰兰（Kemayoran）举办的大型商贸展与游园会。"
+        },
+        {
+          "name": "雅加达马拉松",
+          "date": "10月",
+          "desc": "途经国家纪念碑与老城区的城市马拉松赛事。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -7072,7 +7449,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "胡志明市旧称西贡，法国殖民时期有'东方巴黎'之称，1976年改为现名，现为越南最大城市与经济中心。医疗建议选择私立医院；摩托车飞车抢包高发，过马路应匀速直行、不要突然停顿，5—11月雨季暴雨内涝，街边冰块与生食有卫生风险，登革热病例较多。"
     },
     "highlights": [
       "发达公共交通",
@@ -7095,82 +7473,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "越南河粉（Phở）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "越式法包三明治（Bánh Mì）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "越式煎饼（Bánh Xèo）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "碎米饭烤肉（Cơm Tấm）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "生春卷（Gỏi cuốn）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "战争遗迹博物馆（War Remnants Museum）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "统一宫（Independence Palace）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "西贡圣母大教堂（Notre-Dame Cathedral）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西贡中央邮政局（Saigon Central Post Office）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "滨城市场（Ben Thanh Market）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "古芝地道（Cu Chi Tunnels）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "越南农历新年（Tết）",
+          "date": "1月—2月",
+          "desc": "阮惠步行街设花市与灯饰，除夕夜有跨年活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "南方解放与国家统一纪念日",
+          "date": "4月30日",
+          "desc": "统一宫一带举行纪念活动与表演。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "中秋节（Tết Trung Thu）",
+          "date": "农历八月十五（9月—10月）",
+          "desc": "堤岸第五郡灯笼满街，有舞狮与月饼摊位。"
+        },
+        {
+          "name": "胡志明市国际马拉松",
+          "date": "12月前后",
+          "desc": "起终点设在市中心，吸引大量外国跑者参加。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -7587,7 +7990,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "马尼拉1571年由西班牙人建城，王城区（Intramuros）是殖民时期核心，现为菲律宾首都，属马尼拉大都会区。治安差异大，需防扒手与出租车绕路宰客，避免夜间前往贫民区；交通极度拥堵，6—11月台风季暴雨内涝，登革热流行，建议饮用瓶装水。"
     },
     "highlights": [
       "文化景点多",
@@ -7610,82 +8014,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "菲律宾炖肉（Adobo）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "烤乳猪（Lechon）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "铁板猪脸肉（Sisig）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "哈啰哈啰冰（Halo-halo）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "罗望子酸汤（Sinigang）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "王城区（Intramuros）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣奥古斯丁教堂（San Agustin Church）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣地亚哥堡（Fort Santiago）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "黎刹公园（Rizal Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马尼拉大教堂（Manila Cathedral）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "岷伦洛中国城（Binondo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "黑面拿撒勒节（Traslación）",
+          "date": "1月9日",
+          "desc": "奎亚波教堂的黑面拿撒勒像巡游，参与人数上百万，需极度注意拥挤安全。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "圣周与复活节（Holy Week）",
+          "date": "3月—4月",
+          "desc": "教堂礼仪与苦路巡游，部分街区封路、商铺歇业。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "菲律宾独立日",
+          "date": "6月12日",
+          "desc": "黎刹公园举行升旗与纪念仪式，全国放假。"
+        },
+        {
+          "name": "马尼拉国际书展",
+          "date": "9月中旬",
+          "desc": "SMX会展中心举办的全国最大书展，出版与文创摊位众多。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -8097,7 +8526,8 @@ var CITY_DATABASE = {
           "desc": "Working-class area, slightly chaotic at night - More comfortable during daytime",
           "risk": "Low"
         }
-      ]
+      ],
+      "history": "迪拜原是波斯湾畔的小渔村与珍珠贸易港，1971年与其他酋长国共同组成阿联酋，靠石油与转口贸易迅速崛起为中东的金融、航空与旅游枢纽。城市治安良好、暴力犯罪少见，主要风险是6—9月常超40℃的高温中暑；须遵守公共场合着装与禁酒规定，斋月白天不宜当众进食；医疗费用昂贵，建议出行前购买旅游医疗保险。"
     },
     "highlights": [
       "文化景点多",
@@ -8120,82 +8550,108 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "马奇布斯（Machboos，阿联酋香料炖肉饭）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "哈里斯（Harees，小麦羊肉粥）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "卢盖马特（Luqaimat，藏红花炸甜丸）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "巴拉里特（Balaleet，藏红花粉丝配煎蛋）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "阿拉伯沙威玛（Shawarma）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "哈利法塔（Burj Khalifa）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "迪拜购物中心与迪拜音乐喷泉（Dubai Mall / Dubai Fountain）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "朱美拉棕榈岛（Palm Jumeirah）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "迪拜相框（Dubai Frame）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "朱美拉清真寺（Jumeirah Mosque，少数对非穆斯林开放的清真寺，需预约导览）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿法迪历史街区（Al Fahidi Historical Neighbourhood，含迪拜湾老集市与风塔建筑）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "迪拜购物节（Dubai Shopping Festival）",
+          "date": "每年12月下旬至次年1月下旬",
+          "desc": "全城商场大减价，配合哈利法塔与海滨的跨年焰火、抽奖与街头演出，是迪拜规模最大的年度活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "斋月与开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历9月为斋月，10月1日为开斋节（公历每年约提前11天）",
+          "desc": "白天禁食、日落开斋，夜间集市与开斋帐蓬热闹非凡；白天在公共场所进食属失礼行为。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "宰牲节（古尔邦节，Eid al-Adha）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "伊斯兰教最重要的节日，家庭聚会、施舍与宰牲，公共假期通常连休数日。"
+        },
+        {
+          "name": "迪拜美食节（Dubai Food Festival）",
+          "date": "每年2月至3月",
+          "desc": "全城餐厅推出限定菜单，并有海滩美食市集、名厨演示与街头小吃活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "公共场合着装保守",
+        "斋月期间白天不要在公共场合饮食",
+        "左手被认为不洁，用右手递物",
+        "清真寺参观需脱鞋，女性需遮头",
+        "公共场合避免亲密行为"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -8629,7 +9085,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "多哈原为波斯湾沿岸的采珠与渔村，1971年卡塔尔独立后定为首都，近二十年依托天然气财富迅速扩张，并承办2022年世界杯。城市治安良好；主要风险是5—10月的高温高湿；公共场合须着装保守，斋月白天避免在公共场所进食饮水；医疗设施先进但费用高昂，需备好旅游医疗保险；驾车需留意当地车速快、事故率高。"
     },
     "highlights": [
       "医疗水平高",
@@ -8652,82 +9109,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "马奇布斯（Machboos，卡塔尔国菜五香肉饭）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "萨卢纳（Saloona，番茄香料炖肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "哈里斯（Harees，碎小麦鸡肉粥）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "巴拉里特（Balaleet，玫瑰水藏红花粉丝配蛋饼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "卢盖马特（Luqaimat，蘸枣糖浆的炸甜丸）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "伊斯兰艺术博物馆（Museum of Islamic Art）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "瓦其夫集市（Souq Waqif）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "多哈海滨大道（Doha Corniche）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡塔尔国家博物馆（National Museum of Qatar）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡塔拉文化村（Katara Cultural Village）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "珍珠岛（The Pearl-Qatar）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "卡塔尔国庆日（Qatar National Day）",
+          "date": "每年12月18日",
+          "desc": "纪念国家统一，多哈举行阅兵、焰火、传统歌舞与达布·萨伊（Darb Al Saai）民俗活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "斋月结束后的三天假期，家庭聚餐、互赠礼物，瓦其夫集市夜间格外热闹。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "宰牲节（古尔邦节，Eid al-Adha）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "伊斯兰教最重要的节日，与麦加朝觐同期，家庭聚会并行善施舍。"
+        },
+        {
+          "name": "卡塔尔国际美食节（Qatar International Food Festival）",
+          "date": "每年2月至3月",
+          "desc": "名厨现场演示、美食车与本地料理展销，是体验卡塔尔及海湾饮食的年度活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -9137,7 +9619,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "利雅得原是内志高原上的绿洲小城，1902年被伊本·沙特夺回，1932年成为沙特阿拉伯首都，石油财富使其迅速现代化。城市治安总体良好，但须严格遵守伊斯兰法规：严禁酒类与毒品，公共场合着装保守、言行谨慎；夏季6—9月极端高温；沙尘暴常影响交通与航班；饮用水建议只喝瓶装水，外出随身携带护照复印件备查。"
     },
     "highlights": [
       "购物便利",
@@ -9160,82 +9643,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "卡布萨（Kabsa，沙特国菜香料肉饭）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "贾雷什（Jareesh，碎小麦肉粥）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "萨利格（Saleeg，奶香米粥配烤鸡）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "穆塔巴克（Mutabbaq，肉馅煎饼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "哈尼德（Haneeth，地下石炉慢烤羊肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "德拉伊耶·图赖夫区（Diriyah / At-Turaif，沙特王朝发源地，世界遗产）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "沙特国家博物馆（National Museum of Saudi Arabia）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "马斯马克城堡（Al Masmak Fortress）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "王国中心天空桥（Kingdom Centre Sky Bridge）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "利雅得大道（Boulevard Riyadh City）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "世界边缘（Edge of the World / Jebel Fihrayn，图韦克山悬崖）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "利雅得季（Riyadh Season）",
+          "date": "每年10月至次年3月",
+          "desc": "全城数十个主题娱乐区同时开放，集合演唱会、戏剧、美食与冬季露营活动，是沙特最大的现代节庆季。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "沙特国庆日（Saudi National Day）",
+          "date": "每年9月23日",
+          "desc": "纪念1932年沙特王国统一，全城灯光秀、焰火与传统文化表演。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "斋月结束后的公共假期，家庭聚会与集市庆祝，多数机构连休数日。"
+        },
+        {
+          "name": "宰牲节（古尔邦节，Eid al-Adha）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "伊斯兰教最重要的节日，与麦加朝觐同期，全城放假并举行慈善分发。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -9645,7 +10153,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "马斯喀特扼守霍尔木兹海峡出入口，自古是香料与海上贸易港，16世纪被葡萄牙占据，1650年阿曼人收复；1970年卡布斯苏丹即位后开启现代化，成为阿曼首都。治安为海湾城市中最好的之一，暴力犯罪少见；主要风险是5—9月高温高湿、沿海洪涝与沙尘；山区自驾注意落石与涉水路段；自来水不宜直饮，建议只喝瓶装水；公共场合着装保守。"
     },
     "highlights": [
       "购物便利",
@@ -9668,82 +10177,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "舒瓦（Shuwa，地下沙炉慢烤羊肉，节庆菜）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "马奇布斯（Majboos，阿曼香料肉饭）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "马什瓦伊（Mashuai，炭烤马鲛鱼配柠檬饭）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "米什卡克（Mishkak，香料烤肉串）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "阿曼哈勒瓦（Omani Halwa，玫瑰水藏红花坚果软糕）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "苏丹卡布斯大清真寺（Sultan Qaboos Grand Mosque，非穆斯林可在指定上午时段参观）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "穆特拉集市（Mutrah Souq）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "阿拉姆皇宫（Al Alam Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "米拉尼堡与贾拉利堡（Al Mirani Fort / Al Jalali Fort）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马斯喀特皇家歌剧院（Royal Opera House Muscat）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿曼国家博物馆（National Museum of Oman）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "马斯喀特节（Muscat Festival）",
+          "date": "每年1月至2月",
+          "desc": "为期约三周的阿曼文化节，设传统手工艺集市、民间歌舞、遗产村与美食展销。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "阿曼国庆日（National Day）",
+          "date": "每年11月18日",
+          "desc": "纪念国家复兴，全城悬挂旗帜与画像，举行阅兵、焰火与传统表演。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "斋月结束后的三天假期，家庭互访、赠送礼物，马特拉集市夜间人流密集。"
+        },
+        {
+          "name": "宰牲节（古尔邦节，Eid al-Adha）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "伊斯兰教最重要的节日，家庭聚合并向穷人分发肉食。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -10153,7 +10687,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "特拉维夫1909年由犹太移民在雅法北郊建城，后发展为以色列的经济与文化中心，2003年其包豪斯风格“白城”被列入世界遗产。主要商业街区白天与夜间治安尚可，但海滩与市集扒窃常见；出行前应留意本国外交部门发布的安全提醒与官方指引；夏季湿热，建议只喝瓶装水；安息日（周五日落至周六日落）期间部分公共交通与商铺停运。"
     },
     "highlights": [
       "文化景点多",
@@ -10176,82 +10711,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "法拉费（Falafel，鹰嘴豆炸丸）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "沙威玛（Shawarma）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "鹰嘴豆泥（Hummus）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "萨比赫（Sabich，炸茄子夹饼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "沙克舒卡（Shakshuka，番茄水波蛋）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "雅法老城（Old Jaffa）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "特拉维夫白城包豪斯建筑群（White City，世界遗产）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "卡梅尔市场（Carmel Market / Shuk HaCarmel）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "特拉维夫海滨长廊（Tel Aviv Promenade / Tayelet）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "内夫泽德克街区（Neve Tzedek）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉宾广场（Rabin Square）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "特拉维夫白夜节（Laila Lavan）",
+          "date": "每年6月下旬的一个周四黄昏至次日黎明",
+          "desc": "纪念白城包豪斯建筑列入世界遗产，博物馆、画廊、海滩与街区彻夜举办大量免费演出。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "特拉维夫骄傲游行（Tel Aviv Pride）",
+          "date": "每年6月",
+          "desc": "中东规模最大的骄傲周，为期一周的派对后于周五举行海滨大游行，终点在查尔斯·克洛尔公园。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "逾越节（Passover）",
+          "date": "犹太历尼散月15日起，公历3—4月",
+          "desc": "为期七天的犹太重要节日，首夜全家守夜宴（Seder）并食用无酵饼，期间多数机构与商铺调整营业。"
+        },
+        {
+          "name": "光明节（Hanukkah）",
+          "date": "犹太历基斯流月25日起连续八天，公历11—12月",
+          "desc": "每日点燃九枝烛台，吃油炸甜甜圈与土豆饼，公共建筑悬挂大烛台。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -10664,7 +11224,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "伊斯坦布尔横跨欧亚两洲，先后为罗马、拜占庭与奥斯曼帝国首都，1453年奥斯曼苏丹攻占君士坦丁堡后成为帝国中心，1923年共和国成立后将首都迁往安卡拉。老城景区扒窃、假导游与“酒托”“擦鞋”骗局常见；海峡两岸交通拥堵，建议优先使用电车与地铁；该市位于地震带，入住宜留意逃生通道；自来水建议饮用瓶装水，街边生食需谨慎。"
     },
     "highlights": [
       "文化景点多",
@@ -10687,82 +11248,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "土耳其旋转烤肉（Döner Kebab）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "伊斯坎德尔烤肉（İskender Kebap）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "烤鱼三明治（Balık Ekmek）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "土耳其传统早餐（Kahvaltı）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "巴克拉瓦（Baklava，果仁蜜酥）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "圣索菲亚大清真寺（Hagia Sophia / Ayasofya）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "苏丹艾哈迈德清真寺（蓝色清真寺，Sultan Ahmet Camii）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "托普卡帕宫（Topkapı Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大巴扎（Kapalıçarşı / Grand Bazaar）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "加拉塔塔（Galata Tower）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "博斯普鲁斯海峡（Bosphorus）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "伊斯坦布尔郁金香节（İstanbul Lale Festivali）",
+          "date": "每年4月",
+          "desc": "全城公园、广场与道路种满郁金香，埃米尔冈公园与苏丹阿赫梅特广场为主要展区。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "伊斯坦布尔音乐节（İstanbul Müzik Festivali）",
+          "date": "每年6月",
+          "desc": "创办于1973年的古典音乐节，邀请国际乐团、芭蕾与爵士演出，场地遍布历史建筑。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "开斋节（Ramazan Bayramı）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "三天公共假期，家庭互访并赠送糖果与果仁蜜饼，长途交通与住宿紧张。"
+        },
+        {
+          "name": "宰牲节（Kurban Bayramı）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "四天公共假期，最重要的宗教节日，全国交通与机场客流高峰。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -11186,7 +11772,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "巴厘岛是印度尼西亚少数以印度教为主体的地区，14世纪起深受爪哇满者伯夷文化影响，1908年并入荷属东印度，现为国际度假地。对游客总体友好；主要风险是摩托车事故、海滩离岸流溺水、巴厘腹泻与狂犬病（被猴犬咬伤须立即就医），雨季（11月—次年3月）多雷暴，火山喷发预警须关注。"
     },
     "highlights": [
       "医疗水平高",
@@ -11209,82 +11796,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "烤猪饭（Babi Guling）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "脆皮脏鸭（Bebek Goreng）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "巴厘拼饭（Nasi Campur）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "香料烤肉串（Sate Lilit）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "椰丝杂拌（Lawar）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "海神庙（Tanah Lot）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "乌鲁瓦图神庙（Uluwatu Temple）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "乌布皇宫（Ubud Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "德格拉朗梯田（Tegallalang Rice Terrace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣泉寺（Tirta Empul）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "库塔海滩（Kuta Beach）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "安宁日（Nyepi）",
+          "date": "3月（巴厘历新年）",
+          "desc": "全岛静默一日，机场关闭、街上禁行，游客须留在酒店内。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "加隆冈节（Galungan）",
+          "date": "每210天一次（巴厘历）",
+          "desc": "祖先返乡庆典，家家门前竖起高耸的penjor竹饰。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "巴厘艺术节（Bali Arts Festival）",
+          "date": "6月中旬—7月中旬",
+          "desc": "登巴萨文化公园举办的舞蹈、音乐与手工艺展演月。"
+        },
+        {
+          "name": "乌布作家与读者节",
+          "date": "10月",
+          "desc": "乌布举办的国际文学与思想节，含写作工作坊。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -11683,7 +12295,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "清迈1296年为兰纳王国都城，长期是泰北政治与文化中心，古城墙与护城河格局保存至今。总体安全；骑摩托车前往拜县等山区事故高发，6—10月雨季易发山洪，2—4月'烧芭'季节PM2.5浓度极高、建议佩戴口罩，登革热风险存在，山区昼夜温差大。"
     },
     "highlights": [
       "购物便利",
@@ -11706,82 +12319,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "泰北咖喱面（Khao Soi）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "泰北香肠（Sai Ua）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "泰北猪肉咖喱（Gaeng Hang Lay）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "泰北辣椒酱（Nam Prik Noom／Nam Prik Ong）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "泰北糯米饭（Khao Niao）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "素贴寺（Wat Phra That Doi Suthep）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "契迪龙寺（Wat Chedi Luang）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "帕辛寺（Wat Phra Singh）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "塔佩门（Tha Phae Gate）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "清迈古城墙与护城河",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "清迈周日步行街（Sunday Walking Street）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "清迈鲜花节",
+          "date": "2月上旬",
+          "desc": "鲜花花车巡游与素贴山麓花展，是泰北最盛大的年度活动之一。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "宋干节（泼水节）",
+          "date": "4月13日—15日",
+          "desc": "古城护城河一带泼水狂欢，是清迈最热闹的节庆。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "水灯节与天灯节（Loy Krathong / Yi Peng）",
+          "date": "11月（泰历十二月满月）",
+          "desc": "放水灯与放飞天灯，湄平河畔及各寺庙人山人海。"
+        },
+        {
+          "name": "清迈设计周",
+          "date": "12月",
+          "desc": "古城内展览、装置与创意市集联动的城市设计活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -12181,7 +12819,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "普吉岛旧称塔朗，靠锡矿与贸易致富，19世纪华人移民留下普吉镇的中葡式老街建筑，2004年印度洋海啸曾重创西海岸。旅游区治安尚可，芭东夜生活区需留意饮品安全与扒手；主要风险是溺水——雨季（5—10月）离岸流强劲，插红旗时禁止下海，摩托车事故与强烈日晒也需防范。"
     },
     "highlights": [
       "医疗水平高",
@@ -12204,82 +12843,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "普吉红烧肉（Moo Hong）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "普吉蚝煎（O Tao）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "普吉米线（Mee Hoon Phuket）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "泰南酸辣鱼咖喱（Gaeng Som Pla）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "普吉海鲜烧烤",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "芭东海滩（Patong Beach）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "普吉大佛（Big Buddha）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "查龙寺（Wat Chalong）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "皮皮岛（Phi Phi Islands）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "攀牙湾（Phang Nga Bay）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "普吉镇老城（Phuket Old Town）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "普吉素食节",
+          "date": "9月—10月（农历九月初一至初九）",
+          "desc": "华人庙宇举行穿腮、过火等仪式，全城素食摊位林立。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "宋干节（泼水节）",
+          "date": "4月13日—15日",
+          "desc": "芭东海滩与普吉镇的泼水庆祝，路面湿滑需注意。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "水灯节（Loy Krathong）",
+          "date": "11月（泰历十二月满月）",
+          "desc": "海滩与湖面放水灯祈福，夜间人流集中。"
+        },
+        {
+          "name": "普吉国王杯帆船赛",
+          "date": "12月",
+          "desc": "亚洲规模较大的帆船赛事，基地设在考拉与奈汉海滩一带。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -12671,7 +13335,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "槟城乔治市1786年由英国东印度公司法兰西斯·莱特开埠，是海峡殖民地最早的据点，2008年以多元文化历史城区列入世界遗产。治安较好，偶有扒窃；热带全年高温多雨、午后雷暴，登革热风险存在，摩托车交通密集，街边饮食注意卫生，私立医院可提供英文服务。"
     },
     "highlights": [
       "美食丰富",
@@ -12694,82 +13359,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "槟城炒粿条（Char Kway Teow）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "亚参叻沙（Asam Laksa）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "福建虾面（Hokkien Har Mee）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "扁担饭（Nasi Kandar）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "煎蕊冰（Cendol）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "乔治市历史街区（George Town）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "姓氏桥（Clan Jetties）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "极乐寺（Kek Lok Si）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "槟城山（Penang Hill）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "康华丽堡（Fort Cornwallis）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "侨生博物馆（Pinang Peranakan Mansion）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "乔治市艺术节（George Town Festival）",
+          "date": "8月",
+          "desc": "为纪念乔治市入遗而设的年度艺术节，含展览、演出与市集。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "大宝森节（Thaipusam）",
+          "date": "1月—2月",
+          "desc": "乔治市与瀑布寺一带的印度教苦行庆典，游行路线封路。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "九皇爷诞",
+          "date": "农历九月初一至初九（10月前后）",
+          "desc": "华人庙宇的斋戒庆典，街边素食摊遍布，有走火炭仪式。"
+        },
+        {
+          "name": "槟城大桥国际马拉松",
+          "date": "11月",
+          "desc": "跨槟威大桥举行的马拉松，清晨封桥举行。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -13161,7 +13851,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "河内1010年李朝定名升龙，为越南历代王朝古都，法国殖民时期是法属印度支那首府，现为越南首都。老城区扒手与摩托车抢包常见，交通混乱；冬季（12月—次年2月）湿冷多雾、夏季炎热多雨，偶受台风影响，街边冰饮与生食需谨慎，建议前往国际医院就诊。"
     },
     "highlights": [
       "发达公共交通",
@@ -13184,82 +13875,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "烤肉米线（Bún Chả）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "越南河粉（Phở）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "姜黄烤鱼（Chả Cá Lã Vọng）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "鸡蛋咖啡（Cà phê trứng）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "米纸卷粉（Bánh Cuốn）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "还剑湖（Hoàn Kiếm Lake）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "河内老城三十六行街（Old Quarter）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "文庙国子监（Văn Miếu）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "一柱寺（Chùa Một Cột）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "胡志明陵墓（Lăng Hồ Chí Minh）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西湖与镇国寺（Hồ Tây）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "越南农历新年（Tết）",
+          "date": "1月—2月",
+          "desc": "老城区的桃花与金橘花市，还剑湖除夕有跨年活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "越南国庆日",
+          "date": "9月2日",
+          "desc": "巴亭广场举行纪念活动，胡志明陵墓一带封闭管控。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "中秋节（Tết Trung Thu）",
+          "date": "农历八月十五（9月—10月）",
+          "desc": "还剑湖周边挂满灯笼、舞狮巡游，儿童提灯游行。"
+        },
+        {
+          "name": "河内遗产马拉松",
+          "date": "10月",
+          "desc": "赛道穿越西湖、老城与还剑湖的夜间与清晨赛事。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -13651,7 +14367,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "班加罗尔1537年由当地首领建城，19世纪由英国人接管，独立后发展为印度IT与航空产业中心，海拔约900米、气候较宜人。在印度大城市中治安相对较好，但仍需防扒手与网约车纠纷，避免夜间独行；6—9月季风期暴雨内涝、交通易瘫痪，自来水不宜直饮。"
     },
     "highlights": [
       "购物便利",
@@ -13674,82 +14391,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "马沙拉薄饼（Masala Dosa）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "蒸米糕与炸豆饼（Idli & Vada）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "辣味扁豆炖饭（Bisi Bele Bath）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "南印滤泡咖啡（Filter Coffee）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "卡纳塔克米饼（Akki Roti）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "库本公园（Cubbon Park）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "班加罗尔宫（Bangalore Palace）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "拉巴植物园（Lalbagh Botanical Garden）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "邦议会大厦（Vidhana Soudha）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "ISKCON 神庙（ISKCON Temple）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "提普苏丹夏宫（Tipu Sultan's Summer Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "拉尔巴格植物园花展",
+          "date": "1月（共和国日）与8月（独立日）",
+          "desc": "玻璃花房周边的大型花卉展，参观人数众多。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "Karaga 节",
+          "date": "3月—4月",
+          "desc": "班加罗尔最古老的守护神巡游节，夜间的仪式队列长达数公里。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "Ugadi（卡纳塔克新年）",
+          "date": "3月—4月",
+          "desc": "泰卢固与坎纳达语地区的新年，家家制作特色苦楝花糖。"
+        },
+        {
+          "name": "班加罗尔文学节",
+          "date": "12月上旬",
+          "desc": "免费开放的文学与思想节，近三百位作家出席。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -14141,7 +14883,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "金奈源自1639年英国东印度公司所建的圣乔治堡，旧称马德拉斯，1996年更名，是泰米尔纳德邦首府与印度汽车工业中心。治安相对平稳，需防扒手；海滩离岸流强劲、多为禁止游泳水域，4—6月极端高温，10—12月东北季风带来暴雨内涝，饮水与街边食品需注意。"
     },
     "highlights": [
       "购物便利",
@@ -14164,82 +14907,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "切蒂纳德辣鸡（Chettinad Chicken）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "蒸米糕配桑巴汤（Idli & Sambar）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "马沙拉薄饼（Masala Dosa）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炸银鱼（Nethili Fry）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "南印滤泡咖啡（Filter Coffee）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "玛丽娜海滩（Marina Beach）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "卡帕利希瓦尔神庙（Kapaleeshwarar Temple）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣乔治堡（Fort St. George）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "金奈政府博物馆（Government Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "瓦卢瓦尔纪念堂（Valluvar Kottam）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣多默主教座堂（Santhome Cathedral）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "蓬加尔节（Pongal）",
+          "date": "1月中旬",
+          "desc": "泰米尔纳德邦最重要的丰收节，家家煮甜米粥祭日神。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "马德拉斯音乐季（Chennai Music Season）",
+          "date": "12月中旬—1月初",
+          "desc": "数十场卡纳提克古典音乐与婆罗多舞演出集中上演。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "泰米尔新年（Puthandu）",
+          "date": "4月中旬",
+          "desc": "寺庙庆典与家庭宴席，街头有文化表演。"
+        },
+        {
+          "name": "金奈书展",
+          "date": "12月底—1月中旬",
+          "desc": "南丹纳姆YMCA广场举办的大型书展，摊位超九百个。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -14631,7 +15399,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "加尔各答1690年由英国东印度公司建立，1772—1911年为英属印度首都，是印度近代文化重镇，泰戈尔与导演雷伊的故乡。对外国旅客总体友好，但拥挤市场与火车站扒手较多；4—6月湿热、6—9月季风期内涝，街头食品卫生与饮水需谨慎，私立医院条件较好。"
     },
     "highlights": [
       "美食丰富",
@@ -14654,82 +15423,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "加尔各答卷饼（Kathi Roll）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "孟加拉鱼咖喱（Machher Jhol）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "拉丝古拉甜球（Rosogolla）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "甜酸奶（Mishti Doi）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "脆球饼（Phuchka）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "维多利亚纪念堂（Victoria Memorial）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "豪拉大桥（Howrah Bridge）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "印度博物馆（Indian Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "达克希内斯瓦卡利神庙（Dakshineswar Kali Temple）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "迦梨迦特神庙（Kalighat Temple）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大理石宫（Marble Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "杜尔加女神节（Durga Puja）",
+          "date": "9月—10月",
+          "desc": "全城数千座神棚与神像，最后一天巡游沉入胡格利河。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "迦梨女神节（Kali Puja）",
+          "date": "10月—11月（与排灯节同期）",
+          "desc": "夜间神像供奉与烟火，与排灯节灯饰同时进行。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "加尔各答国际书展",
+          "date": "1月—2月",
+          "desc": "世界规模最大的非商业性书展之一，观众数以百万计。"
+        },
+        {
+          "name": "泰戈尔诞辰（Rabindra Jayanti）",
+          "date": "5月上旬",
+          "desc": "泰戈尔故居与高校举办诗歌朗诵与音乐纪念活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -15128,7 +15922,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "海得拉巴1591年由库特卜沙希王朝建城，1724年起为尼扎姆土邦首都，1948年并入印度，现为特伦甘纳邦首府与印度IT、制药中心。治安在印度大城市中较好，老城（查尔米纳尔）拥挤需防扒手；4—6月极端高温常超40℃，雨季易内涝，饮食偏辣，建议饮用瓶装水。"
     },
     "highlights": [
       "美食丰富",
@@ -15151,82 +15946,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "海德拉巴香饭（Hyderabadi Biryani）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "麦粥（Haleem）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "辣酱青椒（Mirchi ka Salan）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "伊朗奶茶与奥斯马尼亚饼干（Irani Chai & Osmania Biscuit）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "炸面包布丁（Double ka Meetha）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "查尔米纳尔（Charminar）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "戈尔康达堡（Golconda Fort）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "侯赛因湖（Hussain Sagar）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "萨拉江博物馆（Salar Jung Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "麦加清真寺（Mecca Masjid）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "乔玛哈拉宫（Chowmahalla Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "博纳卢节（Bonalu）",
+          "date": "7月—8月",
+          "desc": "泰伦加纳地区的女神节，妇女头顶陶罐供品巡游至寺庙。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "巴图卡玛节（Bathukamma）",
+          "date": "9月—10月",
+          "desc": "以鲜花层层堆叠的花塔歌舞庆典，女性节日色彩浓厚。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "海得拉巴文学节",
+          "date": "1月下旬",
+          "desc": "免费入场的三日文学节，英语、泰卢固语、乌尔都语场次并行。"
+        },
+        {
+          "name": "开斋节",
+          "date": "斋月结束后",
+          "desc": "老城查尔米纳尔一带夜市通宵营业，人流极度密集。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -15625,7 +16445,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "深圳1979年设市、1980年成为中国首批经济特区之一，由边陲小镇发展为科技创新与制造业中心，紧邻香港。治安良好，医疗资源充足；夏季漫长湿热，7—9月为台风季，暴雨易造成内涝，地铁与口岸（福田、罗湖、深圳湾）过关人流拥挤需预留时间，地铁需安检。"
     },
     "highlights": [
       "购物便利",
@@ -15648,82 +16469,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "公明烧鹅",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "沙井蚝",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "光明乳鸽",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "客家酿豆腐",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "围村盆菜",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "世界之窗（Window of the World）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "深圳湾公园",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "莲花山公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "梧桐山",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大梅沙海滨公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大鹏所城",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "中国（深圳）国际文化产业博览交易会",
+          "date": "5月中下旬",
+          "desc": "国家级文化产业展会，会展中心与分会场联动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "深圳读书月",
+          "date": "11月",
+          "desc": "全市范围的阅读推广活动，含书展与名家讲座。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "中国国际高新技术成果交易会（高交会）",
+          "date": "11月",
+          "desc": "深圳会展中心举办的科技产业展会，专业观众众多。"
+        },
+        {
+          "name": "深圳马拉松",
+          "date": "12月",
+          "desc": "沿深南大道与深圳湾举行的城市马拉松赛事。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -16122,7 +16968,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "广州建城已有2200余年，是秦汉南海郡治与海上丝绸之路重要港口，清代十三行曾一口通商，现为广东省会与华南交通枢纽。治安较好，三甲医院众多；夏季闷热多雨，7—9月为台风季，春季'回南天'地面湿滑，雨季蚊虫多、有登革热风险，火车站与地铁人流拥挤需防扒手。"
     },
     "highlights": [
       "发达公共交通",
@@ -16145,82 +16992,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "广式点心（虾饺、烧卖）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "白切鸡",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "肠粉",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "艇仔粥",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "双皮奶",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "广州塔（Canton Tower）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "陈家祠（陈氏书院）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "沙面岛（Shamian Island）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "白云山",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西汉南越王博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "北京路步行街",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "广州迎春花市",
+          "date": "农历腊月二十八至除夕",
+          "desc": "各区设花街摆卖年花年桔，是广府年俗的核心活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "中国进出口商品交易会（广交会）",
+          "date": "4月与10月",
+          "desc": "分两期在广交会展馆举行，期间酒店与交通极为紧张。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "广州国际灯光节",
+          "date": "11月",
+          "desc": "珠江新城与海心沙一带的大型灯光装置与投影秀。"
+        },
+        {
+          "name": "广州马拉松",
+          "date": "12月",
+          "desc": "沿珠江两岸举行的城市马拉松，赛道穿越多个城区。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -16612,7 +17484,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "成都2300余年未改城名，是古蜀文明中心，秦设蜀郡、三国时为蜀汉都城，现为四川省会与中国西部枢纽。治安良好，华西医院等医疗资源顶尖；冬季阴冷少日照、夏季闷热，雨季前往都江堰、青城山等山区需留意滑坡与山洪，火锅辛辣注意肠胃，盆地西缘属地震带。"
     },
     "highlights": [
       "发达公共交通",
@@ -16635,82 +17508,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "成都火锅",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "麻婆豆腐",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "夫妻肺片",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "担担面",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "麻辣兔头",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "成都大熊猫繁育研究基地",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "宽窄巷子",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "锦里古街",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "武侯祠",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "杜甫草堂",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "金沙遗址博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "成都大庙会（武侯祠）",
+          "date": "农历正月至2月",
+          "desc": "武侯祠与锦里一带的仿古灯会、小吃与川剧表演。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "都江堰清明放水节",
+          "date": "4月上旬",
+          "desc": "纪念李冰父子治水的放水仪式与仿古祭祀。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "成都马拉松",
+          "date": "10月",
+          "desc": "途经金沙、天府广场与环球中心的城市马拉松。"
+        },
+        {
+          "name": "中国成都国际非物质文化遗产节",
+          "date": "每两年一届，多安排在6月或10月",
+          "desc": "非遗展演与国际论坛，举办年份需提前查询。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -17102,7 +18000,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "杭州为吴越国与南宋（临安）都城，西湖文化景观2011年列入世界遗产，现为浙江省会与数字经济中心，曾举办G20与亚运会。治安良好，医疗发达；6月梅雨、夏季高温，7—9月为台风季，西湖景区节假日人流极密集，钱塘江观潮须远离堤岸并听从现场管制。"
     },
     "highlights": [
       "医疗水平高",
@@ -17125,82 +18024,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "西湖醋鱼",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "东坡肉",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "龙井虾仁",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "片儿川",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "葱包桧",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "西湖风景名胜区",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "灵隐寺",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "飞来峰石窟造像",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西溪国家湿地公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "良渚古城遗址公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "六和塔",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "西湖龙井开茶节",
+          "date": "3月下旬—4月",
+          "desc": "西湖龙井新茶上市的开采庆典，茶园可体验采茶。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "钱塘江观潮节",
+          "date": "农历八月十八前后（9月—10月）",
+          "desc": "下沙与海宁一带观一线潮，须服从现场警戒、远离堤岸。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "杭州西湖国际博览会",
+          "date": "10月—11月",
+          "desc": "包含展览、论坛与消费活动的城市综合博览会。"
+        },
+        {
+          "name": "杭州马拉松",
+          "date": "11月",
+          "desc": "起于黄龙体育中心、沿西湖与钱塘江的经典赛道。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -17592,7 +18516,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "西安古称长安，为西周镐京、秦咸阳与汉唐都城所在，是丝绸之路东方起点，明城墙是国内现存规模最大的古城墙。治安良好，医疗资源充足；冬季干冷、春季多浮尘、夏季高温，兵马俑与陕西历史博物馆等热门景点需提前实名预约，回民街就餐注意价格与卫生。"
     },
     "highlights": [
       "发达公共交通",
@@ -17615,82 +18540,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "腊汁肉夹馍",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "羊肉泡馍",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "油泼扯面（Biangbiang面）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "凉皮",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "西安胡辣汤",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "秦始皇帝陵兵马俑",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "西安明城墙",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "大雁塔（大慈恩寺）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "钟鼓楼广场",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "陕西历史博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "回民街（北院门）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "西安城墙新春灯会",
+          "date": "农历腊月至正月（1月—2月）",
+          "desc": "明城墙上布置大型彩灯，夜间登城赏灯人流极大。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "丝绸之路国际电影节（西安）",
+          "date": "9月—10月",
+          "desc": "以丝路主题的国际影展，展映与论坛分布在全市影院。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "西安国际马拉松",
+          "date": "10月",
+          "desc": "起点设在永宁门，途经钟楼、大雁塔等标志地段。"
+        },
+        {
+          "name": "回坊开斋节",
+          "date": "斋月结束后",
+          "desc": "回民街一带穆斯林社区聚餐庆祝，街巷人流拥挤。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -18081,7 +19031,8 @@ var CITY_DATABASE = {
           "desc": "Red-light area, occasional disputes - Avoid going alone",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "伦敦是英国首都与全球金融中心，罗马时期以 Londinium 建城，历经1666年大火与二战大轰炸后重建，泰晤士河两岸聚集议会、白金汉宫等权力地标。整体治安良好，暴力犯罪少见，但地铁、牛津街、特拉法加广场等游客区扒窃与手机抢夺高发；地铁罢工与周末线路检修频繁，需预留通勤时间；天气阴雨多变；紧急电话999（非紧急101），NHS 急症救治对游客按规收费，建议自备旅行医疗保险。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -18104,82 +19055,108 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "炸鱼薯条（Fish and Chips）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "英式全早餐（Full English Breakfast）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "派配土豆泥（Pie and Mash，东区传统配欧芹酱汁）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "周日烤肉（Sunday Roast）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "司康配凝脂奶油（Cream Tea / Scone with clotted cream）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "大英博物馆（British Museum）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "伦敦塔（Tower of London）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "塔桥（Tower Bridge）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "白金汉宫（Buckingham Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "威斯敏斯特教堂（Westminster Abbey）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大本钟与议会大厦（Elizabeth Tower / Houses of Parliament）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "诺丁山狂欢节（Notting Hill Carnival）",
+          "date": "8月底（银行假日周末）",
+          "desc": "欧洲规模最大的街头狂欢节，加勒比文化花车巡游与钢鼓乐队，人流极密集需防盗"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "伦敦马拉松（TCS London Marathon）",
+          "date": "4月",
+          "desc": "世界六大满贯之一，从格林尼治跑到圣詹姆斯公园，沿途交通管制范围大"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "切尔西花展（RHS Chelsea Flower Show）",
+          "date": "5月下旬",
+          "desc": "世界最著名的园艺展览，需提前数月购票，展期周边地铁拥挤"
+        },
+        {
+          "name": "伦敦跨年烟花（New Year's Eve Fireworks）",
+          "date": "12月31日",
+          "desc": "泰晤士河与伦敦眼焰火表演，需实名预约观景区，散场时地铁免费但极度拥挤"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "排队是英国文化，务必遵守",
+        "地铁扶梯靠右站",
+        "小费通常10-15%，账单已含服务费则不用另给",
+        "酒吧点酒去吧台，不需要等服务员",
+        "天气多变，随身携带雨伞"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -18636,7 +19613,8 @@ var CITY_DATABASE = {
           "desc": "Tourist traps, aggressive vendors - Decline street performers' approaches",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "巴黎是法国首都，自西岱岛发源，中世纪成为王国都城，19世纪奥斯曼男爵改造出林荫大道格局，1889年埃菲尔铁塔落成。治安总体良好，但地铁1号线、蒙马特与埃菲尔铁塔周边扒手及「手绳党」「签名党」骗局高发；罢工与游行常导致地铁、机场与景区临时关闭，出行前需查公告；塞纳河夏季偶有涨水封岸；医疗急救15，通用112，私立医院费用高，务必投保。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -18659,82 +19637,108 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "法式洋葱汤（Soupe à l'oignon）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "红酒炖牛肉（Bœuf Bourguignon）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "油封鸭腿（Confit de canard）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "巴黎-布雷斯特泡芙（Paris-Brest）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "火腿黄油法棍三明治（Jambon-beurre）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "埃菲尔铁塔（Tour Eiffel）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "卢浮宫（Musée du Louvre）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "巴黎圣母院（Notre-Dame de Paris）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "凯旋门（Arc de Triomphe）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣心堂与蒙马特高地（Sacré-Cœur）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "奥赛博物馆（Musée d'Orsay）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "巴士底日（Fête Nationale / 14 Juillet）",
+          "date": "7月14日",
+          "desc": "法国国庆，香榭丽舍阅兵与埃菲尔铁塔烟花，观礼区安检严格、人流极大"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "巴黎音乐节（Fête de la Musique）",
+          "date": "6月21日",
+          "desc": "全城免费露天演出，街头与广场彻夜狂欢，地铁延时运营但仍拥挤"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "巴黎马拉松（Marathon de Paris）",
+          "date": "4月",
+          "desc": "从香榭丽舍大街出发的经典赛事，赛道沿线封路，观赛需提前查路线"
+        },
+        {
+          "name": "白夜艺术节（Nuit Blanche）",
+          "date": "10月",
+          "desc": "通宵当代艺术之夜，美术馆、市政厅与街头装置开放至天亮"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "进商店要说Bonjour问候",
+        "餐厅用餐时间较长，不要催单",
+        "小费已含在账单中，可给零钱凑整",
+        "不要大声喧哗",
+        "周日很多商店关门"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -19196,7 +20200,8 @@ var CITY_DATABASE = {
           "desc": "Occasional robberies - Avoid at night",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "柏林是德国首都，1701年起为普鲁士王国都城，1871年成为德意志帝国首都，1961至1989年被柏林墙分割，1990年两德统一后重建为欧洲政治与文化中心。治安总体良好，但亚历山大广场、华沙大街与夜店区夜间扒窃、醉酒冲突较多；U-Bahn 与 S-Bahn 夜间车厢人员复杂；冬季湿冷结冰；大型示威与罢工常造成交通管制；急救电话112，德国医疗费用较高，需保险。"
     },
     "highlights": [
       "社会秩序好",
@@ -19219,82 +20224,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "咖喱香肠（Currywurst）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "柏林腌猪腿配酸菜（Eisbein mit Sauerkraut）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "柏林煎肉丸（Bulette）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "柏林果酱炸甜圈（Berliner Pfannkuchen）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "柏林白啤（Berliner Weisse）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "勃兰登堡门（Brandenburger Tor）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "国会大厦（Reichstagsgebäude）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "博物馆岛（Museumsinsel）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "东边画廊柏林墙遗址（East Side Gallery）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "柏林电视塔（Fernsehturm）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "柏林大教堂（Berliner Dom）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "柏林国际电影节（Berlinale）",
+          "date": "2月",
+          "desc": "世界三大电影节之一，金熊奖颁奖与公开放映票需抢购，波茨坦广场一带人流密集"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "柏林马拉松（BMW Berlin Marathon）",
+          "date": "9月",
+          "desc": "世界最快赛道之一，全城封路，沿线观赛需提前规划地铁"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "柏林灯光节（Festival of Lights）",
+          "date": "10月",
+          "desc": "地标建筑投影秀，夜间徒步观展路线长，注意保暖与随身物品"
+        },
+        {
+          "name": "柏林圣诞集市（Weihnachtsmärkte）",
+          "date": "11月下旬至12月",
+          "desc": "御林广场、夏洛滕堡宫等处的传统市场，人多拥挤且扒窃高发"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -19737,7 +20767,8 @@ var CITY_DATABASE = {
           "desc": "Occasional robbery - Avoid going alone at night",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "阿姆斯特丹是荷兰首都与最大城市，17世纪黄金时代因海外贸易崛起，环形运河带被列入世界遗产，也是自行车与宽容文化的代表城市。治安较好，但中央车站、有轨电车与红灯区扒窃、自行车盗窃高发；红灯区夜间人多拥挤且禁止拍照；运河沿岸无护栏，酒后夜行易落水；咖啡店售卖大麻合法，但公共场合吸食与驾车受限；医疗急救112，荷兰医疗费用较高。"
     },
     "highlights": [
       "公共交通发达",
@@ -19760,82 +20791,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "生鲱鱼配洋葱（Hollandse Nieuwe / Haring）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "荷兰薯条配蛋黄酱（Patat met mayonaise）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "糖浆华夫饼（Stroopwafel）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "小松饼（Poffertjes）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "炸肉丸（Bitterballen）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "运河带（Grachtengordel）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "安妮之家（Anne Frank Huis）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "荷兰国立博物馆（Rijksmuseum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "梵高博物馆（Van Gogh Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "水坝广场与阿姆斯特丹王宫（De Dam / Koninklijk Paleis）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西教堂（Westerkerk）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "国王节（Koningsdag）",
+          "date": "4月27日",
+          "desc": "全国橙色狂欢日，运河游船派对与露天市集，市中心极度拥挤且公共交通限行"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "阿姆斯特丹骄傲游船（Pride Amsterdam）",
+          "date": "7月末至8月",
+          "desc": "运河船队巡游与街头派对，沿线桥面与堤岸人满为患"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "王子运河露天音乐会（Prinsengrachtconcert）",
+          "date": "8月",
+          "desc": "运河上搭台的古典音乐会，多数观众在自家船上或沿岸免费收看"
+        },
+        {
+          "name": "阿姆斯特丹灯光节（Amsterdam Light Festival）",
+          "date": "12月至次年1月",
+          "desc": "运河沿岸灯光装置，步行或乘船观赏，冬季夜间湿冷需防寒"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -20243,7 +21299,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "维也纳是哈布斯堡王朝与奥匈帝国首都，长期为欧洲音乐与艺术中心，有'世界音乐之都'之称。奥地利治安极佳、医疗先进；主要风险是旅游区（圣斯蒂芬大教堂、地铁U-Bahn、圣诞市场）的扒手以及街头假签名请愿骗局，夏季偶有高温，冬季寒冷需防路面结冰。"
     },
     "highlights": [
       "医疗水平高",
@@ -20266,82 +21323,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "维也纳炸牛排（Wiener Schnitzel）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "萨赫蛋糕（Sachertorte）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "苹果卷（Apfelstrudel）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "维也纳炖牛肉（Gulasch）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "皇帝煎饼（Kaiserschmarrn）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "美泉宫（Schloss Schönbrunn）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣斯蒂芬大教堂（Stephansdom）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "霍夫堡皇宫（Hofburg）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "维也纳国家歌剧院（Wiener Staatsoper）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "美景宫（Schloss Belvedere）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "普拉特公园与摩天轮（Prater & Riesenrad）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
+          "name": "维也纳新年音乐会",
           "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "desc": "维也纳爱乐乐团在金色大厅演出，电视转播全球收看。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "维也纳歌剧院舞会",
+          "date": "2月（圣灰星期三前的星期四）",
+          "desc": "国家歌剧院变身舞厅的盛装社交舞会，需着晚礼服。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "维也纳艺术节（Wiener Festwochen）",
+          "date": "5月中旬—6月中旬",
+          "desc": "涵盖戏剧、舞蹈与音乐的跨领域艺术节。"
+        },
+        {
+          "name": "维也纳圣诞市场（Christkindlmarkt）",
+          "date": "11月中旬—12月底",
+          "desc": "市政厅广场等地的传统圣诞市集，人流拥挤需防扒手。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -20749,7 +21831,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "苏黎世是瑞士最大城市与金融中心，中世纪以行会自治并加入瑞士邦联，16世纪成为茨温利宗教改革重镇，班霍夫大街至今聚集银行总部。犯罪率低、治安名列欧洲前列，主要风险是湖畔、老城与火车站的少量扒窃以及极高物价；冬季结冰路面与山区天气突变需注意；瑞士医疗费用昂贵且需先付款后报销，旅行保险必不可少；医疗急救144，报警117。"
     },
     "highlights": [
       "历史建筑众多",
@@ -20772,82 +21855,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "苏黎世式烩小牛肉（Zürcher Geschnetzeltes）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "瑞士奶酪火锅（Käsefondue）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "瑞士薯饼（Rösti）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "卢森堡蛋白霜（Luxemburgerli，Sprüngli 招牌马卡龙）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "烤奶酪（Raclette）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "苏黎世湖（Zürichsee）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "苏黎世大教堂（Grossmünster）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣母教堂与夏加尔彩窗（Fraumünster）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "林登霍夫观景台（Lindenhof）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "瑞士国家博物馆（Landesmuseum Zürich）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "班霍夫大街（Bahnhofstrasse）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "六鸣节（Sechseläuten）",
+          "date": "4月第三个周一",
+          "desc": "苏黎世传统春季庆典，行会游行后在湖畔焚烧雪人 Böögg 送冬，全城放假般热闹"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "苏黎世街头游行（Street Parade）",
+          "date": "8月",
+          "desc": "世界最大电子音乐街头游行之一，环湖花车与数十万人参与，需严防扒窃"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "苏黎世电影节（Zurich Film Festival）",
+          "date": "9月末至10月",
+          "desc": "德语区重要影展，主会场在市中心影院，公开放映票提前开售"
+        },
+        {
+          "name": "苏黎世圣诞集市（Christkindlimarkt）",
+          "date": "11月下旬至12月",
+          "desc": "火车站大厅与老城的圣诞市场，热红酒与烤物摊位多，人流拥挤"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -21259,7 +22367,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "斯德哥尔摩建城于13世纪，由十余个岛屿组成，是瑞典首都与诺贝尔奖颁奖地（和平奖在奥斯陆颁发）。治安良好、暴力犯罪率低；主要风险为中央车站与地铁（Tunnelbana）的扒窃、冬季漫长黑暗与结冰路面、夏季白夜影响的作息与睡眠；物价与酒精价格高，酒类仅在 Systembolaget 专卖；非欧盟游客就医需自费，务必投保；急救电话112。"
     },
     "highlights": [
       "历史建筑众多",
@@ -21282,82 +22391,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "瑞典肉丸配越橘酱（Köttbullar med lingonsylt）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "腌鲱鱼（Inlagd sill）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "瑞典式冷餐台（Smörgåsbord）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "肉桂卷（Kanelbulle）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "奶油杏仁小面包（Semla）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "老城（Gamla Stan）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "瓦萨号沉船博物馆（Vasamuseet）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "斯康森露天博物馆（Skansen）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "斯德哥尔摩王宫（Kungliga Slottet）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "斯德哥尔摩市政厅（Stadshuset）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "动物园岛（Djurgården）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "仲夏节（Midsommar）",
+          "date": "6月下旬",
+          "desc": "瑞典最重要的传统节日，五月柱舞蹈与鲱鱼宴，市区商铺多关门、公交减班"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "斯德哥尔摩爵士音乐节（Stockholm Jazz Festival）",
+          "date": "7月",
+          "desc": "在 Skeppsholmen 岛举办的滨水音乐节，露天场地夜间风凉需带外套"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "斯德哥尔摩水节（Stockholm Water Festival）",
+          "date": "8月",
+          "desc": "以城市与水为主题的节庆，含焰火、音乐与水上活动，市中心夜间人多"
+        },
+        {
+          "name": "圣露西亚节（Lucia）",
+          "date": "12月13日",
+          "desc": "烛光少女唱游 procession，是瑞典冬日最具代表性的节庆之一"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -21767,7 +22901,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "奥斯陆是挪威首都，11世纪建城，1624年大火后由克里斯蒂安四世重建并改名克里斯蒂安尼亚，1925年恢复旧名，如今是北欧重要的海运与文化城市。犯罪率低、属欧洲最安全首都之一；主要风险为中央车站一带夜间的醉酒滋扰与扒窃、毒品问题相对集中在 Grønland 附近；冬季严寒结冰、夏季白夜；物价与酒税极高；医疗急救113，报警112。"
     },
     "highlights": [
       "社会秩序好",
@@ -21790,82 +22925,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "腌三文鱼（Gravlaks）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "羊肉炖卷心菜（Fårikål）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "挪威肉丸（Kjøttkaker）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "棕色羊奶酪（Brunost）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "挪威华夫饼（Vaffel）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "维格兰雕塑公园（Vigelandsparken）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "奥斯陆歌剧院（Operaen）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "阿克什胡斯城堡（Akershus festning）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "蒙克博物馆（Munchmuseet）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "海盗船博物馆（Vikingskipshuset）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "霍尔门科伦跳台滑雪场（Holmenkollen）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "挪威宪法日（Grunnlovsdagen）",
+          "date": "5月17日",
+          "desc": "国庆日，儿童游行与民族盛装游行穿过卡尔约翰大街，市中心封路、餐饮歇业"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "霍尔门科伦滑雪节（Holmenkollen Ski Festival）",
+          "date": "3月",
+          "desc": "在霍尔门科伦跳台举行的传统滑雪盛事，观赛区山坡湿滑需注意保暖防滑"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "奥斯陆爵士音乐节（Oslo Jazz Festival）",
+          "date": "8月",
+          "desc": "为期一周的爵士节，场馆分布在市中心与港口区，夜间散场注意末班交通"
+        },
+        {
+          "name": "诺贝尔和平奖颁奖典礼",
+          "date": "12月10日",
+          "desc": "在奥斯陆市政厅举行的颁奖仪式，周边道路管制，参观需提前确认开放安排"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -22258,7 +23418,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "哥本哈根是丹麦首都，12世纪由大主教阿布萨隆建城堡起家，曾是北欧商贸与海军重镇，今天是设计与自行车文化的代表城市。治安良好、暴力犯罪极少；主要风险是中央车站与 Strøget 步行街的扒窃，以及密集的自行车道——行人误入自行车道易发碰撞；冬季强风冷雨；克里斯蒂安尼亚自由城一带大麻交易公开，游客需谨慎；急救电话112。"
     },
     "highlights": [
       "食品安全",
@@ -22281,82 +23442,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "丹麦开放三明治（Smørrebrød）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "丹麦酥皮点心（Wienerbrød）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "脆皮烤猪肉（Flæskesteg）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "丹麦肉丸（Frikadeller）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "丹麦热狗（Dansk pølse）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "小美人鱼雕像（Den Lille Havfrue）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "新港（Nyhavn）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "蒂沃利公园（Tivoli）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿美琳堡宫（Amalienborg）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "罗森堡宫（Rosenborg Slot）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圆塔（Rundetaarn）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "哥本哈根爵士音乐节（Copenhagen Jazz Festival）",
+          "date": "7月",
+          "desc": "北欧重要爵士节，演出散布于爵士屋、港口与公园，部分户外场次免费"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "Distortion 街头音乐节",
+          "date": "5月末至6月初",
+          "desc": "以街区派对与移动音响车闻名的城市音乐节，人流与噪音集中在内城与 Vesterbro"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "哥本哈根骄傲节（Copenhagen Pride）",
+          "date": "8月",
+          "desc": "北欧大型骄傲庆典，游行与市政厅广场演出，参与人数多、注意财物"
+        },
+        {
+          "name": "蒂沃利圣诞集市与灯饰",
+          "date": "11月中旬至12月",
+          "desc": "蒂沃利公园的圣诞市集与灯光装置，冬季湿冷、夜间拥挤"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -22749,7 +23935,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "赫尔辛基是芬兰首都，1550年由瑞典国王古斯塔夫·瓦萨下令建城，1809年起为芬兰大公国首都，1952年奥运会与2012年世界设计之都使其国际地位提升。治安良好、犯罪率低；主要风险是冬季极寒与冰雪路面、极夜期间的交通与情绪问题，以及夏季短暂的强烈日照；中央车站与设计区偶有扒窃；芬兰医疗费用对非欧盟游客较高，需投保；急救112。"
     },
     "highlights": [
       "食品安全",
@@ -22772,82 +23959,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "卡累利阿派（Karjalanpiirakka）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "奶油鲑鱼汤（Lohikeitto）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "芬兰肉桂卷（Korvapuusti）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "黑麦面包（Ruisleipä）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "炒驯鹿肉（Poronkäristys）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "赫尔辛基白教堂（Helsingin tuomiokirkko）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "乌斯佩斯基大教堂（Uspenskin katedraali）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "岩石教堂（Temppeliaukion kirkko）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "芬兰堡海上要塞（Suomenlinna）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西贝柳斯公园（Sibeliuksenpuisto）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "塞乌拉岛露天博物馆（Seurasaaren ulkomuseo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "仲夏节（Juhannus）",
+          "date": "6月下旬",
+          "desc": "芬兰最重要的夏季节日，伴侣岛 Seurasaari 点燃巨型篝火，市区商铺与公交多缩减"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "Lux Helsinki 灯光艺术节",
+          "date": "1月",
+          "desc": "冬季灯光装置展，市内多处免费观赏，极夜季节路面结冰需穿防滑鞋"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "赫尔辛基艺术节（Helsinki Festival）",
+          "date": "8月至9月初",
+          "desc": "北欧最大的综合艺术节，涵盖古典、戏剧与街头演出，部分活动免费"
+        },
+        {
+          "name": "赫尔辛基圣诞集市（Tuomaan Markkinat）",
+          "date": "12月",
+          "desc": "参议院广场的传统圣诞市场，热饮与手工艺摊位多，天寒地滑"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -23240,7 +24452,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "马德里是西班牙首都，1561年腓力二世将宫廷迁至此地，海拔约650米为欧洲海拔较高的首都之一，也是政治、艺术（普拉多、索菲亚）与夜生活中心。暴力犯罪不多，但太阳门、普拉多、地铁1号线扒窃与「泼污骗局」高发；夏季酷热可达40℃且日照强，需防中暑；罢工与游行常影响地铁与道路；医疗急救与报警统一112。"
     },
     "highlights": [
       "食品安全",
@@ -23263,82 +24476,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "马德里炖肉汤（Cocido madrileño）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "炸鱿鱼三明治（Bocadillo de calamares）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "西班牙土豆饼（Tortilla de patatas）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "油条蘸热巧克力（Churros con chocolate）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "伊比利亚火腿（Jamón ibérico）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "普拉多博物馆（Museo del Prado）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "马德里王宫（Palacio Real）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "太阳门（Puerta del Sol）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马约尔广场（Plaza Mayor）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "丽池公园（Parque del Retiro）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿尔卡拉门（Puerta de Alcalá）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣伊西德罗节（San Isidro）",
+          "date": "5月15日前后",
+          "desc": "马德里守护神圣节，斗牛、露天音乐与传统的「圣水」活动，市中心夜间人流极大"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "圣周游行（Semana Santa）",
+          "date": "3月至4月",
+          "desc": "复活节前一周的宗教游行，队伍穿行老城，多条街道封闭、观礼区拥挤"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "马德里骄傲节（Madrid Orgullo）",
+          "date": "7月",
+          "desc": "欧洲规模最大的骄傲庆典之一，花车与演唱会持续数日，楚埃卡区长期封路"
+        },
+        {
+          "name": "马德里时装周（Mercedes-Benz Fashion Week Madrid）",
+          "date": "2月与9月",
+          "desc": "西班牙时装周，主会场在 IFEMA 或会展场馆，期间展馆周边交通紧张"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -23748,7 +24986,8 @@ var CITY_DATABASE = {
           "desc": "Immigrant area - Safer during daytime",
           "risk": "Low"
         }
-      ]
+      ],
+      "history": "罗马是意大利首都，相传公元前753年建城，曾是罗马帝国中心，后为教皇国与文艺复兴重镇，城内古迹与梵蒂冈城国并存。暴力犯罪不多，但斗兽场、许愿池、64路公交与火车站的扒窃、假警察与「手绳党」骗局高发；夏季酷热、景点暴晒，需防晒补水并注意景区饮水 fountain 可直饮；罢工与游行频繁、常阻断交通；医疗急救118。"
     },
     "highlights": [
       "公共交通发达",
@@ -23771,82 +25010,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "罗马培根蛋面（Pasta alla Carbonara）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "奶酪黑胡椒面（Cacio e pepe）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "阿玛特里齐亚纳面（Amatriciana）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "犹太式炸洋蓟（Carciofi alla giudia）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "罗马炖牛尾（Coda alla vaccinara）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "罗马斗兽场（Colosseo）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "古罗马广场与帕拉蒂尼山（Foro Romano）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "万神殿（Pantheon）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "特雷维喷泉（Fontana di Trevi）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣天使城堡（Castel Sant'Angelo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "博尔盖塞美术馆（Galleria Borghese）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "罗马建城纪念日（Natale di Roma）",
+          "date": "4月21日",
+          "desc": "纪念罗马建城的历史庆典，含古装游行与斗兽场周边活动"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "复活节与教皇祝福（Urbi et Orbi）",
+          "date": "3月至4月",
+          "desc": "梵蒂冈圣彼得广场的复活节弥撒与教皇祝福，需提前预约或排队安检，人数极多"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "罗马电影节（Festa del Cinema di Roma）",
+          "date": "10月",
+          "desc": "在音乐公园礼堂等地举办的国际影展，公映票与红毯活动需提前购票"
+        },
+        {
+          "name": "罗马马拉松（Maratona di Roma）",
+          "date": "3月至4月",
+          "desc": "穿越古城中心的马拉松赛，赛道沿线全天封路，观赛需提前查路线"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -24253,7 +25517,8 @@ var CITY_DATABASE = {
           "desc": "Immigrant area, average security - Avoid going alone late at night",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "巴塞罗那是加泰罗尼亚首府，公元前1世纪由罗马人建城，中世纪为阿拉贡王国重镇，19至20世纪因高迪的现代主义建筑与1992年奥运会闻名于世。治安总体尚可，但扒窃与抢包是欧洲最严重的一档，兰布拉大道、圣家堂周边与地铁3号线尤须警惕；海滩夜间注意财物；夏季酷热拥挤；涉独立议题的游行偶发，可能封路；急救电话112。"
     },
     "highlights": [
       "公共交通发达",
@@ -24276,82 +25541,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "番茄面包（Pa amb tomàquet）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "海鲜饭（Paella）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "加泰罗尼亚海鲜细面（Fideuà）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "加泰罗尼亚奶油布丁（Crema catalana）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "加泰罗尼亚炖肉汤（Escudella i carn d'olla）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "圣家堂（Sagrada Família）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "桂尔公园（Park Güell）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "米拉之家（Casa Milà / La Pedrera）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "巴特罗之家（Casa Batlló）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "哥特区（Barri Gòtic）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "兰布拉大道（La Rambla）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣乔治节（Sant Jordi）",
+          "date": "4月23日",
+          "desc": "加泰罗尼亚情人节，街头摆满书摊与玫瑰摊，兰布拉与老城人流极密"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "圣胡安之夜（Nit de Sant Joan）",
+          "date": "6月23日至24日",
+          "desc": "仲夏前夜的海滩篝火与焰火，海滩与街区通宵狂欢，注意拥挤与随身物品"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "Sónar 电子音乐与创意节",
+          "date": "6月",
+          "desc": "国际知名的电子音乐与新媒体艺术节，白天展演与夜间演出分布城中各场馆"
+        },
+        {
+          "name": "仁慈圣母节（La Mercè）",
+          "date": "9月24日前后",
+          "desc": "巴塞罗那城市守护神节，巨人游行、人塔、焰火与免费音乐会持续数日"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -24779,7 +26069,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "里斯本是葡萄牙首都，腓尼基与罗马时期已有聚落，1255年成为葡萄牙王国都城，15至16世纪是大航海时代的出发点，1755年大地震后按蓬巴尔侯爵的规划重建。治安较好、暴力犯罪少，但28路电车、罗西乌广场与阿尔法玛夜间路段扒窃多发；城市多坡与石板路，雨后湿滑需防滑鞋；夏季干热、山火季烟雾可能影响空气；罢工偶发影响地铁与机场；急救112。"
     },
     "highlights": [
       "历史建筑众多",
@@ -24802,82 +26093,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "葡式蛋挞（Pastéis de nata / Pastéis de Belém）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "炸鳕鱼球（Bolinhos de bacalhau）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "布拉什鳕鱼（Bacalhau à Brás）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "烤沙丁鱼（Sardinhas assadas）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "炖猪肉三明治（Bifana）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "贝伦塔（Torre de Belém）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "热罗尼莫斯修道院（Mosteiro dos Jerónimos）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣乔治城堡（Castelo de São Jorge）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿尔法玛老城区（Alfama）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "商业广场（Praça do Comércio）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣胡斯塔升降机（Elevador de Santa Justa）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣安东尼节（Festas de Santo António）",
+          "date": "6月12日至13日",
+          "desc": "里斯本守护神节，阿尔法玛街头烧烤沙丁鱼与游行，老城狭窄街道彻夜拥挤"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "里斯本骄傲游行（Marcha do Orgulho LGBTI+）",
+          "date": "6月",
+          "desc": "沿自由大道与商业广场行进的骄傲游行，参与人数多、注意防晒与财物"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "NOS Alive 音乐节",
+          "date": "7月",
+          "desc": "在阿尔热斯滨水场地举办的摇滚与流行音乐节，需往返市区，夜间返程交通拥挤"
+        },
+        {
+          "name": "里斯本马拉松（Maratona de Lisboa）",
+          "date": "10月",
+          "desc": "从贝伦出发沿海岸线的马拉松与半马，沿线道路封闭，观赛需查路线"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -25270,7 +26586,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "布拉格是捷克首都，9世纪起为波希米亚王公驻地，14世纪查理四世时期成为神圣罗马帝国中心，1918年成为捷克斯洛伐克首都，1993年起为捷克首都，老城完好保存哥特与巴洛克建筑。暴力犯罪少，但查理大桥、老城广场与22路电车扒窃极为常见；出租车加价与街边换汇的汇率作弊是主要坑，建议用打车软件与银行卡；冬季路面结冰；医疗急救155。"
     },
     "highlights": [
       "社会秩序好",
@@ -25293,82 +26610,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "烤猪肘配酸菜与面饺（Vepřo-knedlo-zelo）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "奶油酱炖牛里脊（Svíčková na smetaně）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "捷克炖牛肉（Guláš）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炸奶酪（Smažený sýr）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "烟囱卷（Trdelník）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "布拉格城堡（Pražský hrad）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣维特大教堂（Katedrála svatého Víta）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "查理大桥（Karlův most）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "老城广场与天文钟（Staroměstské náměstí / Pražský orloj）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "瓦茨拉夫广场（Václavské náměstí）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "列侬墙（Lennonova zeď）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "布拉格之春国际音乐节（Pražské jaro）",
+          "date": "5月中旬至6月初",
+          "desc": "以斯梅塔纳《我的祖国》开幕的古典音乐节，场馆为市政厅与鲁道夫音乐厅，门票紧张"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "布拉格国际马拉松（Prague Marathon）",
+          "date": "5月",
+          "desc": "穿行老城与查理大桥的赛道，沿线封路，观赛需提前规划路线"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "Signal 灯光艺术节（Signal Festival）",
+          "date": "10月中旬",
+          "desc": "捷克最大的文化节庆，老城历史建筑投影秀，夜间免费路线人潮极密且秋季寒冷"
+        },
+        {
+          "name": "布拉格圣诞集市",
+          "date": "11月下旬至12月",
+          "desc": "老城广场与瓦茨拉夫广场的圣诞市场，热红酒与木偶摊位多，扒窃高发"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -25769,7 +27111,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "华沙是波兰首都，1596年起为王室驻地，二战中华沙起义失败后城市被德军几乎夷平，战后按历史图纸重建老城并被列入世界遗产，如今是中欧的金融与商业中心。治安良好、暴力犯罪率低；主要风险是老城、中央车站与夜店区的扒窃与酒后纠纷，以及无照出租车加价，建议使用打车软件；冬季严寒且供暖季雾霾较重；波兰使用兹罗提而非欧元；急救112。"
     },
     "highlights": [
       "历史建筑众多",
@@ -25792,82 +27135,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "波兰饺子（Pierogi）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "酸黑麦汤（Żurek）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "猎人炖肉（Bigos）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "波兰炸猪排（Kotlet schabowy）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "波兰果酱甜甜圈（Pączek）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "华沙老城（Stare Miasto）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "华沙皇家城堡（Zamek Królewski）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "文化科学宫（Pałac Kultury i Nauki）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "瓦津基皇家公园（Łazienki Królewskie）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "华沙起义博物馆（Muzeum Powstania Warszawskiego）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "波兰犹太人历史博物馆（Muzeum POLIN）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "华沙起义纪念日",
+          "date": "8月1日",
+          "desc": "纪念1944年华沙起义，全城鸣响警报、车辆停驶默哀，博物馆与纪念地人流增多"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "华沙国际电影节（Warszawa IFF）",
+          "date": "10月",
+          "desc": "中东欧重要影展，放映场地为市中心多厅影院，公映票需提前购买"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "Jazz Jamboree 爵士音乐节",
+          "date": "10月末至11月",
+          "desc": "中东欧历史最久的爵士节之一，场馆多在大剧院与音乐厅一带"
+        },
+        {
+          "name": "华沙圣诞集市",
+          "date": "11月下旬至12月",
+          "desc": "老城与城堡广场的圣诞市场，夜间拥挤、需注意保暖与随身物品"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -26260,7 +27628,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "雅典是希腊首都，公元前5世纪是古希腊城邦与民主制度的发源地，1834年成为现代希腊首都，卫城是城市与世界遗产的标志。治安总体尚可，但宪法广场、蒙纳斯提拉奇与地铁2、3号线扒窃多发；夏季高温常达40℃并有热浪与周边山火风险，需防晒补水；罢工与示威频繁，可能临时关闭景区与交通；医疗急救166，报警100。"
     },
     "highlights": [
       "历史建筑众多",
@@ -26283,82 +27652,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "希腊旋转烤肉卷（Γύρος / Gyros）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "慕沙卡（Μουσακάς / Moussaka）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "希腊乡村沙拉（Χωριάτικη / Horiatiki）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "菠菜奶酪派（Σπανακόπιτα / Spanakopita）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "希腊酸奶配蜂蜜（Γιαούρτι με μέλι）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "雅典卫城与帕特农神庙（Ακρόπολη / Παρθενώνας）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "雅典卫城博物馆（Μουσείο Ακρόπολης）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "古罗马广场（Ρωμαϊκή Αγορά）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "普拉卡老城区（Πλάκα）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "宪法广场与希腊议会（Πλατεία Συντάγματος）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "奥林匹亚宙斯神庙（Ναός του Ολυμπίου Διός）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "希腊东正教复活节",
+          "date": "3月末至5月初（按儒略历变动）",
+          "desc": "希腊最重要的宗教节日，圣周六午夜焰火与复活仪式，卫城山下与教堂周边极度拥挤"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "雅典骄傲节（Athens Pride）",
+          "date": "6月",
+          "desc": "在宪法广场一带举行的骄傲游行与演出，参与人数逐年增加"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "雅典-埃皮达鲁斯艺术节（Athens Epidaurus Festival）",
+          "date": "6月至8月",
+          "desc": "古希腊戏剧与音乐舞蹈演出，场地包括卫城山下的赫罗迪斯剧场，夏季夜间闷热"
+        },
+        {
+          "name": "雅典经典马拉松（Athens Classic Marathon）",
+          "date": "11月第二个周日",
+          "desc": "沿马拉松至泛雅典体育场的原创赛道，全城封路，观众与选手众多"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -26751,7 +28145,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "布鲁塞尔是比利时首都，也是欧盟委员会与北约总部所在地，中世纪以大广场为中心发展为贸易城市，1830年成为独立比利时的首都。治安总体中等偏上，主要风险是中央车站、大广场与地铁的扒窃与抢包，Midi（Zuid）车站一带夜间需谨慎；欧盟机构周边游行与罢工频繁，常造成道路与地铁管制；全年多雨需备雨具；急救电话112，医疗112（救护车亦可用112）。"
     },
     "highlights": [
       "社会秩序好",
@@ -26774,82 +28169,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "比利时薯条（Frites / Frietjes）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "白酒煮贻贝配薯条（Moules-frites）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "布鲁塞尔华夫饼（Gaufre de Bruxelles）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "佛兰芒啤酒炖牛肉（Carbonnade flamande）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "比利时夹心巧克力（Pralines belges）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "布鲁塞尔大广场（Grand-Place / Grote Markt）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "撒尿小童雕像（Manneken Pis）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "原子球塔（Atomium）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣米歇尔圣古都勒主教座堂（Cathédrale Saints-Michel-et-Gudule）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "布鲁塞尔皇宫（Palais Royal）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马格利特博物馆（Musée Magritte）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "布鲁塞尔爵士马拉松（Brussels Jazz Marathon）",
+          "date": "5月",
+          "desc": "在大广场与市内多处舞台举行的免费爵士节，户外演出区人流密集"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "Ommegang 历史大游行",
+          "date": "7月",
+          "desc": "重现16世纪查理五世时代入城仪式的古装游行，大广场夜间演出需购票观礼"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "冬季奇迹圣诞集市（Winter Wonders）",
+          "date": "11月末至次年1月初",
+          "desc": "大广场周边的大型圣诞市场与灯光秀，人潮密集、扒窃高发"
+        },
+        {
+          "name": "布鲁塞尔国际奇幻电影节（BIFFF）",
+          "date": "4月",
+          "desc": "世界知名的类型片影展，主会场在布鲁塞尔展览馆（海塞尔），含化妆比赛与吸血鬼舞会"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -27242,7 +28662,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "布达佩斯是匈牙利首都，1873年由布达、佩斯与老布达合并而成，多瑙河两岸的布达城堡与国会大厦是城市标志，曾为奥匈帝国双首都之一。治安较好、暴力犯罪少；主要风险是4-6路电车、圣诞集市与温泉浴场的扒窃，以及无照出租车加价与个别酒吧事后开出高价账单（点单前务必确认价目）；温泉浴场地面湿滑、需注意卫生；冬季结冰；医疗急救104，通用112。"
     },
     "highlights": [
       "社会秩序好",
@@ -27265,82 +28686,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "匈牙利牛肉汤（Gulyásleves）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "红椒炖鸡（Paprikás csirke）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "兰戈斯炸饼（Lángos）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "库尔托什烟囱蛋糕（Kürtőskalács）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "匈牙利渔夫汤（Halászlé）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "匈牙利国会大厦（Országház）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "布达城堡（Budai Vár）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "渔人堡（Halászbástya）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "链子桥（Széchenyi lánchíd）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "塞切尼温泉浴场（Széchenyi fürdő）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "英雄广场（Hősök tere）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣伊什特万日与国庆焰火",
+          "date": "8月20日",
+          "desc": "匈牙利建国纪念日，国会与多瑙河畔焰火表演，桥面与河岸观景区极度拥挤"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "Sziget 音乐节",
+          "date": "8月",
+          "desc": "在多瑙河 óbudai 岛举办的国际音乐节，露营区人多、需注意财物与高温"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "布达佩斯葡萄酒节（Budavári Borfesztivál）",
+          "date": "9月",
+          "desc": "在布达城堡庭院举行的葡萄酒节，含品酒、音乐会与丰收游行"
+        },
+        {
+          "name": "布达佩斯圣诞集市",
+          "date": "11月中旬至1月初",
+          "desc": "弗洛什马尔蒂广场与圣伊什特万大教堂前的圣诞市场，人流密集、扒窃多发"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -27733,7 +29179,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "莫斯科是俄罗斯首都，1147年首见于编年史，14世纪起为莫斯科公国中心，1712年让位圣彼得堡，1918年再度成为首都，红场与克里姆林宫是权力象征。出行前务必查阅本国外交部门的最新旅行提醒与地缘风险提示；扒窃在红场、地铁与阿尔巴特街常见；冬季极寒、路面结冰；英语普及率低，建议备离线地图与翻译；国际银行卡在俄可能无法使用，需备现金卢布；报警102、医疗103、通用112。"
     },
     "highlights": [
       "社会秩序好",
@@ -27756,82 +29203,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "俄式红菜汤（Борщ）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "俄式饺子（Пельмени）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "基辅式炸鸡卷（Котлета по-киевски）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "俄式薄饼配鱼子酱（Блины с икрой）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "奥利维耶沙拉（Оливье）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "红场（Красная площадь）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "克里姆林宫（Московский Кремль）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣瓦西里大教堂（Собор Василия Блаженного）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "基督救世主主教座堂（Храм Христа Спасителя）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "莫斯科大剧院（Большой театр）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "特列季亚科夫画廊（Третьяковская галерея）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "胜利日（День Победы）",
+          "date": "5月9日",
+          "desc": "红场阅兵与全城焰火，市中心道路封控严格，参观需提前了解管制与观礼安排"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "谢肉节（Масленица）",
+          "date": "2月至3月",
+          "desc": "送冬迎春的传统节日，吃布林饼、焚烧稻草人，红场与高尔基公园有集市演出"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "莫斯科城市日（День города）",
+          "date": "9月第一个周末",
+          "desc": "建城纪念日，特维尔大街游行、音乐会与焰火，市中心地铁与道路管制多"
+        },
+        {
+          "name": "斯巴斯克塔国际军乐节（Спасская башня）",
+          "date": "8月末至9月初",
+          "desc": "红场上的国际军乐团与仪仗表演，夜间场次需购票与安检"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -28250,7 +29722,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "圣彼得堡由彼得大帝于1703年在涅瓦河口建城，1712至1918年为俄罗斯帝国首都，因运河纵横被称为「北方威尼斯」，历史中心列入世界遗产。治安总体尚可，但涅瓦大街、冬宫与地铁扒窃常见，夜间需防醉酒纠纷与陪酒诈骗；春季开桥期间（约凌晨2至5点）桥梁升起，过河交通与步行会中断；冬季寒冷结冰；出行前请查阅最新旅行提醒；医疗103，通用112。"
     },
     "highlights": [
       "社会秩序好",
@@ -28273,82 +29746,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "圣彼得堡炸甜甜圈（Пышка）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "俄式鱼汤（Уха）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "涅瓦河炸胡瓜鱼（Корюшка）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "俄式薄饼（Блины）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "俄式红菜汤（Борщ）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "冬宫与埃尔米塔什博物馆（Эрмитаж）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣以撒大教堂（Исаакиевский собор）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "滴血救世主教堂（Спас на Крови）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "彼得保罗要塞（Петропавловская крепость）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "涅瓦大街（Невский проспект）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马林斯基剧院（Мариинский театр）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "白夜节与「红帆」庆典（Белые ночи / Алые паруса）",
+          "date": "6月",
+          "desc": "白夜季的高潮，中学生毕业庆典含涅瓦河红帆船与焰火，沿岸数十万人聚集"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "白夜之星艺术节（Звёзды белых ночей）",
+          "date": "5月至7月",
+          "desc": "马林斯基剧院的音乐与芭蕾系列演出，是白夜季的顶级艺术活动，门票紧张"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "圣彼得堡城市日（День города）",
+          "date": "5月27日",
+          "desc": "建城纪念日，宫殿广场音乐会、游行与焰火，市中心交通管制范围大"
+        },
+        {
+          "name": "海军节阅兵（День ВМФ）",
+          "date": "7月最后一个周日",
+          "desc": "涅瓦河上的舰艇阅兵与空中展示，河岸观景区安检严格、人流极大"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -28749,7 +30247,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "米兰是伦巴第大区首府、意大利经济与时尚设计中心，罗马时代称Mediolanum，中世纪先后由维斯孔蒂、斯福尔扎家族统治。治安总体尚可，但中央车站、大教堂广场与地铁上扒窃、签名请愿与手绳搭讪骗局较多；夏季湿热、冬季雾霾明显，医疗条件好，建议自备旅游医疗保险。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -28772,82 +30271,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "米兰藏红花烩饭（Risotto alla Milanese）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "米兰炸肉排（Cotoletta alla Milanese）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "米兰炖小牛膝（Ossobuco alla Milanese）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "卡索拉炖肉（Cassoeula，猪肋排与卷心菜慢炖）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "潘妮托妮（Panettone，米兰圣诞传统甜面包）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "米兰大教堂（Duomo di Milano）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "维托里奥·埃马努埃莱二世拱廊（Galleria Vittorio Emanuele II）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "斯福尔扎城堡（Castello Sforzesco）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "斯卡拉歌剧院（Teatro alla Scala）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣玛利亚感恩教堂（Santa Maria delle Grazie，藏有达·芬奇《最后的晚餐》）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "纳维利运河区（Navigli）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "米兰时装周（Milano Fashion Week）",
+          "date": "2月与9月",
+          "desc": "全球四大时装周之一，期间全城秀场、展区与派对密集。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "米兰设计周暨国际家具展（Salone del Mobile）",
+          "date": "4月",
+          "desc": "全球规模最大的家具与设计展会，全城同期举办外围展。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "米兰狂欢节（Carnevale Ambrosiano）",
+          "date": "2月",
+          "desc": "按米兰安布罗斯礼举行的狂欢节，比罗马礼晚数日，有化装游行。"
+        },
+        {
+          "name": "圣安布罗斯节（Festa di Sant'Ambrogio）",
+          "date": "12月7日",
+          "desc": "纪念米兰主保圣人，老城举办传统的 Oh Bej! Oh Bej! 集市。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -29240,7 +30764,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "慕尼黑是巴伐利亚州首府，1158年建城，长期为维特尔斯巴赫王朝宫廷所在，二战后重建，是德国南部经济科技中心与阿尔卑斯门户。治安良好、医疗充足（急救112）；啤酒节期间人流拥挤，扒窃与醉酒冲突较多，冬季进山需关注雪崩与封路预警。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -29263,82 +30788,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "慕尼黑白香肠（Münchner Weißwurst，传统上午餐配甜芥末）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "巴伐利亚烤猪肘（Schweinshaxn）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "碱水面包结（Brezn）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "巴伐利亚奶酪抹酱（Obatzda）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "猪肝丸子汤（Leberknödelsuppe）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "玛利亚广场（Marienplatz）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "慕尼黑新市政厅（Neues Rathaus，木偶钟表演）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "慕尼黑王宫（Münchner Residenz）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "宁芬堡宫（Schloss Nymphenburg）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "英国花园（Englischer Garten）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "德意志博物馆（Deutsches Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "慕尼黑啤酒节（Oktoberfest）",
+          "date": "9月下旬至10月初",
+          "desc": "在特蕾莎草坪举行的世界最大啤酒节，需提前订位且酒后人多拥挤。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "慕尼黑电影节（Filmfest München）",
+          "date": "6月末至7月初",
+          "desc": "德国重要的电影节，展映国际新片并举办露天放映。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "Tollwood 艺术节",
+          "date": "夏季6—7月、冬季11—12月",
+          "desc": "在特蕾莎草坪举办的音乐、戏剧与环保市集节庆。"
+        },
+        {
+          "name": "慕尼黑圣诞市场（Christkindlmarkt）",
+          "date": "11月末至12月",
+          "desc": "玛利亚广场周边的古老圣诞市场，售卖手工艺品与热红酒。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -29731,7 +31281,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "法兰克福是德国金融中心，欧洲央行所在地，中世纪为帝国自由城市与皇帝加冕地，歌德出生于此，二战老城损毁后重建。火车站周边吸毒者与扒手较多、夜间不宜久留；银行区常有示威与罢工，机场铁路偶因罢工停运，急救112。"
     },
     "highlights": [
       "历史建筑众多",
@@ -29754,82 +31305,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "法兰克福绿酱（Grüne Soße，七种香草酸奶酱）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "法兰克福苹果酒（Äppelwoi）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "手捏奶酪配洋葱（Handkäse mit Musik）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "法兰克福香肠（Frankfurter Würstchen）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "法兰克福花环蛋糕（Frankfurter Kranz）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "罗马广场（Römerberg）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "法兰克福皇帝大教堂（Kaiserdom St. Bartholomäus）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "歌德故居（Goethe-Haus）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "施泰德博物馆（Städel Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "棕榈花园（Palmengarten）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "老歌剧院（Alte Oper）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "法兰克福书展（Frankfurter Buchmesse）",
+          "date": "10月中旬",
+          "desc": "全球规模最大的图书版权展会，周末对公众开放并举办签售。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "法兰克福苹果酒节（Äppelwoifest）",
+          "date": "8月",
+          "desc": "在萨克森豪森区举行的苹果酒节，配现场音乐与本地小吃。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "法兰克福博物馆之夜（Nacht der Museen）",
+          "date": "4月末至5月初",
+          "desc": "数十家博物馆与场馆一票通宵开放，夜间交通非常拥挤。"
+        },
+        {
+          "name": "法兰克福圣诞市场（Frankfurter Weihnachtsmarkt）",
+          "date": "11月末至12月",
+          "desc": "以罗马广场为中心的德国最古老圣诞市场之一。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -30222,7 +31798,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "汉堡是德国第二大城市与最大港口，中世纪汉萨同盟核心，仓库城与易北河塑造其贸易气质，二战遭大轰炸后重建。整体安全，但圣保利绳索街夜间醉客纠纷、车站周边扒窃常见；北海气候多雨多风，冬季风暴可能致轮渡停航，急救112。"
     },
     "highlights": [
       "历史建筑众多",
@@ -30245,82 +31822,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "汉堡鳗鱼汤（Hamburger Aalsuppe）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "水手粗莱斯（Labskaus，咸牛肉土豆，配腌鲱鱼与荷包蛋）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "平底锅煎鱼芥末酱（Pannfisch）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "弗朗茨面包卷（Franzbrötchen，肉桂糖面包）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "红果布丁（Rote Grütze，配奶油或香草酱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "易北爱乐厅（Elbphilharmonie）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "仓库城（Speicherstadt）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "微缩景观世界（Miniatur Wunderland）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣米迦勒教堂（Sankt Michaelis \"Michel\"）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "汉堡市政厅（Rathaus）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "港口栈桥（Landungsbrücken）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "汉堡港节（Hafengeburtstag）",
+          "date": "5月上旬",
+          "desc": "庆祝港口建港周年，有帆船巡游、船舰开放与烟火。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "汉堡国际电影节（Filmfest Hamburg）",
+          "date": "9月末至10月初",
+          "desc": "德国大型电影节，展映德语区和国际影片并设公众展映。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "汉堡游乐节（Hamburger Dom）",
+          "date": "3—4月、7—8月、11—12月各一次",
+          "desc": "一年三度的传统集市游乐节，摩天轮与游乐设施聚集海利根盖斯特菲尔德。"
+        },
+        {
+          "name": "汉堡马拉松（Haspa Marathon Hamburg）",
+          "date": "4月",
+          "desc": "德国规模较大的城市马拉松，赛道穿城而过，部分路段临时封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -30713,7 +32315,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "都柏林是爱尔兰首都，9世纪由维京人建定居点，后为英国统治下的行政中心，1922年成为自由邦首都，以乔治式街区与文学传统闻名。城市友善，但圣殿酒吧区与奥康奈尔街夜间醉酒纠纷、扒窃较多，部分街区入夜后不宜独行；天气多变，随身备雨具，急救112。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -30736,82 +32339,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "爱尔兰炖肉（Irish Stew）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "都柏林杂烩锅（Dublin Coddle，香肠培根洋葱土豆一锅炖）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "健力士黑啤炖牛肉（Beef in Guinness）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "培根炖卷心菜（Bacon and Cabbage，配欧芹白汁）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "爱尔兰苏打面包（Irish Soda Bread）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "健力士啤酒展览馆（Guinness Storehouse）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "都柏林城堡（Dublin Castle）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣三一学院与《凯尔经》展（Trinity College Old Library, Book of Kells）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣帕特里克大教堂（St. Patrick's Cathedral）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "基尔曼汉姆监狱博物馆（Kilmainham Gaol）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "凤凰公园（Phoenix Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣帕特里克节（St. Patrick's Festival）",
+          "date": "3月17日前后",
+          "desc": "为期数日的全国庆典，市中心有大型游行、音乐与烟火。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "都柏林戏剧节（Dublin Theatre Festival）",
+          "date": "9月末至10月中旬",
+          "desc": "爱尔兰主要戏剧节，汇集本土与国际剧团新作。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "都柏林国际文学节（International Literature Festival Dublin）",
+          "date": "5月",
+          "desc": "邀请世界作家与诗人的文学节，含朗读会与对谈。"
+        },
+        {
+          "name": "都柏林马拉松（Dublin Marathon）",
+          "date": "10月下旬",
+          "desc": "数万人参加的城市马拉松，多条主干道当日封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -31204,7 +32832,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "爱丁堡是苏格兰首府，老城与新城双双列入世界遗产，中世纪城堡与18世纪启蒙运动重镇，司各特、休谟故里。治安良好、医疗完善；8月艺术节期间住宿暴涨、街头拥挤且扒窃高发；老城石板路与皇家一英里坡陡湿滑，亚瑟王座徒步需留意天气突变。"
     },
     "highlights": [
       "食品安全",
@@ -31227,82 +32856,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "哈吉斯（Haggis，羊杂布丁配芜菁泥与土豆泥）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "韭葱鸡汤（Cock-a-leekie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "卡伦汤（Cullen Skink，烟熏鳕鱼奶油浓汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "苏格兰黄油酥饼（Shortbread）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "克兰纳肯（Cranachan，树莓燕麦奶油甜点）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "爱丁堡城堡（Edinburgh Castle）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "皇家一英里（Royal Mile）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "荷里路德宫（Palace of Holyroodhouse）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "苏格兰国家博物馆（National Museum of Scotland）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "亚瑟王座（Arthur's Seat）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "玛丽金遗迹街（The Real Mary King's Close）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "爱丁堡国际艺术节（Edinburgh International Festival）",
+          "date": "8月",
+          "desc": "世界顶尖的古典音乐、歌剧与戏剧节，需提前购票。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "爱丁堡艺穗节（Edinburgh Festival Fringe）",
+          "date": "8月",
+          "desc": "全球最大的开放艺术节，数千场演出遍布全城。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "爱丁堡军乐节（Royal Edinburgh Military Tattoo）",
+          "date": "8月",
+          "desc": "在爱丁堡城堡广场举行的军乐队列与烟火表演。"
+        },
+        {
+          "name": "霍格莫内跨年庆典（Edinburgh's Hogmanay）",
+          "date": "12月31日至1月初",
+          "desc": "连续三日的跨年庆典，含火炬游行、街头派对与烟火。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -31695,7 +33349,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "曼彻斯特是工业革命发源地之一，19世纪以棉纺、运河与铁路崛起，今为英格兰北部商业、媒体与足球中心（曼联、曼城主场）。市中心较安全，但皮卡迪利车站与夜店区夜间有扒窃及醉酒冲突；常年多雨路滑，比赛日人流与交通管制明显，报警999。"
     },
     "highlights": [
       "历史建筑众多",
@@ -31718,82 +33373,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "兰开夏炖锅（Lancashire Hotpot）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "曼彻斯特塔（Manchester Tart，覆盆子椰丝奶油塔）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "埃克尔斯小蛋糕（Eccles Cakes）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "黑血肠（Black Pudding）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "拉格布丁（Rag Pudding，大曼彻斯特地区的蒸制肉馅布丁）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "曼彻斯特市政厅（Manchester Town Hall）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "曼彻斯特大教堂（Manchester Cathedral）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "科学与工业博物馆（Science and Industry Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "约翰·莱兰兹图书馆（John Rylands Library）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "帝国战争博物馆北馆（Imperial War Museum North，索尔福德码头）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "老特拉福德球场（Old Trafford）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "曼彻斯特国际艺术节（Manchester International Festival）",
+          "date": "6—7月，每两年一次（奇数年）",
+          "desc": "委托艺术家创作新作的当代艺术节，场地遍布全城。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "曼彻斯特骄傲节（Manchester Pride）",
+          "date": "8月银行假日周末",
+          "desc": "在同志村运河街周边举行的游行与音乐活动，人潮极密。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "曼彻斯特圣诞市场（Manchester Christmas Markets）",
+          "date": "11月中旬至12月",
+          "desc": "分布在多个广场的德式风格圣诞市场，夜间人流拥挤。"
+        },
+        {
+          "name": "曼彻斯特马拉松（Manchester Marathon）",
+          "date": "4月",
+          "desc": "英国大型城市马拉松，途经老特拉福德等标志性路段。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -32186,7 +33866,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "里昂建于公元前43年的罗马城市Lugdunum，位于罗讷河与索恩河交汇处，文艺复兴丝绸业重镇，也是电影诞生地（卢米埃尔兄弟），今为法国第二大城市群与美食之都。帕尔迪约车站与老城夜巷扒窃常见；12月灯光节人流极密需注意拥挤，急救112。"
     },
     "highlights": [
       "社会秩序好",
@@ -32209,82 +33890,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "里昂沙拉（Salade Lyonnaise，菊苣、培根与水波蛋）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "梭鱼肉丸（Quenelle de brochet）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "工兵围裙（Tablier de sapeur，炸腌牛肚）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "丝织工奶酪酱（Cervelle de canut，蒜香香草鲜奶酪抹酱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "粉红杏仁糖塔（Tarte aux pralines）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "富维耶圣母院（Basilique Notre-Dame de Fourvière）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "古罗马剧场遗址（Théâtres romains de Fourvière）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "老里昂（Vieux Lyon，联合国教科文组织世界遗产）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "秘密通道（Traboules，老城穿楼小巷）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "白莱果广场（Place Bellecour）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "里昂美食集市（Halles de Lyon Paul Bocuse）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "里昂灯光节（Fête des Lumières）",
+          "date": "12月8日前后，连办数晚",
+          "desc": "全城建筑投影灯光秀，为全世界规模最大的灯光节之一。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "卢米埃尔电影节（Festival Lumière）",
+          "date": "10月中旬",
+          "desc": "纪念电影发明者卢米埃尔兄弟的经典电影节，放映修复老片。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "富维耶之夜（Les Nuits de Fourvière）",
+          "date": "6—8月",
+          "desc": "在古罗马剧场举办的音乐、戏剧与舞蹈露天演出季。"
+        },
+        {
+          "name": "里昂双年展（Biennale de Lyon）",
+          "date": "9月至次年1月",
+          "desc": "当代艺术与舞蹈双年展，分布于美术馆与旧厂房空间。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -32677,7 +34383,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "马赛由希腊人于公元前6世纪建为Massalia，是法国最古老城市与最大地中海港口，移民文化多元，《马赛曲》由此得名。旧港与市中心相对安全，但北部部分街区夜间不宜前往，常见扒窃、签名请愿与手绳骗局；夏季卡拉格峡湾易因山火封山，徒步需留意公告。"
     },
     "highlights": [
       "公共交通发达",
@@ -32700,82 +34407,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "马赛鱼汤（Bouillabaisse）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "马赛大蒜鳕鱼（Aïoli de morue，蒜香蛋黄酱配炖鳕鱼与时蔬）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "鹰嘴豆炸饼（Panisse）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "羊蹄包（Pieds et paquets，马赛传统羊杂）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "马赛小船饼干（Navettes de Marseille）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "旧港（Vieux-Port）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "守护圣母堂（Notre-Dame de la Garde）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "伊夫岛城堡（Château d'If）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "隆尚宫（Palais Longchamp）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣让堡（Fort Saint-Jean）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡朗格峡湾国家公园（Calanques）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "南方音乐节（Fiesta des Suds）",
+          "date": "10月",
+          "desc": "以世界音乐为主的音乐节，在港口仓库区举办。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "马赛国际电影节（FIDMarseille）",
+          "date": "7月",
+          "desc": "专注纪录片与实验影像的国际电影节，设公众放映。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "五大洲爵士音乐节（Jazz des Cinq Continents）",
+          "date": "7月",
+          "desc": "在旧港与多处场地举办的国际爵士音乐节。"
+        },
+        {
+          "name": "马赛—卡西斯国际半程马拉松（Marseille-Cassis）",
+          "date": "10月末",
+          "desc": "穿越卡拉格山口通往卡西斯的知名半马赛事，沿线道路封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -33168,7 +34900,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "尼斯历史上属萨伏依与意大利，1860年并入法国，保留意式老城与尼斯语传统，19世纪起为英俄贵族避寒地，蔚蓝海岸第二大城。治安总体良好，老城夜巷、火车站与海滩有扒窃与抢包；夏季紫外线强需防晒补水，秋季地中海强降雨可能致内涝，急救112。"
     },
     "highlights": [
       "公共交通发达",
@@ -33191,82 +34924,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "尼斯沙拉（Salade Niçoise）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "洋葱凤尾鱼塔（Pissaladière）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "鹰嘴豆薄饼（Socca）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "尼斯杂菜炖（Ratatouille niçoise）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "尼斯酿时蔬（Petits farcis niçois）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "英国人海滨大道（Promenade des Anglais）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "尼斯老城（Vieux Nice）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "城堡山观景台（Colline du Château）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马塞纳广场（Place Masséna）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "俄罗斯东正教圣尼古拉大教堂（Cathédrale Orthodoxe Russe Saint-Nicolas）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马蒂斯美术馆（Musée Matisse）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "尼斯狂欢节（Carnaval de Nice）",
+          "date": "2月",
+          "desc": "世界三大狂欢节之一，有巨型人偶花车与鲜花大战游行。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "鲜花大战（Bataille de Fleurs）",
+          "date": "2月狂欢节期间",
+          "desc": "花车上向观众抛掷含羞草与鲜花，是狂欢节的重头戏。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "尼斯爵士音乐节（Nice Jazz Festival）",
+          "date": "7月",
+          "desc": "历史悠久的爵士节，在露天剧场与花园舞台举办。"
+        },
+        {
+          "name": "Prom'Classic 尼斯10公里赛",
+          "date": "1月",
+          "desc": "沿英国人漫步大道举行的万人跑步赛，海滨道路临时封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -33659,7 +35417,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "威尼斯是建在泻湖木桩上的海上共和国故都，中世纪至18世纪地中海贸易强国，以总督宫、玻璃与面具工艺闻名，1987年列入世界遗产。游客极多，圣马可广场、里亚托桥与水上巴士扒窃高发，需防高价咖啡账单与假导游；秋汛高水位（Acqua Alta）会淹广场，船票漏打票罚款重。"
     },
     "highlights": [
       "公共交通发达",
@@ -33682,82 +35441,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "墨鱼汁烩饭（Risotto al nero di seppia）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "酸甜洋葱沙丁鱼（Sarde in saor）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "乳化盐鳕鱼泥（Baccalà mantecato）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "威尼斯洋葱炒小牛肝（Fegato alla Veneziana）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "青豆烩饭（Risi e bisi）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "圣马可广场（Piazza San Marco）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣马可大教堂（Basilica di San Marco）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "总督宫与叹息桥（Palazzo Ducale / Ponte dei Sospiri）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "里亚托桥（Ponte di Rialto）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大运河（Canal Grande）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "布拉诺岛（Burano）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "威尼斯狂欢节（Carnevale di Venezia）",
+          "date": "1月末至2月",
+          "desc": "以面具与古装闻名的世界著名狂欢节，圣马可广场有官方活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "威尼斯国际电影节（Mostra del Cinema）",
+          "date": "8月末至9月初",
+          "desc": "世界最古老的电影节，主会场在丽都岛。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "威尼斯双年展（Biennale di Venezia）",
+          "date": "6月至11月",
+          "desc": "艺术展与建筑展交替举办的国际大展，分布于绿园城堡与军械库。"
+        },
+        {
+          "name": "历史赛船节（Regata Storica）",
+          "date": "9月第一个周日",
+          "desc": "大运河上的古装船队巡游与贡多拉赛船。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -34150,7 +35934,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "佛罗伦萨是托斯卡纳首府与文艺复兴发源地，美第奇家族长期执政，但丁、米开朗基罗在此留下杰作，历史中心1982年列入世界遗产。城市不大、治安较好，但火车站、乌菲兹与老桥一带扒手活跃，另有签名请愿与免费手链骗局；夏季高温、游客大巴密集，急救112/118。"
     },
     "highlights": [
       "社会秩序好",
@@ -34173,82 +35958,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "佛罗伦萨丁骨牛排（Bistecca alla Fiorentina）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "牛肚包（Lampredotto）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "重煮蔬菜面包汤（Ribollita）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "番茄面包汤（Pappa al pomodoro）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "杏仁脆饼配圣酒（Cantucci e Vin Santo）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "圣母百花大教堂与穹顶（Santa Maria del Fiore）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "乌菲兹美术馆（Galleria degli Uffizi）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "学院美术馆与米开朗基罗《大卫》（Galleria dell'Accademia）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "老桥（Ponte Vecchio）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "米开朗基罗广场（Piazzale Michelangelo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "皮蒂宫与波波里花园（Palazzo Pitti / Giardino di Boboli）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣乔凡尼节（Festa di San Giovanni）",
+          "date": "6月24日",
+          "desc": "纪念城市主保圣人，米开朗基罗广场放烟火，阿诺河上有灯船。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "历史足球赛（Calcio Storico Fiorentino）",
+          "date": "6月",
+          "desc": "源于16世纪的粗暴传统球赛，在圣十字广场举行，对抗激烈。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "战车爆炸仪式（Scoppio del Carro）",
+          "date": "复活节主日",
+          "desc": "大教堂前的古礼，点燃彩车燃放烟火，全城观看。"
+        },
+        {
+          "name": "五月音乐节（Maggio Musicale Fiorentino）",
+          "date": "4—6月",
+          "desc": "意大利历史最久的音乐节，歌剧与交响乐演出季。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -34641,7 +36451,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "那不勒斯由希腊人建于公元前8世纪，后为那不勒斯王国首都，老城历史中心1995年列入世界遗产，是意大利南部文化、音乐与披萨之都。治安口碑较差：火车站周边与老城窄巷夜间扒窃、抢包与飞车党较多，宜结伴少露财；维苏威火山与坎皮佛莱格瑞有火山地震监测，登火山须走开放步道。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -34664,82 +36475,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "那不勒斯披萨（Pizza Napoletana，如玛格丽塔）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "那不勒斯慢炖肉酱（Ragù Napoletano）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "千层酥（Sfogliatella）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "小麦芝士派（Pastiera Napoletana）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "朗姆巴巴（Babà al rum）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "那不勒斯国立考古博物馆（Museo Archeologico Nazionale di Napoli）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "那不勒斯地下城（Napoli Sotterranea）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "蛋堡（Castel dell'Ovo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "新堡（Castel Nuovo / Maschio Angioino）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣卡洛歌剧院（Teatro San Carlo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "庞贝古城遗址（Pompei）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣热内罗血液液化仪式（Miracolo di San Gennaro）",
+          "date": "5月第一个周六、9月19日、12月16日",
+          "desc": "那不勒斯大教堂内信众聚集，观看圣血是否液化的传统仪式。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "古迹之五月（Maggio dei Monumenti）",
+          "date": "5月",
+          "desc": "为期一个月的文化活动季，大量宫殿、教堂与遗址延时开放。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "圣格雷戈里奥·阿尔梅诺街圣诞马槽展",
+          "date": "11月至次年1月",
+          "desc": "老城著名手作马槽街，圣诞期间摆满手工耶稣诞生场景。"
+        },
+        {
+          "name": "那不勒斯披萨节（Napoli Pizza Village）",
+          "date": "6月",
+          "desc": "在海滨大道举办的那不勒斯披萨盛会，集中数十家披萨店。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -35132,7 +36968,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "瓦伦西亚由罗马人建于公元前138年，曾为摩尔人王国与地中海贸易重镇，丝绸交易所与法雅节均列入联合国非遗，今为西班牙第三大城市。城市治安较好，市中心与地铁偶有扒窃；秋季强降雨（DANA）可能突发内涝，夏季高温需防晒补水，出行留意天气预报，急救112。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -35155,82 +36992,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "瓦伦西亚肉饭（Paella Valenciana，兔鸡肉与宽扁豆）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "蒜辣炖鳗鱼（All i pebre）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "面条海鲜锅（Fideuà）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炭炉焗饭（Arròs al forn）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "油莎草奶昔配法顿条（Horchata de chufa con fartons）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "艺术科学城（Ciutat de les Arts i les Ciències）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "瓦伦西亚主教座堂与米格雷特钟楼（Catedral / El Miguelete）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "中央市场（Mercado Central）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "丝绸交易厅（Lonja de la Seda，联合国教科文组织世界遗产）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "图里亚河花园（Jardí del Túria）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿尔布费拉自然公园（Parc Natural de l'Albufera）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "法雅节（Las Fallas）",
+          "date": "3月15—19日",
+          "desc": "联合国非遗节庆，巨型纸塑人偶游行后在最后一夜焚烧，烟火与噪音极大。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "七月节（Feria de Julio）",
+          "date": "7月",
+          "desc": "为期一个月的夏季节庆，有音乐会、露天舞会与烟火比赛。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "滨海圣周（Semana Santa Marinera）",
+          "date": "3—4月圣周",
+          "desc": "滨海渔村社区举行的圣周游行，气氛较老城更朴素。"
+        },
+        {
+          "name": "瓦伦西亚马拉松（Valencia Marathon）",
+          "date": "12月",
+          "desc": "以平坦快速赛道著称的国际马拉松，数万人参加，市中心交通管制。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -35623,7 +37485,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "塞维利亚是安达卢西亚首府，罗马时代称Hispalis，摩尔人时期繁荣，16世纪凭美洲贸易极盛，大教堂与阿尔卡萨宫列入世界遗产。夏季极端炎热，须避开正午外出并补水；圣周与四月节人流暴涨、扒窃高发；老城小巷夜间偏暗宜走主街，警惕递迷迭香算命骗局，急救112。"
     },
     "highlights": [
       "公共交通发达",
@@ -35646,82 +37509,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "伊比利亚猪颊肉（Carrillada ibérica）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "塞拉尼托三明治（Serranito，安达卢西亚猪肉烤辣椒三明治）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "菠菜炖鹰嘴豆（Espinacas con garbanzos）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炸小鱼（Pescaíto frito）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "圣莱安德罗蛋黄甜点（Yemas de San Leandro）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "塞维利亚大教堂与希拉尔达塔（Catedral y Giralda）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "塞维利亚王宫（Real Alcázar）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "西班牙广场（Plaza de España）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "皇家骑士团斗牛场（Plaza de Toros de la Real Maestranza）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "特里安娜区（Triana）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "都市阳伞（Metropol Parasol / Setas de Sevilla）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣周（Semana Santa）",
+          "date": "3—4月圣周",
+          "desc": "全城数十个教会的忏悔游行，穿城街道封闭、观众极多。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "四月节（Feria de Abril）",
+          "date": "4月下旬至5月上旬",
+          "desc": "在展会场地搭起的彩棚帐篷中举行的弗拉门戈与马术庆典。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "弗拉门戈双年展（Bienal de Flamenco）",
+          "date": "9月，每两年一次",
+          "desc": "世界最重要的弗拉门戈艺术节，各剧场与老城场地轮番上演。"
+        },
+        {
+          "name": "塞维利亚欧洲电影节（Festival de Cine Europeo）",
+          "date": "11月",
+          "desc": "专注欧洲影片的电影节，多家影院同步展映并设竞赛单元。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -36114,7 +38002,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "马拉加是太阳海岸首府，由腓尼基人建于公元前8世纪，历经罗马与摩尔人统治，毕加索出生于此，港口与机场是通往安达卢西亚内陆的门户。市中心与海滩夏季扒窃较多；夏季干热、周边山区易发野火，自驾注意山路；海边有离岸流，游泳须看红旗警示，急救112。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -36137,82 +38026,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "炭烤沙丁鱼串（Espetos de sardinas）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "白蒜杏仁冷汤（Ajoblanco malagueño）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "马拉加沙拉（Ensalada malagueña，土豆、鳕鱼与橙子）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炸鱼虾拼盘（Fritura malagueña）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "安特克拉番茄冷汤（Porra antequerana）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "阿尔卡萨瓦城堡与吉布拉法罗要塞（Alcazaba y Castillo de Gibralfaro）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "马拉加主教座堂（Catedral de Málaga \"La Manquita\"）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "马拉加罗马剧场（Teatro Romano）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马拉加毕加索博物馆（Museo Picasso Málaga）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "蓬皮杜中心马拉加分馆（Centre Pompidou Málaga）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "一号码头港区（Muelle Uno, Puerto de Málaga）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "马拉加圣周（Semana Santa de Málaga）",
+          "date": "3—4月圣周",
+          "desc": "规模盛大的宗教游行，巨型圣像宝座穿行老城，街道封闭。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "八月节（Feria de Málaga）",
+          "date": "8月中旬",
+          "desc": "纪念城市收复的夏日节庆，白天在市中心、夜间在展会场地狂欢。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "马拉加西班牙电影节（Festival de Cine de Málaga）",
+          "date": "3月",
+          "desc": "专注西班牙本土电影的电影节，放映与颁奖同期举行。"
+        },
+        {
+          "name": "三王游行（Cabalgata de Reyes）",
+          "date": "1月5日",
+          "desc": "主显节前夜的花车巡游，向沿街儿童抛撒糖果，人流极密。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -36605,7 +38519,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "波尔图是葡萄牙第二大城市，杜罗河畔里贝拉老城1996年列入世界遗产，18世纪起以波特酒出口闻名，曾是航海贸易重镇。治安较好，但圣本托车站、里贝拉酒吧街与地铁扒手活跃；老城石板坡道多雨湿滑，冬季大西洋风暴或致杜罗河涨水，医疗充足，急救112。"
     },
     "highlights": [
       "艺术氛围浓厚",
@@ -36628,82 +38543,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "法国姑娘三明治（Francesinha，芝士啤酒酱汁焗三明治）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "波尔图式牛肚锅（Tripas à moda do Porto）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "戈麦斯·德萨烤鳕鱼（Bacalhau à Gomes de Sá）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炭烤沙丁鱼（Sardinhas assadas，圣约翰节传统）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "鳕鱼球（Bolinhos de bacalhau）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "路易一世大桥（Ponte Dom Luís I）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "莱罗书店（Livraria Lello）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "牧师塔（Torre dos Clérigos）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "波尔图主教座堂（Sé do Porto）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "交易所宫（Palácio da Bolsa）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "盖亚河岸波特酒窖（Caves de Vinho do Porto, Vila Nova de Gaia）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣若昂节（Festa de São João do Porto）",
+          "date": "6月23—24日",
+          "desc": "全城街头派对，敲塑料锤、烤沙丁鱼、放气球与烟火。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "Fantasporto 国际奇幻电影节",
+          "date": "2—3月",
+          "desc": "葡萄牙重要电影节，专注奇幻、恐怖与科幻影片。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "NOS Primavera Sound 波尔图音乐节",
+          "date": "6月",
+          "desc": "在帕拉达花园举办的独立音乐节，与巴塞罗那同名音乐节同源。"
+        },
+        {
+          "name": "波尔图马拉松（Porto Marathon）",
+          "date": "11月",
+          "desc": "穿城并沿杜罗河跑向海岸的赛事，桥梁与滨河道路当日封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -37096,7 +39036,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "克拉科夫曾是波兰王国首都（至1596年），瓦维尔城堡为王室加冕地，老城1978年首批列入世界遗产，二战时为纳粹占领区行政中心，奥斯维辛在近郊。治安良好、医疗完善；老城与卡齐米日夜生活区周末醉客多、扒窃常见，警惕搭讪带路酒吧高价；冬季雾霾重，呼吸道疾病者备口罩。"
     },
     "highlights": [
       "公共交通发达",
@@ -37119,82 +39060,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "克拉科夫环形面包圈（Obwarzanek krakowski）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "波兰饺子（Pierogi ruskie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "酸黑麦汤（Żurek）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "猎人炖菜（Bigos）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "波兰式烤面包（Zapiekanka，克拉科夫经典街头小吃）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "瓦维尔城堡与大教堂（Wawel）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "中央市集广场与纺织会馆（Rynek Główny / Sukiennice）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣玛丽亚教堂（Kościół Mariacki）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡齐米日犹太区（Kazimierz）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "维利奇卡盐矿（Kopalnia Soli Wieliczka）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "奥斯维辛-比克瑙国家博物馆（Muzeum Auschwitz-Birkenau, Oświęcim）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "克拉科夫犹太文化节（Jewish Culture Festival）",
+          "date": "6月末至7月初",
+          "desc": "在卡齐米日区举办的世界知名犹太文化节，有音乐会与导览。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "克拉科夫电影节（Krakow Film Festival）",
+          "date": "5—6月",
+          "desc": "欧洲历史最久的纪录片与短片电影节之一。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "仲夏夜花冠节（Wianki）",
+          "date": "6月下旬",
+          "desc": "维斯瓦河畔的夏至庆典，放花环入水并有音乐会与烟火。"
+        },
+        {
+          "name": "克拉科夫圣诞市场（Jarmark Bożonarodzeniowy）",
+          "date": "11月末至12月",
+          "desc": "中央市场广场的圣诞集市，售卖手工艺品与热食。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -37587,7 +39553,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "日内瓦位于日内瓦湖畔，16世纪为加尔文宗教改革中心，今有联合国欧洲总部、世卫组织等机构，被称为和平之都。治安良好、急救体系一流（144/112），但火车站、机场与国际组织区扒窃和行李盗窃较多；物价与自费医疗极贵，务必购买足额保险；冬季湖畔湿冷风大。"
     },
     "highlights": [
       "公共交通发达",
@@ -37610,82 +39577,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "瑞士奶酪火锅（Fondue）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "日内瓦隆若尔香肠（Longeole de Genève）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "莱芒湖鲈鱼柳（Filets de perche du Léman）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "日内瓦奶油焗刺菜蓟（Cardon genevois）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "榛子普拉林巧克力（Avelines，日内瓦传统款）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "日内瓦大喷泉（Jet d'Eau）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "万国宫（Palais des Nations，联合国日内瓦办事处）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "圣皮埃尔大教堂（Cathédrale Saint-Pierre）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "日内瓦老城（Vieille Ville）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "英国花园与花钟（Jardin Anglais / L'Horloge fleurie）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "红十字与红新月国际博物馆（Musée International de la Croix-Rouge et du Croissant-Rouge）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "日内瓦节（Fêtes de Genève）",
+          "date": "8月",
+          "desc": "环湖的大型综合节庆，以烟花表演和湖上活动为主。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "登城节（Fête de l'Escalade）",
+          "date": "12月中旬",
+          "desc": "纪念1602年守城的市民庆典，有火炬游行与砸巧克力锅习俗。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "人权电影节（FIFDH）",
+          "date": "3月",
+          "desc": "日内瓦国际电影节暨人权论坛，影片与讨论会同步进行。"
+        },
+        {
+          "name": "Antigel 当代艺术节",
+          "date": "1—2月",
+          "desc": "分布在全城场馆的音乐与当代艺术冬季节庆。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -38078,7 +40070,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "科隆由罗马人建为Colonia，中世纪为汉萨同盟重镇，哥特式大教堂1996年列入世界遗产，今为德国西部传媒、展会与狂欢节之都。治安良好、医疗完善；中央车站周边扒窃与诈骗较多，狂欢节期间人多醉酒易起冲突；冬季湿冷路面结冰，夏季莱茵河偶发洪水淹及岸线，急救112。"
     },
     "highlights": [
       "历史建筑众多",
@@ -38101,82 +40094,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "奶酪黑麦面包（Halver Hahn）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "莱茵醋焖牛肉（Rheinischer Sauerbraten）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "天堂与土地（Himmel un Ääd，土豆苹果泥配血肠）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "莱茵土豆煎饼（Rievkooche / Reibekuchen）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "科隆啤酒（Kölsch）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "科隆大教堂（Kölner Dom）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "霍亨索伦桥（Hohenzollernbrücke）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "科隆老城（Altstadt）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大圣马丁教堂（Groß St. Martin）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "路德维希博物馆（Museum Ludwig）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "伊姆霍夫巧克力博物馆（Schokoladenmuseum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "科隆狂欢节（Kölner Karneval）",
+          "date": "11月11日开季，玫瑰星期一游行在2—3月",
+          "desc": "德国最盛大的狂欢节，玫瑰星期一有百万级街头游行与化装派对。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "科隆灯光节（Köln leuchtet）",
+          "date": "7月",
+          "desc": "莱茵河沿岸的灯光装置与音乐烟火表演。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "科隆骄傲游行（Cologne Pride）",
+          "date": "7月",
+          "desc": "德国规模最大的同志骄傲活动之一，市中心游行与舞台演出。"
+        },
+        {
+          "name": "科隆大教堂圣诞市场（Weihnachtsmarkt am Dom）",
+          "date": "11月末至12月",
+          "desc": "大教堂广场下的圣诞市场，以手工艺摊和热红酒闻名。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -38569,7 +40587,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "纽约是美国最大城市，1624年荷兰人在此建立新阿姆斯特丹，1664年英国接管后改名，19世纪后经埃利斯岛涌入的移民塑造了多元文化格局，如今是全球金融与传媒中心。主要旅游区警力充足，但地铁车厢与部分街区夜间仍需防范扒窃；医疗资源丰富却费用昂贵，务必购买旅行医疗保险；夏季偶有极端高温，冬季暴雪可能扰乱航班与地铁。"
     },
     "highlights": [
       "购物选择多",
@@ -38592,82 +40611,108 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "纽约式薄底披萨（New York-Style Pizza，折叠食用的大薄片）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "贝果配烟熏三文鱼（Bagel & Lox）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "犹太熟食店腌牛肉黑麦三明治（Pastrami on Rye）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "纽约芝士蛋糕（New York Cheesecake）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "街头热狗推车的洋葱酱热狗（Dirty Water Hot Dog）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "自由女神像与自由岛（Statue of Liberty）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "时代广场（Times Square）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "中央公园（Central Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "帝国大厦观景台（Empire State Building）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "布鲁克林大桥（Brooklyn Bridge）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大都会艺术博物馆（Metropolitan Museum of Art）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "梅西感恩节大游行（Macy's Thanksgiving Day Parade）",
+          "date": "11月第四个星期四",
+          "desc": "巨型卡通气球与花车从中央公园西沿街行进至先驱广场，全城收视最高的年度游行。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "时代广场跨年水晶球降落",
+          "date": "12月31日",
+          "desc": "数十万人聚集时代广场等待水晶球降落，现场设有安检与围栏，需提前数小时入场。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "纽约骄傲游行（NYC Pride March）",
+          "date": "6月最后一个周日",
+          "desc": "纪念石墙事件的大型 LGBTQ+ 游行，沿曼哈顿下城举行，全月有多场文化活动。"
+        },
+        {
+          "name": "纽约马拉松（TCS New York City Marathon）",
+          "date": "11月第一个周日",
+          "desc": "世界规模最大的城市马拉松之一，赛道贯穿五大城区，沿线交通与地铁会临时调整。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "小费文化重要，餐厅15-20%",
+        "走路速度快，不要挡路",
+        "地铁卡Swipe要干脆",
+        "排队等出租车",
+        "注意个人财物安全"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -39186,7 +41231,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "洛杉矶1781年由西班牙殖民者建镇，1848年归入美国，20世纪因好莱坞电影工业以及石油、航空与港口贸易迅速扩张，是美国西海岸最大都会区。城市极度分散、公共交通薄弱，自驾为主但拥堵与停车费高；各街区治安差异明显，夜间避免前往陌生区域；地处地震带，夏秋季需警惕山火与高温，出行前应查看空气质量与官方预警。"
     },
     "highlights": [
       "自然景观丰富",
@@ -39209,82 +41255,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "法式蘸汁三明治（French Dip，洛杉矶经典）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "墨西哥玉米卷与餐车美食（Taco Truck Tacos）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "柯布沙拉（Cobb Salad，源自洛杉矶）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "韩国城烤肉（Koreatown BBQ）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "加州卷（California Roll，诞生于洛杉矶的日式寿司）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "好莱坞标志（Hollywood Sign）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "好莱坞环球影城（Universal Studios Hollywood）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "格里菲斯天文台（Griffith Observatory）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "盖蒂中心（Getty Center）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣莫尼卡码头（Santa Monica Pier）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "威尼斯海滩步道（Venice Beach Boardwalk）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
+          "name": "玫瑰游行（Tournament of Roses Parade）",
           "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "desc": "在帕萨迪纳举行的鲜花装饰花车大游行，随后举办玫瑰碗大学橄榄球赛。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "奥斯卡金像奖颁奖典礼（Academy Awards）",
+          "date": "2月下旬至3月",
+          "desc": "在好莱坞杜比剧院举行的全球电影盛事，周边道路会封闭并加强安保。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "洛杉矶骄傲节（LA Pride）",
+          "date": "6月",
+          "desc": "以西好莱坞为中心的大型 LGBTQ+ 游行与音乐演出，参与人数众多。"
+        },
+        {
+          "name": "洛杉矶马拉松（LA Marathon）",
+          "date": "3月中旬",
+          "desc": "被称为体育场到海洋的路线，从道奇体育场跑至圣莫尼卡，沿途多路段封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -39724,7 +41795,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "芝加哥1833年建镇，1871年大火后重建，凭借铁路枢纽、肉类加工与期货交易成长为美国中西部交通与金融中心，也是蓝调与爵士乐重镇。市中心与北区旅游区治安较好，南部与西部部分街区枪支暴力相对多发，出行前宜查询警方分区数据；冬季严寒多雪并常有大风，需备足御寒衣物；医疗费用较高，建议投保。"
     },
     "highlights": [
       "自然景观丰富",
@@ -39747,82 +41819,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "芝加哥深盘披萨（Deep-Dish Pizza）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "芝加哥式热狗（罂粟籽面包、不加番茄酱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "意大利牛肉三明治（Italian Beef Sandwich）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "焦糖与芝士混合爆米花（Garrett's 风味）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "布朗尼蛋糕（Brownie，相传源自芝加哥）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "千禧公园云门雕塑（Cloud Gate）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "威利斯大厦观景台（Willis Tower Skydeck）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "海军码头（Navy Pier）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "芝加哥艺术博物馆（Art Institute of Chicago）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "菲尔德自然史博物馆（Field Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "密歇根大道壮丽一英里（Magnificent Mile）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣帕特里克节染绿芝加哥河",
+          "date": "3月17日前后",
+          "desc": "市中心河面被染成绿色并举行游行，沿河一带人流密集、部分道路封闭。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "芝加哥蓝调音乐节（Chicago Blues Festival）",
+          "date": "6月中旬",
+          "desc": "在千禧公园等地举办的免费蓝调音乐节，是芝加哥最具代表性的音乐活动。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "Lollapalooza 音乐节",
+          "date": "7月底至8月初",
+          "desc": "在格兰特公园举行的四天大型音乐节，期间园区周边交通与酒店紧张。"
+        },
+        {
+          "name": "芝加哥马拉松（Chicago Marathon）",
+          "date": "10月",
+          "desc": "世界六大马拉松之一，赛道穿过二十多个社区，比赛日全市多处道路封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -40243,7 +42340,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "多伦多原为约克镇，1793年成为上加拿大首府，1834年设市，现为加拿大最大城市及金融、传媒与教育中心，外来移民比例很高。整体治安在北美大城市中相对良好，市中心夜间人流充足，但地铁、央街与热门景点仍需防范扒窃；加拿大医疗不对外国游客免费，务必自购保险；冬季寒冷多雪，湖滨风寒明显，夏季短促宜人。"
     },
     "highlights": [
       "购物选择多",
@@ -40266,82 +42364,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "豌豆粉培根三明治（Peameal Bacon Sandwich）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "黄油挞（Butter Tart）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "牙买加肉饼（Jamaican Patty）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "枫糖浆甜点（枫糖挞与枫糖太妃）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "寿司披萨（Sushi Pizza，多伦多首创的日式创意料理）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "加拿大国家电视塔（CN Tower）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "皇家安大略博物馆（Royal Ontario Museum）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "卡萨罗马城堡（Casa Loma）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "瑞普利加拿大水族馆（Ripley's Aquarium of Canada）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣劳伦斯市场（St. Lawrence Market）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "多伦多群岛（Toronto Islands）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "多伦多国际电影节（TIFF）",
+          "date": "9月上旬",
+          "desc": "全球最重要的电影展映活动之一，市中心电影院周边人流与交通压力明显上升。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "多伦多加勒比狂欢节（Toronto Caribbean Carnival）",
+          "date": "7月底至8月初",
+          "desc": "北美规模最大的加勒比文化庆典，以湖滨大道的花车巡游与钢鼓乐队为主。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "加拿大国家展览（CNE）",
+          "date": "8月中下旬至劳动节",
+          "desc": "在 Exhibition Place 举办的百年展会，含游乐设施、农业展与飞行表演。"
+        },
+        {
+          "name": "多伦多骄傲月游行（Pride Toronto）",
+          "date": "6月",
+          "desc": "在市中心教堂街一带举行的大型 LGBTQ+ 游行，是北美规模较大的骄傲活动之一。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -40761,7 +42884,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "温哥华1867年因煤气镇兴起，1886年设市并成为加拿大太平洋铁路西端终点，依托港口、林业与矿产贸易发展，如今是加拿大西部门户与影视制作中心。城市治安总体良好，但市中心东区流浪者与药物滥用问题较集中，建议白天前往、夜间结伴；医疗资源完善但对游客收费昂贵；冬季漫长多雨湿冷，夏季温和少雨。"
     },
     "highlights": [
       "娱乐设施完善",
@@ -40784,82 +42908,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "太平洋野生三文鱼（Salmon）料理",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "珍宝蟹（Dungeness Crab）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "斑点虾（Spot Prawn，不列颠哥伦比亚海域特产）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "本地寿司与日式拉面（温哥华日餐业发达）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "纳奈莫条（Nanaimo Bar，本省经典甜点）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "斯坦利公园（Stanley Park）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "卡皮拉诺吊桥（Capilano Suspension Bridge）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "格兰维尔岛公共市场（Granville Island Public Market）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "煤气镇蒸汽钟（Gastown Steam Clock）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "加拿大广场（Canada Place）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "英吉利湾海滩与日落沙滩（English Bay）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "温哥华樱花节（Vancouver Cherry Blossom Festival）",
+          "date": "3月下旬至4月",
+          "desc": "全城数万株樱花盛开期间举办的赏樱步行、日式音乐与园艺活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "光之庆典国际烟花比赛（Celebration of Light）",
+          "date": "7月下旬至8月初",
+          "desc": "在英吉利湾上空举行的多国烟花比赛，海滩与沿岸观景点人潮拥挤。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "温哥华骄傲游行（Vancouver Pride Parade）",
+          "date": "8月长周末",
+          "desc": "沿市中心街道举行的大型 LGBTQ+ 游行，配套有戴维村一带的街头庆典。"
+        },
+        {
+          "name": "温哥华国际电影节（VIFF）",
+          "date": "9月底至10月",
+          "desc": "北美规模较大的影展之一，以亚洲与加拿大本土影片单元著称。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -41271,7 +43420,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "蒙特利尔1642年以 Ville-Marie 之名建城，曾是加拿大经济中心，现为魁北克省最大城市，法语为主要日常语言，兼具北美与欧洲气质。治安在北美大城市中相对平稳，市中心夜间人流较多；游客宜准备英文地址与翻译工具；冬季漫长严寒多雪，可利用地下城避寒；加拿大医疗不对外国游客免费，须自行购买保险。"
     },
     "highlights": [
       "购物选择多",
@@ -41294,82 +43444,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "肉汁奶酪薯条（Poutine，魁北克经典）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "蒙特利尔熏肉三明治（Smoked Meat）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "蒙特利尔贝果（手工柴火烤贝果）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "魁北克肉派（Tourtière）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "枫糖太妃（Maple Taffy，雪地枫糖糖浆）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "老城圣母大教堂（Notre-Dame Basilica）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "皇家山公园（Mount Royal Park）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "老港（Old Port of Montreal）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "蒙特利尔美术馆（Musée des beaux-arts）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣约瑟夫礼拜堂（Saint Joseph's Oratory）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "蒙特利尔植物园（Montreal Botanical Garden）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "蒙特利尔国际爵士音乐节（Festival International de Jazz）",
+          "date": "6月底至7月初",
+          "desc": "全球规模最大的爵士音乐节，市中心街区封闭并设多个免费户外舞台。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "蒙特利尔国际烟花比赛（L'International des Feux）",
+          "date": "6月至8月",
+          "desc": "在圣劳伦斯河上举行的多国烟花赛事，可从老港与雅克·卡蒂亚桥一带观赏。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "欢乐喜剧节（Festival Juste pour rire / Just for Laughs）",
+          "date": "7月",
+          "desc": "国际知名的喜剧节，汇聚英语与法语脱口秀、街头表演与剧场演出。"
+        },
+        {
+          "name": "蒙特利尔灯光节（MONTRÉAL EN LUMIÈRE）",
+          "date": "2月下旬至3月",
+          "desc": "结合灯光装置、美食与户外演出的冬季艺术节，是严寒季节的城市亮点。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -41768,7 +43943,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "旧金山1848年淘金热后迅速崛起，1906年大地震与火灾后重建，现为美国西海岸金融与科技门户，依山傍海、多元文化氛围浓厚。旅游区治安尚可，但田德隆区等市中心部分街区流浪者与街头毒品问题较突出，夜间应尽量避开；城市位于地震带，建议了解应急避险常识；夏季晨雾重、昼夜温差大，需备外套。"
     },
     "highlights": [
       "自然景观丰富",
@@ -41791,82 +43967,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "酸面包碗蛤蜊浓汤（Clam Chowder in Sourdough Bowl）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "旧金山酸面包（Sourdough Bread）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "珍宝蟹（Dungeness Crab，渔人码头）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "米慎区墨西哥卷饼（Mission Burrito）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "爱尔兰咖啡（Irish Coffee，本地酒吧发源）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "金门大桥（Golden Gate Bridge）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "恶魔岛（Alcatraz Island）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "渔人码头与39号码头（Fisherman's Wharf / Pier 39）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "九曲花街（Lombard Street）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "旧金山现代艺术博物馆（SFMOMA）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "金门公园（Golden Gate Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "旧金山骄傲游行（SF Pride）",
+          "date": "6月最后一个周末",
+          "desc": "全美规模最大的骄傲庆典之一，从市场街行进至市政厅，参与者以数十万计。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "北加州樱花节（Northern California Cherry Blossom Festival）",
+          "date": "4月",
+          "desc": "在日本城（Japantown）举办的樱花主题文化节，有太鼓、茶道与巡游。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "旧金山舰队周与蓝天使飞行表演（Fleet Week）",
+          "date": "10月上旬",
+          "desc": "军舰开放参观与蓝天使特技飞行表演，滨海一带与渔人码头观景区人潮密集。"
+        },
+        {
+          "name": "旧金山国际电影节（SFFILM Festival）",
+          "date": "4月中下旬",
+          "desc": "北美历史悠久的独立电影节，展映大量纪录片与国际新片。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -42281,7 +44482,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "西雅图1851年建镇，因1897年克朗代克淘金热与两次世界博览会而繁荣，现为微软、亚马逊总部所在地及波音重要生产基地，也是太平洋西北的港口与科技城市。整体治安尚可，但市中心第三街与先锋广场一带流浪者与毒品问题较集中，夜间宜结伴；冬季阴雨连绵、路面湿滑；周边存在喀斯喀特火山与地震风险，可提前了解应急信息。"
     },
     "highlights": [
       "娱乐设施完善",
@@ -42304,82 +44506,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "太平洋野生王鲑（Chinook Salmon）料理",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "珍宝蟹与本地生蚝",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "西雅图式奶油奶酪热狗（Seattle Dog）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "派克市场蛤蜊浓汤（Pike Place Chowder）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "本地精品咖啡（星巴克首家门店所在城市）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "太空针塔（Space Needle）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "派克市场（Pike Place Market）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "奇胡利玻璃艺术园（Chihuly Garden and Glass）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "流行文化博物馆（MoPOP）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西雅图水族馆（Seattle Aquarium）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "凯瑞公园观景台（Kerry Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "西北民俗节（Northwest Folklife Festival）",
+          "date": "5月阵亡将士纪念日周末",
+          "desc": "在西雅图中心举办的免费民俗艺术节，集中展示太平洋西北的音乐、舞蹈与手工艺。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "西雅图国际电影节（SIFF）",
+          "date": "5月中旬至6月",
+          "desc": "北美观众规模较大的影展之一，展映数百部各国影片并设多个影院场地。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "西雅图骄傲月（Seattle Pride）",
+          "date": "6月",
+          "desc": "市中心举行的大型 LGBTQ+ 游行与街头庆典， Capitol Hill 一带活动集中。"
+        },
+        {
+          "name": "海洋节（Seafair）",
+          "date": "7月至8月上旬",
+          "desc": "夏季传统节庆，包含火炬大游行、蓝天使飞行表演与华盛顿湖水上活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -42779,7 +45006,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "迈阿密1896年随铁路通车建市，20世纪中期起大量古巴与拉美移民涌入，形成独特的拉美文化中心，如今是金融、邮轮与旅游门户。海滩与旅游区治安尚可，内陆部分街区犯罪率较高，自驾需锁好车门并留意停车区域；6月至11月为飓风季，应关注美国国家飓风中心预警并购买可退改行程；夏季湿热多雷暴，日照强烈需防晒补水。"
     },
     "highlights": [
       "娱乐设施完善",
@@ -42802,82 +45030,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "古巴三明治（Cuban Sandwich）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "炸大蕉（Tostones 与 Maduros）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "佛罗里达石蟹钳（Stone Crab Claws）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "酸橘汁腌鱼（Ceviche）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "古巴浓缩咖啡（Cafecito）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "南海滩（South Beach）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "装饰艺术历史街区（Art Deco Historic District）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "小哈瓦那（Little Havana）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "维兹卡亚庄园与花园（Vizcaya Museum & Gardens）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "温伍德艺术区涂鸦墙（Wynwood Walls）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大沼泽国家公园（Everglades，近郊一日游）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "迈阿密海滩巴塞尔艺术展（Art Basel Miami Beach）",
+          "date": "12月第一周",
+          "desc": "全球最重要的当代艺术博览会之一，会展中心与海滩一带酒店与交通极为紧张。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "南滩美酒美食节（South Beach Wine & Food Festival）",
+          "date": "2月下旬",
+          "desc": "由知名厨师参与的美食美酒活动，沙滩与酒店场地遍布品鉴与晚宴。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "迈阿密狂欢节（Miami Carnival）",
+          "date": "10月",
+          "desc": "加勒比风情的盛装巡游与钢鼓音乐庆典，通常在 Broward 县一带举行。"
+        },
+        {
+          "name": "迈阿密海滩骄傲节（Miami Beach Pride）",
+          "date": "4月",
+          "desc": "以南海滩为中心的 LGBTQ+ 游行与海滩派对，林肯路一带活动最集中。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -43269,7 +45522,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "波士顿1630年由英国清教徒建立，是美国独立运动发源地之一，拥有哈佛、麻省理工等高校，现为新英格兰的金融、教育与医疗中心，医疗资源在全美领先。老城街道狭窄、单行线多，自驾与步行均需谨慎；整体治安较好，夜间宜走照明良好的街道；冬季暴雪与低温会影响航班与路面，行程宜留弹性。"
     },
     "highlights": [
       "多元文化",
@@ -43292,82 +45546,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "新英格兰蛤蜊浓汤（Clam Chowder）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "龙虾卷（Lobster Roll）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "波士顿奶油派（Boston Cream Pie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "波士顿烤豆（Boston Baked Beans）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "生蚝与海鲜吧（Union Oyster House 老店式）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "自由之路（Freedom Trail）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "法尼尔厅与昆西市场（Faneuil Hall / Quincy Market）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "波士顿公园与公共花园（Boston Common & Public Garden）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "芬威球场（Fenway Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "波士顿美术馆（Museum of Fine Arts）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "哈佛大学与剑桥镇（Cambridge，近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "波士顿马拉松（Boston Marathon）",
+          "date": "4月第三个星期一（爱国者日）",
+          "desc": "全球历史最悠久的年度马拉松，赛道从霍普金顿跑至市中心，沿线道路全天封闭。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "南波士顿圣帕特里克节游行",
+          "date": "3月17日前后",
+          "desc": "纪念爱尔兰传统的盛大游行，南波士顿百老汇沿线人流密集，酒吧区夜间拥挤。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "查尔斯河畔独立日音乐会与烟火",
+          "date": "7月4日",
+          "desc": "波士顿大众乐团在河滨露天音乐台演出，夜晚于查尔斯河上空燃放烟花。"
+        },
+        {
+          "name": "波士顿骄傲游行（Boston Pride）",
+          "date": "6月",
+          "desc": "从科普利广场行至市政厅广场的 LGBTQ+ 游行，配套有街头文化节。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -43759,7 +46038,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "华盛顿1790年由国会立法选址建都，1800年成为美国首都，按朗方规划布局，以国家广场、纪念堂与史密森尼博物馆群构成政治与文化中心。市中心与国家广场一带警力密集，但东部与东南部部分街区夜间治安较差，住宿可选市中心或弗吉尼亚、马里兰近郊；夏季湿热偶有雷暴，冬季有降雪；地铁与公交覆盖主要景点。"
     },
     "highlights": [
       "娱乐设施完善",
@@ -43782,82 +46062,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "半烟熏香肠（Half-Smoke，本地标志性街头食品）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "马里兰蓝蟹蟹饼（Crab Cake）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "老湾调味料蒸海鲜（Old Bay 蒸虾与蒸蟹）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "Mumbo 酱炸鸡翅（Mumbo Sauce，华府特色酱料）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "埃塞俄比亚英吉拉料理（Injera，本地非洲社区规模居全美前列）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "国家广场与华盛顿纪念碑（National Mall）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "白宫（The White House）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "美国国会大厦（U.S. Capitol）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "林肯纪念堂（Lincoln Memorial）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "史密森尼国家自然历史博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "国家航空航天博物馆（National Air and Space Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "国家樱花节（National Cherry Blossom Festival）",
+          "date": "3月下旬至4月上旬",
+          "desc": "纪念1912年日本赠送樱花树，潮汐湖畔赏樱并举办游行与风筝节。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "史密森尼民俗文化节（Smithsonian Folklife Festival）",
+          "date": "6月底至7月初",
+          "desc": "在国家广场举办的免费文化节，每年聚焦不同国家或地区的传统技艺与饮食。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "独立日国家广场庆典",
+          "date": "7月4日",
+          "desc": "音乐会、阅兵式与华盛顿纪念碑上空烟火，广场安检严格、人流极多。"
+        },
+        {
+          "name": "使馆开放日 Passport DC",
+          "date": "5月",
+          "desc": "数十国驻美使馆向公众开放，可参观并品尝各国饮食，需提前预约热门场次。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -44278,7 +46583,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "拉斯维加斯1905年建市，1931年内华达州合法化赌博后迅速成为娱乐之都，如今以大道上的超大型度假酒店、会展与夜生活闻名，也是前往大峡谷等自然景观的中转地。大道与旅游区警力充足，但夜间拥挤路段需注意扒窃与酒后冲突；夏季极端高温常超40摄氏度，务必补水；周边沙漠自驾须备足燃油与饮水；赌博应量力而行。"
     },
     "highlights": [
       "科技发达",
@@ -44301,82 +46607,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "赌场自助餐（Buffet，拉斯维加斯标志性餐饮）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "老派虾仁鸡尾酒（Shrimp Cocktail）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "慢烤牛肋排（Prime Rib，赌场经典招牌）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "干式熟成牛排（Steakhouse）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "大道名厨餐厅料理（Celebrity Chef 餐厅）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "拉斯维加斯大道（The Strip）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "百乐宫音乐喷泉（Fountains of Bellagio）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "威尼斯人度假村（The Venetian）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "弗里蒙特街体验区（Fremont Street Experience）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "红岩峡谷国家保护区（Red Rock Canyon，近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "胡佛水坝（Hoover Dam，近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "国际消费电子展（CES）",
+          "date": "1月上旬",
+          "desc": "在拉斯维加斯会议中心举办的全球最大科技展会，期间酒店与航班价格大幅上涨。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "电动雏菊狂欢节（EDC Las Vegas）",
+          "date": "5月",
+          "desc": "在拉斯维加斯赛车场举行的三天大型电子音乐节，夜间往返需提前安排交通。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "世界牛仔竞技总决赛（National Finals Rodeo）",
+          "date": "12月上旬",
+          "desc": "牛仔竞技顶级年度赛事，同时带动大道各酒店的乡村音乐演出与主题派对。"
+        },
+        {
+          "name": "大道跨年烟花庆典",
+          "date": "12月31日",
+          "desc": "多家赌场酒店同步燃放烟花，大道实施交通管制与人流单向疏导。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -44775,7 +47106,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "丹佛1858年派克峰淘金热期间建镇，因位于落基山脉东麓被称为一英里高的城市，现为科罗拉多州首府及能源、科技与交通中心。市中心夜间部分区域流浪者较多，宜走照明良好的街道；海拔约1600米，初到者可能出现高原反应，应放慢节奏、多喝水；冬季降雪与山路结冰常见，自驾进山须备防滑装备。"
     },
     "highlights": [
       "自然景观丰富",
@@ -44798,82 +47130,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "科罗拉多绿辣椒炖肉（Green Chile）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "科罗拉多烤羊排（Colorado Lamb）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "野牛汉堡（Bison Burger）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "落基山生蚝（Rocky Mountain Oysters，牧场传统炸物）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "精酿啤酒与啤酒餐（丹佛为美国精酿重镇）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "丹佛艺术博物馆（Denver Art Museum）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "丹佛自然与科学博物馆（Denver Museum of Nature & Science）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "联合车站（Union Station）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉里默广场（Larimer Square）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "科罗拉多州议会大厦（Colorado State Capitol，金色穹顶）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "红岩露天剧场（Red Rocks Amphitheatre，近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "国家西部牧马展与牛仔竞技（National Western Stock Show）",
+          "date": "1月",
+          "desc": "拥有百余年历史的畜牧展与牛仔竞技盛会，在丹佛国家西部中心举行。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "四二〇大麻文化集会（4/20 活动）",
+          "date": "4月20日前后",
+          "desc": "科罗拉多州允许成年人购买娱乐用大麻，市中心常有大麻文化集会；但公共场所吸食仍属违法，中国公民另须遵守本国法律。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "丹佛骄傲节（Denver PrideFest）",
+          "date": "6月",
+          "desc": "在市政中心公园举办的大型 LGBTQ+ 庆典与游行，是落基山地区规模最大的同类活动。"
+        },
+        {
+          "name": "美国大啤酒节（Great American Beer Festival）",
+          "date": "9月底至10月初",
+          "desc": "在丹佛会展中心举办的全国性精酿啤酒品鉴活动，门票通常提前售罄。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -45265,7 +47622,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "亚特兰大1837年作为铁路终点站建城，南北战争中被焚毁后重建，是马丁·路德·金的故乡与美国民权运动重镇，现为东南部金融、物流与媒体中心，也是可口可乐总部所在地。市中心与旅游区白天人流充足，夜间部分街区需谨慎；夏季湿热，偶有强雷暴与龙卷风预警；城市高度依赖自驾，高速公路拥堵严重，需注意停车与行车安全。"
     },
     "highlights": [
       "多元文化",
@@ -45288,82 +47646,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "南方炸鸡（Southern Fried Chicken）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "桃子派与桃酥（Peach Cobbler，佐治亚为桃州）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "炸青番茄（Fried Green Tomatoes）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "烧烤排骨配玉米面包（BBQ Ribs）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "南方甜茶（Sweet Tea）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "佐治亚水族馆（Georgia Aquarium）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "可口可乐世界（World of Coca-Cola）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "马丁·路德·金国家历史公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "百年奥林匹克公园（Centennial Olympic Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "亚特兰大植物园（Atlanta Botanical Garden）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "福克斯剧院（Fox Theatre）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "桃树公路赛（Peachtree Road Race）",
+          "date": "7月4日",
+          "desc": "世界参赛人数最多的10公里路跑之一，从勒诺克斯广场跑至 Piedmont 公园。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "Dragon Con 动漫科幻展",
+          "date": "8月底至9月初（劳动节周末）",
+          "desc": "市中心多家酒店同步举办的大型流行文化展会，以cosplay巡游著称。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "亚特兰大骄傲节（Atlanta Pride）",
+          "date": "10月",
+          "desc": "在 Piedmont 公园举行的大型 LGBTQ+ 庆典，是美国东南部规模最大的同类活动之一。"
+        },
+        {
+          "name": "亚特兰大电影节（Atlanta Film Festival）",
+          "date": "4月",
+          "desc": "美国运行时间最长的独立电影节之一，展映剧情片、纪录片与短片。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -45762,7 +48145,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "达拉斯1841年建镇，依托铁路、棉花与石油贸易发展，现为美国南部金融、能源与会展中心，达拉斯-沃斯堡都会区是重要航空枢纽。市中心白天较为繁华，夜间部分街区需注意安全；得州枪支法律宽松，遇争执应保持克制、避免与人发生冲突；春季多强雷暴与冰雹，夏季高温常超38摄氏度，自驾需留意高速公路车速与拥堵。"
     },
     "highlights": [
       "多元文化",
@@ -45785,82 +48169,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "德州慢烤牛胸肉（BBQ Brisket）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "炸鸡排（Chicken Fried Steak）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "德州-墨西哥风味菜（Tex-Mex，法士达与玉米卷）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "博览会玉米热狗（Corny Dog，德州博览会经典）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "山核桃派（Pecan Pie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "第六层博物馆（Sixth Floor Museum）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "迪利广场（Dealey Plaza）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "达拉斯艺术博物馆（Dallas Museum of Art）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "重逢塔观景台（Reunion Tower）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "佩罗自然与科学博物馆（Perot Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "达拉斯植物园（Dallas Arboretum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "德州博览会（State Fair of Texas）",
+          "date": "9月底至10月中",
+          "desc": "在博览会公园举办的百年州博览会，以巨型摩天轮与油炸创意食品闻名。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "棉花碗橄榄球赛（Cotton Bowl Classic）",
+          "date": "12月底至1月初",
+          "desc": "大学橄榄球传统碗赛，与博览会公园一带的新年庆祝活动同期举行。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "达拉斯马拉松（BMW Dallas Marathon）",
+          "date": "12月中旬",
+          "desc": "赛道经过市中心与白岩湖一带，比赛日上午多条主干道封闭。"
+        },
+        {
+          "name": "达拉斯国际电影节（Dallas International Film Festival）",
+          "date": "4月",
+          "desc": "在市中心举办的多单元影展，展映独立影片与国际新作并设颁奖环节。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -46252,7 +48661,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "休斯顿1836年建城，以棉花与石油贸易起家，20世纪因约翰逊航天中心成为美国载人航天指挥中枢，现为能源、医疗与港口重镇，拥有全球最大的医疗中心之一。城市面积大、公共交通有限，建议自驾；不同街区治安差异明显，夜间应避免陌生区域；墨西哥湾飓风季（6月至11月）可能带来强降雨与城市内涝，夏季湿热，需关注天气预警。"
     },
     "highlights": [
       "科技发达",
@@ -46275,82 +48685,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "德州慢烤牛胸肉（BBQ Brisket）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "越南牛肉河粉（休斯顿越南裔社区规模居全美前列）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "德州-墨西哥菜（Tex-Mex，法士达与玉米卷）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "卡真秋葵汤饭（Gumbo）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "越式卡真辣味小龙虾（Viet-Cajun Crawfish，春季常见）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "休斯顿航天中心（Space Center Houston）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "休斯顿自然科学博物馆（HMNS）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "赫尔曼公园与休斯顿动物园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "休斯顿美术馆（Museum of Fine Arts）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "水墙公园（Gerald D. Hines Waterwall Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "市中心水族馆（Downtown Aquarium）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "休斯顿牛仔竞技节与畜牧展（Houston Livestock Show and Rodeo）",
+          "date": "2月底至3月",
+          "desc": "全球规模最大的牛仔竞技与畜牧展，每晚还有流行歌手演唱会。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "休斯顿马拉松（Chevron Houston Marathon）",
+          "date": "1月中旬",
+          "desc": "赛道穿越市中心与多个社区，以平坦快速路线吸引大量跑者。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "休斯顿骄傲游行（Houston Pride）",
+          "date": "6月",
+          "desc": "夜间在蒙特罗斯街区举行的游行与庆典，是美国南部规模较大的骄傲活动之一。"
+        },
+        {
+          "name": "河口城艺术节（Bayou City Art Festival）",
+          "date": "3月与10月",
+          "desc": "春秋两季在市中心举办的大型户外艺术展，聚集数百位艺术家与手作摊位。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -46742,7 +49177,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "凤凰城1868年建镇，依托索诺兰沙漠中的灌溉农业与铁路兴起，1889年成为亚利桑那准州首府，1912年建州后为州府，现为美国西南部最大城市及半导体与航空产业基地。城市呈摊大饼式扩张，自驾是主要出行方式；夏季极端高温常超40摄氏度，5月至9月应避免正午户外活动并随身带水；冬季温暖，是避寒与高尔夫旺季；郊野徒步须防蛇与中暑。"
     },
     "highlights": [
       "多元文化",
@@ -46765,82 +49201,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "索诺兰热狗（培根裹热狗配豆酱与配料）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "梅斯基特木炭烤肉（Mesquite Grill）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "墨西哥玉米卷与卷饼（Taco & Burrito）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "仙人掌片沙拉（Nopales）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "西南风味绿辣椒炖肉（Green Chile Stew）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "沙漠植物园（Desert Botanical Garden）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "赫德博物馆（Heard Museum，美洲原住民文化）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "凤凰城艺术博物馆（Phoenix Art Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "驼背山登山步道（Camelback Mountain）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "帕帕戈公园岩石之洞（Hole-in-the-Rock）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "老城斯科茨代尔（Old Town Scottsdale，近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "WM 凤凰城公开赛（WM Phoenix Open）",
+          "date": "2月初",
+          "desc": "在斯科茨代尔 TPC 球场举行的 PGA 巡回赛，观众规模居高尔夫赛事首位。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "菲斯塔碗橄榄球赛与游行（Fiesta Bowl）",
+          "date": "12月底至1月初",
+          "desc": "大学橄榄球季后赛赛事，同期举办西部风情花车游行与嘉年华活动。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "凤凰城骄傲节（Phoenix Pride）",
+          "date": "4月",
+          "desc": "在市中心举行的 LGBTQ+ 游行与街区庆典，是亚利桑那规模最大的同类活动。"
+        },
+        {
+          "name": "亚利桑那州博览会（Arizona State Fair）",
+          "date": "10月至11月",
+          "desc": "在州博览会会场举办的传统展会，含游乐设施、畜牧展与现场演出。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -47239,7 +49700,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "波特兰1845年建镇，因威拉米特河航运以及木材、小麦贸易发展，1891年与东波特兰合并，以公园系统、自行车与可持续城市规划闻名，是俄勒冈州最大城市。整体治安在美西城市中属中等，但市中心部分街区流浪者与街头毒品问题较明显，夜间宜避开老城边缘地带；全年多雨，冬季阴湿路面湿滑；夏季干燥温和，适合户外旅行。"
     },
     "highlights": [
       "多元文化",
@@ -47262,82 +49724,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "精酿啤酒（波特兰为美国精酿啤酒重镇）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "餐车美食（Food Carts，市区餐车广场密集）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "创意甜甜圈（以 Voodoo Doughnut 为代表）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "太平洋西北野生三文鱼与生蚝",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "本地精品咖啡（独立咖啡馆文化）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "波特兰日本花园（Portland Japanese Garden）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "国际玫瑰试验园（International Rose Test Garden）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "兰苏中国花园（Lan Su Chinese Garden）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "鲍威尔书城（Powell's City of Books）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "皮托克大厦（Pittock Mansion）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马尔特诺马瀑布（Multnomah Falls，近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "波特兰玫瑰节（Portland Rose Festival）",
+          "date": "5月底至6月",
+          "desc": "拥有百余年历史的城市节庆，含玫瑰巡游、舰队周与河岸庆典活动。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "波特兰骄傲游行（Portland Pride）",
+          "date": "6月",
+          "desc": "沿市中心与滨水区举行的 LGBTQ+ 游行与为期数天的社区庆典。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "滨水蓝调音乐节（Waterfront Blues Festival）",
+          "date": "7月4日前后",
+          "desc": "在汤姆·麦考尔滨水公园举办的蓝调音乐节，以烟花收尾、门票收入用于慈善。"
+        },
+        {
+          "name": "波特兰图书节（Portland Book Festival）",
+          "date": "11月",
+          "desc": "由文学机构主办的大型书展，市中心场馆集中举办作家对谈与签售。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -47736,7 +50223,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "圣迭戈1769年由西班牙传教士与军队建立，是加州最早的欧洲人定居点，1850年设市，现为美国太平洋舰队重要基地与生物科技、旅游城市。市区与海滩旅游区治安较好，夜间应避免前往市中心东村边缘等偏僻街区；全年气候温和干燥，但秋冬季南加州山火与圣安娜风可能影响空气质量与交通；海滩游泳须留意离岸流与旗标警示。"
     },
     "highlights": [
       "多元文化",
@@ -47759,82 +50247,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "加州卷饼（California Burrito，内含炸薯条）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "鱼肉玉米卷（Fish Taco）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "精酿啤酒（圣迭戈精酿啤酒业发达）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "本地生蚝与海鲜",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "墨西哥风味酸橘汁腌鱼（Ceviche）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "巴尔博亚公园（Balboa Park，含多家博物馆）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣迭戈动物园（San Diego Zoo）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "中途岛号航空母舰博物馆（USS Midway Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "老城历史公园（Old Town San Diego）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "科罗纳多海滩与德尔酒店（Hotel del Coronado）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉霍亚海湾（La Jolla Cove）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣迭戈国际动漫展（San Diego Comic-Con）",
+          "date": "7月中下旬",
+          "desc": "全球最具影响力的流行文化展会，会展中心与瓦斯灯街区一票难求、人流极大。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "圣迭戈骄傲节（San Diego Pride）",
+          "date": "7月",
+          "desc": "在巴尔博亚公园与希尔克雷斯特街区举行的大型 LGBTQ+ 游行与音乐节。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "圣迭戈国际电影节（San Diego International Film Festival）",
+          "date": "10月",
+          "desc": "在瓦斯灯街区举办的多单元影展，展映国际剧情片、纪录片与短片。"
+        },
+        {
+          "name": "巴尔博亚公园十二月之夜（December Nights）",
+          "date": "12月上旬",
+          "desc": "公园内博物馆免费开放的灯光节庆，有各国文化表演与街头美食摊位。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -48226,7 +50739,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "奥斯汀1839年建为得克萨斯共和国首府，1888年州议会大厦落成，依托州政府、得州大学与科技产业发展，以现场音乐之城闻名。市中心第六街夜间人流密集，需注意饮酒与财物安全；夏季高温漫长，偶有强雷暴与突发山洪，巴顿泉等天然水域须留意水质与禁泳公告；市区自行车与电动滑板车较多，步行与骑行均需留意。"
     },
     "highlights": [
       "购物选择多",
@@ -48249,82 +50763,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "德州慢烤牛胸肉（BBQ Brisket）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "早餐玉米卷（Breakfast Taco）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "炸鸡排（Chicken Fried Steak）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "德州-墨西哥芝士酱与玉米片（Queso & Nachos）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "科拉奇捷克酥皮点心（Kolache，德州中部常见）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "德州州议会大厦（Texas State Capitol）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "国会大道桥（日落蝙蝠出巢观赏点）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "巴顿泉泳池（Barton Springs Pool）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "齐尔克公园（Zilker Park）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "布洛克德州历史博物馆（Bullock Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "南国会大道街区（South Congress / SoCo）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "西南偏南大会（SXSW）",
+          "date": "3月中旬",
+          "desc": "音乐、电影与科技跨界的大型节展，市中心场馆与酒吧演出密集、住宿紧张。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "奥斯汀骄傲节（Austin Pride）",
+          "date": "8月",
+          "desc": "在国会大道一带举行的 LGBTQ+ 游行与庆典，配套有街区派对与演出。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "奥斯汀城市极限音乐节（ACL Festival）",
+          "date": "10月（连续两个周末）",
+          "desc": "在齐尔克公园举行的大型音乐节，汇集摇滚、独立与乡村音乐阵容。"
+        },
+        {
+          "name": "奥斯汀马拉松（Austin Marathon）",
+          "date": "2月中旬",
+          "desc": "赛道穿过州议会大厦、南 Congress 与市区住宅区，当日多处道路封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -48723,7 +51262,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "墨西哥城建于阿兹特克首都特诺奇提特兰之上，1521年后为新西班牙首府，今为首都与拉美最大城市之一。海拔约2240米，初到可能头痛气喘，首日宜放缓行程。地处地震带且地基为古湖床，听到SASMEX警报须按指引撤离。主要风险是地铁、历史中心与集市的扒窃抢劫，夜间建议乘正规网约车；私立医院多集中在西南城区，建议购买旅行保险。"
     },
     "highlights": [
       "购物选择多",
@@ -48746,82 +51286,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "牧羊人烤肉塔可（Tacos al pastor，菠萝腌猪肉，街头摊招牌）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "玉米粽（Tamales，常配玉米热饮 atole 作早餐）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "波索莱玉米浓汤（Pozole，配萝卜、牛至、青柠）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "玉米杯（Esquites / Elote，街头玉米粒配柠檬辣椒粉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "手工玉米厚饼（Tlacoyo，豆泥馅现做玉米饼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "特奥蒂瓦坎古城与太阳金字塔、月亮金字塔（Teotihuacán，城东北近郊）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "国立人类学博物馆（Museo Nacional de Antropología）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "查普尔特佩克城堡与查普尔特佩克森林公园（Castillo de Chapultepec / Bosque de Chapultepec）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "宪法广场与大都会主教座堂、国立宫壁画（Zócalo / Catedral Metropolitana / Palacio Nacional）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "霍奇米尔科运河与漂浮花园（Xochimilco，彩色平底船 trajinera）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "弗里达·卡罗博物馆（Museo Frida Kahlo，科约阿坎区蓝屋）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "亡灵节（Día de Muertos）",
+          "date": "10月下旬至11月2日",
+          "desc": "墨西哥最具代表性的节日，市区有亡灵节大游行，家家设祭坛（ofrenda），霍奇米尔科一带另有夜游船活动"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "独立日庆典（Grito de Independencia）",
+          "date": "9月15日夜至9月16日",
+          "desc": "宪法广场鸣钟重演多洛雷斯呼声，次日举行阅兵，市中心人流极大、封路范围广"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "瓜达卢佩圣母瞻礼",
+          "date": "12月12日",
+          "desc": "天主教重要朝圣日，大量信众徒步前往瓜达卢佩圣母大教堂，周边交通管制"
+        },
+        {
+          "name": "Vive Latino 音乐节",
+          "date": "通常3—4月（春季）",
+          "desc": "在 Foro Sol 体育场举办的大型拉丁摇滚音乐节，一日内多舞台演出"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -49241,7 +51806,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "坎昆原为小渔村，1970年代由墨西哥政府规划开发为旅游度假区，依托加勒比海白沙滩与周边玛雅遗址成为拉美最热门目的地之一，酒店区与市中心相互分离。旅游区治安总体可控，但需提防饮品被动手脚、出租车不打表与街头推销陷阱，夜间尽量结伴并搭乘正规车辆；飓风季（6月至11月）可能影响行程；自来水不宜直饮，建议饮用瓶装水。"
     },
     "highlights": [
       "多元文化",
@@ -49264,82 +51830,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "香蕉叶慢烤猪肉（Cochinita Pibil）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "牧师烤肉玉米卷（Tacos al Pastor）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "酸橘汁腌鱼（Ceviche）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "街头烤玉米（Elote）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "炸大蕉片（Tostones）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "坎昆酒店区白沙海滩（Zona Hotelera）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "坎昆水下雕塑博物馆（MUSA）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "女人岛（Isla Mujeres，近郊渡轮可达）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "埃尔雷伊玛雅遗址（El Rey Ruins，酒店区内）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "天然井溶洞潜水（Cenote）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "图卢姆玛雅海滨遗址（Tulum，近郊一日游）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "坎昆狂欢节（Carnaval de Cancún）",
+          "date": "2月至3月",
+          "desc": "以花车巡游、彩装舞蹈与街头派对为主的传统狂欢节，市中心一带人流密集。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "春假（Spring Break）",
+          "date": "3月至4月",
+          "desc": "北美学生假期集中涌入，海滩与夜店人流剧增，需注意饮酒、溺水与个人财物安全。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "墨西哥独立日庆典",
+          "date": "9月16日",
+          "desc": "全国性节日，广场有喊口号仪式、焰火与墨西哥传统音乐舞蹈表演。"
+        },
+        {
+          "name": "亡灵节（Día de Muertos）",
+          "date": "11月1日至2日",
+          "desc": "以万寿菊、骷髅糖与祭坛纪念逝者的传统节日，被列入人类非物质文化遗产。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -49738,7 +52329,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "圣保罗1554年由耶稣会士建村，19世纪因咖啡出口繁荣，20世纪成为巴西工业与金融中心，意大利、日本、黎巴嫩等移民塑造了今天的饮食版图，南半球最大城市之一。治安方面盗窃与抢夺（含银行取款后被尾随）较常见，历史中心塞区夜间人流散后风险较高，夜间建议网约车。公立医疗免费但拥挤，私立 Hospital Albert Einstein、Sírio-Libanês 水平高且昂贵，建议保险。"
     },
     "highlights": [
       "科技发达",
@@ -49761,82 +52353,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "莫塔德拉香肠三明治（Sanduíche de mortadela，市立市场名物）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "黑豆炖肉（Feijoada，周末传统正餐）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "圣保罗风味干肉套餐（Virado à paulista，豆泥配干牛肉、木薯粉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "集市炸饼（Pastel de feira，配甘蔗汁 caldo de cana）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "奶酪面包球（Pão de queijo，面包店与咖啡馆常见）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "圣保罗艺术博物馆（MASP，保利斯塔大道上的玻璃悬挂建筑）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "伊比拉普埃拉公园与双年展馆（Parque Ibirapuera / Pavilhão da Bienal）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "保利斯塔大道（Avenida Paulista）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "蝙蝠侠涂鸦巷（Beco do Batman，Vila Madalena 街区）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣保罗市立市场（Mercado Municipal / Mercadão，拱顶彩窗建筑）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "自由区日本街（Bairro da Liberdade，日本侨民街区与周末集市）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "圣保罗狂欢节（Carnaval de São Paulo）",
+          "date": "通常2—3月",
+          "desc": "桑巴舞校在 Anhembi 桑巴大道举行评级游行，同期全城有大量街头 blocos 狂欢"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "LGBT+ 骄傲游行（Parada do Orgulho LGBT）",
+          "date": "6月（多为月中或下旬周日）",
+          "desc": "沿保利斯塔大道举行，是世界上规模最大的骄傲游行之一"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "文化不夜城（Virada Cultural）",
+          "date": "通常5月",
+          "desc": "24小时不间断的免费演出、电影与展览，覆盖市中心多个舞台"
+        },
+        {
+          "name": "圣保罗双年展（Bienal de São Paulo）",
+          "date": "双数年9月至12月",
+          "desc": "世界重要当代艺术双年展之一，在伊比拉普埃拉公园的双年展馆举办"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -50262,7 +52879,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "里约1565年由葡萄牙人建立，1763至1960年间为巴西首府与首都，重要港口与文化中心，2016年举办奥运会。城市社会分化明显，山坡上的贫民社区与旅游区相邻，不宜自行进入陌生社区，Comuna 类贫困社区建议参加正规导览。游客主要风险是海滩与人流中的扒窃、抢手机和夜间抢劫；南区（Zona Sul）与沿海比北部较好。公立医院免费但拥挤，私立 Copa Star 等昂贵，全年需防蚊。"
     },
     "highlights": [
       "购物选择多",
@@ -50285,82 +52903,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "黑豆炖肉（Feijoada，周六传统餐配米饭、木薯粉与橙片）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "里约风味牛肉碎饭（Picadinho carioca，配黑豆、木薯粉 farofa 与煎蛋）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "巴西烤肉（Churrasco，rodízio 式续盘烤肉店）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "鳕鱼球（Bolinho de bacalhau，小酒馆 botequim 下酒菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "阿萨伊果碗（Açaí na tigela，海滩摊常见）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "基督像（Cristo Redentor，科尔科瓦多山顶）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "甜面包山缆车（Bondinho do Pão de Açúcar）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "科帕卡巴纳海滩（Praia de Copacabana）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "伊帕内马海滩与两兄弟山（Praia de Ipanema / Morro Dois Irmãos）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "塞勒隆阶梯与拉帕拱门（Escadaria Selarón / Arcos da Lapa）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "蒂茹卡国家公园（Parque Nacional da Tijuca，城市中的热带雨林）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "里约狂欢节（Carnaval do Rio）",
+          "date": "通常2月或3月（四旬斋前）",
+          "desc": "桑巴大道（Sambódromo）的桑巴舞校游行加全城街头 blocos，为世界最著名狂欢节"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "科帕卡巴纳跨年庆典（Réveillon）",
+          "date": "12月31日夜",
+          "desc": "海滩数十万人看烟花过大年，穿白衣是传统，结束后地铁与道路长时间拥挤"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "里约国际电影节（Festival do Rio）",
+          "date": "通常10月",
+          "desc": "南美重要影展，市区多家影院放映数百部巴西与国际影片"
+        },
+        {
+          "name": "六月节（Festas Juninas）",
+          "date": "6月",
+          "desc": "庆祝丰收的街头乡村风市集，玉米制品、方形舞（quadrilha）与格子衬衫装扮"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -50780,7 +53423,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "布宜诺斯艾利斯1536年首次建城后被弃，1580年重建，1880年成为联邦首都，20世纪初欧洲移民潮带来探戈文化，被称为南美巴黎。主要治安问题是佛罗里达街、地铁与公交上的扒窃，以及摩托车飞车抢劫（motochorro）；随身不要外露手机，夜间用 radio taxi 或网约车。经济波动大、现金交易普遍，ATM 取款需注意周边。私立 Hospital Italiano 水平高，建议购保险。"
     },
     "highlights": [
       "自然景观丰富",
@@ -50803,82 +53447,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "阿根廷烤肉（Asado / parrilla，牛排与牛肠等内脏）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "恩潘纳达馅饼（Empanadas，烤箱或油炸馅饼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "那不勒斯式米兰内萨（Milanesa a la napolitana，炸肉排铺火腿番茄酱奶酪）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "香肠三明治（Choripán，配青酱 chimichurri）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "阿尔法霍尔夹心饼干（Alfajor，牛奶焦糖 dulce de leche 馅）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "方尖碑与七月九日大道（Obelisco / Avenida 9 de Julio）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "五月广场与玫瑰宫（Plaza de Mayo / Casa Rosada）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "博卡区卡迷你托街（Caminito，La Boca，彩色铁皮屋）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "雷科莱塔公墓（Cementerio de Recoleta，贝隆夫人墓）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣特尔莫老区与多雷戈广场集市（San Telmo / Plaza Dorrego）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "科隆剧院（Teatro Colón）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "布宜诺斯艾利斯探戈节与世锦赛（Festival y Mundial de Tango）",
+          "date": "通常8月",
+          "desc": "全城免费舞会、大师课与演出，并在 Luna Park 举行探戈世界锦标赛决赛"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "布宜诺斯艾利斯国际书展（Feria Internacional del Libro）",
+          "date": "通常4月下旬至5月",
+          "desc": "西班牙语世界最重要的书展之一，在 La Rural 展览中心举办"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "博物馆之夜（La Noche de los Museos）",
+          "date": "通常11月",
+          "desc": "一晚内上百家博物馆与文化机构免费开放至凌晨，交通与场馆极度拥挤"
+        },
+        {
+          "name": "港口版狂欢节（Carnaval / murgas porteñas）",
+          "date": "2月（多为周末与狂欢节假期）",
+          "desc": "各街区 murga 鼓队与彩车队巡演，规模小于巴西但社区氛围强"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -51278,7 +53947,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "圣地亚哥1541年由瓦尔迪维亚建立在马波乔河畔，1818年起为智利首都，是安第斯山脚盆地中的政治与商业中心。冬季（6—8月）逆温导致空气污染明显，呼吸道敏感者需留意。地处地震带，2010年大地震曾造成较大破坏，建筑抗震标准较高。治安在拉美属较好水平，但地铁、武器广场与贝拉维斯塔夜间扒窃常见，时有游行示威影响交通，应避开人群聚集。私立 Clínica Alemana 水平高。"
     },
     "highlights": [
       "购物选择多",
@@ -51301,82 +53971,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "智利牛肉馅饼（Empanada de pino，牛肉末、洋葱、鸡蛋与橄榄）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "玉米牛肉烤饼（Pastel de choclo，玉米糊烤牛肉馅）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "智利式热狗（Completo，番茄、鳄梨与酸奶油酱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "海鲜杂烩汤（Paila marina，中央市场海鲜馆名菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "智利家常炖汤（Cazuela de vacuno / de ave）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "圣卢西亚山（Cerro Santa Lucía，城市发源地）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣克里斯托瓦尔山与山顶圣母像（Cerro San Cristóbal，缆车与索道）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "武器广场与圣地亚哥大都会主教座堂（Plaza de Armas / Catedral Metropolitana）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉莫内达宫（Palacio de La Moneda，总统府）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "贝拉维斯塔区与聂鲁达故居拉查斯柯娜（Barrio Bellavista / La Chascona）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣地亚哥中央市场（Mercado Central，海鲜市场与老餐馆）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "智利国庆（Fiestas Patrias）",
+          "date": "9月18日前后（含19日建军节）",
+          "desc": "全城搭起 fonda 帐篷，有 cueca 国舞、烤肉与智利美食，饮酒多、交通繁忙"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "圣地亚哥千剧艺术节（Santiago a Mil）",
+          "date": "通常1月",
+          "desc": "拉丁美洲重要戏剧节，国内外剧团在多个剧场与街区演出"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "智利站音乐节（Lollapalooza Chile）",
+          "date": "通常3月",
+          "desc": "在圣地亚哥的 Bicentenario Cerrillos 公园举办的大型国际音乐节，单日人流数万"
+        },
+        {
+          "name": "圣地亚哥国际书展（FILSA）",
+          "date": "通常10月下旬至11月",
+          "desc": "在马波乔车站文化中心（Estación Mapocho）举办的全国最大书展"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -51774,7 +54469,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "利马1535年由皮萨罗建立，称诸王之城，殖民时期为西班牙南美总督辖区核心港城，今为秘鲁首都与最大城市。海拔约150米，无高原反应风险，沿海常年阴雾体感偏凉。地处环太平洋地震带，地震风险高，入住时留意疏散标识。治安上米拉弗洛雷斯、巴兰科、圣伊西德罗较好，盗窃与持械抢劫常见，武器广场周边夜间不宜独行；机场与车站有假出租车。私立 Ricardo Palma 等诊所常被推荐转诊。"
     },
     "highlights": [
       "自然景观丰富",
@@ -51797,82 +54493,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "酸橘汁腌鱼（Ceviche，配玉米粒与红薯，海鲜餐馆招牌）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "烤牛心串（Anticuchos de corazón，街头炭烤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "黄辣椒炖鸡（Ají de gallina，配米饭与橄榄）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "利马风味土豆泥（Causa limeña，黄土豆泥夹海鲜或鸡肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "利马叹息（Suspiro limeño，蛋白霜配牛奶焦糖甜点）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "利马历史中心与武器广场（Centro Histórico / Plaza de Armas，大教堂与总统府）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣弗朗西斯科修道院与地下墓穴（Convento y Catacumbas de San Francisco）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "米拉弗洛雷斯区与爱情公园（Miraflores / Parque del Amor，海边悬崖）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "巴兰科区与叹息桥（Barranco / Puente de los Suspiros）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉尔科博物馆（Museo Larco，前哥伦布时期文物）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "帕查卡马克考古遗址（Santuario Arqueológico de Pachacamac，城南近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "奇迹之主游行（Señor de los Milagros）",
+          "date": "10月（多次出巡）",
+          "desc": "利马最重要的宗教活动，紫袍信众抬画像穿城游行，人潮拥挤需提前安排路线"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "独立日庆典（Fiestas Patrias）",
+          "date": "7月28日至29日",
+          "desc": "国庆日阅兵与演出，同时也是国内出行高峰，机场与长途车站排队时间长"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "秘鲁国际电影节（Festival de Cine de Lima）",
+          "date": "通常8月",
+          "desc": "由利马天主教大学主办的重要影展，放映拉美新片并举办竞赛单元"
+        },
+        {
+          "name": "米斯图拉美食节（Mistura）",
+          "date": "多在9月，近年按年度不定期举办",
+          "desc": "曾多次举办的秘鲁大型美食展，汇集海岸、安第斯与亚马逊食材，出发前需先确认当年是否举办"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -52270,7 +54991,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "波哥大1538年在穆伊斯卡人聚落基础上建立，原名圣菲，今为哥伦比亚政治、金融与文化中心。海拔约2640米，初到可能气短、头痛，首日宜放慢节奏。治安：扒窃、抢手机与假出租车诈骗较常见，坎德拉利亚区街巷入夜后冷清，建议结伴或乘车返回，夜间不要前往陌生南部街区，示威罢工时有发生并可能封锁道路。医疗资源在南美属较好，私立 Fundación Santa Fe 等为主要选择。"
     },
     "highlights": [
       "购物选择多",
@@ -52293,82 +55015,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "波哥大土豆鸡汤（Ajiaco bogotano，配酸奶油、刺山柑与牛至）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "玉米叶蒸肉粽（Tamal，配热巧克力的传统早餐）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "奶香蛋汤（Changua，牛奶马铃薯葱花汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "热巧克力配奶酪面包（Chocolate santafereño con queso）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "威化饼夹牛奶焦糖（Obleas con arequipe，街头甜点）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "黄金博物馆（Museo del Oro，前哥伦布时期金器）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "玻利瓦尔广场与首主教座堂（Plaza de Bolívar / Catedral Primada）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "蒙塞拉特山（Cerro de Monserrate，缆车与山顶朝圣教堂）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "波特罗博物馆与拉坎德拉里亚老城（Museo Botero / La Candelaria）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西蒙·玻利瓦尔都会公园（Parque Metropolitano Simón Bolívar）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西帕基拉盐教堂（Catedral de Sal de Zipaquirá，城北近郊一日游）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "伊比利亚美洲戏剧节（Festival Iberoamericano de Teatro）",
+          "date": "双数年，通常3—4月",
+          "desc": "世界上规模最大的戏剧节之一，街头演出、剧团巡演遍布全城"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "波哥大国际书展（FILBo）",
+          "date": "通常4月下旬至5月上旬",
+          "desc": "在 Corferias 展览中心举办，拉美重要出版盛事，读者日人流极大"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "公园摇滚音乐节（Rock al Parque）",
+          "date": "多在年中或年末举办",
+          "desc": "市政府主办的免费户外摇滚音乐节，多年来以西蒙玻利瓦尔公园为主要场地"
+        },
+        {
+          "name": "波哥大短片电影节（BOGOSHORTS）",
+          "date": "通常12月",
+          "desc": "聚焦短片与电影工业的行业影展，多场放映集中于市中心影院与电影院"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -52766,7 +55513,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "麦德林1616年建于阿布拉山谷，20世纪成为哥伦比亚纺织与工业重镇，1990年代曾因贩毒集团而暴力高发，2000年后通过缆车公交、图书馆公园等城市更新大幅改善。如今盗窃、抢劫案件仍存在，夜间不应独自前往不熟悉的街区与山坡社区；13区等社区建议白天随正规导览前往。不要参与任何毒品相关活动。地震与山体滑坡在雨季需留意。医疗资源较好，私立 Clínica Las Vegas 等较常见。"
     },
     "highlights": [
       "自然景观丰富",
@@ -52789,82 +55537,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "派莎拼盘（Bandeja paisa，红豆、炸猪皮、牛肉末、香肠、煎蛋与鳄梨）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "安蒂奥基亚玉米饼（Arepa antioqueña，配黄油与鲜奶酪）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "牛肚浓汤（Mondongo antioqueño）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炸奶酪球（Buñuelos，常与 natilla 同食）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "油炸拼盘（Picada / fritanga，分食式炸肉与木薯）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "博特罗广场（Plaza Botero，安蒂奥基亚博物馆前的雕塑群）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "麦德林现代艺术博物馆（Museo de Arte Moderno de Medellín, MAMM）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "探索公园（Parque Explora，科学馆与水族馆）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿尔维生态公园（Parque Arví，Metrocable 缆车直达）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "13号社区街头艺术区（Comuna 13，涂鸦与户外电动扶梯）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "瓜塔佩巨石（Piedra del Peñol，城东近郊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "鲜花节（Feria de las Flores）",
+          "date": "通常8月上中旬",
+          "desc": "麦德林最盛大的节庆，核心是花农背花巡游 desfile de silleteros，另有音乐会与老爷车巡游"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "圣诞灯饰（Alumbrados Navideños）",
+          "date": "12月上旬至次年1月初",
+          "desc": "由公共事业公司 EPM 主办的灯饰，沿河与主要街道布置，夜间人气极高"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "麦德林国际诗歌节（Festival Internacional de Poesía）",
+          "date": "通常6—7月",
+          "desc": "创办于1990年代的诗歌盛会，在多个文化场馆与街区举办朗诵"
+        },
+        {
+          "name": "哥伦比亚时尚周（Colombiamoda）",
+          "date": "通常7月",
+          "desc": "拉美重要时装与纺织贸易展，在 Mayor 会展中心举办，含公开秀与订货会"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -53262,7 +56035,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "巴拿马城1519年建立，长期是西班牙运送美洲白银的中转港；1671年被英国海盗摩根焚毁后迁至现址重建，1903年脱离哥伦比亚独立，1904至1999年间运河区由美国管辖。今天是重要的国际金融与航运中心。整体治安在中美洲相对平稳，但盗窃与抢夺（含老城区冷清街段与海滨步道夜间）时有发生，建议结伴并乘正规网约车。雨季蚊虫多，登革热需防蚊。私立医院 Pacífica Salud 等装备较好。"
     },
     "highlights": [
       "自然景观丰富",
@@ -53285,82 +56059,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "巴拿马山药鸡汤（Sancocho panameño，鸡与 ñame 山药熬煮）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "香蕉叶玉米粉蒸肉（Tamal panameño）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "海鲈鱼酸橘汁腌鱼（Ceviche de corvina，海鲜市场名菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "木薯炸肉饼（Carimañola，木薯面团包肉馅油炸）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "猪皮三明治（Sándwich de sao，猪皮配柠檬汁夹面包）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "巴拿马运河米拉弗洛雷斯船闸游客中心（Esclusas de Miraflores / Centro de Visitantes）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "卡斯科别霍老城（Casco Viejo / Casco Antiguo，世界遗产）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "巴拿马旧城遗址（Panamá Viejo，世界遗产）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿马多堤道（Calzada de Amador / Causeway，海滨长廊）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "生物多样性博物馆（Biomuseo，弗兰克·盖里设计）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "安孔山（Cerro Ancón，城市制高点）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "巴拿马狂欢节（Carnaval de Panamá）",
+          "date": "通常2月或3月（连续四天至忏悔周二）",
+          "desc": "全城水车队与鼓乐队狂欢，海滨大道有舞台与游行，内地的拉斯塔布拉斯庆典更盛大"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "独立日与国旗月庆典",
+          "date": "11月（3日独立日、28日脱离西班牙纪念日）",
+          "desc": "官方假日期间举行全国性游行、鼓乐队与焰火，大学与国家旗帜游行为亮点"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "巴拿马爵士节（Panama Jazz Festival）",
+          "date": "通常1月",
+          "desc": "由丹尼洛·佩雷斯创办的音乐节，含大师课与市区多场地演出"
+        },
+        {
+          "name": "巴拿马国际电影节（IFF Panamá）",
+          "date": "通常4—5月",
+          "desc": "中美洲重要影展，集中展映伊比利亚美洲新片并设竞赛单元"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -53758,7 +56557,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "开罗由法蒂玛王朝于969年建城，萨拉丁在此筑城堡，长期为伊斯兰世界的政治与文化中心，吉萨金字塔就在城郊。老城区与景区针对游客的强买强卖、假导游与出租车不打表较普遍；交通拥堵、驾驶习惯混乱，过马路需格外小心；夏季高温、沙尘频发；自来水不可直饮，建议只喝瓶装水并慎吃生冷沙拉；女性游客宜结伴并注意着装。"
     },
     "highlights": [
       "自然风光独特",
@@ -53781,82 +56581,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "库沙里（Koshari，米饭意面扁豆杂烩）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "塔米亚（Ta'ameya，埃及蚕豆丸子）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "富尔（Ful Medames，炖蚕豆）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "穆卢赫耶（Molokhia，锦葵叶汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "马哈什（Mahshi，肉米酿蔬菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "吉萨金字塔与狮身人面像（Giza Pyramids / Sphinx）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
+          "name": "大埃及博物馆（Grand Egyptian Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         },
         {
-          "name": "城市公园",
+          "name": "汗哈利利市场（Khan el-Khalili）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "萨拉丁城堡与穆罕默德·阿里清真寺（Citadel of Salah al-Din）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "科普特开罗（Coptic Cairo，含悬空教堂）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "开罗公园",
           "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "desc": "市中心绿地休闲区",
           "hidden": false
-        },
-        {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "斋月结束后的三天假期，全城公园与尼罗河畔热闹，家庭互访并分发甜点。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "宰牲节（古尔邦节，Eid al-Adha）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "伊斯兰教最重要的节日，家庭聚会并施舍肉食，公共假期连休数日。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "开罗国际电影节（Cairo International Film Festival）",
+          "date": "每年11月",
+          "desc": "创办于1976年，是中东与非洲历史最久的国际电影节之一，开罗歌剧院为主会场。"
+        },
+        {
+          "name": "闻风节（Sham El-Nessim）",
+          "date": "科普特复活节后的星期一，多在4—5月",
+          "desc": "源自古埃及的春季踏青节，全家到公园与尼罗河边野餐，吃咸鱼、彩蛋与生菜。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -54266,7 +57091,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "开普敦1652年由荷兰东印度公司建立为补给站，后经英国统治，1994年后成为南非立法首都与旅游门户。城市治安差异极大：游客区与富人区相对安全，但入室抢劫、持械抢劫与夜间独行风险高，天黑后不建议步行；桌山等步道须结伴；夏季（12—2月）风大、紫外线强；市政供水区自来水基本安全；自驾在路口停车时勿让陌生人靠近。"
     },
     "highlights": [
       "物价相对低",
@@ -54289,82 +57115,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "南非炭火烤肉（Braai）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "波波蒂（Bobotie，咖喱肉末焗饼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "开普马来咖喱（Cape Malay Curry）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "盖茨比（Gatsby，开普敦长条夹心三明治）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "马尔瓦布丁（Malva Pudding，杏酱海绵蛋糕）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "桌山（Table Mountain）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "罗本岛（Robben Island）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "好望角与开普角（Cape of Good Hope / Cape Point）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "波卡普（Bo-Kaap，马来区彩色老屋）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "维多利亚与阿尔弗雷德海滨（V&A Waterfront）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "博尔德斯海滩企鹅栖息地（Boulders Beach Penguin Colony）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "开普敦国际爵士音乐节（Cape Town International Jazz Festival）",
+          "date": "每年3月底至4月初",
+          "desc": "非洲规模最大的爵士节，国际与本地乐手同台，市中心绿市广场另设免费演出。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "开普敦自行车赛（Cape Town Cycle Tour）",
+          "date": "每年3月的第二个周日",
+          "desc": "全球规模最大的计时自行车赛，三万余名选手沿半岛绕行109公里，途经查普曼峰。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "开普敦国际风筝节（Cape Town International Kite Festival）",
+          "date": "每年10月下旬",
+          "desc": "在穆济贝格的赞德弗莱湖畔放飞大型风筝，设制作工坊与美食摊，收入用于慈善。"
+        },
+        {
+          "name": "开普敦米纳斯特狂欢节（Kaapse Klopse）",
+          "date": "每年1月2日（新年后的“第二个新年”）",
+          "desc": "源于19世纪的彩色缎面盛装游行，乐队与舞者穿城而过，是最古老的街头狂欢传统之一。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -54790,7 +57641,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "约翰内斯堡1886年因威特沃特斯兰德发现金矿而建城，是南非最大城市与经济中心，索韦托与宪法山记录了种族隔离与抗争的历史。城市犯罪率较高，持械抢劫、劫车与入室盗窃常见，建议白天活动、夜间不要步行、避免显露贵重物品；前往索韦托等社区最好随当地向导；自驾遇路口停车须锁好车门；私立医院水平高但需先付费或出示保险。"
     },
     "highlights": [
       "自然风光独特",
@@ -54813,82 +57665,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "希萨尼亚玛炭烤肉（Shisa Nyama / Braai）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "科塔（Kota，四分之一面包夹薯条的豪登省街头主食）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "波波蒂（Bobotie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "查卡拉卡（Chakalaka，辣味蔬菜酱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "南非干肉（Biltong，风干腌肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "种族隔离博物馆（Apartheid Museum）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "宪法山（Constitution Hill）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "索韦托与曼德拉故居（Soweto / Mandela House）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "黄金城主题公园（Gold Reef City）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "人类摇篮与马罗彭游客中心（Cradle of Humankind / Maropeng）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡尔顿中心观景台（Carlton Centre，非洲之巅）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "约翰内斯堡国际莫扎特音乐节（JIMF）",
+          "date": "每年1月底至2月初",
+          "desc": "为期约一周的古典音乐节，在林德音乐厅与多处教堂举办交响乐、室内乐与管风琴演出。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "FNB 约翰内斯堡艺术博览会（Art Joburg）",
+          "date": "每年9月",
+          "desc": "非洲重要的当代艺术博览会，在桑顿会议中心集中呈现非洲画廊与艺术家作品。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "约翰内斯堡骄傲游行（Joburg Pride）",
+          "date": "每年10月",
+          "desc": "南非规模最大的骄傲活动之一，游行与社区活动主要在桑顿一带举行。"
+        },
+        {
+          "name": "索韦托马拉松（Soweto Marathon）",
+          "date": "每年11月",
+          "desc": "以FNB体育场为起终点、穿越索韦托街区的路跑赛事，设全程、半程与10公里项目。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -55315,7 +58192,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "拉各斯原为约鲁巴人的渔村与奴隶贸易港，1861年被英国吞并，1914年起为尼日利亚殖民地首府，首都迁往阿布贾后仍是全国经济与港口中心。城市治安风险高：抢劫、绑架与诈骗时有发生，夜间避免外出与单独乘出租车；交通极度拥堵；疟疾为全年风险，须防蚊并备抗疟药；自来水不可直饮，只喝瓶装水；海滨与泻湖有溺水风险，慎入陌生水域。"
     },
     "highlights": [
       "物价相对低",
@@ -55338,82 +58216,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "乔洛夫饭（Jollof Rice）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "苏亚（Suya，辣味炭烤肉串）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "埃古斯汤（Egusi Soup，瓜子仁浓汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "阿马拉配埃杜汤（Amala with Ewedu）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "阿卡拉（Akara，豆泥炸丸）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "莱基保护中心（Lekki Conservation Centre，非洲最长树冠步道）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "尼基艺术画廊（Nike Art Gallery）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "自由公园（Freedom Park，殖民时期监狱改造的文化园）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉各斯国家博物馆（National Museum Lagos）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "新非洲神殿（New Afrika Shrine，Afrobeat 现场音乐场地）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "塔法瓦·巴莱瓦广场（Tafawa Balewa Square）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "拉各斯狂欢节（Lagos Carnival）",
+          "date": "每年复活节前后，多在3—4月",
+          "desc": "彩装花车与街头巡游，融合尼日利亚各族群与巴西风格的装扮、鼓乐与舞蹈。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "费拉节（Felabration）",
+          "date": "每年10月",
+          "desc": "纪念Afrobeat先驱费拉·库蒂的音乐周，在新非洲神殿（New Afrika Shrine）举办演出、展览与讲座。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "埃约节（Eyo Festival）",
+          "date": "不定期举办，多在纪念重要人物时举行",
+          "desc": "拉各斯岛的白衣高帽面具游行，被视为巴西狂欢节的前身，是拉各斯最独特的传统仪式。"
+        },
+        {
+          "name": "拉各斯时装周（Lagos Fashion Week）",
+          "date": "每年10月",
+          "desc": "非洲重要的时装发布平台，在维多利亚岛的联邦宫殿酒店举办走秀与设计师展售。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -55807,7 +58710,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "内罗毕1899年作为乌干达铁路的补给站建城，1963年肯尼亚独立后成为首都，如今是东非的金融、交通与科技中心。城市盗窃、抢劫与小巴（matatu）扒窃较常见，夜间避免独行、尽量使用网约车；海拔约1795米，昼夜温差大；市区疟疾风险较低，前往低地仍需防蚊；自来水建议煮沸或只喝瓶装水；政治集会期间应避免前往人群密集处。"
     },
     "highlights": [
       "物价相对低",
@@ -55830,82 +58734,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "尼亚马乔马（Nyama Choma，炭烤山羊肉）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "乌加利配苏库马维基（Ugali & Sukuma Wiki）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "斯瓦希里香饭（Pilau）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "吉泰里（Githeri，玉米与豆类炖菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "曼达齐（Mandazi，斯瓦希里炸面点）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "内罗毕国家公园（Nairobi National Park）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "长颈鹿中心（Giraffe Centre）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "大象孤儿院（David Sheldrick Wildlife Trust）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡伦·布利克森博物馆（Karen Blixen Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "内罗毕国家博物馆（Nairobi National Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡鲁拉森林（Karura Forest）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "共和国日（Jamhuri Day）",
+          "date": "每年12月12日",
+          "desc": "纪念1963年肯尼亚独立的全国假日，内罗毕举行阅兵、演讲与传统歌舞表演。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "渣打内罗毕马拉松（Standard Chartered Nairobi Marathon）",
+          "date": "每年10月下旬",
+          "desc": "东非规模最大的路跑赛事之一，设全程、半程与10公里，吸引大量国际选手与观众。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "内罗毕餐厅周（Nairobi Restaurant Week）",
+          "date": "每年1月下旬至2月，另有8月场次",
+          "desc": "全市数十家餐厅推出固定价格套餐，是体验内罗毕多元饮食的年度活动。"
+        },
+        {
+          "name": "Blankets & Wine 音乐节",
+          "date": "每年多场，通常在6月、9月与12月",
+          "desc": "东非知名露天音乐野餐节，非洲音乐、时尚与美食市集结合，可自带野餐垫入场。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -56318,7 +59247,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "卡萨布兰卡原为柏柏尔人的渔村，20世纪初法国殖民当局在此建设现代化港口与新城，逐步成为摩洛哥最大城市与经济首都。街头扒窃与假冒“向导”较多，老麦地那夜间人少需谨慎；女性游客常遇言语骚扰，宜结伴；交通拥堵，出租车不打表时需事先议价；自来水不建议直饮，宜只喝瓶装水；夏季多海雾潮湿，冬季温和多雨。"
     },
     "highlights": [
       "物价相对低",
@@ -56341,82 +59271,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "塔吉锅（Tagine，陶锅慢炖菜）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "古斯古斯（Couscous，周五传统粗麦饭）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "帕斯蒂拉（Pastilla，酥皮肉派）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "哈里拉汤（Harira，番茄豆类浓汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "摩洛哥薄荷茶（Atay bi Na'na）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "哈桑二世清真寺（Hassan II Mosque，摩洛哥极少数对非穆斯林开放的清真寺，需购票导览）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "卡萨布兰卡老麦地那（Old Medina of Casablanca）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "哈布斯新区（Habous / Nouvelle Médina）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "穆罕默德五世广场（Place Mohammed V）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "艾因迪亚布滨海大道（Ain Diab Corniche）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣心教堂（Église du Sacré-Cœur）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "卡萨布兰卡国际爵士音乐节（Jazzablanca）",
+          "date": "每年7月初",
+          "desc": "创办于2006年的摩洛哥重要音乐节，在安法公园设多个舞台，涵盖爵士、放克与世界音乐。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "斋月结束后的三天假期，家庭聚会、互赠甜点，海滨与老城夜市热闹。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "宰牲节（古尔邦节，Eid al-Adha）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "伊斯兰教最重要的节日，家庭聚会并行善施舍，多数商铺休业数日。"
+        },
+        {
+          "name": "摩洛哥独立日（国庆日）",
+          "date": "每年11月18日",
+          "desc": "纪念1956年结束保护地地位恢复独立，全城举行官方仪式、焰火与庆祝活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -56814,7 +59769,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "马拉喀什由阿尔摩拉维德王朝于1070年建城，曾数次成为摩洛哥王朝首都，红城墙老城（麦地那）被列为世界遗产。杰马夫纳广场与麦地那巷内扒窃、“好心带路”骗局与强索小费频繁；对广场上的耍蛇与纹身摊拍照会被索费；夏季6—9月白天常超40℃；自来水不宜直饮；礼拜区非穆斯林不得入内，参观需着装保守。"
     },
     "highlights": [
       "物价相对低",
@@ -56837,82 +59793,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "塔吉锅（Tagine）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "坦吉亚（Tangia，陶罐炭火慢炖肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "梅舒伊（Mechoui，慢烤整羊）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "帕斯蒂拉（Pastilla，鸽肉杏仁酥派）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "摩洛哥薄荷茶（Atay bi Na'na）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "杰马夫纳广场（Jemaa el-Fnaa）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "库图比亚清真寺（Koutoubia Mosque，非穆斯林不可入内，可观赏宣礼塔与玫瑰园）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "巴伊亚宫（Bahia Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马若雷勒花园（Jardin Majorelle）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "本尤素福神学院（Ben Youssef Madrasa）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "萨阿德王朝陵墓（Saadian Tombs）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "马拉喀什国际电影节（FIFM）",
+          "date": "每年11月底至12月初",
+          "desc": "北非最重要的电影节，会议宫举办红毯首映，杰马夫纳广场另有免费露天放映。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "马拉喀什民间艺术节（Festival National des Arts Populaires）",
+          "date": "每年6—7月",
+          "desc": "在巴迪宫与老城多处举办柏柏尔舞蹈、格纳瓦音乐、杂技与说书表演。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "斋月结束后的三天假期，家庭聚会并赠送甜点，老城集市人流密集。"
+        },
+        {
+          "name": "宰牲节（古尔邦节，Eid al-Adha）",
+          "date": "伊斯兰历12月10日（公历每年约提前11天）",
+          "desc": "伊斯兰教最重要的节日，家庭聚合并施舍，部分商铺与餐厅休业数日。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -57310,7 +60291,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "突尼斯城紧邻迦太基古城遗址，迦太基于公元前146年被罗马摧毁，此后阿拉伯人在此建城；1881—1956年为法国保护领地，独立后定为首都，宰图纳清真寺是老城核心。老城麦地那巷道复杂易迷路，扒窃偶有发生；政治集会与罢工偶发，出行前宜留意使馆提醒；夏季干热，沙漠行程须防中暑；自来水建议只喝瓶装水；女性游客宜着装保守。"
     },
     "highlights": [
       "物价相对低",
@@ -57333,82 +60315,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "布里克蛋（Brik à l'œuf，金枪鱼溏心蛋炸薄饼）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "突尼斯鱼古斯古斯（Couscous au poisson）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "拉布拉比（Lablabi，鹰嘴豆汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "沙克舒卡（Chakchouka，番茄炖蛋）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "梅尔盖兹香肠（Merguez，辣味羊肉肠）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "突尼斯麦地那（Medina of Tunis，世界遗产，含宰图纳清真寺，非穆斯林不可入祈祷厅）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "巴尔多博物馆（Bardo Museum，世界最大罗马马赛克收藏）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "迦太基遗址（Carthage，含安东尼浴场与布匿港口）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "西迪布赛义德（Sidi Bou Said，蓝白悬崖小镇）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "哈比卜·布尔吉巴大道（Avenue Habib Bourguiba）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉古莱特渔港（La Goulette）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "迦太基国际艺术节（Festival International de Carthage）",
+          "date": "每年7月中旬至8月中旬",
+          "desc": "创办于1964年，在迦太基的古罗马剧场举办音乐、戏剧与舞蹈演出，是马格里布最负盛名的艺术节。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "迦太基电影节（Journées Cinématographiques de Carthage，JCC）",
+          "date": "每年11月",
+          "desc": "创办于1966年，非洲与阿拉伯世界历史最久的电影节之一，最高奖项为金塔尼奖。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "突尼斯老城麦地那文化节",
+          "date": "每年斋月期间",
+          "desc": "老城的宫殿与经学院每晚开放，举办马卢夫古典音乐与苏菲吟唱夜场，气氛独特。"
+        },
+        {
+          "name": "开斋节（Eid al-Fitr）",
+          "date": "伊斯兰历10月1日（公历每年约提前11天）",
+          "desc": "斋月结束后的公共假期，家庭聚会与集市庆祝，多数机构休业数日。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -57806,7 +60813,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "阿克拉原为加族人的渔村，1877年成为英国黄金海岸殖民地首府，1957年加纳独立后成为首都。整体治安在非洲城市中相对可控，但夜间独行、海滩与市集扒窃需警惕；小巴（trotro）拥挤且无固定时刻表；疟疾为全年风险，须防蚊并备抗疟药；自来水不可直饮；雨季（4—7月、9—10月）低洼地区易内涝。"
     },
     "highlights": [
       "物价相对低",
@@ -57829,82 +60837,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "乔洛夫饭（Jollof Rice）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "瓦基耶（Waakye，米豆同煮饭）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "班库配烤罗非鱼（Banku with Grilled Tilapia）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "富富配棕榈果汤（Fufu with Palmnut Soup）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "凯莱韦莱（Kelewele，姜辣炸大蕉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "夸梅·恩克鲁玛纪念公园与陵墓（Kwame Nkrumah Memorial Park）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "詹姆斯敦历史街区与灯塔（Jamestown，含 Ussher Fort）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "独立广场与黑星门（Independence Square / Black Star Gate）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马科拉市场（Makola Market）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "拉巴迪海滩（Labadi Beach）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "W.E.B. 杜波依斯泛非文化中心（W.E.B. Du Bois Centre）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "加纳独立日（Independence Day）",
+          "date": "每年3月6日",
+          "desc": "纪念1957年脱离英国统治独立，黑星广场举行阅兵、演讲与文化表演。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "霍莫沃节（Homowo）",
+          "date": "每年8月至9月，各加族社区自定日期",
+          "desc": "加族丰收节，意为“驱赶饥饿”，有鼓乐游行、洒祭传统食物kpokpoi与家族团聚。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "查勒沃特街头艺术节（Chale Wote）",
+          "date": "每年8月",
+          "desc": "西非最大的街头艺术节，詹姆斯敦街区化身露天画廊，有壁画、装置、时装与现场音乐，免费入场。"
+        },
+        {
+          "name": "解放日（Emancipation Day）",
+          "date": "每年8月1日",
+          "desc": "纪念废除奴隶制的公共假日，阿克拉与沿海地区举行纪念仪式与文化活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -58302,7 +61335,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "亚的斯亚贝巴1886年由孟尼利克二世皇帝建城，意为“新鲜的花朵”，海拔约2355米，是非洲海拔最高的首都之一，也是非盟总部所在地。城市治安相对周边地区较好，但盗窃与扒窃在默卡托市场和公交车上常见，夜间避免独行；初到高原者易有头痛与气短；市区疟疾风险较低，前往低地须防蚊；自来水不可直饮；出租车多为合乘，上车前应议价。"
     },
     "highlights": [
       "自然风光独特",
@@ -58325,82 +61359,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "英吉拉配多罗瓦特（Injera with Doro Wat，埃塞国菜）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "提布斯（Tibs，香料铁板羊肉/牛肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "基特福（Kitfo，辣椒粉生拌牛肉末）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "希罗瓦特（Shiro Wat，鹰嘴豆辣酱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "埃塞俄比亚咖啡仪式（Ethiopian Coffee Ceremony）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "埃塞俄比亚国家博物馆（National Museum of Ethiopia，藏“露西”化石）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "圣三一大教堂（Holy Trinity Cathedral）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "恩托托山（Mount Entoto，含恩托托玛丽亚姆教堂）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "默卡托市场（Merkato，非洲最大露天市场）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "团结公园（Unity Park，大皇宫园区）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "民族学博物馆（Ethnological Museum，前海尔·塞拉西皇宫）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "主显节（Timket）",
+          "date": "每年1月19日（闰年1月20日），前夜开始",
+          "desc": "各教堂抬出约柜复制品（Tabot）游行至简梅达广场，信众守夜后于黎明接受圣水祝福。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "马斯卡尔节（Meskel）",
+          "date": "每年9月27日（闰年9月28日），前夜点燃篝火",
+          "desc": "纪念寻获真十字架，马斯卡尔广场竖起巨型“德梅拉”篝火，已被列入人类非物质文化遗产。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "埃塞俄比亚新年（Enkutatash）",
+          "date": "每年9月11日（闰年9月12日）",
+          "desc": "雨季结束、黄色雏菊盛开的时节，儿童穿白衣挨家唱歌送花，家庭聚餐并举行咖啡仪式。"
+        },
+        {
+          "name": "阿德瓦胜利日（Adwa Victory Day）",
+          "date": "每年3月2日",
+          "desc": "纪念1896年击败意大利军队的战役，孟尼利克二世广场一带举行纪念与献花活动。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -58791,7 +61850,8 @@ var CITY_DATABASE = {
           "desc": "Red-light area, drug trade, chaotic at night - Avoid late night visits",
           "risk": "Medium"
         }
-      ]
+      ],
+      "history": "悉尼1788年因英国第一舰队登陆而建立，是澳大利亚最早的欧洲殖民地、新南威尔士州首府与全国金融中心。治安整体良好，暴力犯罪少见，主要问题是景点人流中的偷窃，以及夜间市中心与国王十字一带因饮酒引发的争执。自然方面紫外线极强须防晒，冲浪只在红黄旗之间下水；夏季（12—2月）丛林火与烟霾会影响空气与郊野步道。公立 Royal Prince Alfred、St Vincent's 实力强，外国访客自费高，建议旅行保险。"
     },
     "highlights": [
       "空气清新",
@@ -58814,82 +61874,108 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "澳洲肉派（Meat pie，面包店与球场经典）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "香肠卷（Sausage roll，面包店国民小吃）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "悉尼岩蚝（Sydney Rock Oyster，悉尼鱼市场与海鲜餐厅）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炸鱼薯条（Fish and chips，邦迪与曼利海滩名店）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "拉明顿蛋糕（Lamington，澳洲巧克力椰丝蛋糕）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "悉尼歌剧院（Sydney Opera House）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "悉尼海港大桥（Sydney Harbour Bridge，可登桥攀爬）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "岩石区与环形码头（The Rocks / Circular Quay）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "邦迪海滩与邦迪至库吉海岸步道（Bondi Beach / Bondi to Coogee Walk）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "悉尼皇家植物园（Royal Botanic Garden Sydney）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "达令港（Darling Harbour）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "跨年烟花（Sydney New Year's Eve Fireworks）",
+          "date": "12月31日夜",
+          "desc": "以海港大桥与歌剧院为中心的烟花秀，是全球最早的大规模跨年庆典，需提前占位"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "活力悉尼灯光音乐节（Vivid Sydney）",
+          "date": "通常5月下旬至6月中旬",
+          "desc": "灯光投影、装置与音乐演出分布在歌剧院、环形码头与巴兰加鲁一带"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "悉尼同性恋狂欢节（Sydney Gay and Lesbian Mardi Gras）",
+          "date": "通常2月至3月初",
+          "desc": "以牛津街游行为高潮的LGBTQ+庆祝季，同期有电影节与派对系列活动"
+        },
+        {
+          "name": "澳大利亚日（Australia Day）",
+          "date": "1月26日",
+          "desc": "国庆日，海港上有赛舟与飞行表演，同时也是原住民相关的争议纪念日，社会讨论较多"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "排队文化严格",
+        "海滩注意防晒",
+        "公共交通上保持安静",
+        "小费非必须，可给10%",
+        "左侧通行"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -59282,7 +62368,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "墨尔本1835年建立，1850年代淘金热使其迅速成为澳洲的商业与文化中心，今为维多利亚州首府，以咖啡馆、街头艺术与体育赛事闻名。治安在澳洲大城市中属平稳水平，夜间市中心酒吧区可能出现争执与骚扰，公交与拥挤场所有扒窃。天气变化剧烈，常有“一天四季”的体验；夏季丛林火烟霾可能影响郊区线路。公立 Royal Melbourne、The Alfred 为主要医院，外国访客自费昂贵，建议购旅行保险。"
     },
     "highlights": [
       "户外运动多",
@@ -59305,82 +62392,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "牛油果吐司早午餐（Avocado toast with poached egg，墨尔本咖啡馆招牌）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "帕尔玛鸡排（Chicken parmigiana，酒吧 pub 餐主力）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "澳式点心 Dim sim（源自墨尔本南墨尔本市场）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "澳白咖啡（Flat white，墨尔本咖啡馆文化的代表作）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "澳洲肉派（Meat pie，市集与面包店常见）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "联邦广场（Federation Square）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "弗林德斯街车站（Flinders Street Station）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "维多利亚女王市场（Queen Victoria Market）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "霍西尔巷与市区涂鸦巷（Hosier Lane 等街巷涂鸦）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "圣基尔达海滩与栈桥（St Kilda Beach / St Kilda Pier）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "墨尔本皇家植物园（Royal Botanic Gardens Melbourne）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "澳大利亚网球公开赛（Australian Open）",
+          "date": "1月中下旬",
+          "desc": "四大满贯之一，在墨尔本公园举行，赛事前后两周酒店与餐饮紧张"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "墨尔本杯赛马节（Melbourne Cup Carnival）",
+          "date": "11月，重头戏为11月第一个星期二",
+          "desc": "弗莱明顿赛马场的两英里大赛，当天为维多利亚州公共假日，全国也在观赛"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "墨尔本国际喜剧节（Melbourne International Comedy Festival）",
+          "date": "通常3月下旬至4月中下旬",
+          "desc": "世界规模最大的喜剧节之一，全城数百个场地轮番演出"
+        },
+        {
+          "name": "墨尔本国际电影节（MIFF）",
+          "date": "通常8月",
+          "desc": "澳洲重要影展，集中在市中心影院与 ACMI（影像中心）放映新片与回顾单元"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -59792,7 +62904,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "布里斯班源自1824年的摩顿湾殖民地，1988年世博会后沿河重建，今为昆士兰州首府、澳洲增长最快的大城市之一，属亚热带气候。治安与澳洲其他大城市相近，夜间福蒂图德谷酒吧街偶有因饮酒引发的争执。雨季（11—3月）雷暴强降水易致路段积水，自驾要避开内涝；夏季高温与丛林火需留意，蚊虫较多。皇家布里斯班与妇女医院为主要公立医院，外国访客自费较高。"
     },
     "highlights": [
       "海滩风光",
@@ -59815,82 +62928,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "摩顿湾小龙虾（Moreton Bay Bug，布里斯班海鲜餐厅名菜）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "泥蟹（Mud crab，昆士兰海鲜名产）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "肺鱼巴勒蒙迪（Barramundi，澳洲北部常见食用鱼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "澳洲肉派（Meat pie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "拉明顿蛋糕（Lamington，昆士兰风味甜点）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "南岸公园与市内人造沙滩（South Bank Parklands / Streets Beach）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "故事桥（Story Bridge，攀桥与桥下步道）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "龙柏考拉保护区（Lone Pine Koala Sanctuary）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "昆士兰现代艺术馆与文化中心（GOMA / Queensland Cultural Centre）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "库萨山观景台与植物园（Mount Coot-tha Lookout / Brisbane Botanic Gardens）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "布里斯班城市植物园（City Botanic Gardens）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "布里斯班皇家农展（Ekka / Royal Queensland Show）",
+          "date": "通常8月",
+          "desc": "昆士兰年度农业展，含牛仔竞技、畜牧评比与嘉年华，公共假日当天人流最多"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "布里斯班节（Brisbane Festival）",
+          "date": "通常9月",
+          "desc": "为期三周多的艺术节，以开幕夜的 Riverfire 烟花燃桥表演为标志"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "地方风味美食节（Regional Flavours）",
+          "date": "通常7月",
+          "desc": "在南岸公园举办的免费昆士兰农产品与美食活动，可品尝各产区食材"
+        },
+        {
+          "name": "布里斯班喜剧节（Brisbane Comedy Festival）",
+          "date": "通常2—3月",
+          "desc": "多场地演出的喜剧季，规模小于墨尔本但选片覆盖面广"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -60281,7 +63419,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "珀斯1829年作为天鹅河殖民地建立，现为西澳大利亚州首府，依托矿业繁荣，也是距东南亚最近的澳洲大城市。治安良好，但夜间市中心与诺斯布里奇夜生活区有过因饮酒导致的争执报道。自然风险为极强紫外线与夏季（12—3月）高温丛林火；海滨游泳认准红黄旗，留意鲨鱼警示。雨季蚊虫传播罗斯河病毒偶有病例，需防蚊。Royal Perth、Fiona Stanley 为主要公立医院，外国访客自费高。"
     },
     "highlights": [
       "海滩风光",
@@ -60304,82 +63443,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "西澳岩龙虾（Western Rock Lobster，弗里曼特尔海鲜名菜）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "炸鱼薯条（Fish and chips，Fremantle 渔港老店）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "澳洲肉派（Meat pie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "袋鼠肉（Kangaroo，西澳餐厅与超市常见）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "拉明顿蛋糕（Lamington）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "国王公园与植物园（Kings Park and Botanic Garden）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "伊丽莎白码头与天鹅河（Elizabeth Quay / Swan River）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "珀斯铸币厂（The Perth Mint）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "弗里曼特尔（Fremantle：弗里曼特尔监狱、弗里曼特尔市场与渔船港）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "罗特尼斯岛（Rottnest Island，短尾矮袋鼠 quokka，需乘渡轮）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "科特斯洛海滩（Cottesloe Beach）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "珀斯艺术节（Perth Festival）",
+          "date": "通常2月至3月初",
+          "desc": "澳洲历史最久的年度艺术节，涵盖戏剧、舞蹈、视觉艺术与免费户外活动"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "珀斯边缘艺术节（Fringe World）",
+          "date": "通常1月中旬至2月中旬",
+          "desc": "开放报名的表演艺术节，马戏、喜剧与实验剧场分散在临时场馆"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "珀斯皇家农展（Perth Royal Show）",
+          "date": "通常9月底至10月初",
+          "desc": "西澳年度农业与游园会，含畜牧评比、游乐设施与烟花"
+        },
+        {
+          "name": "国王公园野花节（Kings Park Festival）",
+          "date": "通常9月",
+          "desc": "配合西澳野花季的植物园活动，含野花步道导览与土著文化讲解"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -60770,7 +63934,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "阿德莱德1836年按威廉·莱特的方格规划建立，四周环有绿地公园带，今为南澳大利亚州首府，长期以“节庆之城”与周边葡萄酒产区闻名。治安在澳洲首府城市中属较好，但欣德利街等夜生活街区周末深夜偶有争执。夏季极端高温可超40℃，丛林火风险较高，须留意火险等级与禁火规定；紫外线强烈，海滨注意离岸流。Royal Adelaide Hospital 为主要公立医院，外国访客自费昂贵，务必购买旅行保险。"
     },
     "highlights": [
       "空气清新",
@@ -60793,82 +63958,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "希腊式烤肉卷（Yiros，阿德莱德街边烤肉店名物，配蒜酱）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "肉派漂浮汤（Pie floater，肉派浸豌豆汤，南澳经典夜宵）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "青蛙蛋糕（Frog cake，南澳标志性的海绵小蛋糕）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "艾尔半岛生蚝（Coffin Bay Oyster，南澳海鲜名产）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "汉多夫德国村香肠猪肘（Hahndorf 德式餐，阿德莱德山近郊）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "阿德莱德中央市场（Adelaide Central Market）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "南澳州立图书馆莫特洛克阅览室（State Library of South Australia, Mortlock Wing）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "阿德莱德植物园（Adelaide Botanic Garden）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "格雷尔海滩（Glenelg Beach，复古有轨电车直达）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "南澳博物馆（South Australian Museum，原住民藏品）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "芭萝莎谷酒乡（Barossa Valley，城东北近郊酒庄区）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "阿德莱德艺术节（Adelaide Festival）",
+          "date": "通常3月",
+          "desc": "澳洲重要综合艺术节，同期举办作家周与视觉艺术展"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "阿德莱德边缘艺术节（Adelaide Fringe）",
+          "date": "通常2月中旬至3月中旬",
+          "desc": "南半球最大的 Fringe 艺术节，全城数千场小剧场与街头表演"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "沃玛代拉世界音乐节（WOMADelaide）",
+          "date": "通常3月",
+          "desc": "在植物园举办的世界音乐节，露营区与多舞台演出持续数天"
+        },
+        {
+          "name": "环澳自行车赛（Tour Down Under）",
+          "date": "通常1月",
+          "desc": "国际自行车联盟世界巡回赛开幕站，起点与赛段绕阿德莱德与周边产区"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -61259,7 +64449,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "奥克兰毛利语名为 Tāmaki Makaurau，1840至1865年间为新西兰首府，如今是全国最大城市与主要航运门户，太平洋岛裔文化底色浓厚。治安良好，暴力犯罪少见，常见的是车船与车窗被撬财物的案件，以及在市中心夜间因饮酒产生的口角。郊外的西海岸沙滩（皮哈、穆里怀）离岸流强劲，务必在救生员旗标之间下水；区域50余座火山者有 GeoNet 监测。医疗有奥克兰市医院与 Middlemore，访客自费，紧急电话111。"
     },
     "highlights": [
       "空气清新",
@@ -61282,82 +64473,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "绿唇贻贝（Green-lipped mussels，白酒奶油煮）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "新西兰烤羊排（Lamb）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "帕夫洛娃（Pavlova，蛋白霜奶油水果蛋糕）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "炸鱼薯条（Fish and chips，使命湾海滨店）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "霍基波基冰淇淋（Hokey Pokey，新西兰国民口味）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "天空塔（Sky Tower）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "一树山与康沃尔公园（Maungakiekie / One Tree Hill and Cornwall Park）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "伊登山火山口（Mount Eden / Maungawhau）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "奥克兰战争纪念博物馆（Auckland War Memorial Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "怀希基岛（Waiheke Island，酒庄与海滩，需乘渡轮）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "使命湾（Mission Bay，怀特玛塔港海滨）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "奥克兰艺术节（Auckland Arts Festival）",
+          "date": "通常3月",
+          "desc": "涵盖毛利与太平洋岛国艺术的综合性艺术节，场馆分布在市中心、奥克兰码头一带与阿尔伯特公园临时场地"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "奥克兰灯节（Auckland Lantern Festival）",
+          "date": "农历正月期间，多为2月",
+          "desc": "规模盛大的免费灯笼嘉年华，多在南区 Manukau 场地举办，含灯组、舞狮与小吃摊"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "奥克兰排灯节（Diwali Festival）",
+          "date": "通常10月下旬至11月上旬",
+          "desc": "免费家庭活动，以灯光装饰、印度舞蹈与街头美食为主，规模居全国前列"
+        },
+        {
+          "name": "新西兰国际电影节（NZIFF Auckland）",
+          "date": "通常7—8月",
+          "desc": "全国巡回首站设在奥克兰，放映数百部本国与国际新片"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -61748,7 +64964,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "惠灵顿位于库克海峡北岸，1865年起为新西兰首都，因常年强风得名“风城”，也是影视产业与咖啡文化的重镇。治安良好，暴力犯罪少见，周末深夜的考特尼广场周边偶有因饮酒的争执。最大风险是地震与近海海啸：1855年大地震曾抬升地基、2016年凯库拉地震在此有明显震感，建筑抗震规范严格，到达后应了解疏散路线与高地避险点。强风与低温体感需注意防风。Wellington Regional Hospital 为主要医院，求助拨111。"
     },
     "highlights": [
       "空气清新",
@@ -61771,82 +64988,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "绿唇贻贝（Green-lipped mussels）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "新西兰烤羊排（Lamb）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "新西兰肉派（Mince and cheese pie / steak pie）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "帕夫洛娃（Pavlova）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "澳白咖啡（Flat white，惠灵顿咖啡馆文化的招牌）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "新西兰国家博物馆蒂帕帕（Te Papa Tongarewa）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "惠灵顿缆车与植物园（Wellington Cable Car / Botanic Garden）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "新西兰议会建筑群“蜂巢”（Beehive / Parliament Buildings）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "维塔工作室（Weta Workshop，《指环王》《阿凡达》特效工作室，Miramar）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "古巴街与考特尼广场（Cuba Street / Courtenay Place）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "维多利亚山观景台（Mount Victoria Lookout）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "新西兰国际电影节（NZIFF Wellington）",
+          "date": "通常7—8月",
+          "desc": "电影节的首映城市， Embassy 剧院等老牌影院连映新片与特别单元"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "古巴杜帕街头艺术节（CubaDupa）",
+          "date": "通常3月",
+          "desc": "以古巴街为中心的免费户外艺术嘉年华，狂欢式巡演、装置与街头舞台"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "盘中惠灵顿美食节（Wellington on a Plate）",
+          "date": "通常8月",
+          "desc": "餐馆推出限定套餐与低价试吃菜单，配合品酒讲座与快闪餐饮活动"
+        },
+        {
+          "name": "新西兰艺术节（NZ Festival）",
+          "date": "多数为双数年2—3月",
+          "desc": "以惠灵顿为主场的国家级艺术节，国际剧目、舞蹈与原住民作品集中上演"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -62237,7 +65479,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "基督城1850年由坎特伯雷协会的移民建立，是南岛最大城市，英式传统浓厚，植物园与雅芳河分布城中，也称“花园城市”，同时是南极科考队的补给门户。2011年2月大地震使市中心大量建筑倒塌，此后长期重建。如今治安良好，主要风险是地震余震与海啸，城内有避险高地标识，自驾需留意施工围挡与临时道路；冬季山区路段有结冰。紫外线强烈需防晒。Christchurch Hospital 为南岛主要医院。"
     },
     "highlights": [
       "生活节奏慢",
@@ -62260,82 +65503,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "坎特伯雷烤羊肉（Canterbury lamb）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "绿唇贻贝（Green-lipped mussels）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "白银鱼煎饼（Whitebait fritters，新西兰季节性名菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "霍基波基冰淇淋（Hokey Pokey ice cream）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "帕夫洛娃（Pavlova）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "基督城植物园与雅芳河撑船（Christchurch Botanic Gardens / Punting on the Avon）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "过渡教堂“纸教堂”（Transitional Cathedral / Cardboard Cathedral）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "坎特伯雷博物馆（Canterbury Museum）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "国际南极中心（International Antarctic Centre）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "新摄政街（New Regent Street，复古有轨电车街）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "基督城缆车与港口山观景（Christchurch Gondola / Port Hills）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "基督城艺术节（Christchurch Arts Festival）",
+          "date": "多在下半年（近年为8—10月）",
+          "desc": "市内主要的综合艺术节，含剧场、音乐、视觉展与免费公共装置，出发前需确认当年日期"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "新西兰杯与农展周（New Zealand Cup & Show Week）",
+          "date": "通常11月",
+          "desc": "坎特伯雷的传统农展与赛马周，含农畜评比、嘉年华与利卡顿赛马日的赛事"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "毛利新年（Matariki）",
+          "date": "通常6—7月",
+          "desc": "以昴星团升起为标志的新西兰公共假日，市内有灯光装置、音乐会与观星活动"
+        },
+        {
+          "name": "新西兰国际电影节（NZIFF Christchurch）",
+          "date": "通常7—8月",
+          "desc": "全国巡回至基督城的场次，放映当年精选影片与短片单元"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -62726,7 +65994,8 @@ var CITY_DATABASE = {
           "desc": "注意财物安全",
           "risk": "低"
         }
-      ]
+      ],
+      "history": "檀香山（火奴鲁鲁）位于欧胡岛，19世纪为夏威夷王国首都与太平洋贸易港口，1898年并入美国，1941年珍珠港事件后成为军事重镇，现为夏威夷州首府与旅游中心。整体治安在美国大城市中相对良好，但威基基与市中心夜间需防范财物失窃与酒后冲突；飓风季（6月至11月）与冬季北岸巨浪须留意预警；海滩须遵守旗标指示，警惕离岸流。"
     },
     "highlights": [
       "自然景观丰富",
@@ -62749,82 +66018,107 @@ var CITY_DATABASE = {
     "lifestyle": {
       "food": [
         {
-          "name": "当地特色菜",
+          "name": "夏威夷生鱼拌饭（Poke）",
           "type": "当地菜",
-          "price": "中等",
-          "desc": "品尝当地传统美食",
-          "tip": "选择当地人推荐的餐厅"
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "街头小吃",
-          "type": "小吃",
-          "price": "便宜",
-          "desc": "体验地道风味",
-          "tip": "注意卫生条件"
+          "name": "卡卢阿烤猪（Kālua Pig，传统卢奥宴主菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "海鲜料理",
-          "type": "海鲜",
-          "price": "中高",
-          "desc": "新鲜的海鲜料理"
+          "name": "洛可摩可（Loco Moco，米饭汉堡排配蛋）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
         {
-          "name": "当地烤肉",
-          "type": "烧烤",
-          "price": "中等",
-          "desc": "当地特色烤肉"
+          "name": "夏威夷刨冰（Shave Ice）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "夏威夷盘餐（Plate Lunch，两勺米饭配主菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         }
       ],
       "attractions": [
         {
-          "name": "市中心历史区",
-          "type": "历史文化",
-          "desc": "探索当地历史文化",
+          "name": "威基基海滩（Waikīkī Beach）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "本地市场",
-          "type": "集市",
-          "desc": "体验当地生活气息",
-          "hidden": true
-        },
-        {
-          "name": "城市公园",
-          "type": "公园",
-          "desc": "休闲娱乐的好去处",
+          "name": "钻石头山火山口步道（Diamond Head）",
+          "type": "景点",
+          "desc": "",
           "hidden": false
         },
         {
-          "name": "艺术区",
-          "type": "文化区",
-          "desc": "当地艺术和文化中心",
-          "hidden": true
+          "name": "珍珠港亚利桑那号纪念馆（Pearl Harbor）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "伊欧拉尼王宫（ʻIolani Palace）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "恐龙湾自然保护区（Hanauma Bay）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "努阿努帕里观景台（Nuʻuanu Pali Lookout）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
         }
       ],
       "festivals": [
         {
-          "name": "新年庆祝",
-          "date": "1月1日",
-          "desc": "新年庆祝活动"
+          "name": "花环节（Lei Day）",
+          "date": "5月1日",
+          "desc": "夏威夷传统五月花环节，在威基基与市中心有花环制作比赛与草裙舞表演。"
         },
         {
-          "name": "文化节日",
-          "date": "全年",
-          "desc": "体验当地文化"
+          "name": "洛特王子草裙舞节（Prince Lot Hula Festival）",
+          "date": "7月",
+          "desc": "在莫阿纳鲁亚花园举行的免费草裙舞盛会，展示传统哈拉乌舞蹈与手工艺。"
         },
         {
-          "name": "美食节",
-          "date": "根据当地安排",
-          "desc": "品尝当地美食"
+          "name": "阿罗哈节（Aloha Festivals）",
+          "date": "9月",
+          "desc": "夏威夷规模最大的文化庆典，包含花车游行、草裙舞比赛与街区宴会。"
+        },
+        {
+          "name": "檀香山马拉松（Honolulu Marathon）",
+          "date": "12月第二个周日",
+          "desc": "赛道经过钻石头山与威基基，海外参赛者众多，当日部分沿海道路封闭。"
         }
       ],
       "customs": [
-        "尊重当地文化和传统",
-        "遵守当地法律法规",
-        "注意公共场合礼仪",
-        "保护当地环境",
-        "与当地人友好互动",
-        "保持安静和礼貌"
+        "保持安静和礼貌",
+        "尊重当地文化和习俗",
+        "公共场合保持礼貌",
+        "注意环保，不要乱扔垃圾",
+        "尊重当地宗教信仰"
       ],
       "transport": "建议使用当地公共交通，方便又经济实惠。打车软件通常安全可靠。",
       "foodDetails": [
@@ -63216,7 +66510,7 @@ var CITY_DATABASE = {
     "flag": "🇸🇳",
     "lat": 14.7167,
     "lng": -17.4677,
-    "image": "https://picsum.photos/seed/safecity_dakar/1600/600",
+    "image": "https://images.unsplash.com/photo-1621862681248-c891542db4d7?w=1200&q=85",
     "safety": {
       "overall": 58,
       "grade": "B-",
@@ -63292,8 +66586,20 @@ var CITY_DATABASE = {
           "desc": "大西洋新鲜渔获",
           "tip": "海滨排档"
         },
-        "Thieboudienne（国菜：番茄番茄酱炖鱼配饭）",
-        "Yassa（洋葱柠檬炖鸡/鱼）"
+        {
+          "name": "Mafé（花生酱炖羊肉/牛肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Pastels（塞内加尔炸鱼/肉馅角饼）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -63314,9 +66620,24 @@ var CITY_DATABASE = {
           "desc": "城市天际线的标志",
           "hidden": false
         },
-        "戈雷岛（奴隶贸易历史博物馆，UNESCO）",
-        "非洲复兴纪念碑",
-        "玫瑰湖（Retba 粉红湖）"
+        {
+          "name": "玫瑰湖（Retba 粉红湖）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "马默莱灯塔（Phare des Mamelles，非洲大陆最西端的火山丘灯塔）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "恩戈尔岛与恩戈尔海滩（Île de Ngor，离岸小岛与冲浪海滩）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -63329,8 +66650,16 @@ var CITY_DATABASE = {
           "date": "伊斯兰历",
           "desc": "全城宰羊庆祝，交通与物价波动"
         },
-        "达喀尔双年展 Dak'Art（偶数年5月）",
-        "古尔邦节 Tabaski（伊斯兰历）"
+        {
+          "name": "开斋节（Korité / Aïd el-Fitr）",
+          "date": "伊斯兰历10月1日（每年浮动，2026年约在3月）",
+          "desc": "斋月结束的全国性重大节日，达喀尔全城清真寺礼拜、家庭聚餐与海滨集会。"
+        },
+        {
+          "name": "阿舒拉节（Tamkharit / Achoura）",
+          "date": "伊斯兰历1月10日（每年浮动）",
+          "desc": "塞内加尔特有称呼的阿舒拉节，达喀尔家庭互赠小米粉等食品、通宵集会。"
+        }
       ],
       "customs": [
         "见面贴面礼常见",
@@ -63338,7 +66667,8 @@ var CITY_DATABASE = {
         "周日多数商铺休息",
         "砍价是市场常态",
         "见面多次握手、寒暄后再谈正事",
-        "进入清真寺与民宅须脱鞋"
+        "进入清真寺与民宅须脱鞋",
+        "部分地区忌用左手递物或进食"
       ],
       "transport": "机场：布莱兹·迪亚涅国际机场（DSS），距市区约1小时。铁路：城际铁路连郊县。轨道：无地铁，依赖小巴与出租车。出租：黄色出租车，建议议价并使用计价。",
       "foodDetails": [],
@@ -63684,7 +67014,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇮",
     "lat": 5.36,
     "lng": -4.0083,
-    "image": "https://picsum.photos/seed/safecity_abidjan/1600/600",
+    "image": "https://images.unsplash.com/photo-1785095617583-e408f4b451ca?w=1200&q=85",
     "safety": {
       "overall": 55,
       "grade": "B-",
@@ -63760,8 +67090,20 @@ var CITY_DATABASE = {
           "desc": "炸大蕉",
           "tip": "街头小吃"
         },
-        "Attiéké（木薯粗粉，国民主食）",
-        "Kedjenou（慢炖鸡肉/肉）"
+        {
+          "name": "Alloco（炸大蕉配辣椒酱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Foutou（捣制山药/大蕉团配酱汁）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -63782,9 +67124,24 @@ var CITY_DATABASE = {
           "desc": "连接城市两岸的重要通道",
           "hidden": false
         },
-        "圣保罗大教堂",
-        "Plateau 中心商务区",
-        "班科国家公园"
+        {
+          "name": "Plateau 中心商务区",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "科特迪瓦文明博物馆（Musée des Civilisations de Côte d'Ivoire）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "特雷什维尔市场（Marché de Treichville）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -63797,8 +67154,16 @@ var CITY_DATABASE = {
           "date": "2月",
           "desc": "原住民面具节"
         },
-        "面具节 Fêtes des Masques（11月，Man 地区）",
-        "Popo 狂欢节（2月，Grand-Bassam）"
+        {
+          "name": "Popo 狂欢节",
+          "date": "2月",
+          "desc": "Grand-Bassam 海滨城市的街头狂欢"
+        },
+        {
+          "name": "阿努马博都市音乐节（FEMUA — Festival des Musiques Urbaines d'Anoumabo）",
+          "date": "4月",
+          "desc": "由乐队 Magic System 在阿比让 Marcory 区 Anoumabo 创办的非洲都市音乐节。"
+        }
       ],
       "customs": [
         "见面握手并问候家人",
@@ -63806,7 +67171,8 @@ var CITY_DATABASE = {
         "请客时礼貌推辞后再接受",
         "周日部分区域安静",
         "见面握手寒暄、称呼长辈",
-        "尊重宗教与长者，着装保守"
+        "尊重宗教与长者，着装保守",
+        "部分地区忌用左手递物或进食"
       ],
       "transport": "机场：费利克斯·乌弗埃-博瓦尼机场（ABJ），市区约30分钟。铁路：铁路网有限。轨道：无地铁。出租：橙黄色出租车与摩的，需议价。",
       "foodDetails": [],
@@ -64156,7 +67522,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇬",
     "lat": 0.3476,
     "lng": 32.5825,
-    "image": "https://picsum.photos/seed/safecity_kampala/1600/600",
+    "image": "https://images.unsplash.com/photo-1675756261486-09bd1e0f6c8a?w=1200&q=85",
     "safety": {
       "overall": 54,
       "grade": "B-",
@@ -64232,8 +67598,20 @@ var CITY_DATABASE = {
           "desc": "炭烤肉类",
           "tip": "烤肉店"
         },
-        "Matoke（蒸香蕉，国菜）",
-        "Posho（玉米糊）"
+        {
+          "name": "Posho（玉米糊）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Luwombo（香蕉叶包裹蒸制的鸡肉/牛肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -64254,9 +67632,24 @@ var CITY_DATABASE = {
           "desc": "可拍照的赤道标记点",
           "hidden": false
         },
-        "卡苏比王陵（UNESCO  royal tombs）",
-        "乌干达博物馆",
-        "巴哈伊神庙（非洲唯一）"
+        {
+          "name": "乌干达博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "巴哈伊神庙（非洲唯一）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "乌干达国家清真寺（Uganda National Mosque，老坎帕拉山，可登塔俯瞰全城）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -64269,8 +67662,16 @@ var CITY_DATABASE = {
           "date": "不定期",
           "desc": "坎帕拉本土艺术与音乐"
         },
-        "坎帕拉城市节（10月）",
-        "Nyege Nyege 音乐节（9月，Jinja）"
+        {
+          "name": "坎帕拉城市节",
+          "date": "10月",
+          "desc": "市中心游行、音乐与美食活动"
+        },
+        {
+          "name": "Nyege Nyege 音乐节",
+          "date": "9月",
+          "desc": "东非电子与当代音乐盛会（邻近 Jinja）"
+        }
       ],
       "customs": [
         "见面多次握手并问候",
@@ -64278,7 +67679,8 @@ var CITY_DATABASE = {
         "拍照前先征得同意",
         "小费非强制但受欢迎",
         "见面握手并寒暄健康状况",
-        "尊重长者、称呼长辈"
+        "尊重长者、称呼长辈",
+        "部分地区忌用左手递物或进食"
       ],
       "transport": "机场：恩德培国际机场（EBB），市区约1小时。铁路：无铁路客运。轨道：无。出租：Uber/Bolt 与摩的并存，建议使用App。",
       "foodDetails": [],
@@ -64623,7 +68025,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇼",
     "lat": -17.8252,
     "lng": 31.0335,
-    "image": "https://picsum.photos/seed/safecity_harare/1600/600",
+    "image": "https://images.unsplash.com/photo-1721012970985-3ca71fe3877c?w=1200&q=85",
     "safety": {
       "overall": 50,
       "grade": "B-",
@@ -64699,8 +68101,20 @@ var CITY_DATABASE = {
           "desc": "街头常见小吃",
           "tip": "街边"
         },
-        "Sadza（玉米糊主食）",
-        "Nyama choma（烤肉）"
+        {
+          "name": "Nyama choma（烤肉）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Kapenta（炸/炖卡里巴湖小鱼干）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -64721,9 +68135,24 @@ var CITY_DATABASE = {
           "desc": "市中心宁静绿地",
           "hidden": false
         },
-        "津巴布韦人类科学博物馆",
-        "国家英雄纪念地",
-        "国家植物园"
+        {
+          "name": "津巴布韦人类科学博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "国家英雄纪念地",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "国家植物园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -64736,8 +68165,16 @@ var CITY_DATABASE = {
           "date": "4月18日",
           "desc": "全国庆典"
         },
-        "哈拉雷国际艺术节 HIFA（4/5月）",
-        "独立日（4月18日）"
+        {
+          "name": "哈拉雷农业展（Zimbabwe Agricultural Show）",
+          "date": "8月底至9月初",
+          "desc": "津巴布韦最大农业与商业展览，在哈拉雷 Exhibition Park 举办，含集市与娱乐活动。"
+        },
+        {
+          "name": "Shoko 节（Shoko Festival）",
+          "date": "9月",
+          "desc": "津巴布韦最大的口语诗歌、喜剧与音乐节，在哈拉雷多个场馆举行。"
+        }
       ],
       "customs": [
         "英语为官方语言",
@@ -64745,7 +68182,8 @@ var CITY_DATABASE = {
         "小费约10%",
         "商务需提前预约",
         "礼貌问候、称呼长辈",
-        "着装得体、尊重宗教场所"
+        "着装得体、尊重宗教场所",
+        "部分地区忌用左手递物或进食"
       ],
       "transport": "机场：罗伯特·穆加贝机场（HRE），市区约30分钟。铁路：铁路客运有限。轨道：无。出租：建议使用App叫车，现金备零。",
       "foodDetails": [],
@@ -65084,7 +68522,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇲",
     "lat": -15.3875,
     "lng": 28.3228,
-    "image": "https://picsum.photos/seed/safecity_lusaka/1600/600",
+    "image": "https://images.unsplash.com/photo-1643580018337-5af73fe3c21a?w=1200&q=85",
     "safety": {
       "overall": 54,
       "grade": "B-",
@@ -65160,8 +68598,20 @@ var CITY_DATABASE = {
           "desc": "油炸面团",
           "tip": "街头"
         },
-        "Nshima（玉米糊主食）",
-        "Ifisashi（蔬菜花生炖）"
+        {
+          "name": "Ifisashi（蔬菜花生炖）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Kapenta（炸湖小鱼干）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -65182,9 +68632,24 @@ var CITY_DATABASE = {
           "desc": "本地手工艺与古董",
           "hidden": false
         },
-        "卢萨卡国家博物馆",
-        "Munda Wanga 植物园",
-        "Kabwata 文化村"
+        {
+          "name": "Kabwata 文化村",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "蒙达万加环境公园（Munda Wanga Environmental Park，植物园兼野生动物救助中心）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡布瓦塔文化村（Kabwata Cultural Village，手工艺作坊群）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -65197,8 +68662,16 @@ var CITY_DATABASE = {
           "date": "不定期",
           "desc": "本土文化展示"
         },
-        "Kulamba 成年礼（8月，Katete）",
-        "Kuomboka 洪水节（3/4月，Barotse）"
+        {
+          "name": "Kulamba 成年礼",
+          "date": "8月",
+          "desc": "Chewa 族盛大成年庆典（邻近 Katete）"
+        },
+        {
+          "name": "Kuomboka 洪水节",
+          "date": "3-4月",
+          "desc": "Barotse 酋长雨季迁宫的传统仪式"
+        }
       ],
       "customs": [
         "英语为官方语言",
@@ -65206,7 +68679,8 @@ var CITY_DATABASE = {
         "拍照先征得同意",
         "市场可议价",
         "见面问候、尊重长者",
-        "着装得体、宗教场所保守"
+        "着装得体、宗教场所保守",
+        "部分地区忌用左手递物或进食"
       ],
       "transport": "机场：肯尼思·卡翁达机场（LUN），市区约30分钟。铁路：铁路客运有限。轨道：无。出租：App叫车与黄色出租并存。",
       "foodDetails": [],
@@ -65546,7 +69020,7 @@ var CITY_DATABASE = {
     "flag": "🇯🇴",
     "lat": 31.9454,
     "lng": 35.9284,
-    "image": "https://picsum.photos/seed/safecity_amman/1600/600",
+    "image": "https://images.unsplash.com/photo-1589825513188-72edada388d8?w=1200&q=85",
     "safety": {
       "overall": 74,
       "grade": "B+",
@@ -65622,8 +69096,20 @@ var CITY_DATABASE = {
           "desc": "奶酪甜点",
           "tip": "甜品店"
         },
-        "Mansaf（羊肉酸奶饭，国菜）",
-        "Falafel"
+        {
+          "name": "Maqluba（翻转锅饭，肉与茄子/花椰菜米饭）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Falafel 配鹰嘴豆泥（法拉费与 Hummus）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -65644,9 +69130,24 @@ var CITY_DATABASE = {
           "desc": "咖啡馆与书店云集的文艺街区",
           "hidden": false
         },
-        "安曼城堡山 Jabal al-Qal'a",
-        "罗马剧场",
-        "彩虹街"
+        {
+          "name": "罗马剧场",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿卜杜拉国王一世清真寺（King Abdullah I Mosque，蓝色穹顶）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "约旦博物馆（The Jordan Museum，藏有死海古卷相关展品）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -65659,8 +69160,16 @@ var CITY_DATABASE = {
           "date": "5月25日",
           "desc": "全国庆典"
         },
-        "杰拉什艺术节（7/8月）",
-        "安曼爵士音乐节"
+        {
+          "name": "安曼爵士音乐节",
+          "date": "全年",
+          "desc": "本地与国际爵士演出"
+        },
+        {
+          "name": "安曼国际电影节（Amman International Film Festival – Awal Film）",
+          "date": "7—8月",
+          "desc": "以阿拉伯处女作为主的电影节，在安曼的影院与文化中心展映。"
+        }
       ],
       "customs": [
         "见面贴面礼与咖啡待客",
@@ -65668,7 +69177,8 @@ var CITY_DATABASE = {
         "周五为周休主日",
         "议价是常态",
         "见面握手并道 As-salamu alaykum",
-        "宗教场所脱鞋、着装保守"
+        "宗教场所脱鞋、着装保守",
+        "进入清真寺需脱鞋、着装保守"
       ],
       "transport": "机场：阿丽娅王后机场（AMM），市区约40分钟。铁路：无城市轨道交通。轨道：无。出租：黄色出租与Uber/Careem并存。",
       "foodDetails": [],
@@ -66011,7 +69521,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇼",
     "lat": 29.3759,
     "lng": 47.9774,
-    "image": "https://picsum.photos/seed/safecity_kuwait_city/1600/600",
+    "image": "https://images.unsplash.com/photo-1558634742-56096b49522b?w=1200&q=85",
     "safety": {
       "overall": 76,
       "grade": "A-",
@@ -66087,8 +69597,20 @@ var CITY_DATABASE = {
           "desc": "波斯湾渔获",
           "tip": "海滨餐馆"
         },
-        "Machboos（香料饭配肉，国菜）",
-        "Mutabbaq samak（炸鱼）"
+        {
+          "name": "烤石斑鱼 Hamour（海湾石斑鱼碳烤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Harees（小麦与肉慢熬的咸粥）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -66109,9 +69631,24 @@ var CITY_DATABASE = {
           "desc": "波斯湾与海洋史",
           "hidden": false
         },
-        "科威特塔",
-        "大清真寺",
-        "Mubarakiya 老市集"
+        {
+          "name": "Mubarakiya 老市集",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿尔沙希德公园（Al Shaheed Park，市区最大城市公园）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "穆巴拉基亚老市场（Souq Al-Mubarakiya，石油时代前的老集市）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -66124,8 +69661,16 @@ var CITY_DATABASE = {
           "date": "2月",
           "desc": "节庆购物季"
         },
-        "Hala February 二月节（2月）",
-        "国庆日（2月25日）"
+        {
+          "name": "Hala February 二月节",
+          "date": "2月",
+          "desc": "购物与文化嘉年华"
+        },
+        {
+          "name": "国庆日",
+          "date": "2月25日",
+          "desc": "全国庆典"
+        }
       ],
       "customs": [
         "斋月白天公共饮食需克制",
@@ -66133,7 +69678,8 @@ var CITY_DATABASE = {
         "待客慷慨",
         "着装保守得体",
         "着装保守、尊重宗教",
-        "见面握手问候"
+        "见面握手问候",
+        "进入清真寺需脱鞋、着装保守"
       ],
       "transport": "机场：科威特国际机场（KWI），市区约30分钟。铁路：无。轨道：无。出租：App叫车与橙黄色出租。",
       "foodDetails": [],
@@ -66488,7 +70034,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇪",
     "lat": 24.4539,
     "lng": 54.3773,
-    "image": "https://picsum.photos/seed/safecity_abu_dhabi/1600/600",
+    "image": "https://images.unsplash.com/photo-1603565095944-2a6f33bb517c?w=1200&q=85",
     "safety": {
       "overall": 88,
       "grade": "A",
@@ -66564,8 +70110,20 @@ var CITY_DATABASE = {
           "desc": "炸甜面团球",
           "tip": "甜品"
         },
-        "Al Harees（小麦肉糜）",
-        "Machboos"
+        {
+          "name": "Al Harees（小麦肉糜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "阿拉伯烤羊与沙威玛（Shawarma）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -66586,9 +70144,24 @@ var CITY_DATABASE = {
           "desc": "亚斯岛上的赛车主题乐园",
           "hidden": false
         },
-        "谢赫扎耶德大清真寺",
-        "阿布扎比卢浮宫",
-        "酋长宫酒店"
+        {
+          "name": "阿布扎比卢浮宫",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "酋长宫酒店",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "卡斯尔·瓦坦总统府（Qasr Al Watan，可参观的国事宫）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -66601,8 +70174,16 @@ var CITY_DATABASE = {
           "date": "11月",
           "desc": "亚斯码头赛道"
         },
-        "阿布扎比电影节",
-        "F1 阿布扎比大奖赛（11月）"
+        {
+          "name": "阿布扎比电影节",
+          "date": "全年",
+          "desc": "中东重要电影展"
+        },
+        {
+          "name": "阿布扎比国际书展（Abu Dhabi International Book Fair）",
+          "date": "4月",
+          "desc": "在 ADNEC 举办的大型国际书展，有大量阿拉伯语出版与文化活动。"
+        }
       ],
       "customs": [
         "斋月白天公共饮食需克制",
@@ -66610,7 +70191,8 @@ var CITY_DATABASE = {
         "周五主休",
         "公共场合举止得体",
         "着装保守、公共场合得体",
-        "公共场合避免亲密举止"
+        "公共场合避免亲密举止",
+        "进入清真寺需脱鞋、着装保守"
       ],
       "transport": "机场：阿布扎比国际机场（AUH），市区约30分钟。铁路：无地铁，有公交。轨道：无。出租：App叫车与出租普及。",
       "foodDetails": [],
@@ -66964,7 +70546,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇭",
     "lat": 26.2285,
     "lng": 50.586,
-    "image": "https://picsum.photos/seed/safecity_manama/1600/600",
+    "image": "https://images.unsplash.com/photo-1748066768504-99532da7d1e9?w=1200&q=85",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -67040,8 +70622,20 @@ var CITY_DATABASE = {
           "desc": "中东甜点",
           "tip": "甜品店"
         },
-        "Machboos（巴林香料饭）",
-        "Muhammar（甜米饭）"
+        {
+          "name": "Muhammar（甜米饭）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Halwa Bahraini（巴林藏红花坚果哈尔瓦软糖）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -67062,9 +70656,24 @@ var CITY_DATABASE = {
           "desc": "海湾历史与石油史",
           "hidden": false
         },
-        "巴林国家博物馆",
-        "巴林堡 Qal'at al-Bahrain（UNESCO）",
-        "Al-Fateh 大清真寺"
+        {
+          "name": "Al-Fateh 大清真寺",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "法提赫大清真寺（Al-Fateh Grand Mosque，世界最大玻璃钢穹顶之一）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "巴林门与老集市（Bab Al Bahrain 及黄金市场）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -67077,8 +70686,16 @@ var CITY_DATABASE = {
           "date": "3月",
           "desc": "沙漠夜赛"
         },
-        "巴林 F1 大奖赛（3/4月）",
-        "文化之春（10-12月）"
+        {
+          "name": "巴林 F1 大奖赛",
+          "date": "3-4月",
+          "desc": "Sakhir 赛道年度赛事"
+        },
+        {
+          "name": "文化之春 Spring of Culture",
+          "date": "10-12月",
+          "desc": "音乐会与国际演出季"
+        }
       ],
       "customs": [
         "斋月白天克制饮食",
@@ -67086,7 +70703,8 @@ var CITY_DATABASE = {
         "待客热情",
         "着装保守",
         "着装保守、尊重宗教",
-        "进清真寺脱鞋"
+        "进清真寺脱鞋",
+        "进入清真寺需脱鞋、着装保守"
       ],
       "transport": "机场：巴林国际机场（BAH），市区约20分钟。铁路：无。轨道：无。出租：App叫车与出租。",
       "foodDetails": [],
@@ -67437,7 +71055,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -28.0167,
     "lng": 153.4,
-    "image": "https://picsum.photos/seed/safecity_gold_coast/1600/600",
+    "image": "https://images.unsplash.com/photo-1582761370596-77a6a42350d7?w=1200&q=85",
     "safety": {
       "overall": 82,
       "grade": "A-",
@@ -67513,8 +71131,20 @@ var CITY_DATABASE = {
           "desc": "澳式咖啡",
           "tip": "咖啡馆"
         },
-        "肉派 Meat pie",
-        "炸鱼薯条"
+        {
+          "name": "炸鱼薯条",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "莫顿湾螯虾（Moreton Bay bug，炭烤或蒜香煎）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -67535,9 +71165,24 @@ var CITY_DATABASE = {
           "desc": "雨林瀑布与徒步",
           "hidden": false
         },
-        "冲浪者天堂海滩",
-        "主题乐园（梦幻世界/电影世界/海洋世界）",
-        "Burleigh Heads"
+        {
+          "name": "主题乐园（梦幻世界/电影世界/海洋世界）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Burleigh Heads",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Q1 大厦天空观景台（SkyPoint Observation Deck，77 层）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -67550,8 +71195,16 @@ var CITY_DATABASE = {
           "date": "11月",
           "desc": "毕业生海滩聚会，夜间较喧闹"
         },
-        "黄金海岸电影节（4月）",
-        "Broadbeach 蓝调节（5月）"
+        {
+          "name": "黄金海岸电影节",
+          "date": "4月",
+          "desc": "本地与国际独立影展"
+        },
+        {
+          "name": "Broadbeach 蓝调节",
+          "date": "5月",
+          "desc": "海滨免费蓝调音乐节"
+        }
       ],
       "customs": [
         "小费非强制",
@@ -67559,7 +71212,8 @@ var CITY_DATABASE = {
         "海滩注意旗语（安全游泳区）",
         "直呼其名较随意",
         "随和友好、'no worries' 心态",
-        "小费非必须"
+        "小费非必须",
+        "原住民圣地勿随意进入或拍照"
       ],
       "transport": "机场：黄金海岸机场（OOL），市区约30分钟。铁路：连接布里斯班的火车。轨道：无。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -67911,7 +71565,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -16.9186,
     "lng": 145.7781,
-    "image": "https://picsum.photos/seed/safecity_cairns/1600/600",
+    "image": "https://images.unsplash.com/photo-1676406912249-8bdefd0a706d?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -67987,8 +71641,20 @@ var CITY_DATABASE = {
           "desc": "澳式小吃",
           "tip": "Bakery"
         },
-        "Barramundi 鱼",
-        "芒果"
+        {
+          "name": "Barramundi 鱼",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "芒果",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -68009,9 +71675,24 @@ var CITY_DATABASE = {
           "desc": "安全人工潟湖泳池",
           "hidden": false
         },
-        "大堡礁（一日游）",
-        "戴恩树雨林",
-        "Kuranda 观光火车"
+        {
+          "name": "戴恩树雨林",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Kuranda 观光火车",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "库兰达观光火车与 Skyrail 热带雨林缆车（Kuranda Scenic Railway / Skyrail）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -68024,8 +71705,16 @@ var CITY_DATABASE = {
           "date": "11月",
           "desc": "库兰达的原音乐节"
         },
-        "凯恩斯节（8月）",
-        "大堡礁海洋节"
+        {
+          "name": "凯恩斯节 Cairns Festival",
+          "date": "8月",
+          "desc": "音乐、艺术与社区活动月"
+        },
+        {
+          "name": "凯恩斯铁人赛",
+          "date": "6月",
+          "desc": "闻名的三铁赛事"
+        }
       ],
       "customs": [
         "小费非强制",
@@ -68033,7 +71722,8 @@ var CITY_DATABASE = {
         "海滩旗语",
         "随意直率",
         "海滩在旗帜间游泳",
-        "强烈紫外线需高倍防晒"
+        "强烈紫外线需高倍防晒",
+        "原住民圣地勿随意进入或拍照"
       ],
       "transport": "机场：凯恩斯机场（CNS），市区约10分钟。铁路：有连接昆士兰的火车。轨道：无。出租：Uber与出租。",
       "foodDetails": [],
@@ -68389,7 +72079,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -42.8821,
     "lng": 147.3272,
-    "image": "https://picsum.photos/seed/safecity_hobart/1600/600",
+    "image": "https://images.unsplash.com/photo-1674897413368-11705695cf4d?w=1200&q=85",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -68465,8 +72155,20 @@ var CITY_DATABASE = {
           "desc": "本地乳酪",
           "tip": "市集"
         },
-        "塔斯马尼亚三文鱼",
-        "生蚝"
+        {
+          "name": "塔斯马尼亚三文鱼",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "干贝派（Scallop pie，萨拉曼卡市集名物）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -68487,9 +72189,24 @@ var CITY_DATABASE = {
           "desc": "争议性当代艺术博物馆",
           "hidden": false
         },
-        "Salamanca 集市",
-        "惠灵顿山 kunanyi",
-        "MONA 古今艺术博物馆"
+        {
+          "name": "Salamanca 集市",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "MONA 古今艺术博物馆",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "炮台角历史街区（Battery Point）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -68502,8 +72219,16 @@ var CITY_DATABASE = {
           "date": "12月26日",
           "desc": "经典帆船赛事抵达"
         },
-        "塔斯马尼亚味觉节（12-1月）",
-        "Dark Mofo（6月）"
+        {
+          "name": "塔斯马尼亚味觉节",
+          "date": "12-1月",
+          "desc": "全州美食美酒盛宴"
+        },
+        {
+          "name": "澳大利亚木舟节（Australian Wooden Boat Festival）",
+          "date": "2月（每两年一届，奇数年）",
+          "desc": "霍巴特海滨举办的世界知名木质帆船盛会，展出传统木船与航海文化。"
+        }
       ],
       "customs": [
         "小费非强制",
@@ -68511,7 +72236,8 @@ var CITY_DATABASE = {
         "随意友好",
         "周末市场文化",
         "随和、小费非必须",
-        "天气多变需分层穿衣"
+        "天气多变需分层穿衣",
+        "原住民圣地勿随意进入或拍照"
       ],
       "transport": "机场：霍巴特机场（HBA），市区约20分钟。铁路：无。轨道：无。出租：Uber与出租。",
       "foodDetails": [],
@@ -68862,7 +72588,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇨",
     "lat": -0.1807,
     "lng": -78.4678,
-    "image": "https://picsum.photos/seed/safecity_quito/1600/600",
+    "image": "https://images.unsplash.com/photo-1593742553188-65c60dcd8737?w=1200&q=85",
     "safety": {
       "overall": 60,
       "grade": "B-",
@@ -68938,8 +72664,20 @@ var CITY_DATABASE = {
           "desc": "炸馅饼",
           "tip": "街头"
         },
-        "Cuy（高原烤豚鼠）",
-        "Llapingacho（土豆饼）"
+        {
+          "name": "Locro de papa（土豆奶酪汤配牛油果）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Hornado（整只慢烤乳猪）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -68960,9 +72698,24 @@ var CITY_DATABASE = {
           "desc": "缆车登顶俯瞰全城",
           "hidden": false
         },
-        "旧城区（历史中心，UNESCO）",
-        "Basílica del Voto Nacional 大教堂",
-        "赤道纪念碑 Mitad del Mundo"
+        {
+          "name": "旧城区（历史中心，UNESCO）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Basílica del Voto Nacional 大教堂",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "TelefériQo 缆车（登皮钦查火山 4,050 米观景台）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -68975,8 +72728,16 @@ var CITY_DATABASE = {
           "date": "6月",
           "desc": "印加夏至庆典"
         },
-        "Inti Raymi 太阳节（6月）",
-        "狂欢节（2/3月）"
+        {
+          "name": "狂欢节 Carnaval",
+          "date": "2-3月",
+          "desc": "全国泼水与游行"
+        },
+        {
+          "name": "基多建城节（Fiestas de Quito）",
+          "date": "12月6日前后",
+          "desc": "纪念1534年建城，含 Chivas 彩车大游行、街头演出与音乐会。"
+        }
       ],
       "customs": [
         "见面贴面礼",
@@ -68984,7 +72745,8 @@ var CITY_DATABASE = {
         "小费约10%",
         "市场可议价",
         "见面贴面礼问候",
-        "着装得体、宗教场所保守"
+        "着装得体、宗教场所保守",
+        "小费文化普遍（餐厅约10%）"
       ],
       "transport": "机场：马里奥·科博机场（UIO），市区约1小时。铁路：无城市轨道交通。轨道：无。出租：App叫车更稳妥。",
       "foodDetails": [],
@@ -69342,7 +73104,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇷",
     "lat": 9.9281,
     "lng": -84.0907,
-    "image": "https://picsum.photos/seed/safecity_san_jose/1600/600",
+    "image": "https://images.unsplash.com/photo-1699385602094-4c5a017c64a5?w=1200&q=85",
     "safety": {
       "overall": 62,
       "grade": "B-",
@@ -69418,8 +73180,20 @@ var CITY_DATABASE = {
           "desc": "热带水果",
           "tip": "街头"
         },
-        "Gallo pinto（豆饭，国菜）",
-        "Casado（套餐）"
+        {
+          "name": "Olla de carne（牛肉与根茎蔬菜炖汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Ceviche（柑橘汁腌鱼配香菜洋葱）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -69440,9 +73214,24 @@ var CITY_DATABASE = {
           "desc": "本地生活与小吃",
           "hidden": false
         },
-        "国家剧院",
-        "前哥伦布黄金博物馆",
-        "中央市场"
+        {
+          "name": "哥斯达黎加国家博物馆（Museo Nacional，旧贝亚维斯塔兵营）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "阿蒙街区（Barrio Amón，咖啡大亨老宅街区）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "玉博物馆（Museo del Jade）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -69455,8 +73244,16 @@ var CITY_DATABASE = {
           "date": "8月",
           "desc": "乡村庆典"
         },
-        "独立日（9月15日）",
-        "Palmares 节（1月）"
+        {
+          "name": "Palmares 节",
+          "date": "1月",
+          "desc": "两周音乐与牛仔竞技"
+        },
+        {
+          "name": "灯光节（Festival de la Luz）",
+          "date": "12月中旬",
+          "desc": "圣何塞市中心的大型圣诞灯光花车游行，是哥斯达黎加年末最重要的街头节庆。"
+        }
       ],
       "customs": [
         "西班牙语",
@@ -69464,7 +73261,8 @@ var CITY_DATABASE = {
         "小费约10%",
         "环保意识强",
         "'pura vida' 问候",
-        "礼貌、着装得体"
+        "礼貌、着装得体",
+        "小费文化普遍（餐厅约10%）"
       ],
       "transport": "机场：胡安·圣玛丽亚机场（SJO），市区约30分钟。铁路：城铁有限。轨道：无。出租：Uber与出租。",
       "foodDetails": [],
@@ -69812,7 +73610,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇺",
     "lat": 23.1136,
     "lng": -82.3666,
-    "image": "https://picsum.photos/seed/safecity_havana/1600/600",
+    "image": "https://images.unsplash.com/photo-1570299437488-d430e1e677c7?w=1200&q=85",
     "safety": {
       "overall": 62,
       "grade": "B-",
@@ -69888,8 +73686,20 @@ var CITY_DATABASE = {
           "desc": "朗姆薄荷饮",
           "tip": "La Bodeguita"
         },
-        "Ropa vieja（撕碎牛肉）",
-        "Arroz con pollo"
+        {
+          "name": "Arroz con pollo",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Moros y cristianos（黑豆饭）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -69910,9 +73720,24 @@ var CITY_DATABASE = {
           "desc": "城市政治中心",
           "hidden": false
         },
-        "旧哈瓦那 Habana Vieja（UNESCO）",
-        "Malecón 海滨大道",
-        "国会大厦 Capitolio"
+        {
+          "name": "旧哈瓦那 Habana Vieja（UNESCO）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Malecón 海滨大道",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "国会大厦 Capitolio",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -69925,8 +73750,16 @@ var CITY_DATABASE = {
           "date": "10月10日",
           "desc": "全国庆典"
         },
-        "哈瓦那狂欢节（7/8月）",
-        "国际爵士音乐节（12月）"
+        {
+          "name": "哈瓦那狂欢节",
+          "date": "7-8月",
+          "desc": "街头游行与音乐"
+        },
+        {
+          "name": "国际爵士音乐节",
+          "date": "12月",
+          "desc": "世界级爵士演出"
+        }
       ],
       "customs": [
         "西班牙语",
@@ -69934,7 +73767,8 @@ var CITY_DATABASE = {
         "小费受欢迎",
         "拍照先征得同意",
         "见面贴面礼问候",
-        "餐厅可给小费"
+        "餐厅可给小费",
+        "小费文化普遍（餐厅约10%）"
       ],
       "transport": "机场：何塞·马蒂机场（HAV），市区约30分钟。铁路：铁路有限。轨道：无。出租：国营出租与老爷车出租。",
       "foodDetails": [],
@@ -70278,7 +74112,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇷",
     "lat": -25.4284,
     "lng": -49.2733,
-    "image": "https://picsum.photos/seed/safecity_curitiba/1600/600",
+    "image": "https://images.unsplash.com/photo-1649180436242-aeb0b92a4aab?w=1200&q=85",
     "safety": {
       "overall": 72,
       "grade": "B+",
@@ -70354,8 +74188,20 @@ var CITY_DATABASE = {
           "desc": "巴西烤肉",
           "tip": "烤肉店"
         },
-        "Barreado（慢炖牛肉）",
-        "Pão de queijo（芝士面包）"
+        {
+          "name": "Carne de onça（黑麦面包上的生牛肉酱，库里蒂巴名物）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Pinhão（南洋杉种子，冬季煮食或入菜）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -70376,9 +74222,24 @@ var CITY_DATABASE = {
           "desc": "法式花园与温室",
           "hidden": false
         },
-        "植物园 Jardim Botânico",
-        "Tanguá 公园",
-        "Wire Opera 钢丝绳歌剧院"
+        {
+          "name": "Tanguá 公园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Wire Opera 钢丝绳歌剧院",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "坦瓜公园（Parque Tanguá，瀑布、隧道与观景台）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -70391,8 +74252,16 @@ var CITY_DATABASE = {
           "date": "不定期",
           "desc": "本地餐饮活动"
         },
-        "Curitiba 夏季节（1月）",
-        "爵士音乐节"
+        {
+          "name": "Curitiba 夏季节",
+          "date": "1月",
+          "desc": "免费户外音乐与演出"
+        },
+        {
+          "name": "圣诞灯饰",
+          "date": "11-1月",
+          "desc": "市中心大规模灯饰与活动"
+        }
       ],
       "customs": [
         "葡萄牙语",
@@ -70400,7 +74269,8 @@ var CITY_DATABASE = {
         "见面贴面礼",
         "足球文化浓厚",
         "见面贴面礼问候",
-        "宗教场所着装得体"
+        "宗教场所着装得体",
+        "小费文化普遍（餐厅约10%）"
       ],
       "transport": "机场：阿丰索·佩纳机场（CWB），市区约30分钟。铁路：无城市轨道交通。轨道：有快速公交BRT系统。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -70754,7 +74624,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 29.9511,
     "lng": -90.0715,
-    "image": "https://picsum.photos/seed/safecity_new_orleans/1600/600",
+    "image": "https://images.unsplash.com/photo-1586974325246-05d48d665f24?w=1200&q=85",
     "safety": {
       "overall": 52,
       "grade": "B-",
@@ -70830,8 +74700,20 @@ var CITY_DATABASE = {
           "desc": "炸虾三明治",
           "tip": "街头"
         },
-        "Gumbo 秋葵汤",
-        "Jambalaya 什锦饭"
+        {
+          "name": "Jambalaya 什锦饭",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Muffuletta（意大利冷切与橄榄酱大三明治）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -70852,9 +74734,24 @@ var CITY_DATABASE = {
           "desc": "密西西比河三角洲生态",
           "hidden": false
         },
-        "法国区 French Quarter",
-        "Bourbon 街",
-        "Garden District"
+        {
+          "name": "Bourbon 街",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Garden District",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "花园区（Garden District，19 世纪豪宅与橡树街）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -70867,8 +74764,16 @@ var CITY_DATABASE = {
           "date": "4-5月",
           "desc": "全球爵士盛会"
         },
-        "狂欢节 Mardi Gras（2/3月）",
-        "爵士与传统音乐节（4/5月）"
+        {
+          "name": "爵士与传统音乐节",
+          "date": "4-5月",
+          "desc": "世界级音乐盛事"
+        },
+        {
+          "name": "狂欢节 Mardi Gras（2/3月）",
+          "date": "全年",
+          "desc": ""
+        }
       ],
       "customs": [
         "小费15-20%",
@@ -70876,7 +74781,8 @@ var CITY_DATABASE = {
         "节庆文化浓",
         "多元包容",
         "友好随和的'y'all'",
-        "音乐文化尊重"
+        "音乐文化尊重",
+        "服务行业小费是惯例而非可选"
       ],
       "transport": "机场：路易斯·阿姆斯特朗机场（MSY），市区约30分钟。铁路：有街车与公交。轨道：无。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -71226,7 +75132,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 27.9506,
     "lng": -82.4572,
-    "image": "https://picsum.photos/seed/safecity_tampa/1600/600",
+    "image": "https://images.unsplash.com/photo-1561063139-e183e66909c4?w=1200&q=85",
     "safety": {
       "overall": 68,
       "grade": "B",
@@ -71302,8 +75208,20 @@ var CITY_DATABASE = {
           "desc": "青柠派",
           "tip": "甜品店"
         },
-        "Cuban sandwich 古巴三明治",
-        "魔鬼蟹 deviled crab"
+        {
+          "name": "魔鬼蟹 deviled crab",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Cubano 古巴三明治（含热那亚萨拉米，坦帕为发源地）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -71324,9 +75242,24 @@ var CITY_DATABASE = {
           "desc": "邻近的优质海滩",
           "hidden": false
         },
-        "Busch Gardens 主题乐园",
-        "Ybor City 历史区",
-        "Tampa Riverwalk"
+        {
+          "name": "Tampa Riverwalk",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "伊博城（Ybor City，雪茄工厂历史街区）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "坦帕河滨步道（Tampa Riverwalk）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -71339,8 +75272,16 @@ var CITY_DATABASE = {
           "date": "2月",
           "desc": "佛州博览会"
         },
-        "Gasparilla 海盗节（1/2月）",
-        "加勒比狂欢节"
+        {
+          "name": "草莓节",
+          "date": "3月",
+          "desc": "邻近 Plant City 的农业庆典"
+        },
+        {
+          "name": "加勒比狂欢节",
+          "date": "全年",
+          "desc": ""
+        }
       ],
       "customs": [
         "小费15-20%",
@@ -71348,7 +75289,8 @@ var CITY_DATABASE = {
         "多元文化",
         "驾车文化",
         "随和休闲",
-        "海滩下午雷暴留意"
+        "海滩下午雷暴留意",
+        "服务行业小费是惯例而非可选"
       ],
       "transport": "机场：坦帕国际机场（TPA），市区约20分钟。铁路：有街车与公交。轨道：无。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -71699,7 +75641,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 44.9778,
     "lng": -93.265,
-    "image": "https://picsum.photos/seed/safecity_minneapolis/1600/600",
+    "image": "https://images.unsplash.com/photo-1528991191763-275f9418709f?w=1200&q=85",
     "safety": {
       "overall": 66,
       "grade": "B",
@@ -71775,8 +75717,20 @@ var CITY_DATABASE = {
           "desc": "明州特产",
           "tip": "餐馆"
         },
-        "Juicy Lucy 芝士爆浆汉堡",
-        "Hotdish 砂锅炖菜"
+        {
+          "name": "Juicy Lucy 芝士爆浆汉堡",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "Jucy Lucy（芝士夹心汉堡，Matt's Bar 与 5-8 Club 争起源）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -71797,9 +75751,24 @@ var CITY_DATABASE = {
           "desc": "全美最大室内 Mall",
           "hidden": false
         },
-        "美国购物中心 Mall of America",
-        "Minnehaha 瀑布",
-        "Walker 艺术中心与雕塑园"
+        {
+          "name": "Minnehaha 瀑布",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "Walker 艺术中心与雕塑园",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "古斯里剧院（Guthrie Theater，密西西比河畔的剧场与观景平台）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -71812,8 +75781,16 @@ var CITY_DATABASE = {
           "date": "12月",
           "desc": "冬季市集"
         },
-        "Aquatennial 水节（7月）",
-        "双城马拉松（10月）"
+        {
+          "name": "双城马拉松",
+          "date": "10月",
+          "desc": "闻名全美的城市马拉松"
+        },
+        {
+          "name": "双城骄傲节（Twin Cities Pride）",
+          "date": "6月",
+          "desc": "以明尼阿波利斯 Loring Park 为中心的 LGBTQ+ 节庆，含游行与露天演出。"
+        }
       ],
       "customs": [
         "小费15-20%",
@@ -71821,7 +75798,8 @@ var CITY_DATABASE = {
         "冬季装备必备",
         "湖畔文化",
         "'Minnesota nice' 礼貌",
-        "冬季极寒需保暖着装"
+        "冬季极寒需保暖着装",
+        "服务行业小费是惯例而非可选"
       ],
       "transport": "机场：明尼阿波利斯机场（MSP），市区约20分钟。铁路：有轻轨连接机场与市区。轨道：有轻轨（Blue/Green线）。出租：Uber与出租普及。",
       "foodDetails": [],
@@ -72173,7 +76151,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 29.563,
     "lng": 106.5516,
-    "image": "https://picsum.photos/seed/safecity_chongqing/1600/600",
+    "image": "https://images.unsplash.com/photo-1676107982922-f942bab11de6?w=1200&q=85",
     "safety": {
       "overall": 78,
       "grade": "A-",
@@ -72249,8 +76227,20 @@ var CITY_DATABASE = {
           "desc": "红薯粉酸辣",
           "tip": "小吃摊"
         },
-        "重庆火锅（麻辣）",
-        "重庆小面"
+        {
+          "name": "歌乐山辣子鸡（辣椒堆里找鸡丁）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "毛血旺（鸭血毛肚麻辣锅）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -72271,9 +76261,24 @@ var CITY_DATABASE = {
           "desc": "千年古镇与小吃",
           "hidden": false
         },
-        "洪崖洞",
-        "解放碑",
-        "磁器口古镇"
+        {
+          "name": "解放碑",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "武隆天生三桥（世界自然遗产喀斯特天坑）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大足石刻（世界文化遗产摩崖石刻）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -72286,8 +76291,16 @@ var CITY_DATABASE = {
           "date": "农历正月",
           "desc": "传统灯会"
         },
-        "重庆火锅节（10月）",
-        "春节灯会"
+        {
+          "name": "三峡国际旅游节",
+          "date": "全年",
+          "desc": "长江三峡文化与旅游盛事"
+        },
+        {
+          "name": "重庆国际啤酒节",
+          "date": "夏季",
+          "desc": "夏日啤酒与音乐活动"
+        }
       ],
       "customs": [
         "微信支付宝普及",
@@ -72295,7 +76308,8 @@ var CITY_DATABASE = {
         "方言与普通话并存",
         "热情直率",
         "麻辣饮食文化盛行",
-        "火锅是重要社交方式"
+        "火锅是重要社交方式",
+        "进寺庙脱鞋、着装遮盖肩腿"
       ],
       "transport": "机场：江北国际机场（CKG），市区约40分钟。铁路：成渝高铁连接成都。轨道：有10余条轻轨/地铁线。出租：网约车与出租普及。",
       "foodDetails": [],
@@ -72643,7 +76657,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 36.0671,
     "lng": 120.3826,
-    "image": "https://picsum.photos/seed/safecity_qingdao/1600/600",
+    "image": "https://images.unsplash.com/photo-1766990420545-7721c4374597?w=1200&q=85",
     "safety": {
       "overall": 80,
       "grade": "A-",
@@ -72719,8 +76733,20 @@ var CITY_DATABASE = {
           "desc": "本地特色",
           "tip": "饺子馆"
         },
-        "青岛啤酒",
-        "辣炒蛤蜊"
+        {
+          "name": "辣炒蛤蜊",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "排骨米饭（排骨炖菜配米饭，青岛快餐名物）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -72741,9 +76767,24 @@ var CITY_DATABASE = {
           "desc": "海上名山与道观",
           "hidden": false
         },
-        "栈桥",
-        "八大关",
-        "崂山"
+        {
+          "name": "五四广场（五月的风雕塑与城市海岸线）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "青岛啤酒博物馆（百年啤酒厂参观与品鉴）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "信号山公园（旋转观景楼俯瞰红瓦绿树）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -72756,8 +76797,16 @@ var CITY_DATABASE = {
           "date": "7月",
           "desc": "海洋主题庆典"
         },
-        "青岛国际啤酒节（8月）",
-        "海洋节（7月）"
+        {
+          "name": "青岛萝卜元宵山会",
+          "date": "农历正月初九至十五（通常2月）",
+          "desc": "市北区传统的萝卜会与元宵山会合并的大型庙会，有民间表演与小吃集市。"
+        },
+        {
+          "name": "海云庵糖球会",
+          "date": "农历正月十六（通常2月）",
+          "desc": "四方海云庵一带的传统庙会，以糖葫芦（糖球）与民间文艺演出著称。"
+        }
       ],
       "customs": [
         "扫码支付普及",
@@ -72765,7 +76814,8 @@ var CITY_DATABASE = {
         "海边长者晨练文化",
         "直爽好客",
         "啤酒与海鲜饮食文化",
-        "公共场所禁烟"
+        "公共场所禁烟",
+        "进寺庙脱鞋、着装遮盖肩腿"
       ],
       "transport": "机场：胶东国际机场（TAO），市区约1小时。铁路：高铁直达多城。轨道：有地铁线。出租：网约车与出租普及。",
       "foodDetails": [],
@@ -73121,7 +77171,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 18.2528,
     "lng": 109.5119,
-    "image": "https://picsum.photos/seed/safecity_sanya/1600/600",
+    "image": "https://images.unsplash.com/photo-1568427514759-1c282e2215e4?w=1200&q=85",
     "safety": {
       "overall": 76,
       "grade": "B+",
@@ -73197,8 +77247,20 @@ var CITY_DATABASE = {
           "desc": "椰奶甜品",
           "tip": "街头"
         },
-        "海南鸡饭",
-        "文昌鸡"
+        {
+          "name": "海南鸡饭",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "文昌鸡",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -73219,9 +77281,24 @@ var CITY_DATABASE = {
           "desc": "海上观音圣像",
           "hidden": false
         },
-        "亚龙湾",
-        "天涯海角",
-        "南山寺"
+        {
+          "name": "南山寺",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "南山文化旅游区（108 米海上观音与南山寺）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "大小洞天（海岸山岩与道教文化景区）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -73234,8 +77311,16 @@ var CITY_DATABASE = {
           "date": "11月",
           "desc": "全省旅游节"
         },
-        "三亚国际马拉松（3月）",
-        "海南欢乐节"
+        {
+          "name": "三亚国际马拉松",
+          "date": "3月",
+          "desc": "海滨赛道马拉松"
+        },
+        {
+          "name": "海南岛国际电影节（HIIFF）",
+          "date": "12月",
+          "desc": "以三亚为主会场的国际电影节，含竞赛单元、展映与沙滩放映。"
+        }
       ],
       "customs": [
         "扫码支付普及",
@@ -73243,7 +77328,8 @@ var CITY_DATABASE = {
         "度假休闲文化",
         "物价较内地高",
         "海岛度假休闲文化",
-        "高倍防晒、注意补水"
+        "高倍防晒、注意补水",
+        "进寺庙脱鞋、着装遮盖肩腿"
       ],
       "transport": "机场：凤凰国际机场（SYX），市区约30分钟。铁路：环岛高铁连接海口。轨道：无。出租：网约车与出租。",
       "foodDetails": [],
@@ -73594,7 +77680,7 @@ var CITY_DATABASE = {
     "flag": "🇰🇷",
     "lat": 35.1796,
     "lng": 129.0756,
-    "image": "https://picsum.photos/seed/safecity_busan/1600/600",
+    "image": "https://images.unsplash.com/photo-1578724007989-43f1c0f5f3c7?w=1200&q=85",
     "safety": {
       "overall": 82,
       "grade": "A-",
@@ -73664,14 +77750,26 @@ var CITY_DATABASE = {
           "tip": "市场"
         },
         {
-          "name": "海鲜煎饼",
-          "type": "韩国",
-          "price": "中等",
-          "desc": "Pajeon",
-          "tip": "啤酒馆"
+          "name": "小麦面（밀면，釜山式冷荞麦/小麦凉面）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
         },
-        "札嘎其海鲜",
-        "猪肉汤饭 Dwaeji-gukbap"
+        {
+          "name": "釜山鱼糕（어묵，鱼糕串与鱼糕汤）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        },
+        {
+          "name": "种子糖饼（씨앗호떡，南浦洞 BIFF 广场名物）",
+          "type": "当地菜",
+          "price": "",
+          "desc": "",
+          "tip": ""
+        }
       ],
       "attractions": [
         {
@@ -73692,9 +77790,24 @@ var CITY_DATABASE = {
           "desc": "韩国最大水产市场",
           "hidden": false
         },
-        "海云台",
-        "甘川文化村",
-        "札嘎其市场"
+        {
+          "name": "太宗台（影岛南端悬崖与灯塔）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "龙头山公园与釜山塔（市区最高观景点）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        },
+        {
+          "name": "广安里海水浴场（可看广安大桥夜景）",
+          "type": "景点",
+          "desc": "",
+          "hidden": false
+        }
       ],
       "festivals": [
         {
@@ -73707,8 +77820,16 @@ var CITY_DATABASE = {
           "date": "夏季",
           "desc": "沙滩沙雕展"
         },
-        "釜山国际电影节 BIFF（10月）",
-        "海云台沙节（6月）"
+        {
+          "name": "海云台沙节",
+          "date": "6月",
+          "desc": "海滩沙雕与活动"
+        },
+        {
+          "name": "釜山国际烟花节（Busan International Fireworks Festival）",
+          "date": "10月",
+          "desc": "在广安里海滩与广安大桥上空举行的多国烟花汇演，是釜山最大秋季活动。"
+        }
       ],
       "customs": [
         "韩语与敬语",
@@ -73716,7 +77837,8 @@ var CITY_DATABASE = {
         "脱鞋入室",
         "饮酒文化浓",
         "鞠躬问候",
-        "进屋脱鞋"
+        "进屋脱鞋",
+        "进寺庙脱鞋、着装遮盖肩腿"
       ],
       "transport": "机场：金海国际机场（PUS），市区约40分钟。铁路：KTX高速连接首尔。轨道：有4条地铁线。出租：网约车与出租。",
       "foodDetails": [],
