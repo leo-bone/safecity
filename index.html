@@ -1643,11 +1643,11 @@
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球城市安全数据库（148 城）-->
 <!-- 城市安全数据库（148 城）-->
-<script src="data_enhanced.js?v=202609301830"></script>
+<script src="data_enhanced.js?v=202610011200"></script>
 <!-- 城市详情数据库 v4.0 -->
-<script src="data_new.js?v=202609301830"></script>
+<script src="data_new.js?v=202610011200"></script>
 <!-- 实时数据接口 -->
-<script src="realtime-api.js?v=202609301830"></script>
+<script src="realtime-api.js?v=202610011200"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
@@ -1950,6 +1950,14 @@ function populateCityDetail(data) {
   renderFoodSafetyPanel(adaptedData);
   renderDiseasePreventionPanel(adaptedData);
   renderHistoryPanel(adaptedData);
+  // 预渲染「切换时才渲染」的面板，避免首次点击出现空白
+  try {
+    renderTransport(adaptedData);
+    renderHospital(adaptedData);
+    renderEmbassyEnhanced(adaptedData);
+    renderSafetyApp(adaptedData);
+    renderSelfDefense(adaptedData);
+  } catch (err) { console.warn('面板预渲染失败:', err); }
 }
 
 // 数据格式适配器：将 data_new.js 的新格式转换为旧格式兼容
@@ -2109,11 +2117,14 @@ function switchDetailTab(tabName, btn) {
   if (tabName === 'history') setTimeout(drawRadarChart, 100);
   if (tabName === 'live' && currentCity) loadCityLiveData(currentCity);
   // 新增tab的渲染函数调用
-  if (tabName === 'transport' && currentCity) renderTransport(CITY_DATABASE[currentCity]);
-  if (tabName === 'hospital' && currentCity) renderHospital(CITY_DATABASE[currentCity]);
-  if (tabName === 'embassy' && currentCity) renderEmbassyEnhanced(CITY_DATABASE[currentCity]);
-  if (tabName === 'safety-app' && currentCity) renderSafetyApp(CITY_DATABASE[currentCity]);
-  if (tabName === 'self-defense' && currentCity) renderSelfDefense(CITY_DATABASE[currentCity]);
+  if (!currentCity) return;
+  // currentCity 本身就是城市对象，先用 id 取权威数据，取不到就用当前对象
+  const cityData = (typeof CITY_DATABASE !== 'undefined' && CITY_DATABASE[currentCity.id]) || currentCity;
+  if (tabName === 'transport') renderTransport(cityData);
+  if (tabName === 'hospital') renderHospital(cityData);
+  if (tabName === 'embassy') renderEmbassyEnhanced(cityData);
+  if (tabName === 'safety-app') renderSafetyApp(cityData);
+  if (tabName === 'self-defense') renderSelfDefense(cityData);
 }
 
 // ─────────────────────────────────────────────────────
@@ -2339,13 +2350,15 @@ function renderEmergencyPanel(data) {
 
   // 医院
   const hList = document.getElementById('hospitals-list');
-  hList.innerHTML = (e.hospitals || []).map(h => `
+  const hospitals = data.hospitals || e.hospitals || [];
+  hList.innerHTML = hospitals.map(h => `
     <div class="hospital-card">
       <div class="hospital-name">🏥 ${h.name}</div>
       <div class="hospital-meta">
-        <span>📞 <a href="tel:${h.phone}" style="color:var(--accent)">${h.phone}</a></span>
-        <span>📍 ${h.address}</span>
+        <span>📞 <a href="tel:${h.phone || ''}" style="color:var(--accent)">${h.phone || '-'}</a></span>
+        <span>📍 ${h.address || ''}</span>
       </div>
+      ${h.languages && h.languages.length ? `<div style="font-size:12px;color:var(--text-muted);margin-top:6px">🗣️ 语言：${h.languages.join('、')}</div>` : ''}
     </div>`).join('') || '<div style="color:var(--text-muted);padding:12px">如遇紧急医疗状况，请拨打救护车电话</div>';
 
   // 大使馆 - 优先使用顶层的中国大使馆数据，其次使用emergency.embassies
@@ -2353,27 +2366,45 @@ function renderEmergencyPanel(data) {
   let embassyHtml = '';
   
   // 优先显示中国大使馆信息（顶层embassy字段）
-  if (data.embassy && data.embassy.name) {
+  // 顶层 embassies 结构：{ country, embassy:{name,address,phone,emergency,email,hours}, consulates:[{name,address,phone}] }
+  const embRoot = data.embassies || null;
+  const primary = (embRoot && embRoot.embassy) ? embRoot.embassy : (data.embassy || null);
+  if (primary && primary.name) {
     embassyHtml = `
       <div class="embassy-item" style="background:linear-gradient(135deg,rgba(220,53,69,0.1),rgba(220,53,69,0.05));border-color:rgba(220,53,69,0.3);">
         <div style="flex:1;">
-          <span class="embassy-name">🏛️ ${data.embassy.name}</span>
+          <span class="embassy-name">🏛️ ${primary.name}</span>
           <div style="margin-top:4px;">
             <span style="color:var(--text-muted);font-size:12px;">📞</span> 
-            <a href="tel:${data.embassy.phone}" style="color:var(--accent);font-weight:600;">${data.embassy.phone}</a>
-            ${data.embassy.emergency ? `<span style="margin-left:8px;color:#ef4444;font-size:11px;">24小时领事保护: ${data.embassy.emergency}</span>` : ''}
+            <a href="tel:${primary.phone || ''}" style="color:var(--accent);font-weight:600;">${primary.phone || '-'}</a>
+            ${primary.emergency ? `<span style="margin-left:8px;color:#ef4444;font-size:11px;">24小时领事保护: ${primary.emergency}</span>` : ''}
           </div>
           <div style="margin-top:2px;">
             <span style="color:var(--text-muted);font-size:12px;">📧</span> 
-            <a href="mailto:${data.embassy.email || ''}" style="font-size:12px;">${data.embassy.email || '无'}</a>
+            <a href="mailto:${primary.email || ''}" style="font-size:12px;">${primary.email || '无'}</a>
           </div>
           <div style="margin-top:2px;">
             <span style="color:var(--text-muted);font-size:12px;">📍</span> 
-            <span style="font-size:12px;">${data.embassy.address}</span>
+            <span style="font-size:12px;">${primary.address || ''}</span>
           </div>
+          ${primary.hours ? `<div style="margin-top:2px;"><span style="color:var(--text-muted);font-size:12px;">⏰</span> <span style="font-size:12px;">${primary.hours}</span></div>` : ''}
         </div>
-        <button class="call-btn" onclick="copyText('${data.embassy.phone}','中国大使馆电话')">📋 复制</button>
+        <button class="call-btn" onclick="copyText('${primary.phone || ''}','中国大使馆电话')">📋 复制</button>
       </div>`;
+  }
+
+  // 总领事馆（顶层 embassies.consulates）
+  const consulates = (embRoot && embRoot.consulates) || [];
+  if (consulates.length > 0) {
+    embassyHtml += consulates.map(c => `
+      <div class="embassy-item">
+        <div style="flex:1;">
+          <span class="embassy-name">🏛️ ${c.name}</span>
+          <div style="margin-top:2px;font-size:12px;color:var(--text-muted)">📍 ${c.address || ''}</div>
+        </div>
+        <span class="embassy-phone">${c.phone || '-'}</span>
+        <button class="call-btn" onclick="copyText('${c.phone || ''}','领事馆电话')">📋 复制</button>
+      </div>`).join('');
   }
   
   // 添加其他大使馆（从emergency.embassies）
@@ -2391,13 +2422,23 @@ function renderEmergencyPanel(data) {
 
   // 推荐APP
   const appsEl = document.getElementById('apps-grid');
-  appsEl.innerHTML = (e.apps || []).map(app => `
-    <div class="app-tag"><span class="app-tag-icon">📱</span>${app}</div>`).join('');
+  const namedApps = (data.safetyApps || []).map(a => (typeof a === 'string' ? a : (a.name + (a.desc ? ' · ' + a.desc : ''))));
+  const appSrc = namedApps.length ? namedApps : (e.apps || []);
+  appsEl.innerHTML = appSrc.map(app => `
+    <div class="app-tag"><span class="app-tag-icon">📱</span>${app}</div>`).join('') || '<div style="color:var(--text-muted);padding:12px">暂无推荐应用</div>';
 
   // 自保策略
   const sdList = document.getElementById('self-defense-list');
-  sdList.innerHTML = (e.selfDefense || []).map(s => `
-    <li><span>🛡️</span><span>${s}</span></li>`).join('');
+  let sdArr = [];
+  if (data.selfDefense) {
+    sdArr = (data.selfDefense.general || []).concat(data.selfDefense.emergency || []);
+  } else if (Array.isArray(e.selfDefense)) {
+    sdArr = e.selfDefense;
+  } else if (e.selfDefense) {
+    sdArr = (e.selfDefense.general || []).concat(e.selfDefense.emergency || []);
+  }
+  sdList.innerHTML = sdArr.map(s => `
+    <li><span>🛡️</span><span>${s}</span></li>`).join('') || '<li style="color:var(--text-muted)">暂无自保策略数据</li>';
 }
 
 // ─────────────────────────────────────────────────────
@@ -3371,11 +3412,11 @@ function runTopProgress() {
   }
 })();
 
-  function renderTransport(d){var c=document.getElementById('transport-content');if(!c)return;var t=d.transportation;if(!t){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无交通指南数据</div>';return}var h='';if(t.metro)h+='<div class="transport-card"><div class="transport-name">🚇 '+(t.metro.name||'')+'</div><div class="transport-tips">'+(t.metro.tips||'')+'</div><div class="transport-info">'+(t.metro.hours?'⏰ '+t.metro.hours:'')+' '+(t.metro.cost?'💰 '+t.metro.cost:'')+'</div></div>';if(t.bus)h+='<div class="transport-card"><div class="transport-name">🚌 '+(t.bus.name||'')+'</div><div class="transport-tips">'+(t.bus.tips||'')+'</div><div class="transport-info">'+(t.bus.hours?'⏰ '+t.bus.hours:'')+' '+(t.bus.cost?'💰 '+t.bus.cost:'')+'</div></div>';if(t.taxi)h+='<div class="transport-card"><div class="transport-name">🚕 '+(t.taxi.name||'')+'</div><div class="transport-tips">'+(t.taxi.tips||'')+'</div><div class="transport-info">'+(t.taxi.cost?'💰 '+t.taxi.cost:'')+'</div></div>';if(t.train)h+='<div class="transport-card"><div class="transport-name">🚆 '+(t.train.name||'')+'</div><div class="transport-tips">'+(t.train.tips||'')+'</div><div class="transport-info">'+(t.train.hours?'⏰ '+t.train.hours:'')+'</div></div>';if(t.boat)h+='<div class="transport-card"><div class="transport-name">⛴️ '+(t.boat.name||'')+'</div><div class="transport-tips">'+(t.boat.tips||'')+'</div><div class="transport-info">'+(t.boat.hours?'⏰ '+t.boat.hours:'')+' '+(t.boat.cost?'💰 '+t.boat.cost:'')+'</div></div>';if(t.app)h+='<div class="transport-app">📱 推荐App: '+t.app+'</div>';c.innerHTML=h}
-  function renderHospital(d){var c=document.getElementById('hospital-content');if(!c)return;var hs=d.hospitals;if(!hs||!hs.length){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无医院数据</div>';return}var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">以下医院提供外语服务，建议出发前确认预约。</p>';hs.forEach(function(x){h+='<div class="hospital-card"><div class="hospital-name">'+x.name+'</div><div class="hospital-name-en">'+(x.nameEn||'')+'</div>'+(x.english?'<span class="hospital-badge">🌐 外语服务</span>':'')+'<div class="hospital-address">📍 '+(x.address||'')+'</div><div class="hospital-phone">📞 '+(x.phone||'')+'</div><div class="hospital-langs">';(x.languages||[]).forEach(function(l){h+='<span class="hospital-lang">'+l+'</span>'});h+='</div><div class="hospital-services"><strong>服务:</strong> '+(x.services?x.services.join('、'):'全科')+(x.insurance?'<br><strong>保险:</strong> '+x.insurance:'')+'</div></div>'});c.innerHTML=h}
-  function renderEmbassyEnhanced(d){var c=document.getElementById('embassy-content');if(!c)return;var e=d.embassies;if(!e){var embs=(d.emergency||{}).embassies||{};if(!Object.keys(embs).length){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无使领馆数据</div>';return}var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">当地中国使领馆信息</p>';Object.entries(embs).forEach(function(o){h+='<div class="embassy-card"><div class="embassy-name">🏛️ '+o[0]+'</div><div class="embassy-row"><span class="embassy-row-icon">📞</span><span>'+o[1]+'</span></div></div>'});c.innerHTML=h;return}var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">中国驻'+(e.country||d.country||'当地')+'使领馆信息</p>';if(e.embassy){var x=e.embassy;h+='<div class="embassy-card"><div class="embassy-type">大使馆</div><div class="embassy-name">🏛️ '+x.name+'</div><div class="embassy-row"><span class="embassy-row-icon">📍</span><span>'+(x.address||'')+'</span></div><div class="embassy-row"><span class="embassy-row-icon">📞</span><span>'+(x.phone||'')+'</span></div>'+(x.email?'<div class="embassy-row"><span class="embassy-row-icon">📧</span><span>'+x.email+'</span></div>':'')+(x.hours?'<div class="embassy-row"><span class="embassy-row-icon">⏰</span><span>办公时间: '+x.hours+'</span></div>':'')+(x.emergency?'<div class="embassy-emergency"><span class="embassy-emergency-icon">🚨</span><div><span class="embassy-emergency-label">24小时领事保护热线</span><br><span class="embassy-emergency-num">'+x.emergency+'</span></div></div>':'')+'</div>'}if(e.consulates){e.consulates.forEach(function(x){h+='<div class="embassy-card"><div class="embassy-type">总领事馆</div><div class="embassy-name">🏛️ '+x.name+'</div><div class="embassy-row"><span class="embassy-row-icon">📍</span><span>'+(x.address||'')+'</span></div><div class="embassy-row"><span class="embassy-row-icon">📞</span><span>'+(x.phone||'')+'</span></div></div>'})}c.innerHTML=h}
-  function renderSafetyApp(d){var c=document.getElementById('safety-app-content');if(!c)return;var apps=d.safetyApps;if(!apps||!apps.length){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无安全应用数据</div>';return}var iconMap={'shield':'🛡️','alert':'🚨','map':'🗺️','car':'🚗','train':'🚇','phone':'📞','mic':'🎤','bike':'🚴','bus':'🚌','taxi':'🚕','message':'💬','navigation':'🧭','translate':'🌐'};var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">推荐下载以下应用提升旅行安全性</p><div class="app-grid">';apps.forEach(function(a){h+='<div class="app-card"><div class="app-icon">'+(iconMap[a.icon]||'📱')+'</div><div class="app-name">'+a.name+'</div><div class="app-desc">'+a.desc+'</div></div>'});h+='</div>';c.innerHTML=h}
-  function renderSelfDefense(d){var c=document.getElementById('self-defense-content');if(!c)return;var sd=d.selfDefense;if(!sd){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无自保策略数据</div>';return}var h='';if(sd.general&&sd.general.length){h+='<div class="defense-section"><div class="defense-title">⚠️ 日常安全须知</div><ul class="defense-list">';sd.general.forEach(function(t){h+='<li>'+t+'</li>'});h+='</ul></div>'}if(sd.emergency&&sd.emergency.length){h+='<div class="defense-section"><div class="defense-title">🚨 紧急情况应对</div><ul class="defense-list">';sd.emergency.forEach(function(t){h+='<li>'+t+'</li>'});h+='</ul></div>'}c.innerHTML=h||'<div style="text-align:center;color:var(--text3);padding:40px;">暂无自保策略数据</div>'}
+  function renderTransport(d){var c=document.getElementById('transport-content');if(!c)return;if(!d){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无数据</div>';return;}var t=d.transportation;if(!t){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无交通指南数据</div>';return}var h='';if(t.metro)h+='<div class="transport-card"><div class="transport-name">🚇 '+(t.metro.name||'')+'</div><div class="transport-tips">'+(t.metro.tips||'')+'</div><div class="transport-info">'+(t.metro.hours?'⏰ '+t.metro.hours:'')+' '+(t.metro.cost?'💰 '+t.metro.cost:'')+'</div></div>';if(t.bus)h+='<div class="transport-card"><div class="transport-name">🚌 '+(t.bus.name||'')+'</div><div class="transport-tips">'+(t.bus.tips||'')+'</div><div class="transport-info">'+(t.bus.hours?'⏰ '+t.bus.hours:'')+' '+(t.bus.cost?'💰 '+t.bus.cost:'')+'</div></div>';if(t.taxi)h+='<div class="transport-card"><div class="transport-name">🚕 '+(t.taxi.name||'')+'</div><div class="transport-tips">'+(t.taxi.tips||'')+'</div><div class="transport-info">'+(t.taxi.cost?'💰 '+t.taxi.cost:'')+'</div></div>';if(t.train)h+='<div class="transport-card"><div class="transport-name">🚆 '+(t.train.name||'')+'</div><div class="transport-tips">'+(t.train.tips||'')+'</div><div class="transport-info">'+(t.train.hours?'⏰ '+t.train.hours:'')+'</div></div>';if(t.boat)h+='<div class="transport-card"><div class="transport-name">⛴️ '+(t.boat.name||'')+'</div><div class="transport-tips">'+(t.boat.tips||'')+'</div><div class="transport-info">'+(t.boat.hours?'⏰ '+t.boat.hours:'')+' '+(t.boat.cost?'💰 '+t.boat.cost:'')+'</div></div>';if(t.app)h+='<div class="transport-app">📱 推荐App: '+t.app+'</div>';c.innerHTML=h}
+  function renderHospital(d){var c=document.getElementById('hospital-content');if(!c)return;if(!d){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无数据</div>';return;}var hs=d.hospitals;if(!hs||!hs.length){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无医院数据</div>';return}var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">以下医院提供外语服务，建议出发前确认预约。</p>';hs.forEach(function(x){h+='<div class="hospital-card"><div class="hospital-name">'+x.name+'</div><div class="hospital-name-en">'+(x.nameEn||'')+'</div>'+(x.english?'<span class="hospital-badge">🌐 外语服务</span>':'')+'<div class="hospital-address">📍 '+(x.address||'')+'</div><div class="hospital-phone">📞 '+(x.phone||'')+'</div><div class="hospital-langs">';(x.languages||[]).forEach(function(l){h+='<span class="hospital-lang">'+l+'</span>'});h+='</div><div class="hospital-services"><strong>服务:</strong> '+(x.services?x.services.join('、'):'全科')+(x.insurance?'<br><strong>保险:</strong> '+x.insurance:'')+'</div></div>'});c.innerHTML=h}
+  function renderEmbassyEnhanced(d){var c=document.getElementById('embassy-content');if(!c)return;if(!d){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无数据</div>';return;}var e=d.embassies;if(!e){var embs=(d.emergency||{}).embassies||{};if(!Object.keys(embs).length){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无使领馆数据</div>';return}var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">当地中国使领馆信息</p>';Object.entries(embs).forEach(function(o){h+='<div class="embassy-card"><div class="embassy-name">🏛️ '+o[0]+'</div><div class="embassy-row"><span class="embassy-row-icon">📞</span><span>'+o[1]+'</span></div></div>'});c.innerHTML=h;return}var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">中国驻'+(e.country||d.country||'当地')+'使领馆信息</p>';if(e.embassy){var x=e.embassy;h+='<div class="embassy-card"><div class="embassy-type">大使馆</div><div class="embassy-name">🏛️ '+x.name+'</div><div class="embassy-row"><span class="embassy-row-icon">📍</span><span>'+(x.address||'')+'</span></div><div class="embassy-row"><span class="embassy-row-icon">📞</span><span>'+(x.phone||'')+'</span></div>'+(x.email?'<div class="embassy-row"><span class="embassy-row-icon">📧</span><span>'+x.email+'</span></div>':'')+(x.hours?'<div class="embassy-row"><span class="embassy-row-icon">⏰</span><span>办公时间: '+x.hours+'</span></div>':'')+(x.emergency?'<div class="embassy-emergency"><span class="embassy-emergency-icon">🚨</span><div><span class="embassy-emergency-label">24小时领事保护热线</span><br><span class="embassy-emergency-num">'+x.emergency+'</span></div></div>':'')+'</div>'}if(e.consulates){e.consulates.forEach(function(x){h+='<div class="embassy-card"><div class="embassy-type">总领事馆</div><div class="embassy-name">🏛️ '+x.name+'</div><div class="embassy-row"><span class="embassy-row-icon">📍</span><span>'+(x.address||'')+'</span></div><div class="embassy-row"><span class="embassy-row-icon">📞</span><span>'+(x.phone||'')+'</span></div></div>'})}c.innerHTML=h}
+  function renderSafetyApp(d){var c=document.getElementById('safety-app-content');if(!c)return;if(!d){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无数据</div>';return;}var apps=d.safetyApps;if(!apps||!apps.length){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无安全应用数据</div>';return}var iconMap={'shield':'🛡️','alert':'🚨','map':'🗺️','car':'🚗','train':'🚇','phone':'📞','mic':'🎤','bike':'🚴','bus':'🚌','taxi':'🚕','message':'💬','navigation':'🧭','translate':'🌐'};var h='<p style="font-size:13px;color:var(--text3);margin-bottom:16px;">推荐下载以下应用提升旅行安全性</p><div class="app-grid">';apps.forEach(function(a){h+='<div class="app-card"><div class="app-icon">'+(iconMap[a.icon]||'📱')+'</div><div class="app-name">'+a.name+'</div><div class="app-desc">'+a.desc+'</div></div>'});h+='</div>';c.innerHTML=h}
+  function renderSelfDefense(d){var c=document.getElementById('self-defense-content');if(!c)return;if(!d){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无数据</div>';return;}var sd=d.selfDefense;if(!sd){c.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;">暂无自保策略数据</div>';return}var h='';if(sd.general&&sd.general.length){h+='<div class="defense-section"><div class="defense-title">⚠️ 日常安全须知</div><ul class="defense-list">';sd.general.forEach(function(t){h+='<li>'+t+'</li>'});h+='</ul></div>'}if(sd.emergency&&sd.emergency.length){h+='<div class="defense-section"><div class="defense-title">🚨 紧急情况应对</div><ul class="defense-list">';sd.emergency.forEach(function(t){h+='<li>'+t+'</li>'});h+='</ul></div>'}c.innerHTML=h||'<div style="text-align:center;color:var(--text3);padding:40px;">暂无自保策略数据</div>'}
 
 </script>
 
