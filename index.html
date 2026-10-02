@@ -1643,15 +1643,17 @@
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球城市安全数据库（148 城）-->
 <!-- 城市安全数据库（148 城）-->
-<script src="data_enhanced.js?v=202610011245"></script>
+<script src="data_enhanced.js?v=202610021727"></script>
 <!-- 城市详情数据库 v4.0 -->
-<script src="data_new.js?v=202610011245"></script>
+<script src="data_new.js?v=202610021727"></script>
 <!-- 实时数据接口 -->
-<script src="realtime-api.js?v=202610011245"></script>
+<script src="realtime-api.js?v=202610021727"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
 // ─────────────────────────────────────────────────────
+// 兼容别名：数据文件导出为 CITY_DATABASE，历史代码使用 CITY_DATA（数据重构时变量改名，index.html 未同步）
+const CITY_DATA = (typeof CITY_DATABASE !== 'undefined') ? CITY_DATABASE : {};
 let currentCity = null;
 let currentFilter = '全部';
 
@@ -2829,7 +2831,22 @@ function renderHotspotsPanel(data) {
 // 食品安全面板
 // ─────────────────────────────────────────────────────
 function renderFoodSafetyPanel(data) {
-  const fs = data.foodSafety || {};
+  const rawFS = data.foodSafety || {};
+  // 字段归一化：数据实际字段为 tapWater / streetFood / seafood / allergy / waterSafe
+  const tapW = rawFS.tapWater || rawFS.waterSafe || '';
+  const fs = {
+    summary: rawFS.summary || [
+      tapW ? ('自来水：' + tapW) : '',
+      rawFS.streetFood ? ('街头美食：' + rawFS.streetFood) : '',
+      rawFS.seafood ? ('海鲜：' + rawFS.seafood) : '',
+      rawFS.allergy ? ('过敏提示：' + rawFS.allergy) : ''
+    ].filter(Boolean).join('；'),
+    tapWater: tapW,
+    seafood: rawFS.seafood || '',
+    streetFood: rawFS.streetFood || '',
+    avoid: rawFS.avoid || rawFS.allergy || '',
+    restaurants: rawFS.restaurants || ''
+  };
   const contentEl = document.getElementById('food-safety-content');
   
   if (!fs.summary) {
@@ -2876,7 +2893,21 @@ function renderFoodSafetyPanel(data) {
 // 疾病预防面板
 // ─────────────────────────────────────────────────────
 function renderDiseasePreventionPanel(data) {
-  const dp = data.diseasePrevention || {};
+  const rawDP = data.diseasePrevention || {};
+  // 字段归一化：数据实际字段为 commonDiseases / vaccines / mosquitoRisk / airQuality / tips
+  const dpDiseases = rawDP.diseases || rawDP.commonDiseases || '';
+  const dp = {
+    summary: rawDP.summary || [
+      dpDiseases ? ('常见疾病：' + dpDiseases) : '',
+      rawDP.vaccines ? ('疫苗建议：' + rawDP.vaccines) : '',
+      rawDP.mosquitoRisk ? ('蚊虫与媒介风险：' + rawDP.mosquitoRisk) : '',
+      rawDP.airQuality ? ('空气质量：' + rawDP.airQuality) : ''
+    ].filter(Boolean).join('；'),
+    vaccines: rawDP.vaccines || '',
+    diseases: dpDiseases,
+    weather: rawDP.weather || rawDP.airQuality || '',
+    tips: rawDP.tips || ''
+  };
   const contentEl = document.getElementById('disease-prevention-content');
   
   if (!dp.summary) {

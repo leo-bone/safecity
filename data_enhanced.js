@@ -1,7 +1,4 @@
-CITY_DATABASE =
-CITY_DATABASE =
-CITY_DATABASE =
-CITY_DATABASE = {
+var CITY_DATABASE = {
   "tokyo": {
     "id": "tokyo",
     "name": "东京",

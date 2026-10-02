@@ -7,10 +7,7 @@
 // 23座新增城市（非洲/中东/大洋洲/拉美/北美/亚洲）已做全栏位深度扩充（美食/景点/节日/习俗/热点/安全区均补齐）
 // 厄瓜多尔(quito)紧急电话已校正为统一 911
 // ============================================================
-CITY_DATABASE_DETAIL =
-CITY_DATABASE =
-CITY_DATABASE =
-CITY_DATABASE = {
+var CITY_DATABASE_DETAIL = {
   "tokyo": {
     "id": "tokyo",
     "name": "东京",
