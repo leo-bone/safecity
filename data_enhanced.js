@@ -4697,7 +4697,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇼",
     "lat": 25.033,
     "lng": 121.5654,
-    "image": "https://images.unsplash.com/photo-1548886939-1f7b5a51a234?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&q=85",
     "safety": {
       "overall": 91,
       "grade": "A",
@@ -8503,7 +8503,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇪",
     "lat": 25.2048,
     "lng": 55.2708,
-    "image": "https://images.unsplash.com/photo-1512453979098-5d732c1b7036?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -10659,7 +10659,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇱",
     "lat": 32.0853,
     "lng": 34.7818,
-    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc32?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1558634742-56096b49522b?w=1200&q=85",
     "safety": {
       "overall": 81,
       "grade": "A-",
@@ -12267,7 +12267,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 18.7883,
     "lng": 98.9853,
-    "image": "https://images.unsplash.com/photo-1508766512815-9f92f8d2e9e9?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85",
     "safety": {
       "overall": 70,
       "grade": "B",
@@ -12791,7 +12791,7 @@ var CITY_DATABASE = {
     "flag": "🇹🇭",
     "lat": 7.8804,
     "lng": 98.3923,
-    "image": "https://images.unsplash.com/photo-1589394815349-1b6cfc8e9c86?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1473893604213-3df9c15611c0?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -15894,7 +15894,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇳",
     "lat": 17.385,
     "lng": 78.4867,
-    "image": "https://images.unsplash.com/photo-1600100397608-f2dc55ecc5fd?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=1200&q=85",
     "safety": {
       "overall": 65,
       "grade": "B-",
@@ -16417,7 +16417,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 22.5431,
     "lng": 114.0579,
-    "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=1200&q=85",
     "safety": {
       "overall": 78,
       "grade": "B+",
@@ -16940,7 +16940,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 23.1291,
     "lng": 113.2644,
-    "image": "https://images.unsplash.com/photo-1515636905755-0b2e49c9a36d?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -17456,7 +17456,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.5728,
     "lng": 104.0668,
-    "image": "https://images.unsplash.com/photo-1523839768568-21b8c3b4e57f?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1676107982922-f942bab11de6?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -17972,7 +17972,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇳",
     "lat": 30.2741,
     "lng": 120.1551,
-    "image": "https://images.unsplash.com/photo-1513635269975-3dc6167c5450?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -20739,7 +20739,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇱",
     "lat": 52.3676,
     "lng": 4.9041,
-    "image": "https://images.unsplash.com/photo-1576924542622-772c88e57db7?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -23907,7 +23907,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇮",
     "lat": 60.1699,
     "lng": 24.9384,
-    "image": "https://images.unsplash.com/photo-1548604571-072cd00ee2e1?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -28117,7 +28117,7 @@ var CITY_DATABASE = {
     "flag": "🇧🇪",
     "lat": 50.8503,
     "lng": 4.3517,
-    "image": "https://images.unsplash.com/photo-1562620436-46b0ccf85649?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=85",
     "safety": {
       "overall": 87,
       "grade": "A-",
@@ -29694,7 +29694,7 @@ var CITY_DATABASE = {
     "flag": "🇷🇺",
     "lat": 59.9311,
     "lng": 30.3609,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&q=85",
     "safety": {
       "overall": 65,
       "grade": "B-",
@@ -31253,7 +31253,7 @@ var CITY_DATABASE = {
     "flag": "🇩🇪",
     "lat": 50.1109,
     "lng": 8.6821,
-    "image": "https://images.unsplash.com/photo-1562620436-46b0ccf85649?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=85",
     "safety": {
       "overall": 92,
       "grade": "A",
@@ -32287,7 +32287,7 @@ var CITY_DATABASE = {
     "flag": "🇮🇪",
     "lat": 53.3498,
     "lng": -6.2603,
-    "image": "https://images.unsplash.com/photo-1548286978-e2c4e3c2e8e8?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -32804,7 +32804,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇧",
     "lat": 55.9533,
     "lng": -3.1883,
-    "image": "https://images.unsplash.com/photo-1548286978-e2c4e3c2e8e8?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=1200&q=85",
     "safety": {
       "overall": 93,
       "grade": "A",
@@ -34872,7 +34872,7 @@ var CITY_DATABASE = {
     "flag": "🇫🇷",
     "lat": 43.7102,
     "lng": 7.262,
-    "image": "https://images.unsplash.com/photo-1491166617655-0723a8234082?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=85",
     "safety": {
       "overall": 89,
       "grade": "A-",
@@ -40559,7 +40559,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 40.7128,
     "lng": -74.006,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=1200&q=85",
     "safety": {
       "overall": 67,
       "grade": "B-",
@@ -41767,7 +41767,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 41.8781,
     "lng": -87.6298,
-    "image": "https://images.unsplash.com/photo-1477959470486-6b2f8da26a99?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=85",
     "safety": {
       "overall": 69,
       "grade": "B-",
@@ -44978,7 +44978,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 25.7617,
     "lng": -80.1918,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1548544149-4835e62ee5b3?w=1200&q=85",
     "safety": {
       "overall": 77,
       "grade": "B+",
@@ -45494,7 +45494,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 42.3601,
     "lng": -71.0589,
-    "image": "https://images.unsplash.com/photo-1509872716523-2e6cba8e6be3?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1590212151175-e58edd96185b?w=1200&q=85",
     "safety": {
       "overall": 84,
       "grade": "A-",
@@ -46010,7 +46010,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 38.9072,
     "lng": -77.0369,
-    "image": "https://images.unsplash.com/photo-1496442226666-8d4a0d62e6e9?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1562088287-bde35a1ea917?w=1200&q=85",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -47594,7 +47594,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 33.749,
     "lng": -84.388,
-    "image": "https://images.unsplash.com/photo-1564937060-eb4edbe4568f?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=1200&q=85",
     "safety": {
       "overall": 73,
       "grade": "B",
@@ -48117,7 +48117,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 32.7767,
     "lng": -96.797,
-    "image": "https://images.unsplash.com/photo-1567449303078-57ad995bd17f?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=85",
     "safety": {
       "overall": 85,
       "grade": "A-",
@@ -54963,7 +54963,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 4.711,
     "lng": -74.0721,
-    "image": "https://images.unsplash.com/photo-1562613009-b9e87ef94756?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=1200&q=85",
     "safety": {
       "overall": 63,
       "grade": "B-",
@@ -55485,7 +55485,7 @@ var CITY_DATABASE = {
     "flag": "🇨🇴",
     "lat": 6.2442,
     "lng": -75.5812,
-    "image": "https://images.unsplash.com/photo-1553701826-6e8e0eb44720?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=1200&q=85",
     "safety": {
       "overall": 66,
       "grade": "B-",
@@ -56007,7 +56007,7 @@ var CITY_DATABASE = {
     "flag": "🇵🇦",
     "lat": 8.9824,
     "lng": -79.5199,
-    "image": "https://images.unsplash.com/photo-1556984124-3a5e5a07cc6d?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1570299437488-d430e1e677c7?w=1200&q=85",
     "safety": {
       "overall": 79,
       "grade": "B+",
@@ -57613,7 +57613,7 @@ var CITY_DATABASE = {
     "flag": "🇿🇦",
     "lat": -26.2041,
     "lng": 28.0473,
-    "image": "https://images.unsplash.com/photo-1564565562150-46b4e7fc5978?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=1200&q=85",
     "safety": {
       "overall": 41,
       "grade": "C",
@@ -58164,7 +58164,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇬",
     "lat": 6.5244,
     "lng": 3.3792,
-    "image": "https://images.unsplash.com/photo-1578860289429-de227cc56de9?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1721012970985-3ca71fe3877c?w=1200&q=85",
     "safety": {
       "overall": 30,
       "grade": "C",
@@ -59219,7 +59219,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 33.5731,
     "lng": -7.5898,
-    "image": "https://images.unsplash.com/photo-1548801340-4c5db0c89d08?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1609166214994-502d326bafee?w=1200&q=85",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -59741,7 +59741,7 @@ var CITY_DATABASE = {
     "flag": "🇲🇦",
     "lat": 31.6295,
     "lng": -7.9811,
-    "image": "https://images.unsplash.com/photo-1562221433-0d75d0ddcfbd?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1200&q=85",
     "safety": {
       "overall": 52,
       "grade": "C+",
@@ -60785,7 +60785,7 @@ var CITY_DATABASE = {
     "flag": "🇬🇭",
     "lat": 5.6037,
     "lng": -0.187,
-    "image": "https://images.unsplash.com/photo-1608581830332-ec32be60d9ea?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1675756261486-09bd1e0f6c8a?w=1200&q=85",
     "safety": {
       "overall": 42,
       "grade": "C",
@@ -61307,7 +61307,7 @@ var CITY_DATABASE = {
     "flag": "🇪🇹",
     "lat": 9.032,
     "lng": 38.7469,
-    "image": "https://images.unsplash.com/photo-1609165395285-d6d7b89f5f7c?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1785095617583-e408f4b451ca?w=1200&q=85",
     "safety": {
       "overall": 42,
       "grade": "C",
@@ -61829,7 +61829,7 @@ var CITY_DATABASE = {
     "flag": "🇦🇺",
     "lat": -33.8688,
     "lng": 151.2093,
-    "image": "https://images.unsplash.com/photo-1506973035872-a4ec83caafb3?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1524820197278-540916411e20?w=1200&q=85",
     "safety": {
       "overall": 95,
       "grade": "A",
@@ -65451,7 +65451,7 @@ var CITY_DATABASE = {
     "flag": "🇳🇿",
     "lat": -43.532,
     "lng": 172.6362,
-    "image": "https://images.unsplash.com/photo-1568405186213-ba8f1af47c49?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1200&q=85",
     "safety": {
       "overall": 94,
       "grade": "A",
@@ -65966,7 +65966,7 @@ var CITY_DATABASE = {
     "flag": "🇺🇸",
     "lat": 21.3069,
     "lng": -157.8583,
-    "image": "https://images.unsplash.com/photo-1507876466758-e3f4f8d22bd9?w=1200&q=85",
+    "image": "https://images.unsplash.com/photo-1586974325246-05d48d665f24?w=1200&q=85",
     "safety": {
       "overall": 71,
       "grade": "B",
@@ -78177,4 +78177,4 @@ var CITY_DATABASE = {
       "港口与山地道路注意行车安全"
     ]
   }
-};
+}

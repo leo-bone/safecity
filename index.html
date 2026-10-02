@@ -1643,11 +1643,11 @@
 <!-- ████ JS 主逻辑 ████ -->
 <!-- 全球城市安全数据库（148 城）-->
 <!-- 城市安全数据库（148 城）-->
-<script src="data_enhanced.js?v=202610021727"></script>
+<script src="data_enhanced.js?v=202610021802"></script>
 <!-- 城市详情数据库 v4.0 -->
-<script src="data_new.js?v=202610021727"></script>
+<script src="data_new.js?v=202610021802"></script>
 <!-- 实时数据接口 -->
-<script src="realtime-api.js?v=202610021727"></script>
+<script src="realtime-api.js?v=202610021802"></script>
 <script>
 // ─────────────────────────────────────────────────────
 // 全局状态
@@ -1793,6 +1793,25 @@ function getConflictBadges(city) {
 // ─────────────────────────────────────────────────────
 // 首页城市卡片渲染
 // ─────────────────────────────────────────────────────
+/**
+ * 图片加载失败兜底：不显示破图，改为渐变占位卡片（国旗 + 城市名）
+ * 说明：外链图片随时可能失效，兜底保证页面观感不崩。
+ */
+function imgFallback(el, name, flag) {
+  if (!el || el.dataset.fallbackApplied === '1') return;
+  el.dataset.fallbackApplied = '1';
+  var box = el.parentElement;
+  if (!box) { el.style.display = 'none'; return; }
+  if (getComputedStyle(box).position === 'static') box.style.position = 'relative';
+  el.style.display = 'none';
+  var d = document.createElement('div');
+  d.style.cssText = 'position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;' +
+    'background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#334155 100%);color:#e2e8f0;text-align:center;padding:12px;';
+  d.innerHTML = '<div style="font-size:30px;line-height:1">' + (flag || '🏙️') + '</div>' +
+                '<div style="font-size:15px;font-weight:700;letter-spacing:1px">' + (name || '') + '</div>';
+  box.appendChild(d);
+}
+
 function renderCityGrid(filterContinent = '全部') {
   const grid = document.getElementById('city-grid');
   
@@ -1845,7 +1864,7 @@ function renderCityGrid(filterContinent = '全部') {
          data-lat="${data.lat || ''}"
          data-lng="${data.lng || ''}">
       <div class="city-card-img">
-        <img src="${city.image}" alt="${city.name}" loading="lazy" onerror="this.src='https://picsum.photos/seed/${city.id}/400/180'">
+        <img src="${city.image}" alt="${city.name}" loading="lazy" onerror="imgFallback(this,'${city.name}','${city.flag}')">
         <div class="city-card-overlay"></div>
         <div class="city-card-flag">${city.flag}</div>
         <div class="city-card-grade" style="background:${gs.bg};color:${gs.text}">${city.safetyGrade}</div>
@@ -1929,7 +1948,7 @@ function populateCityDetail(data) {
   // 英雄区域
   document.getElementById('detail-hero-img').src = adaptedData.image;
   document.getElementById('detail-hero-img').onerror = function() {
-    this.src = `https://picsum.photos/seed/${adaptedData.id}/1200/400`;
+    imgFallback(this, adaptedData.name, adaptedData.flag);
   };
   document.getElementById('detail-flag').textContent = adaptedData.flag;
   document.getElementById('detail-name').textContent = adaptedData.name;
@@ -3093,7 +3112,7 @@ function renderSearchResults(results) {
          data-lat="${data.lat || ''}"
          data-lng="${data.lng || ''}">
       <div class="city-card-img">
-        <img src="${city.image}" alt="${city.name}" loading="lazy">
+        <img src="${city.image}" alt="${city.name}" loading="lazy" onerror="imgFallback(this,'${city.name}','${city.flag}')">
         <div class="city-card-overlay"></div>
         <div class="city-card-flag">${city.flag}</div>
         <div class="city-card-grade" style="background:${gs.bg};color:${gs.text}">${city.safetyGrade}</div>
